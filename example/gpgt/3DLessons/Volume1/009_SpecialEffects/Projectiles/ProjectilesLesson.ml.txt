@@ -1,0 +1,11 @@
+<spush><just:center><font:Arial Bold:18><color:FFFF00>
+Projectiles<spop>
+<just:left><font:Arial:16><br><lmargin%:5>
+Projectiles lesson, showing examples of:<br><br>
+<color:FF2222>
+- Ballistic Projectiles<br>
+- Non-Ballistic Projectiles<br>
+- Delayed Activation<br>
+- Projectile Particle Usage<br>
+- Projectile Explosions<br>
+

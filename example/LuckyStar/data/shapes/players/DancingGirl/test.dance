@@ -1,0 +1,13 @@
+[name]
+Test dance
+[desc]
+This test dance game make used of all available dancing moves
+[seq]
+head.sequence
+body.sequence
+legs.sequence
+blend.sequence
+[audio]
+AudioDance01
+[words]
+catering.words

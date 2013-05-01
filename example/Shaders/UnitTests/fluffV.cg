@@ -1,0 +1,18 @@
+struct AppData
+{
+   float4 Position : POSITION;
+};
+
+struct VertexOutput
+{
+   float4 HPosition : POSITION;
+};
+
+VertexOutput main(AppData IN)
+{
+   VertexOutput OUT;
+   
+   OUT.HPosition = IN.Position;
+   
+   return OUT;
+}

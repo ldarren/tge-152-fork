@@ -1,0 +1,255 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(gsMessageVector) {
+   profile = "GuiDefaultProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "800 600";
+   minExtent = "8 8";
+   visible = "1";
+      vectorAttach0 = "gpgt/GUISamples/Vol1/gs_MessageVector/Vector0ToVector0";
+      textAttachMode = "0";
+      MessageVector1 = "2358";
+      textAttach0 = "gpgt/GUISamples/Vol1/gs_MessageVector/TextToMessageVector0";
+      vectorAttach4 = "gpgt/GUISamples/Vol1/gs_MessageVector/Vector1ToVector1";
+      vectorAttach1 = "gpgt/GUISamples/Vol1/gs_MessageVector/Vector0ToVector1";
+      MessageVector0 = "2357";
+      textAttach1 = "gpgt/GUISamples/Vol1/gs_MessageVector/TextToMessageVector1";
+      vectorAttachMode = "0";
+      vectorAttach5 = "gpgt/GUISamples/Vol1/gs_MessageVector/Vector1ToVector01";
+      vectorAttach2 = "gpgt/GUISamples/Vol1/gs_MessageVector/Vector0ToVector01";
+      MessageVector0Attached = "1";
+      textAttach2 = "gpgt/GUISamples/Vol1/gs_MessageVector/TextToMessageVector01";
+      MessageVector1Attached = "0";
+      Parent = "GUISamplerInterface";
+      vectorAttach3 = "gpgt/GUISamples/Vol1/gs_MessageVector/Vector1ToVector0";
+
+   new GuiChunkedBitmapCtrl() {
+      profile = "gsDefaultProfile";
+      horizSizing = "width";
+      vertSizing = "height";
+      position = "0 0";
+      extent = "800 600";
+      minExtent = "8 2";
+      visible = "1";
+      bitmap = $SA::Background1;
+      useVariable = "0";
+      tile = "0";
+
+      new GuiBitmapButtonCtrl(guiSamplerLeft) {
+         profile = "gpgtButtonProfile1";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         position = "125 525";
+         extent = "75 75";
+         minExtent = "8 2";
+         visible = "1";
+         command = "Canvas.setContent(Canvas.getContent().Parent);";
+         accelerator = "escape";
+         text = "Button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "~/client/sharedAssets/button0/leftButton0";
+      };
+      new GuiControl() {
+         profile = "gsDefaultProfile";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         position = "100 100";
+         extent = "600 400";
+         minExtent = "8 2";
+         visible = "1";
+
+         new GuiBitmapBorderCtrl() {
+            profile = "gpgtBitmapBorder";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "55 10";
+            extent = "233 166";
+            minExtent = "8 2";
+            visible = "1";
+
+            new GuiScrollCtrl() {
+               profile = "GuiScrollProfile";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "7 14";
+               extent = "213 139";
+               minExtent = "8 2";
+               visible = "1";
+               willFirstRespond = "1";
+               hScrollBar = "alwaysOn";
+               vScrollBar = "alwaysOn";
+               constantThumbHeight = "0";
+               childMargin = "0 0";
+
+               new GuiMessageVectorCtrl(TestMessageVectorCtrl0) {
+                  profile = "GuiDefaultProfile";
+                  horizSizing = "width";
+                  vertSizing = "height";
+                  position = "2 2";
+                  extent = "78 30";
+                  minExtent = "8 2";
+                  visible = "1";
+                  lineSpacing = "0";
+                  lineContinuedIndex = "10";
+                  allowedMatches[0] = "http";
+                  matchColor = "255 0 0 255";
+                  maxColorIndex = "2";
+               };
+            };
+         };
+         new GuiBitmapBorderCtrl() {
+            profile = "gpgtBitmapBorder";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "309 10";
+            extent = "235 166";
+            minExtent = "8 2";
+            visible = "1";
+
+            new GuiScrollCtrl() {
+               profile = "GuiScrollProfile";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "7 14";
+               extent = "214 139";
+               minExtent = "8 2";
+               visible = "1";
+               willFirstRespond = "1";
+               hScrollBar = "alwaysOn";
+               vScrollBar = "alwaysOn";
+               constantThumbHeight = "0";
+               childMargin = "0 0";
+
+               new GuiMessageVectorCtrl(TestMessageVectorCtrl1) {
+                  profile = "GuiDefaultProfile";
+                  horizSizing = "width";
+                  vertSizing = "height";
+                  position = "2 2";
+                  extent = "79 30";
+                  minExtent = "8 2";
+                  visible = "1";
+                  lineSpacing = "0";
+                  lineContinuedIndex = "10";
+                  matchColor = "0 0 255 255";
+                  maxColorIndex = "9";
+               };
+            };
+         };
+         new GuiBitmapCtrl(MessageVectorPipe) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "263 173";
+            extent = "65 65";
+            minExtent = "8 2";
+            visible = "1";
+            bitmap = "./Vector0ToVector0";
+            wrap = "0";
+         };
+         new GuiBitmapCtrl(MessageVector0) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "202 238";
+            extent = "63 63";
+            minExtent = "8 2";
+            visible = "1";
+            bitmap = "./MessageVector";
+            wrap = "0";
+         };
+         new GuiBitmapCtrl(MessageVector1) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "327 238";
+            extent = "63 63";
+            minExtent = "8 2";
+            visible = "1";
+            bitmap = "./MessageVector";
+            wrap = "0";
+         };
+         new GuiBitmapCtrl(TextPipe) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "263 301";
+            extent = "65 62";
+            minExtent = "8 2";
+            visible = "1";
+            bitmap = "./TextToMessageVector0";
+            wrap = "0";
+         };
+         new GuiTextEditCtrl(VectorTextInput) {
+            profile = "GuiTextEditProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "202 370";
+            extent = "188 18";
+            minExtent = "8 2";
+            visible = "1";
+            altCommand = "gsMessageVector.copyText();";
+            maxLength = "255";
+            historySize = "0";
+            password = "0";
+            tabComplete = "0";
+            sinkAllKeyEvents = "0";
+         };
+         new GuiButtonCtrl(ClearVector0) {
+            profile = "GuiButtonProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "130 260";
+            extent = "60 25";
+            minExtent = "8 2";
+            visible = "1";
+            command = "gsMessageVector.MessageVector0.clear();";
+            text = "Clear";
+            groupNum = "-1";
+            buttonType = "PushButton";
+         };
+         new GuiButtonCtrl(ClearVector1) {
+            profile = "GuiButtonProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "402 260";
+            extent = "57 25";
+            minExtent = "8 2";
+            visible = "1";
+            command = "gsMessageVector.MessageVector1.clear();";
+            text = "Clear";
+            groupNum = "-1";
+            buttonType = "PushButton";
+         };
+         new GuiButtonCtrl(SelectTextAttach) {
+            profile = "GuiButtonProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "339 320";
+            extent = "163 25";
+            minExtent = "8 2";
+            visible = "1";
+            command = "gsMessageVector.advanceTextAttachMode();";
+            text = "<-- Select Message Vector";
+            groupNum = "-1";
+            buttonType = "PushButton";
+         };
+         new GuiButtonCtrl(SelectVectorAttach) {
+            profile = "GuiButtonProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "339 190";
+            extent = "163 25";
+            minExtent = "8 2";
+            visible = "1";
+            command = "gsMessageVector.advanceVectorAttachMode();";
+            text = "<-- Select Attach Mode";
+            groupNum = "-1";
+            buttonType = "PushButton";
+         };
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+

@@ -1,0 +1,72 @@
+/**
+   Torque language specification.
+*/
+(
+ // Torque script
+{
+  Identifier = torque;
+  Name = "Torque Engine Script";
+  Description = "Torque Engine Script";
+  BasedOn = "pbx_root_language";
+  SourceScannerClassName = PBXCSourceScanner;
+  Indentation = {
+  };
+  SyntaxColoring = {
+    SingleLineComment = (  "//" );
+    CaseSensitive = NO;
+    UnicodeSymbols = NO;
+    IndexedSymbols = YES;
+    CommentsCanBeNested = NO;
+    IdentifierStartChars = "$%";
+    IdentifierChars = "_-";
+    MultLineComment = (
+    );
+    String = (
+	      ( "\"", "\"" ),
+	      ( "'", "'" )
+	      );
+    EscapeCharacter = "\\";
+    Keywords = (
+                "break", 
+                "case", 
+                "continue",
+                "datablock", 
+                "default", 
+                "else", 
+                "false", 
+                "function",
+                "if", 
+                "for", 
+                "new", 
+                "or", 
+                "package", 
+                "return", 
+                "switch", 
+                "switch$", 
+                "true", 
+                "while",
+                "$",
+                "%",
+                "@",
+                "SPC",
+		);
+                AltKeywords = (
+                "echo",
+                "error",
+                "warn",
+                "exec",
+                "call",
+                "VectorAdd",
+                "VectorCross",
+                "VectorDist",
+                "VectorDot",
+                "VectorLen",
+                "VectorNormalize",
+                "VectorOrthoBasis",
+                "VectorScale",
+                "VectorSub"
+                );
+  };
+}
+)
+

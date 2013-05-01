@@ -1,0 +1,713 @@
+
+if(!isObject(SkinnedTabBookProfile)) new GuiControlProfile(SkinnedTabBookProfile:GuiTabBookProfile)
+{
+	tab = false; // if not will lose control
+	opaque = true;
+	//bitmap = "./skins/test/tabbook";
+	//hasBitmapArray = true;
+};
+
+if(!isObject(UnSkinnedButtonProfile)) new GuiControlProfile(UnSkinnedButtonProfile:GuiButtonProfile)
+{
+   bitmap = "";
+   hasBitmapArray = false;
+   fillColor = "255 255 255 0";
+   fillColorHL = "128 128 128 64";
+};
+
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(CustomiseGui) {
+   canSaveDynamicFields = "0";
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   position = "0 0";
+   Extent = "1024 768";
+   MinExtent = "8 2";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+
+   new GuiWindowCtrl() {
+      canSaveDynamicFields = "0";
+      Profile = "GuiWindowProfile";
+      HorizSizing = "center";
+      VertSizing = "center";
+      position = "212 130";
+      Extent = "600 480";
+      MinExtent = "600 480";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      text = "Character Creation Window";
+      textID = "CraetionWinTitle";
+      maxLength = "255";
+      resizeWidth = "1";
+      resizeHeight = "1";
+      canMove = "1";
+      canClose = "1";
+      canMinimize = "0";
+      canMaximize = "1";
+      minSize = "50 50";
+      closeCommand = "Canvas.popDialog(CustomiseGui);";
+
+      new GuiObjectView(PlayerView) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "width";
+         VertSizing = "height";
+         position = "15 43";
+         Extent = "280 380";
+         MinExtent = "280 380";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         applyFilterToChildren = "1";
+         cameraZRot = "0";
+         forceFOV = "0";
+         lightPosition = "1 1 1";
+         lightDirection = "-0.57735 -0.57735 -0.57735";
+         lightColor = "0.6 0.58 0.5 1";
+         ambientColor = "0.3 0.3 0.3 1";
+      };
+      new GuiTabBookCtrl(PlayerAttribute) {
+         canSaveDynamicFields = "0";
+         Profile = "SkinnedTabBookProfile";
+         HorizSizing = "left";
+         VertSizing = "height";
+         position = "300 43";
+         Extent = "285 380";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         TabPosition = "Top";
+         TabHeight = "21";
+         TabMargin = "7";
+         MinTabWidth = "64";
+
+         new GuiTabPageCtrl() {
+            canSaveDynamicFields = "0";
+            Profile = "GuiTabPageProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "0 24";
+            Extent = "285 356";
+            MinExtent = "285 356";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            text = "Profile";
+            maxLength = "128";
+
+            new GuiTextCtrl() {
+               canSaveDynamicFields = "0";
+               Profile = "GuiTextProfile";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "15 15";
+               Extent = "30 18";
+               MinExtent = "8 2";
+               canSave = "1";
+               Visible = "1";
+               hovertime = "1000";
+               text = "Name:";
+               maxLength = "128";
+            };
+            new GuiTextEditCtrl() {
+               canSaveDynamicFields = "0";
+               Profile = "GuiTextEditProfile";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "65 15";
+               Extent = "210 18";
+               MinExtent = "210 18";
+               canSave = "1";
+               Visible = "1";
+               Variable = "pref::Player::Name";
+               hovertime = "1000";
+               maxLength = "256";
+               historySize = "0";
+               tabComplete = "0";
+               sinkAllKeyEvents = "0";
+               password = "0";
+               passwordMask = "*";
+            };
+            new GuiTextEditCtrl() {
+               canSaveDynamicFields = "0";
+               Profile = "GuiTextEditProfile";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "65 51";
+               Extent = "210 18";
+               MinExtent = "210 18";
+               canSave = "1";
+               Visible = "1";
+               hovertime = "1000";
+               maxLength = "256";
+               historySize = "0";
+               tabComplete = "0";
+               sinkAllKeyEvents = "0";
+               password = "0";
+               passwordMask = "*";
+            };
+            new GuiTextCtrl() {
+               canSaveDynamicFields = "0";
+               Profile = "GuiTextProfile";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "15 51";
+               Extent = "27 18";
+               MinExtent = "8 2";
+               canSave = "1";
+               Visible = "1";
+               hovertime = "1000";
+               text = "Email:";
+               maxLength = "128";
+            };
+         };
+         new GuiTabPageCtrl() {
+            canSaveDynamicFields = "0";
+            Profile = "GuiTabPageProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "0 24";
+            Extent = "285 356";
+            MinExtent = "285 356";
+            canSave = "1";
+            Visible = "0";
+            hovertime = "1000";
+            text = "Head";
+            maxLength = "128";
+
+            new GuiTextCtrl() {
+               canSaveDynamicFields = "0";
+               Profile = "GuiTextProfile";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "15 15";
+               Extent = "49 18";
+               MinExtent = "8 2";
+               canSave = "1";
+               Visible = "1";
+               hovertime = "1000";
+               text = "Hair Style:";
+               maxLength = "128";
+            };
+            new GuiPopUpMenuCtrl(HairStyleSelector) {
+               canSaveDynamicFields = "0";
+               Profile = "GuiPopUpMenuProfile";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "65 15";
+               Extent = "210 18";
+               MinExtent = "210 18";
+               canSave = "1";
+               Visible = "1";
+               Command = "$ThisControl.ChangeHair();";
+               hovertime = "1000";
+               text = "Pony Tail";
+               maxLength = "1024";
+               maxPopupHeight = "200";
+            };
+            new GuiColorPickerCtrl(HairColorPicker) {
+               canSaveDynamicFields = "0";
+               Profile = "GuiDefaultProfile";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "15 48";
+               Extent = "260 30";
+               MinExtent = "260 30";
+               canSave = "1";
+               Visible = "1";
+               hovertime = "1000";
+               BaseColor = "0.427 0.016 0.016 1";
+               PickColor = "0 0 0 1";
+               SelectorGap = "1";
+               DisplayMode = "Pallet";
+               ActionOnMove = "0";
+
+               new GuiButtonCtrl() {
+                  canSaveDynamicFields = "0";
+                  Profile = "UnSkinnedButtonProfile";
+                  HorizSizing = "right";
+                  VertSizing = "bottom";
+                  position = "0 0";
+                  Extent = "260 30";
+                  MinExtent = "260 30";
+                  canSave = "1";
+                  Visible = "1";
+                  Command = "CustomColorPickerDlg.GetColorI(HairColorPicker.BaseColor, \"HairColorPicker.changeColor\");";
+                  hovertime = "1000";
+                  text = "Hair Color";
+                  groupNum = "-1";
+                  buttonType = "PushButton";
+               };
+            };
+            new GuiTextCtrl() {
+               canSaveDynamicFields = "0";
+               Profile = "GuiTextProfile";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "15 93";
+               Extent = "27 18";
+               MinExtent = "8 2";
+               canSave = "1";
+               Visible = "1";
+               hovertime = "1000";
+               text = "Face:";
+               maxLength = "128";
+            };
+            new GuiPopUpMenuCtrl(FaceSelector) {
+               canSaveDynamicFields = "0";
+               Profile = "GuiPopUpMenuProfile";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "65 93";
+               Extent = "210 18";
+               MinExtent = "210 18";
+               canSave = "1";
+               Visible = "1";
+               Command = "$ThisControl.ChangeSkin();";
+               hovertime = "1000";
+               text = "Face A (Smart)";
+               maxLength = "1024";
+               maxPopupHeight = "200";
+            };
+            new GuiColorPickerCtrl(FaceColorPicker) {
+               canSaveDynamicFields = "0";
+               Profile = "GuiDefaultProfile";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "15 126";
+               Extent = "260 30";
+               MinExtent = "260 30";
+               canSave = "1";
+               Visible = "1";
+               hovertime = "1000";
+               BaseColor = "1 0.89 0.686 1";
+               PickColor = "0 0 0 1";
+               SelectorGap = "1";
+               DisplayMode = "Pallet";
+               ActionOnMove = "0";
+
+               new GuiButtonCtrl() {
+                  canSaveDynamicFields = "0";
+                  Profile = "UnSkinnedButtonProfile";
+                  HorizSizing = "right";
+                  VertSizing = "bottom";
+                  position = "0 0";
+                  Extent = "260 30";
+                  MinExtent = "260 30";
+                  canSave = "1";
+                  Visible = "1";
+                  Command = "CustomColorPickerDlg.GetColorI(FaceColorPicker.BaseColor, \"FaceColorPicker.changeColor\");";
+                  hovertime = "1000";
+                  text = "Face Color";
+                  groupNum = "-1";
+                  buttonType = "PushButton";
+               };
+            };
+         };
+         new GuiTabPageCtrl() {
+            canSaveDynamicFields = "0";
+            Profile = "GuiTabPageProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "0 24";
+            Extent = "285 356";
+            MinExtent = "285 356";
+            canSave = "1";
+            Visible = "0";
+            hovertime = "1000";
+            text = "Body";
+            maxLength = "128";
+
+            new GuiTextCtrl() {
+               canSaveDynamicFields = "0";
+               Profile = "GuiTextProfile";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "15 15";
+               Extent = "25 18";
+               MinExtent = "8 2";
+               canSave = "1";
+               Visible = "1";
+               hovertime = "1000";
+               text = "Shirt:";
+               maxLength = "128";
+            };
+            new GuiPopUpMenuCtrl(ShirtSelector) {
+               canSaveDynamicFields = "0";
+               Profile = "GuiPopUpMenuProfile";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "65 15";
+               Extent = "210 18";
+               MinExtent = "210 18";
+               canSave = "1";
+               Visible = "1";
+               Command = "$ThisControl.ChangeSkin();";
+               hovertime = "1000";
+               text = "Summer (Blue)";
+               maxLength = "1024";
+               maxPopupHeight = "200";
+            };
+            new GuiTextCtrl() {
+               canSaveDynamicFields = "0";
+               Profile = "GuiTextProfile";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "15 48";
+               Extent = "24 18";
+               MinExtent = "8 2";
+               canSave = "1";
+               Visible = "1";
+               hovertime = "1000";
+               text = "Skirt:";
+               maxLength = "128";
+            };
+            new GuiPopUpMenuCtrl(SkirtSelector) {
+               canSaveDynamicFields = "0";
+               Profile = "GuiPopUpMenuProfile";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "65 48";
+               Extent = "210 18";
+               MinExtent = "210 18";
+               canSave = "1";
+               Visible = "1";
+               Command = "$ThisControl.ChangeSkin();";
+               hovertime = "1000";
+               text = "Summer (Blue)";
+               maxLength = "1024";
+               maxPopupHeight = "200";
+            };
+            new GuiColorPickerCtrl(HandsColorPicker) {
+               canSaveDynamicFields = "0";
+               Profile = "GuiDefaultProfile";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "15 81";
+               Extent = "260 30";
+               MinExtent = "260 30";
+               canSave = "1";
+               Visible = "1";
+               hovertime = "1000";
+               BaseColor = "1 0.89 0.686 1";
+               PickColor = "0 0 0 1";
+               SelectorGap = "1";
+               DisplayMode = "Pallet";
+               ActionOnMove = "0";
+
+               new GuiButtonCtrl() {
+                  canSaveDynamicFields = "0";
+                  Profile = "UnSkinnedButtonProfile";
+                  HorizSizing = "right";
+                  VertSizing = "bottom";
+                  position = "0 0";
+                  Extent = "260 30";
+                  MinExtent = "260 30";
+                  canSave = "1";
+                  Visible = "1";
+                  Command = "CustomColorPickerDlg.GetColorI(HandsColorPicker.BaseColor, \"HandsColorPicker.changeColor\");";
+                  hovertime = "1000";
+                  text = "Hands Color";
+                  groupNum = "-1";
+                  buttonType = "PushButton";
+               };
+            };
+            new GuiTextCtrl() {
+               canSaveDynamicFields = "0";
+               Profile = "GuiTextProfile";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "15 126";
+               Extent = "34 18";
+               MinExtent = "8 2";
+               canSave = "1";
+               Visible = "1";
+               hovertime = "1000";
+               text = "Shoes:";
+               maxLength = "128";
+            };
+            new GuiPopUpMenuCtrl(ShoesSelector) {
+               canSaveDynamicFields = "0";
+               Profile = "GuiPopUpMenuProfile";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "65 126";
+               Extent = "210 18";
+               MinExtent = "210 18";
+               canSave = "1";
+               Visible = "1";
+               Command = "$ThisControl.ChangeSkin();";
+               hovertime = "1000";
+               text = "Shoes A";
+               maxLength = "1024";
+               maxPopupHeight = "200";
+            };
+            new GuiColorPickerCtrl(LegsColorPicker) {
+               canSaveDynamicFields = "0";
+               Profile = "GuiDefaultProfile";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "15 159";
+               Extent = "260 30";
+               MinExtent = "260 30";
+               canSave = "1";
+               Visible = "1";
+               hovertime = "1000";
+               BaseColor = "1 0.89 0.686 1";
+               PickColor = "0 0 0 1";
+               SelectorGap = "1";
+               DisplayMode = "Pallet";
+               ActionOnMove = "0";
+
+               new GuiButtonCtrl() {
+                  canSaveDynamicFields = "0";
+                  Profile = "UnSkinnedButtonProfile";
+                  HorizSizing = "right";
+                  VertSizing = "bottom";
+                  position = "0 0";
+                  Extent = "260 30";
+                  MinExtent = "260 30";
+                  canSave = "1";
+                  Visible = "1";
+                  Command = "CustomColorPickerDlg.GetColorI(LegsColorPicker.BaseColor, \"LegsColorPicker.changeColor\");";
+                  hovertime = "1000";
+                  text = "Legs Color";
+                  groupNum = "-1";
+                  buttonType = "PushButton";
+               };
+            };
+         };
+      };
+      new GuiButtonCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiButtonProfile";
+         HorizSizing = "center";
+         VertSizing = "top";
+         position = "230 435";
+         Extent = "140 30";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "CustomiseGui.createPlayer();";
+         hovertime = "1000";
+         text = "Create";
+         groupNum = "-1";
+         buttonType = "PushButton";
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+
+function CustomiseGui::activate(%this, %mode)
+{
+	Canvas.pushDialog(%this);
+	%this.gameMode = %mode;
+}
+
+function CustomiseGui::onWake(%this)
+{
+	PlayerAttribute.selectPage(0);
+	
+	%this.hairModel = "haira";
+	%this.hairColor = "109 4 4 255";
+	%this.faceColor = "255 227 175 255";
+	%this.handsColor = "255 227 175 255";
+	%this.legsColor = "255 227 175 255";
+	%this.hairSkin = "base";
+	%this.faceSkin = "base";
+	%this.shirtSkin = "base";
+	%this.skirtSkin = "base";
+	%this.shoesSkin = "base";
+	%this.handsSkin = "base";
+	%this.legsSkin = "base";
+	
+	HairColorPicker.BaseColor = "0.427 0.016 0.016 1";
+	FaceColorPicker.BaseColor = "1 0.89 0.686 1";
+	HandsColorPicker.BaseColor = "1 0.89 0.686 1";
+	LegsColorPicker.BaseColor = "1 0.89 0.686 1";
+
+	HairStyleSelector.clear();
+	HairStyleSelector.add("Pony Tail", 0);
+	HairStyleSelector.add("Short Hair", 1);
+	HairStyleSelector.setSelected(0);
+	
+	FaceSelector.clear();
+	FaceSelector.add("Face A (Smart)", 0);
+	FaceSelector.add("Face B (Kawaii)", 1);
+	FaceSelector.setSelected(0);
+	
+	ShirtSelector.clear();
+	ShirtSelector.add("Summer (Blue)", 0);
+	ShirtSelector.add("Winter (Pink)", 1);
+	ShirtSelector.setSelected(0);
+	
+	SkirtSelector.clear();
+	SkirtSelector.add("Summer (Blue)", 0);
+	SkirtSelector.add("Winter (Pink)", 1);
+	SkirtSelector.setSelected(0);
+	
+	ShoesSelector.clear();
+	ShoesSelector.add("Shoes A", 0);
+	ShoesSelector.add("Shoes B", 1);
+	ShoesSelector.setSelected(0);
+
+	%this.gameMode = -1;
+	%this.setPlayer();
+}
+
+function CustomiseGui::setPlayer(%this)
+{
+	PlayerView.setObject("Girl", $mod::name@"/data/shapes/players/DancingGirl/dancinggirl.dts", "", 0);
+	// Set animation
+	PlayerView.loadDSQ("Girl", $mod::name@"/data/shapes/players/DancingGirl/root.dsq"); // loaded in player.cs
+	PlayerView.setSequence("Girl", "root", 1);
+	PlayerView.mountObject("Hair",$mod::name@"/data/shapes/players/DancingGirl/"@%this.hairModel@".dts","","Girl","mount0",0);
+	Canvas.repaint();
+}
+
+function CustomiseGui::createPlayer(%this)
+{
+	Canvas.popDialog(%this);
+	switch (%this.gameMode) {
+	case 1: // single player
+		MapSelectorGui.activate(%this.gameMode);
+	case 2: // host multiplayer
+		NetworkGui.activate();
+	}
+}
+
+function HairColorPicker::changeColor(%this, %newColorI)
+{
+	if (CustomiseGui.hairColor == %newColorI) return;
+	CustomiseGui.hairColor = %newColorI;
+
+	%r = getWord(%newColorI, 0)/255;
+	%g = getWord(%newColorI, 1)/255;
+	%b = getWord(%newColorI, 2)/255;
+	%this.BaseColor = %r SPC %g SPC %b SPC "1";
+	
+	PlayerView.addSkinModifier("Hair", 4, "hair", CustomiseGui.hairSkin, "mask", %newColorI, "128 128 128 255");
+}
+
+function FaceColorPicker::changeColor(%this, %newColorI)
+{
+	if (CustomiseGui.faceColor == %newColorI) return;
+	CustomiseGui.faceColor = %newColorI;
+
+	%r = getWord(%newColorI, 0)/255;
+	%g = getWord(%newColorI, 1)/255;
+	%b = getWord(%newColorI, 2)/255;
+	%this.BaseColor = %r SPC %g SPC %b SPC "1";
+	
+	switch$(CustomiseGui.faceSkin)
+	{
+	case "base":
+		PlayerView.addSkinModifier("Girl", 0, "head", CustomiseGui.faceSkin, "mask1", %newColorI);
+	case "cute":
+		PlayerView.addSkinModifier("Girl", 0, "head", CustomiseGui.faceSkin, "mask2", %newColorI);
+	}
+}
+
+function HandsColorPicker::changeColor(%this, %newColorI)
+{
+	if (CustomiseGui.handsColor == %newColorI) return;
+	CustomiseGui.handsColor = %newColorI;
+
+	%r = getWord(%newColorI, 0)/255;
+	%g = getWord(%newColorI, 1)/255;
+	%b = getWord(%newColorI, 2)/255;
+	%this.BaseColor = %r SPC %g SPC %b SPC "1";
+	
+	PlayerView.addSkinModifier("Girl", 5, "hands", "base", "mask", %newColorI, "200 200 200 255");
+}
+
+function LegsColorPicker::changeColor(%this, %newColorI)
+{
+	if (CustomiseGui.legsColor == %newColorI) return;
+	CustomiseGui.legsColor = %newColorI;
+
+	%r = getWord(%newColorI, 0)/255;
+	%g = getWord(%newColorI, 1)/255;
+	%b = getWord(%newColorI, 2)/255;
+	%this.BaseColor = %r SPC %g SPC %b SPC "1";
+	
+	PlayerView.addSkinModifier("Girl", 6, "legs", "base", "mask", %newColorI);
+}
+
+function HairStyleSelector::changeHair(%this)
+{
+	PlayerView.unMountObject("Hair","mount0");
+	switch(%this.getSelected())
+	{
+	case 0:
+		if (CustomiseGui.hairModel $= "haira.dts") return;
+		CustomiseGui.hairModel = "haira";
+	case 1:
+		if (CustomiseGui.hairModel $= "hairb.dts") return;
+		CustomiseGui.hairModel = "hairb";
+	}
+	PlayerView.mountObject("Hair",$mod::name@"/data/shapes/players/DancingGirl/"@CustomiseGui.hairModel@".dts","","Girl","mount0",0);
+	PlayerView.addSkinModifier("Hair", 4, "hair", CustomiseGui.hairSkin, "mask", CustomiseGui.hairColor@".dts", "128 128 128 255");
+}
+
+function FaceSelector::changeSkin(%this)
+{
+	switch(%this.getSelected())
+	{
+	case 0:
+		if (CustomiseGui.faceSkin $= "base") return;
+		CustomiseGui.faceSkin = "base";
+		PlayerView.addSkinModifier("Girl", 0, "head", CustomiseGui.faceSkin, "mask1", CustomiseGui.faceColor);
+	case 1:
+		if (CustomiseGui.faceSkin $= "cute") return;
+		CustomiseGui.faceSkin = "cute";
+		PlayerView.addSkinModifier("Girl", 0, "head", CustomiseGui.faceSkin, "mask2", CustomiseGui.faceColor);
+	}
+}
+
+function ShirtSelector::changeSkin(%this)
+{
+	switch(%this.getSelected())
+	{
+	case 0:
+		if (CustomiseGui.shirtSkin $= "base") return;
+		CustomiseGui.shirtSkin = "base";
+	case 1:
+		if (CustomiseGui.shirtSkin $= "red") return;
+		CustomiseGui.shirtSkin = "red";
+	}
+	PlayerView.addSkinModifier("Girl", 1, "shirt", CustomiseGui.shirtSkin);
+}
+
+function SkirtSelector::changeSkin(%this)
+{
+	switch(%this.getSelected())
+	{
+	case 0:
+		if (CustomiseGui.skirtSkin $= "base") return;
+		CustomiseGui.skirtSkin = "base";
+	case 1:
+		if (CustomiseGui.skirtSkin $= "red") return;
+		CustomiseGui.skirtSkin = "red";
+	}
+	PlayerView.addSkinModifier("Girl", 2, "skirt", CustomiseGui.skirtSkin);
+}
+
+function ShoesSelector::changeSkin(%this)
+{
+	switch(%this.getSelected())
+	{
+	case 0:
+		if (CustomiseGui.shoesSkin $= "base") return;
+		CustomiseGui.shoesSkin = "base";
+	case 1:
+		if (CustomiseGui.shoesSkin $= "blue") return;
+		CustomiseGui.shoesSkin = "blue";
+	}
+	PlayerView.addSkinModifier("Girl", 3, "feet", CustomiseGui.shoesSkin);
+}

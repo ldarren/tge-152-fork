@@ -1,0 +1,84 @@
+<key>
+	<1>
+		<name>Clara</name>
+		<avatar>n001</avatar>
+		<speech>q001</speech>
+		<portrait>test.jpg</portrait>
+		<startdlg>1</startdlg>
+		<busydlg>2</busydlg>
+	</1>
+	<2>
+		<name>David</name>
+		<avatar>n002</avatar>
+		<speech>q001</speech>
+		<portrait>test.jpg</portrait>
+		<startdlg>1</startdlg>
+		<busydlg>2</busydlg>
+	</2>
+	<3>
+		<name>Alex</name>
+		<avatar>n003</avatar>
+		<speech>q002</speech>
+		<portrait>test.jpg</portrait>
+		<startdlg>1</startdlg>
+		<busydlg>2</busydlg>
+	</3>
+	<4>
+		<name>Rachel</name>
+		<avatar>n004</avatar>
+		<speech>q001</speech>
+		<portrait>test.jpg</portrait>
+		<startdlg>1</startdlg>
+		<busydlg>2</busydlg>
+	</4>
+	<5>
+		<name>Teoh</name>
+		<avatar>n004a</avatar>
+		<speech>q003</speech>
+		<portrait>npc_teoh.jpg</portrait>
+	</5>
+</key>
+<normal>
+	<1>
+		<name>Thomas</name>
+		<avatar>n005</avatar>
+		<speech>1</speech>
+	</1>
+	<2>
+		<name>Joyce</name>
+		<avatar>n006</avatar>
+		<speech>1</speech>
+	</2>
+	<3>
+		<name>Alicia</name>
+		<avatar>n007</avatar>
+		<speech>2</speech>
+	</3>
+	<4>
+		<name>Daim</name>
+		<avatar>n008</avatar>
+		<speech>2</speech>
+	</4>
+</normal>
+<background>
+	<1>
+		<name>Mr X</name>
+		<avatar>Animation_02_01</avatar>
+		<speech>-1</speech>
+	</1>
+	<2>
+		<name>Miss Y</name>
+		<avatar>Animation_02_02</avatar>
+		<speech>-1</speech>
+	</2>
+	<3>
+		<name>Boys</name>
+		<avatar>Animation_02_03</avatar>
+		<speech>-1</speech>
+	</3>
+	<4>
+		<name>Seller</name>
+		<avatar>Animation_02_04</avatar>
+		<speech>-1</speech>
+	</4>
+</background>

@@ -1,0 +1,890 @@
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+   canSaveDynamicFields = "1";
+
+   new ScriptObject(MissionInfo) {
+         name = "Snowy Mountain";
+         desc0 = "This dancing game takes place in a small snowy mountain village.";
+   };
+   new MissionArea(MissionArea) {
+      canSaveDynamicFields = "1";
+      Area = "-152 -352 1040 1056";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      canSaveDynamicFields = "1";
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      materialList = "~/data/skies/sky_overcast.dml";
+      cloudHeightPer[0] = "0.1";
+      cloudHeightPer[1] = "0.2";
+      cloudHeightPer[2] = "0";
+      cloudSpeed1 = "0.001";
+      cloudSpeed2 = "0.001";
+      cloudSpeed3 = "0.001";
+      visibleDistance = "900";
+      fogDistance = "50";
+      fogColor = "0.8 0.8 0.9 1";
+      fogStorm1 = "0";
+      fogStorm2 = "0";
+      fogStorm3 = "0";
+      fogVolume1 = "0 0 0";
+      fogVolume2 = "0 0 0";
+      fogVolume3 = "0 0 0";
+      fogVolumeColor1 = "128 128 128 -2.22768e+038";
+      fogVolumeColor2 = "128 128 128 0";
+      fogVolumeColor3 = "128 128 128 -1.70699e+038";
+      windVelocity = "5 1 0";
+      windEffectPrecipitation = "1";
+      SkySolidColor = "0.6 0.6 0.6 1";
+      useSkyTextures = "1";
+      renderBottomTexture = "0";
+      noRenderBans = "0";
+   };
+   new Sun() {
+      canSaveDynamicFields = "1";
+      azimuth = "45";
+      elevation = "45";
+      color = "0.35 0.35 0.35 1";
+      ambient = "0.15 0.15 0.27 1";
+      CastsShadows = "1";
+         direction = "0.57735 0.57735 -0.57735";
+         position = "0 0 0";
+         scale = "1 1 1";
+         rotation = "1 0 0 0";
+   };
+   new TerrainBlock(Terrain) {
+      canSaveDynamicFields = "1";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      detailTexture = "~/data/terrains/details/snowdetail04.png";
+      terrainFile = "./stronghold.ter";
+      squareSize = "8";
+      bumpScale = "8";
+      bumpOffset = "0.01";
+      zeroBumpScale = "8";
+      tile = "1";
+         locked = "true";
+         position = "-1024 -1024 0";
+   };
+   new WaterBlock(water) {
+      canSaveDynamicFields = "1";
+      position = "-1024 -1024 0";
+      rotation = "1 0 0 0";
+      scale = "2048 2048 200";
+      UseDepthMask = "1";
+      surfaceTexture = "~/data/water/water.png";
+      ShoreTexture = "~/data/water/wateredge.jpg";
+      envMapOverTexture = "~/data/skies/day_0007";
+      envMapUnderTexture = "~/data/terrains/grassland/sand";
+      specularMaskTex = "~/data/water/specmask.png";
+      liquidType = "OceanWater";
+      density = "1";
+      viscosity = "15";
+      waveMagnitude = "1";
+      surfaceOpacity = "0.75";
+      envMapIntensity = "0.2";
+      TessSurface = "20";
+      TessShore = "30";
+      SurfaceParallax = "0.2";
+      FlowAngle = "240";
+      FlowRate = "0.05";
+      DistortGridScale = "0.1";
+      DistortMag = "0.02";
+      DistortTime = "0.8";
+      ShoreDepth = "6";
+      DepthGradient = "1";
+      MinAlpha = "0.1";
+      MaxAlpha = "1";
+      tile = "1";
+      removeWetEdges = "0";
+      specularColor = "0 0.1 0.2 1";
+      specularPower = "20";
+         envMapTexture = "~/data/skies/day_0007";
+   };
+   new Precipitation(HeavySnow) {
+      canSaveDynamicFields = "1";
+      position = "359.332 321.367 218.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      nameTag = "HeavySnow";
+      dataBlock = "HeavySnow";
+      minSpeed = "0.5";
+      maxSpeed = "1";
+      minMass = "5";
+      maxMass = "10";
+      maxTurbulence = "0.1";
+      turbulenceSpeed = "0.2";
+      rotateWithCamVel = "1";
+      useTurbulence = "0";
+      numDrops = "1000";
+      boxWidth = "200";
+      boxHeight = "100";
+      doCollision = "1";
+   };
+   new Precipitation(HeavyRain2) {
+      canSaveDynamicFields = "1";
+      position = "378.683 305.37 218.392";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      nameTag = "HeavyRain2";
+      dataBlock = "HeavyRain2";
+      minSpeed = "0.5";
+      maxSpeed = "1";
+      minMass = "5";
+      maxMass = "10";
+      maxTurbulence = "0.1";
+      turbulenceSpeed = "0.2";
+      rotateWithCamVel = "1";
+      useTurbulence = "0";
+      numDrops = "250";
+      boxWidth = "200";
+      boxHeight = "100";
+      doCollision = "1";
+   };
+   new SimGroup(PlayerDropPoints) {
+      canSaveDynamicFields = "1";
+
+      new SpawnSphere() {
+         canSaveDynamicFields = "1";
+         position = "404 145 235";
+         rotation = "0 0 1 180";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+      new SpawnSphere() {
+         canSaveDynamicFields = "1";
+         position = "405.5 145 235";
+         rotation = "0 0 1 180";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+      new SpawnSphere() {
+         canSaveDynamicFields = "1";
+         position = "402.5 145 235";
+         rotation = "0 0 1 180";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+      new SpawnSphere() {
+         canSaveDynamicFields = "1";
+         position = "407 145 235";
+         rotation = "0 0 1 180";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+      new SpawnSphere() {
+         canSaveDynamicFields = "1";
+         position = "401 145 235";
+         rotation = "0 0 1 180";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+   };
+   new SimGroup(CameraLocations) {
+      canSaveDynamicFields = "1";
+
+      new Marker(loc01) {
+         canSaveDynamicFields = "1";
+         position = "403.809 139 237.6";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         seqNum = "1";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+   };
+   new SimGroup(Docks) {
+      canSaveDynamicFields = "1";
+
+      new InteriorInstance(dock01) {
+         canSaveDynamicFields = "1";
+         position = "328.594 196.081 202.915";
+         rotation = "0 0 1 84.9802";
+         scale = "1 1 1";
+         interiorFile = "~/data/interiors/dock/dock.dif";
+         useGLLighting = "0";
+         showTerrainInside = "0";
+      };
+      new InteriorInstance() {
+         canSaveDynamicFields = "1";
+         position = "299.696 175.752 202.6";
+         rotation = "0 0 -1 49.2746";
+         scale = "1 1 1";
+         interiorFile = "~/data/interiors/dock/dock.dif";
+         useGLLighting = "0";
+         showTerrainInside = "0";
+      };
+      new InteriorInstance() {
+         canSaveDynamicFields = "1";
+         position = "266.235 106.021 202.6";
+         rotation = "0 0 -1 50.0301";
+         scale = "1 1 1";
+         interiorFile = "~/data/interiors/dock/dock.dif";
+         useGLLighting = "0";
+         showTerrainInside = "0";
+      };
+   };
+   new SimGroup(Cottages) {
+      canSaveDynamicFields = "1";
+
+      new InteriorInstance() {
+         canSaveDynamicFields = "1";
+         position = "376.075 333.165 227.003";
+         rotation = "0 0 -1 19.4806";
+         scale = "1 1 1";
+         interiorFile = "~/data/interiors/cottage/cottage.dif";
+         useGLLighting = "0";
+         showTerrainInside = "0";
+      };
+      new InteriorInstance() {
+         canSaveDynamicFields = "1";
+         position = "386.509 288.344 229.725";
+         rotation = "0 0 1 38.9611";
+         scale = "1 1 1";
+         interiorFile = "~/data/interiors/cottage/cottage.dif";
+         useGLLighting = "0";
+         showTerrainInside = "0";
+      };
+      new InteriorInstance() {
+         canSaveDynamicFields = "1";
+         position = "395.142 344.384 226.965";
+         rotation = "0 0 1 162.147";
+         scale = "1 1 1";
+         interiorFile = "~/data/interiors/cottage/cottage.dif";
+         useGLLighting = "0";
+         showTerrainInside = "0";
+      };
+   };
+   new SimGroup(Campfires) {
+      canSaveDynamicFields = "1";
+
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "360.173 309.959 217.714";
+         rotation = "1 0 0 0.573347";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/campfires/campfire.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+   };
+   new SimGroup(Trees) {
+      canSaveDynamicFields = "1";
+
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "524.523 253.72 245.976";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/Winter/TreeNoSnow02.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "504.595 281.065 233.399";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/Winter/TreeNoSnow03.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "498.963 306.772 230.653";
+         rotation = "0 0 1 52.7121";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/Winter/TreeNoSnow05.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "501.037 303.095 231.739";
+         rotation = "0 0 -1 17.1887";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/Winter/TreeNoSnow06.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "496.104 343.13 228.446";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/Winter/TreeNoSnow01.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "450.799 296.189 218.947";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/Winter/TreeNoSnow04.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "459.56 344.796 221.067";
+         rotation = "0 0 1 71.6197";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/Winter/TreeNoSnow07.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "412.289 230.488 218.746";
+         rotation = "0 0 1 154.126";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/Winter/TreeNoSnow07.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "405.861 222.959 217.347";
+         rotation = "0 0 -1 66.4631";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/Winter/TreeNoSnow05.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "400.448 273.974 219.047";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/Winter/TreeNoSnow02.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "412.831 274.901 218.715";
+         rotation = "0 0 1 134.645";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/Winter/TreeNoSnow03.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "493.288 210.446 212.868";
+         rotation = "0.017813 0.0249934 -0.999529 109.07";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/Winter/TreeNoSnow06.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "350.612 -21.1312 226.038";
+         rotation = "0 0 1 171.887";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/Winter/TreeNoSnow04.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "307.67 -16.4068 217.305";
+         rotation = "0 0 1 52.7121";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/Winter/TreeNoSnow05.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "243.009 272.398 245.239";
+         rotation = "0 0 1 134.645";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/Winter/TreeNoSnow03.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "250.07 281.638 245.905";
+         rotation = "0 0 1 11.4591";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/Winter/TreeNoSnow06.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "222.935 173.167 221.18";
+         rotation = "0 0 1 123.759";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/Winter/TreeNoSnow05.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "221.534 168.428 221.719";
+         rotation = "0 0 -1 52.7121";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/Winter/TreeNoSnow04.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "358.645 387.958 222.506";
+         rotation = "0 0 1 27.5019";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/Winter/TreeNoSnow07.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "348.581 388.043 224.913";
+         rotation = "0 0 1 217.151";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/Winter/TreeNoSnow06.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "297.537 344.122 218.621";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/Winter/TreeNoSnow03.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "298.407 349.484 217.961";
+         rotation = "0 0 -1 17.1887";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/Winter/TreeNoSnow06.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "507.582 290.966 233.185";
+         rotation = "0 0 1 102.559";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/Winter/TreeNoSnow01.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "419.147 272.586 220.084";
+         rotation = "0 0 1 230";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/Winter/TreeNoSnow01.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+   };
+   new SimGroup(CottageFires) {
+      canSaveDynamicFields = "1";
+
+      new ParticleEmitterNode(Fire2) {
+         canSaveDynamicFields = "1";
+         position = "359.73 310.39 218.502";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "ChimneyFireEmitterNode";
+         emitter = "ChimneyFireEmitter";
+         velocity = "1";
+      };
+   };
+   new SimGroup(lights) {
+      canSaveDynamicFields = "1";
+
+      new sgLightObject() {
+         canSaveDynamicFields = "1";
+         position = "193.578 132.005 262.696";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "CottageLight";
+         Enable = "1";
+         IconSize = "1";
+         ParticleColorAttenuation = "1";
+      };
+      new sgLightObject() {
+         canSaveDynamicFields = "1";
+         position = "425.867 259.693 226.136";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "CottageLight";
+         Enable = "1";
+         IconSize = "1";
+         ParticleColorAttenuation = "1";
+      };
+      new sgLightObject() {
+         canSaveDynamicFields = "1";
+         position = "421.592 351.151 223.226";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "CottageLight";
+         Enable = "1";
+         IconSize = "1";
+         ParticleColorAttenuation = "1";
+      };
+      new sgLightObject() {
+         canSaveDynamicFields = "1";
+         position = "345.794 328.384 224.148";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "CottageLight";
+         Enable = "1";
+         IconSize = "1";
+         ParticleColorAttenuation = "1";
+      };
+      new sgLightObject() {
+         canSaveDynamicFields = "1";
+         position = "470.895 200.762 218.336";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "CottageLight";
+         Enable = "1";
+         IconSize = "1";
+         ParticleColorAttenuation = "1";
+      };
+      new sgLightObject() {
+         canSaveDynamicFields = "1";
+         position = "449.755 200.911 238.518";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "CottageLight";
+         Enable = "1";
+         IconSize = "1";
+         ParticleColorAttenuation = "1";
+      };
+      new sgLightObject() {
+         canSaveDynamicFields = "1";
+         position = "387.971 -47.4861 246.88";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "CottageLight";
+         Enable = "1";
+         IconSize = "1";
+         ParticleColorAttenuation = "1";
+      };
+      new sgLightObject() {
+         canSaveDynamicFields = "1";
+         position = "394.565 -34.884 226.707";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "CottageLight";
+         Enable = "1";
+         IconSize = "1";
+         ParticleColorAttenuation = "1";
+      };
+      new sgLightObject() {
+         canSaveDynamicFields = "1";
+         position = "199.229 144.96 256.015";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "CottageLight";
+         Enable = "1";
+         IconSize = "1";
+         ParticleColorAttenuation = "1";
+      };
+      new sgLightObject() {
+         canSaveDynamicFields = "1";
+         position = "193.685 131.505 234.27";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "CottageLight";
+         Enable = "1";
+         IconSize = "1";
+         ParticleColorAttenuation = "1";
+      };
+   };
+   new SimGroup(Rocks) {
+      canSaveDynamicFields = "1";
+
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "507.16 358.694 238.691";
+         rotation = "-0.516288 -0.778452 -0.357014 83.2297";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/rocks/rock2.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "225.812 123.1 201.358";
+         rotation = "-0.371298 -0.181625 0.910577 104.652";
+         scale = "3 3 3";
+         shapeName = "~/data/shapes/rocks/rock1.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "226.784 173.475 219.502";
+         rotation = "-0.0283119 0.981883 0.18736 234.69";
+         scale = "2 2 2";
+         shapeName = "~/data/shapes/rocks/rock1.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+   };
+   new Path(CameraPath01) {
+      canSaveDynamicFields = "1";
+      isLooping = "1";
+
+      new Marker(P01Marker01) {
+         canSaveDynamicFields = "1";
+         position = "404.504 137.983 238";
+         rotation = "0.751146 0.0855764 -0.654566 19.7469";
+         scale = "1 1 1";
+         seqNum = "1";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(P01Marker02) {
+         canSaveDynamicFields = "1";
+         position = "398.312 137.063 239";
+         rotation = "0 0 1 34.4711";
+         scale = "1 1 1";
+         seqNum = "2";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(P01Marker03) {
+         canSaveDynamicFields = "1";
+         position = "395.655 142.714 238.5";
+         rotation = "0 0 1 80.1684";
+         scale = "1 1 1";
+         seqNum = "3";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(P01Marker04) {
+         canSaveDynamicFields = "1";
+         position = "390.67 147.391 238";
+         rotation = "0 0 1 103.132";
+         scale = "1 1 1";
+         seqNum = "4";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(P01Marker05) {
+         canSaveDynamicFields = "1";
+         position = "396.084 156.957 238";
+         rotation = "0 0 1 147.823";
+         scale = "1 1 1";
+         seqNum = "5";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(P01Marker06) {
+         canSaveDynamicFields = "1";
+         position = "408.612 155.498 239";
+         rotation = "0 0 1 207.411";
+         scale = "1 1 1";
+         seqNum = "6";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(P01Marker07) {
+         canSaveDynamicFields = "1";
+         position = "413.712 146.303 239";
+         rotation = "0 0 -1 102.742";
+         scale = "1 1 1";
+         seqNum = "7";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(P01Marker08) {
+         canSaveDynamicFields = "1";
+         position = "413.219 137.983 238";
+         rotation = "0 0 -1 53.5304";
+         scale = "1 1 1";
+         seqNum = "8";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+   };
+};
+//--- OBJECT WRITE END ---

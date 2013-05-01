@@ -1,0 +1,12 @@
+!!ATIfs1.0
+
+StartConstants;
+   CONSTANT c0 = { 0.3, 0.59, 0.11, 1.0 };
+EndConstants;
+
+StartOutputPass;
+   SampleMap r0, t0.str;
+   
+   DOT3 r0.rgb, r0, c0;
+   MOV r0.a, 1;
+EndPass;

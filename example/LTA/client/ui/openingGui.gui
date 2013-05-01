@@ -1,0 +1,30 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(OpeningGui) {
+   canSaveDynamicFields = "0";
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   position = "0 0";
+   Extent = "800 600";
+   MinExtent = "8 2";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+
+   new GuiTheoraCtrl(Theora) {
+      canSaveDynamicFields = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      position = "0 0";
+      Extent = "800 600";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      done = "0";
+      stopOnSleep = "0";
+      backgroundColor = "0 0 0 255";
+   };
+};
+//--- OBJECT WRITE END ---

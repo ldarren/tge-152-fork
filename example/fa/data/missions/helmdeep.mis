@@ -1,0 +1,243 @@
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+   canSaveDynamicFields = "1";
+
+   new ScriptObject(MissionInfo) {
+         name = "Helm Deep";
+         descLines = "1";
+         desc0 = "A RealmWars: Frontal Assault mission.";
+   };
+   new MissionArea(MissionArea) {
+      canSaveDynamicFields = "1";
+      Area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      canSaveDynamicFields = "1";
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      materialList = "creator/data/skies/sky_day.dml";
+      cloudHeightPer[0] = "0.349971";
+      cloudHeightPer[1] = "0.3";
+      cloudHeightPer[2] = "0.199973";
+      cloudSpeed1 = "0.0005";
+      cloudSpeed2 = "0.001";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      fogDistance = "300";
+      fogColor = "0.6 0.6 0.6 1";
+      fogStorm1 = "0";
+      fogStorm2 = "0";
+      fogStorm3 = "0";
+      fogVolume1 = "0 0 0";
+      fogVolume2 = "0 0 0";
+      fogVolume3 = "0 0 0";
+      fogVolumeColor1 = "128 128 128 -2.22768e+038";
+      fogVolumeColor2 = "128 128 128 0";
+      fogVolumeColor3 = "128 128 128 -1.70699e+038";
+      windVelocity = "1 1 0";
+      windEffectPrecipitation = "1";
+      SkySolidColor = "0.6 0.6 0.6 1";
+      useSkyTextures = "1";
+      renderBottomTexture = "0";
+      noRenderBans = "0";
+         locked = "true";
+   };
+   new Sun() {
+      canSaveDynamicFields = "1";
+      azimuth = "0";
+      elevation = "35";
+      color = "0.6 0.6 0.6 1";
+      ambient = "0.4 0.4 0.4 1";
+      CastsShadows = "1";
+         position = "0 0 0";
+         direction = "0.57735 0.57735 -0.57735";
+         locked = "true";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+   };
+   new TerrainBlock(Terrain) {
+      canSaveDynamicFields = "1";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      detailTexture = "~/data/terrains/details/detail_demo.jpg";
+      terrainFile = "./helmdeep.ter";
+      squareSize = "8";
+      bumpScale = "2";
+      bumpOffset = "0.007";
+      zeroBumpScale = "7";
+      tile = "1";
+         position = "-1024 -1024 0";
+         locked = "true";
+   };
+   new Forest(newForest) {
+      canSaveDynamicFields = "1";
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      randomSeed = "679";
+      forestCount = "19795";
+      treeDistance = "1";
+      minOcclusionLevel = "3";
+      maxOcclusionLevel = "5";
+      singleBlock = "0";
+   };
+   new SimGroup(PlayerDropPoints) {
+      canSaveDynamicFields = "1";
+
+      new SpawnSphere() {
+         canSaveDynamicFields = "1";
+         position = "-27.5728 95.487 146.761";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "10";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+      new SpawnSphere() {
+         canSaveDynamicFields = "1";
+         position = "273.601 458.55 148.217";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "10";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+      new SpawnSphere() {
+         canSaveDynamicFields = "1";
+         position = "149.556 171.906 175.872";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "10";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+   };
+   new TSStatic(myTree) {
+      canSaveDynamicFields = "1";
+      internalName = "firstTree";
+      position = "72.6 109.429 128.2";
+      rotation = "1 0 0 0";
+      scale = "2 2 2";
+      shapeName = "~/data/shapes/trees/oak2.dts";
+      receiveSunLight = "1";
+      receiveLMLighting = "1";
+      useAdaptiveSelfIllumination = "0";
+      useCustomAmbientLighting = "0";
+      customAmbientSelfIllumination = "0";
+      customAmbientLighting = "0 0 0 1";
+      useLightingOcclusion = "1";
+   };
+   new InteriorInstance(myHouse) {
+      canSaveDynamicFields = "1";
+      position = "19.8 108.2 132.6";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/tower/tower.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new TSStatic(signal_post) {
+      canSaveDynamicFields = "1";
+      position = "-144.6 168 181.4";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      shapeName = "~/data/shapes/torches/brazier.dts";
+      receiveSunLight = "1";
+      receiveLMLighting = "1";
+      useAdaptiveSelfIllumination = "0";
+      useCustomAmbientLighting = "0";
+      customAmbientSelfIllumination = "0";
+      customAmbientLighting = "0 0 0 1";
+      useLightingOcclusion = "1";
+   };
+   new SimGroup(foods) {
+      canSaveDynamicFields = "1";
+
+      new StaticShape() {
+         canSaveDynamicFields = "1";
+         position = "-66.4359 131.535 151.141";
+         rotation = "0 0 1 18.3349";
+         scale = "1 1 1";
+         dataBlock = "OrcFood";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+   };
+   new Trigger(TempleTrigger) {
+      canSaveDynamicFields = "1";
+      position = "-87.8104 158.254 135.265";
+      rotation = "1 0 0 0";
+      scale = "50 50 50";
+      dataBlock = "TempleOfEvilTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new ParticleEmitterNode(SmokeFx) {
+      canSaveDynamicFields = "1";
+      position = "-144.6 168 183.4";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "ChimneySmokeEmitterNode";
+      emitter = "ChimneySmokeEmitter";
+      velocity = "1";
+   };
+   new ParticleEmitterNode(FireFx) {
+      canSaveDynamicFields = "1";
+      position = "-144.6 168 183.3";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "ChimneyFireEmitterNode";
+      emitter = "ChimneyFireEmitter";
+      velocity = "1";
+   };
+   new Path(AI_Path1) {
+      canSaveDynamicFields = "1";
+      isLooping = "1";
+
+      new Marker(post01) {
+         canSaveDynamicFields = "1";
+         position = "-94.4104 84.486 152.143";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         seqNum = "1";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(post02) {
+         canSaveDynamicFields = "1";
+         position = "-11.6699 184.014 126.895";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         seqNum = "2";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(post03) {
+         canSaveDynamicFields = "1";
+         position = "-28.2104 116.595 140.276";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         seqNum = "3";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+   };
+};
+//--- OBJECT WRITE END ---

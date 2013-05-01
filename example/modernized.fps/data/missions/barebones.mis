@@ -1,0 +1,192 @@
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+   canSaveDynamicFields = "1";
+
+   new ScriptObject(MissionInfo) {
+         name = "Barebones";
+         desc0 = "Nice empty mission for testing purposes";
+   };
+   new MissionArea(MissionArea) {
+      canSaveDynamicFields = "1";
+      Area = "-152 -352 1040 1056";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      canSaveDynamicFields = "1";
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      materialList = "~/data/skies/sky_overcast.dml";
+      cloudHeightPer[0] = "0.1";
+      cloudHeightPer[1] = "0.2";
+      cloudHeightPer[2] = "0";
+      cloudSpeed1 = "0.001";
+      cloudSpeed2 = "0.001";
+      cloudSpeed3 = "0.001";
+      visibleDistance = "900";
+      fogDistance = "50";
+      fogColor = "0.8 0.8 0.9 1";
+      fogStorm1 = "0";
+      fogStorm2 = "0";
+      fogStorm3 = "0";
+      fogVolume1 = "0 0 0";
+      fogVolume2 = "0 0 0";
+      fogVolume3 = "0 0 0";
+      fogVolumeColor1 = "128 128 128 -2.22768e+038";
+      fogVolumeColor2 = "128 128 128 0";
+      fogVolumeColor3 = "128 128 128 -1.70699e+038";
+      windVelocity = "5 1 0";
+      windEffectPrecipitation = "1";
+      SkySolidColor = "0.6 0.6 0.6 1";
+      useSkyTextures = "1";
+      renderBottomTexture = "0";
+      noRenderBans = "0";
+   };
+   new Sun() {
+      canSaveDynamicFields = "1";
+      azimuth = "45";
+      elevation = "45";
+      color = "0.35 0.35 0.35 1";
+      ambient = "0.15 0.15 0.27 1";
+      CastsShadows = "1";
+         position = "0 0 0";
+         direction = "0.57735 0.57735 -0.57735";
+         scale = "1 1 1";
+         rotation = "1 0 0 0";
+   };
+   new TerrainBlock(Terrain) {
+      canSaveDynamicFields = "1";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      detailTexture = "~/data/terrains/details/snowdetail04.png";
+      terrainFile = "./barebones.ter";
+      squareSize = "8";
+      bumpScale = "8";
+      bumpOffset = "0.01";
+      zeroBumpScale = "8";
+      tile = "1";
+         locked = "true";
+         position = "-1024 -1024 0";
+   };
+   new WaterBlock(Water) {
+      canSaveDynamicFields = "1";
+      position = "-1024 -1024 0";
+      rotation = "1 0 0 0";
+      scale = "2048 2048 200";
+      UseDepthMask = "1";
+      surfaceTexture = "~/data/water/water.png";
+      ShoreTexture = "~/data/water/wateredge.jpg";
+      envMapOverTexture = "~/data/skies/day_0007";
+      envMapUnderTexture = "~/data/terrains/grassland/sand";
+      specularMaskTex = "~/data/water/specmask.png";
+      liquidType = "OceanWater";
+      density = "1";
+      viscosity = "15";
+      waveMagnitude = "1";
+      surfaceOpacity = "0.75";
+      envMapIntensity = "0.2";
+      TessSurface = "20";
+      TessShore = "30";
+      SurfaceParallax = "0.2";
+      FlowAngle = "240";
+      FlowRate = "0.05";
+      DistortGridScale = "0.1";
+      DistortMag = "0.02";
+      DistortTime = "0.8";
+      ShoreDepth = "6";
+      DepthGradient = "1";
+      MinAlpha = "0.1";
+      MaxAlpha = "1";
+      tile = "1";
+      removeWetEdges = "0";
+      specularColor = "0 0.1 0.2 1";
+      specularPower = "20";
+         envMapTexture = "~/data/skies/day_0007";
+   };
+   new SimGroup(PlayerDropPoints) {
+      canSaveDynamicFields = "1";
+
+      new SpawnSphere() {
+         canSaveDynamicFields = "1";
+         position = "450.044 277.737 222.17";
+         rotation = "0 0 1 5.15676";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         Radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+   };
+   new SimGroup(Paths) {
+      canSaveDynamicFields = "1";
+
+      new Path(Path1) {
+         canSaveDynamicFields = "1";
+         isLooping = "1";
+
+         new Marker() {
+            canSaveDynamicFields = "1";
+            position = "461.26 292.371 221.011";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Spline";
+         };
+         new Marker() {
+            canSaveDynamicFields = "1";
+            position = "447.831 215.049 212.617";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Spline";
+         };
+         new Marker() {
+            canSaveDynamicFields = "1";
+            position = "318.054 333.549 218.804";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "3";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Spline";
+         };
+         new Marker() {
+            canSaveDynamicFields = "1";
+            position = "326.058 411.942 220.816";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "4";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Spline";
+         };
+         new Marker() {
+            canSaveDynamicFields = "1";
+            position = "427.95 361.661 223.394";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "5";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Spline";
+         };
+      };
+   };
+   new InteriorInstance() {
+      canSaveDynamicFields = "1";
+      position = "451.806 303.687 220.637";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/constructor/test.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+};
+//--- OBJECT WRITE END ---

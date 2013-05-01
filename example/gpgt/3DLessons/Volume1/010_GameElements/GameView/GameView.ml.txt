@@ -1,0 +1,10 @@
+<spush><just:center><font:Arial Bold:18><color:FFFF00>
+Game Views<spop>
+<just:left><font:Arial:16><br><lmargin%:5>
+Explores GameView concepts, and the effects of fields and methods:<br><br>
+<font:Arial:16>
+<color:FF2222>
+- POV Settings<br>
+- FOV Settings<br>
+- setFOV()<br>
+- setZoomSpeed()<br>

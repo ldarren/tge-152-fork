@@ -1,0 +1,73 @@
+First pass:  enumerate scene...
+
+Processing Node Bounds with parent ROOT
+Bounding box found
+Processing Node __mainTree with parent ROOT
+Found subtree starting at Node "__mainTree"
+
+Second pass:  put shape structure together...
+
+Adding detail named "detail2" of size 2 to subtree "__mainTree".
+Adding node "__mainTree" with parent "__mainTree" to subtree rooted on node "__mainTree".
+Adding node "__meshes" with parent "__mainTree" to subtree rooted on node "__mainTree".
+Adding node "GeoSphere2" with parent "__meshes" to subtree rooted on node "__mainTree".
+Attaching object to node.
+Adding object named "GeoSphere".
+Adding mesh of size 2 to object "GeoSphere".
+Adding node "Root" with parent "__meshes" to subtree rooted on node "__mainTree".
+
+Third pass:  Collapsing unneeded nodes...
+
+Removing node "__mainTree"
+Removing node "__meshes"
+
+Add default object states...
+
+Adding object state to 1 detail level(s) of mesh "GeoSphere".
+Adding frame.
+Object is visible.
+Object offset transform for mesh dl=0:
+    scale:            x=1.00000, y=1.00000, z=1.00000
+    stretch rotation: x=0.00000, y=0.00000, z=0.00000, w=1.00000
+    translation:      x=0.00000, y=0.00000, z=0.00000
+    actual rotation:  x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+
+Add default node states...
+
+Adding node rotation at time 0.000000 for node "GeoSphere2".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0.000000 for node "GeoSphere2".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding node rotation at time 0.000000 for node "Root".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0.000000 for node "Root".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+
+Optimizing meshes...
+
+Optimizing mesh "GeoSphere" detail level 2.
+54 verts before joining verts
+54 verts after joining verts
+80 faces before stripping
+Using Quick, dirty, & ugly stripping method.
+4 strips with average length 28.75 (range 27 to 32) and 27 reversals
+
+Shape Hierarchy:
+
+   Details:
+      detail2, Subtree 0, objectDetail 0, size 2
+
+   Subtrees:
+      Subtree 0
+         GeoSphere2 --> Object GeoSphere with following details:  2
+         Root
+
+   Sequences:
+
+   Material list:
+   material #0: "energyBall".

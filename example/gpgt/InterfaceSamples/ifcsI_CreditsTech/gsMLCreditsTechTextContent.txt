@@ -1,0 +1,11 @@
+<just:center>
+<color:FFFFFF><spush><just:center>
+<br><br>
+<font:Lucida Console:60><color:b10028><shadowcolor:001a69><shadow:1:1>War Games<spop><br><br>
+<font:Palatino LinoType:24>by<br><br>
+<font:Palatino LinoType:36>End of Everything (EOE) Games <br><br>
+
+<br><br><br><br><br><br><br><br>
+<spush><just:center>(Escape for Main Menu)<spop>
+<spop>
+

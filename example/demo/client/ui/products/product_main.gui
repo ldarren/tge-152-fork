@@ -1,0 +1,45 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(product_main) {
+   profile = "GuiModelessDialogProfile";
+   horizSizing = "right";
+   vertSizing = "bottom";
+   position = "0 0";
+   extent = "800 600";
+   minExtent = "8 2";
+   visible = "1";
+   helpTag = "0";
+ //  title = "Torque Games";
+   
+      new GuiScrollCtrl() {
+         profile = "GuiBevelLoweredProfile";
+         horizSizing = "center";
+         vertSizing = "height";
+         position = "35 35";
+         extent = "735 533";
+         minExtent = "8 8";
+         visible = "1";
+         helpTag = "0";
+         willFirstRespond = "1";
+         hScrollBar = "alwaysOff";
+         vScrollBar = "alwaysOn";
+         constantThumbHeight = "0";
+         childMargin = "0 0";
+   
+         new GuiMLTextCtrl() {
+            profile = "GuiMLTextProfile";
+            horizSizing = "width";
+            vertSizing = "height";
+            position = "2 2";
+            extent = "710 525";
+            minExtent = "8 2";
+            visible = "1";
+            helpTag = "0";
+            lineSpacing = "2";
+            allowColorChars = "0";
+            maxChars = "-1";
+            text = "main";
+            fileName = "demo/client/ui/products/product_main.txt";
+         };
+   };
+};
+//--- OBJECT WRITE END ---

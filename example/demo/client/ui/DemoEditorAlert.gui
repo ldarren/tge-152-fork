@@ -1,0 +1,61 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(DemoEditorAlert) {
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   position = "0 0";
+   Extent = "800 600";
+   MinExtent = "8 8";
+   Visible = "1";
+      helpTag = "0";
+
+   new GuiWindowCtrl() {
+      Profile = "GuiWindowProfile";
+      HorizSizing = "center";
+      VertSizing = "center";
+      position = "200 80";
+      Extent = "400 440";
+      MinExtent = "300 200";
+      Visible = "1";
+      text = "Mission Editor";
+      maxLength = "255";
+      resizeWidth = "1";
+      resizeHeight = "1";
+      canMove = "1";
+      canClose = "1";
+      canMinimize = "1";
+      canMaximize = "1";
+      MinSize = "50 50";
+      closeCommand = "Canvas.popDialog(DemoEditorAlert);";
+         helpTag = "0";
+
+      new GuiMLTextCtrl(EditorAlertText) {
+         Profile = "GuiMediumTextProfile";
+         HorizSizing = "width";
+         VertSizing = "bottom";
+         position = "20 40";
+         Extent = "380 264";
+         MinExtent = "8 8";
+         Visible = "1";
+         lineSpacing = "12";
+         allowColorChars = "1";
+         maxChars = "-1";
+            helpTag = "0";
+      };
+      new GuiButtonCtrl(OkayButton) {
+      Profile = "GuiOkayButtonProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      position = "130 370";
+      Extent = "140 30";
+      MinExtent = "8 2";
+      Visible = "1";
+      text = "Okay";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      command = "Canvas.popDialog(DemoEditorAlert);";
+      };
+   };
+
+};
+//--- OBJECT WRITE END ---

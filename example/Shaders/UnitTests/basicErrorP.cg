@@ -1,0 +1,19 @@
+// This shader should fail to compile
+struct VertexOutput
+{
+   float4 HPosition : POSITION;
+};
+
+struct pixel
+{
+   float4 color : COLOR;
+
+
+pixel main(VertexOutput IN)
+{
+   pixel OUT;
+   
+   OUT.color = float4(0.0, 0.0, 0.0, 0.0);
+   
+   return OUT;
+}

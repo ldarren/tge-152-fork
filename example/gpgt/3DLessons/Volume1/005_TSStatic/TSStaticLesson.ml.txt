@@ -1,0 +1,6 @@
+<spush><just:center><font:Arial Bold:18><color:FFFF00>
+TSStatic<spop>
+<just:left><font:Arial:16><br><lmargin%:5>
+Gives simple examples of TSStatic in use.<br><br>
+<color:FF2222>
+

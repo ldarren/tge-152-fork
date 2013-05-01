@@ -1,0 +1,7 @@
+<spush><just:center><font:Arial Bold:18><color:FFFF00>
+InteriorInstance<spop>
+<just:left><font:Arial:16><br><lmargin%:5>
+Shows sample InteriorInstance Features:<br><br>
+<color:FF2222>
+- LOD<br>
+- Re-lighting<br>

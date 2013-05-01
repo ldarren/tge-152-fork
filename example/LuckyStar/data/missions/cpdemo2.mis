@@ -1,0 +1,275 @@
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+   canSaveDynamicFields = "1";
+
+   new ScriptObject(MissionInfo) {
+         name = "Desert Storm";
+         desc0 = "Gintotama Desert, a duststorm in progress.";
+         descLines = "2";
+   };
+   new MissionArea(MissionArea) {
+      canSaveDynamicFields = "1";
+      Area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      canSaveDynamicFields = "1";
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      materialList = "~/data/skies/EnvPackSkies/sky_storm.dml";
+      cloudHeightPer[0] = "0.1";
+      cloudHeightPer[1] = "0.25";
+      cloudHeightPer[2] = "0.15";
+      cloudSpeed1 = "0.0115";
+      cloudSpeed2 = "0.011";
+      cloudSpeed3 = "0.01013";
+      visibleDistance = "250";
+      fogDistance = "0";
+      fogColor = "0.75 0.52 0.373 1";
+      fogStorm1 = "1";
+      fogStorm2 = "0";
+      fogStorm3 = "0";
+      fogVolume1 = "100 100 130";
+      fogVolume2 = "0 0 0";
+      fogVolume3 = "0 0 0";
+      fogVolumeColor1 = "128 128 128 -2.22768e+038";
+      fogVolumeColor2 = "128 128 128 0";
+      fogVolumeColor3 = "128 128 128 -1.70699e+038";
+      windVelocity = "3 1 0";
+      windEffectPrecipitation = "1";
+      SkySolidColor = "0.6 0.6 0.6 1";
+      useSkyTextures = "1";
+      renderBottomTexture = "0";
+      noRenderBans = "0";
+         locked = "true";
+   };
+   new Sun() {
+      canSaveDynamicFields = "1";
+      azimuth = "105";
+      elevation = "40";
+      color = "0.8 0.7 0.75 1";
+      ambient = "0.075 0.025 0.025 1";
+      CastsShadows = "1";
+         direction = "0.57735 0.57735 -0.57735";
+         locked = "true";
+         position = "0 0 0";
+         scale = "1 1 1";
+         rotation = "1 0 0 0";
+   };
+   new TerrainBlock(Terrain) {
+      canSaveDynamicFields = "1";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      detailTexture = "~/data/terrains/details/detail5";
+      terrainFile = "./cpdemo2.ter";
+      squareSize = "8";
+      bumpScale = "1";
+      bumpOffset = "0.01";
+      zeroBumpScale = "8";
+      tile = "1";
+         locked = "true";
+         position = "-1024 -1024 0";
+   };
+   new SimGroup(PlayerDropPoints) {
+      canSaveDynamicFields = "1";
+
+      new SpawnSphere() {
+         canSaveDynamicFields = "1";
+         position = "-10 -30 100";
+         rotation = "0 0 1 180";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+      new SpawnSphere() {
+         canSaveDynamicFields = "1";
+         position = "-8.5 -30 100";
+         rotation = "0 0 1 180";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+      new SpawnSphere() {
+         canSaveDynamicFields = "1";
+         position = "-11.5 -30 100";
+         rotation = "0 0 1 180";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+      new SpawnSphere() {
+         canSaveDynamicFields = "1";
+         position = "-7 -30 100";
+         rotation = "0 0 1 180";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+      new SpawnSphere() {
+         canSaveDynamicFields = "1";
+         position = "-13 -30 100";
+         rotation = "0 0 1 180";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+   };
+   new Path(CameraPath01) {
+      canSaveDynamicFields = "1";
+      isLooping = "1";
+
+      new Marker(P01Marker01) {
+         canSaveDynamicFields = "1";
+         position = "-3.5132 -19.3154 102.8";
+         rotation = "-0.0126791 -0.0799083 0.996722 197.974";
+         scale = "1 1 1";
+         seqNum = "1";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(P01Marker02) {
+         canSaveDynamicFields = "1";
+         position = "-0.348718 -24.9416 103.8";
+         rotation = "-0.0231132 -0.0798934 0.996535 212.164";
+         scale = "1 1 1";
+         seqNum = "2";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(P01Marker03) {
+         canSaveDynamicFields = "1";
+         position = "0.679131 -34.106 104.8";
+         rotation = "0.0406634 0.0449476 -0.998161 95.8345";
+         scale = "1 1 1";
+         seqNum = "3";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(P01Marker04) {
+         canSaveDynamicFields = "1";
+         position = "-1.29891 -41.698 104.8";
+         rotation = "0.314394 0.0853211 -0.945451 32.0312";
+         scale = "1 1 1";
+         seqNum = "4";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(P01Marker05) {
+         canSaveDynamicFields = "1";
+         position = "-12.2413 -45.8 106.8";
+         rotation = "0.894141 -0.0357847 0.446354 10.2472";
+         scale = "1 1 1";
+         seqNum = "5";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(P01Marker06) {
+         canSaveDynamicFields = "1";
+         position = "-19.9061 -33.9281 106.8";
+         rotation = "0.113293 -0.0843511 0.989975 73.8924";
+         scale = "1 1 1";
+         seqNum = "6";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(P01Marker07) {
+         canSaveDynamicFields = "1";
+         position = "-17 -23.8 107.8";
+         rotation = "0.0453888 -0.109665 0.992932 135.319";
+         scale = "1 1 1";
+         seqNum = "7";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(P01Marker08) {
+         canSaveDynamicFields = "1";
+         position = "-12.5349 -17.8605 103.8";
+         rotation = "0 0 1 179.273";
+         scale = "1 1 1";
+         seqNum = "8";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+   };
+   new SimGroup(CameraLocations) {
+      canSaveDynamicFields = "1";
+
+      new Marker(loc01) {
+         canSaveDynamicFields = "1";
+         position = "-10 -34.6 102.2";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         seqNum = "1";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+   };
+   new Precipitation(Sandstorm) {
+      canSaveDynamicFields = "1";
+      position = "-3.2741 -228.279 99.7809";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      nameTag = "Sandstorm";
+      dataBlock = "Sandstorm";
+      minSpeed = "1";
+      maxSpeed = "1";
+      minMass = "0.5";
+      maxMass = "1";
+      maxTurbulence = "10";
+      turbulenceSpeed = "0.1";
+      rotateWithCamVel = "0";
+      useTurbulence = "1";
+      numDrops = "1700";
+      boxWidth = "150";
+      boxHeight = "100";
+      doCollision = "0";
+   };
+   new Precipitation(dust) {
+      canSaveDynamicFields = "1";
+      position = "25.7111 -201.737 100.477";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      nameTag = "Dust";
+      dataBlock = "dustspecks";
+      minSpeed = "0.1";
+      maxSpeed = "0.7";
+      minMass = "1";
+      maxMass = "2";
+      maxTurbulence = "5";
+      turbulenceSpeed = "1";
+      rotateWithCamVel = "0";
+      useTurbulence = "1";
+      numDrops = "2600";
+      boxWidth = "200";
+      boxHeight = "100";
+      doCollision = "0";
+   };
+};
+//--- OBJECT WRITE END ---

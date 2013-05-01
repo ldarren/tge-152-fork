@@ -1,0 +1,18 @@
+struct VertexOutput
+{
+   float4 HPosition : POSITION;
+};
+
+struct pixel
+{
+   float4 color : COLOR;
+};
+
+pixel main(VertexOutput IN)
+{
+   pixel OUT;
+   
+   OUT.color = float4(1.0, 0.0, 0.0, 1.0);
+   
+   return OUT;
+}

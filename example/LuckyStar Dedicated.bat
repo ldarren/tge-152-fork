@@ -1,0 +1,1 @@
+torqueDemo -dedicated -game LuckyStar -mission LuckyStar/data/missions/stronghold.mis

@@ -1,0 +1,138 @@
+# MMO Lite 2007
+# Master Server - handle user registration, authentication
+
+#register "current working folder as system path"
+#there is probably a better way of doing this (change from Python 2.4->2.5)
+import sys, os
+sys.path.append(os.getcwd())
+
+from twisted.spread import pb
+from twisted.cred import checkers, credentials, portal, error as credError
+from twisted.internet import reactor, defer
+from twisted.python import log, logfile
+from zope.interface import Interface, implements
+
+from mmolite.common.define import *
+from mmolite.common.exceptions import *
+from mmolite.master.avatars import *
+from mmolite.master.db_serv import Accounts, Peers, MasterDBObject
+from mmolite.common.util import getOptions
+from mmolite.common.db_serv import Clients
+
+class MasterPasswordChecker(object):
+    implements(checkers.ICredentialsChecker)
+    credentialInterfaces = (credentials.IUsernamePassword, 
+                            credentials.IUsernameHashedPassword)
+                            
+    def __init__(self):
+        return
+        
+    def requestAvatarId(self, credentials):
+        name = credentials.username
+        if name == "signup": return (name, 0) # new user request for service
+        
+        try:
+            row = Accounts.byUsername(name)
+        except:
+            print "Login Failed: username[%s]"%(name)
+            return failure.Failure(credError.UnauthorizedLogin("Bad username"))
+        
+        return defer.maybeDeferred(credCred.checkPassword, row.password).addCallback(
+            self._checkedPassword, row.username, row.role)
+            
+    def _checkedPassword(self, matched, name, role):
+        if matched:
+            print "User login: username[%s] role[%s]"%(name, role)
+            return (name, role)
+        else:
+            print "Login Failed: username[%s] role[%s]"%(name, role)
+            return failure.Failure(credError.UnauthorizedLogin("Bad password"))
+ 
+class MasterRealm(object):
+    implements(portal.IRealm)
+    
+    def __init__(self):
+        self.userList = []
+        self.peerList = []
+        return
+        
+    def requestAvatar(self, avatarId, mind, *interfaces):
+        if not pb.IPerspective in interfaces:
+            raise NotImplementedError, "No supported avatar Interface."
+        else:
+            name, role = avatarId[0], avatarId[1]
+
+            if role & Accounts.Server == Accounts.Server:
+                avatar = ServerPerspective(name, mind, self)
+                self.peerList.append(avatar)
+            elif role & Accounts.Admin == Accounts.Admin:
+                avatar = AdminPerspective(name, mind, self)
+                self.userList.append(avatar)
+            elif role & Accounts.GameMaster == Accounts.GameMaster:
+                avatar = GameMasterPerspective(name, mind, self)
+                self.userList.append(avatar)
+            elif role & Accounts.PremiumMember == Accounts.PremiumMember:
+                avatar = PremiumMemberPerspective(name, mind, self)
+                self.userList.append(avatar)
+            elif role & Accounts.Member == Accounts.Member:
+                avatar = MemberPerspective(name, mind, self)
+                self.userList.append(avatar)
+            else:
+                avatar = NewUserPerspective(mind, self)
+                self.userList.append(avatar)
+                
+            return pb.IPerspective, avatar, avatar.logout
+            
+    def updateLoads(self):
+        for peer in self.peerList:
+            peer.updateLoad()
+            
+    def changeServer(self, zone, id, name, authenticID,mode):
+        if len(self.peerList) == 0: raise ServerNotFoundError("Server not found")
+        self.peerList[0].newClient(id, name, authenticID,mode)
+        return self.peerList[0].getInfo()
+            
+    def logout(self, avatar):
+        if avatar in self.userList:
+            self.userList.remove(avatar)
+        elif avatar in self.peerList:
+            self.peerList.remove(avatar)
+
+def keepAlive(realm):
+    reactor.callLater(300, keepAlive, realm) # call every 5 mins
+    realm.updateLoads()
+
+def main():
+    OPTIONS, argv = getOptions('mmolite/config/servers.cfg', 'master server', sys.argv)
+    
+    dbconn = MasterDBObject('master.db', 'mmolite/data')
+    
+    if OPTIONS.setup: 
+        print "Setting up Master Server..."
+        
+        dbconn.resetDB()
+        user = Accounts(username = "<1>Master", password = "retsam", role = Accounts.Server)
+        user = Accounts(username = "<2>Character", password = "retcarahc", role = Accounts.Server)
+        user = Accounts(username = "<3>World", password = "dlrow", role = Accounts.Server)
+        user = Accounts(username = "<4>Cluster", password = "retsulc", role = Accounts.Server)
+        user = Accounts(username = "<5>Zone", password = "enoz", role = Accounts.Server)
+        user = Accounts(username = "darren", password = "nerrad", role = Accounts.Admin)
+        print "Successfully"
+        return
+    else: 
+        print "Initialize Master Server database..."
+        dbconn.startDB()
+        Peers.dropTable(ifExists=True); Peers.createTable()
+        print "Master Server Listening to port: %d"%OPTIONS.master_port
+        
+        realm = MasterRealm()
+        p = portal.Portal(realm)
+        p.registerChecker(MasterPasswordChecker())
+        reactor.listenTCP(OPTIONS.master_port, pb.PBServerFactory(p))
+
+        server = Peers(name="Master Server", ipAddress="127.0.0.1", port=OPTIONS.master_port, load=0, type= Peers.Master)
+        keepAlive(realm)
+        reactor.run()
+
+if __name__ == '__main__':
+    main()

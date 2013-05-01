@@ -1,0 +1,57 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiChunkedBitmapCtrl(ifcsCreditsTech) {
+   profile = "GuiDefaultProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "800 600";
+   minExtent = "8 2";
+   visible = "1";
+   bitmap = "./back";
+   useVariable = "0";
+   tile = "0";
+
+   new GuiButtonCtrl() {
+      profile = "GuiDefaultProfile";
+      horizSizing = "relative";
+      vertSizing = "relative";
+      position = "-1 -1";
+      extent = "1 1";
+      minExtent = "1 1";
+      visible = "1";
+      command = "Canvas.setContent(ifcsMainMenuTech);";
+      accelerator = "escape";
+      groupNum = "-1";
+      buttonType = "PushButton";
+   };
+
+   new GuiScrollCtrl() {
+      profile = "gsTechCreditsScrollProfile";
+      horizSizing = "center";
+      vertSizing = "relative";
+      position = "150 50";
+      extent = "500 500";
+      minExtent = "8 2";
+      visible = "1";
+      willFirstRespond = "1";
+      hScrollBar = "alwaysOff";
+      vScrollBar = "alwaysOff";
+      constantThumbHeight = "0";
+      childMargin = "4 4";
+
+      new GuiMLTextCtrl(ifcsCreditsTechMLText) {
+         profile = "gsTechCreditsMLTextProfile";
+         horizSizing = "width";
+         vertSizing = "bottom";
+         position = "6 6";
+         extent = "500 500";
+         minExtent = "8 2";
+         visible = "1";
+         lineSpacing = "2";
+         allowColorChars = "0";
+         maxChars = "-1";
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+

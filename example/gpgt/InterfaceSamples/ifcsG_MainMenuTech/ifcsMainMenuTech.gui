@@ -1,0 +1,73 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiChunkedBitmapCtrl(ifcsMainMenuTech) {
+   profile = "GuiDefaultProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "640 480";
+   minExtent = "8 2";
+   visible = "1";
+   bitmap = "./back";
+   useVariable = "0";
+   tile = "0";
+
+   new GuiBitmapButtonCtrl(TechPlayButton) {
+      profile = "ifcsMainMenuButtonTechProfile";
+      horizSizing = "relative";
+      vertSizing = "relative";
+      position = "354 120";
+      extent = "240 80";
+      minExtent = "8 2";
+      visible = "1";
+      command = "Canvas.setContent(GameGUIsMenu0);";
+      text = "back";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      bitmap = "./play";
+   };
+   new GuiBitmapButtonCtrl(TechOptionsButton) {
+      profile = "ifcsMainMenuButtonTechProfile";
+      horizSizing = "relative";
+      vertSizing = "relative";
+      position = "354 210";
+      extent = "240 80";
+      minExtent = "8 2";
+      visible = "1";
+      command = "Canvas.pushDialog( ifcsOptionsDialogTech , 0 );";
+      text = "back";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      bitmap = "./options";
+   };
+   new GuiBitmapButtonCtrl(TechCreditsButton) {
+      profile = "ifcsMainMenuButtonTechProfile";
+      horizSizing = "relative";
+      vertSizing = "relative";
+      position = "354 296";
+      extent = "240 80";
+      minExtent = "8 2";
+      visible = "1";
+      command = "Canvas.setContent(ifcsCreditsTech);";
+      text = "back";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      bitmap = "./credits";
+   };
+   new GuiBitmapButtonCtrl(TechQuitButton) {
+      profile = "ifcsMainMenuButtonTechProfile";
+      horizSizing = "relative";
+      vertSizing = "relative";
+      position = "354 384";
+      extent = "240 80";
+      minExtent = "8 2";
+      visible = "1";
+      command = "Canvas.setContent(SampleInterfacesSelector);";
+      accelerator = "escape";
+      text = "back";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      bitmap = "./quit";
+   };
+};
+//--- OBJECT WRITE END ---
+

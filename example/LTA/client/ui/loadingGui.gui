@@ -1,0 +1,67 @@
+new GuiControlProfile ("LoadingGuiContentProfile")
+{
+   opaque = true;
+   fillColor = "200 200 200";
+   border = true;
+   borderColor   = "0 0 0";
+};
+
+//--- OBJECT WRITE BEGIN ---
+new GuiChunkedBitmapCtrl(LoadingGui) {
+   canSaveDynamicFields = "0";
+   Profile = "GuiContentProfile";
+   HorizSizing = "width";
+   VertSizing = "height";
+   position = "0 0";
+   Extent = "800 600";
+   MinExtent = "8 8";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+   bitmap = "./pictures/windows/Interface.png";
+   useVariable = "0";
+   tile = "0";
+
+   new GuiBitmapCtrl() {
+      canSaveDynamicFields = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      position = "475 514";
+      Extent = "150 20";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      bitmap = "./pictures/elements/loding_C.png";
+      wrap = "0";
+   };
+   new GuiProgressCtrl(LoadingProgress) {
+      canSaveDynamicFields = "0";
+      Profile = "LTAGuiProgressProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      position = "477 515";
+      Extent = "145 22";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      maxLength = "1024";
+   };
+   new GuiBitmapCtrl() {
+      canSaveDynamicFields = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      position = "470 510";
+      Extent = "160 30";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      bitmap = "./pictures/elements/loding.png";
+      wrap = "0";
+   };
+};
+//--- OBJECT WRITE END ---

@@ -1,0 +1,1012 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(ifcsHUDs1) {
+   profile = "gsDefaultProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "800 600";
+   minExtent = "8 8";
+   visible = "1";
+      Parent = "SampleInterfacesSelector";
+
+   new GuiChunkedBitmapCtrl() {
+      profile = "gsDefaultProfile";
+      horizSizing = "width";
+      vertSizing = "height";
+      position = "0 0";
+      extent = "800 600";
+      minExtent = "8 2";
+      visible = "1";
+      bitmap = $SA::Background1;
+      useVariable = "0";
+      tile = "0";
+
+      new GuiBitmapButtonCtrl(guiSamplerLeft) {
+         profile = "gpgtButtonProfile1";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         position = "125 525";
+         extent = "75 75";
+         minExtent = "8 2";
+         visible = "1";
+         command = "Canvas.setContent(Canvas.getContent().Parent);";
+         accelerator = "escape";
+         text = "Button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "~/client/sharedAssets/button0/leftButton0";
+      };
+
+      new GuiControl() {
+         profile = "gsDefaultProfile";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         position = "100 100";
+         extent = "600 400";
+         minExtent = "8 2";
+         visible = "1";
+
+         new GuiControl(DamageBar0Container) {
+            profile = "feedbackBarBackColorProfile0";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "20 10";
+            extent = "30 300";
+            minExtent = "8 2";
+            visible = "1";
+               firstIndicatorY = "50";
+               feedbackBarPrefix = "DamageBar0";
+               originalframeDimensions = "50 500";
+               IndicatorHeight = "45";
+               flashTime = "500";
+
+            new GuiControl(DamageBar0Indicator10) {
+               profile = "feedbackBarIndicatorColorProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 26";
+               extent = "32 30";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(DamageBar0Indicator9) {
+               profile = "feedbackBarIndicatorColorProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 56";
+               extent = "32 25";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(DamageBar0Indicator8) {
+               profile = "feedbackBarIndicatorColorProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 81";
+               extent = "32 26";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(DamageBar0Indicator7) {
+               profile = "feedbackBarIndicatorColorProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 107";
+               extent = "32 30";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(DamageBar0Indicator6) {
+               profile = "feedbackBarIndicatorColorProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 137";
+               extent = "32 25";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(DamageBar0Indicator5) {
+               profile = "feedbackBarIndicatorColorProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 162";
+               extent = "32 26";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(DamageBar0Indicator4) {
+               profile = "feedbackBarIndicatorColorProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 188";
+               extent = "32 30";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(DamageBar0Indicator3) {
+               profile = "feedbackBarIndicatorColorProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 218";
+               extent = "32 25";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(DamageBar0Indicator2) {
+               profile = "feedbackBarIndicatorColorProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 243";
+               extent = "32 27";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(DamageBar0Indicator1) {
+               profile = "feedbackBarIndicatorColorProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 270";
+               extent = "32 30";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiBitmapCtrl(DamageBar0Frame) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 0";
+               extent = "32 300";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./dbar0";
+               wrap = "0";
+            };
+         };
+         new GuiControl(DamageBar1Container) {
+            profile = "feedbackBarBackColorProfile1";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "60 10";
+            extent = "30 300";
+            minExtent = "8 2";
+            visible = "1";
+               firstIndicatorY = "50";
+               feedbackBarPrefix = "DamageBar1";
+               originalframeDimensions = "50 500";
+               IndicatorHeight = "45";
+
+            new GuiControl(DamageBar1Indicator10) {
+               profile = "feedbackBarIndicatorColorProfile1";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 26";
+               extent = "31 30";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(DamageBar1Indicator9) {
+               profile = "feedbackBarIndicatorColorProfile1";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 56";
+               extent = "31 25";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(DamageBar1Indicator8) {
+               profile = "feedbackBarIndicatorColorProfile1";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 81";
+               extent = "31 26";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(DamageBar1Indicator7) {
+               profile = "feedbackBarIndicatorColorProfile1";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 107";
+               extent = "31 30";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(DamageBar1Indicator6) {
+               profile = "feedbackBarIndicatorColorProfile1";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 137";
+               extent = "31 25";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(DamageBar1Indicator5) {
+               profile = "feedbackBarIndicatorColorProfile1";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 162";
+               extent = "31 26";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(DamageBar1Indicator4) {
+               profile = "feedbackBarIndicatorColorProfile1";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 188";
+               extent = "31 30";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(DamageBar1Indicator3) {
+               profile = "feedbackBarIndicatorColorProfile1";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 218";
+               extent = "31 25";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(DamageBar1Indicator2) {
+               profile = "feedbackBarIndicatorColorProfile1";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 243";
+               extent = "31 27";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(DamageBar1Indicator1) {
+               profile = "feedbackBarIndicatorColorProfile1";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 270";
+               extent = "31 30";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiBitmapCtrl(DamageBar1Frame) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 0";
+               extent = "31 300";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./dbar1";
+               wrap = "0";
+            };
+         };
+         new GuiControl(EnergyBar0Container) {
+            profile = "feedbackBarBackColorProfile0";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "100 10";
+            extent = "30 300";
+            minExtent = "8 2";
+            visible = "1";
+               firstIndicatorY = "50";
+               feedbackBarPrefix = "EnergyBar0";
+               originalframeDimensions = "50 500";
+               IndicatorHeight = "45";
+               flashTime = "100";
+
+            new GuiControl(EnergyBar0Indicator10) {
+               profile = "feedbackBarIndicatorColorProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 26";
+               extent = "26 30";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(EnergyBar0Indicator9) {
+               profile = "feedbackBarIndicatorColorProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 56";
+               extent = "26 25";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(EnergyBar0Indicator8) {
+               profile = "feedbackBarIndicatorColorProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 81";
+               extent = "26 26";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(EnergyBar0Indicator7) {
+               profile = "feedbackBarIndicatorColorProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 107";
+               extent = "26 30";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(EnergyBar0Indicator6) {
+               profile = "feedbackBarIndicatorColorProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 137";
+               extent = "26 25";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(EnergyBar0Indicator5) {
+               profile = "feedbackBarIndicatorColorProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 162";
+               extent = "26 26";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(EnergyBar0Indicator4) {
+               profile = "feedbackBarIndicatorColorProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 188";
+               extent = "26 30";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(EnergyBar0Indicator3) {
+               profile = "feedbackBarIndicatorColorProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 218";
+               extent = "26 25";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(EnergyBar0Indicator2) {
+               profile = "feedbackBarIndicatorColorProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 243";
+               extent = "26 27";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(EnergyBar0Indicator1) {
+               profile = "feedbackBarIndicatorColorProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 270";
+               extent = "26 30";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiBitmapCtrl(EnergyBar0Frame) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 0";
+               extent = "26 300";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./ebar0";
+               wrap = "0";
+            };
+         };
+         new GuiControl(EnergyBar1Container) {
+            profile = "feedbackBarBackColorProfile2";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "140 10";
+            extent = "30 300";
+            minExtent = "8 2";
+            visible = "1";
+               firstIndicatorY = "50";
+               feedbackBarPrefix = "EnergyBar1";
+               originalframeDimensions = "50 500";
+               IndicatorHeight = "45";
+
+            new GuiControl(EnergyBar1Indicator10) {
+               profile = "feedbackBarIndicatorColorProfile2";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 26";
+               extent = "31 30";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(EnergyBar1Indicator9) {
+               profile = "feedbackBarIndicatorColorProfile2";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 56";
+               extent = "31 25";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(EnergyBar1Indicator8) {
+               profile = "feedbackBarIndicatorColorProfile2";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 81";
+               extent = "31 26";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(EnergyBar1Indicator7) {
+               profile = "feedbackBarIndicatorColorProfile2";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 107";
+               extent = "31 30";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(EnergyBar1Indicator6) {
+               profile = "feedbackBarIndicatorColorProfile2";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 137";
+               extent = "31 25";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(EnergyBar1Indicator5) {
+               profile = "feedbackBarIndicatorColorProfile2";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 162";
+               extent = "31 26";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(EnergyBar1Indicator4) {
+               profile = "feedbackBarIndicatorColorProfile2";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 188";
+               extent = "31 30";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(EnergyBar1Indicator3) {
+               profile = "feedbackBarIndicatorColorProfile2";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 218";
+               extent = "31 25";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(EnergyBar1Indicator2) {
+               profile = "feedbackBarIndicatorColorProfile2";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 243";
+               extent = "31 27";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(EnergyBar1Indicator1) {
+               profile = "feedbackBarIndicatorColorProfile2";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 270";
+               extent = "31 30";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiBitmapCtrl(EnergyBar1Frame) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 0";
+               extent = "31 300";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./ebar1";
+               wrap = "0";
+            };
+         };
+         new GuiControl(DamageBar2Container) {
+            profile = "feedbackBarBackColorProfile0";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "330 10";
+            extent = "30 300";
+            minExtent = "8 2";
+            visible = "1";
+               firstIndicatorY = "50";
+               feedbackBarPrefix = "DamageBar2";
+               originalframeDimensions = "50 500";
+               IndicatorHeight = "45";
+               flashTime = "500";
+
+            new GuiControl(DamageBar2Indicator10) {
+               profile = "feedbackBarIndicatorColorProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 26";
+               extent = "30 30";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(DamageBar2Indicator9) {
+               profile = "feedbackBarIndicatorColorProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 56";
+               extent = "30 25";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(DamageBar2Indicator8) {
+               profile = "feedbackBarIndicatorColorProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 81";
+               extent = "30 26";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(DamageBar2Indicator7) {
+               profile = "feedbackBarIndicatorColorProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 107";
+               extent = "30 30";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(DamageBar2Indicator6) {
+               profile = "feedbackBarIndicatorColorProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 137";
+               extent = "30 25";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(DamageBar2Indicator5) {
+               profile = "feedbackBarIndicatorColorProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 162";
+               extent = "30 26";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(DamageBar2Indicator4) {
+               profile = "feedbackBarIndicatorColorProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 188";
+               extent = "30 30";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(DamageBar2Indicator3) {
+               profile = "feedbackBarIndicatorColorProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 218";
+               extent = "30 25";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(DamageBar2Indicator2) {
+               profile = "feedbackBarIndicatorColorProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 243";
+               extent = "30 27";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(DamageBar2Indicator1) {
+               profile = "feedbackBarIndicatorColorProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 270";
+               extent = "30 30";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiBitmapCtrl(DamageBar2Frame) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 0";
+               extent = "30 300";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./dbar0";
+               wrap = "0";
+            };
+         };
+         new GuiControl(DamageBar3Container) {
+            profile = "feedbackBarBackColorProfile1";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "370 10";
+            extent = "30 300";
+            minExtent = "8 2";
+            visible = "1";
+               firstIndicatorY = "50";
+               feedbackBarPrefix = "DamageBar3";
+               originalframeDimensions = "50 500";
+               IndicatorHeight = "45";
+
+            new GuiControl(DamageBar3Indicator10) {
+               profile = "feedbackBarIndicatorColorProfile1";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 26";
+               extent = "32 30";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(DamageBar3Indicator9) {
+               profile = "feedbackBarIndicatorColorProfile1";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 56";
+               extent = "32 25";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(DamageBar3Indicator8) {
+               profile = "feedbackBarIndicatorColorProfile1";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 81";
+               extent = "32 26";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(DamageBar3Indicator7) {
+               profile = "feedbackBarIndicatorColorProfile1";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 107";
+               extent = "32 30";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(DamageBar3Indicator6) {
+               profile = "feedbackBarIndicatorColorProfile1";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 137";
+               extent = "32 25";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(DamageBar3Indicator5) {
+               profile = "feedbackBarIndicatorColorProfile1";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 162";
+               extent = "32 26";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(DamageBar3Indicator4) {
+               profile = "feedbackBarIndicatorColorProfile1";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 188";
+               extent = "32 30";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(DamageBar3Indicator3) {
+               profile = "feedbackBarIndicatorColorProfile1";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 218";
+               extent = "32 25";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(DamageBar3Indicator2) {
+               profile = "feedbackBarIndicatorColorProfile1";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 243";
+               extent = "32 27";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(DamageBar3Indicator1) {
+               profile = "feedbackBarIndicatorColorProfile1";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 270";
+               extent = "32 30";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiBitmapCtrl(DamageBar3Frame) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 0";
+               extent = "32 300";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./dbar1";
+               wrap = "0";
+            };
+         };
+         new GuiControl(EnergyBar2Container) {
+            profile = "feedbackBarBackColorProfile0";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "410 10";
+            extent = "30 300";
+            minExtent = "8 2";
+            visible = "1";
+               firstIndicatorY = "50";
+               feedbackBarPrefix = "EnergyBar2";
+               originalframeDimensions = "50 500";
+               IndicatorHeight = "45";
+               flashTime = "100";
+
+            new GuiControl(EnergyBar2Indicator10) {
+               profile = "feedbackBarIndicatorColorProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 26";
+               extent = "31 30";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(EnergyBar2Indicator9) {
+               profile = "feedbackBarIndicatorColorProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 56";
+               extent = "31 25";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(EnergyBar2Indicator8) {
+               profile = "feedbackBarIndicatorColorProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 81";
+               extent = "31 26";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(EnergyBar2Indicator7) {
+               profile = "feedbackBarIndicatorColorProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 107";
+               extent = "31 30";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(EnergyBar2Indicator6) {
+               profile = "feedbackBarIndicatorColorProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 137";
+               extent = "31 25";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(EnergyBar2Indicator5) {
+               profile = "feedbackBarIndicatorColorProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 162";
+               extent = "31 26";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(EnergyBar2Indicator4) {
+               profile = "feedbackBarIndicatorColorProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 188";
+               extent = "31 30";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(EnergyBar2Indicator3) {
+               profile = "feedbackBarIndicatorColorProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 218";
+               extent = "31 25";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(EnergyBar2Indicator2) {
+               profile = "feedbackBarIndicatorColorProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 243";
+               extent = "31 27";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(EnergyBar2Indicator1) {
+               profile = "feedbackBarIndicatorColorProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 270";
+               extent = "31 30";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiBitmapCtrl(EnergyBar2Frame) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 0";
+               extent = "31 300";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./ebar0";
+               wrap = "0";
+            };
+         };
+         new GuiControl(EnergyBar3Container) {
+            profile = "feedbackBarBackColorProfile2";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "450 10";
+            extent = "30 300";
+            minExtent = "8 2";
+            visible = "1";
+               firstIndicatorY = "50";
+               feedbackBarPrefix = "EnergyBar3";
+               originalframeDimensions = "50 500";
+               IndicatorHeight = "45";
+
+            new GuiControl(EnergyBar3Indicator10) {
+               profile = "feedbackBarIndicatorColorProfile2";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 26";
+               extent = "26 30";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(EnergyBar3Indicator9) {
+               profile = "feedbackBarIndicatorColorProfile2";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 56";
+               extent = "26 25";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(EnergyBar3Indicator8) {
+               profile = "feedbackBarIndicatorColorProfile2";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 81";
+               extent = "26 26";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(EnergyBar3Indicator7) {
+               profile = "feedbackBarIndicatorColorProfile2";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 107";
+               extent = "26 30";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(EnergyBar3Indicator6) {
+               profile = "feedbackBarIndicatorColorProfile2";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 137";
+               extent = "26 25";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(EnergyBar3Indicator5) {
+               profile = "feedbackBarIndicatorColorProfile2";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 162";
+               extent = "26 26";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(EnergyBar3Indicator4) {
+               profile = "feedbackBarIndicatorColorProfile2";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 188";
+               extent = "26 30";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(EnergyBar3Indicator3) {
+               profile = "feedbackBarIndicatorColorProfile2";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 218";
+               extent = "26 25";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(EnergyBar3Indicator2) {
+               profile = "feedbackBarIndicatorColorProfile2";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 243";
+               extent = "26 27";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiControl(EnergyBar3Indicator1) {
+               profile = "feedbackBarIndicatorColorProfile2";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 270";
+               extent = "26 30";
+               minExtent = "8 2";
+               visible = "1";
+            };
+            new GuiBitmapCtrl(EnergyBar3Frame) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 0";
+               extent = "26 300";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./ebar1";
+               wrap = "0";
+            };
+         };
+         new GuiTextCtrl() {
+            profile = "GuiTextProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "40 310";
+            extent = "140 37";
+            minExtent = "100 30";
+            visible = "1";
+            text = "Demo Versions (Don\'t Copy)";
+            maxLength = "255";
+         };
+         new GuiTextCtrl() {
+            profile = "GuiTextProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "360 310";
+            extent = "125 37";
+            minExtent = "100 30";
+            visible = "1";
+            text = "For Cut-Copy-Paste";
+            maxLength = "255";
+         };
+         new GuiButtonCtrl(vBarAnimateButton) {
+            profile = "GuiButtonProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "52 340";
+            extent = "80 20";
+            minExtent = "8 2";
+            visible = "1";
+            command = "demoVBars($thisControl.getvalue());";
+            text = "Animate";
+            groupNum = "-1";
+            buttonType = "ToggleButton";
+         };
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+

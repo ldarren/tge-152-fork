@@ -1,0 +1,9 @@
+<spush><just:center><font:Arial Bold:18><color:FFFF00>
+Simple Inventory<spop>
+<just:left><font:Arial:16><br><lmargin%:5>
+In this lesson, the following inventory actions are demonstrated:<br><br>
+<font:Arial:16>
+<color:FF2222>
+- pickup<br>
+- drop/throw<br>
+- use<br>

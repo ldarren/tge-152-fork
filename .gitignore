@@ -1,7 +1,13 @@
+*.user
+*.log
+*.db
+
 # Compiled Object files
 *.slo
 *.lo
 *.o
+*.suo
+*.ncb
 
 # Compiled Dynamic libraries
 *.so

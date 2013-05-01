@@ -1,0 +1,9 @@
+<spush><just:center><font:Arial Bold:18><color:FFFF00>
+Basic Vehicles<spop>
+<just:left><font:Arial:16><br><lmargin%:5>
+Vehicle Sampler, showing:<br><br>
+<color:FF2222>
+- Box Car<br>
+- Box Hover<br>
+- Psionic Jeep<br>
+

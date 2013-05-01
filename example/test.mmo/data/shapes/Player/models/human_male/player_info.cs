@@ -1,0 +1,13 @@
+%pHeader = "Human Knight";
+%pDesc = "Skilled with powerful armor and weaponry, knights are well-rounded physical combatants with both high attack and defence powers";
+%pPlayerDTS = $modname@"/data/Shapes/Player/models/human_male/human_male_1.dts";
+%pWeapon = "Minime";
+%pWeaponDTS = $modname@"/data/Shapes/Player/equips/AK47/ak47.dts";
+%pModel = 1;
+%skinHead = "base orc troll";
+%skinBody = "base armor spider";
+%skinArms = "base armor spider";
+%skinHands = "base armor spider";
+%skinLegs = "base armor spider";
+%skinFeet = "base armor spider";
+%skinFolder = $modname@"/data/shapes/Player/Models/human_male/";

@@ -1,0 +1,97 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(LoadGameGui) {
+   canSaveDynamicFields = "0";
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   position = "0 0";
+   Extent = "800 600";
+   MinExtent = "8 2";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+
+   new GuiBitmapCtrl() {
+      canSaveDynamicFields = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      position = "290 175";
+      Extent = "220 250";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      bitmap = "./pictures/windows/loadGame";
+      wrap = "0";
+
+      new GuiBitmapButtonCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "LTAGuiButtonProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "21 198";
+         Extent = "62 31";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "LoadGameGui.onLoadFile();";
+         hovertime = "1000";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./pictures/buttons/load";
+      };
+      new GuiBitmapButtonCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "LTAGuiButtonProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "137 198";
+         Extent = "62 31";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "Canvas.popDialog(LoadGameGui);";
+         hovertime = "1000";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./pictures/buttons/cancle";
+      };
+      new GuiScrollCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "LTAGuiScrollProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "18 22";
+         Extent = "183 173";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         willFirstRespond = "1";
+         hScrollBar = "alwaysOff";
+         vScrollBar = "dynamic";
+         constantThumbHeight = "1";
+         childMargin = "0 0";
+
+         new GuiTextListCtrl(FileList) {
+            canSaveDynamicFields = "0";
+            Profile = "LTAGuiTextListProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "2 2";
+            Extent = "179 2";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            enumerate = "0";
+            resizeCell = "1";
+            columns = "0";
+            fitParentWidth = "1";
+            clipColumnText = "0";
+         };
+      };
+   };
+};
+//--- OBJECT WRITE END ---

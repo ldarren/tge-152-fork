@@ -1,0 +1,126 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(gsPopupMenu) {
+   profile = "GuiDefaultProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "800 600";
+   minExtent = "8 8";
+   visible = "1";
+      Parent = "GUISamplerInterface";
+
+   new GuiChunkedBitmapCtrl() {
+      profile = "gsDefaultProfile";
+      horizSizing = "width";
+      vertSizing = "height";
+      position = "0 0";
+      extent = "800 600";
+      minExtent = "8 2";
+      visible = "1";
+      bitmap = $SA::Background1;
+      useVariable = "0";
+      tile = "0";
+
+      new GuiBitmapButtonCtrl(guiSamplerLeft) {
+         profile = "gpgtButtonProfile1";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         position = "125 525";
+         extent = "75 75";
+         minExtent = "8 2";
+         visible = "1";
+         command = "Canvas.setContent(Canvas.getContent().Parent);";
+         accelerator = "escape";
+         text = "Button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "~/client/sharedAssets/button0/leftButton0";
+      };
+      new GuiControl(TestPopupMenuGroup) {
+         profile = "gsDefaultProfile";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         position = "100 100";
+         extent = "600 400";
+         minExtent = "8 2";
+         visible = "1";
+
+         new GuiPopUpMenuCtrl(TestPopUpMenus) {
+            profile = "gsPopUpMenuPlayGames0";
+            horizSizing = "relative";
+            vertSizing = "bottom";
+            position = "0 0";
+            extent = "600 40";
+            minExtent = "8 2";
+            visible = "1";
+            maxLength = "255";
+            maxPopupHeight = "100";
+         };
+         new GuiPopUpMenuCtrl(TestPopUpMenus) {
+            profile = "gsPopUpMenuPlayGames0";
+            horizSizing = "relative";
+            vertSizing = "top";
+            position = "0 364";
+            extent = "600 40";
+            minExtent = "8 2";
+            visible = "1";
+            maxLength = "255";
+            maxPopupHeight = "200";
+         };
+         new GuiButtonCtrl() {
+            profile = "GuiButtonProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "179 132";
+            extent = "140 30";
+            minExtent = "8 2";
+            visible = "1";
+            command = "TestPopupMenuGroup.updateMenus(0);";
+            text = "Play Games Profile 0";
+            groupNum = "-1";
+            buttonType = "PushButton";
+         };
+         new GuiButtonCtrl() {
+            profile = "GuiButtonProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "179 162";
+            extent = "140 30";
+            minExtent = "8 2";
+            visible = "1";
+            command = "TestPopupMenuGroup.updateMenus(1);";
+            text = "Play Games Profile 1";
+            groupNum = "-1";
+            buttonType = "PushButton";
+         };
+         new GuiButtonCtrl() {
+            profile = "GuiButtonProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "179 192";
+            extent = "140 30";
+            minExtent = "8 2";
+            visible = "1";
+            command = "TestPopupMenuGroup.updateMenus(2);";
+            text = "Make Games Profile 0";
+            groupNum = "-1";
+            buttonType = "PushButton";
+         };
+         new GuiButtonCtrl() {
+            profile = "GuiButtonProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "179 222";
+            extent = "140 30";
+            minExtent = "8 2";
+            visible = "1";
+            command = "TestPopupMenuGroup.updateMenus(3);";
+            text = "Make Games Profile 1";
+            groupNum = "-1";
+            buttonType = "PushButton";
+         };
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+

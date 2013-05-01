@@ -1,0 +1,10 @@
+!!ARBfp1.0
+
+PARAM kernel = { 0.3, 0.59, 0.11, 1.0 };
+
+TEMP color;
+TEX color.xyz, fragment.texcoord[0], texture[0], 2D;
+DP3 result.color.xyz, color, kernel;
+MOV result.color.w, kernel.w;
+
+END

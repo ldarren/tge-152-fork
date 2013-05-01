@@ -1,0 +1,2798 @@
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+   canSaveDynamicFields = "1";
+
+   new ScriptObject(MissionInfo) {
+         desc0 = "This mission is organized into scenes that showcase some of the Torque Game Engine\'s capabilities. Mission lighting only occurs the first time the mission is loaded.";
+         name = "Engine Features Mission";
+         type = "DemoScene";
+   };
+   new MissionArea(MissionArea) {
+      canSaveDynamicFields = "1";
+      Area = "-1024 -1024 2048 2048";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new SimGroup(environment) {
+      canSaveDynamicFields = "1";
+
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "119.394 -108.33 202.19";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/trees/shrub.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new Sky(Sky) {
+         canSaveDynamicFields = "1";
+         position = "336 136 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         materialList = "~/data/skies/BlueSky/sky_bluesky.dml";
+         cloudHeightPer[0] = "0.4";
+         cloudHeightPer[1] = "0.25";
+         cloudHeightPer[2] = "0.199973";
+         cloudSpeed1 = "0.0005";
+         cloudSpeed2 = "0.001";
+         cloudSpeed3 = "0.003";
+         visibleDistance = "800";
+         fogDistance = "500";
+         fogColor = "0.75 0.75 0.75 0.5";
+         fogStorm1 = "1";
+         fogStorm2 = "1";
+         fogStorm3 = "0";
+         fogVolume1 = "98 0 165.5";
+         fogVolume2 = "150 170 250";
+         fogVolume3 = "0 0 0";
+         fogVolumeColor1 = "1 1 1 1";
+         fogVolumeColor2 = "1 1 1 1";
+         fogVolumeColor3 = "0 0 0 1";
+         windVelocity = "0.01 0.01 0";
+         windEffectPrecipitation = "1";
+         SkySolidColor = "0.64 0.148 0.215 0";
+         useSkyTextures = "1";
+         renderBottomTexture = "0";
+         noRenderBans = "0";
+            locked = "true";
+      };
+      new Sun() {
+         canSaveDynamicFields = "1";
+         azimuth = "195";
+         elevation = "35";
+         color = "0.45 0.55 0.45 1";
+         ambient = "0.25 0.25 0.28 1";
+         CastsShadows = "1";
+            position = "0 0 0";
+            locked = "False";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            direction = "0.635001 0.635001 -0.439941";
+      };
+      new fxSunLight(sunflare1) {
+         canSaveDynamicFields = "1";
+         position = "98.5277 -289.053 188.13";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         Enable = "1";
+         LocalFlareBitmap = "common/lighting/corona";
+         RemoteFlareBitmap = "common/lighting/corona";
+         SunAzimuth = "224";
+         SunElevation = "10";
+         LockToRealSun = "1";
+         FlareTP = "1";
+         Colour = "1 0.6 0.6 1";
+         Brightness = "1";
+         FlareSize = "1.5";
+         FadeTime = "0.1";
+         BlendMode = "0";
+         AnimColour = "0";
+         AnimBrightness = "1";
+         AnimRotation = "1";
+         AnimSize = "1";
+         AnimAzimuth = "0";
+         AnimElevation = "0";
+         LerpColour = "1";
+         LerpBrightness = "1";
+         LerpRotation = "1";
+         LerpSize = "1";
+         LerpAzimuth = "1";
+         LerpElevation = "1";
+         LinkFlareSize = "0";
+         SingleColourKeys = "1";
+         MinColour = "0 0 0 1";
+         MaxColour = "1 1 1 1";
+         MinBrightness = "0.4";
+         MaxBrightness = "1";
+         MinRotation = "0";
+         MaxRotation = "359";
+         minSize = "0.5";
+         MaxSize = "1";
+         MinAzimuth = "0";
+         MaxAzimuth = "359";
+         MinElevation = "-30";
+         MaxElevation = "210";
+         RedKeys = "AZA";
+         GreenKeys = "AZA";
+         BlueKeys = "AZA";
+         BrightnessKeys = "JAZJTAJ";
+         RotationKeys = "ZA";
+         SizeKeys = "ATAZA";
+         AzimuthKeys = "AZ";
+         ElevationKeys = "AZ";
+         ColourTime = "5";
+         BrightnessTime = "10";
+         RotationTime = "40";
+         SizeTime = "30";
+         AzimuthTime = "5";
+         ElevationTime = "5";
+      };
+      new fxSunLight(sunflare2) {
+         canSaveDynamicFields = "1";
+         position = "72.9234 -289.051 187.692";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         Enable = "1";
+         LocalFlareBitmap = "common/lighting/corona";
+         RemoteFlareBitmap = "common/lighting/corona";
+         SunAzimuth = "224";
+         SunElevation = "10";
+         LockToRealSun = "1";
+         FlareTP = "1";
+         Colour = "1 1 0.5 1";
+         Brightness = "1";
+         FlareSize = "1.5";
+         FadeTime = "0.1";
+         BlendMode = "0";
+         AnimColour = "0";
+         AnimBrightness = "1";
+         AnimRotation = "1";
+         AnimSize = "0";
+         AnimAzimuth = "0";
+         AnimElevation = "0";
+         LerpColour = "1";
+         LerpBrightness = "1";
+         LerpRotation = "1";
+         LerpSize = "1";
+         LerpAzimuth = "1";
+         LerpElevation = "1";
+         LinkFlareSize = "0";
+         SingleColourKeys = "1";
+         MinColour = "0 0 0 1";
+         MaxColour = "1 1 1 1";
+         MinBrightness = "0.25";
+         MaxBrightness = "0.5";
+         MinRotation = "0";
+         MaxRotation = "359";
+         minSize = "0.5";
+         MaxSize = "1";
+         MinAzimuth = "0";
+         MaxAzimuth = "359";
+         MinElevation = "-30";
+         MaxElevation = "210";
+         RedKeys = "AZA";
+         GreenKeys = "AZA";
+         BlueKeys = "AZA";
+         BrightnessKeys = "AZJTA";
+         RotationKeys = "AZ";
+         SizeKeys = "ATAZA";
+         AzimuthKeys = "AZ";
+         ElevationKeys = "AZ";
+         ColourTime = "5";
+         BrightnessTime = "6";
+         RotationTime = "80";
+         SizeTime = "5";
+         AzimuthTime = "5";
+         ElevationTime = "5";
+      };
+      new TerrainBlock(terrain) {
+         canSaveDynamicFields = "1";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         detailTexture = "~/data/terrains/details/detail_demo";
+         terrainFile = "./features.ter";
+         squareSize = "8";
+         bumpScale = "1";
+         bumpOffset = "0.01";
+         zeroBumpScale = "8";
+         tile = "1";
+            position = "-1024 -1024 0";
+            locked = "true";
+      };
+      new WaterBlock() {
+         canSaveDynamicFields = "1";
+         position = "-32 -752 159.5";
+         rotation = "1 0 0 0";
+         scale = "512 768 10";
+         UseDepthMask = "1";
+         surfaceTexture = "~/data/water/water";
+         ShoreTexture = "~/data/water/water_edge";
+         envMapOverTexture = "~/data/skies/Bluesky/cloud2";
+         specularMaskTex = "~/data/water/water_spec";
+         liquidType = "OceanWater";
+         density = "1";
+         viscosity = "20";
+         waveMagnitude = "2";
+         surfaceOpacity = "0.05";
+         envMapIntensity = "0.5";
+         TessSurface = "95";
+         TessShore = "90";
+         SurfaceParallax = "3";
+         FlowAngle = "220";
+         FlowRate = "0.1";
+         DistortGridScale = "0.1";
+         DistortMag = "0.1";
+         DistortTime = "2";
+         ShoreDepth = "1";
+         DepthGradient = "1";
+         MinAlpha = "0.01";
+         MaxAlpha = "0.75";
+         tile = "1";
+         removeWetEdges = "0";
+         specularColor = "0.831373 0.878431 0.890196 1";
+         specularPower = "15";
+            floodFill = "1";
+            params2 = "0.39 0.39 0.2 0.133";
+            params3 = "1.21 -0.61 0.13 -0.33";
+            locked = "true";
+            seedPoints = "0 0 1 0 1 1 0 1";
+            params0 = "0.32 -0.67 0.066 0.5";
+            textureSize = "32 32";
+            Extent = "100 100 10";
+            params1 = "0.63 -2.41 0.33 0.21";
+      };
+   };
+   new fxShapeReplicator() {
+      canSaveDynamicFields = "1";
+      position = "343.677 117.004 182.764";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      HideReplications = "0";
+      ShowPlacementArea = "1";
+      PlacementAreaHeight = "25";
+      PlacementColour = "0.4 0 0.8 1";
+      shapeFile = "~/data/shapes/trees/oak1.dts";
+      Seed = "100";
+      ShapeCount = "20";
+      ShapeRetries = "100";
+      InnerRadiusX = "0";
+      InnerRadiusY = "0";
+      OuterRadiusX = "100";
+      OuterRadiusY = "100";
+      AllowOnTerrain = "1";
+      AllowOnInteriors = "0";
+      AllowOnStatics = "0";
+      AllowOnWater = "0";
+      AllowWaterSurface = "0";
+      AlignToTerrain = "0";
+      Interactions = "1";
+      AllowedTerrainSlope = "90";
+      TerrainAlignment = "1 1 1";
+      FixShapeAspect = "0";
+      ShapeScaleMin = "1 1 1";
+      ShapeScaleMax = "2 2 2";
+      ShapeRotateMin = "0 -5 0";
+      ShapeRotateMax = "0 5 359";
+      OffsetZ = "0";
+      receiveSunLight = "1";
+      receiveLMLighting = "1";
+      useAdaptiveSelfIllumination = "0";
+      useCustomAmbientLighting = "0";
+      customAmbientSelfIllumination = "0";
+      customAmbientLighting = "0 0 0 1";
+      useLightingOcclusion = "1";
+   };
+   new SimGroup(Paths) {
+      canSaveDynamicFields = "1";
+
+      new Path(OrcAnimation) {
+         canSaveDynamicFields = "1";
+         isLooping = "0";
+
+         new Marker() {
+            canSaveDynamicFields = "1";
+            position = "153.3 3.81927 193.421";
+            rotation = "0 0 1 42.2163";
+            scale = "1 1 1";
+            seqNum = "1";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Linear";
+               Smoothing = "Spline";
+         };
+         new Marker() {
+            canSaveDynamicFields = "1";
+            position = "160.439 6.74591 192.599";
+            rotation = "0 0 1 107.144";
+            scale = "1 1 1";
+            seqNum = "2";
+            type = "Position Only";
+            msToNext = "1000";
+            smoothingType = "Linear";
+               Smoothing = "Spline";
+         };
+         new Marker() {
+            canSaveDynamicFields = "1";
+            position = "161.262 5.27526 192.431";
+            rotation = "0 0 1 151.261";
+            scale = "1 1 1";
+            seqNum = "3";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Linear";
+               Smoothing = "Spline";
+         };
+      };
+      new Path(OrcDance) {
+         canSaveDynamicFields = "1";
+         isLooping = "0";
+
+         new Marker() {
+            canSaveDynamicFields = "1";
+            position = "188.997 -7.7479 183.183";
+            rotation = "0 0 1 50.4203";
+            scale = "1 1 1";
+            seqNum = "1";
+            type = "Kink";
+            msToNext = "1000";
+            smoothingType = "Linear";
+               Smoothing = "Spline";
+         };
+         new Marker() {
+            canSaveDynamicFields = "1";
+            position = "181.501 -12.2023 183.294";
+            rotation = "0.0798119 -0.0278296 -0.996421 55.5476";
+            scale = "1 1 1";
+            seqNum = "2";
+            type = "Kink";
+            msToNext = "1000";
+            smoothingType = "Linear";
+               Smoothing = "Spline";
+         };
+         new Marker() {
+            canSaveDynamicFields = "1";
+            position = "175.026 -9.91236 183.079";
+            rotation = "0.0798119 -0.0278296 -0.996421 55.5476";
+            scale = "1 1 1";
+            seqNum = "3";
+            type = "Kink";
+            msToNext = "1000";
+            smoothingType = "Linear";
+               Smoothing = "Spline";
+         };
+      };
+      new Path(OrcDetail) {
+         canSaveDynamicFields = "1";
+         isLooping = "1";
+
+         new Marker() {
+            canSaveDynamicFields = "1";
+            position = "173.725 -34.9267 183.009";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Spline";
+               Smoothing = "Spline";
+         };
+         new Marker() {
+            canSaveDynamicFields = "1";
+            position = "180.245 -29.8303 183.231";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Spline";
+               Smoothing = "Spline";
+         };
+      };
+      new Path(OrcShooting) {
+         canSaveDynamicFields = "1";
+         isLooping = "0";
+
+         new Marker() {
+            canSaveDynamicFields = "1";
+            position = "308.356 47.9561 186.554";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Spline";
+               Smoothing = "Spline";
+         };
+         new Marker() {
+            canSaveDynamicFields = "1";
+            position = "308.625 58.0563 184.429";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Spline";
+               Smoothing = "Spline";
+         };
+      };
+      new Path(OrcNPC1) {
+         canSaveDynamicFields = "1";
+         isLooping = "1";
+
+         new Marker() {
+            canSaveDynamicFields = "1";
+            position = "191.249 -65.1798 179.072";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Spline";
+               Smoothing = "Spline";
+         };
+         new Marker() {
+            canSaveDynamicFields = "1";
+            position = "239.739 -38.7699 177.972";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Spline";
+               Smoothing = "Spline";
+         };
+         new Marker() {
+            canSaveDynamicFields = "1";
+            position = "260.486 -81.3166 175.376";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "3";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Spline";
+               Smoothing = "Spline";
+         };
+         new Marker() {
+            canSaveDynamicFields = "1";
+            position = "234.484 -113.72 173.158";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "4";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Spline";
+               Smoothing = "Spline";
+         };
+         new Marker() {
+            canSaveDynamicFields = "1";
+            position = "232.299 -135.787 173.524";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "5";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Spline";
+               Smoothing = "Spline";
+         };
+         new Marker() {
+            canSaveDynamicFields = "1";
+            position = "231.216 -111.769 173.675";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "6";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Spline";
+               Smoothing = "Spline";
+         };
+         new Marker() {
+            canSaveDynamicFields = "1";
+            position = "165.93 -98.7194 186.291";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "7";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Spline";
+               Smoothing = "Spline";
+         };
+      };
+      new Path(OrcNPC2) {
+         canSaveDynamicFields = "1";
+         isLooping = "1";
+
+         new Marker() {
+            canSaveDynamicFields = "1";
+            position = "328.055 60.8541 185.169";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Spline";
+               Smoothing = "Spline";
+         };
+         new Marker() {
+            canSaveDynamicFields = "1";
+            position = "350.15 105.064 179.522";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Spline";
+               Smoothing = "Spline";
+         };
+         new Marker() {
+            canSaveDynamicFields = "1";
+            position = "329.651 153.293 179.332";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "3";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Spline";
+               Smoothing = "Spline";
+         };
+         new Marker() {
+            canSaveDynamicFields = "1";
+            position = "281.74 174.571 186.7";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "4";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Spline";
+               Smoothing = "Spline";
+         };
+         new Marker() {
+            canSaveDynamicFields = "1";
+            position = "197.279 135.181 225.472";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "5";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Spline";
+               Smoothing = "Spline";
+         };
+         new Marker() {
+            canSaveDynamicFields = "1";
+            position = "202.838 18.334 180.913";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "6";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Spline";
+               Smoothing = "Spline";
+         };
+         new Marker() {
+            canSaveDynamicFields = "1";
+            position = "240.213 -27.7481 178.597";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "7";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Spline";
+               Smoothing = "Spline";
+         };
+         new Marker() {
+            canSaveDynamicFields = "1";
+            position = "272.4 19.6064 182.74";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "8";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Spline";
+               Smoothing = "Spline";
+         };
+      };
+      new Path(OrcNPC3) {
+         canSaveDynamicFields = "1";
+         isLooping = "1";
+
+         new Marker() {
+            canSaveDynamicFields = "1";
+            position = "291.302 121.898 179.895";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Spline";
+               Smoothing = "Spline";
+         };
+         new Marker() {
+            canSaveDynamicFields = "1";
+            position = "302.504 113.964 178.652";
+            rotation = "-0.0539193 -0.0262811 -0.998199 52.0521";
+            scale = "1 1 1";
+            seqNum = "2";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Spline";
+               Smoothing = "Spline";
+         };
+         new Marker() {
+            canSaveDynamicFields = "1";
+            position = "279.629 131.209 179.938";
+            rotation = "0.108921 0.0536724 -0.9926 52.8033";
+            scale = "1 1 1";
+            seqNum = "3";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Spline";
+               Smoothing = "Spline";
+         };
+         new Marker() {
+            canSaveDynamicFields = "1";
+            position = "292.785 126.26 179.844";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "4";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Spline";
+               Smoothing = "Spline";
+         };
+      };
+   };
+   new SimGroup(Scenes) {
+      canSaveDynamicFields = "1";
+
+      new ScriptGroup(WelcomeScene) {
+         class = "Scene";
+            pathTime = "0";
+            title = "Welcome to Orc Town";
+            pathName = "Pathx";
+            description = "This town and its surroundings will be used to illustrate some of the Torque Game Engine\'s features.";
+
+         new WayPoint(start) {
+            canSaveDynamicFields = "1";
+            position = "328.998 110.384 179.011";
+            rotation = "-0.795719 0.0771326 0.600734 18.3325";
+            scale = "1 1 1";
+            dataBlock = "WayPointMarker";
+            team = "0";
+         };
+      };
+      new ScriptGroup(TerrainEngineScene) {
+         class = "Scene";
+            title = "Terrain Engine";
+            description = "Heightfields that use LOD, blended texture tiles, detail mapping and baked in shadows.";
+
+         new WayPoint(start) {
+            canSaveDynamicFields = "1";
+            position = "628.009 347.927 255.06";
+            rotation = "0.269746 -0.0951597 0.958218 40.4231";
+            scale = "1 1 1";
+            dataBlock = "WayPointMarker";
+            team = "0";
+         };
+         new Path(Path) {
+            canSaveDynamicFields = "1";
+            isLooping = "1";
+               speed = "60";
+
+            new Marker() {
+               canSaveDynamicFields = "1";
+               position = "327.212 202.623 196.591";
+               rotation = "0.273762 -0.191415 0.942558 73.1372";
+               scale = "1 1 1";
+               seqNum = "1";
+               type = "Normal";
+               msToNext = "1000";
+               smoothingType = "Spline";
+                  Smoothing = "Spline";
+                  onGroup = "Default Value";
+                  speed = "45";
+            };
+            new Marker() {
+               canSaveDynamicFields = "1";
+               position = "535.252 241.3 262.253";
+               rotation = "-0.0286489 0.0196171 0.999397 68.8344";
+               scale = "1 1 1";
+               seqNum = "2";
+               type = "Normal";
+               msToNext = "1000";
+               smoothingType = "Spline";
+                  Smoothing = "Spline";
+            };
+            new Marker() {
+               canSaveDynamicFields = "1";
+               position = "782.491 623.177 277.087";
+               rotation = "0.0420507 -0.0380147 0.998392 127.623";
+               scale = "1 1 1";
+               seqNum = "3";
+               type = "Normal";
+               msToNext = "1000";
+               smoothingType = "Spline";
+                  Smoothing = "Spline";
+            };
+            new Marker() {
+               canSaveDynamicFields = "1";
+               position = "649.045 1001.37 314.156";
+               rotation = "-0.142964 0.0276672 0.989341 126.859";
+               scale = "1 1 1";
+               seqNum = "4";
+               type = "Normal";
+               msToNext = "1000";
+               smoothingType = "Spline";
+                  Smoothing = "Spline";
+            };
+            new Marker() {
+               canSaveDynamicFields = "1";
+               position = "331.724 348.221 283.292";
+               rotation = "-0.017044 -0.025971 0.999517 103.364";
+               scale = "1 1 1";
+               seqNum = "5";
+               type = "Normal";
+               msToNext = "1000";
+               smoothingType = "Spline";
+                  Smoothing = "Spline";
+            };
+         };
+      };
+      new ScriptGroup(SkyScene) {
+         class = "Scene";
+            title = "Sky Dome";
+            description = "The sky box is composed of multi-layered animating clouds over a cube-mapped background.";
+
+         new WayPoint(start) {
+            canSaveDynamicFields = "1";
+            position = "369.996 147.147 190.495";
+            rotation = "-0.995004 -0.0245691 -0.0967656 28.6302";
+            scale = "1 1 1";
+            dataBlock = "WayPointMarker";
+            team = "0";
+         };
+      };
+      new ScriptGroup(SunLightScene) {
+         class = "Scene";
+            title = "Sun Lights";
+            description = "Outdoor scenes can contain one or more suns which light the terrain, buildings, and dynamic objects.";
+
+         new WayPoint(start) {
+            canSaveDynamicFields = "1";
+            position = "369.996 147.147 190.495";
+            rotation = "-0.995004 -0.0245691 -0.0967656 28.6302";
+            scale = "1 1 1";
+            dataBlock = "WayPointMarker";
+            team = "0";
+         };
+         new Path(Path) {
+            canSaveDynamicFields = "1";
+            isLooping = "0";
+               speed = "12";
+
+            new Marker() {
+               canSaveDynamicFields = "1";
+               position = "369.996 147.147 190.495";
+               rotation = "-0.995004 -0.0245691 -0.0967656 28.6302";
+               scale = "1 1 1";
+               seqNum = "1";
+               type = "Normal";
+               msToNext = "1000";
+               smoothingType = "Spline";
+                  Smoothing = "Spline";
+            };
+            new Marker() {
+               canSaveDynamicFields = "1";
+               position = "382.009 245.945 221.938";
+               rotation = "-0.107186 -0.141854 -0.984067 106.733";
+               scale = "1 1 1";
+               seqNum = "2";
+               type = "Position Only";
+               msToNext = "1000";
+               smoothingType = "Spline";
+                  Smoothing = "Spline";
+            };
+            new Marker() {
+               canSaveDynamicFields = "1";
+               position = "355.532 265.521 244.825";
+               rotation = "0.0781245 0.354043 0.93196 203.242";
+               scale = "1 1 1";
+               seqNum = "3";
+               type = "Normal";
+               msToNext = "1000";
+               smoothingType = "Spline";
+                  Smoothing = "Spline";
+            };
+         };
+      };
+      new ScriptGroup(BakedShadowsScene) {
+         class = "Scene";
+            title = "Baked in Shadows";
+            description = "Shadows are baked into the terrain for a soft shadow effect and higher performance.";
+
+         new WayPoint(start) {
+            canSaveDynamicFields = "1";
+            position = "340.857 192.744 215.068";
+            rotation = "0.0741285 -0.373888 0.924507 159.226";
+            scale = "1 1 1";
+            dataBlock = "WayPointMarker";
+            team = "0";
+         };
+         new Path(Path) {
+            canSaveDynamicFields = "1";
+            isLooping = "0";
+               speed = "30";
+
+            new Marker() {
+               canSaveDynamicFields = "1";
+               position = "343.844 189.933 226.311";
+               rotation = "0.99683 0.0241821 -0.0758025 35.4924";
+               scale = "1 1 1";
+               seqNum = "1";
+               type = "Normal";
+               msToNext = "1000";
+               smoothingType = "Spline";
+                  Smoothing = "Spline";
+            };
+            new Marker() {
+               canSaveDynamicFields = "1";
+               position = "365.233 241.658 230.095";
+               rotation = "0.853862 0.110802 -0.508569 28.6281";
+               scale = "1 1 1";
+               seqNum = "2";
+               type = "Position Only";
+               msToNext = "1000";
+               smoothingType = "Spline";
+                  Smoothing = "Spline";
+            };
+            new Marker() {
+               canSaveDynamicFields = "1";
+               position = "279.55 -14.1021 223.005";
+               rotation = "0.310441 0.230401 -0.922248 77.6502";
+               scale = "1 1 1";
+               seqNum = "3";
+               type = "Kink";
+               msToNext = "1000";
+               smoothingType = "Spline";
+                  Smoothing = "Spline";
+            };
+         };
+      };
+      new ScriptGroup(InteriorSpaces) {
+         class = "Scene";
+            title = "Interior Spaces";
+            description = "TGE supports transitions between the terrain and portalized interior spaces.";
+
+         new WayPoint(start) {
+            canSaveDynamicFields = "1";
+            position = "170.379 -4.66792 186.714";
+            rotation = "0 0 1 140.375";
+            scale = "1 1 1";
+            dataBlock = "WayPointMarker";
+            team = "0";
+         };
+         new Path(Path) {
+            canSaveDynamicFields = "1";
+            isLooping = "0";
+               speed = "15";
+
+            new Marker() {
+               canSaveDynamicFields = "1";
+               position = "227.507 -79.8075 212.327";
+               rotation = "0.602342 0.169398 -0.780057 39.6514";
+               scale = "1 1 1";
+               seqNum = "1";
+               type = "Normal";
+               msToNext = "1000";
+               smoothingType = "Spline";
+                  Smoothing = "Spline";
+            };
+            new Marker() {
+               canSaveDynamicFields = "1";
+               position = "203.957 -59.6891 191.232";
+               rotation = "0.315785 0.0703399 -0.94622 26.4932";
+               scale = "1 1 1";
+               seqNum = "2";
+               type = "Normal";
+               msToNext = "1000";
+               smoothingType = "Spline";
+                  Smoothing = "Spline";
+            };
+            new Marker() {
+               canSaveDynamicFields = "1";
+               position = "178.498 -17.904 185.841";
+               rotation = "0.186301 0.043546 -0.981527 26.7897";
+               scale = "1 1 1";
+               seqNum = "3";
+               type = "Normal";
+               msToNext = "1000";
+               smoothingType = "Spline";
+                  Smoothing = "Spline";
+            };
+            new Marker() {
+               canSaveDynamicFields = "1";
+               position = "162.294 7.98909 194.424";
+               rotation = "0.0458832 -0.120095 0.991702 138.498";
+               scale = "1 1 1";
+               seqNum = "4";
+               type = "Kink";
+               msToNext = "1000";
+               smoothingType = "Spline";
+                  Smoothing = "Spline";
+            };
+         };
+      };
+      new ScriptGroup(OrcAnimationScene) {
+         class = "Scene";
+            gui = "AnimationSceneGUI";
+            title = "Skeletal Animation";
+            description = "TGE supports skeletal animation and animation of mesh vertices, materials and visibility.";
+
+         new WayPoint(start) {
+            canSaveDynamicFields = "1";
+            position = "162.833 2.96841 191.191";
+            rotation = "0.287779 0.091338 -0.953331 36.1004";
+            scale = "1 1 1";
+            dataBlock = "WayPointMarker";
+            team = "0";
+         };
+      };
+      new ScriptGroup(OrcDanceScene) {
+         class = "Scene";
+            title = "Motion Capture";
+            description = "Animations can be long motion capture sequences...";
+
+         new WayPoint(start) {
+            canSaveDynamicFields = "1";
+            position = "172.246 -7.61838 185.177";
+            rotation = "0.0516476 -0.0889206 0.994699 119.966";
+            scale = "1 1 1";
+            dataBlock = "WayPointMarker";
+            team = "0";
+         };
+         new Path(Path) {
+            canSaveDynamicFields = "1";
+            isLooping = "1";
+               speed = "1";
+
+            new Marker() {
+               canSaveDynamicFields = "1";
+               position = "172.674 -7.21659 185.236";
+               rotation = "0.0574161 -0.138146 0.988746 135.321";
+               scale = "1 1 1";
+               seqNum = "1";
+               type = "Normal";
+               msToNext = "1000";
+               smoothingType = "Spline";
+                  Smoothing = "Spline";
+            };
+            new Marker() {
+               canSaveDynamicFields = "1";
+               position = "173.087 -14.1074 184.435";
+               rotation = "0.147477 -0.0293867 0.988629 22.7912";
+               scale = "1 1 1";
+               seqNum = "2";
+               type = "Normal";
+               msToNext = "1000";
+               smoothingType = "Spline";
+                  Smoothing = "Spline";
+            };
+            new Marker() {
+               canSaveDynamicFields = "1";
+               position = "180.212 -10.7173 185.042";
+               rotation = "0.131421 0.128086 -0.983017 89.5085";
+               scale = "1 1 1";
+               seqNum = "3";
+               type = "Normal";
+               msToNext = "1000";
+               smoothingType = "Spline";
+                  Smoothing = "Spline";
+            };
+            new Marker() {
+               canSaveDynamicFields = "1";
+               position = "177.459 -6.43845 185.208";
+               rotation = "-0.0189644 -0.138729 0.990149 195.417";
+               scale = "1 1 1";
+               seqNum = "4";
+               type = "Normal";
+               msToNext = "1000";
+               smoothingType = "Spline";
+                  Smoothing = "Spline";
+            };
+         };
+      };
+      new ScriptGroup(OrcShadowScene) {
+         class = "Scene";
+            title = "Soft Shadows";
+            description = "Dynamic shapes cast soft shadows on the terrain and on interior shapes for a more realistic look.";
+
+         new WayPoint(start) {
+            canSaveDynamicFields = "1";
+            position = "175.242 -8.82381 187.877";
+            rotation = "0.219712 -0.581252 0.7835 147.005";
+            scale = "1 1 1";
+            dataBlock = "WayPointMarker";
+            team = "0";
+         };
+      };
+      new ScriptGroup(OrcDetailScene) {
+         class = "Scene";
+            gui = "DetailSceneGui";
+            title = "Level Of Detail";
+            screenError = "10";
+            detailSetting = "1";
+            description = "Shapes can include multiple detail levels for fine control over game performance.";
+
+         new WayPoint(start) {
+            canSaveDynamicFields = "1";
+            position = "181.682 -27.6385 183.981";
+            rotation = "0.00253661 0.00474567 0.999986 236.249";
+            scale = "1 1 1";
+            dataBlock = "WayPointMarker";
+            team = "0";
+         };
+      };
+      new ScriptGroup(OrcMountingScene) {
+         class = "Scene";
+            gui = "MountingSceneGUI";
+            title = "Object Mounting";
+            description = "Shapes and images can be mounted on other shapes, weapons, backbacks, armor, animals, etc.";
+
+         new WayPoint(start) {
+            canSaveDynamicFields = "1";
+            position = "182.927 -31.1868 183.872";
+            rotation = "-0.151589 -0.0876382 -0.984551 60.843";
+            scale = "1 1 1";
+            dataBlock = "WayPointMarker";
+            team = "0";
+         };
+      };
+      new ScriptGroup(ProjectileScene) {
+         class = "Scene";
+            title = "Projectiles";
+            description = "Built-in support for projectiles, which can include particle trails, dynamic lighting and explosions.";
+
+         new WayPoint(start) {
+            canSaveDynamicFields = "1";
+            position = "305.288 51.0875 186.989";
+            rotation = "0.336002 -0.0553221 0.940235 19.8651";
+            scale = "1 1 1";
+            dataBlock = "WayPointMarker";
+            team = "0";
+         };
+         new WayPoint(target) {
+            canSaveDynamicFields = "1";
+            position = "322.867 145.221 181.891";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            dataBlock = "WayPointMarker";
+            team = "0";
+         };
+      };
+      new ScriptGroup(ExplosionScene) {
+         class = "Scene";
+            title = "Explosions";
+            description = "Explosions can be a combination of animating shapes, particles, flying debris, and sub-explosions.";
+
+         new WayPoint(start) {
+            canSaveDynamicFields = "1";
+            position = "325.302 150.774 180.244";
+            rotation = "-0.00918011 -0.0782887 0.996888 193.335";
+            scale = "1 1 1";
+            dataBlock = "WayPointMarker";
+            team = "0";
+         };
+         new Path(Path) {
+            canSaveDynamicFields = "1";
+            isLooping = "0";
+               speed = "20";
+
+            new Marker() {
+               canSaveDynamicFields = "1";
+               position = "305.288 51.0875 186.989";
+               rotation = "-0.00918011 -0.0782887 0.996888 193.335";
+               scale = "1 1 1";
+               seqNum = "1";
+               type = "Normal";
+               msToNext = "1000";
+               smoothingType = "Spline";
+                  Smoothing = "Spline";
+            };
+            new Marker() {
+               canSaveDynamicFields = "1";
+               position = "309.277 63.9518 186.494";
+               rotation = "-0.0171864 -0.119158 0.992727 196.297";
+               scale = "1 1 1";
+               seqNum = "2";
+               type = "Position Only";
+               msToNext = "1000";
+               smoothingType = "Spline";
+                  Smoothing = "Spline";
+            };
+            new Marker() {
+               canSaveDynamicFields = "1";
+               position = "325.802 164.439 187.275";
+               rotation = "-0.0177749 -0.183153 0.982924 190.898";
+               scale = "1 1 1";
+               seqNum = "3";
+               type = "Kink";
+               msToNext = "1000";
+               smoothingType = "Spline";
+                  Smoothing = "Spline";
+            };
+         };
+      };
+      new ScriptGroup(FXLightScene) {
+         class = "Scene";
+            title = "Light Halos";
+            description = "Dynamic lights in the environment can include halo and particle effects.";
+
+         new WayPoint(start) {
+            canSaveDynamicFields = "1";
+            position = "329.194 260.304 219.513";
+            rotation = "-0.0179033 0.223979 0.97443 171.093";
+            scale = "1 1 1";
+            dataBlock = "WayPointMarker";
+            team = "0";
+         };
+      };
+      new ScriptGroup(MirrorScene) {
+         class = "Scene";
+            title = "Mirrors";
+            description = "The engine supports mirrors which can be placed indoors or out.";
+
+         new WayPoint(start) {
+            canSaveDynamicFields = "1";
+            position = "365.071 146.569 181.239";
+            rotation = "0.34603 -0.161813 0.924164 53.6789";
+            scale = "1 1 1";
+            dataBlock = "WayPointMarker";
+            team = "0";
+         };
+         new Path(Path) {
+            canSaveDynamicFields = "1";
+            isLooping = "1";
+               speed = "3";
+
+            new Marker() {
+               canSaveDynamicFields = "1";
+               position = "365.071 146.569 181.239";
+               rotation = "0.34603 -0.161813 0.924164 53.6789";
+               scale = "1 1 1";
+               seqNum = "1";
+               type = "Normal";
+               msToNext = "1000";
+               smoothingType = "Spline";
+                  Smoothing = "Spline";
+            };
+            new Marker() {
+               canSaveDynamicFields = "1";
+               position = "369.851 146.879 179.696";
+               rotation = "0.608855 0.062183 -0.790841 14.7172";
+               scale = "1 1 1";
+               seqNum = "2";
+               type = "Normal";
+               msToNext = "1000";
+               smoothingType = "Spline";
+                  Smoothing = "Spline";
+            };
+         };
+      };
+      new ScriptGroup(PrecipitationScene) {
+         class = "Scene";
+            title = "Precipitation";
+            description = "For outdoor scenes, environmental effects such as rain, snow and lightning are included.";
+
+         new WayPoint(start) {
+            canSaveDynamicFields = "1";
+            position = "365.752 145.019 180.646";
+            rotation = "-0.00842545 -0.0116911 -0.999896 108.447";
+            scale = "1 1 1";
+            dataBlock = "WayPointMarker";
+            team = "0";
+         };
+      };
+      new ScriptGroup(LightningScene) {
+         class = "Scene";
+            title = "Lightning";
+            description = "Lightning can be restricted to specific areas of the map.";
+
+         new WayPoint(start) {
+            canSaveDynamicFields = "1";
+            position = "209.221 257.688 272.344";
+            rotation = "0.11657 -0.0998649 0.988149 81.8485";
+            scale = "1 1 1";
+            dataBlock = "WayPointMarker";
+            team = "0";
+         };
+         new Path(Path) {
+            canSaveDynamicFields = "1";
+            isLooping = "0";
+               speed = "40";
+
+            new Marker() {
+               canSaveDynamicFields = "1";
+               position = "356.519 33.2714 214.928";
+               rotation = "0.999999 -0.000192793 0.00133682 16.413";
+               scale = "1 1 1";
+               seqNum = "1";
+               type = "Normal";
+               msToNext = "1000";
+               smoothingType = "Spline";
+                  Smoothing = "Spline";
+            };
+            new Marker() {
+               canSaveDynamicFields = "1";
+               position = "209.221 257.688 272.344";
+               rotation = "0.11657 -0.0998649 0.988149 81.8485";
+               scale = "1 1 1";
+               seqNum = "2";
+               type = "Normal";
+               msToNext = "1000";
+               smoothingType = "Spline";
+                  Smoothing = "Spline";
+            };
+         };
+      };
+      new ScriptGroup(WaterScene) {
+         class = "Scene";
+            title = "Water";
+            description = "LOD mesh with animated waves, shoreline textures, and specular highlighting.";
+
+         new WayPoint(start) {
+            canSaveDynamicFields = "1";
+            position = "118.451 -195.271 181.31";
+            rotation = "0.375622 -0.38476 0.84313 101.084";
+            scale = "1 1 1";
+            dataBlock = "WayPointMarker";
+            team = "0";
+         };
+         new Path(Path) {
+            canSaveDynamicFields = "1";
+            isLooping = "0";
+               speed = "15";
+
+            new Marker() {
+               canSaveDynamicFields = "1";
+               position = "118.451 -195.271 181.31";
+               rotation = "0.375622 -0.38476 0.84313 101.084";
+               scale = "1 1 1";
+               seqNum = "1";
+               type = "Normal";
+               msToNext = "1000";
+               smoothingType = "Spline";
+                  Smoothing = "Spline";
+            };
+            new Marker() {
+               canSaveDynamicFields = "1";
+               position = "183.394 -158.283 191.293";
+               rotation = "-0.0199925 -0.136603 0.990424 196.495";
+               scale = "1 1 1";
+               seqNum = "2";
+               type = "Position Only";
+               msToNext = "1000";
+               smoothingType = "Spline";
+                  Smoothing = "Spline";
+            };
+            new Marker() {
+               canSaveDynamicFields = "1";
+               position = "297.17 -238.948 184.542";
+               rotation = "-0.0585211 -0.116602 0.991453 232.91";
+               scale = "1 1 1";
+               seqNum = "3";
+               type = "Normal";
+               msToNext = "1000";
+               smoothingType = "Spline";
+                  Smoothing = "Spline";
+            };
+         };
+      };
+      new ScriptGroup(FxReplicatorScene) {
+         class = "Scene";
+            title = "Foliage Replication";
+            description = "Foliage can cover large areas while rendering is managed on-the-fly for optimal performance.";
+
+         new WayPoint(start) {
+            canSaveDynamicFields = "1";
+            position = "303.744 171.313 186.276";
+            rotation = "0.0616937 -0.194542 0.978952 145.506";
+            scale = "1 1 1";
+            dataBlock = "WayPointMarker";
+            team = "0";
+         };
+         new Path(Path) {
+            canSaveDynamicFields = "1";
+            isLooping = "0";
+               speed = "5";
+
+            new Marker() {
+               canSaveDynamicFields = "1";
+               position = "303.744 171.313 186.276";
+               rotation = "0.0616937 -0.194542 0.978952 145.506";
+               scale = "1 1 1";
+               seqNum = "1";
+               type = "Normal";
+               msToNext = "1000";
+               smoothingType = "Spline";
+                  Smoothing = "Spline";
+            };
+            new Marker() {
+               canSaveDynamicFields = "1";
+               position = "294.238 142.721 183.744";
+               rotation = "0.0336448 -0.0366552 0.998761 94.9743";
+               scale = "1 1 1";
+               seqNum = "2";
+               type = "Normal";
+               msToNext = "1000";
+               smoothingType = "Spline";
+                  Smoothing = "Spline";
+            };
+            new Marker() {
+               canSaveDynamicFields = "1";
+               position = "306.933 113.921 179.515";
+               rotation = "-0.270815 0.132237 0.953505 54.2342";
+               scale = "1 1 1";
+               seqNum = "3";
+               type = "Normal";
+               msToNext = "1000";
+               smoothingType = "Spline";
+                  Smoothing = "Spline";
+            };
+         };
+      };
+      new ScriptGroup(FogScene) {
+         class = "Scene";
+            title = "Volumetric Fog";
+            description = "Layered volumetric fog can be used to fog valleys, create storms, or limit visibility underwater.";
+
+         new WayPoint(start) {
+            canSaveDynamicFields = "1";
+            position = "327.544 206.697 307.79";
+            rotation = "0.874742 -0.125124 0.468156 33.9801";
+            scale = "1 1 1";
+            dataBlock = "WayPointMarker";
+            team = "0";
+         };
+      };
+      new ScriptGroup(InFogScene) {
+         class = "Scene";
+            title = "Volumetric Fog";
+            description = "True volumetric fog means smooth transitions and correct visibility through fog layers.";
+
+         new WayPoint(start) {
+            canSaveDynamicFields = "1";
+            position = "270.549 -79.9697 303.894";
+            rotation = "0.718613 0.181291 -0.671363 41.1895";
+            scale = "1 1 1";
+            dataBlock = "WayPointMarker";
+            team = "0";
+         };
+         new Path(Path) {
+            canSaveDynamicFields = "1";
+            isLooping = "0";
+               speed = "40";
+
+            new Marker() {
+               canSaveDynamicFields = "1";
+               position = "270.549 -79.9697 303.894";
+               rotation = "0.718613 0.181291 -0.671363 41.1895";
+               scale = "1 1 1";
+               seqNum = "1";
+               type = "Normal";
+               msToNext = "1000";
+               smoothingType = "Spline";
+                  Smoothing = "Spline";
+            };
+            new Marker() {
+               canSaveDynamicFields = "1";
+               position = "253.164 11.4415 183.12";
+               rotation = "-0.0191558 -0.16223 0.986567 193.289";
+               scale = "1 1 1";
+               seqNum = "2";
+               type = "Normal";
+               msToNext = "1000";
+               smoothingType = "Spline";
+                  Smoothing = "Spline";
+            };
+         };
+      };
+      new ScriptGroup(GoodbyeScene) {
+         class = "Scene";
+            title = "Goodbye!";
+            description = "Go to www.garagegames.com for more information!";
+
+         new WayPoint(start) {
+            canSaveDynamicFields = "1";
+            position = "422.304 287.648 234.791";
+            rotation = "-0.223678 0.262801 0.938565 102.761";
+            scale = "1 1 1";
+            dataBlock = "WayPointMarker";
+            team = "0";
+         };
+      };
+   };
+   new SimGroup(Buildings) {
+      canSaveDynamicFields = "1";
+
+      new InteriorInstance() {
+         canSaveDynamicFields = "1";
+         position = "175.38 -10.1902 182.883";
+         rotation = "0 0 -1 29.7937";
+         scale = "1 1 1";
+         interiorFile = "~/data/interiors/room/greathall.dif";
+         useGLLighting = "0";
+         showTerrainInside = "0";
+            locked = "true";
+      };
+   };
+   new SimGroup(LightHalos) {
+      canSaveDynamicFields = "1";
+
+      new fxLight() {
+         canSaveDynamicFields = "1";
+         position = "280.87 135.923 182.638";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "LightHalo";
+         Enable = "1";
+         IconSize = "1";
+      };
+      new fxLight() {
+         canSaveDynamicFields = "1";
+         position = "285.373 117.741 182.535";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "LightHalo";
+         Enable = "1";
+         IconSize = "1";
+      };
+   };
+   new SimGroup(Items) {
+      canSaveDynamicFields = "1";
+
+      new TSStatic(firepit) {
+         canSaveDynamicFields = "1";
+         position = "335.815 134.977 177.008";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/campfires/campfire.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new StaticShape() {
+         canSaveDynamicFields = "1";
+         position = "176.701 -25.661 182.806";
+         rotation = "0 0 -1 117.456";
+         scale = "1 1 1";
+         dataBlock = "FlagPole";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "356.668 154.75 176.086";
+         rotation = "-0.429511 -0.815039 0.388884 107.149";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/rocks/rock1.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new InteriorInstance(Mirror) {
+         canSaveDynamicFields = "1";
+         position = "368.59 143.875 179.004";
+         rotation = "0.0247155 -0.0295949 -0.999256 80.829";
+         scale = "1 1 1";
+         interiorFile = "~/data/interiors/mirror/mirror01.dif";
+         useGLLighting = "0";
+         showTerrainInside = "0";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "178.095 -27.355 183.513";
+         rotation = "-0.0234676 -0.00901036 0.999684 167.88";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/crossbow/weapon.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+   };
+   new TSStatic() {
+      canSaveDynamicFields = "1";
+      position = "375.035 140.02 175.241";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      shapeName = "~/data/shapes/trees/shrub.dts";
+      receiveSunLight = "1";
+      receiveLMLighting = "1";
+      useAdaptiveSelfIllumination = "0";
+      useCustomAmbientLighting = "0";
+      customAmbientSelfIllumination = "0";
+      customAmbientLighting = "0 0 0 1";
+      useLightingOcclusion = "1";
+   };
+   new TSStatic() {
+      canSaveDynamicFields = "1";
+      position = "81.7663 -105.872 200.893";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      shapeName = "~/data/shapes/trees/shrub.dts";
+      receiveSunLight = "1";
+      receiveLMLighting = "1";
+      useAdaptiveSelfIllumination = "0";
+      useCustomAmbientLighting = "0";
+      customAmbientSelfIllumination = "0";
+      customAmbientLighting = "0 0 0 1";
+      useLightingOcclusion = "1";
+   };
+   new TSStatic() {
+      canSaveDynamicFields = "1";
+      position = "165.32 75.515 199.953";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      shapeName = "~/data/shapes/trees/shrub.dts";
+      receiveSunLight = "1";
+      receiveLMLighting = "1";
+      useAdaptiveSelfIllumination = "0";
+      useCustomAmbientLighting = "0";
+      customAmbientSelfIllumination = "0";
+      customAmbientLighting = "0 0 0 1";
+      useLightingOcclusion = "1";
+   };
+   new TSStatic() {
+      canSaveDynamicFields = "1";
+      position = "187.767 137.41 226.187";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      shapeName = "~/data/shapes/trees/shrub.dts";
+      receiveSunLight = "1";
+      receiveLMLighting = "1";
+      useAdaptiveSelfIllumination = "0";
+      useCustomAmbientLighting = "0";
+      customAmbientSelfIllumination = "0";
+      customAmbientLighting = "0 0 0 1";
+      useLightingOcclusion = "1";
+   };
+   new TSStatic() {
+      canSaveDynamicFields = "1";
+      position = "83.3861 -152.947 180.134";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      shapeName = "~/data/shapes/trees/shrub.dts";
+      receiveSunLight = "1";
+      receiveLMLighting = "1";
+      useAdaptiveSelfIllumination = "0";
+      useCustomAmbientLighting = "0";
+      customAmbientSelfIllumination = "0";
+      customAmbientLighting = "0 0 0 1";
+      useLightingOcclusion = "1";
+   };
+   new TSStatic() {
+      canSaveDynamicFields = "1";
+      position = "77.0231 -219.781 199.147";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      shapeName = "~/data/shapes/trees/shrub.dts";
+      receiveSunLight = "1";
+      receiveLMLighting = "1";
+      useAdaptiveSelfIllumination = "0";
+      useCustomAmbientLighting = "0";
+      customAmbientSelfIllumination = "0";
+      customAmbientLighting = "0 0 0 1";
+      useLightingOcclusion = "1";
+   };
+   new SimGroup(TempleJunks) {
+      canSaveDynamicFields = "1";
+
+      new sgLightObject(TempleLight1) {
+         canSaveDynamicFields = "1";
+         position = "166.373 -16.7993 185.114";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "sgTempleTorchStaticPSDataBlock";
+         Enable = "1";
+         IconSize = "1";
+         ParticleColorAttenuation = "1";
+      };
+      new sgLightObject(TempleLight1) {
+         canSaveDynamicFields = "1";
+         position = "192.375 -18.5845 185.05";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "sgTempleTorchStaticPSDataBlock";
+         Enable = "1";
+         IconSize = "1";
+         ParticleColorAttenuation = "1";
+      };
+      new sgLightObject(TempleLight1) {
+         canSaveDynamicFields = "1";
+         position = "177.607 -1.85194 185.12";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "sgTempleTorchStaticPSDataBlock";
+         Enable = "1";
+         IconSize = "1";
+         ParticleColorAttenuation = "1";
+      };
+      new sgLightObject(TempleLight1) {
+         canSaveDynamicFields = "1";
+         position = "167.074 -7.7058 184.985";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "sgTempleTorchStaticPSDataBlock";
+         Enable = "1";
+         IconSize = "1";
+         ParticleColorAttenuation = "1";
+      };
+      new sgLightObject(TempleLight1) {
+         canSaveDynamicFields = "1";
+         position = "158.727 4.33055 191.107";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "sgTempleTorchStaticPSDataBlock";
+         Enable = "1";
+         IconSize = "1";
+         ParticleColorAttenuation = "1";
+      };
+      new sgLightObject(TempleLight1) {
+         canSaveDynamicFields = "1";
+         position = "174.079 -20.8647 184.951";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "sgTempleTorchStaticPSDataBlock";
+         Enable = "1";
+         IconSize = "1";
+         ParticleColorAttenuation = "1";
+      };
+      new sgLightObject(TempleLight1) {
+         canSaveDynamicFields = "1";
+         position = "198.597 -41.8017 184.658";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "sgTempleTorchStaticPSDataBlock";
+         Enable = "1";
+         IconSize = "1";
+         ParticleColorAttenuation = "1";
+      };
+      new sgLightObject(TempleLight1) {
+         canSaveDynamicFields = "1";
+         position = "202.098 -9.69849 188.7";
+         rotation = "-0.0110819 0.987619 -0.156483 114.014";
+         scale = "1 1 1";
+         dataBlock = "sgTempleWindowStaticPSDataBlock";
+         Enable = "1";
+         IconSize = "1";
+         ParticleColorAttenuation = "1";
+      };
+      new sgLightObject(TempleLight1) {
+         canSaveDynamicFields = "1";
+         position = "196.014 1.1459 188.612";
+         rotation = "-0.0110819 0.987619 -0.156483 114.014";
+         scale = "1 1 1";
+         dataBlock = "sgTempleWindowStaticPSDataBlock";
+         Enable = "1";
+         IconSize = "1";
+         ParticleColorAttenuation = "1";
+      };
+      new sgLightObject(TempleLight1) {
+         canSaveDynamicFields = "1";
+         position = "191.878 8.60486 188.214";
+         rotation = "-0.0110819 0.987619 -0.156483 114.014";
+         scale = "1 1 1";
+         dataBlock = "sgTempleWindowStaticPSDataBlock";
+         Enable = "1";
+         IconSize = "1";
+         ParticleColorAttenuation = "1";
+      };
+      new sgLightObject(TempleLight1) {
+         canSaveDynamicFields = "1";
+         position = "206.183 -17.0645 188.512";
+         rotation = "-0.0110819 0.987619 -0.156483 114.014";
+         scale = "1 1 1";
+         dataBlock = "sgTempleWindowStaticPSDataBlock";
+         Enable = "1";
+         IconSize = "1";
+         ParticleColorAttenuation = "1";
+      };
+      new sgLightObject(TempleLight1) {
+         canSaveDynamicFields = "1";
+         position = "210.528 -24.93 189.036";
+         rotation = "-0.0110819 0.987619 -0.156483 114.014";
+         scale = "1 1 1";
+         dataBlock = "sgTempleWindowStaticPSDataBlock";
+         Enable = "1";
+         IconSize = "1";
+         ParticleColorAttenuation = "1";
+      };
+      new sgLightObject(TempleLight1) {
+         canSaveDynamicFields = "1";
+         position = "218.862 -39.6631 187.742";
+         rotation = "-0.0110819 0.987619 -0.156483 114.014";
+         scale = "1 1 1";
+         dataBlock = "sgTempleWindowStaticPSDataBlock";
+         Enable = "1";
+         IconSize = "1";
+         ParticleColorAttenuation = "1";
+      };
+      new sgLightObject(TempleLight1) {
+         canSaveDynamicFields = "1";
+         position = "219.153 -36.5496 198.182";
+         rotation = "-0.0110819 0.987619 -0.156483 114.014";
+         scale = "1 1 1";
+         dataBlock = "sgTempleWindowStaticPSDataBlock";
+         Enable = "1";
+         IconSize = "1";
+         ParticleColorAttenuation = "1";
+      };
+      new sgLightObject(TempleLight1) {
+         canSaveDynamicFields = "1";
+         position = "212.498 -25.3482 197.849";
+         rotation = "-0.0110819 0.987619 -0.156483 114.014";
+         scale = "1 1 1";
+         dataBlock = "sgTempleSmallWindowStaticPSDataBlock";
+         Enable = "1";
+         IconSize = "1";
+         ParticleColorAttenuation = "1";
+      };
+      new sgLightObject(TempleLight1) {
+         canSaveDynamicFields = "1";
+         position = "209.277 -21.4487 197.456";
+         rotation = "-0.0110819 0.987619 -0.156483 114.014";
+         scale = "1 1 1";
+         dataBlock = "sgTempleSmallWindowStaticPSDataBlock";
+         Enable = "1";
+         IconSize = "1";
+         ParticleColorAttenuation = "1";
+      };
+      new sgLightObject(TempleLight1) {
+         canSaveDynamicFields = "1";
+         position = "206.929 -17.2256 197.231";
+         rotation = "-0.0110819 0.987619 -0.156483 114.014";
+         scale = "1 1 1";
+         dataBlock = "sgTempleSmallWindowStaticPSDataBlock";
+         Enable = "1";
+         IconSize = "1";
+         ParticleColorAttenuation = "1";
+      };
+      new sgLightObject(TempleLight1) {
+         canSaveDynamicFields = "1";
+         position = "203.869 -13.0967 197.027";
+         rotation = "-0.0110819 0.987619 -0.156483 114.014";
+         scale = "1 1 1";
+         dataBlock = "sgTempleSmallWindowStaticPSDataBlock";
+         Enable = "1";
+         IconSize = "1";
+         ParticleColorAttenuation = "1";
+      };
+      new sgLightObject(TempleLight1) {
+         canSaveDynamicFields = "1";
+         position = "201.081 -8.2809 197.12";
+         rotation = "-0.0110819 0.987619 -0.156483 114.014";
+         scale = "1 1 1";
+         dataBlock = "sgTempleSmallWindowStaticPSDataBlock";
+         Enable = "1";
+         IconSize = "1";
+         ParticleColorAttenuation = "1";
+      };
+      new sgLightObject(TempleLight1) {
+         canSaveDynamicFields = "1";
+         position = "197.056 0.447841 197.488";
+         rotation = "-0.0110819 0.987619 -0.156483 114.014";
+         scale = "1 1 1";
+         dataBlock = "sgTempleSmallWindowStaticPSDataBlock";
+         Enable = "1";
+         IconSize = "1";
+         ParticleColorAttenuation = "1";
+      };
+      new sgLightObject(TempleLight1) {
+         canSaveDynamicFields = "1";
+         position = "193.98 4.7094 197.23";
+         rotation = "-0.0110819 0.987619 -0.156483 114.014";
+         scale = "1 1 1";
+         dataBlock = "sgTempleSmallWindowStaticPSDataBlock";
+         Enable = "1";
+         IconSize = "1";
+         ParticleColorAttenuation = "1";
+      };
+      new sgLightObject(TempleLight1) {
+         canSaveDynamicFields = "1";
+         position = "192.156 8.83424 197.404";
+         rotation = "-0.0110819 0.987619 -0.156483 114.014";
+         scale = "1 1 1";
+         dataBlock = "sgTempleSmallWindowStaticPSDataBlock";
+         Enable = "1";
+         IconSize = "1";
+         ParticleColorAttenuation = "1";
+      };
+      new sgLightObject(TempleLight1) {
+         canSaveDynamicFields = "1";
+         position = "190.028 13.1734 197.844";
+         rotation = "-0.0110819 0.987619 -0.156483 114.014";
+         scale = "1 1 1";
+         dataBlock = "sgTempleSmallWindowStaticPSDataBlock";
+         Enable = "1";
+         IconSize = "1";
+         ParticleColorAttenuation = "1";
+      };
+      new sgLightObject(TempleLight1) {
+         canSaveDynamicFields = "1";
+         position = "213.998 -33.5965 197.075";
+         rotation = "-0.0110819 0.987619 -0.156483 114.014";
+         scale = "1 1 1";
+         dataBlock = "sgTempleSmallWindowStaticPSDataBlock";
+         Enable = "1";
+         IconSize = "1";
+         ParticleColorAttenuation = "1";
+      };
+      new sgLightObject(TempleLight1) {
+         canSaveDynamicFields = "1";
+         position = "216.207 -41.1531 197.102";
+         rotation = "-0.0110819 0.987619 -0.156483 114.014";
+         scale = "1 1 1";
+         dataBlock = "sgTempleSmallWindowStaticPSDataBlock";
+         Enable = "1";
+         IconSize = "1";
+         ParticleColorAttenuation = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "192.787 -18.8349 182.878";
+         rotation = "0 0 -1 28.6479";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/torches/brazier.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "185.551 -5.77358 182.884";
+         rotation = "0 0 -1 26.3561";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/torches/brazier.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "177.746 -1.97884 183.005";
+         rotation = "0 0 -1 28.6479";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/torches/brazier.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "167.229 -7.75938 182.878";
+         rotation = "0 0 -1 28.6479";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/torches/brazier.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "185.438 -14.7037 182.874";
+         rotation = "0 0 -1 28.6479";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/torches/brazier.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "174.098 -20.8325 182.882";
+         rotation = "0 0 -1 28.6479";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/torches/brazier.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "181.726 -33.8806 182.882";
+         rotation = "0 0 -1 28.6479";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/torches/brazier.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "192.442 -28.1085 182.881";
+         rotation = "0 0 -1 28.6479";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/torches/brazier.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "158.762 4.32002 188.818";
+         rotation = "0 0 -1 28.6479";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/torches/brazier.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "171.641 11.3755 188.815";
+         rotation = "0 0 -1 28.6479";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/torches/brazier.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "166.431 -16.9373 182.873";
+         rotation = "0 0 -1 28.6479";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/torches/brazier.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "173.768 -29.8537 182.88";
+         rotation = "0 0 -1 28.6479";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/torches/brazier.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "198.657 -42.0493 182.542";
+         rotation = "0 0 -1 28.6479";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/torches/brazier.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "191.71 -46.246 182.568";
+         rotation = "0 0 -1 28.6479";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/torches/brazier.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new ParticleEmitterNode(TempleTorchFlame) {
+         canSaveDynamicFields = "1";
+         position = "192.856 -18.8518 184.743";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "TorchFireEmitterNode";
+         emitter = "TorchFireEmitter";
+         velocity = "1";
+      };
+      new ParticleEmitterNode(TempleTorchSmoke) {
+         canSaveDynamicFields = "1";
+         position = "192.765 -18.8305 185.018";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "FlameSmokeEmitterNode";
+         emitter = "FlameSmokeEmitter";
+         velocity = "1";
+      };
+      new ParticleEmitterNode(TempleTorchSmoke) {
+         canSaveDynamicFields = "1";
+         position = "174.133 -20.8284 184.958";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "FlameSmokeEmitterNode";
+         emitter = "FlameSmokeEmitter";
+         velocity = "1";
+      };
+      new ParticleEmitterNode(TempleTorchFlame) {
+         canSaveDynamicFields = "1";
+         position = "174.074 -20.8497 184.683";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "TorchFireEmitterNode";
+         emitter = "TorchFireEmitter";
+         velocity = "1";
+      };
+      new ParticleEmitterNode(TempleTorchSmoke) {
+         canSaveDynamicFields = "1";
+         position = "167.224 -7.72826 184.944";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "FlameSmokeEmitterNode";
+         emitter = "FlameSmokeEmitter";
+         velocity = "1";
+      };
+      new ParticleEmitterNode(TempleTorchFlame) {
+         canSaveDynamicFields = "1";
+         position = "167.315 -7.74956 184.669";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "TorchFireEmitterNode";
+         emitter = "TorchFireEmitter";
+         velocity = "1";
+      };
+      new ParticleEmitterNode(TempleTorchSmoke) {
+         canSaveDynamicFields = "1";
+         position = "177.694 -2.00425 185.062";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "FlameSmokeEmitterNode";
+         emitter = "FlameSmokeEmitter";
+         velocity = "1";
+      };
+      new ParticleEmitterNode(TempleTorchFlame) {
+         canSaveDynamicFields = "1";
+         position = "177.785 -2.02555 184.787";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "TorchFireEmitterNode";
+         emitter = "TorchFireEmitter";
+         velocity = "1";
+      };
+      new ParticleEmitterNode(TempleTorchSmoke) {
+         canSaveDynamicFields = "1";
+         position = "158.748 4.33272 190.824";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "FlameSmokeEmitterNode";
+         emitter = "FlameSmokeEmitter";
+         velocity = "1";
+      };
+      new ParticleEmitterNode(TempleTorchFlame) {
+         canSaveDynamicFields = "1";
+         position = "158.839 4.31142 190.549";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "TorchFireEmitterNode";
+         emitter = "TorchFireEmitter";
+         velocity = "1";
+      };
+      new ParticleEmitterNode(TempleTorchSmoke) {
+         canSaveDynamicFields = "1";
+         position = "166.356 -16.8986 184.921";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "FlameSmokeEmitterNode";
+         emitter = "FlameSmokeEmitter";
+         velocity = "1";
+      };
+      new ParticleEmitterNode(TempleTorchFlame) {
+         canSaveDynamicFields = "1";
+         position = "166.447 -16.9199 184.646";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "TorchFireEmitterNode";
+         emitter = "TorchFireEmitter";
+         velocity = "1";
+      };
+      new ParticleEmitterNode(TempleTorchSmoke) {
+         canSaveDynamicFields = "1";
+         position = "198.6 -41.984 184.559";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "FlameSmokeEmitterNode";
+         emitter = "FlameSmokeEmitter";
+         velocity = "1";
+      };
+      new ParticleEmitterNode(TempleTorchFlame) {
+         canSaveDynamicFields = "1";
+         position = "198.691 -42.0053 184.284";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "TorchFireEmitterNode";
+         emitter = "TorchFireEmitter";
+         velocity = "1";
+      };
+   };
+   new SimGroup(Tower1) {
+      canSaveDynamicFields = "1";
+
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "351.567 246.32 197.311";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/trees/shrub.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "336.801 225.643 195.698";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/trees/shrub.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new InteriorInstance() {
+         canSaveDynamicFields = "1";
+         position = "354.574 231.355 197.367";
+         rotation = "0 0 1 124.905";
+         scale = "1 1 1";
+         interiorFile = "~/data/interiors/tower/tower.dif";
+         useGLLighting = "0";
+         showTerrainInside = "0";
+      };
+      new volumeLight() {
+         canSaveDynamicFields = "1";
+         position = "337.23 245.125 224.732";
+         rotation = "0.793566 0.444928 -0.415081 105.601";
+         scale = "1 1 1";
+         dataBlock = "sgRedLightDataBlock";
+         Enable = "1";
+         IconSize = "1";
+         ParticleColorAttenuation = "1";
+         Texture = "common/lighting/corona";
+         lpDistance = "25";
+         ShootDistance = "25";
+         Xextent = "15";
+         Yextent = "20";
+         SubdivideU = "32";
+         SubdivideV = "32";
+         FootColour = "1 0.86 0.7 0.12";
+         TailColour = "0 0 0 0";
+      };
+      new sgLightObject() {
+         canSaveDynamicFields = "1";
+         position = "329.151 247.388 209.202";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "sgRedLightDataBlock";
+         Enable = "1";
+         IconSize = "1";
+         ParticleColorAttenuation = "1";
+      };
+      new sgLightObject() {
+         canSaveDynamicFields = "1";
+         position = "329.867 247.815 267.07";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "sgRedLightDataBlock";
+         Enable = "1";
+         IconSize = "1";
+         ParticleColorAttenuation = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "353.376 253.62 198.731";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/trees/shrub.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "325.11 268.615 198.126";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/trees/shrub.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "316.876 255.609 197.691";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/trees/shrub.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "326.163 229.485 196.138";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/trees/shrub.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "317.244 234.567 196.504";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/trees/shrub.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "342.87 249.68 197.353";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/torches/brazier.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "329.779 258.828 197.353";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/torches/brazier.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "320.137 245.277 197.353";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/torches/brazier.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "342.584 260.158 198.469";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/trees/shrub.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new ParticleEmitterNode() {
+         canSaveDynamicFields = "1";
+         position = "320.171 245.28 199.224";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "FlameSmokeEmitterNode";
+         emitter = "FlameSmokeEmitter";
+         velocity = "1";
+      };
+      new ParticleEmitterNode() {
+         canSaveDynamicFields = "1";
+         position = "329.789 258.744 199.234";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "FlameSmokeEmitterNode";
+         emitter = "FlameSmokeEmitter";
+         velocity = "1";
+      };
+      new ParticleEmitterNode() {
+         canSaveDynamicFields = "1";
+         position = "342.639 249.798 199.332";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "FlameSmokeEmitterNode";
+         emitter = "FlameSmokeEmitter";
+         velocity = "1";
+      };
+   };
+   new SimGroup(Hovel1) {
+      canSaveDynamicFields = "1";
+
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "369.552 135.122 174.838";
+         rotation = "0 0 1 14.3239";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/rocks/rock1.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "380.1 149.292 174.164";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/trees/shrub.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "367.634 159.384 175.453";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/trees/shrub.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "356.397 146.015 176.763";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/trees/shrub.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new InteriorInstance() {
+         canSaveDynamicFields = "1";
+         position = "329.678 118.785 185.787";
+         rotation = "0 0 -1 36.6693";
+         scale = "1 1 1";
+         interiorFile = "~/data/interiors/cottage/cottage.dif";
+         useGLLighting = "0";
+         showTerrainInside = "0";
+      };
+      new sgLightObject() {
+         canSaveDynamicFields = "1";
+         position = "369.868 148.036 181.668";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "CottageLight";
+         Enable = "1";
+         IconSize = "1";
+         ParticleColorAttenuation = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "374.607 133.569 178.676";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/trees/oak2.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+      new ParticleEmitterNode() {
+         canSaveDynamicFields = "1";
+         position = "364.961 150.432 184.305";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "CottageSmokeEmitterNode";
+         emitter = "CottageSmokeEmitter";
+         velocity = "1";
+      };
+      new ParticleEmitterNode() {
+         canSaveDynamicFields = "1";
+         position = "367.813 152.461 184.229";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "CottageSmokeEmitterNode";
+         emitter = "CottageSmokeEmitter";
+         velocity = "1";
+      };
+      new ParticleEmitterNode() {
+         canSaveDynamicFields = "1";
+         position = "372.006 146.323 184.189";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "CottageSmokeEmitterNode";
+         emitter = "CottageSmokeEmitter";
+         velocity = "1";
+      };
+      new ParticleEmitterNode() {
+         canSaveDynamicFields = "1";
+         position = "369.398 144.794 184.294";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "CottageSmokeEmitterNode";
+         emitter = "CottageSmokeEmitter";
+         velocity = "1";
+      };
+      new TSStatic() {
+         canSaveDynamicFields = "1";
+         position = "358.775 158.728 176.781";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/trees/oak1.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         useLightingOcclusion = "1";
+      };
+   };
+   new ParticleEmitterNode() {
+      canSaveDynamicFields = "1";
+      position = "335.815 134.977 177.008";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "CampFireNode";
+      emitter = "CampFireEmitter";
+      velocity = "1";
+   };
+   new ParticleEmitterNode() {
+      canSaveDynamicFields = "1";
+      position = "335.815 134.977 177.008";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "EmberNode";
+      emitter = "EmberEmitter";
+      velocity = "1";
+   };
+   new ParticleEmitterNode() {
+      canSaveDynamicFields = "1";
+      position = "85.1995 -117.685 201.39";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "FliesNode";
+      emitter = "FliesEmitter";
+      velocity = "1";
+   };
+   new fxShapeReplicator() {
+      canSaveDynamicFields = "1";
+      position = "346.04 104.393 192.114";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      HideReplications = "0";
+      ShowPlacementArea = "1";
+      PlacementAreaHeight = "25";
+      PlacementColour = "0.4 0 0.8 1";
+      shapeFile = "~/data/shapes/trees/oak2.dts";
+      Seed = "1376312589";
+      ShapeCount = "20";
+      ShapeRetries = "100";
+      InnerRadiusX = "0";
+      InnerRadiusY = "0";
+      OuterRadiusX = "100";
+      OuterRadiusY = "100";
+      AllowOnTerrain = "1";
+      AllowOnInteriors = "0";
+      AllowOnStatics = "0";
+      AllowOnWater = "0";
+      AllowWaterSurface = "0";
+      AlignToTerrain = "0";
+      Interactions = "1";
+      AllowedTerrainSlope = "90";
+      TerrainAlignment = "1 1 1";
+      FixShapeAspect = "0";
+      ShapeScaleMin = "1 1 1";
+      ShapeScaleMax = "2 2 2";
+      ShapeRotateMin = "0 -5 0";
+      ShapeRotateMax = "0 5 359";
+      OffsetZ = "0";
+      receiveSunLight = "1";
+      receiveLMLighting = "1";
+      useAdaptiveSelfIllumination = "0";
+      useCustomAmbientLighting = "0";
+      customAmbientSelfIllumination = "0";
+      customAmbientLighting = "0 0 0 1";
+      useLightingOcclusion = "1";
+   };
+   new fxFoliageReplicator(Weed1) {
+      canSaveDynamicFields = "1";
+      position = "349.939 148.901 180.897";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      UseDebugInfo = "0";
+      DebugBoxHeight = "1";
+      HideFoliage = "0";
+      ShowPlacementArea = "0";
+      PlacementAreaHeight = "25";
+      PlacementColour = "0.4 0 0.8 1";
+      Seed = "1376312589";
+      FoliageFile = "~/data/environment/TalGras";
+      FoliageCount = "3500";
+      FoliageRetries = "100";
+      InnerRadiusX = "0";
+      InnerRadiusY = "0";
+      OuterRadiusX = "128";
+      OuterRadiusY = "128";
+      MinWidth = "1";
+      MaxWidth = "2";
+      MinHeight = "1";
+      MaxHeight = "3";
+      FixAspectRatio = "1";
+      FixSizeToMax = "0";
+      OffsetZ = "0";
+      RandomFlip = "1";
+      UseCulling = "1";
+      CullResolution = "64";
+      ViewDistance = "50";
+      ViewClosest = "1";
+      FadeInRegion = "10";
+      FadeOutRegion = "1";
+      AlphaCutoff = "0.2";
+      GroundAlpha = "1";
+      SwayOn = "1";
+      SwaySync = "0";
+      SwayMagSide = "0.5";
+      SwayMagFront = "0";
+      MinSwayTime = "5";
+      MaxSwayTime = "50";
+      LightOn = "1";
+      LightSync = "0";
+      MinLuminance = "0.4";
+      MaxLuminance = "0.5";
+      LightTime = "2";
+      AllowOnTerrain = "1";
+      AllowOnInteriors = "0";
+      AllowOnStatics = "0";
+      AllowOnWater = "0";
+      AllowWaterSurface = "0";
+      AllowedTerrainSlope = "90";
+   };
+   new fxFoliageReplicator(Weed2) {
+      canSaveDynamicFields = "1";
+      position = "347.205 143.27 177.312";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      UseDebugInfo = "0";
+      DebugBoxHeight = "1";
+      HideFoliage = "0";
+      ShowPlacementArea = "0";
+      PlacementAreaHeight = "25";
+      PlacementColour = "0.4 0 0.8 1";
+      Seed = "1376312589";
+      FoliageFile = "~/data/environment/Weed01";
+      FoliageCount = "500";
+      FoliageRetries = "100";
+      InnerRadiusX = "0";
+      InnerRadiusY = "0";
+      OuterRadiusX = "128";
+      OuterRadiusY = "128";
+      MinWidth = "1";
+      MaxWidth = "3";
+      MinHeight = "1";
+      MaxHeight = "2";
+      FixAspectRatio = "1";
+      FixSizeToMax = "0";
+      OffsetZ = "0";
+      RandomFlip = "1";
+      UseCulling = "1";
+      CullResolution = "64";
+      ViewDistance = "50";
+      ViewClosest = "1";
+      FadeInRegion = "10";
+      FadeOutRegion = "1";
+      AlphaCutoff = "0.2";
+      GroundAlpha = "1";
+      SwayOn = "1";
+      SwaySync = "0";
+      SwayMagSide = "0.5";
+      SwayMagFront = "0";
+      MinSwayTime = "5";
+      MaxSwayTime = "50";
+      LightOn = "1";
+      LightSync = "0";
+      MinLuminance = "0.4";
+      MaxLuminance = "0.5";
+      LightTime = "2";
+      AllowOnTerrain = "1";
+      AllowOnInteriors = "0";
+      AllowOnStatics = "0";
+      AllowOnWater = "0";
+      AllowWaterSurface = "0";
+      AllowedTerrainSlope = "90";
+   };
+   new fxShapeReplicator() {
+      canSaveDynamicFields = "1";
+      position = "449.431 304.114 229.254";
+      rotation = "0.862304 0.155386 -0.481961 41.0002";
+      scale = "1 1 1";
+      HideReplications = "0";
+      ShowPlacementArea = "1";
+      PlacementAreaHeight = "25";
+      PlacementColour = "0.4 0 0.8 1";
+      shapeFile = "~/data/shapes/trees/oak2.dts";
+      Seed = "1376312589";
+      ShapeCount = "10";
+      ShapeRetries = "100";
+      InnerRadiusX = "0";
+      InnerRadiusY = "0";
+      OuterRadiusX = "100";
+      OuterRadiusY = "100";
+      AllowOnTerrain = "1";
+      AllowOnInteriors = "1";
+      AllowOnStatics = "1";
+      AllowOnWater = "0";
+      AllowWaterSurface = "0";
+      AlignToTerrain = "0";
+      Interactions = "1";
+      AllowedTerrainSlope = "90";
+      TerrainAlignment = "1 1 1";
+      FixShapeAspect = "0";
+      ShapeScaleMin = "1 1 1";
+      ShapeScaleMax = "3 3 3";
+      ShapeRotateMin = "0 0 0";
+      ShapeRotateMax = "0 0 0";
+      OffsetZ = "0";
+      receiveSunLight = "1";
+      receiveLMLighting = "1";
+      useAdaptiveSelfIllumination = "0";
+      useCustomAmbientLighting = "0";
+      customAmbientSelfIllumination = "0";
+      customAmbientLighting = "0 0 0 1";
+      useLightingOcclusion = "1";
+   };
+   new InteriorInstance() {
+      canSaveDynamicFields = "1";
+      position = "136.62 -195.97 174.298";
+      rotation = "0 0 -1 69.3279";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/dock/dock.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new StaticShape() {
+      canSaveDynamicFields = "1";
+      position = "368.487 148.671 178.261";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "ElfDance";
+      receiveSunLight = "0";
+      receiveLMLighting = "1";
+      useAdaptiveSelfIllumination = "0";
+      useCustomAmbientLighting = "0";
+      customAmbientSelfIllumination = "0";
+      customAmbientLighting = "0 0 0 1";
+      useLightingOcclusion = "1";
+         repeatFlag = "1";
+   };
+};
+//--- OBJECT WRITE END ---

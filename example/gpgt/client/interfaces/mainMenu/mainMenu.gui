@@ -1,0 +1,223 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiChunkedBitmapCtrl(MainMenuGui) {
+   Profile = "GuiContentProfile";
+   HorizSizing = "width";
+   VertSizing = "height";
+   position = "0 0";
+   Extent = "800 600";
+   MinExtent = "8 8";
+   Visible = "1";
+   bitmap = "~/client/sharedAssets/background0.png";
+   useVariable = "0";
+   tile = "0";
+      helpTag = "0";
+      musicID = "0";
+
+   new GuiBitmapButtonCtrl() {
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "311 113";
+      Extent = "189 49";
+      MinExtent = "8 2";
+      Visible = "1";
+      Command = "Canvas.setContent(startMissionGui);";
+      Accelerator = "1";
+      text = "Button";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      bitmap = "~/client/sharedAssets/button1/button1";
+
+      new GuiMLTextCtrl() {
+         Profile = "GuiModelessMLTextProfile";
+         HorizSizing = "center";
+         VertSizing = "center";
+         position = "19 15";
+         Extent = "150 18";
+         MinExtent = "8 2";
+         Visible = "1";
+         lineSpacing = "2";
+         allowColorChars = "0";
+         maxChars = "-1";
+         text = "<just:center><color:fada00><font:Arial Bold:18>Start Mission...";
+      };
+   };
+   new GuiBitmapButtonCtrl() {
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "311 163";
+      Extent = "189 49";
+      MinExtent = "8 2";
+      Visible = "1";
+      Command = "Canvas.setContent(serverQuery);";
+      Accelerator = "2";
+      text = "Button";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      bitmap = "~/client/sharedAssets/button1/button1";
+
+      new GuiMLTextCtrl() {
+         Profile = "GuiModelessMLTextProfile";
+         HorizSizing = "center";
+         VertSizing = "center";
+         position = "19 15";
+         Extent = "150 18";
+         MinExtent = "8 2";
+         Visible = "1";
+         lineSpacing = "2";
+         allowColorChars = "0";
+         maxChars = "-1";
+         text = "<just:center><color:fada00><font:Arial Bold:18>Join Server...";
+      };
+   };
+   new GuiBitmapButtonCtrl() {
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "311 213";
+      Extent = "189 49";
+      MinExtent = "8 2";
+      Visible = "1";
+      Command = "Canvas.pushDialog(optionsDlg);";
+      Accelerator = "3";
+      text = "Button";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      bitmap = "~/client/sharedAssets/button1/button1";
+
+      new GuiMLTextCtrl() {
+         Profile = "GuiModelessMLTextProfile";
+         HorizSizing = "center";
+         VertSizing = "center";
+         position = "19 15";
+         Extent = "150 18";
+         MinExtent = "8 2";
+         Visible = "1";
+         lineSpacing = "2";
+         allowColorChars = "0";
+         maxChars = "-1";
+         text = "<just:center><color:fada00><font:Arial Bold:18>Options...";
+      };
+   };
+   new GuiBitmapButtonCtrl() {
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "311 413";
+      Extent = "189 49";
+      MinExtent = "8 2";
+      Visible = "1";
+      Command = "quit();";
+      Accelerator = "escape";
+      text = "Button";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      bitmap = "~/client/sharedAssets/button1/button1";
+
+      new GuiMLTextCtrl() {
+         Profile = "GuiModelessMLTextProfile";
+         HorizSizing = "center";
+         VertSizing = "center";
+         position = "19 15";
+         Extent = "150 18";
+         MinExtent = "8 2";
+         Visible = "1";
+         lineSpacing = "2";
+         allowColorChars = "0";
+         maxChars = "-1";
+         text = "<just:center><color:fada00><font:Arial Bold:18>Quit!";
+      };
+   };
+   new GuiBitmapButtonCtrl() {
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "311 313";
+      Extent = "189 49";
+      MinExtent = "8 2";
+      Visible = "1";
+      Command = "Canvas.setContent(GUISamplerInterface);";
+      Accelerator = "5";
+      text = "Button";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      bitmap = "~/client/sharedAssets/button1/button1";
+
+      new GuiMLTextCtrl() {
+         Profile = "GuiModelessMLTextProfile";
+         HorizSizing = "center";
+         VertSizing = "center";
+         position = "19 15";
+         Extent = "150 18";
+         MinExtent = "8 2";
+         Visible = "1";
+         lineSpacing = "2";
+         allowColorChars = "0";
+         maxChars = "-1";
+         text = "<just:center><color:fada00><font:Arial Bold:18>GUIs Sampler";
+      };
+   };
+   new GuiBitmapButtonCtrl() {
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "311 363";
+      Extent = "189 49";
+      MinExtent = "8 2";
+      Visible = "1";
+      Command = "Canvas.setContent(SampleInterfacesSelector);";
+      Accelerator = "6";
+      text = "Button";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      bitmap = "~/client/sharedAssets/button1/button1";
+
+      new GuiMLTextCtrl() {
+         Profile = "GuiModelessMLTextProfile";
+         HorizSizing = "center";
+         VertSizing = "center";
+         position = "19 15";
+         Extent = "150 18";
+         MinExtent = "8 2";
+         Visible = "1";
+         lineSpacing = "2";
+         allowColorChars = "0";
+         maxChars = "-1";
+         text = "<just:center><color:fada00><font:Arial Bold:18>Interface Sampler";
+      };
+   };
+   new GuiBitmapButtonCtrl() {
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "311 263";
+      Extent = "189 49";
+      MinExtent = "8 2";
+      Visible = "1";
+      Command = "Canvas.pushDialog(SampleScriptConsole, 69 );";
+      Accelerator = "4";
+      text = "Button";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      bitmap = "~/client/sharedAssets/button1/button1";
+
+      new GuiMLTextCtrl() {
+         Profile = "GuiModelessMLTextProfile";
+         HorizSizing = "center";
+         VertSizing = "center";
+         position = "7 15";
+         Extent = "174 18";
+         MinExtent = "8 2";
+         Visible = "1";
+         lineSpacing = "2";
+         allowColorChars = "0";
+         maxChars = "-1";
+         text = "<just:center><color:fada00><font:Arial Bold:18>Sample Script Console";
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+
+
+

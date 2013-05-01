@@ -1,0 +1,237 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiChunkedBitmapCtrl(startMissionGui) {
+   canSaveDynamicFields = "0";
+   Profile = "GuiContentProfile";
+   HorizSizing = "width";
+   VertSizing = "height";
+   position = "0 0";
+   Extent = "1024 768";
+   MinExtent = "8 8";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+   bitmap = "./main";
+   useVariable = "0";
+   tile = "0";
+
+   new GuiControl() {
+      canSaveDynamicFields = "0";
+      Profile = "GuiWindowProfile";
+      HorizSizing = "center";
+      VertSizing = "center";
+      position = "284 230";
+      Extent = "455 308";
+      MinExtent = "8 8";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+
+      new GuiTextCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiTextProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "12 36";
+         Extent = "75 18";
+         MinExtent = "8 8";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         text = "Select a Office:";
+         maxLength = "255";
+      };
+      new GuiCheckBoxCtrl(ML_isMultiplayer) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiCheckBoxProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "155 272";
+         Extent = "147 23";
+         MinExtent = "8 8";
+         canSave = "1";
+         Visible = "1";
+         Variable = "pref::HostMultiPlayer";
+         hovertime = "1000";
+         text = "Enable Multivisitor";
+         groupNum = "-1";
+         buttonType = "ToggleButton";
+         useInactiveState = "0";
+      };
+      new GuiButtonCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiButtonProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "320 271";
+         Extent = "127 23";
+         MinExtent = "8 8";
+         canSave = "1";
+         Visible = "1";
+         Command = "SM_StartMission();";
+         hovertime = "1000";
+         text = "Launch Tour";
+         groupNum = "-1";
+         buttonType = "PushButton";
+      };
+      new GuiScrollCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiScrollProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "10 62";
+         Extent = "436 200";
+         MinExtent = "8 8";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         willFirstRespond = "1";
+         hScrollBar = "dynamic";
+         vScrollBar = "alwaysOn";
+         constantThumbHeight = "0";
+         childMargin = "0 0";
+
+         new GuiTextListCtrl(SM_missionList) {
+            canSaveDynamicFields = "0";
+            Profile = "GuiTextArrayProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "2 2";
+            Extent = "414 16";
+            MinExtent = "8 8";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            enumerate = "0";
+            resizeCell = "1";
+            columns = "0";
+            fitParentWidth = "1";
+            clipColumnText = "0";
+         };
+      };
+      new GuiTextEditCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiTextEditProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "98 15";
+         Extent = "134 18";
+         MinExtent = "8 8";
+         canSave = "1";
+         Visible = "1";
+         Variable = "pref::Player::Name";
+         hovertime = "1000";
+         maxLength = "255";
+         historySize = "0";
+         tabComplete = "0";
+         sinkAllKeyEvents = "0";
+         password = "0";
+         passwordMask = "*";
+      };
+      new GuiTextCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiTextProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "12 11";
+         Extent = "64 18";
+         MinExtent = "8 8";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         text = "Visitor Name:";
+         maxLength = "255";
+      };
+      new GuiButtonCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiButtonProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "10 272";
+         Extent = "127 23";
+         MinExtent = "8 8";
+         canSave = "1";
+         Visible = "1";
+         Command = "Canvas.setContent(mainMenuGui);";
+         hovertime = "1000";
+         text = "<< Back";
+         groupNum = "-1";
+         buttonType = "PushButton";
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+
+
+//----------------------------------------
+function SM_StartMission()
+{
+   %id = SM_missionList.getSelectedId();
+   %mission = getField(SM_missionList.getRowTextById(%id), 1);
+
+   if ($pref::HostMultiPlayer)
+      %serverType = "MultiPlayer";
+   else
+      %serverType = "SinglePlayer";
+
+   createServer(%serverType, %mission);
+   %conn = new GameConnection(ServerConnection);
+   RootGroup.add(ServerConnection);
+   %conn.setConnectArgs($pref::Player::Name);
+   %conn.setJoinPassword($Client::Password);
+   %conn.connectLocal();
+}
+
+
+//----------------------------------------
+function startMissionGui::onWake()
+{
+   SM_missionList.clear();
+   %i = 0;
+   for(%file = findFirstFile($Server::MissionFileSpec); %file !$= ""; %file = findNextFile($Server::MissionFileSpec))  
+      if (strStr(%file, "/CVS/") == -1)
+         SM_missionList.addRow(%i++, getMissionDisplayName(%file) @ "\t" @ %file );
+   SM_missionList.sort(0);
+   SM_missionList.setSelectedRow(0);
+   SM_missionList.scrollVisible(0);
+}   
+
+
+//----------------------------------------
+function getMissionDisplayName( %missionFile ) 
+{
+   %file = new FileObject();
+   
+   %MissionInfoObject = "";
+   
+   if ( %file.openForRead( %missionFile ) ) {
+		%inInfoBlock = false;
+		
+		while ( !%file.isEOF() ) {
+			%line = %file.readLine();
+			%line = trim( %line );
+			
+			if( %line $= "new ScriptObject(MissionInfo) {" )
+				%inInfoBlock = true;
+			else if( %inInfoBlock && %line $= "};" ) {
+				%inInfoBlock = false;
+				%MissionInfoObject = %MissionInfoObject @ %line; 
+				break;
+			}
+			
+			if( %inInfoBlock )
+			   %MissionInfoObject = %MissionInfoObject @ %line @ " "; 	
+		}
+		
+		%file.close();
+	}
+	%MissionInfoObject = "%MissionInfoObject = " @ %MissionInfoObject;
+	eval( %MissionInfoObject );
+	
+   %file.delete();
+
+   if( %MissionInfoObject.name !$= "" )
+      return %MissionInfoObject.name;
+   else
+      return fileBase(%missionFile); 
+}
+

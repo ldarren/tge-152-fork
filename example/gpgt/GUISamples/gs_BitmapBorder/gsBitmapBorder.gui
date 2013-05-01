@@ -1,0 +1,115 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(gsBitmapBorder) {
+   profile = "GuiDefaultProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "800 600";
+   minExtent = "8 8";
+   visible = "1";
+      Parent = "GUISamplerInterface";
+
+   new GuiChunkedBitmapCtrl() {
+      profile = "gsDefaultProfile";
+      horizSizing = "width";
+      vertSizing = "height";
+      position = "0 0";
+      extent = "800 600";
+      minExtent = "8 2";
+      visible = "1";
+      bitmap = $SA::Background1;
+      useVariable = "0";
+      tile = "0";
+
+      new GuiBitmapButtonCtrl(guiSamplerLeft) {
+         profile = "gpgtButtonProfile1";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         position = "125 525";
+         extent = "75 75";
+         minExtent = "8 2";
+         visible = "1";
+         command = "Canvas.setContent(Canvas.getContent().Parent);";
+         accelerator = "escape";
+         text = "Button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "~/client/sharedAssets/button0/leftButton0";
+      };
+      new GuiControl() {
+         profile = "gsDefaultProfile";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         position = "100 100";
+         extent = "600 400";
+         minExtent = "8 2";
+         visible = "1";
+
+         new GuiBitmapBorderCtrl() {
+            profile = "gsUglyBorder";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "30 30";
+            extent = "188 92";
+            minExtent = "8 2";
+            visible = "1";
+
+            new GuiTextCtrl() {
+               profile = "GuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "59 39";
+               extent = "66 18";
+               minExtent = "8 2";
+               visible = "1";
+               text = "gsUglyBorder";
+               maxLength = "255";
+            };
+         };
+         new GuiBitmapBorderCtrl() {
+            profile = "gpgtBitmapBorder";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "30 180";
+            extent = "188 92";
+            minExtent = "8 2";
+            visible = "1";
+
+            new GuiTextCtrl() {
+               profile = "GuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "42 39";
+               extent = "80 18";
+               minExtent = "8 2";
+               visible = "1";
+               text = "gpgtBitmapBorder";
+               maxLength = "255";
+            };
+         };
+         new GuiBitmapBorderCtrl() {
+            profile = "GuiBitmapBorderProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "240 30";
+            extent = "188 92";
+            minExtent = "8 2";
+            visible = "1";
+
+            new GuiTextCtrl() {
+               profile = "GuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "39 39";
+               extent = "111 18";
+               minExtent = "8 2";
+               visible = "1";
+               text = "GuiBitmapBorderProfile";
+               maxLength = "255";
+            };
+         };
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+

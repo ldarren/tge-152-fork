@@ -1,0 +1,10 @@
+<just:center><font:Arial Bold:18>
+<spush><color:FFFF00>ShapeBase Energy
+<spop>
+<font:Arial:16><br>
+<just:left>
+<lmargin%:5>
+Explores various shapeBase supported energy features:<br><br>
+<color:FF2222>
+- Energy Consumption<br>
+- Recharging<br>

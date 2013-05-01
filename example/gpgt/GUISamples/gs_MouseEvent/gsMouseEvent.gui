@@ -1,0 +1,340 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(gsMouseEvent) {
+   profile = "GuiDefaultProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "800 600";
+   minExtent = "8 8";
+   visible = "1";
+         Parent = "GUISamplerInterface";
+
+   new GuiChunkedBitmapCtrl() {
+      profile = "gsDefaultProfile";
+      horizSizing = "width";
+      vertSizing = "height";
+      position = "0 0";
+      extent = "800 600";
+      minExtent = "8 2";
+      visible = "1";
+      bitmap = $SA::Background1;
+      useVariable = "0";
+      tile = "0";
+
+
+      new GuiBitmapButtonCtrl(guiSamplerLeft) {
+         profile = "gpgtButtonProfile1";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         position = "125 525";
+         extent = "75 75";
+         minExtent = "8 2";
+         visible = "1";
+         command = "Canvas.setContent(Canvas.getContent().Parent);";
+         accelerator = "escape";
+         text = "Button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "~/client/sharedAssets/button0/leftButton0";
+      };
+
+         new GuiControl(gsMouseEventInnerFrame) {
+            profile = "gsBorder";
+            horizSizing = "center";
+            vertSizing = "center";
+            position = "95 43";
+            extent = "300 300";
+            minExtent = "8 2";
+            visible = "1";
+
+            new GuiBitmapCtrl(BaseMouse) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "50 5";
+               extent = "140 220";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./mouse";
+               wrap = "0";
+            };
+            new GuiBitmapCtrl(LeftPressMouse) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "50 5";
+               extent = "140 220";
+               minExtent = "8 2";
+               visible = "0";
+               bitmap = "./mouseleftpress";
+               wrap = "0";
+            };
+            new GuiBitmapCtrl(MiddlePressMouse) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "50 5";
+               extent = "140 220";
+               minExtent = "8 2";
+               visible = "0";
+               bitmap = "./mousemiddlepress";
+               wrap = "0";
+            };
+            new GuiBitmapCtrl(shiftKey) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "15 169";
+               extent = "90 60";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./shift_unpress";
+               wrap = "0";
+            };
+            new GuiBitmapCtrl(RightPressMouse) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "50 5";
+               extent = "140 220";
+               minExtent = "8 2";
+               visible = "0";
+               bitmap = "./mouserightpress";
+               wrap = "0";
+            };
+            new GuiBitmapCtrl(ctrlKey) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "0 219";
+               extent = "60 60";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./ctrl_unpress";
+               wrap = "0";
+            };
+            new GuiBitmapCtrl(altKey) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "70 219";
+               extent = "60 60";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./alt_unpress";
+               wrap = "0";
+            };
+            new GuiBitmapCtrl(onEnterLight) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "167 129";
+               extent = "30 30";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./lightoff";
+               wrap = "0";
+            };
+            new GuiTextCtrl() {
+               profile = "GuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "204 136";
+               extent = "37 18";
+               minExtent = "8 2";
+               visible = "1";
+               text = "onEnter";
+               maxLength = "255";
+            };
+            new GuiBitmapCtrl(onLeaveLight) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "167 159";
+               extent = "30 30";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./lightoff";
+               wrap = "0";
+            };
+            new GuiTextCtrl() {
+               profile = "GuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "204 166";
+               extent = "29 18";
+               minExtent = "8 2";
+               visible = "1";
+               text = "onExit";
+               maxLength = "255";
+            };
+            new GuiBitmapCtrl(onMouseMoveLight) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "167 188";
+               extent = "30 30";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./lightoff";
+               wrap = "0";
+            };
+            new GuiTextCtrl() {
+               profile = "GuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "204 195";
+               extent = "70 18";
+               minExtent = "8 2";
+               visible = "1";
+               text = "onMouseMove";
+               maxLength = "255";
+            };
+            new GuiBitmapCtrl(onMouseDragLight) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "167 218";
+               extent = "30 30";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./lightoff";
+               wrap = "0";
+            };
+            new GuiTextCtrl() {
+               profile = "GuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "204 225";
+               extent = "67 18";
+               minExtent = "8 2";
+               visible = "1";
+               text = "onMouseDrag";
+               maxLength = "255";
+            };
+            new GuiTextCtrl() {
+               profile = "GuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "204 255";
+               extent = "91 18";
+               minExtent = "8 2";
+               visible = "1";
+               text = "onMouseRightDrag";
+               maxLength = "255";
+            };
+            new GuiBitmapCtrl(onMouseRightDragLight) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "167 248";
+               extent = "30 30";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./lightoff";
+               wrap = "0";
+            };
+            new GuiBitmapCtrl(clickBar1) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "5 119";
+               extent = "60 30";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./lightbaroff";
+               wrap = "0";
+            };
+            new GuiBitmapCtrl(clickBar2) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "5 99";
+               extent = "60 30";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./lightbaroff";
+               wrap = "0";
+            };
+            new GuiBitmapCtrl(clickBar3) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "5 79";
+               extent = "60 30";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./lightbaroff";
+               wrap = "0";
+            };
+            new GuiBitmapCtrl(clickBar4) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "5 59";
+               extent = "60 30";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./lightbaroff";
+               wrap = "0";
+            };
+            new GuiBitmapCtrl(clickBar5) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "5 19";
+               extent = "60 30";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./lightbaroff";
+               wrap = "0";
+            };
+            new GuiBitmapCtrl(mouseFollower) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "129 211";
+               extent = "30 30";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./lightoff";
+               wrap = "0";
+            };
+            new GuiTextCtrl() {
+               profile = "GuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "7 4";
+               extent = "62 18";
+               minExtent = "8 2";
+               visible = "1";
+               text = "Mouse clicks";
+               maxLength = "255";
+            };
+            new GuiMouseEventCtrl(TestMouseEvent) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "0 0";
+               extent = "300 300";
+               minExtent = "8 2";
+               visible = "1";
+               lockMouse = "0";
+            };
+            new GuiButtonCtrl() {
+               profile = "GuiButtonProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "199 58";
+               extent = "85 30";
+               minExtent = "8 2";
+               visible = "1";
+               text = "Intercept Test";
+               groupNum = "-1";
+               buttonType = "ToggleButton";
+            };
+         };
+      };
+   };
+//--- OBJECT WRITE END ---
+

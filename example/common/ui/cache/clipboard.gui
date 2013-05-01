@@ -1,0 +1,19 @@
+new SimSet(guiClipboard) {
+   canSaveDynamicFields = "1";
+
+   new GuiButtonCtrl() {
+      canSaveDynamicFields = "0";
+      Profile = "GuiButtonProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      position = "13 292";
+      Extent = "100 30";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      text = "Ready";
+      groupNum = "-1";
+      buttonType = "PushButton";
+   };
+};

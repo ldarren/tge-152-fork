@@ -1,0 +1,59 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiChunkedBitmapCtrl(ifcsMainMenuToon) {
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "width";
+   VertSizing = "height";
+   position = "0 0";
+   Extent = "800 600";
+   MinExtent = "8 2";
+   Visible = "1";
+   bitmap = "./back";
+   useVariable = "0";
+   tile = "0";
+
+   new GuiBitmapButtonCtrl(ToonPlayButton) {
+      Profile = "ifcsMainMenuToonButtonProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "250 72";
+      Extent = "300 100";
+      MinExtent = "8 2";
+      Visible = "1";
+      Command = "Canvas.setContent(GameGUIsMenu0);";
+      text = "back";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      bitmap = "./play";
+   };
+   new GuiBitmapButtonCtrl(ToonCreditsButton) {
+      Profile = "ifcsMainMenuToonButtonProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "250 232";
+      Extent = "300 100";
+      MinExtent = "8 2";
+      Visible = "1";
+      Command = "Canvas.setContent(ifcsCreditsToon);";
+      text = "back";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      bitmap = "./credits";
+   };
+   new GuiBitmapButtonCtrl(ToonQuitButton) {
+      Profile = "ifcsMainMenuToonButtonProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "250 392";
+      Extent = "300 100";
+      MinExtent = "8 2";
+      Visible = "1";
+      Command = "Canvas.setContent(SampleInterfacesSelector);";
+      Accelerator = "escape";
+      text = "back";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      bitmap = "./quit";
+   };
+};
+//--- OBJECT WRITE END ---
+

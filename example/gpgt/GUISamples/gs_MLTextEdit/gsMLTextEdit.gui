@@ -1,0 +1,197 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(gsMLTextEdit) {
+   profile = "GuiDefaultProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "800 600";
+   minExtent = "8 8";
+   visible = "1";
+      Parent = "GUISamplerInterface";
+
+   new GuiChunkedBitmapCtrl() {
+      profile = "gsDefaultProfile";
+      horizSizing = "width";
+      vertSizing = "height";
+      position = "0 0";
+      extent = "800 600";
+      minExtent = "8 2";
+      visible = "1";
+      bitmap = $SA::Background1;
+      useVariable = "0";
+      tile = "0";
+
+      new GuiBitmapButtonCtrl(guiSamplerLeft) {
+         profile = "gpgtButtonProfile1";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         position = "125 525";
+         extent = "75 75";
+         minExtent = "8 2";
+         visible = "1";
+         command = "Canvas.setContent(Canvas.getContent().Parent);";
+         accelerator = "escape";
+         text = "Button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "~/client/sharedAssets/button0/leftButton0";
+      };
+      new GuiControl() {
+         profile = "gsDefaultProfile";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         position = "100 100";
+         extent = "600 400";
+         minExtent = "8 2";
+         visible = "1";
+
+         new GuiTextEditCtrl(TestMLTextEditFormat) {
+            profile = "GuiTextEditProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "25 117";
+            extent = "450 20";
+            minExtent = "240 20";
+            visible = "1";
+            maxLength = "255";
+            historySize = "0";
+            password = "0";
+            tabComplete = "0";
+            sinkAllKeyEvents = "0";
+         };
+         new GuiTextCtrl() {
+            profile = "GuiTextProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "10 119";
+            extent = "8 14";
+            minExtent = "8 2";
+            visible = "1";
+            text = "A";
+            maxLength = "255";
+         };
+         new GuiTextCtrl() {
+            profile = "GuiTextProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "10 20";
+            extent = "146 18";
+            minExtent = "8 2";
+            visible = "1";
+            text = "1. Edit a format string in  line A";
+            maxLength = "255";
+         };
+         new GuiTextCtrl() {
+            profile = "GuiTextProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "10 40";
+            extent = "188 18";
+            minExtent = "8 2";
+            visible = "1";
+            text = "2. Enter text to display (if any) in line B.";
+            maxLength = "255";
+         };
+         new GuiTextCtrl() {
+            profile = "GuiTextProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "10 60";
+            extent = "109 18";
+            minExtent = "8 2";
+            visible = "1";
+            text = "3. Press \'Apply\' Button";
+            maxLength = "255";
+         };
+         new GuiTextCtrl() {
+            profile = "GuiTextProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "10 80";
+            extent = "268 18";
+            minExtent = "8 2";
+            visible = "1";
+            text = "4. Text from B will be in Line C.  You may type here too.";
+            maxLength = "255";
+         };
+         new GuiTextCtrl() {
+            profile = "GuiTextProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "10 177";
+            extent = "8 14";
+            minExtent = "8 2";
+            visible = "1";
+            text = "C";
+            maxLength = "255";
+         };
+         new GuiTextEditCtrl(TestMLTextEditContent) {
+            profile = "GuiTextEditProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "25 150";
+            extent = "450 20";
+            minExtent = "240 20";
+            visible = "1";
+            maxLength = "255";
+            historySize = "0";
+            password = "0";
+            tabComplete = "0";
+            sinkAllKeyEvents = "0";
+         };
+         new GuiTextCtrl() {
+            profile = "GuiTextProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "10 150";
+            extent = "8 14";
+            minExtent = "8 2";
+            visible = "1";
+            text = "B";
+            maxLength = "255";
+         };
+         new GuiScrollCtrl() {
+            profile = "GuiScrollProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "26 176";
+            extent = "445 209";
+            minExtent = "8 2";
+            visible = "1";
+            willFirstRespond = "1";
+            hScrollBar = "alwaysOn";
+            vScrollBar = "alwaysOn";
+            constantThumbHeight = "0";
+            childMargin = "4 4";
+
+            new GuiMLTextEditCtrl(TestMLTextEdit) {
+               profile = "gsMLTextEditTestProfile";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "6 6";
+               extent = "424 209";
+               minExtent = "8 2";
+               visible = "1";
+               lineSpacing = "2";
+               allowColorChars = "0";
+               maxChars = "-1";
+            };
+         };
+         new GuiButtonCtrl() {
+            profile = "GuiButtonProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "310 55";
+            extent = "140 30";
+            minExtent = "8 2";
+            visible = "1";
+            text = "Apply";
+            groupNum = "-1";
+            buttonType = "PushButton";
+			command = "TestMLTextEdit.TestMLTextEditUpdate();";
+         };
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+

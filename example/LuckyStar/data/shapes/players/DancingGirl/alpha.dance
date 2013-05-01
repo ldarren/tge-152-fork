@@ -1,0 +1,13 @@
+[name]
+Alpha Test Dance Demo
+[desc]
+This is a test dance created for 8/Feb/2008 Alpha test
+[seq]
+alpha_head.sequence
+alpha_body.sequence
+alpha_legs.sequence
+alpha_blend.sequence
+[audio]
+AudioDance05
+[words]
+donavan.words

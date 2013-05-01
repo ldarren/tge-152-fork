@@ -1,0 +1,318 @@
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+
+   new ScriptObject(MissionInfo) {
+      desc[0] = "This is a basic NIGHT mission.\n\n";
+      desc[1] = "   -- Legacy terrain\n";
+      desc[2] = "   -- Living and dead orc targets\n";
+      desc[3] = "   -- Nightime lighting\n";
+      desc[4] = "   -- Ominous moon";
+      name = "AFX: Nighttime in orc camp -- legacy terrain";
+      hasBrightLighting = false;
+   };
+   new MissionArea(MissionArea) {
+      area = "-152 -352 1040 1056";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+      locked = "true";
+   };
+   new Sky(Sky) {
+      position = "-1088 -928 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      materialList = "~/data/skies/afx_darksky.dml";
+      cloudHeightPer[0] = "0.3";
+      cloudSpeed1 = "0.003";
+      visibleDistance = "800";
+      fogDistance = "500";
+      fogColor = "0.05 0.05 0.1 0.0";
+      fogStorm1 = false;
+      fogStorm2 = false;
+      fogStorm3 = false;
+      fogVolume1 = "0 0 0";
+      fogVolume2 = "0 0 0";
+      fogVolume3 = "0 0 0";
+      windVelocity = "0.2 0.2 0";
+      windEffectPrecipitation = true;
+      SkySolidColor = "0.05 0.05 0.1 0";
+      useSkyTextures = true;
+      renderBottomTexture = false;
+      noRenderBans = false;
+      skyGlow = false;
+      locked = "true";
+   };
+   new Sun() {
+      azimuth = "264";
+      elevation = "16.5";
+      color = "0.13 0.074 0.0 1.0";
+      ambient = "0.1 0.1 0.2 1.0";
+      locked = "true";
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+   };
+
+   new TerrainBlock(Terrain) {
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      detailTexture = "~/data/terrains/details/detail1";
+      terrainFile = "./AFX_TGE_Demo_Terrain.ter";
+      squareSize = "8";
+      bumpScale = "1";
+      bumpOffset = "0.01";
+      zeroBumpScale = "8";
+      position = "-1024 -1024 0";
+      locked = "true";
+      tile = true;
+   };
+   new WaterBlock(Water) {
+      position = "-1024 -1024 0";
+      rotation = "1 0 0 0";
+      scale = "2048 2048 200";
+      UseDepthMask = "1";
+      surfaceTexture = "~/data/water/water";
+      ShoreTexture = "~/data/water/wateredge";
+      envMapOverTexture = "~/data/skies/afx_darksky_UP";
+      envMapUnderTexture = "~/data/terrains/grassland/sand";
+      specularMaskTex = "~/data/water/specmask";
+      liquidType = "OceanWater";
+      density = "1";
+      viscosity = "15";
+      waveMagnitude = "0.5";
+      surfaceOpacity = "0.60";
+      envMapIntensity = "0.4";
+      TessSurface = "50";
+      TessShore = "60";
+      SurfaceParallax = "0.2";
+      FlowAngle = "240";
+      FlowRate = "0";
+      DistortGridScale = "0.05";
+      DistortMag = "0.01";
+      DistortTime = "0.6";
+      ShoreDepth = "0.8";
+      DepthGradient = "1";
+      MinAlpha = "0.1";
+      MaxAlpha = "1";
+      removeWetEdges = "0";
+      specularColor = "0.000000 0.000000 0.000000 0.000000";
+      specularPower = "1";
+      envMapTexture = "~/data/skies/storm_env";
+   };
+   new SimGroup(PlayerDropPoints) {
+      new SpawnSphere(Spawn_Mark) {
+         position = "430 310 218.6";
+         rotation = "0 0 -1 87.6625";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+   };
+   new SimGroup(NearTeleports) {
+     new SpawnSphere(:Spawn_Mark) {
+         position = "430 310 218.6";
+         rotation = "0 0 -1 87.6625";
+      };
+      new SpawnSphere(:Spawn_Mark) {
+         position = "402 331 219.832";
+         rotation = "0 0 -1 87.6625";
+      };
+      new SpawnSphere(:Spawn_Mark) {
+         position = "333 339 218.849";
+         rotation = "0 0 1 154.699";
+      };
+      new SpawnSphere(:Spawn_Mark) {
+         position = "356 246 202.064";
+         rotation = "0 0 1 16.0429";
+      };
+   };
+   new SimGroup(FarTeleports) {
+      new SpawnSphere(:Spawn_Mark) {
+         position = "574.0 155.0 268.876";
+         rotation = "0 0 -1 50.0039";
+      };
+      new SpawnSphere(:Spawn_Mark) {
+         position = "215 169.5 226.176";
+         rotation = "0 0 1 41.8259";
+      };
+      new SpawnSphere(:Spawn_Mark) {
+         position = "33 -17.8 277.821";
+         rotation = "0 0 1 44.6907";
+      };
+      new SpawnSphere(:Spawn_Mark) {
+         position = "-39 -415 245.829";
+         rotation = "0 0 1 40.1071";
+      };
+      new SpawnSphere(:Spawn_Mark) {
+         position = "504 439.5 270.826";
+         rotation = "0 0 1 225.355";
+      };
+      new SpawnSphere(:Spawn_Mark) {
+         position = "406.5 528 233.048";
+         rotation = "0 0 1 179.336";
+      };
+   };
+   new SimGroup(Cottages) {
+      new InteriorInstance() {
+         position = "405.274 331.383 229.703";
+         rotation = "0 0 -1 19.4806";
+         scale = "1 1 1";
+         interiorFile = "~/data/interiors/hovels/cottage2.dif";
+         showTerrainInside = "0";
+         useGLLighting = "0";
+      };
+      new InteriorInstance() {
+         position = "386.509 288.344 219";
+         rotation = "0 0 1 38.9611";
+         scale = "1 1 1";
+         interiorFile = "~/data/interiors/hovels/small_cottage2.dif";
+         showTerrainInside = "0";
+         useGLLighting = "0";
+      };
+      new InteriorInstance() {
+         position = "329.597 307.55 218.765";
+         rotation = "0 0 1 162.147";
+         scale = "1 1 1";
+         interiorFile = "~/data/interiors/hovels/small_cottage2.dif";
+         showTerrainInside = "0";
+         useGLLighting = "0";
+      };
+      new InteriorInstance() {
+         position = "334.517 342.723 218.588";
+         rotation = "0 0 1 228.037";
+         scale = "1 1 1";
+         interiorFile = "~/data/interiors/hovels/small_cottage2.dif";
+         showTerrainInside = "0";
+         useGLLighting = "0";
+      };
+   };
+   new SimGroup(Campfires) {
+      new TSStatic(CampFire) {
+         position = "360.173 309.959 217.714";
+         rotation = "1 0 0 0.573347";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/campfires/campfire.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         disableDynamicShadows = "0";
+         disableDynamicShadowMove = "0";
+         disableDynamicShadowAnimate = "0";
+      };
+   };
+   new SimGroup(Trees) {
+      new TSStatic(Tree_A) {
+         position = "403.903 64.3746 214.681";
+         rotation = "1 0 0 0";
+         scale = "1.56822 1.54262 1.97835";
+         shapeName = "~/data/shapes/trees/tree2.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "0";
+         useAdaptiveSelfIllumination = "1";
+         useCustomAmbientLighting = "1";
+         customAmbientSelfIllumination = "1";
+         customAmbientLighting = "0.1 0.1 0.2 1";
+      };
+      new TSStatic(Tree_B : Tree_A) {
+         position = "489.481 123.945 228.2";
+         rotation = "0 0 1 160.428";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/trees/tree3.dts";
+      };
+      new TSStatic(:Tree_B) {
+         position = "240.849 307.799 233.192";
+         rotation = "1 0 0 0";
+         scale = "1.318 1.05888 1.14346";
+      };
+      new TSStatic(:Tree_A) {
+         position = "349.353 -149.425 229.698";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+     };
+      new TSStatic(:Tree_A) {
+         position = "443.294 217.877 212.066";
+         rotation = "1 0 0 0";
+         scale = "0.946733 0.902455 1";
+      };
+      new TSStatic(:Tree_B) {
+         position = "396.466 -110.424 216.833";
+         rotation = "0 0 1 30.9397";
+         scale = "1 1 1";
+      };
+      new TSStatic(:Tree_B) {
+         position = "380.887 496.943 230.164";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+      };
+      new TSStatic(:Tree_A) {
+         position = "409.762 501.558 226.433";
+         rotation = "1 0 0 0";
+         scale = "1 1.04929 1";
+      };
+      new TSStatic(:Tree_A) {
+         position = "383.066 446.619 222.591";
+         rotation = "0 0 1 21.7724";
+         scale = "1.35527 1.6329 1.66036";
+      };
+      new TSStatic(:Tree_A) {
+         position = "279.075 426.031 235.604";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+      };
+   };
+   new SimGroup(Paths) {
+      new Path(Path1) {
+         isLooping = "1";
+         new Marker(Path_Mark) {
+            position = "420 300 221.011";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            type = "Normal";
+            msToNext = "100";
+            smoothingType = "Spline";
+         };
+         new Marker(:Path_Mark) {
+            position = "447.831 207.249 211.417";
+            seqNum = "2";
+         };
+         new Marker(:Path_Mark) {
+            position = "318.054 333.549 218.804";
+            seqNum = "3";
+         };
+         new Marker(:Path_Mark) {
+            position = "326.058 411.942 218.216";
+            seqNum = "4";
+         };
+         new Marker(:Path_Mark) {
+            position = "427.95 357.661 220.594";
+            seqNum = "5";
+         };
+      };
+      new Path(RouteNPC01) {
+        isLooping = "1";
+        new Marker(:Path_Mark) {
+          position = "335.673 334.697 218.5";
+          seqNum = "1";
+        };
+        new Marker(:Path_Mark) {
+          position = "384.192 296.064 219.3";
+          seqNum = "2";
+        };
+        new Marker(:Path_Mark) {
+          position = "392.792 327.464 220.7";
+          seqNum = "3";
+        };
+        new Marker(:Path_Mark) {
+          position = "337.392 304.464 218.5";
+          seqNum = "4";
+        };
+      };
+   };
+};
+//--- OBJECT WRITE END ---

@@ -1,0 +1,861 @@
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+
+   new ScriptObject(MissionInfo) {
+         name = "Stronghold, navigation tester";
+         desc0 = "Should be some orcs running around at random here";
+   };
+   new MissionArea(MissionArea) {
+      Area = "-152 -352 1040 1056";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "-1088 -928 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      materialList = "~/data/skies/sky_day.dml";
+      cloudHeightPer[0] = "0.349971";
+      cloudHeightPer[1] = "0.25";
+      cloudHeightPer[2] = "0.199973";
+      cloudSpeed1 = "0.0002";
+      cloudSpeed2 = "0.0004";
+      cloudSpeed3 = "0.0006";
+      visibleDistance = "500";
+      fogDistance = "300";
+      fogColor = "0.820000 0.828000 0.844000 1.000000";
+      fogStorm1 = "0";
+      fogStorm2 = "0";
+      fogStorm3 = "0";
+      fogVolume1 = "100 0 200";
+      fogVolume2 = "0 0 0";
+      fogVolume3 = "0 0 0";
+      fogVolumeColor1 = "128.000000 128.000000 128.000000 -222768174765569860000000000000000000000.000000";
+      fogVolumeColor2 = "128.000000 128.000000 128.000000 0.000000";
+      fogVolumeColor3 = "128.000000 128.000000 128.000000 -170698929442160050000000000000000000000.000000";
+      windVelocity = "0.1 0.1 0";
+      windEffectPrecipitation = "1";
+      SkySolidColor = "0.547000 0.641000 0.789000 0.000000";
+      useSkyTextures = "1";
+      renderBottomTexture = "0";
+      noRenderBans = "0";
+         locked = "true";
+   };
+   new Sun() {
+      azimuth = "45";
+      elevation = "35";
+      color = "0.888000 0.885000 0.780000 1.000000";
+      ambient = "0.400000 0.400000 0.400000 1.000000";
+         scale = "1 1 1";
+         locked = "true";
+         rotation = "1 0 0 0";
+         direction = "0.635001 0.635001 -0.439941";
+         position = "0 0 0";
+   };
+   new fxSunLight(sunflare1) {
+      position = "98.5277 -289.053 188.13";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      Enable = "1";
+      LocalFlareBitmap = "common/lighting/corona";
+      RemoteFlareBitmap = "common/lighting/corona";
+      SunAzimuth = "224";
+      SunElevation = "10";
+      LockToRealSun = "1";
+      FlareTP = "1";
+      Colour = "0.300000 0.100000 0.100000 1.000000";
+      Brightness = "1";
+      FlareSize = "1";
+      FadeTime = "0.1";
+      BlendMode = "0";
+      AnimColour = "0";
+      AnimBrightness = "1";
+      AnimRotation = "1";
+      AnimSize = "1";
+      AnimAzimuth = "0";
+      AnimElevation = "0";
+      LerpColour = "1";
+      LerpBrightness = "1";
+      LerpRotation = "1";
+      LerpSize = "1";
+      LerpAzimuth = "1";
+      LerpElevation = "1";
+      LinkFlareSize = "0";
+      SingleColourKeys = "1";
+      MinColour = "0.000000 0.000000 0.000000 1.000000";
+      MaxColour = "1.000000 1.000000 1.000000 1.000000";
+      MinBrightness = "0.4";
+      MaxBrightness = "1";
+      MinRotation = "0";
+      MaxRotation = "359";
+      MinSize = "0.5";
+      MaxSize = "1";
+      MinAzimuth = "0";
+      MaxAzimuth = "359";
+      MinElevation = "-30";
+      MaxElevation = "210";
+      RedKeys = "AZA";
+      GreenKeys = "AZA";
+      BlueKeys = "AZA";
+      BrightnessKeys = "JAZJTAJ";
+      RotationKeys = "ZA";
+      SizeKeys = "ATAZA";
+      AzimuthKeys = "AZ";
+      ElevationKeys = "AZ";
+      ColourTime = "5";
+      BrightnessTime = "10";
+      RotationTime = "40";
+      SizeTime = "30";
+      AzimuthTime = "5";
+      ElevationTime = "5";
+   };
+   new fxSunLight(sunflare2) {
+      position = "72.9234 -289.051 187.692";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      Enable = "1";
+      LocalFlareBitmap = "common/lighting/corona";
+      RemoteFlareBitmap = "common/lighting/corona";
+      SunAzimuth = "224";
+      SunElevation = "10";
+      LockToRealSun = "1";
+      FlareTP = "1";
+      Colour = "2.000000 2.000000 0.000000 1.000000";
+      Brightness = "1";
+      FlareSize = "0.5";
+      FadeTime = "0.1";
+      BlendMode = "0";
+      AnimColour = "0";
+      AnimBrightness = "1";
+      AnimRotation = "1";
+      AnimSize = "0";
+      AnimAzimuth = "0";
+      AnimElevation = "0";
+      LerpColour = "1";
+      LerpBrightness = "1";
+      LerpRotation = "1";
+      LerpSize = "1";
+      LerpAzimuth = "1";
+      LerpElevation = "1";
+      LinkFlareSize = "0";
+      SingleColourKeys = "1";
+      MinColour = "0.000000 0.000000 0.000000 1.000000";
+      MaxColour = "1.000000 1.000000 1.000000 1.000000";
+      MinBrightness = "0.25";
+      MaxBrightness = "0.5";
+      MinRotation = "0";
+      MaxRotation = "359";
+      MinSize = "0.5";
+      MaxSize = "1";
+      MinAzimuth = "0";
+      MaxAzimuth = "359";
+      MinElevation = "-30";
+      MaxElevation = "210";
+      RedKeys = "AZA";
+      GreenKeys = "AZA";
+      BlueKeys = "AZA";
+      BrightnessKeys = "AZJTA";
+      RotationKeys = "AZ";
+      SizeKeys = "ATAZA";
+      AzimuthKeys = "AZ";
+      ElevationKeys = "AZ";
+      ColourTime = "5";
+      BrightnessTime = "6";
+      RotationTime = "80";
+      SizeTime = "5";
+      AzimuthTime = "5";
+      ElevationTime = "5";
+   };
+   new TerrainBlock(Terrain) {
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      detailTexture = "~/data/terrains/details/detail1";
+      terrainFile = "./stronghold_precompiled_nav_net.ter";
+      squareSize = "8";
+      bumpScale = "1";
+      bumpOffset = "0.01";
+      zeroBumpScale = "8";
+      tile = "1";
+         locked = "true";
+         position = "-1024 -1024 0";
+   };
+   new WaterBlock(Water) {
+      position = "-1024 -1024 0";
+      rotation = "1 0 0 0";
+      scale = "2048 2048 200";
+      UseDepthMask = "1";
+      surfaceTexture = "~/data/water/water";
+      ShoreTexture = "~/data/water/wateredge";
+      envMapOverTexture = "~/data/skies/day_0007";
+      envMapUnderTexture = "~/data/terrains/grassland/sand";
+      specularMaskTex = "~/data/water/specmask";
+      liquidType = "OceanWater";
+      density = "1";
+      viscosity = "15";
+      waveMagnitude = "1";
+      surfaceOpacity = "0.75";
+      envMapIntensity = "0.1";
+      TessSurface = "50";
+      TessShore = "60";
+      SurfaceParallax = "0.2";
+      FlowAngle = "240";
+      FlowRate = "0.1";
+      DistortGridScale = "0.1";
+      DistortMag = "0.02";
+      DistortTime = "0.5";
+      ShoreDepth = "6";
+      DepthGradient = "1";
+      MinAlpha = "0.1";
+      MaxAlpha = "1";
+      tile = "1";
+      removeWetEdges = "0";
+      specularColor = "0.000000 0.100000 0.200000 1.000000";
+      specularPower = "20";
+         envMapTexture = "~/data/skies/day_0007";
+   };
+   new SimGroup(PlayerDropPoints) {
+
+      new SpawnSphere() {
+         position = "209.506 98.2568 228.396";
+         rotation = "0 0 -1 8.2031";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+            locked = "false";
+            homingCount = "0";
+            lockCount = "0";
+      };
+      new SpawnSphere() {
+         position = "513.799 297.531 234.77";
+         rotation = "0 0 -1 87.6625";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+      new SpawnSphere() {
+         position = "441.327 -95.9903 240.525";
+         rotation = "0 0 -1 48.7014";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+      new SpawnSphere() {
+         position = "210.272 339.355 242.822";
+         rotation = "0 0 1 91.6733";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+      new SpawnSphere() {
+         position = "348.483 201.943 203.469";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+   };
+   new SimGroup(Paths) {
+
+      new Path(Path1) {
+         isLooping = "1";
+
+         new Marker() {
+            position = "461.26 292.371 221.011";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Spline";
+         };
+         new Marker() {
+            position = "447.831 207.249 211.417";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Spline";
+         };
+         new Marker() {
+            position = "318.054 333.549 218.804";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "3";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Spline";
+         };
+         new Marker() {
+            position = "326.058 411.942 218.216";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "4";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Spline";
+         };
+         new Marker() {
+            position = "427.95 357.661 220.594";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "5";
+            type = "Normal";
+            msToNext = "1000";
+            smoothingType = "Spline";
+         };
+      };
+   };
+   new SimGroup(NavigationNet) {
+
+      new StaticShape() {
+         position = "390.508 197.025 211.143";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "427.232 198.022 209.504";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "441.771 203.825 209.42";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "462.746 181.142 213.034";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "455.326 132.418 217.231";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "431.862 72.7345 213.741";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "441.926 116.566 222.516";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "413.409 41.1647 219.139";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "398.348 -8.02335 218.577";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "379.285 -25.5301 217.254";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "378.843 -34.6631 214.969";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "380.16 -39.2465 217.011";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "346.322 -60.3087 219.189";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "367.633 -85.4939 219.578";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "411.469 -80.6013 226.399";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "300.687 -33.4741 215.501";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "349.134 -17.8413 233.73";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "480.727 207.605 217.683";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "456.691 224.035 218.575";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "449.087 260.366 222.706";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "428.374 288.41 219.561";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "441.966 323.223 220.436";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "415.482 357.205 219.945";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "381.381 382.441 223.372";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "338.94 413.3 220.817";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "307.113 395.324 222.276";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "257.493 374.03 220.893";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "214.747 354.061 238.576";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "297.336 360.515 222.629";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "344.487 356.852 220.161";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "366.267 336.841 220.161";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "379.407 305.82 219.084";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "338.113 280.892 215.832";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "351.355 317.685 220.115";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "322.447 323.449 219.089";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "314.339 255.451 204.59";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "297.302 246.81 203.891";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "288.087 233.752 204.26";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "254.293 203.604 210.584";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "216.067 189.457 221.438";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "203.007 169.716 227.731";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "201.09 140.791 225.896";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "206.558 120.98 224.516";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "208.251 103.376 226.58";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "407.207 279.37 221.4";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "386.242 266.288 215.268";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "371.801 238.121 204.58";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "374.071 209.764 206.288";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "366.474 178.017 207";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "333.316 179.488 204.826";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "359.687 -116.095 225.51";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "369.91 -141.146 233.043";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "379.219 -175.187 236.776";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "471.988 309.666 225.766";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "496.163 340.6 231.078";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "508.867 307.532 235.586";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "392.494 398.899 227.011";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "363.645 433.883 227.131";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "230.095 323.804 238.512";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "298.275 384.665 221.536";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "363.16 402.151 221.667";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "274.277 220.95 207.834";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "240.162 198.339 215.229";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "378.531 -161.197 238.27";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "325.625 -28.3998 223.62";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "313.585 344.631 220.83";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "372.58 351.79 218.993";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "364.357 473.266 237.757";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "404.244 457.321 237.388";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "389.574 417.484 230.242";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "327.374 243.133 203.258";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "343.004 234.769 202.896";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "360.428 262.524 210.181";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "253.498 322.3 240.002";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "468.745 343.898 228.377";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+      new StaticShape() {
+         position = "317.946 302.618 218.486";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "NavNode";
+            moveMod = "0";
+      };
+   };
+};
+//--- OBJECT WRITE END ---

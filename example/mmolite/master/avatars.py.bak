@@ -1,0 +1,148 @@
+# MMO Lite 2007
+# Master's Avatars or server process classes
+
+from datetime import datetime
+
+from twisted.spread import pb
+from twisted.cred import credentials, error as credError
+
+from mmolite_old1.master.db_serv import Accounts, Peers
+from mmolite_old1.common.db_serv import Clients
+
+class ServerPerspective(pb.Avatar):
+    def __init__(self, loginName, mind, realm):
+        self.mind = mind
+        self.realm = realm
+        self.peerDB = None
+        self.loginName = loginName
+        return
+    
+    def perspective_register(self, name, port, load, type):
+        #self.peerDB = Peers.byName(name)
+        #if self.peerDB != None: raise credError("Peer Existed")
+        peer = Peers.selectBy(name = name)
+        if peer.count() != 0: raise credError("Peer Existed")
+        info = self.mind.broker.transport.getPeer()
+        if not info: raise credError("Bad peer information")
+        self.peerDB = Peers(name=name, ipAddress=info.host, port=port, load=load, type=type)
+        return True
+    
+    def getInfo(self):
+        return self.peerDB.ipAddress, self.peerDB.port
+    
+    def updateLoad(self):
+        print "[%s] updating load..."%(self.loginName)
+        self.mind.callRemote("getLoad").addCallback(self._updateLoad).addErrback(self._remoteCallFailed, "updateLoad")
+        
+    def _updateLoad(self, load):
+        self.peerDB.load = load
+        print "[%s] load[%d]"%(self.loginName, load)
+        
+    def newClient(self, id, name, authenticID,mode):
+        self.mind.callRemote("newClient",id, name, authenticID,mode).addErrback(self._remoteCallFailed, "newClient")
+
+    def _remoteCallFailed(self, msg, func):
+        print "[%s] func[%s] %s"%(self.loginName, func, msg)
+        self.logout()
+        self.disconnect()
+    
+    def disconnect(self):
+        self.mind.broker.transport.loseConnection()
+    
+    def logout(self):
+        if self.peerDB:
+            Peers.delete(self.peerDB.id)
+            self.peerDB = None
+        self.realm.logout(self)
+    
+    def perspective_quit(self):
+        self.logout()
+        return True
+
+class NewUserPerspective(pb.Avatar):
+    def __init__(self, mind, realm):
+        self.mind = mind
+        self.realm = realm
+        return
+        
+    def perspective_verifyUsername(self, username):
+        query = Accounts.selectBy(username=username)
+        if query.count() > 0: return False
+        else: return True
+    
+    def perspective_register(self, username, password, role):
+        role = role & Accounts.GameMaster #  no registration for admin
+        if self.perspective_verifyUsername(username):
+            newUser = Accounts(username = username, password = password, role = role)
+            return True
+        else: return False
+    
+    def logout(self):
+        self.realm.logout(self)
+    
+    def perspective_quit(self):
+        self.logout()
+        return True
+    
+class MemberPerspective(NewUserPerspective):
+    def __init__(self, name, mind, realm):
+        # must explicitly call __init__() and pass "self" to initialized parent, if not it becomes create a new instance
+        NewUserPerspective.__init__(self, mind, realm) 
+        self.name = name
+
+        result = Accounts.selectBy(username=self.name)
+        if (result.count() != 1):
+            raise credError("Bad username")
+        else:
+            self.user = result[0]
+            self.user.loginDate = datetime.now()
+        
+    def perspective_changeRole(self, newRole):
+        if newRole == 0: return False # only admin can remove account
+        newRole = newRole & Accounts.GameMaster #  no registration for admin
+        self.user.role = newRole
+        self.user.modifiedDate = datetime.now()
+        
+    def _changeServer(self, zone, mode):
+        authenticID = self.user.password+"zone"+str(zone)
+        ip, port = self.realm.changeServer(zone, self.user.id,self.name,authenticID,mode)
+        print "_changeServer: ip[%s] port[%d] id[%s]"%(ip, port, authenticID)
+        return ip, port, authenticID
+    
+    def perspective_changeServer(self, zone):
+        return self._changeServer(zone, Clients.Grunt)
+        
+    def logout(self):
+        self.user.logoutDate = datetime.now()
+   
+class PremiumMemberPerspective(MemberPerspective):
+    def __init__(self, name, mind, realm):
+        MemberPerspective.__init__(self, name, mind, realm)
+        
+    def perspective_payment(self):
+        return
+    
+    def perspective_changeServer(self, zone):
+        return self._changeServer(zone, Clients.Noble)
+    
+class GameMasterPerspective(PremiumMemberPerspective):
+    def __init__(self, name, mind, realm):
+        PremiumMemberPerspective.__init__(self, name, mind, realm)
+        self.mode = Clients.Noble+Clients.God+Clients.Invincible
+        
+    def perspective_chooseMode(self, mode):
+        self.mode = mode
+        return True
+    
+    def perspective_changeServer(self, zone):
+        return self._changeServer(zone, self.mode)
+    
+class AdminPerspective(GameMasterPerspective):
+    def __init__(self, name, mind, realm):
+        GameMasterPerspective.__init__(self, name, mind, realm)
+        
+    def perspective_updateDB(self):
+        return
+    
+    def perspective_changeServer(self, zone):
+        return self._changeServer(zone, Clients.Noble+Clients.God+Clients.Invincible+Clients.Stealth)

@@ -1,0 +1,322 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<title>Torque Game Engine Demo</title>
+<html>
+
+<body>
+<!-------------------------------------------------------->
+
+<h1>Torque Game Engine Demo</h1>
+
+<ul>
+	<li><a href="#overview">Overview</a></li>
+	<li><a href="#gg">GarageGames</a></li>
+	<li><a href="#torque">Torque Game Engine</a></li>
+	<li><a href="#requirements" >System Requirements</a></li>
+	<ul>
+		<li><a href="#win32">Win32</a></li>
+		<li><a href="#mac">Mac OS</a></li>
+		<li><a href="#unix">Linux</a></li>
+	</ul>
+	<li><a href="#runapp" >Running the Application</a></li>
+	<ul>
+		<li><a href="#synopsis">Command Line Arguments</a></li>
+		<li><a href="#keys">Keybindings</a></li>
+	</ul>
+	<li><a href="#license">License</a></li>
+</ul>
+</p>
+
+<hr><h3 id="overview">Overview</h3>
+<p>
+Welcome to the Torque Game Engine Demo.  This is a demo of the features available in the Torque Game Engine, an extremely affordable, full featured game engine technology from GarageGames.com, Inc.
+</p>
+
+<hr><h3 id="gg">GarageGames</h3>
+<p>
+<a href="http://www.garagegames.com">GarageGames.com</a> is a unique Internet
+publishing label for independent games and gamemakers. We are a band of
+professional gaming industry veterans committed to publishing truly
+original and exciting titles on our own terms.   Our mission?
+To provide the independent developer with tools, knowledge,
+co-conspirators - whatever is needed to unleash the creative spirit and
+get great innovative independent games to market.
+</p>
+
+<hr><h3 id="torque">Torque Game Engine</h3>
+<p>
+The
+<a href="http://www.garagegames.com/pg/product/view.php?id=1">Torque Game
+Engine</a> (TGE) is the game engine that powers Tribes 2 developed by
+Dynamix. TGE is a full featured AAA title engine with the latest in
+scripting, geometry, particle effects, animation and texturing, as well
+as award winning multi-player networking code. Check out the
+<a href="http://www.garagegames.com/pg/product/view.php?id=1#features">feature
+list</a> for more details.  For $150 per programmer, you get the source
+to the engine of a major product from a major game publisher! Not
+possible? Check the
+<a href="http://www.garagegames.com/index.php?sec=mg&mod=resource&page=category&qid=122">FAQ</a>
+for the details.
+</p>
+
+
+<hr><h3 id="requirements">System Requirements</h3>
+<p>
+The application is released on both the Windows (Windows 2K/XP) and
+Mac OS X platforms. See the following OS specific sections for more information.
+</p>
+
+<h4 id="win32">Windows</h4>
+<p>
+	Under windows the engine will run either OpenGL or DirectX.
+	OpenGL and DirectX drivers are typically bundled together by
+	video card manufactureres and are constantly being updated. Make sure
+	you have the latest drivers for your particular video card.
+</p>
+<p>
+<dl>
+	<dt>Required Hardware:
+		<dd>
+		<ul>
+			<li>Pentium III 1000, 512 MB RAM, 20+GB HD</li>
+			<li>Windows 2K/XP</li>
+			<li>OpenGL or DirectX compatible 3D graphics accelerator</li>
+			<li>DirectX compatible sound card</li>
+		</ul>
+		</dd>
+	</dt>
+	<dt>Required Software:</b>
+		<dd>
+		<ul>
+			<li>Latest drivers for video card</li>
+			<li><a href="http://www.microsoft.com/downloads/search.aspx?displaylang=en&categoryid=2">DirectX</a> version 8.0 or later.</li>
+			<li><a href="http://www.openal.org">OpenAL</a> Runtime or SDK Installation</li>
+		</ul>
+		</dd>
+	</dt>
+</dl>
+</p>
+
+<h4 id="mac">Mac OS</h4>
+<p>
+<dl>
+	<dt>Required Hardware:
+		<dd>
+		<ul>
+			<li>G5 or Intel Mac, 512 MB RAM, 20+GB HD</li>
+			<li>OpenGL compatible 3D graphics accelerator</li>
+		</ul>
+		</dd>
+	</dt>
+	<dt>Required Software:</b>
+		<dd>
+		<ul>
+			<li>MacOS X</li>
+		</ul>
+		</dd>
+	</dt>
+</dl>
+</p>
+
+<h4 id="unix">Linux</h4>
+<p>
+<dl>
+	<dt>Required Hardware:
+		<dd>
+		<ul>
+			<li>Pentium 1000, 512 MB RAM</li>
+			<li>NVIDIA TNT2 or better 3D graphics accelerator</li>
+			<li>Linux-supported sound card</li>
+		</ul>
+		</dd>
+	</dt>
+	<dt>Required Software:</b>
+		<dd>
+		<ul>
+			<li>XFree86 4.0 or newer with NVIDIA OpenGL drivers</li>
+			<li>glibc 2.2 or newer (e.g.: Redhat 7.x+, Mandrake 8.x+, Debian 3.0+)</li>
+			<li>SDL version 1.2 or newer (1.2.3 or later is recommended)</li>
+			<li>OpenAL Runtime or SDK Installation</li>
+			<li>Mesa3D version 3.4 or newer (3.4.2 or later recommended)</li>
+		</ul>
+		</dd>
+	</dt>
+</dl>
+</p>
+
+<hr><h3 id="runapp">Running the Application</h3>
+
+<p>The demo may be run in two modes: with or without the client interface.
+Running the client graphics interface is the default behavior. Running
+the app. in "dedicated" mode skips the graphics and client interface
+initialization.  This mode is used to run dedicated game servers and
+consumes less resources, but is not directly playable.  You must connect
+to a dedicated server using another instances of the demo app running in
+client mode.  Example of dedicated mode using command line arguments:</p>
+<pre>
+	cd "c:\Program Files\Torque Game Engine Demo"
+	demo -dedicated -mission demo\data\missions\stronghold.mis
+</pre>
+
+<p>Games (servers) can also be hosted through the client interface, and a
+client may play the game being hosted.</p>
+
+<p><b>Note:</b> for Mac users, command line arguments can be placed
+in a text file called <i>maccmdline.txt</i> in the same directory as the demo
+executable.
+</p>
+
+<h4 id="synopsis">Command Line Arguments</h4>
+<p>
+demo
+[-fullscreen] [-windowed] [-noSound] [-openGL] [-directX]
+[-autoVideo] [-prefs file] [-dedicated]
+[-mission mission] [-log level]
+[-mod modName] [-game gameName] [-show shapeFile]
+[-console] [-jSave file] [-jPlay file] [-jDebug file]
+[-help]
+</p>
+<p>
+<table>
+  <tr>
+    <td width=50>&nbsp;</td>
+    <td width=100>-fullscreen</td><td>Run in fullscreen mode</td>
+  </tr>
+  <tr>
+    <td></td><td>-windowed</td><td>Run in a window</td>
+  </tr>
+  <tr>
+    <td></td><td>-noSound</td><td>Dsisable sound</td>
+  </tr>
+  <tr>
+    <td></td><td>-openGL</td><td>Use the OpenGL driver</td>
+  </tr>
+  <tr>
+    <td></td><td>-directX</td><td>Use the DirectX driver</td>
+  </tr>
+  <tr>
+    <td></td><td>-autoVideo</td><td>Autodetect the video driver</td>
+  </tr>
+  <tr>
+    <td></td><td>-prefs</td><td>Load the given config file</td>
+  </tr>
+  <tr>
+    <td></td><td>-dedicated</td><td>Run as a dedicated server</td>
+  </tr>
+  <tr>
+    <td></td><td>-mission mission</td><td>Load the given mission.</td>
+  </tr>
+  <tr>
+    <td></td><td>-log level</td><td>Set the log level = [0,1,2]</td>
+  </tr>
+  <tr>
+    <td></td><td>-mod modName</td><td>Load the specified mod</td>
+  </tr>
+  <tr>
+    <td></td><td>-game gameName</td><td>Load the specified game, clears all previously loaded mods</td>
+  </tr>
+  <tr>
+    <td></td><td>-show [file.dts]</td><td>Start the Show mod and optionally load the specified file</td>
+  </tr>
+  <tr>
+    <td></td><td>-console</td><td>Start up a seperate console window</td>
+  </tr>
+  <tr>
+    <td></td><td>-jSave file</td><td>Record a journal</td>
+  </tr>
+  <tr>
+    <td></td><td>-jPlay file</td><td>Play back a journal</td>
+  </tr>
+  <tr>
+    <td></td><td>-jDebug file</td><td>Same as jPlay, except that a debug
+    	break (int3) is issued when the journal ends</td>
+  </tr>
+  <tr>
+    <td></td><td>-help</td><td>Display this help to the console</td>
+  </tr>
+</table>
+</p>
+
+<h4 id='keys'>Key Bindings</h4>
+<p>
+The client default key bindings for the demo game. The script
+file which binds these keys can be found in
+the <i>torque/fps/client/scripts/default.bind.cs</i>
+file. Here are some of the current bindings:
+</p>
+<p>
+<table>
+  <tr>
+    <td width=50>&nbsp;</td>
+    <td width=100 spansize=2><b>Movement</b></td>
+  </tr>
+  <tr>
+    <td></td><td>w</td><td>Forward</td>
+  </tr>
+  <tr>
+    <td></td><td>s</td><td>Backward</td>
+  </tr>
+  <tr>
+    <td></td><td>a</td><td>Left</td>
+  </tr>
+  <tr>
+    <td></td><td>d</td><td>Right</td>
+  </tr>
+  <tr>
+    <td></td><td>space</td><td>Jump / Brake</td>
+  </tr>
+  <tr>
+    <td></td><td spansize=2><br><b>View Control</b></td>
+  </tr>
+  <tr>
+    <td></td><td>e</td><td>Zoom</td>
+  </tr>
+  <tr>
+    <td></td><td>r</td><td>Set Zoom FOV</td>
+  </tr>
+  <tr>
+    <td></td><td>TAB</td><td>First/Third person</td>
+  </tr>
+  <tr>
+    <td></td><td>alt c</td><td>Toggle between camera and player</td>
+  </tr>
+  <tr>
+    <td></td><td spansize=2><br><b>Chat Messaging</b></td>
+  </tr>
+  <tr>
+    <td></td><td>u</td><td>Send chat message</td>
+  </tr>
+  <tr>
+    <td></td><td spansize=2><br><b>Misc. Functions</b></td>
+  </tr>
+  <tr>
+    <td></td><td>Ctrl-O</td><td>In-game options dialog</td>
+  </tr>
+  <tr>
+    <td></td><td>F1</td><td>In-game help dialog box</td>
+  </tr>
+  <tr>
+    <td></td><td>F2</td><td>Score board</td>
+  </tr>
+  <tr>
+    <td></td><td spansize=2><br><b>Mission Editing</b></td>
+  </tr>
+  <tr>
+    <td></td><td>F7</td><td>Switch contol to the player and position him at the camera</td>
+  </tr>
+  <tr>
+    <td></td><td>F8</td><td>Switch contol to the camera and position it at the player</td>
+  </tr>
+  <tr>
+    <td></td><td>F9</td><td>Toggle between outline, interior debug, and normal rendering modes</td>
+  </tr>
+</table>
+</p>
+
+<hr><h3 id="license">License</h3>
+
+<a href="http://www.garagegames.com/pg/product/eula.php?id=111" target="_blank">Torque Game Engine INDIE License</a>
+<p><a href="http://www.garagegames.com/pg/product/eula.php?id=112" target="_blank">Torque Game Engine COMMERCIAL License</a>
+
+<!-------------------------------------------------------->
+</body>
+</html>

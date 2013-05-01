@@ -1,0 +1,62 @@
+{
+"classname" "worldspawn"
+"classname" "worldspawn"
+"min_pixels" "1"
+"geometry_scale" "32.0"
+"light_geometry_scale" "16.0"
+"ambient_color" "0 0 0"
+"emergency_ambient_color" "0 0 0"
+"mapversion" "220"
+"oldstyle_lighting" "0"
+"rad_subdivision_u" "4"
+"rad_subdivision_v" "4"
+"rad_arealight_multiplier" "100000"
+"rad_pointlight_multiplier" "1.0"
+"rad_convergence" "1.0"
+"rad_iteration_limiter" "1024"
+"rad_directlight_only" "0"
+"rad_use_nusselts" "0"
+"rad_ambientterm" "0"
+"rad_adaptive_degradation" "1"
+"rad_adaptive_threshold" "15"
+"rad_adaptive_max_x" "128"
+"rad_adaptive_max_y" "128"
+"rad_defaultreflectivity" ".38 .38 .38"
+"rad_defaultemissioncolor" "0.0 0.0 0.0"
+"rad_defaultemissionintensity" "0.0"
+"rad_octree_threshold" "50000"
+"rad_octree_minnoderadius" "5.0"
+"rad_octree_maxtreedepth" "50"
+"rad_bsp_gaussian" "8"
+"rad_bsp_searchrange" "5"
+"rad_lightmap_gamma" "1.0"
+"rad_lightmap_width" "256"
+"rad_lightmap_height" "256"
+"detail_number" "4"
+"mapversion" "220"
+"wad" "\documents and settings\garage\desktop\demo.wad"
+{
+( 1302 -264 -36 ) ( 1302 248 188 ) ( 1830 248 188 ) ROOF-TILES02 [ 1 0 0 0 ] [ 0 -1 0 -1.00003 ] 0 0.7 0.7 
+( 1302 248 172 ) ( 1302 -264 -52 ) ( 1830 -264 -52 ) SNAGS2 [ 1 0 0 0.000488281 ] [ 0 -1 0 -1.00006 ] 0 0.3 0.3 
+( 1302 -264 -52 ) ( 1302 248 172 ) ( 1302 248 188 ) PLANK5 [ 0 1 0 0 ] [ 0 0 -1 -1 ] 0 0.3 0.3 
+( 1830 248 172 ) ( 1830 -264 -52 ) ( 1830 -264 -36 ) PLANK5 [ 0 1 0 0 ] [ 0 0 -1 -1 ] 0 0.3 0.3 
+( 1302 248 172 ) ( 1830 248 172 ) ( 1830 248 188 ) PLANK5 [ 1 0 0 0.000488281 ] [ 0 0 -1 -1 ] 0 0.3 0.3 
+( 1830 -264 -52 ) ( 1302 -264 -52 ) ( 1302 -264 -36 ) PLANK5 [ 1 0 0 0.000488281 ] [ 0 0 -1 -1 ] 0 0.3 0.3 
+}
+{
+( 1754 -196 -24 ) ( 1346 -196 -24 ) ( 1346 212 164 ) IK_WOODV256A [ 6.12303e-017 -1 0 2.8257e-007 ] [ -1 -6.12303e-017 0 2.79509e-005 ] 0 0.45 0.45 
+( 1754 212 -44 ) ( 1346 212 -44 ) ( 1346 -196 -44 ) IK_WOODV256A [ 6.12303e-017 -1 0 2.8257e-007 ] [ -1 -6.12303e-017 0 2.79509e-005 ] 0 0.45 0.45 
+( 1754 -196 -44 ) ( 1346 -196 -44 ) ( 1346 -196 -24 ) IK_WOODV256A [ 6.12303e-017 0 -1 7.78923e-022 ] [ -1 0 -6.12303e-017 2.79509e-005 ] 0 0.45 0.45 
+( 1346 212 -44 ) ( 1754 212 -44 ) ( 1754 212 164 ) IK_WOODV256A [ 6.12303e-017 0 -1 7.78923e-022 ] [ -1 0 -6.12303e-017 2.79509e-005 ] 0 0.45 0.45 
+( 1346 212 164 ) ( 1346 -196 -24 ) ( 1346 -196 -44 ) IK_WOODV256A [ 0 6.12303e-017 -1 -3.13122e-023 ] [ 0 -1 -6.12303e-017 -3.0235e-005 ] 0 0.45 0.45 
+( 1754 212 -44 ) ( 1754 -196 -44 ) ( 1754 -196 -24 ) IK_WOODV256A [ 0 6.12303e-017 -1 -3.13122e-023 ] [ 0 -1 -6.12303e-017 -3.0235e-005 ] 0 0.45 0.45 
+}
+{
+( 1338 -204 -44 ) ( 1338 220 -44 ) ( 1762 220 -44 ) CASTLESTONE1A [ -1 0 0 -102.856 ] [ 0 1 0 -45.7144 ] 0 0.35 0.35 
+( 1298 290 -276 ) ( 1298 -276 -276 ) ( 1834 -276 -276 ) CASTLESTONE1A [ -1 0 0 -102.856 ] [ 0 1 0 -45.7144 ] 0 0.35 0.35 
+( 1834 290 -276 ) ( 1834 -276 -276 ) ( 1762 -204 -44 ) CASTLESTONE1A [ 0 -1 0 45.7144 ] [ 0 0 -1 -3.05176e-005 ] 0 0.35 0.35 
+( 1298 -276 -276 ) ( 1298 290 -276 ) ( 1338 220 -44 ) CASTLESTONE1A [ 0 -1 0 45.7144 ] [ 0 0 -1 -3.05176e-005 ] 0 0.35 0.35 
+( 1834 -276 -276 ) ( 1298 -276 -276 ) ( 1338 -204 -44 ) CASTLESTONE1A [ -1 0 0 -102.856 ] [ 0 0 -1 -3.05176e-005 ] 0 0.35 0.35 
+( 1298 290 -276 ) ( 1834 290 -276 ) ( 1762 220 -44 ) CASTLESTONE1A [ -1 0 0 -102.856 ] [ 0 0 -1 -3.05176e-005 ] 0 0.35 0.35 
+}
+}

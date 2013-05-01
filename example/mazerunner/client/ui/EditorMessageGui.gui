@@ -1,0 +1,95 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(EditorMessageGui) {
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   position = "0 0";
+   Extent = "800 600";
+   MinExtent = "8 2";
+   Visible = "1";
+
+   new GuiWindowCtrl() {
+      Profile = "GuiWindowProfile";
+      HorizSizing = "center";
+      VertSizing = "center";
+      position = "210 202";
+      Extent = "302 182";
+      MinExtent = "8 2";
+      Visible = "1";
+      maxLength = "255";
+      resizeWidth = "0";
+      resizeHeight = "0";
+      canMove = "0";
+      canClose = "0";
+      canMinimize = "0";
+      canMaximize = "0";
+      MinSize = "50 50";
+      text = "Standard Editors Disabled";
+
+      new GuiTextCtrl() {
+         Profile = "GuiTextProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "62 30";
+         Extent = "162 29";
+         MinExtent = "8 2";
+         Visible = "1";
+         text = "The standard editors have been";
+         maxLength = "255";
+      };
+      new GuiTextCtrl() {
+         Profile = "GuiTextProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "62 60";
+         Extent = "164 29";
+         MinExtent = "8 2";
+         Visible = "1";
+         text = " disabled in this game.";
+         maxLength = "255";
+      };
+      new GuiTextCtrl() {
+         Profile = "GuiTextProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "62 90";
+         Extent = "178 29";
+         MinExtent = "8 2";
+         Visible = "1";
+         text = "Please only use the level editor.";
+         maxLength = "255";
+      };
+      new GuiButtonCtrl() {
+         Profile = "GuiButtonProfile";
+         HorizSizing = "center";
+         VertSizing = "bottom";
+         position = "73 129";
+         Extent = "140 30";
+         MinExtent = "8 2";
+         Visible = "1";
+         Command = "Canvas.popDialog( EditorMessageGui );";
+         text = "OK";
+         groupNum = "-1";
+         buttonType = "PushButton";
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+GlobalActionMap.bind(keyboard, "f11", editorMessageF10);
+GlobalActionMap.bind(keyboard, "f10", editorMessageF11);
+
+function editorMessageF10(%val) 
+{
+   if(%val) 
+   {
+      Canvas.pushDialog( "EditorMessageGui" );
+   }
+}
+
+function editorMessageF11(%val) 
+{
+   if(%val) 
+   {
+      Canvas.pushDialog( "EditorMessageGui" );
+   }
+}

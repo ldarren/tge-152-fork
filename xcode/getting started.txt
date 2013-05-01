@@ -1,0 +1,174 @@
+Welcome to the Torque Game Engine 1.4 for MacOSX!
+
+This file contains instructions that you WILL NEED in order to 
+develop with Torque on the Mac.
+
+Contents:
+
+1) General Notes
+    1.1) Supported Versions of Mac OS
+    1.2) Recommended Development Tools
+    1.3) A Two Button Mouse is Recommended
+    1.4) Some Shortcut Keys Conflict with Expose
+2) Initial Setup, Tips & Goodies
+    2.1) Getting Debugging to Work
+        2.1.1) For Xcode2.1+
+    2.2) Script Editing in Xcode
+        2.2.1) Installing .cs Language Definitions in Xcode
+    2.3) Putting Game Content Inside the App Bundle
+3) Known issues
+
+
+1) General Notes
+---------------------------------------------------------------------------
+
+1.1) Supported Versions of Mac OS
+Recent versions of Torque on Macintosh require MacOS 10.2 or later to run,
+but MacOS 10.4 or better is recommended for development.
+Attempting to support older versions of the MacOS is not recommended.
+
+1.2) Recommended Development Tools
+Only the Xcode 2.1 format project file is currently being kept up to date.
+Previous projects aren't guaranteed to work properly, and may have issues
+not listed herein. Thus, Xcode is the recommended development environment.
+Older deprecated project files are in the "old build projects" folder.
+It is of course possible to use any development environment that can
+produce a Macintosh application, and can use the standard BSD & MacOSX
+headers and frameworks.
+Xcode 2.3 or better is recommended for development.
+You should always use the latest version of Xcode when developing with Torque.
+
+1.3) A Two Button Mouse is Recommended
+The Torque editors are usually designed to work with a two button mouse.
+If you don't already have one, we strongly recommend getting one. Most USB
+mice work quite well with MacOSX.
+
+1.4) Some Shortcut Keys Conflict with Expose
+MacOSX has a window management feature called Expose, which happens to use
+the same F-keys that the Torque editors use. In fullscreen mode, there is
+no conflict. In windowed mode, you can work around the conflict by holding
+down the command key and hitting the appropriate function key.
+Thus, to open the Torque Game Builder level builder when in windowed mode,
+hit cmd-F9 instead of just F9.
+
+
+2) Initial Setup, Tips & Goodies
+---------------------------------------------------------------------------
+
+2.1) Getting Debugging to Work
+
+  2.1.1) For Xcode2.1+
+  ----------------------------------------
+  There are 2 script files embedded in the build targets, that will run
+  each time the targets are built. One of them attempts to repair broken
+  symbolic links in the bundled OpenAL and xiph.org frameworks. The other
+  performs some critical setup on the torque/pb/build folder. 
+  
+  If this 2nd script: "Fix Build Products Path" fails for any reason,
+  Xcode will probably fail to run or debug the application, giving the
+  error: "No launchable executable at path". 
+  
+  The "Fix Build Products Path" script creates a symbolic links ( aliases )
+  to the "../../example" directory. If you are using a different directory
+  name than "example", you can edit the script replace "example" with your
+  directory like this:
+  - launch the Xcode project.
+  - locate the Targets group in the list on the left hand side.
+  - click the triangle next to Targets, so that it opens the Targets group.
+  - for each target in the group, 
+   - click the triangle next to the target, so that it opens the target.
+   - locate the build phase "Fix Build Products Path"
+   - double click "Fix Build Products Path"
+   - in the new window that opens, replace every occurrence of "example"
+     with the name of your game directory.
+
+  ----------------------------------------
+  Your project should now directly build the target executable directly
+  into the runtime folder, which also means it is properly located for
+  running or debugging from within Xcode / Project Builder.
+
+
+2.2) Script Editing in Xcode
+The Xcode project file now contains references to the script files.
+This makes searching more complete, and provides a decent script editor.
+
+  2.2.1) Installing .cs Language Definitions in Xcode  
+  ----------------------------------------
+  - open the "torque/pb/script editing" folder.
+  - locate the Torque.pbfilespec and Torque.pblangspec files therein.
+  - locate the directory /Library/Application Support/Xcode/Specifications/
+  - create the Specifications directory if it does not exist.
+  - install the .pbfilespec and .pblangspec files in Specifications/ .
+  - quit and restart Xcode.
+
+
+2.3) Putting Game Content Inside the App Bundle
+The engine will assume that game content is beside the main.cs file.
+It will look first in YourGame.app/Contents/Resources, then it will 
+look in the folder where YourGame.app resides for a file named 'main.cs'.
+So, when you are ready to distribute your game, you should place the game
+content inside the application bundle like this:
+- in the Finder, control-click(or right-click) on your built application.
+- choose 'Show Package Contents'.
+- a new window will open, with one folder: 'Contents'.
+- Navigate to the Contents/Resources folder.
+- copy all your game files (main.cs, common/, etc) into Contents/Resources.
+- run the game & test all functionality.
+
+
+3) Known issues
+---------------------------------------------------------------------------
+
+- No external console window. in debug in Xcode, printfs go to the debug
+  console pane. At some point, we'll likely create a simple console library
+  to be used when a tertiary console window is needed. In the mean time,
+  you can open the console.log file using the Console application. Console
+  will automatically 'tail' the file, always displaying the most current
+  contents.
+  
+- ADDENDUM: A working input / output console may be used if you manually
+  launch the Torque app directly from the commandline. It's just like the
+  console window you can pull down in game. Whether or not this console
+  starts is controlled with a preference, and can be easily turned off in
+  Release mode.
+
+- OSX handles cmdline args like the PC, if you launch it from the cmdline.
+Note that this means that you can add args in the project file for debug vs release, etc.
+Take a peek at "example/Launch using show mod.command" in a text editor to see how you can use cmdline args from an external script.
+The maccmdline.txt workaround still works, if you prefer.
+
+- mac performance vs the PC has improved greatly. There is still ground to
+  gain performance here, but it may not be a good investment of time. As a
+  general rule, only consider optimization when you're done with everything
+  else.
+
+- As of TGB 1.1.1, and TGE 1.4.2,  the Mac platform code has been almost
+  totally rewritten. Much of the code now uses standard POSIX interfaces 
+  where they exist. The platform attempts to maintain support for versions 
+  10.2 - 10.4u of MacOSX. Event handling and windowing code is much, much 
+  cleaner.
+- Many little niceties have been added to try to make Torque more Mac like.
+- Old OS9 code has been removed.
+- Code that uses deprecated APIs have been removed, except where Apple has 
+  not provided a viable replacement, or where support for 10.2 depends on 
+  old APIs.
+- The mac platform is multithreaded, to take advantage of multiple core 
+  Intel hardware, and multiple processor hardware in general.
+- Functionality is now better organized into separate files. This means 
+  that macCarbWindow.cc is no longer the random code dumping ground it was 
+  before.
+- Debugging is easier, as many randomly placed globals have been snipped or
+  reorganized into platState.
+- Wide screen displays are supported.
+- Window resizing is supported.
+- Better multiple monitor support.
+- Better OpenGL setup & features detection.
+- Alerts work in fullscreen mode now.
+- Better support for Mac cut / copy / paste etc shortcuts.
+- Basically, a normal sane human can read & understand the code now. So 
+  read away! Yes, you. Get going!
+  This is new code, so there will be bugs.
+  Please report bugs / odd behavior on the *private* Mac forums as you find 
+  them.
+
+

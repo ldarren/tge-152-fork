@@ -1,0 +1,4015 @@
+First pass:  enumerate scene...
+
+Processing Node chassis0 with parent ROOT
+Adding skin object from skin "chassis0" to bone "root" (0).
+Adding skin object from skin "chassis0" to bone "hub1" (1).
+Adding skin object from skin "chassis0" to bone "hub3" (2).
+Adding skin object from skin "chassis0" to bone "hub0" (3).
+Adding skin object from skin "chassis0" to bone "hub2" (4).
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 1 ("hub1")
+Adding weights for bone 1 ("hub1")
+Adding weights for bone 1 ("hub1")
+Adding weights for bone 1 ("hub1")
+Adding weights for bone 1 ("hub1")
+Adding weights for bone 1 ("hub1")
+Adding weights for bone 1 ("hub1")
+Adding weights for bone 1 ("hub1")
+Adding weights for bone 1 ("hub1")
+Adding weights for bone 1 ("hub1")
+Adding weights for bone 1 ("hub1")
+Adding weights for bone 1 ("hub1")
+Adding weights for bone 1 ("hub1")
+Adding weights for bone 1 ("hub1")
+Adding weights for bone 1 ("hub1")
+Adding weights for bone 1 ("hub1")
+Adding weights for bone 1 ("hub1")
+Adding weights for bone 1 ("hub1")
+Adding weights for bone 1 ("hub1")
+Adding weights for bone 1 ("hub1")
+Adding weights for bone 1 ("hub1")
+Adding weights for bone 1 ("hub1")
+Adding weights for bone 1 ("hub1")
+Adding weights for bone 1 ("hub1")
+Adding weights for bone 1 ("hub1")
+Adding weights for bone 1 ("hub1")
+Adding weights for bone 1 ("hub1")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 1 ("hub1")
+Adding weights for bone 1 ("hub1")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 2 ("hub3")
+Adding weights for bone 2 ("hub3")
+Adding weights for bone 2 ("hub3")
+Adding weights for bone 2 ("hub3")
+Adding weights for bone 2 ("hub3")
+Adding weights for bone 2 ("hub3")
+Adding weights for bone 2 ("hub3")
+Adding weights for bone 2 ("hub3")
+Adding weights for bone 2 ("hub3")
+Adding weights for bone 2 ("hub3")
+Adding weights for bone 2 ("hub3")
+Adding weights for bone 2 ("hub3")
+Adding weights for bone 2 ("hub3")
+Adding weights for bone 2 ("hub3")
+Adding weights for bone 2 ("hub3")
+Adding weights for bone 2 ("hub3")
+Adding weights for bone 2 ("hub3")
+Adding weights for bone 2 ("hub3")
+Adding weights for bone 2 ("hub3")
+Adding weights for bone 2 ("hub3")
+Adding weights for bone 2 ("hub3")
+Adding weights for bone 2 ("hub3")
+Adding weights for bone 2 ("hub3")
+Adding weights for bone 2 ("hub3")
+Adding weights for bone 2 ("hub3")
+Adding weights for bone 2 ("hub3")
+Adding weights for bone 2 ("hub3")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 2 ("hub3")
+Adding weights for bone 2 ("hub3")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 3 ("hub0")
+Adding weights for bone 3 ("hub0")
+Adding weights for bone 3 ("hub0")
+Adding weights for bone 3 ("hub0")
+Adding weights for bone 3 ("hub0")
+Adding weights for bone 3 ("hub0")
+Adding weights for bone 3 ("hub0")
+Adding weights for bone 3 ("hub0")
+Adding weights for bone 3 ("hub0")
+Adding weights for bone 3 ("hub0")
+Adding weights for bone 3 ("hub0")
+Adding weights for bone 3 ("hub0")
+Adding weights for bone 3 ("hub0")
+Adding weights for bone 3 ("hub0")
+Adding weights for bone 3 ("hub0")
+Adding weights for bone 3 ("hub0")
+Adding weights for bone 3 ("hub0")
+Adding weights for bone 3 ("hub0")
+Adding weights for bone 3 ("hub0")
+Adding weights for bone 3 ("hub0")
+Adding weights for bone 3 ("hub0")
+Adding weights for bone 3 ("hub0")
+Adding weights for bone 3 ("hub0")
+Adding weights for bone 3 ("hub0")
+Adding weights for bone 3 ("hub0")
+Adding weights for bone 3 ("hub0")
+Adding weights for bone 3 ("hub0")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 3 ("hub0")
+Adding weights for bone 3 ("hub0")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 4 ("hub2")
+Adding weights for bone 4 ("hub2")
+Adding weights for bone 4 ("hub2")
+Adding weights for bone 4 ("hub2")
+Adding weights for bone 4 ("hub2")
+Adding weights for bone 4 ("hub2")
+Adding weights for bone 4 ("hub2")
+Adding weights for bone 4 ("hub2")
+Adding weights for bone 4 ("hub2")
+Adding weights for bone 4 ("hub2")
+Adding weights for bone 4 ("hub2")
+Adding weights for bone 4 ("hub2")
+Adding weights for bone 4 ("hub2")
+Adding weights for bone 4 ("hub2")
+Adding weights for bone 4 ("hub2")
+Adding weights for bone 4 ("hub2")
+Adding weights for bone 4 ("hub2")
+Adding weights for bone 4 ("hub2")
+Adding weights for bone 4 ("hub2")
+Adding weights for bone 4 ("hub2")
+Adding weights for bone 4 ("hub2")
+Adding weights for bone 4 ("hub2")
+Adding weights for bone 4 ("hub2")
+Adding weights for bone 4 ("hub2")
+Adding weights for bone 4 ("hub2")
+Adding weights for bone 4 ("hub2")
+Adding weights for bone 4 ("hub2")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 4 ("hub2")
+Adding weights for bone 4 ("hub2")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Adding weights for bone 0 ("root")
+Skin "chassis0" with parent "ROOT" added to entry list
+Processing Node Bounds with parent ROOT
+Bounding box found
+Processing Node Sequence::Root with parent ROOT
+Processing Node Sequence::spring0 with parent ROOT
+Processing Node Sequence::spring1 with parent ROOT
+Processing Node Sequence::spring2 with parent ROOT
+Processing Node Sequence::spring3 with parent ROOT
+Processing Node __mainTree with parent ROOT
+Found subtree starting at Node "__mainTree"
+
+Second pass:  put shape structure together...
+
+Adding detail named "detail0" of size 0 to subtree "__mainTree".
+Adding detail named "Collision-1" of size -1 to subtree "__mainTree".
+Adding node "__mainTree" with parent "__mainTree" to subtree rooted on node "__mainTree".
+Adding node "__meshes" with parent "__mainTree" to subtree rooted on node "__mainTree".
+Adding node "rsteer0" with parent "__meshes" to subtree rooted on node "__mainTree".
+Attaching object to node.
+Adding object named "rsteer".
+Adding mesh of size 0 to object "rsteer".
+Adding node "lsteer0" with parent "__meshes" to subtree rooted on node "__mainTree".
+Attaching object to node.
+Adding object named "lsteer".
+Adding mesh of size 0 to object "lsteer".
+Adding node "Col-1" with parent "__meshes" to subtree rooted on node "__mainTree".
+Attaching object to node.
+Adding object named "Col".
+Adding mesh of size -1 to object "Col".
+Adding node "root" with parent "__meshes" to subtree rooted on node "__mainTree".
+Adding node "rearaxlehub" with parent "root" to subtree rooted on node "__mainTree".
+Adding node "rearleftaxle" with parent "rearaxlehub" to subtree rooted on node "__mainTree".
+Adding node "hub2" with parent "rearleftaxle" to subtree rooted on node "__mainTree".
+Adding node "rearrightaxle" with parent "rearaxlehub" to subtree rooted on node "__mainTree".
+Adding node "hub3" with parent "rearrightaxle" to subtree rooted on node "__mainTree".
+Adding node "frontaxlehub" with parent "root" to subtree rooted on node "__mainTree".
+Adding node "frontleftaxle" with parent "frontaxlehub" to subtree rooted on node "__mainTree".
+Adding node "hub0" with parent "frontleftaxle" to subtree rooted on node "__mainTree".
+Adding node "frontrightaxle" with parent "frontaxlehub" to subtree rooted on node "__mainTree".
+Adding node "hub1" with parent "frontrightaxle" to subtree rooted on node "__mainTree".
+Adding node "mount0" with parent "root" to subtree rooted on node "__mainTree".
+Adding node "eye" with parent "root" to subtree rooted on node "__mainTree".
+Adding node "cam" with parent "root" to subtree rooted on node "__mainTree".
+Adding skin object from skin "chassis0" to bone "root" (0).
+Adding skin object from skin "chassis0" to bone "hub1" (1).
+Adding skin object from skin "chassis0" to bone "hub3" (2).
+Adding skin object from skin "chassis0" to bone "hub0" (3).
+Adding skin object from skin "chassis0" to bone "hub2" (4).
+Adding object named "chassis".
+Adding mesh of size 0 to object "chassis".
+Generating faces for skin "chassis0".
+Adding object named "Bone::root".
+Object is bone
+Adding object named "Bone::hub2".
+Object is bone
+Adding object named "Bone::hub3".
+Object is bone
+Adding object named "Bone::hub0".
+Object is bone
+Adding object named "Bone::hub1".
+Object is bone
+
+Third pass:  Collapsing unneeded nodes...
+
+Removing node "__mainTree"
+Removing node "__meshes"
+
+Add default object states...
+
+Adding object state to 1 detail level(s) of mesh "rsteer".
+Adding frame.
+Object is visible.
+Object offset transform for mesh dl=0:
+    scale:            x=1.00000, y=1.00000, z=1.00000
+    stretch rotation: x=0.00000, y=0.00000, z=0.00000, w=1.00000
+    translation:      x=0.00000, y=0.12242, z=-0.10993
+    actual rotation:  x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding object state to 1 detail level(s) of mesh "lsteer".
+Adding frame.
+Object is visible.
+Object offset transform for mesh dl=0:
+    scale:            x=1.00000, y=1.00000, z=1.00000
+    stretch rotation: x=0.00000, y=0.00000, z=0.00000, w=1.00000
+    translation:      x=0.00000, y=0.12242, z=-0.10993
+    actual rotation:  x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding object state to 1 detail level(s) of mesh "Col".
+Adding frame.
+Object is visible.
+Object offset transform for mesh dl=0:
+    scale:            x=1.00000, y=1.00000, z=1.00000
+    stretch rotation: x=0.00000, y=0.00000, z=0.00000, w=1.00000
+    translation:      x=0.00000, y=0.12242, z=-0.10993
+    actual rotation:  x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding object state to 1 detail level(s) of mesh "chassis".
+Adding frame.
+Object is visible.
+---------------------------------
+
+Add default node states...
+
+Adding node rotation at time 0.000000 for node "rsteer0".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0.000000 for node "rsteer0".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding node rotation at time 0.000000 for node "lsteer0".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0.000000 for node "lsteer0".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding node rotation at time 0.000000 for node "Col-1".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0.000000 for node "Col-1".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding node rotation at time 0.000000 for node "root".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0.000000 for node "root".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding node rotation at time 0.000000 for node "rearaxlehub".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0.000000 for node "rearaxlehub".
+  translation:     x=-0.00058, y=-1.86120, z=-0.10490
+---------------------------------
+Adding node rotation at time 0.000000 for node "rearleftaxle".
+  rotation:     x=0.00209, y=0.00209, z=0.70710, w=0.70710
+---------------------------------
+Adding node translation at time 0.000000 for node "rearleftaxle".
+  translation:     x=-0.86371, y=0.00000, z=0.00307
+---------------------------------
+Adding node rotation at time 0.000000 for node "hub2".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0.000000 for node "hub2".
+  translation:     x=0.00000, y=0.93890, z=-0.00000
+---------------------------------
+Adding node rotation at time 0.000000 for node "rearrightaxle".
+  rotation:     x=0.70710, y=0.70709, z=0.00369, w=0.00369
+---------------------------------
+Adding node translation at time 0.000000 for node "rearrightaxle".
+  translation:     x=0.87523, y=0.00000, z=-0.00667
+---------------------------------
+Adding node rotation at time 0.000000 for node "hub3".
+  rotation:     x=0.00000, y=-0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0.000000 for node "hub3".
+  translation:     x=-0.00000, y=0.92586, z=-0.00000
+---------------------------------
+Adding node rotation at time 0.000000 for node "frontaxlehub".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0.000000 for node "frontaxlehub".
+  translation:     x=0.00000, y=2.37630, z=-0.12365
+---------------------------------
+Adding node rotation at time 0.000000 for node "frontleftaxle".
+  rotation:     x=-0.00212, y=-0.00212, z=0.70704, w=0.70716
+---------------------------------
+Adding node translation at time 0.000000 for node "frontleftaxle".
+  translation:     x=-0.86985, y=0.00000, z=0.03293
+---------------------------------
+Adding node rotation at time 0.000000 for node "hub0".
+  rotation:     x=-0.00000, y=-0.00000, z=-0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0.000000 for node "hub0".
+  translation:     x=-0.00000, y=0.92779, z=0.00000
+---------------------------------
+Adding node rotation at time 0.000000 for node "frontrightaxle".
+  rotation:     x=0.70714, y=0.70706, z=0.00208, w=0.00208
+---------------------------------
+Adding node translation at time 0.000000 for node "frontrightaxle".
+  translation:     x=0.87460, y=-0.00000, z=0.01071
+---------------------------------
+Adding node rotation at time 0.000000 for node "hub1".
+  rotation:     x=0.00000, y=-0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0.000000 for node "hub1".
+  translation:     x=-0.00000, y=0.92224, z=-0.00000
+---------------------------------
+Adding node rotation at time 0.000000 for node "mount0".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0.000000 for node "mount0".
+  translation:     x=-0.60000, y=0.37918, z=0.91214
+---------------------------------
+Adding node rotation at time 0.000000 for node "eye".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0.000000 for node "eye".
+  translation:     x=-0.62778, y=0.39457, z=1.79035
+---------------------------------
+Adding node rotation at time 0.000000 for node "cam".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0.000000 for node "cam".
+  translation:     x=0.00000, y=-3.68235, z=3.60231
+---------------------------------
+
+Adding 5 sequences...
+
+Adding sequence 0 named "Root"
+One-shot sequence.  Enabled animation:   TUA    , Forced animation:  Duration = 0.00000, secPerFrame = 0.00000, # frames = 1
+Sequence includes 0 nodes, 0 objects, and 0 ifl materials
+  0 rotations, 0 translations, 0 scales
+
+
+Adding 1 ground transform frames at 0.000000 sec per frame intervals.
+
+Adding sequence 1 named "spring0"
+One-shot sequence.  Blend sequence.  Enabled animation:   TUA    , Forced animation:  Duration = 0.03333, secPerFrame = 0.01667, # frames = 2
+Sequence includes 13 nodes, 0 objects, and 0 ifl materials
+  8 rotations, 13 translations, 0 scales
+
+Adding blend node translation at time 0.066667 for node "rearaxlehub".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node translation at time 0.100000 for node "rearaxlehub".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.066667 for node "rearleftaxle".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.066667 for node "rearleftaxle".
+  translation:     x=-0.00000, y=-0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.100000 for node "rearleftaxle".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.100000 for node "rearleftaxle".
+  translation:     x=-0.00000, y=-0.00000, z=-0.00000
+---------------------------------
+Adding blend node rotation at time 0.066667 for node "hub2".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.066667 for node "hub2".
+  translation:     x=-0.00000, y=0.00000, z=-0.00000
+---------------------------------
+Adding blend node rotation at time 0.100000 for node "hub2".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.100000 for node "hub2".
+  translation:     x=-0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.066667 for node "rearrightaxle".
+  rotation:     x=0.00000, y=-0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.066667 for node "rearrightaxle".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.100000 for node "rearrightaxle".
+  rotation:     x=0.00000, y=-0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.100000 for node "rearrightaxle".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.066667 for node "hub3".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.066667 for node "hub3".
+  translation:     x=-0.00000, y=0.00000, z=-0.00000
+---------------------------------
+Adding blend node rotation at time 0.100000 for node "hub3".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.100000 for node "hub3".
+  translation:     x=-0.00000, y=0.00000, z=-0.00000
+---------------------------------
+Adding blend node translation at time 0.066667 for node "frontaxlehub".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node translation at time 0.100000 for node "frontaxlehub".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.066667 for node "frontleftaxle".
+  rotation:     x=-0.00000, y=-0.00000, z=-0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.066667 for node "frontleftaxle".
+  translation:     x=0.00000, y=0.00000, z=-0.00000
+---------------------------------
+Adding blend node rotation at time 0.100000 for node "frontleftaxle".
+  rotation:     x=-0.00000, y=-0.00000, z=-0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.100000 for node "frontleftaxle".
+  translation:     x=0.00000, y=0.00180, z=-0.29999
+---------------------------------
+Adding blend node rotation at time 0.066667 for node "hub0".
+  rotation:     x=0.00000, y=-0.00000, z=-0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.066667 for node "hub0".
+  translation:     x=-0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.100000 for node "hub0".
+  rotation:     x=0.00000, y=-0.00000, z=-0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.100000 for node "hub0".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.066667 for node "frontrightaxle".
+  rotation:     x=0.00000, y=-0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.066667 for node "frontrightaxle".
+  translation:     x=-0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.100000 for node "frontrightaxle".
+  rotation:     x=0.00000, y=-0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.100000 for node "frontrightaxle".
+  translation:     x=-0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.066667 for node "hub1".
+  rotation:     x=0.00000, y=0.00000, z=-0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.066667 for node "hub1".
+  translation:     x=-0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.100000 for node "hub1".
+  rotation:     x=0.00000, y=0.00000, z=-0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.100000 for node "hub1".
+  translation:     x=-0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node translation at time 0.066667 for node "mount0".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node translation at time 0.100000 for node "mount0".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node translation at time 0.066667 for node "eye".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node translation at time 0.100000 for node "eye".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node translation at time 0.066667 for node "cam".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node translation at time 0.100000 for node "cam".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+
+Adding 1 ground transform frames at 0.033333 sec per frame intervals.
+
+Adding sequence 2 named "spring1"
+One-shot sequence.  Blend sequence.  Enabled animation:   TUA    , Forced animation:  Duration = 0.03333, secPerFrame = 0.01667, # frames = 2
+Sequence includes 13 nodes, 0 objects, and 0 ifl materials
+  8 rotations, 13 translations, 0 scales
+
+Adding blend node translation at time 0.133333 for node "rearaxlehub".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node translation at time 0.166667 for node "rearaxlehub".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.133333 for node "rearleftaxle".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.133333 for node "rearleftaxle".
+  translation:     x=-0.00000, y=-0.00000, z=-0.00000
+---------------------------------
+Adding blend node rotation at time 0.166667 for node "rearleftaxle".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.166667 for node "rearleftaxle".
+  translation:     x=-0.00000, y=-0.00000, z=-0.00000
+---------------------------------
+Adding blend node rotation at time 0.133333 for node "hub2".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.133333 for node "hub2".
+  translation:     x=-0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.166667 for node "hub2".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.166667 for node "hub2".
+  translation:     x=-0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.133333 for node "rearrightaxle".
+  rotation:     x=0.00000, y=-0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.133333 for node "rearrightaxle".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.166667 for node "rearrightaxle".
+  rotation:     x=0.00000, y=-0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.166667 for node "rearrightaxle".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.133333 for node "hub3".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.133333 for node "hub3".
+  translation:     x=-0.00000, y=0.00000, z=-0.00000
+---------------------------------
+Adding blend node rotation at time 0.166667 for node "hub3".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.166667 for node "hub3".
+  translation:     x=-0.00000, y=0.00000, z=-0.00000
+---------------------------------
+Adding blend node translation at time 0.133333 for node "frontaxlehub".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node translation at time 0.166667 for node "frontaxlehub".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.133333 for node "frontleftaxle".
+  rotation:     x=-0.00000, y=-0.00000, z=-0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.133333 for node "frontleftaxle".
+  translation:     x=0.00000, y=0.00000, z=-0.00000
+---------------------------------
+Adding blend node rotation at time 0.166667 for node "frontleftaxle".
+  rotation:     x=-0.00000, y=-0.00000, z=-0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.166667 for node "frontleftaxle".
+  translation:     x=0.00000, y=0.00000, z=-0.00000
+---------------------------------
+Adding blend node rotation at time 0.133333 for node "hub0".
+  rotation:     x=0.00000, y=-0.00000, z=-0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.133333 for node "hub0".
+  translation:     x=-0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.166667 for node "hub0".
+  rotation:     x=0.00000, y=-0.00000, z=-0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.166667 for node "hub0".
+  translation:     x=-0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.133333 for node "frontrightaxle".
+  rotation:     x=0.00000, y=-0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.133333 for node "frontrightaxle".
+  translation:     x=-0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.166667 for node "frontrightaxle".
+  rotation:     x=0.00000, y=-0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.166667 for node "frontrightaxle".
+  translation:     x=-0.00000, y=-0.00177, z=0.29999
+---------------------------------
+Adding blend node rotation at time 0.133333 for node "hub1".
+  rotation:     x=0.00000, y=0.00000, z=-0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.133333 for node "hub1".
+  translation:     x=-0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.166667 for node "hub1".
+  rotation:     x=0.00000, y=0.00000, z=-0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.166667 for node "hub1".
+  translation:     x=-0.00000, y=0.00000, z=-0.00000
+---------------------------------
+Adding blend node translation at time 0.133333 for node "mount0".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node translation at time 0.166667 for node "mount0".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node translation at time 0.133333 for node "eye".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node translation at time 0.166667 for node "eye".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node translation at time 0.133333 for node "cam".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node translation at time 0.166667 for node "cam".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+
+Adding 1 ground transform frames at 0.033333 sec per frame intervals.
+
+Adding sequence 3 named "spring2"
+One-shot sequence.  Blend sequence.  Enabled animation:   TUA    , Forced animation:  Duration = 0.03333, secPerFrame = 0.01667, # frames = 2
+Sequence includes 13 nodes, 0 objects, and 0 ifl materials
+  8 rotations, 13 translations, 0 scales
+
+Adding blend node translation at time 0.200000 for node "rearaxlehub".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node translation at time 0.233333 for node "rearaxlehub".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.200000 for node "rearleftaxle".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.200000 for node "rearleftaxle".
+  translation:     x=-0.00000, y=-0.00000, z=-0.00000
+---------------------------------
+Adding blend node rotation at time 0.233333 for node "rearleftaxle".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.233333 for node "rearleftaxle".
+  translation:     x=0.00000, y=-0.00178, z=-0.29999
+---------------------------------
+Adding blend node rotation at time 0.200000 for node "hub2".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.200000 for node "hub2".
+  translation:     x=-0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.233333 for node "hub2".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.233333 for node "hub2".
+  translation:     x=0.00000, y=0.00000, z=-0.00000
+---------------------------------
+Adding blend node rotation at time 0.200000 for node "rearrightaxle".
+  rotation:     x=0.00000, y=-0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.200000 for node "rearrightaxle".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.233333 for node "rearrightaxle".
+  rotation:     x=0.00000, y=-0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.233333 for node "rearrightaxle".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.200000 for node "hub3".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.200000 for node "hub3".
+  translation:     x=-0.00000, y=0.00000, z=-0.00000
+---------------------------------
+Adding blend node rotation at time 0.233333 for node "hub3".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.233333 for node "hub3".
+  translation:     x=-0.00000, y=0.00000, z=-0.00000
+---------------------------------
+Adding blend node translation at time 0.200000 for node "frontaxlehub".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node translation at time 0.233333 for node "frontaxlehub".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.200000 for node "frontleftaxle".
+  rotation:     x=-0.00000, y=-0.00000, z=-0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.200000 for node "frontleftaxle".
+  translation:     x=0.00000, y=0.00000, z=-0.00000
+---------------------------------
+Adding blend node rotation at time 0.233333 for node "frontleftaxle".
+  rotation:     x=-0.00000, y=-0.00000, z=-0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.233333 for node "frontleftaxle".
+  translation:     x=0.00000, y=0.00000, z=-0.00000
+---------------------------------
+Adding blend node rotation at time 0.200000 for node "hub0".
+  rotation:     x=0.00000, y=-0.00000, z=-0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.200000 for node "hub0".
+  translation:     x=-0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.233333 for node "hub0".
+  rotation:     x=0.00000, y=-0.00000, z=-0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.233333 for node "hub0".
+  translation:     x=-0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.200000 for node "frontrightaxle".
+  rotation:     x=0.00000, y=-0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.200000 for node "frontrightaxle".
+  translation:     x=-0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.233333 for node "frontrightaxle".
+  rotation:     x=0.00000, y=-0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.233333 for node "frontrightaxle".
+  translation:     x=-0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.200000 for node "hub1".
+  rotation:     x=0.00000, y=0.00000, z=-0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.200000 for node "hub1".
+  translation:     x=-0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.233333 for node "hub1".
+  rotation:     x=0.00000, y=0.00000, z=-0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.233333 for node "hub1".
+  translation:     x=-0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node translation at time 0.200000 for node "mount0".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node translation at time 0.233333 for node "mount0".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node translation at time 0.200000 for node "eye".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node translation at time 0.233333 for node "eye".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node translation at time 0.200000 for node "cam".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node translation at time 0.233333 for node "cam".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+
+Adding 1 ground transform frames at 0.033333 sec per frame intervals.
+
+Adding sequence 4 named "spring3"
+One-shot sequence.  Blend sequence.  Enabled animation:   TUA    , Forced animation:  Duration = 0.03333, secPerFrame = 0.01667, # frames = 2
+Sequence includes 13 nodes, 0 objects, and 0 ifl materials
+  8 rotations, 13 translations, 0 scales
+
+Adding blend node translation at time 0.266667 for node "rearaxlehub".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node translation at time 0.300000 for node "rearaxlehub".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.266667 for node "rearleftaxle".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.266667 for node "rearleftaxle".
+  translation:     x=-0.00000, y=-0.00000, z=-0.00000
+---------------------------------
+Adding blend node rotation at time 0.300000 for node "rearleftaxle".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.300000 for node "rearleftaxle".
+  translation:     x=-0.00000, y=-0.00000, z=-0.00000
+---------------------------------
+Adding blend node rotation at time 0.266667 for node "hub2".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.266667 for node "hub2".
+  translation:     x=-0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.300000 for node "hub2".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.300000 for node "hub2".
+  translation:     x=-0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.266667 for node "rearrightaxle".
+  rotation:     x=0.00000, y=-0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.266667 for node "rearrightaxle".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.300000 for node "rearrightaxle".
+  rotation:     x=0.00000, y=-0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.300000 for node "rearrightaxle".
+  translation:     x=-0.00000, y=-0.00313, z=0.29998
+---------------------------------
+Adding blend node rotation at time 0.266667 for node "hub3".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.266667 for node "hub3".
+  translation:     x=-0.00000, y=0.00000, z=-0.00000
+---------------------------------
+Adding blend node rotation at time 0.300000 for node "hub3".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.300000 for node "hub3".
+  translation:     x=-0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node translation at time 0.266667 for node "frontaxlehub".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node translation at time 0.300000 for node "frontaxlehub".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.266667 for node "frontleftaxle".
+  rotation:     x=-0.00000, y=-0.00000, z=-0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.266667 for node "frontleftaxle".
+  translation:     x=0.00000, y=0.00000, z=-0.00000
+---------------------------------
+Adding blend node rotation at time 0.300000 for node "frontleftaxle".
+  rotation:     x=-0.00000, y=-0.00000, z=-0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.300000 for node "frontleftaxle".
+  translation:     x=0.00000, y=0.00000, z=-0.00000
+---------------------------------
+Adding blend node rotation at time 0.266667 for node "hub0".
+  rotation:     x=0.00000, y=-0.00000, z=-0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.266667 for node "hub0".
+  translation:     x=-0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.300000 for node "hub0".
+  rotation:     x=0.00000, y=-0.00000, z=-0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.300000 for node "hub0".
+  translation:     x=-0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.266667 for node "frontrightaxle".
+  rotation:     x=0.00000, y=-0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.266667 for node "frontrightaxle".
+  translation:     x=-0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.300000 for node "frontrightaxle".
+  rotation:     x=0.00000, y=-0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.300000 for node "frontrightaxle".
+  translation:     x=-0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.266667 for node "hub1".
+  rotation:     x=0.00000, y=0.00000, z=-0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.266667 for node "hub1".
+  translation:     x=-0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node rotation at time 0.300000 for node "hub1".
+  rotation:     x=0.00000, y=0.00000, z=-0.00000, w=1.00000
+---------------------------------
+Adding blend node translation at time 0.300000 for node "hub1".
+  translation:     x=-0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node translation at time 0.266667 for node "mount0".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node translation at time 0.300000 for node "mount0".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node translation at time 0.266667 for node "eye".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node translation at time 0.300000 for node "eye".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node translation at time 0.266667 for node "cam".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding blend node translation at time 0.300000 for node "cam".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+
+Adding 1 ground transform frames at 0.033333 sec per frame intervals.
+
+
+Generating skin "chassis0".
+
+Vertex, bone, & weight data:
+
+Vertex 0
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 2
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 3
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 4
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 5
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 6
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 7
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 8
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 9
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 10
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 11
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 12
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 13
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 14
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 15
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 16
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 17
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 18
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 19
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 20
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 21
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 22
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 23
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 24
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 25
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 26
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 27
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 28
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 29
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 30
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 31
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 32
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 33
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 34
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 35
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 36
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 37
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 38
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 39
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 40
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 41
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 42
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 43
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 44
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 45
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 46
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 47
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 48
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 49
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 50
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 51
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 52
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 53
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 54
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 55
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 56
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 57
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 58
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 59
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 60
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 61
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 62
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 63
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 64
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 65
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 66
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 67
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 68
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 69
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 70
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 71
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 72
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 73
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 74
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 75
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 76
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 77
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 78
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 79
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 80
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 81
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 82
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 83
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 84
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 85
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 86
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 87
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 88
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 89
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 90
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 91
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 92
+  Bone 1, weight = 1.000, name =  "hub1"
+Vertex 93
+  Bone 1, weight = 1.000, name =  "hub1"
+Vertex 94
+  Bone 1, weight = 1.000, name =  "hub1"
+Vertex 95
+  Bone 1, weight = 1.000, name =  "hub1"
+Vertex 96
+  Bone 1, weight = 1.000, name =  "hub1"
+Vertex 97
+  Bone 1, weight = 1.000, name =  "hub1"
+Vertex 98
+  Bone 1, weight = 1.000, name =  "hub1"
+Vertex 99
+  Bone 1, weight = 1.000, name =  "hub1"
+Vertex 100
+  Bone 1, weight = 1.000, name =  "hub1"
+Vertex 101
+  Bone 1, weight = 1.000, name =  "hub1"
+Vertex 102
+  Bone 1, weight = 1.000, name =  "hub1"
+Vertex 103
+  Bone 1, weight = 1.000, name =  "hub1"
+Vertex 104
+  Bone 1, weight = 1.000, name =  "hub1"
+Vertex 105
+  Bone 1, weight = 1.000, name =  "hub1"
+Vertex 106
+  Bone 1, weight = 1.000, name =  "hub1"
+Vertex 107
+  Bone 1, weight = 1.000, name =  "hub1"
+Vertex 108
+  Bone 1, weight = 1.000, name =  "hub1"
+Vertex 109
+  Bone 1, weight = 1.000, name =  "hub1"
+Vertex 110
+  Bone 1, weight = 1.000, name =  "hub1"
+Vertex 111
+  Bone 1, weight = 1.000, name =  "hub1"
+Vertex 112
+  Bone 1, weight = 1.000, name =  "hub1"
+Vertex 113
+  Bone 1, weight = 1.000, name =  "hub1"
+Vertex 114
+  Bone 1, weight = 1.000, name =  "hub1"
+Vertex 115
+  Bone 1, weight = 1.000, name =  "hub1"
+Vertex 116
+  Bone 1, weight = 1.000, name =  "hub1"
+Vertex 117
+  Bone 1, weight = 1.000, name =  "hub1"
+Vertex 118
+  Bone 1, weight = 1.000, name =  "hub1"
+Vertex 119
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 120
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 121
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 122
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 123
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 124
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 125
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 126
+  Bone 1, weight = 1.000, name =  "hub1"
+Vertex 127
+  Bone 1, weight = 1.000, name =  "hub1"
+Vertex 128
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 129
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 130
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 131
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 132
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 133
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 134
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 135
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 136
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 137
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 138
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 139
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 140
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 141
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 142
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 143
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 144
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 145
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 146
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 147
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 148
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 149
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 150
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 151
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 152
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 153
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 154
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 155
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 156
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 157
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 158
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 159
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 160
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 161
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 162
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 163
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 164
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 165
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 166
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 167
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 168
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 169
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 170
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 171
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 172
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 173
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 174
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 175
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 176
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 177
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 178
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 179
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 180
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 181
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 182
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 183
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 184
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 185
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 186
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 187
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 188
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 189
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 190
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 191
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 192
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 193
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 194
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 195
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 196
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 197
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 198
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 199
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 200
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 201
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 202
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 203
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 204
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 205
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 206
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 207
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 208
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 209
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 210
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 211
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 212
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 213
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 214
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 215
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 216
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 217
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 218
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 219
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 220
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 221
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 222
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 223
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 224
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 225
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 226
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 227
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 228
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 229
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 230
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 231
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 232
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 233
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 234
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 235
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 236
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 237
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 238
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 239
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 240
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 241
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 242
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 243
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 244
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 245
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 246
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 247
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 248
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 249
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 250
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 251
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 252
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 253
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 254
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 255
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 256
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 257
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 258
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 259
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 260
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 261
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 262
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 263
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 264
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 265
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 266
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 267
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 268
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 269
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 270
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 271
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 272
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 273
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 274
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 275
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 276
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 277
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 278
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 279
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 280
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 281
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 282
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 283
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 284
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 285
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 286
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 287
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 288
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 289
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 290
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 291
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 292
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 293
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 294
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 295
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 296
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 297
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 298
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 299
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 300
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 301
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 302
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 303
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 304
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 305
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 306
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 307
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 308
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 309
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 310
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 311
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 312
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 313
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 314
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 315
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 316
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 317
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 318
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 319
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 320
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 321
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 322
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 323
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 324
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 325
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 326
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 327
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 328
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 329
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 330
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 331
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 332
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 333
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 334
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 335
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 336
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 337
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 338
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 339
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 340
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 341
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 342
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 343
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 344
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 345
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 346
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 347
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 348
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 349
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 350
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 351
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 352
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 353
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 354
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 355
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 356
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 357
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 358
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 359
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 360
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 361
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 362
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 363
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 364
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 365
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 366
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 367
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 368
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 369
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 370
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 371
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 372
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 373
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 374
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 375
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 376
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 377
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 378
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 379
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 380
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 381
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 382
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 383
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 384
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 385
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 386
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 387
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 388
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 389
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 390
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 391
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 392
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 393
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 394
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 395
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 396
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 397
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 398
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 399
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 400
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 401
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 402
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 403
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 404
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 405
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 406
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 407
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 408
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 409
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 410
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 411
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 412
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 413
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 414
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 415
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 416
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 417
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 418
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 419
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 420
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 421
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 422
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 423
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 424
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 425
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 426
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 427
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 428
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 429
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 430
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 431
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 432
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 433
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 434
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 435
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 436
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 437
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 438
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 439
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 440
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 441
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 442
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 443
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 444
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 445
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 446
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 447
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 448
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 449
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 450
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 451
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 452
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 453
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 454
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 455
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 456
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 457
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 458
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 459
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 460
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 461
+  Bone 2, weight = 1.000, name =  "hub3"
+Vertex 462
+  Bone 2, weight = 1.000, name =  "hub3"
+Vertex 463
+  Bone 2, weight = 1.000, name =  "hub3"
+Vertex 464
+  Bone 2, weight = 1.000, name =  "hub3"
+Vertex 465
+  Bone 2, weight = 1.000, name =  "hub3"
+Vertex 466
+  Bone 2, weight = 1.000, name =  "hub3"
+Vertex 467
+  Bone 2, weight = 1.000, name =  "hub3"
+Vertex 468
+  Bone 2, weight = 1.000, name =  "hub3"
+Vertex 469
+  Bone 2, weight = 1.000, name =  "hub3"
+Vertex 470
+  Bone 2, weight = 1.000, name =  "hub3"
+Vertex 471
+  Bone 2, weight = 1.000, name =  "hub3"
+Vertex 472
+  Bone 2, weight = 1.000, name =  "hub3"
+Vertex 473
+  Bone 2, weight = 1.000, name =  "hub3"
+Vertex 474
+  Bone 2, weight = 1.000, name =  "hub3"
+Vertex 475
+  Bone 2, weight = 1.000, name =  "hub3"
+Vertex 476
+  Bone 2, weight = 1.000, name =  "hub3"
+Vertex 477
+  Bone 2, weight = 1.000, name =  "hub3"
+Vertex 478
+  Bone 2, weight = 1.000, name =  "hub3"
+Vertex 479
+  Bone 2, weight = 1.000, name =  "hub3"
+Vertex 480
+  Bone 2, weight = 1.000, name =  "hub3"
+Vertex 481
+  Bone 2, weight = 1.000, name =  "hub3"
+Vertex 482
+  Bone 2, weight = 1.000, name =  "hub3"
+Vertex 483
+  Bone 2, weight = 1.000, name =  "hub3"
+Vertex 484
+  Bone 2, weight = 1.000, name =  "hub3"
+Vertex 485
+  Bone 2, weight = 1.000, name =  "hub3"
+Vertex 486
+  Bone 2, weight = 1.000, name =  "hub3"
+Vertex 487
+  Bone 2, weight = 1.000, name =  "hub3"
+Vertex 488
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 489
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 490
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 491
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 492
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 493
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 494
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 495
+  Bone 2, weight = 1.000, name =  "hub3"
+Vertex 496
+  Bone 2, weight = 1.000, name =  "hub3"
+Vertex 497
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 498
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 499
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 500
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 501
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 502
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 503
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 504
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 505
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 506
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 507
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 508
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 509
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 510
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 511
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 512
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 513
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 514
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 515
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 516
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 517
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 518
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 519
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 520
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 521
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 522
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 523
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 524
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 525
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 526
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 527
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 528
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 529
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 530
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 531
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 532
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 533
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 534
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 535
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 536
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 537
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 538
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 539
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 540
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 541
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 542
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 543
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 544
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 545
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 546
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 547
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 548
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 549
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 550
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 551
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 552
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 553
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 554
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 555
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 556
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 557
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 558
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 559
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 560
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 561
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 562
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 563
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 564
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 565
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 566
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 567
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 568
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 569
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 570
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 571
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 572
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 573
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 574
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 575
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 576
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 577
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 578
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 579
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 580
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 581
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 582
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 583
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 584
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 585
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 586
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 587
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 588
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 589
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 590
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 591
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 592
+  Bone 3, weight = 1.000, name =  "hub0"
+Vertex 593
+  Bone 3, weight = 1.000, name =  "hub0"
+Vertex 594
+  Bone 3, weight = 1.000, name =  "hub0"
+Vertex 595
+  Bone 3, weight = 1.000, name =  "hub0"
+Vertex 596
+  Bone 3, weight = 1.000, name =  "hub0"
+Vertex 597
+  Bone 3, weight = 1.000, name =  "hub0"
+Vertex 598
+  Bone 3, weight = 1.000, name =  "hub0"
+Vertex 599
+  Bone 3, weight = 1.000, name =  "hub0"
+Vertex 600
+  Bone 3, weight = 1.000, name =  "hub0"
+Vertex 601
+  Bone 3, weight = 1.000, name =  "hub0"
+Vertex 602
+  Bone 3, weight = 1.000, name =  "hub0"
+Vertex 603
+  Bone 3, weight = 1.000, name =  "hub0"
+Vertex 604
+  Bone 3, weight = 1.000, name =  "hub0"
+Vertex 605
+  Bone 3, weight = 1.000, name =  "hub0"
+Vertex 606
+  Bone 3, weight = 1.000, name =  "hub0"
+Vertex 607
+  Bone 3, weight = 1.000, name =  "hub0"
+Vertex 608
+  Bone 3, weight = 1.000, name =  "hub0"
+Vertex 609
+  Bone 3, weight = 1.000, name =  "hub0"
+Vertex 610
+  Bone 3, weight = 1.000, name =  "hub0"
+Vertex 611
+  Bone 3, weight = 1.000, name =  "hub0"
+Vertex 612
+  Bone 3, weight = 1.000, name =  "hub0"
+Vertex 613
+  Bone 3, weight = 1.000, name =  "hub0"
+Vertex 614
+  Bone 3, weight = 1.000, name =  "hub0"
+Vertex 615
+  Bone 3, weight = 1.000, name =  "hub0"
+Vertex 616
+  Bone 3, weight = 1.000, name =  "hub0"
+Vertex 617
+  Bone 3, weight = 1.000, name =  "hub0"
+Vertex 618
+  Bone 3, weight = 1.000, name =  "hub0"
+Vertex 619
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 620
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 621
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 622
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 623
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 624
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 625
+  Bone 3, weight = 1.000, name =  "hub0"
+Vertex 626
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 627
+  Bone 3, weight = 1.000, name =  "hub0"
+Vertex 628
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 629
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 630
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 631
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 632
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 633
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 634
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 635
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 636
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 637
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 638
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 639
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 640
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 641
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 642
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 643
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 644
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 645
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 646
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 647
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 648
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 649
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 650
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 651
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 652
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 653
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 654
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 655
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 656
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 657
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 658
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 659
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 660
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 661
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 662
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 663
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 664
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 665
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 666
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 667
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 668
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 669
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 670
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 671
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 672
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 673
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 674
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 675
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 676
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 677
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 678
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 679
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 680
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 681
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 682
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 683
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 684
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 685
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 686
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 687
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 688
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 689
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 690
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 691
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 692
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 693
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 694
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 695
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 696
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 697
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 698
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 699
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 700
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 701
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 702
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 703
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 704
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 705
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 706
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 707
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 708
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 709
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 710
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 711
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 712
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 713
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 714
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 715
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 716
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 717
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 718
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 719
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 720
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 721
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 722
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 723
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 724
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 725
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 726
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 727
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 728
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 729
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 730
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 731
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 732
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 733
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 734
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 735
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 736
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 737
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 738
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 739
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 740
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 741
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 742
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 743
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 744
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 745
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 746
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 747
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 748
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 749
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 750
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 751
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 752
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 753
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 754
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 755
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 756
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 757
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 758
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 759
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 760
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 761
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 762
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 763
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 764
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 765
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 766
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 767
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 768
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 769
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 770
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 771
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 772
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 773
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 774
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 775
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 776
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 777
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 778
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 779
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 780
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 781
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 782
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 783
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 784
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 785
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 786
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 787
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 788
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 789
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 790
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 791
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 792
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 793
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 794
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 795
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 796
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 797
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 798
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 799
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 800
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 801
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 802
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 803
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 804
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 805
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 806
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 807
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 808
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 809
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 810
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 811
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 812
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 813
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 814
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 815
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 816
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 817
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 818
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 819
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 820
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 821
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 822
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 823
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 824
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 825
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 826
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 827
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 828
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 829
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 830
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 831
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 832
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 833
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 834
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 835
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 836
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 837
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 838
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 839
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 840
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 841
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 842
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 843
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 844
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 845
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 846
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 847
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 848
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 849
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 850
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 851
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 852
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 853
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 854
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 855
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 856
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 857
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 858
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 859
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 860
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 861
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 862
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 863
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 864
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 865
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 866
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 867
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 868
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 869
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 870
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 871
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 872
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 873
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 874
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 875
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 876
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 877
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 878
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 879
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 880
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 881
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 882
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 883
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 884
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 885
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 886
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 887
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 888
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 889
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 890
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 891
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 892
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 893
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 894
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 895
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 896
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 897
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 898
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 899
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 900
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 901
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 902
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 903
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 904
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 905
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 906
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 907
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 908
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 909
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 910
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 911
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 912
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 913
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 914
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 915
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 916
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 917
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 918
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 919
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 920
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 921
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 922
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 923
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 924
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 925
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 926
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 927
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 928
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 929
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 930
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 931
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 932
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 933
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 934
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 935
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 936
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 937
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 938
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 939
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 940
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 941
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 942
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 943
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 944
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 945
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 946
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 947
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 948
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 949
+  Bone 4, weight = 1.000, name =  "hub2"
+Vertex 950
+  Bone 4, weight = 1.000, name =  "hub2"
+Vertex 951
+  Bone 4, weight = 1.000, name =  "hub2"
+Vertex 952
+  Bone 4, weight = 1.000, name =  "hub2"
+Vertex 953
+  Bone 4, weight = 1.000, name =  "hub2"
+Vertex 954
+  Bone 4, weight = 1.000, name =  "hub2"
+Vertex 955
+  Bone 4, weight = 1.000, name =  "hub2"
+Vertex 956
+  Bone 4, weight = 1.000, name =  "hub2"
+Vertex 957
+  Bone 4, weight = 1.000, name =  "hub2"
+Vertex 958
+  Bone 4, weight = 1.000, name =  "hub2"
+Vertex 959
+  Bone 4, weight = 1.000, name =  "hub2"
+Vertex 960
+  Bone 4, weight = 1.000, name =  "hub2"
+Vertex 961
+  Bone 4, weight = 1.000, name =  "hub2"
+Vertex 962
+  Bone 4, weight = 1.000, name =  "hub2"
+Vertex 963
+  Bone 4, weight = 1.000, name =  "hub2"
+Vertex 964
+  Bone 4, weight = 1.000, name =  "hub2"
+Vertex 965
+  Bone 4, weight = 1.000, name =  "hub2"
+Vertex 966
+  Bone 4, weight = 1.000, name =  "hub2"
+Vertex 967
+  Bone 4, weight = 1.000, name =  "hub2"
+Vertex 968
+  Bone 4, weight = 1.000, name =  "hub2"
+Vertex 969
+  Bone 4, weight = 1.000, name =  "hub2"
+Vertex 970
+  Bone 4, weight = 1.000, name =  "hub2"
+Vertex 971
+  Bone 4, weight = 1.000, name =  "hub2"
+Vertex 972
+  Bone 4, weight = 1.000, name =  "hub2"
+Vertex 973
+  Bone 4, weight = 1.000, name =  "hub2"
+Vertex 974
+  Bone 4, weight = 1.000, name =  "hub2"
+Vertex 975
+  Bone 4, weight = 1.000, name =  "hub2"
+Vertex 976
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 977
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 978
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 979
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 980
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 981
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 982
+  Bone 4, weight = 1.000, name =  "hub2"
+Vertex 983
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 984
+  Bone 4, weight = 1.000, name =  "hub2"
+Vertex 985
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 986
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 987
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 988
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 989
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 990
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 991
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 992
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 993
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 994
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 995
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 996
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 997
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 998
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 999
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1000
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1001
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1002
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1003
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1004
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1005
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1006
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1007
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1008
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1009
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1010
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1011
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1012
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1013
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1014
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1015
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1016
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1017
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1018
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1019
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1020
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1021
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1022
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1023
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1024
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1025
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1026
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1027
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1028
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1029
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1030
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1031
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1032
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1033
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1034
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1035
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1036
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1037
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1038
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1039
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1040
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1041
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1042
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1043
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1044
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1045
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1046
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1047
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1048
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1049
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1050
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1051
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1052
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1053
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1054
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1055
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1056
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1057
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1058
+  Bone 0, weight = 1.000, name =  "root"
+Vertex 1059
+  Bone 0, weight = 1.000, name =  "root"
+
+Optimizing meshes...
+
+Optimizing mesh "rsteer" detail level 0.
+24 verts before joining verts
+24 verts after joining verts
+36 faces before stripping
+Using Quick, dirty, & ugly stripping method.
+2 strips with average length 24.00 (range 13 to 35) and 8 reversals
+
+Optimizing mesh "lsteer" detail level 0.
+24 verts before joining verts
+24 verts after joining verts
+36 faces before stripping
+Using Quick, dirty, & ugly stripping method.
+3 strips with average length 17.00 (range 14 to 23) and 9 reversals
+
+Optimizing mesh "Col" detail level -1.
+31 verts before joining verts
+31 verts after joining verts
+20 faces before stripping
+Using Quick, dirty, & ugly stripping method.
+7 strips with average length 4.86 (range 4 to 10) and 0 reversals
+
+Optimizing skin mesh "chassis0" detail level 0.
+1060 verts before joining verts
+1060 verts after joining verts
+1216 faces before stripping
+Using Quick, dirty, & ugly stripping method.
+167 strips with average length 10.60 (range 3 to 76) and 221 reversals
+
+Shape Hierarchy:
+
+   Details:
+      detail0, Subtree 0, objectDetail 0, size 0
+      Collision-1, Subtree 0, objectDetail 1, size -1
+
+   Subtrees:
+      Subtree 0
+         rsteer0 --> Object rsteer with following details:  0
+         lsteer0 --> Object lsteer with following details:  0
+         Col-1 --> Object Col with following details:  -1
+         root
+            rearaxlehub
+               rearleftaxle
+                  hub2
+               rearrightaxle
+                  hub3
+            frontaxlehub
+               frontleftaxle
+                  hub0
+               frontrightaxle
+                  hub1
+            mount0
+            eye
+            cam
+
+   Skins:
+      Skin chassis with following details:  0
+
+
+   Sequences:
+        0: root
+        1: spring0
+        2: spring1
+        3: spring2
+        4: spring3
+
+   Material list:
+   material #0: "jeep1".

@@ -1,0 +1,427 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(optionsDlg) {
+   profile = "GuiDefaultProfile";
+   horizSizing = "right";
+   vertSizing = "bottom";
+   position = "0 0";
+   extent = "800 600";
+   minExtent = "8 8";
+   visible = "1";
+      helpTag = "0";
+
+   new GuiWindowCtrl() {
+      profile = "GuiWindowProfile";
+      horizSizing = "center";
+      vertSizing = "center";
+      position = "189 114";
+      extent = "422 371";
+      minExtent = "8 8";
+      visible = "1";
+      text = "Options";
+      maxLength = "255";
+      resizeWidth = "0";
+      resizeHeight = "0";
+      canMove = "1";
+      canClose = "1";
+      canMinimize = "0";
+      canMaximize = "0";
+      MinSize = "50 50";
+      closeCommand = "Canvas.popDialog(optionsDlg);";
+         helpTag = "0";
+
+      new GuiTabBookCtrl() {
+         profile = "GuiTabBookProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "9 28";
+         extent = "400 300";
+         minExtent = "8 2";
+         visible = "1";
+         TabPosition = "Top";
+         TabHeight = "24";
+         TabWidth = "64";
+
+         new GuiTabPageCtrl() {
+            profile = "GuiTabPageProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "0 24";
+            extent = "400 276";
+            minExtent = "8 2";
+            visible = "0";
+            text = "Graphics";
+            maxLength = "255";
+
+            new GuiTextCtrl() {
+               profile = "GuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "21 10";
+               extent = "70 18";
+               minExtent = "8 8";
+               visible = "1";
+               text = "Display Driver:";
+               maxLength = "255";
+                  helpTag = "0";
+            };
+            new GuiPopUpMenuCtrl(OptGraphicsDriverMenu) {
+               profile = "GuiPopUpMenuProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "182 10";
+               extent = "199 23";
+               minExtent = "8 8";
+               visible = "1";
+               maxLength = "255";
+               maxPopupHeight = "200";
+                  helpTag = "0";
+            };
+            new GuiTextCtrl() {
+               profile = "GuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "21 38";
+               extent = "53 18";
+               minExtent = "8 8";
+               visible = "1";
+               text = "Resolution:";
+               maxLength = "255";
+                  helpTag = "0";
+            };
+            new GuiPopUpMenuCtrl(OptGraphicsResolutionMenu) {
+               profile = "GuiPopUpMenuProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "182 38";
+               extent = "199 23";
+               minExtent = "8 8";
+               visible = "1";
+               maxLength = "255";
+               maxPopupHeight = "200";
+                  helpTag = "0";
+            };
+            new GuiTextCtrl() {
+               profile = "GuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "21 65";
+               extent = "46 18";
+               minExtent = "8 8";
+               visible = "1";
+               text = "Bit Depth:";
+               maxLength = "255";
+                  helpTag = "0";
+            };
+            new GuiPopUpMenuCtrl(OptGraphicsBPPMenu) {
+               profile = "GuiPopUpMenuProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "182 65";
+               extent = "199 23";
+               minExtent = "8 8";
+               visible = "1";
+               maxLength = "255";
+               maxPopupHeight = "200";
+                  helpTag = "0";
+            };
+            new GuiTextCtrl() {
+               profile = "GuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "21 92";
+               extent = "59 18";
+               minExtent = "8 2";
+               visible = "1";
+               text = "Screenshot:";
+               maxLength = "255";
+                  helpTag = "0";
+            };
+            new GuiPopUpMenuCtrl(OptScreenshotMenu) {
+               profile = "GuiPopUpMenuProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "182 92";
+               extent = "199 23";
+               minExtent = "8 2";
+               visible = "1";
+               maxLength = "255";
+               maxPopupHeight = "200";
+                  helpTag = "0";
+            };
+            new GuiCheckBoxCtrl(OptGraphicsFullscreenToggle) {
+               profile = "GuiCheckBoxProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "21 137";
+               extent = "137 25";
+               minExtent = "8 8";
+               visible = "1";
+               variable = "$pref::Video::fullScreen";
+               text = "Fullscreen Video";
+               groupNum = "-1";
+               buttonType = "ToggleButton";
+                  maxLength = "255";
+                  helpTag = "0";
+            };
+            new GuiButtonCtrl() {
+               profile = "GuiButtonProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "142 212";
+               extent = "121 23";
+               minExtent = "8 8";
+               visible = "1";
+               command = "optionsDlg.applyGraphics();";
+               text = "Apply";
+               groupNum = "-1";
+               buttonType = "PushButton";
+                  helpTag = "0";
+            };
+         };
+         new GuiTabPageCtrl() {
+            profile = "GuiTabPageProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "0 24";
+            extent = "400 276";
+            minExtent = "8 2";
+            visible = "0";
+            text = "Audio";
+            maxLength = "255";
+
+            new GuiSliderCtrl(OptAudioVolumeSim) {
+               profile = "GuiSliderProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "116 202";
+               extent = "240 34";
+               minExtent = "8 8";
+               visible = "1";
+               variable = "value";
+               altCommand = "OptAudioUpdateChannelVolume($SimAudioType, OptAudioVolumeSim.value);";
+               range = "0.000000 1.000000";
+               ticks = "8";
+               value = "0.8";
+                  helpTag = "0";
+            };
+            new GuiTextCtrl() {
+               profile = "GuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "22 108";
+               extent = "72 18";
+               minExtent = "8 8";
+               visible = "1";
+               text = "Master Volume";
+               maxLength = "255";
+                  helpTag = "0";
+            };
+            new GuiTextCtrl() {
+               profile = "GuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "33 154";
+               extent = "62 18";
+               minExtent = "8 8";
+               visible = "1";
+               text = "Shell Volume";
+               maxLength = "255";
+                  helpTag = "0";
+            };
+            new GuiTextCtrl() {
+               profile = "GuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "37 202";
+               extent = "56 18";
+               minExtent = "8 8";
+               visible = "1";
+               text = "Sim Volume";
+               maxLength = "255";
+                  helpTag = "0";
+            };
+            new GuiSliderCtrl(OptAudioVolumeMaster) {
+               profile = "GuiSliderProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "117 108";
+               extent = "240 34";
+               minExtent = "8 8";
+               visible = "1";
+               variable = "value";
+               altCommand = "OptAudioUpdateMasterVolume(OptAudioVolumeMaster.value);";
+               range = "0.000000 1.000000";
+               ticks = "8";
+               value = "0.673913";
+                  helpTag = "0";
+            };
+            new GuiSliderCtrl(OptAudioVolumeShell) {
+               profile = "GuiSliderProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "117 154";
+               extent = "240 34";
+               minExtent = "8 8";
+               visible = "1";
+               variable = "value";
+               altCommand = "OptAudioUpdateChannelVolume($GuiAudioType, OptAudioVolumeShell.value);";
+               range = "0.000000 1.000000";
+               ticks = "8";
+               value = "0.8";
+                  helpTag = "0";
+            };
+            new GuiMLTextCtrl(OptAudioInfo) {
+               profile = "GuiMLTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "149 10";
+               extent = "190 70";
+               minExtent = "8 8";
+               visible = "1";
+               lineSpacing = "2";
+               allowColorChars = "0";
+               maxChars = "-1";
+                  helpTag = "0";
+            };
+            new GuiPopUpMenuCtrl(OptAudioDriverList) {
+               profile = "GuiPopUpMenuProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "10 32";
+               extent = "120 20";
+               minExtent = "8 8";
+               visible = "1";
+               maxLength = "255";
+               maxPopupHeight = "200";
+                  helpTag = "0";
+            };
+            new GuiTextCtrl() {
+               profile = "GuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "11 9";
+               extent = "63 18";
+               minExtent = "8 8";
+               visible = "1";
+               text = "Audio Driver:";
+               maxLength = "255";
+                  helpTag = "0";
+            };
+         };
+         new GuiTabPageCtrl() {
+            profile = "GuiTabPageProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "0 24";
+            extent = "400 276";
+            minExtent = "8 2";
+            visible = "1";
+            text = "Controls";
+            maxLength = "255";
+
+            new GuiScrollCtrl() {
+               profile = "GuiScrollProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "10 30";
+               extent = "382 237";
+               minExtent = "8 8";
+               visible = "1";
+               willFirstRespond = "1";
+               hScrollBar = "alwaysOff";
+               vScrollBar = "alwaysOn";
+               constantThumbHeight = "0";
+               childMargin = "0 0";
+                  defaultLineHeight = "15";
+                  helpTag = "0";
+
+               new GuiTextListCtrl(OptRemapList) {
+                  profile = "GuiTextListProfile";
+                  horizSizing = "right";
+                  vertSizing = "bottom";
+                  position = "2 2";
+                  extent = "360 416";
+                  minExtent = "8 8";
+                  visible = "1";
+                  altCommand = "OptRemapList.doRemap();";
+                  enumerate = "0";
+                  resizeCell = "1";
+                  columns = "0 160";
+                  fitParentWidth = "1";
+                  clipColumnText = "0";
+                     helpTag = "0";
+               };
+            };
+            new GuiTextCtrl() {
+               profile = "GuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "176 11";
+               extent = "72 18";
+               minExtent = "8 8";
+               visible = "1";
+               text = "Control Binding";
+               maxLength = "255";
+                  helpTag = "0";
+            };
+            new GuiTextCtrl() {
+               profile = "GuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "17 10";
+               extent = "64 18";
+               minExtent = "8 8";
+               visible = "1";
+               text = "Control Name";
+               maxLength = "255";
+                  helpTag = "0";
+            };
+         };
+      };
+      new GuiButtonCtrl() {
+         profile = "GuiButtonProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "309 336";
+         extent = "101 23";
+         minExtent = "8 8";
+         visible = "1";
+         command = "Canvas.popDialog(optionsDlg);";
+         text = "OK";
+         groupNum = "-1";
+         buttonType = "PushButton";
+            helpTag = "0";
+      };
+      new GuiControl(OptAudioPane) {
+         profile = "GuiWindowProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "9 55";
+         extent = "357 208";
+         minExtent = "8 8";
+         visible = "0";
+            helpTag = "0";
+      };
+      new GuiControl(OptNetworkPane) {
+         profile = "GuiWindowProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "9 55";
+         extent = "357 208";
+         minExtent = "8 8";
+         visible = "0";
+            helpTag = "0";
+      };
+      new GuiControl(OptControlsPane) {
+         profile = "GuiWindowProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "9 55";
+         extent = "357 208";
+         minExtent = "8 8";
+         visible = "0";
+            helpTag = "0";
+      };
+   };
+};
+//--- OBJECT WRITE END ---

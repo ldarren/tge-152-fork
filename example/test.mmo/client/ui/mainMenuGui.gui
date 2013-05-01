@@ -1,0 +1,100 @@
+
+//--- OBJECT WRITE BEGIN ---
+new GuiChunkedBitmapCtrl(MainMenuGui) {
+   canSaveDynamicFields = "0";
+   Profile = "GuiContentProfile";
+   HorizSizing = "width";
+   VertSizing = "height";
+   position = "0 0";
+   Extent = "1024 768";
+   MinExtent = "8 8";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+   bitmap = "./pictures/windows/main";
+   useVariable = "0";
+   tile = "0";
+
+   new GuiButtonCtrl() {
+      canSaveDynamicFields = "1";
+      Profile = "GameGuiButtonProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "21 452";
+      Extent = "141 30";
+      MinExtent = "140 30";
+      canSave = "1";
+      Visible = "1";
+      Command = "Canvas.setContent(startMissionGui);";
+      hovertime = "1000";
+      text = "Host a Game...";
+      groupNum = "-1";
+      buttonType = "PushButton";
+   };
+   new GuiButtonCtrl() {
+      canSaveDynamicFields = "0";
+      Profile = "GameGuiButtonProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      position = "21 504";
+      Extent = "140 30";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      Command = "Canvas.setContent(JoinServerGui);";
+      hovertime = "1000";
+      text = "Join a Game...";
+      groupNum = "-1";
+      buttonType = "PushButton";
+   };
+   new GuiButtonCtrl() {
+      canSaveDynamicFields = "0";
+      Profile = "GameGuiButtonProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "21 556";
+      Extent = "140 29";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      Command = "Canvas.pushDialog(LoadGameGui);";
+      hovertime = "1000";
+      text = "Load a Game...";
+      groupNum = "-1";
+      buttonType = "PushButton";
+   };
+   new GuiButtonCtrl() {
+      canSaveDynamicFields = "0";
+      Profile = "GameGuiButtonProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "21 607";
+      Extent = "140 31";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      Command = "Canvas.pushDialog(optionsDlgGui);";
+      hovertime = "1000";
+      text = "Game Option...";
+      groupNum = "-1";
+      buttonType = "PushButton";
+   };
+   new GuiButtonCtrl() {
+      canSaveDynamicFields = "0";
+      Profile = "GameGuiButtonProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "21 660";
+      Extent = "140 30";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      Command = "quit();";
+      hovertime = "1000";
+      text = "Quit";
+      groupNum = "-1";
+      buttonType = "PushButton";
+   };
+};
+//--- OBJECT WRITE END ---
+

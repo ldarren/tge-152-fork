@@ -1,0 +1,271 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(gsProgress) {
+   profile = "GuiDefaultProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "800 600";
+   minExtent = "8 8";
+   visible = "1";
+      Parent = "GUISamplerInterface";
+
+   new GuiChunkedBitmapCtrl() {
+      profile = "gsDefaultProfile";
+      horizSizing = "width";
+      vertSizing = "height";
+      position = "0 0";
+      extent = "800 600";
+      minExtent = "8 2";
+      visible = "1";
+      bitmap = $SA::Background1;
+      useVariable = "0";
+      tile = "0";
+
+      new GuiBitmapButtonCtrl(guiSamplerLeft) {
+         profile = "gpgtButtonProfile1";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         position = "125 525";
+         extent = "75 75";
+         minExtent = "8 2";
+         visible = "1";
+         command = "Canvas.setContent(Canvas.getContent().Parent);";
+         accelerator = "escape";
+         text = "Button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "~/client/sharedAssets/button0/leftButton0";
+      };
+      new GuiControl() {
+         profile = "gsDefaultProfile";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         position = "100 100";
+         extent = "600 400";
+         minExtent = "8 2";
+         visible = "1";
+
+         new GuiControl() {
+            profile = "gsBorder";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "20 20";
+            extent = "261 19";
+            minExtent = "8 2";
+            visible = "1";
+
+            new GuiProgressCtrl(TestProgress) {
+               profile = "gsTestProgressProfile0";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "1 0";
+               extent = "258 18";
+               minExtent = "8 2";
+               visible = "1";
+
+               new GuiTextCtrl(TextBar) {
+                  profile = "GuiTextProfile";
+                  horizSizing = "center";
+                  vertSizing = "center";
+                  position = "94 0";
+                  extent = "69 18";
+                  minExtent = "8 2";
+                  visible = "1";
+                  text = "No Border Bar";
+                  maxLength = "255";
+               };
+            };
+         };
+         new GuiControl() {
+            profile = "gsBorder";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "20 60";
+            extent = "261 20";
+            minExtent = "8 2";
+            visible = "1";
+
+            new GuiProgressCtrl(TestProgress) {
+               profile = "gsTestProgressProfile1";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "1 0";
+               extent = "258 18";
+               minExtent = "8 2";
+               visible = "1";
+
+               new GuiTextCtrl(TextBar) {
+                  profile = "GuiTextProfile";
+                  horizSizing = "center";
+                  vertSizing = "center";
+                  position = "102 0";
+                  extent = "53 18";
+                  minExtent = "8 2";
+                  visible = "1";
+                  text = "Border Bar";
+                  maxLength = "255";
+               };
+            };
+         };
+         new GuiControl() {
+            profile = "gsBorder";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "20 100";
+            extent = "261 20";
+            minExtent = "8 2";
+            visible = "1";
+
+            new GuiProgressCtrl(TestProgress) {
+               profile = "gsTestProgressProfile2";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "1 0";
+               extent = "258 18";
+               minExtent = "8 2";
+               visible = "1";
+
+               new GuiTextCtrl(TextBar) {
+                  profile = "GuiTextProfile";
+                  horizSizing = "center";
+                  vertSizing = "center";
+                  position = "90 0";
+                  extent = "77 18";
+                  minExtent = "8 2";
+                  visible = "1";
+                  text = "Translucent Bar";
+                  maxLength = "255";
+               };
+            };
+         };
+         new GuiProgressCtrl(TestProgress) {
+            profile = "gsTestProgressProfile3";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "22 140";
+            extent = "256 30";
+            minExtent = "8 2";
+            visible = "1";
+
+            new GuiBitmapCtrl() {
+               profile = "GuiDefaultProfile";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 0";
+               extent = "256 30";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./whitePane";
+               wrap = "0";
+            };
+         };
+         new GuiProgressCtrl(TestProgress) {
+            profile = "gsTestProgressProfile4";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "22 180";
+            extent = "256 30";
+            minExtent = "8 2";
+            visible = "1";
+
+            new GuiBitmapCtrl() {
+               profile = "GuiDefaultProfile";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 0";
+               extent = "256 30";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./whitePane";
+               wrap = "0";
+            };
+         };
+         new GuiProgressCtrl(TestProgress) {
+            profile = "gsTestProgressProfile5";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "22 220";
+            extent = "256 30";
+            minExtent = "8 2";
+            visible = "1";
+
+            new GuiBitmapCtrl() {
+               profile = "GuiDefaultProfile";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 0";
+               extent = "256 30";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./MetalPaneNoRibs";
+               wrap = "0";
+            };
+         };
+         new GuiProgressCtrl(TestProgress) {
+            profile = "gsTestProgressProfile6";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "22 260";
+            extent = "256 30";
+            minExtent = "8 2";
+            visible = "1";
+
+            new GuiBitmapCtrl() {
+               profile = "GuiDefaultProfile";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 0";
+               extent = "256 30";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./MetalPaneNoRibs";
+               wrap = "0";
+            };
+         };
+         new GuiProgressCtrl(TestProgress) {
+            profile = "gsTestProgressProfile7";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "22 300";
+            extent = "256 30";
+            minExtent = "8 2";
+            visible = "1";
+
+            new GuiBitmapCtrl() {
+               profile = "GuiDefaultProfile";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 0";
+               extent = "256 30";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./MetalPaneRibs";
+               wrap = "0";
+            };
+         };
+         new GuiProgressCtrl(TestProgress) {
+            profile = "gsTestProgressProfile8";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "22 340";
+            extent = "256 30";
+            minExtent = "8 2";
+            visible = "1";
+
+            new GuiBitmapCtrl() {
+               profile = "GuiDefaultProfile";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 0";
+               extent = "256 30";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./MetalPaneRibs";
+               wrap = "0";
+            };
+         };
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+

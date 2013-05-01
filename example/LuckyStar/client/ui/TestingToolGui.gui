@@ -1,0 +1,773 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(TestingToolGui) {
+   canSaveDynamicFields = "0";
+   Profile = "GuiModelessDialogProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   position = "0 0";
+   Extent = "1024 768";
+   MinExtent = "8 2";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+
+   new GuiWindowCtrl(TestingToolDlg) {
+      canSaveDynamicFields = "0";
+      Profile = "GuiWindowProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      position = "18 28";
+      Extent = "230 200";
+      MinExtent = "230 200";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      text = "Testing Tool";
+      maxLength = "255";
+      resizeWidth = "1";
+      resizeHeight = "1";
+      canMove = "1";
+      canClose = "0";
+      canMinimize = "0";
+      canMaximize = "0";
+      minSize = "50 50";
+
+      new GuiButtonCtrl(ManualButton) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiButtonProfile";
+         HorizSizing = "left";
+         VertSizing = "bottom";
+         position = "45 31";
+         Extent = "140 30";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "TestingToolDlg.onDisplayDanceControls();";
+         hovertime = "1000";
+         text = "Show Controls";
+         groupNum = "-1";
+         buttonType = "PushButton";
+      };
+      new GuiButtonCtrl(AutoButton) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiButtonProfile";
+         HorizSizing = "left";
+         VertSizing = "bottom";
+         position = "45 61";
+         Extent = "140 30";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "TestingToolDlg.onDisplayDanceList();";
+         hovertime = "1000";
+         text = "Play Sequence";
+         groupNum = "-1";
+         buttonType = "PushButton";
+      };
+      new GuiButtonCtrl(DemoButton) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiButtonProfile";
+         HorizSizing = "left";
+         VertSizing = "bottom";
+         position = "45 91";
+         Extent = "140 30";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "commandToServer(\'notifyDemo\');";
+         hovertime = "1000";
+         text = "Run Demo";
+         groupNum = "-1";
+         buttonType = "PushButton";
+      };
+      new GuiControl(HeadControls) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "left";
+         VertSizing = "bottom";
+         position = "6 63";
+         Extent = "215 160";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "0";
+         hovertime = "1000";
+
+         new GuiScrollCtrl() {
+            canSaveDynamicFields = "0";
+            Profile = "GuiScrollProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "6 21";
+            Extent = "200 100";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            willFirstRespond = "1";
+            hScrollBar = "alwaysOff";
+            vScrollBar = "dynamic";
+            constantThumbHeight = "0";
+            childMargin = "0 10";
+
+            new GuiTextListCtrl(headMovesList) {
+               canSaveDynamicFields = "0";
+               Profile = "GuiTextListProfile";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "2 12";
+               Extent = "178 160";
+               MinExtent = "8 2";
+               canSave = "1";
+               Visible = "1";
+               AltCommand = "TestingToolDlg.onNewMove(headMovesList, 0, $isHeadTransit);";
+               hovertime = "1000";
+               enumerate = "0";
+               resizeCell = "1";
+               columns = "0";
+               fitParentWidth = "1";
+               clipColumnText = "0";
+               HeaderBGColor = "191 191 191 255";
+               HeaderFontColor = "255 255 255 255";
+            };
+         };
+         new GuiTextCtrl() {
+            canSaveDynamicFields = "0";
+            Profile = "GuiTextProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "5 0";
+            Extent = "77 18";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            text = "Head Movement";
+            maxLength = "64";
+         };
+         new GuiCheckBoxCtrl() {
+            canSaveDynamicFields = "0";
+            Profile = "GuiCheckBoxProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "8 120";
+            Extent = "59 30";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            Variable = "isHeadTransit";
+            hovertime = "1000";
+            text = "Transit";
+            groupNum = "-1";
+            buttonType = "ToggleButton";
+            useInactiveState = "0";
+         };
+         new GuiTextCtrl() {
+            canSaveDynamicFields = "0";
+            Profile = "GuiTextProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "72 125";
+            Extent = "8 18";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            Variable = "headMoveSpeed";
+            hovertime = "1000";
+            text = "1";
+            maxLength = "64";
+         };
+         new GuiSliderCtrl() {
+            canSaveDynamicFields = "0";
+            Profile = "GuiSliderProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "109 125";
+            Extent = "97 64";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            Variable = "headMoveSpeed";
+            Command = "commandToServer(\'changeSpeed\', 0, $thisControl.getValue());";
+            hovertime = "1000";
+            range = "0 2";
+            ticks = "10";
+            value = "1";
+         };
+      };
+      new GuiControl(BodyControls) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "left";
+         VertSizing = "bottom";
+         position = "6 223";
+         Extent = "215 160";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "0";
+         hovertime = "1000";
+
+         new GuiScrollCtrl() {
+            canSaveDynamicFields = "0";
+            Profile = "GuiScrollProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "6 21";
+            Extent = "200 100";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            willFirstRespond = "1";
+            hScrollBar = "alwaysOff";
+            vScrollBar = "dynamic";
+            constantThumbHeight = "0";
+            childMargin = "0 10";
+
+            new GuiTextListCtrl(bodyMovesList) {
+               canSaveDynamicFields = "0";
+               Profile = "GuiTextListProfile";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "2 12";
+               Extent = "178 192";
+               MinExtent = "8 2";
+               canSave = "1";
+               Visible = "1";
+               AltCommand = "TestingToolDlg.onNewMove(bodyMovesList, 1, $isBodyTransit);";
+               hovertime = "1000";
+               enumerate = "0";
+               resizeCell = "1";
+               columns = "0";
+               fitParentWidth = "1";
+               clipColumnText = "0";
+               HeaderBGColor = "191 191 191 255";
+               HeaderFontColor = "255 255 255 255";
+            };
+         };
+         new GuiTextCtrl() {
+            canSaveDynamicFields = "0";
+            Profile = "GuiTextProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "5 0";
+            Extent = "77 18";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            text = "Body Movement";
+            maxLength = "64";
+         };
+         new GuiCheckBoxCtrl() {
+            canSaveDynamicFields = "0";
+            Profile = "GuiCheckBoxProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "8 120";
+            Extent = "59 30";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            Variable = "isBodyTransit";
+            hovertime = "1000";
+            text = "Transit";
+            groupNum = "-1";
+            buttonType = "ToggleButton";
+            useInactiveState = "0";
+         };
+         new GuiTextCtrl() {
+            canSaveDynamicFields = "0";
+            Profile = "GuiTextProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "72 125";
+            Extent = "8 18";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            Variable = "bodyMoveSpeed";
+            hovertime = "1000";
+            text = "1";
+            maxLength = "64";
+         };
+         new GuiSliderCtrl() {
+            canSaveDynamicFields = "0";
+            Profile = "GuiSliderProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "109 125";
+            Extent = "97 64";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            Variable = "bodyMoveSpeed";
+            Command = "commandToServer(\'changeSpeed\', 1, $thisControl.getValue());";
+            hovertime = "1000";
+            range = "0 2";
+            ticks = "10";
+            value = "1";
+         };
+      };
+      new GuiControl(LegsControls) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "left";
+         VertSizing = "bottom";
+         position = "6 383";
+         Extent = "215 160";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "0";
+         hovertime = "1000";
+
+         new GuiScrollCtrl() {
+            canSaveDynamicFields = "0";
+            Profile = "GuiScrollProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "6 21";
+            Extent = "200 100";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            willFirstRespond = "1";
+            hScrollBar = "alwaysOff";
+            vScrollBar = "dynamic";
+            constantThumbHeight = "0";
+            childMargin = "0 10";
+
+            new GuiTextListCtrl(legsMovesList) {
+               canSaveDynamicFields = "0";
+               Profile = "GuiTextListProfile";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "2 12";
+               Extent = "178 176";
+               MinExtent = "8 2";
+               canSave = "1";
+               Visible = "1";
+               AltCommand = "TestingToolDlg.onNewMove(legsMovesList, 2, $isLegsTransit);";
+               hovertime = "1000";
+               enumerate = "0";
+               resizeCell = "1";
+               columns = "0";
+               fitParentWidth = "1";
+               clipColumnText = "0";
+               HeaderBGColor = "191 191 191 255";
+               HeaderFontColor = "255 255 255 255";
+            };
+         };
+         new GuiTextCtrl() {
+            canSaveDynamicFields = "0";
+            Profile = "GuiTextProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "5 0";
+            Extent = "76 18";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            text = "Legs Movement";
+            maxLength = "64";
+         };
+         new GuiCheckBoxCtrl() {
+            canSaveDynamicFields = "0";
+            Profile = "GuiCheckBoxProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "8 120";
+            Extent = "59 30";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            Variable = "isLegsTransit";
+            hovertime = "1000";
+            text = "Transit";
+            groupNum = "-1";
+            buttonType = "ToggleButton";
+            useInactiveState = "0";
+         };
+         new GuiTextCtrl() {
+            canSaveDynamicFields = "0";
+            Profile = "GuiTextProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "72 125";
+            Extent = "8 18";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            Variable = "legsMoveSpeed";
+            hovertime = "1000";
+            text = "1";
+            maxLength = "64";
+         };
+         new GuiSliderCtrl() {
+            canSaveDynamicFields = "0";
+            Profile = "GuiSliderProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "109 125";
+            Extent = "97 64";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            Variable = "legsMoveSpeed";
+            Command = "commandToServer(\'changeSpeed\', 2, $thisControl.getValue());";
+            hovertime = "1000";
+            range = "0 2";
+            ticks = "10";
+            value = "1";
+         };
+      };
+      new GuiControl(BlendControls) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "left";
+         VertSizing = "bottom";
+         position = "6 543";
+         Extent = "215 160";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "0";
+         hovertime = "1000";
+
+         new GuiScrollCtrl() {
+            canSaveDynamicFields = "0";
+            Profile = "GuiScrollProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "6 21";
+            Extent = "200 100";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            willFirstRespond = "1";
+            hScrollBar = "alwaysOff";
+            vScrollBar = "dynamic";
+            constantThumbHeight = "0";
+            childMargin = "0 10";
+
+            new GuiTextListCtrl(blendedList) {
+               canSaveDynamicFields = "0";
+               Profile = "GuiTextListProfile";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "2 12";
+               Extent = "196 2";
+               MinExtent = "8 2";
+               canSave = "1";
+               Visible = "1";
+               AltCommand = "TestingToolDlg.onNewMove(blendedList, 3, $isBlendedTransit);";
+               hovertime = "1000";
+               enumerate = "0";
+               resizeCell = "1";
+               columns = "0";
+               fitParentWidth = "1";
+               clipColumnText = "0";
+               HeaderBGColor = "191 191 191 255";
+               HeaderFontColor = "255 255 255 255";
+            };
+         };
+         new GuiTextCtrl() {
+            canSaveDynamicFields = "0";
+            Profile = "GuiTextProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "5 0";
+            Extent = "91 18";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            text = "Blended Movement";
+            maxLength = "64";
+         };
+         new GuiCheckBoxCtrl() {
+            canSaveDynamicFields = "0";
+            Profile = "GuiCheckBoxProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "8 120";
+            Extent = "59 30";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            Variable = "isBlendedTransit";
+            hovertime = "1000";
+            text = "Transit";
+            groupNum = "-1";
+            buttonType = "ToggleButton";
+            useInactiveState = "0";
+         };
+         new GuiTextCtrl() {
+            canSaveDynamicFields = "0";
+            Profile = "GuiTextProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "72 125";
+            Extent = "8 18";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            Variable = "blendedSpeed";
+            hovertime = "1000";
+            text = "1";
+            maxLength = "64";
+         };
+         new GuiSliderCtrl() {
+            canSaveDynamicFields = "0";
+            Profile = "GuiSliderProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "109 125";
+            Extent = "97 64";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            Variable = "blendedSpeed";
+            Command = "commandToServer(\'changeSpeed\', 3, $thisControl.getValue());";
+            hovertime = "1000";
+            range = "0 2";
+            ticks = "10";
+            value = "1";
+         };
+      };
+      new GuiScrollCtrl(DanceListControl) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiScrollProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "8 92";
+         Extent = "200 100";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "0";
+         hovertime = "1000";
+         willFirstRespond = "1";
+         hScrollBar = "alwaysOff";
+         vScrollBar = "dynamic";
+         constantThumbHeight = "0";
+         childMargin = "0 10";
+
+         new GuiTextListCtrl(DanceList) {
+            canSaveDynamicFields = "0";
+            Profile = "GuiTextListProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "2 12";
+            Extent = "196 48";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            AltCommand = "TestingToolDlg.onPlayDance();";
+            hovertime = "1000";
+            enumerate = "0";
+            resizeCell = "1";
+            columns = "0 120";
+            fitParentWidth = "1";
+            clipColumnText = "0";
+            HeaderBGColor = "191 191 191 255";
+            HeaderFontColor = "255 255 255 255";
+         };
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+
+// server call this function when all clients are readied
+function clientCmdstartManualDance(%profile)
+{
+	LuckyStarClient.changeState(LuckyStarClient.Debug01State, %profile);
+}
+
+function clientCmdstopManualDance()
+{
+	LuckyStarClient.changeState(LuckyStarClient.LobbyState, AudioLobby);
+}
+
+// server call this function when all clients are readied
+function clientCmdstartAutoDance(%profile)
+{
+	LuckyStarClient.changeState(LuckyStarClient.Debug02State, %profile);
+}
+
+function clientCmdstopAutoDance()
+{
+	LuckyStarClient.changeState(LuckyStarClient.LobbyState, AudioLobby);
+}
+
+function toggleDebugTools()
+{
+	if (isObject(TestingToolGui))
+	{
+		if (TestingToolGui.isAwake()) Canvas.popDialog(TestingToolGui);
+		else Canvas.pushDialog(TestingToolGui, 10);
+	
+		// gui variables
+		$headMoveSpeed = 1;
+		$bodyMoveSpeed = 1;
+		$legsMoveSpeed = 1;
+		$blendedSpeed = 1;
+	}
+}
+
+function TestingToolDlg::onWake(%this)
+{
+	%this.gameState = LuckyStarClient.LobbyState;
+
+	headMovesList.clear();
+	bodyMovesList.clear();
+	legsMovesList.clear();
+	blendedList.clear();
+	DanceList.clear();
+	%control = 0;
+	%masterId = 0;
+	
+	%file = new FileObject();
+	
+	// low level movement loading
+	%filepattern = "*/data/shapes/players/DancingGirl/dance.moves";
+	for (%filename = findFirstFile(%filepattern); %filename !$= ""; %filename = findNextFile(%filepattern)) {
+		%file.openForRead(%filename);
+		
+		while (!%file.isEOF())
+		{
+			%line = %file.readLine();
+			%attrib = getField(%line, 0);
+			
+			if (%control && %attrib $= "move")
+			{
+				%control.addRow(%masterId + getField(%line, 2), getField(%line, 1));
+			}
+			else if (%attrib $= "section")
+			{
+				%type = getField(%line, 1);
+				switch$(%type)
+				{
+				case "head":
+					%control = headMovesList.getId();
+					%masterId = getField(%line, 2);
+				case "body":
+					%control = bodyMovesList.getId();
+					%masterId = getField(%line, 2);
+				case "legs":
+					%control = legsMovesList.getId();
+					%masterId = getField(%line, 2);
+				case "blended":
+					%control = blendedList.getId();
+					%masterId = getField(%line, 2);
+				}
+			}
+		}
+		
+		%file.close();
+	}	
+	
+	// high level dance loading
+	%filepattern = "*/data/shapes/players/DancingGirl/*.dance";
+	%masterId = 0;
+	for (%filename = findFirstFile(%filepattern); %filename !$= ""; %filename = findNextFile(%filepattern)) {
+		%file.openForRead(%filename);
+		while (!%file.isEOF() && (%file.readLine() !$= "[name]")) {}
+		DanceList.addRow(%masterId, %file.readLine() TAB fileBase(%filename));
+		%masterId++;
+		%file.close();
+	}
+	
+	%file.delete();
+	//nonBlendList.setSelectedRow(0);
+}
+
+function TestingToolDlg::onDisplayDanceControls(%this)
+{
+	%pos = %this.position;
+	%size = %this.extent;
+	if (%this.gameState == LuckyStarClient.LobbyState)
+	{
+		%this.resize(firstWord(%pos), getWord(%pos, 1), firstWord(%size), 740);
+	}
+	else // dance started, should toggle dance state
+	{
+		%this.resize(firstWord(%pos), getWord(%pos, 1), firstWord(%size), 200);
+	}
+	commandToServer('notifyManual');
+}
+
+function TestingToolDlg::onDisplayDanceList(%this)
+{
+	if (%this.gameState == LuckyStarClient.LobbyState)
+	{
+		DemoButton.setVisible(false);
+		ManualButton.setVisible(false);
+		AutoButton.setVisible(false);
+		DanceListControl.setVisible(true);
+	}
+	else // dance started, should toggle dance state
+	{
+		commandToServer('notifyAuto');
+	}
+}
+
+// ------------- Movement Debugging ----------------
+function TestingToolDlg::onNewMove(%this, %control, %thread, %isTransit)
+{
+	if (%this.gameState != LuckyStarClient.Debug01State) return;
+	%move = %control.getSelectedId();
+	commandToServer('changeMove',%move, %thread, %isTransit);
+}
+
+function TestingToolDlg::onPlayDance(%this)
+{
+	%id = DanceList.getSelectedId();
+	%dance = DanceList.getRowTextById(%id);
+	commandToServer('notifyAuto', getField(%dance, 1));
+	DanceListControl.setVisible(false);
+}
+
+function TestingToolDlg::changeState(%this, %state)
+{
+	%this.gameState = %state;
+	switch(%state)
+	{
+	case LuckyStarClient.LobbyState:
+		AutoButton.setVisible(true);
+		DemoButton.setVisible(true);
+		ManualButton.setVisible(true);
+		AutoButton.setText("Play Sequence");
+		DemoButton.setText("Run Demo");
+		ManualButton.setText("Show Controls");
+		
+		HeadControls.setVisible(false);
+		BodyControls.setVisible(false);
+		LegsControls.setVisible(false);
+		BlendControls.setVisible(false);
+
+		DanceListControl.setVisible(false);
+		
+	case LuckyStarClient.Debug01State:
+		AutoButton.setVisible(false);
+		DemoButton.setVisible(false);
+		ManualButton.setText("Hide Controls");
+		
+		HeadControls.setVisible(true);
+		BodyControls.setVisible(true);
+		LegsControls.setVisible(true);
+		BlendControls.setVisible(true);
+	case LuckyStarClient.Debug02State:
+		AutoButton.setVisible(true);
+		AutoButton.setText("Stop Sequence");
+		
+		DanceListControl.setVisible(false);
+	case LuckyStarClient.DanceState:
+		AutoButton.setVisible(false);
+		ManualButton.setVisible(false);
+		DemoButton.setText("Stop Demo");
+		
+	case LuckyStarClient.ConfigState:
+	case LuckyStarClient.RankState:
+	}
+}

@@ -1,0 +1,169 @@
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+   canSaveDynamicFields = "1";
+      isLessonsMission = "0";
+
+   new ScriptObject(MissionInfo) {
+         desc0 = "This mission is to be used during the Torque Tools chapter.";
+         name = "World Editor Training";
+   };
+   new MissionArea(MissionArea) {
+      canSaveDynamicFields = "1";
+      Area = "-528 -496 1040 1056";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      canSaveDynamicFields = "1";
+      position = "-1088 -928 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      materialList = "~/data/GPGTBase/Skies/WorldEditorTraining/bt_sky.dml";
+      cloudHeightPer[0] = "0.7";
+      cloudHeightPer[1] = "0.6";
+      cloudHeightPer[2] = "0.5";
+      cloudSpeed1 = "0.002";
+      cloudSpeed2 = "-0.002";
+      cloudSpeed3 = "0";
+      visibleDistance = "800";
+      fogDistance = "500";
+      fogColor = "0.82 0.828 0.844 1";
+      fogStorm1 = "1";
+      fogStorm2 = "0";
+      fogStorm3 = "0";
+      fogVolume1 = "100 0 150";
+      fogVolume2 = "0 0 0";
+      fogVolume3 = "0 0 0";
+      fogVolumeColor1 = "128 128 128 0";
+      fogVolumeColor2 = "128 128 128 0";
+      fogVolumeColor3 = "128 128 128 0";
+      windVelocity = "0.1 0.1 0";
+      windEffectPrecipitation = "1";
+      SkySolidColor = "0.547 0.641 0.789 0";
+      useSkyTextures = "1";
+      renderBottomTexture = "1";
+      noRenderBans = "1";
+         locked = "true";
+   };
+   new Sun() {
+      canSaveDynamicFields = "1";
+      azimuth = "45";
+      elevation = "35";
+      color = "0.862745 0.862745 0.862745 1";
+      ambient = "0.866667 0.866667 0.866667 1";
+         direction = "0.635001 0.635001 -0.439941";
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         locked = "true";
+   };
+   new TerrainBlock(terrain) {
+      canSaveDynamicFields = "1";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      terrainFile = "./World Editor Training.ter";
+      squareSize = "8";
+      bumpScale = "1";
+      bumpOffset = "0.01";
+      zeroBumpScale = "8";
+      tile = "1";
+         position = "-1024 -1024 0";
+         locked = "true";
+   };
+   new SimGroup(PlayerDropPoints) {
+      canSaveDynamicFields = "1";
+
+      new SpawnSphere() {
+         canSaveDynamicFields = "1";
+         position = "174.6 47.3969 175.022";
+         rotation = "0 0 1 164.439";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+   };
+   new WaterBlock() {
+      canSaveDynamicFields = "1";
+      position = "-192 -464 95.739";
+      rotation = "1 0 0 0";
+      scale = "1024 512 20";
+      UseDepthMask = "0";
+      surfaceTexture = "~/data/GPGTBase/Water/scaleWater";
+      liquidType = "OceanWater";
+      density = "1";
+      viscosity = "15";
+      waveMagnitude = "1";
+      surfaceOpacity = "0.2";
+      envMapIntensity = "0.4";
+      TessSurface = "50";
+      TessShore = "60";
+      SurfaceParallax = "0.5";
+      FlowAngle = "0";
+      FlowRate = "0";
+      DistortGridScale = "0.1";
+      DistortMag = "0.05";
+      DistortTime = "0.5";
+      ShoreDepth = "20";
+      DepthGradient = "1";
+      MinAlpha = "0.03";
+      MaxAlpha = "1";
+      tile = "1";
+      removeWetEdges = "0";
+      specularColor = "1 1 1 1";
+      specularPower = "2";
+   };
+   new TSStatic() {
+      canSaveDynamicFields = "1";
+      position = "174.003 47.4807 144.822";
+      rotation = "1 0 0 0";
+      scale = "20 20 20";
+      shapeName = "~/data/GPGTBase/shapes/markers/dummy.dts";
+         customAmbientSelfIllumination = "0";
+         useAdaptiveSelfIllumination = "0";
+         receiveSunLight = "1";
+         disableDynamicShadowMove = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientLighting = "0 0 0 1";
+         receiveLMLighting = "1";
+         disableDynamicShadowAnimate = "0";
+         disableDynamicShadows = "0";
+   };
+   new TSStatic() {
+      canSaveDynamicFields = "1";
+      position = "176.829 42.8233 165";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      shapeName = "~/data/GPGTBase/shapes/markers/dummy.dts";
+         customAmbientSelfIllumination = "0";
+         useAdaptiveSelfIllumination = "0";
+         receiveSunLight = "1";
+         disableDynamicShadowMove = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientLighting = "0 0 0 1";
+         receiveLMLighting = "1";
+         disableDynamicShadowAnimate = "0";
+         disableDynamicShadows = "0";
+   };
+   new TSStatic() {
+      canSaveDynamicFields = "1";
+      position = "175.011 42.6025 165";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      shapeName = "~/data/GPGTBase/shapes/markers/dummy.dts";
+         customAmbientSelfIllumination = "0";
+         useAdaptiveSelfIllumination = "0";
+         receiveSunLight = "1";
+         disableDynamicShadowMove = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientLighting = "0 0 0 1";
+         receiveLMLighting = "1";
+         disableDynamicShadowAnimate = "0";
+         disableDynamicShadows = "0";
+   };
+};
+//--- OBJECT WRITE END ---
+

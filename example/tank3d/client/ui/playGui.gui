@@ -1,0 +1,231 @@
+//--- OBJECT WRITE BEGIN ---
+new GameTSCtrl(PlayGui) {
+   Profile = "GuiContentProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   position = "0 0";
+   Extent = "800 600";
+   MinExtent = "8 8";
+   Visible = "1";
+   Variable = "ap";
+   Command = "ap";
+   AltCommand = "ap";
+   Accelerator = "ap";
+   tooltip = "ap";
+   langTableMod = "ap";
+   applyFilterToChildren = "1";
+   cameraZRot = "0";
+   forceFOV = "0";
+      noCursor = "0";
+      helpTag = "0";
+
+   new GuiShapeNameHud() {
+      Profile = "GuiShapeNameHudProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "0 0";
+      Extent = "800 600";
+      MinExtent = "8 2";
+      Visible = "1";
+      fillColor = "0.25 0.25 0.25 0.25";
+      frameColor = "0 1 0 1";
+      textColor = "1 1 1 1";
+      showFill = "0";
+      showFrame = "0";
+      verticalOffset = "0.5";
+      distanceFade = "0.1";
+   };
+   new GuiAutoScrollCtrl(AutoScrollGameMsg) {
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "178 461";
+      Extent = "478 48";
+      MinExtent = "8 2";
+      Visible = "1";
+      childMargin = "0 0";
+      enableScrolling = "1";
+      horizontalScroll = "0";
+      horizontalScrollDirection = "left";
+      verticalScroll = "1";
+      verticalScrollDirection = "up";
+      scrollInterval = "25";
+      scrollDelta = "1";
+      FontOffset = "40";
+      repeatScroll = "0";
+         justify = "center";
+
+      new GuiMLTextCtrl(GameMsg) {
+         Profile = "GuiGameMsgProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "1 2";
+         Extent = "475 39";
+         MinExtent = "8 2";
+         Visible = "1";
+         lineSpacing = "2";
+         allowColorChars = "1";
+         maxChars = "-1";
+            fitParentWidth = "1";
+      };
+   };
+   new GuiBitmapCtrl(InstructionMsgBG) {
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "22 525";
+      Extent = "610 50";
+      MinExtent = "8 2";
+      Visible = "1";
+      bitmap = "./instructionbg.png";
+      wrap = "0";
+   };
+   new GuiAutoScrollCtrl(AutoScrollInstructionMsg) {
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "33 536";
+      Extent = "578 37";
+      MinExtent = "8 2";
+      Visible = "1";
+      childMargin = "0 0";
+      enableScrolling = "1";
+      horizontalScroll = "0";
+      horizontalScrollDirection = "left";
+      verticalScroll = "1";
+      verticalScrollDirection = "up";
+      scrollInterval = "25";
+      scrollDelta = "1";
+      FontOffset = "30";
+      repeatScroll = "0";
+         justify = "center";
+
+      new GuiMLTextCtrl(InstructionMsg) {
+         Profile = "GuiInstructionMsgProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "0 -614";
+         Extent = "572 663";
+         MinExtent = "8 2";
+         Visible = "1";
+         lineSpacing = "2";
+         allowColorChars = "1";
+         maxChars = "-1";
+            fitParentWidth = "1";
+      };
+   };
+   new GuiClockHud(CDBG) {
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "715 412";
+      Extent = "42 30";
+      MinExtent = "8 8";
+      Visible = "0";
+      showFill = "1";
+      showFrame = "0";
+      fillColor = "0 0 1 0.5";
+      frameColor = "0 1 0 1";
+      textColor = "0 0 0 0";
+   };
+   new GuiClockHud(CDBGR) {
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "714 450";
+      Extent = "40 26";
+      MinExtent = "8 8";
+      Visible = "0";
+      showFill = "1";
+      showFrame = "0";
+      fillColor = "1 0 0 0.5";
+      frameColor = "0 1 0 1";
+      textColor = "0 0 0 0";
+   };
+   new GuiBitmapCtrl(timerBG) {
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "641 525";
+      Extent = "132 50";
+      MinExtent = "8 2";
+      Visible = "1";
+      bitmap = "./instructionbg.png";
+      wrap = "0";
+   };
+   new GuiTextCtrl(CDTime) {
+      Profile = "GuiTimerProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "648 522";
+      Extent = "115 53";
+      MinExtent = "8 2";
+      Visible = "1";
+      text = "00:00";
+      maxLength = "255";
+   };
+   new GuiMapOverviewCtrl(MapOverview) {
+      Profile = "GuiMapOverviewProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "439 9";
+      Extent = "350 350";
+      MinExtent = "8 2";
+      Visible = "1";
+      bitmap = "./radarbg.png";
+      wrap = "0";
+      MyControlVisible = "1";
+      MyControlColor = "1 0 0 1";
+      PlayersVisible = "1";
+      PlayersColor = "0 0 1 1";
+      VehiclesVisible = "1";
+      VehiclesColor = "0 1 0 1";
+      ProjectileVisible = "1";
+      ProjectileColor = "1 0 0 1";
+      NameTextColor = "1 1 1 1";
+      verticalOffset = "4";
+      MapAlpha = "0.7";
+      PointSize = "9";
+      ProjectilePointSize = "4";
+   };
+   new GuiBitmapCtrl(HighScoreListBG) {
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "center";
+      VertSizing = "center";
+      position = "289 123";
+      Extent = "222 354";
+      MinExtent = "8 2";
+      Visible = "0";
+      bitmap = "./highscorebg.png";
+      wrap = "0";
+
+      new GuiTextCtrl(HighScoreTxtCtrl) {
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "relative";
+         VertSizing = "relative";
+         position = "29 63";
+         Extent = "164 258";
+         MinExtent = "8 2";
+         Visible = "1";
+         maxLength = "255";
+
+         new GuiTextListCtrl(HighScoreList) {
+            Profile = "GuiHighScoreProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "9 0";
+            Extent = "9 2";
+            MinExtent = "8 2";
+            Visible = "1";
+            enumerate = "0";
+            resizeCell = "0";
+            columns = "0 120 200";
+            fitParentWidth = "0";
+            clipColumnText = "1";
+               autoSizeHeight = "0";
+               autoSizeWidth = "0";
+         };
+      };
+   };
+};
+//--- OBJECT WRITE END ---

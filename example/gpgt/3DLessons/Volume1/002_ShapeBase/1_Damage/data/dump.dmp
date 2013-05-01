@@ -1,0 +1,838 @@
+First pass:  enumerate scene...
+
+Processing Node Bounds with parent ROOT
+Bounding box found
+Processing Node Sequence::rotate with parent ROOT
+Processing Node __mainTree with parent ROOT
+Found subtree starting at Node "__mainTree"
+
+Second pass:  put shape structure together...
+
+Adding detail named "detail0" of size 0 to subtree "__mainTree".
+Adding detail named "Collision-1" of size -1 to subtree "__mainTree".
+Adding node "__mainTree" with parent "__mainTree" to subtree rooted on node "__mainTree".
+Adding node "__meshes" with parent "__mainTree" to subtree rooted on node "__mainTree".
+Adding node "GearOne0" with parent "__meshes" to subtree rooted on node "__mainTree".
+Attaching object to node.
+Adding object named "GearOne".
+Adding mesh of size 0 to object "GearOne".
+Adding node "GearTwo0" with parent "__meshes" to subtree rooted on node "__mainTree".
+Attaching object to node.
+Adding object named "GearTwo".
+Adding mesh of size 0 to object "GearTwo".
+Adding node "GearThree0" with parent "__meshes" to subtree rooted on node "__mainTree".
+Attaching object to node.
+Adding object named "GearThree".
+Adding mesh of size 0 to object "GearThree".
+Adding node "Col-1" with parent "__meshes" to subtree rooted on node "__mainTree".
+Attaching object to node.
+Adding object named "Col".
+Adding mesh of size -1 to object "Col".
+Adding node "Gear2" with parent "__meshes" to subtree rooted on node "__mainTree".
+Adding node "Gear1" with parent "__meshes" to subtree rooted on node "__mainTree".
+Adding node "Gear3" with parent "__meshes" to subtree rooted on node "__mainTree".
+Adding node "Root" with parent "__meshes" to subtree rooted on node "__mainTree".
+
+Third pass:  Collapsing unneeded nodes...
+
+Removing node "__mainTree"
+Removing node "__meshes"
+
+Add default object states...
+
+Adding object state to 1 detail level(s) of mesh "GearOne".
+Adding frame.
+Object is visible.
+Object offset transform for mesh dl=0:
+    scale:            x=1.00000, y=1.00000, z=1.00000
+    stretch rotation: x=0.00000, y=0.00000, z=0.00000, w=1.00000
+    translation:      x=0.00000, y=-1.26894, z=-0.89126
+    actual rotation:  x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding object state to 1 detail level(s) of mesh "GearTwo".
+Adding frame.
+Object is visible.
+Object offset transform for mesh dl=0:
+    scale:            x=1.00000, y=1.00000, z=1.00000
+    stretch rotation: x=0.00000, y=0.00000, z=0.00000, w=1.00000
+    translation:      x=0.00000, y=-0.00693, z=-2.07881
+    actual rotation:  x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding object state to 1 detail level(s) of mesh "GearThree".
+Adding frame.
+Object is visible.
+Object offset transform for mesh dl=0:
+    scale:            x=1.00000, y=1.00000, z=1.00000
+    stretch rotation: x=0.00000, y=0.00000, z=0.00000, w=1.00000
+    translation:      x=0.00000, y=1.26373, z=-0.89134
+    actual rotation:  x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding object state to 1 detail level(s) of mesh "Col".
+Adding frame.
+Object is visible.
+Object offset transform for mesh dl=0:
+    scale:            x=1.00000, y=1.00000, z=1.00000
+    stretch rotation: x=0.00000, y=0.00000, z=0.00000, w=1.00000
+    translation:      x=0.00000, y=0.00000, z=0.00000
+    actual rotation:  x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+
+Add default node states...
+
+Adding node rotation at time 0.000000 for node "GearOne0".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0.000000 for node "GearOne0".
+  translation:     x=0.00000, y=1.26894, z=0.89126
+---------------------------------
+Adding node rotation at time 0.000000 for node "GearTwo0".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0.000000 for node "GearTwo0".
+  translation:     x=0.00000, y=0.00693, z=2.07881
+---------------------------------
+Adding node rotation at time 0.000000 for node "GearThree0".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0.000000 for node "GearThree0".
+  translation:     x=0.00000, y=-1.26373, z=0.89134
+---------------------------------
+Adding node rotation at time 0.000000 for node "Col-1".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0.000000 for node "Col-1".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding node rotation at time 0.000000 for node "Gear2".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0.000000 for node "Gear2".
+  translation:     x=0.00000, y=1.26894, z=0.89126
+---------------------------------
+Adding node rotation at time 0.000000 for node "Gear1".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0.000000 for node "Gear1".
+  translation:     x=0.00000, y=-1.26373, z=0.89134
+---------------------------------
+Adding node rotation at time 0.000000 for node "Gear3".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0.000000 for node "Gear3".
+  translation:     x=0.00000, y=0.00693, z=2.07881
+---------------------------------
+Adding node rotation at time 0.000000 for node "Root".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0.000000 for node "Root".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+
+Adding 1 sequences...
+
+Adding sequence 0 named "rotate"
+Enabled animation:   TUA    , Forced animation:  Duration = 1.13333, secPerFrame = 0.03333, # frames = 34
+Sequence includes 6 nodes, 0 objects, and 0 ifl materials
+  6 rotations, 0 translations, 0 scales
+
+Adding node rotation at time 0.033333 for node "GearOne0".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node rotation at time 0.066667 for node "GearOne0".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node rotation at time 0.100000 for node "GearOne0".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node rotation at time 0.133333 for node "GearOne0".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node rotation at time 0.166667 for node "GearOne0".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node rotation at time 0.200000 for node "GearOne0".
+  rotation:     x=-0.10453, y=0.00000, z=0.00000, w=0.99452
+---------------------------------
+Adding node rotation at time 0.233333 for node "GearOne0".
+  rotation:     x=-0.20791, y=0.00000, z=0.00000, w=0.97815
+---------------------------------
+Adding node rotation at time 0.266667 for node "GearOne0".
+  rotation:     x=-0.30902, y=0.00000, z=0.00000, w=0.95106
+---------------------------------
+Adding node rotation at time 0.300000 for node "GearOne0".
+  rotation:     x=-0.40674, y=0.00000, z=0.00000, w=0.91355
+---------------------------------
+Adding node rotation at time 0.333333 for node "GearOne0".
+  rotation:     x=-0.50000, y=0.00000, z=0.00000, w=0.86603
+---------------------------------
+Adding node rotation at time 0.366667 for node "GearOne0".
+  rotation:     x=-0.58779, y=0.00000, z=0.00000, w=0.80902
+---------------------------------
+Adding node rotation at time 0.400000 for node "GearOne0".
+  rotation:     x=-0.66913, y=0.00000, z=0.00000, w=0.74314
+---------------------------------
+Adding node rotation at time 0.433333 for node "GearOne0".
+  rotation:     x=-0.74314, y=0.00000, z=0.00000, w=0.66913
+---------------------------------
+Adding node rotation at time 0.466667 for node "GearOne0".
+  rotation:     x=-0.80902, y=0.00000, z=0.00000, w=0.58779
+---------------------------------
+Adding node rotation at time 0.500000 for node "GearOne0".
+  rotation:     x=-0.86603, y=0.00000, z=0.00000, w=0.50000
+---------------------------------
+Adding node rotation at time 0.533333 for node "GearOne0".
+  rotation:     x=0.91355, y=0.00000, z=0.00000, w=-0.40674
+---------------------------------
+Adding node rotation at time 0.566667 for node "GearOne0".
+  rotation:     x=0.95106, y=0.00000, z=0.00000, w=-0.30902
+---------------------------------
+Adding node rotation at time 0.600000 for node "GearOne0".
+  rotation:     x=0.97815, y=0.00000, z=0.00000, w=-0.20791
+---------------------------------
+Adding node rotation at time 0.633333 for node "GearOne0".
+  rotation:     x=0.99452, y=0.00000, z=0.00000, w=-0.10453
+---------------------------------
+Adding node rotation at time 0.666667 for node "GearOne0".
+  rotation:     x=1.00000, y=0.00000, z=0.00000, w=-0.00000
+---------------------------------
+Adding node rotation at time 0.700000 for node "GearOne0".
+  rotation:     x=0.99452, y=0.00000, z=0.00000, w=-0.10453
+---------------------------------
+Adding node rotation at time 0.733333 for node "GearOne0".
+  rotation:     x=0.97815, y=0.00000, z=0.00000, w=-0.20791
+---------------------------------
+Adding node rotation at time 0.766667 for node "GearOne0".
+  rotation:     x=0.95106, y=0.00000, z=0.00000, w=-0.30902
+---------------------------------
+Adding node rotation at time 0.800000 for node "GearOne0".
+  rotation:     x=0.91355, y=0.00000, z=0.00000, w=-0.40674
+---------------------------------
+Adding node rotation at time 0.833333 for node "GearOne0".
+  rotation:     x=-0.86603, y=0.00000, z=0.00000, w=0.50000
+---------------------------------
+Adding node rotation at time 0.866667 for node "GearOne0".
+  rotation:     x=-0.80902, y=0.00000, z=0.00000, w=0.58779
+---------------------------------
+Adding node rotation at time 0.900000 for node "GearOne0".
+  rotation:     x=-0.74314, y=0.00000, z=0.00000, w=0.66913
+---------------------------------
+Adding node rotation at time 0.933333 for node "GearOne0".
+  rotation:     x=-0.66913, y=0.00000, z=0.00000, w=0.74314
+---------------------------------
+Adding node rotation at time 0.966667 for node "GearOne0".
+  rotation:     x=-0.58779, y=0.00000, z=0.00000, w=0.80902
+---------------------------------
+Adding node rotation at time 1.000000 for node "GearOne0".
+  rotation:     x=-0.50000, y=0.00000, z=0.00000, w=0.86603
+---------------------------------
+Adding node rotation at time 1.033333 for node "GearOne0".
+  rotation:     x=-0.40674, y=0.00000, z=0.00000, w=0.91355
+---------------------------------
+Adding node rotation at time 1.066667 for node "GearOne0".
+  rotation:     x=-0.30902, y=0.00000, z=0.00000, w=0.95106
+---------------------------------
+Adding node rotation at time 1.100000 for node "GearOne0".
+  rotation:     x=-0.20791, y=0.00000, z=0.00000, w=0.97815
+---------------------------------
+Adding node rotation at time 1.133333 for node "GearOne0".
+  rotation:     x=-0.10453, y=0.00000, z=0.00000, w=0.99452
+---------------------------------
+Adding node rotation at time 0.033333 for node "GearTwo0".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node rotation at time 0.066667 for node "GearTwo0".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node rotation at time 0.100000 for node "GearTwo0".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node rotation at time 0.133333 for node "GearTwo0".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node rotation at time 0.166667 for node "GearTwo0".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node rotation at time 0.200000 for node "GearTwo0".
+  rotation:     x=0.10453, y=0.00000, z=0.00000, w=0.99452
+---------------------------------
+Adding node rotation at time 0.233333 for node "GearTwo0".
+  rotation:     x=0.20791, y=0.00000, z=0.00000, w=0.97815
+---------------------------------
+Adding node rotation at time 0.266667 for node "GearTwo0".
+  rotation:     x=0.30902, y=0.00000, z=0.00000, w=0.95106
+---------------------------------
+Adding node rotation at time 0.300000 for node "GearTwo0".
+  rotation:     x=0.40674, y=0.00000, z=0.00000, w=0.91355
+---------------------------------
+Adding node rotation at time 0.333333 for node "GearTwo0".
+  rotation:     x=0.50000, y=0.00000, z=0.00000, w=0.86603
+---------------------------------
+Adding node rotation at time 0.366667 for node "GearTwo0".
+  rotation:     x=0.58779, y=0.00000, z=0.00000, w=0.80902
+---------------------------------
+Adding node rotation at time 0.400000 for node "GearTwo0".
+  rotation:     x=0.66913, y=0.00000, z=0.00000, w=0.74314
+---------------------------------
+Adding node rotation at time 0.433333 for node "GearTwo0".
+  rotation:     x=0.74314, y=0.00000, z=0.00000, w=0.66913
+---------------------------------
+Adding node rotation at time 0.466667 for node "GearTwo0".
+  rotation:     x=0.80902, y=0.00000, z=0.00000, w=0.58779
+---------------------------------
+Adding node rotation at time 0.500000 for node "GearTwo0".
+  rotation:     x=0.86603, y=0.00000, z=0.00000, w=0.50000
+---------------------------------
+Adding node rotation at time 0.533333 for node "GearTwo0".
+  rotation:     x=0.91355, y=0.00000, z=0.00000, w=0.40674
+---------------------------------
+Adding node rotation at time 0.566667 for node "GearTwo0".
+  rotation:     x=0.95106, y=0.00000, z=0.00000, w=0.30902
+---------------------------------
+Adding node rotation at time 0.600000 for node "GearTwo0".
+  rotation:     x=0.97815, y=0.00000, z=0.00000, w=0.20791
+---------------------------------
+Adding node rotation at time 0.633333 for node "GearTwo0".
+  rotation:     x=0.99452, y=0.00000, z=0.00000, w=0.10453
+---------------------------------
+Adding node rotation at time 0.666667 for node "GearTwo0".
+  rotation:     x=1.00000, y=0.00000, z=0.00000, w=0.00000
+---------------------------------
+Adding node rotation at time 0.700000 for node "GearTwo0".
+  rotation:     x=0.99452, y=0.00000, z=0.00000, w=0.10453
+---------------------------------
+Adding node rotation at time 0.733333 for node "GearTwo0".
+  rotation:     x=0.97815, y=0.00000, z=0.00000, w=0.20791
+---------------------------------
+Adding node rotation at time 0.766667 for node "GearTwo0".
+  rotation:     x=0.95106, y=0.00000, z=0.00000, w=0.30902
+---------------------------------
+Adding node rotation at time 0.800000 for node "GearTwo0".
+  rotation:     x=0.91355, y=0.00000, z=0.00000, w=0.40674
+---------------------------------
+Adding node rotation at time 0.833333 for node "GearTwo0".
+  rotation:     x=0.86603, y=0.00000, z=0.00000, w=0.50000
+---------------------------------
+Adding node rotation at time 0.866667 for node "GearTwo0".
+  rotation:     x=0.80902, y=0.00000, z=0.00000, w=0.58779
+---------------------------------
+Adding node rotation at time 0.900000 for node "GearTwo0".
+  rotation:     x=0.74314, y=0.00000, z=0.00000, w=0.66913
+---------------------------------
+Adding node rotation at time 0.933333 for node "GearTwo0".
+  rotation:     x=0.66913, y=0.00000, z=0.00000, w=0.74314
+---------------------------------
+Adding node rotation at time 0.966667 for node "GearTwo0".
+  rotation:     x=0.58779, y=0.00000, z=0.00000, w=0.80902
+---------------------------------
+Adding node rotation at time 1.000000 for node "GearTwo0".
+  rotation:     x=0.50000, y=0.00000, z=0.00000, w=0.86603
+---------------------------------
+Adding node rotation at time 1.033333 for node "GearTwo0".
+  rotation:     x=0.40674, y=0.00000, z=0.00000, w=0.91355
+---------------------------------
+Adding node rotation at time 1.066667 for node "GearTwo0".
+  rotation:     x=0.30902, y=0.00000, z=0.00000, w=0.95106
+---------------------------------
+Adding node rotation at time 1.100000 for node "GearTwo0".
+  rotation:     x=0.20791, y=0.00000, z=0.00000, w=0.97815
+---------------------------------
+Adding node rotation at time 1.133333 for node "GearTwo0".
+  rotation:     x=0.10453, y=0.00000, z=0.00000, w=0.99452
+---------------------------------
+Adding node rotation at time 0.033333 for node "GearThree0".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node rotation at time 0.066667 for node "GearThree0".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node rotation at time 0.100000 for node "GearThree0".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node rotation at time 0.133333 for node "GearThree0".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node rotation at time 0.166667 for node "GearThree0".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node rotation at time 0.200000 for node "GearThree0".
+  rotation:     x=-0.10453, y=0.00000, z=0.00000, w=0.99452
+---------------------------------
+Adding node rotation at time 0.233333 for node "GearThree0".
+  rotation:     x=-0.20791, y=0.00000, z=0.00000, w=0.97815
+---------------------------------
+Adding node rotation at time 0.266667 for node "GearThree0".
+  rotation:     x=-0.30902, y=0.00000, z=0.00000, w=0.95106
+---------------------------------
+Adding node rotation at time 0.300000 for node "GearThree0".
+  rotation:     x=-0.40674, y=0.00000, z=0.00000, w=0.91355
+---------------------------------
+Adding node rotation at time 0.333333 for node "GearThree0".
+  rotation:     x=-0.50000, y=0.00000, z=0.00000, w=0.86603
+---------------------------------
+Adding node rotation at time 0.366667 for node "GearThree0".
+  rotation:     x=-0.58779, y=0.00000, z=0.00000, w=0.80902
+---------------------------------
+Adding node rotation at time 0.400000 for node "GearThree0".
+  rotation:     x=-0.66913, y=0.00000, z=0.00000, w=0.74314
+---------------------------------
+Adding node rotation at time 0.433333 for node "GearThree0".
+  rotation:     x=-0.74314, y=0.00000, z=0.00000, w=0.66913
+---------------------------------
+Adding node rotation at time 0.466667 for node "GearThree0".
+  rotation:     x=-0.80902, y=0.00000, z=0.00000, w=0.58779
+---------------------------------
+Adding node rotation at time 0.500000 for node "GearThree0".
+  rotation:     x=-0.86603, y=0.00000, z=0.00000, w=0.50000
+---------------------------------
+Adding node rotation at time 0.533333 for node "GearThree0".
+  rotation:     x=0.91355, y=0.00000, z=0.00000, w=-0.40674
+---------------------------------
+Adding node rotation at time 0.566667 for node "GearThree0".
+  rotation:     x=0.95106, y=0.00000, z=0.00000, w=-0.30902
+---------------------------------
+Adding node rotation at time 0.600000 for node "GearThree0".
+  rotation:     x=0.97815, y=0.00000, z=0.00000, w=-0.20791
+---------------------------------
+Adding node rotation at time 0.633333 for node "GearThree0".
+  rotation:     x=0.99452, y=0.00000, z=0.00000, w=-0.10453
+---------------------------------
+Adding node rotation at time 0.666667 for node "GearThree0".
+  rotation:     x=1.00000, y=0.00000, z=0.00000, w=-0.00000
+---------------------------------
+Adding node rotation at time 0.700000 for node "GearThree0".
+  rotation:     x=0.99452, y=0.00000, z=0.00000, w=-0.10453
+---------------------------------
+Adding node rotation at time 0.733333 for node "GearThree0".
+  rotation:     x=0.97815, y=0.00000, z=0.00000, w=-0.20791
+---------------------------------
+Adding node rotation at time 0.766667 for node "GearThree0".
+  rotation:     x=0.95106, y=0.00000, z=0.00000, w=-0.30902
+---------------------------------
+Adding node rotation at time 0.800000 for node "GearThree0".
+  rotation:     x=0.91355, y=0.00000, z=0.00000, w=-0.40674
+---------------------------------
+Adding node rotation at time 0.833333 for node "GearThree0".
+  rotation:     x=-0.86603, y=0.00000, z=0.00000, w=0.50000
+---------------------------------
+Adding node rotation at time 0.866667 for node "GearThree0".
+  rotation:     x=-0.80902, y=0.00000, z=0.00000, w=0.58779
+---------------------------------
+Adding node rotation at time 0.900000 for node "GearThree0".
+  rotation:     x=-0.74314, y=0.00000, z=0.00000, w=0.66913
+---------------------------------
+Adding node rotation at time 0.933333 for node "GearThree0".
+  rotation:     x=-0.66913, y=0.00000, z=0.00000, w=0.74314
+---------------------------------
+Adding node rotation at time 0.966667 for node "GearThree0".
+  rotation:     x=-0.58779, y=0.00000, z=0.00000, w=0.80902
+---------------------------------
+Adding node rotation at time 1.000000 for node "GearThree0".
+  rotation:     x=-0.50000, y=0.00000, z=0.00000, w=0.86603
+---------------------------------
+Adding node rotation at time 1.033333 for node "GearThree0".
+  rotation:     x=-0.40674, y=0.00000, z=0.00000, w=0.91355
+---------------------------------
+Adding node rotation at time 1.066667 for node "GearThree0".
+  rotation:     x=-0.30902, y=0.00000, z=0.00000, w=0.95106
+---------------------------------
+Adding node rotation at time 1.100000 for node "GearThree0".
+  rotation:     x=-0.20791, y=0.00000, z=0.00000, w=0.97815
+---------------------------------
+Adding node rotation at time 1.133333 for node "GearThree0".
+  rotation:     x=-0.10453, y=0.00000, z=0.00000, w=0.99452
+---------------------------------
+Adding node rotation at time 0.033333 for node "Gear2".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node rotation at time 0.066667 for node "Gear2".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node rotation at time 0.100000 for node "Gear2".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node rotation at time 0.133333 for node "Gear2".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node rotation at time 0.166667 for node "Gear2".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node rotation at time 0.200000 for node "Gear2".
+  rotation:     x=-0.10453, y=0.00000, z=0.00000, w=0.99452
+---------------------------------
+Adding node rotation at time 0.233333 for node "Gear2".
+  rotation:     x=-0.20791, y=0.00000, z=0.00000, w=0.97815
+---------------------------------
+Adding node rotation at time 0.266667 for node "Gear2".
+  rotation:     x=-0.30902, y=0.00000, z=0.00000, w=0.95106
+---------------------------------
+Adding node rotation at time 0.300000 for node "Gear2".
+  rotation:     x=-0.40674, y=0.00000, z=0.00000, w=0.91355
+---------------------------------
+Adding node rotation at time 0.333333 for node "Gear2".
+  rotation:     x=-0.50000, y=0.00000, z=0.00000, w=0.86603
+---------------------------------
+Adding node rotation at time 0.366667 for node "Gear2".
+  rotation:     x=-0.58779, y=0.00000, z=0.00000, w=0.80902
+---------------------------------
+Adding node rotation at time 0.400000 for node "Gear2".
+  rotation:     x=-0.66913, y=0.00000, z=0.00000, w=0.74314
+---------------------------------
+Adding node rotation at time 0.433333 for node "Gear2".
+  rotation:     x=-0.74314, y=0.00000, z=0.00000, w=0.66913
+---------------------------------
+Adding node rotation at time 0.466667 for node "Gear2".
+  rotation:     x=-0.80902, y=0.00000, z=0.00000, w=0.58779
+---------------------------------
+Adding node rotation at time 0.500000 for node "Gear2".
+  rotation:     x=-0.86603, y=0.00000, z=0.00000, w=0.50000
+---------------------------------
+Adding node rotation at time 0.533333 for node "Gear2".
+  rotation:     x=0.91355, y=0.00000, z=0.00000, w=-0.40674
+---------------------------------
+Adding node rotation at time 0.566667 for node "Gear2".
+  rotation:     x=0.95106, y=0.00000, z=0.00000, w=-0.30902
+---------------------------------
+Adding node rotation at time 0.600000 for node "Gear2".
+  rotation:     x=0.97815, y=0.00000, z=0.00000, w=-0.20791
+---------------------------------
+Adding node rotation at time 0.633333 for node "Gear2".
+  rotation:     x=0.99452, y=0.00000, z=0.00000, w=-0.10453
+---------------------------------
+Adding node rotation at time 0.666667 for node "Gear2".
+  rotation:     x=1.00000, y=0.00000, z=0.00000, w=-0.00000
+---------------------------------
+Adding node rotation at time 0.700000 for node "Gear2".
+  rotation:     x=0.99452, y=0.00000, z=0.00000, w=-0.10453
+---------------------------------
+Adding node rotation at time 0.733333 for node "Gear2".
+  rotation:     x=0.97815, y=0.00000, z=0.00000, w=-0.20791
+---------------------------------
+Adding node rotation at time 0.766667 for node "Gear2".
+  rotation:     x=0.95106, y=0.00000, z=0.00000, w=-0.30902
+---------------------------------
+Adding node rotation at time 0.800000 for node "Gear2".
+  rotation:     x=0.91355, y=0.00000, z=0.00000, w=-0.40674
+---------------------------------
+Adding node rotation at time 0.833333 for node "Gear2".
+  rotation:     x=-0.86603, y=0.00000, z=0.00000, w=0.50000
+---------------------------------
+Adding node rotation at time 0.866667 for node "Gear2".
+  rotation:     x=-0.80902, y=0.00000, z=0.00000, w=0.58779
+---------------------------------
+Adding node rotation at time 0.900000 for node "Gear2".
+  rotation:     x=-0.74314, y=0.00000, z=0.00000, w=0.66913
+---------------------------------
+Adding node rotation at time 0.933333 for node "Gear2".
+  rotation:     x=-0.66913, y=0.00000, z=0.00000, w=0.74314
+---------------------------------
+Adding node rotation at time 0.966667 for node "Gear2".
+  rotation:     x=-0.58779, y=0.00000, z=0.00000, w=0.80902
+---------------------------------
+Adding node rotation at time 1.000000 for node "Gear2".
+  rotation:     x=-0.50000, y=0.00000, z=0.00000, w=0.86603
+---------------------------------
+Adding node rotation at time 1.033333 for node "Gear2".
+  rotation:     x=-0.40674, y=0.00000, z=0.00000, w=0.91355
+---------------------------------
+Adding node rotation at time 1.066667 for node "Gear2".
+  rotation:     x=-0.30902, y=0.00000, z=0.00000, w=0.95106
+---------------------------------
+Adding node rotation at time 1.100000 for node "Gear2".
+  rotation:     x=-0.20791, y=0.00000, z=0.00000, w=0.97815
+---------------------------------
+Adding node rotation at time 1.133333 for node "Gear2".
+  rotation:     x=-0.10453, y=0.00000, z=0.00000, w=0.99452
+---------------------------------
+Adding node rotation at time 0.033333 for node "Gear1".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node rotation at time 0.066667 for node "Gear1".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node rotation at time 0.100000 for node "Gear1".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node rotation at time 0.133333 for node "Gear1".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node rotation at time 0.166667 for node "Gear1".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node rotation at time 0.200000 for node "Gear1".
+  rotation:     x=-0.10453, y=0.00000, z=0.00000, w=0.99452
+---------------------------------
+Adding node rotation at time 0.233333 for node "Gear1".
+  rotation:     x=-0.20791, y=0.00000, z=0.00000, w=0.97815
+---------------------------------
+Adding node rotation at time 0.266667 for node "Gear1".
+  rotation:     x=-0.30902, y=0.00000, z=0.00000, w=0.95106
+---------------------------------
+Adding node rotation at time 0.300000 for node "Gear1".
+  rotation:     x=-0.40674, y=0.00000, z=0.00000, w=0.91355
+---------------------------------
+Adding node rotation at time 0.333333 for node "Gear1".
+  rotation:     x=-0.50000, y=0.00000, z=0.00000, w=0.86603
+---------------------------------
+Adding node rotation at time 0.366667 for node "Gear1".
+  rotation:     x=-0.58779, y=0.00000, z=0.00000, w=0.80902
+---------------------------------
+Adding node rotation at time 0.400000 for node "Gear1".
+  rotation:     x=-0.66913, y=0.00000, z=0.00000, w=0.74314
+---------------------------------
+Adding node rotation at time 0.433333 for node "Gear1".
+  rotation:     x=-0.74314, y=0.00000, z=0.00000, w=0.66913
+---------------------------------
+Adding node rotation at time 0.466667 for node "Gear1".
+  rotation:     x=-0.80902, y=0.00000, z=0.00000, w=0.58779
+---------------------------------
+Adding node rotation at time 0.500000 for node "Gear1".
+  rotation:     x=-0.86603, y=0.00000, z=0.00000, w=0.50000
+---------------------------------
+Adding node rotation at time 0.533333 for node "Gear1".
+  rotation:     x=0.91355, y=0.00000, z=0.00000, w=-0.40674
+---------------------------------
+Adding node rotation at time 0.566667 for node "Gear1".
+  rotation:     x=0.95106, y=0.00000, z=0.00000, w=-0.30902
+---------------------------------
+Adding node rotation at time 0.600000 for node "Gear1".
+  rotation:     x=0.97815, y=0.00000, z=0.00000, w=-0.20791
+---------------------------------
+Adding node rotation at time 0.633333 for node "Gear1".
+  rotation:     x=0.99452, y=0.00000, z=0.00000, w=-0.10453
+---------------------------------
+Adding node rotation at time 0.666667 for node "Gear1".
+  rotation:     x=1.00000, y=0.00000, z=0.00000, w=-0.00000
+---------------------------------
+Adding node rotation at time 0.700000 for node "Gear1".
+  rotation:     x=0.99452, y=0.00000, z=0.00000, w=-0.10453
+---------------------------------
+Adding node rotation at time 0.733333 for node "Gear1".
+  rotation:     x=0.97815, y=0.00000, z=0.00000, w=-0.20791
+---------------------------------
+Adding node rotation at time 0.766667 for node "Gear1".
+  rotation:     x=0.95106, y=0.00000, z=0.00000, w=-0.30902
+---------------------------------
+Adding node rotation at time 0.800000 for node "Gear1".
+  rotation:     x=0.91355, y=0.00000, z=0.00000, w=-0.40674
+---------------------------------
+Adding node rotation at time 0.833333 for node "Gear1".
+  rotation:     x=-0.86603, y=0.00000, z=0.00000, w=0.50000
+---------------------------------
+Adding node rotation at time 0.866667 for node "Gear1".
+  rotation:     x=-0.80902, y=0.00000, z=0.00000, w=0.58779
+---------------------------------
+Adding node rotation at time 0.900000 for node "Gear1".
+  rotation:     x=-0.74314, y=0.00000, z=0.00000, w=0.66913
+---------------------------------
+Adding node rotation at time 0.933333 for node "Gear1".
+  rotation:     x=-0.66913, y=0.00000, z=0.00000, w=0.74314
+---------------------------------
+Adding node rotation at time 0.966667 for node "Gear1".
+  rotation:     x=-0.58779, y=0.00000, z=0.00000, w=0.80902
+---------------------------------
+Adding node rotation at time 1.000000 for node "Gear1".
+  rotation:     x=-0.50000, y=0.00000, z=0.00000, w=0.86603
+---------------------------------
+Adding node rotation at time 1.033333 for node "Gear1".
+  rotation:     x=-0.40674, y=0.00000, z=0.00000, w=0.91355
+---------------------------------
+Adding node rotation at time 1.066667 for node "Gear1".
+  rotation:     x=-0.30902, y=0.00000, z=0.00000, w=0.95106
+---------------------------------
+Adding node rotation at time 1.100000 for node "Gear1".
+  rotation:     x=-0.20791, y=0.00000, z=0.00000, w=0.97815
+---------------------------------
+Adding node rotation at time 1.133333 for node "Gear1".
+  rotation:     x=-0.10453, y=0.00000, z=0.00000, w=0.99452
+---------------------------------
+Adding node rotation at time 0.033333 for node "Gear3".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node rotation at time 0.066667 for node "Gear3".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node rotation at time 0.100000 for node "Gear3".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node rotation at time 0.133333 for node "Gear3".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node rotation at time 0.166667 for node "Gear3".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node rotation at time 0.200000 for node "Gear3".
+  rotation:     x=0.10453, y=0.00000, z=0.00000, w=0.99452
+---------------------------------
+Adding node rotation at time 0.233333 for node "Gear3".
+  rotation:     x=0.20791, y=0.00000, z=0.00000, w=0.97815
+---------------------------------
+Adding node rotation at time 0.266667 for node "Gear3".
+  rotation:     x=0.30902, y=0.00000, z=0.00000, w=0.95106
+---------------------------------
+Adding node rotation at time 0.300000 for node "Gear3".
+  rotation:     x=0.40674, y=0.00000, z=0.00000, w=0.91355
+---------------------------------
+Adding node rotation at time 0.333333 for node "Gear3".
+  rotation:     x=0.50000, y=0.00000, z=0.00000, w=0.86603
+---------------------------------
+Adding node rotation at time 0.366667 for node "Gear3".
+  rotation:     x=0.58779, y=0.00000, z=0.00000, w=0.80902
+---------------------------------
+Adding node rotation at time 0.400000 for node "Gear3".
+  rotation:     x=0.66913, y=0.00000, z=0.00000, w=0.74314
+---------------------------------
+Adding node rotation at time 0.433333 for node "Gear3".
+  rotation:     x=0.74314, y=0.00000, z=0.00000, w=0.66913
+---------------------------------
+Adding node rotation at time 0.466667 for node "Gear3".
+  rotation:     x=0.80902, y=0.00000, z=0.00000, w=0.58779
+---------------------------------
+Adding node rotation at time 0.500000 for node "Gear3".
+  rotation:     x=0.86603, y=0.00000, z=0.00000, w=0.50000
+---------------------------------
+Adding node rotation at time 0.533333 for node "Gear3".
+  rotation:     x=0.91355, y=0.00000, z=0.00000, w=0.40674
+---------------------------------
+Adding node rotation at time 0.566667 for node "Gear3".
+  rotation:     x=0.95106, y=0.00000, z=0.00000, w=0.30902
+---------------------------------
+Adding node rotation at time 0.600000 for node "Gear3".
+  rotation:     x=0.97815, y=0.00000, z=0.00000, w=0.20791
+---------------------------------
+Adding node rotation at time 0.633333 for node "Gear3".
+  rotation:     x=0.99452, y=0.00000, z=0.00000, w=0.10453
+---------------------------------
+Adding node rotation at time 0.666667 for node "Gear3".
+  rotation:     x=1.00000, y=0.00000, z=0.00000, w=0.00000
+---------------------------------
+Adding node rotation at time 0.700000 for node "Gear3".
+  rotation:     x=0.99452, y=0.00000, z=0.00000, w=0.10453
+---------------------------------
+Adding node rotation at time 0.733333 for node "Gear3".
+  rotation:     x=0.97815, y=0.00000, z=0.00000, w=0.20791
+---------------------------------
+Adding node rotation at time 0.766667 for node "Gear3".
+  rotation:     x=0.95106, y=0.00000, z=0.00000, w=0.30902
+---------------------------------
+Adding node rotation at time 0.800000 for node "Gear3".
+  rotation:     x=0.91355, y=0.00000, z=0.00000, w=0.40674
+---------------------------------
+Adding node rotation at time 0.833333 for node "Gear3".
+  rotation:     x=0.86603, y=0.00000, z=0.00000, w=0.50000
+---------------------------------
+Adding node rotation at time 0.866667 for node "Gear3".
+  rotation:     x=0.80902, y=0.00000, z=0.00000, w=0.58779
+---------------------------------
+Adding node rotation at time 0.900000 for node "Gear3".
+  rotation:     x=0.74314, y=0.00000, z=0.00000, w=0.66913
+---------------------------------
+Adding node rotation at time 0.933333 for node "Gear3".
+  rotation:     x=0.66913, y=0.00000, z=0.00000, w=0.74314
+---------------------------------
+Adding node rotation at time 0.966667 for node "Gear3".
+  rotation:     x=0.58779, y=0.00000, z=0.00000, w=0.80902
+---------------------------------
+Adding node rotation at time 1.000000 for node "Gear3".
+  rotation:     x=0.50000, y=0.00000, z=0.00000, w=0.86603
+---------------------------------
+Adding node rotation at time 1.033333 for node "Gear3".
+  rotation:     x=0.40674, y=0.00000, z=0.00000, w=0.91355
+---------------------------------
+Adding node rotation at time 1.066667 for node "Gear3".
+  rotation:     x=0.30902, y=0.00000, z=0.00000, w=0.95106
+---------------------------------
+Adding node rotation at time 1.100000 for node "Gear3".
+  rotation:     x=0.20791, y=0.00000, z=0.00000, w=0.97815
+---------------------------------
+Adding node rotation at time 1.133333 for node "Gear3".
+  rotation:     x=0.10453, y=0.00000, z=0.00000, w=0.99452
+---------------------------------
+
+Adding 12 ground transform frames at 0.103030 sec per frame intervals.
+
+Ground transform frame:
+   trans=(0.000000,0.000000,0.000000)
+   rot=(0.000000,0.000000,0.000000,1.000000)
+Ground transform frame:
+   trans=(0.000000,0.000000,0.000000)
+   rot=(0.000000,0.000000,0.000000,1.000000)
+Ground transform frame:
+   trans=(0.000000,0.000000,0.000000)
+   rot=(0.000000,0.000000,0.000000,1.000000)
+Ground transform frame:
+   trans=(0.000000,0.000000,0.000000)
+   rot=(0.000000,0.000000,0.000000,1.000000)
+Ground transform frame:
+   trans=(0.000000,0.000000,0.000000)
+   rot=(0.000000,0.000000,0.000000,1.000000)
+Ground transform frame:
+   trans=(0.000000,0.000000,0.000000)
+   rot=(0.000000,0.000000,0.000000,1.000000)
+Ground transform frame:
+   trans=(0.000000,0.000000,0.000000)
+   rot=(0.000000,0.000000,0.000000,1.000000)
+Ground transform frame:
+   trans=(0.000000,0.000000,0.000000)
+   rot=(0.000000,0.000000,0.000000,1.000000)
+Ground transform frame:
+   trans=(0.000000,0.000000,0.000000)
+   rot=(0.000000,0.000000,0.000000,1.000000)
+Ground transform frame:
+   trans=(0.000000,0.000000,0.000000)
+   rot=(0.000000,0.000000,0.000000,1.000000)
+Ground transform frame:
+   trans=(0.000000,0.000000,0.000000)
+   rot=(0.000000,0.000000,0.000000,1.000000)
+
+Optimizing meshes...
+
+Optimizing mesh "GearOne" detail level 0.
+74 verts before joining verts
+74 verts after joining verts
+144 faces before stripping
+Using Quick, dirty, & ugly stripping method.
+2 strips with average length 107.50 (range 71 to 144) and 67 reversals
+
+Optimizing mesh "GearTwo" detail level 0.
+74 verts before joining verts
+74 verts after joining verts
+144 faces before stripping
+Using Quick, dirty, & ugly stripping method.
+2 strips with average length 107.50 (range 71 to 144) and 67 reversals
+
+Optimizing mesh "GearThree" detail level 0.
+74 verts before joining verts
+74 verts after joining verts
+144 faces before stripping
+Using Quick, dirty, & ugly stripping method.
+14 strips with average length 14.93 (range 9 to 82) and 37 reversals
+
+Optimizing mesh "Col" detail level -1.
+25 verts before joining verts
+25 verts after joining verts
+20 faces before stripping
+Using Quick, dirty, & ugly stripping method.
+7 strips with average length 4.86 (range 4 to 10) and 0 reversals
+
+Shape Hierarchy:
+
+   Details:
+      detail0, Subtree 0, objectDetail 0, size 0
+      Collision-1, Subtree 0, objectDetail 1, size -1
+
+   Subtrees:
+      Subtree 0
+         GearOne0 --> Object GearOne with following details:  0
+         GearTwo0 --> Object GearTwo with following details:  0
+         GearThree0 --> Object GearThree with following details:  0
+         Col-1 --> Object Col with following details:  -1
+         Gear2
+         Gear1
+         Gear3
+         Root
+
+   Sequences:
+        0: rotate
+
+   Material list:
+   material #0: "testskin".

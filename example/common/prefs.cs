@@ -1,0 +1,12 @@
+$Pref::Server::AdminPassword = "";
+$Pref::Server::ConnectionError = "You do not have the correct version of the LuckyStar:Dance or the related art needed to connect to this server, please contact the server operator to obtain the latest version of this game.";
+$Pref::Server::DatablockCacheFilename = "";
+$Pref::Server::EnableDatablockCache = "0";
+$Pref::Server::FloodProtectionEnabled = 1;
+$Pref::Server::Info = "This is a LuckyStar:Dance Official Server.";
+$Pref::Server::MaxChatLen = 120;
+$Pref::Server::MaxPlayers = 64;
+$Pref::Server::Name = "LSD Official Server";
+$Pref::Server::Password = "";
+$Pref::Server::Port = 28000;
+$Pref::Server::RegionMask = 2;

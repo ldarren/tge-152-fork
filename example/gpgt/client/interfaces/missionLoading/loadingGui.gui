@@ -1,0 +1,58 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiChunkedBitmapCtrl(LoadingGui) {
+   profile = "GuiDefaultProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "640 480";
+   minExtent = "8 2";
+   visible = "1";
+   bitmap = $SA::Background1;
+   useVariable = "0";
+   tile = "0";
+
+   new GuiButtonCtrl() {
+      profile = "GuiDefaultProfile";
+      horizSizing = "relative";
+      vertSizing = "relative";
+      position = "0 0";
+      extent = "1 1";
+      minExtent = "1 1";
+      visible = "1";
+      command = "disconnect();Canvas.setContent(MainMenuGui);";
+      accelerator = "escape";
+      text = "Button";
+      groupNum = "-1";
+      buttonType = "PushButton";
+   };
+   new GuiScrollCtrl() {
+      profile = "loadingScrollProfile";
+      horizSizing = "center";
+      vertSizing = "relative";
+      position = "70 350";
+      extent = "500 80";
+      minExtent = "8 2";
+      visible = "1";
+      willFirstRespond = "1";
+      hScrollBar = "alwaysOff";
+      vScrollBar = "alwaysOff";
+      constantThumbHeight = "0";
+      childMargin = "4 4";
+
+      new GuiMLTextCtrl(loadingMLText) {
+         profile = "loadingMLTextProfile";
+         horizSizing = "width";
+         vertSizing = "bottom";
+         position = "6 6";
+         extent = "500 14";
+         minExtent = "8 2";
+         visible = "1";
+         lineSpacing = "2";
+         allowColorChars = "0";
+         maxChars = "-1";
+            musicID = "0";
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+

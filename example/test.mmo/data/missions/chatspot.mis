@@ -1,0 +1,724 @@
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+   canSaveDynamicFields = "1";
+
+   new ScriptObject(MissionInfo) {
+         mission = "Get friends";
+         desc0 = "A test mmorpg zone";
+         descLines = "1";
+         name = "Test MMORPG";
+         type = "mmorpg";
+   };
+   new MissionArea(MissionArea) {
+      canSaveDynamicFields = "1";
+      Area = "-240 -168 496 400";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new WaterBlock(sea_water) {
+      canSaveDynamicFields = "1";
+      position = "-504 -528 9";
+      rotation = "1 0 0 0";
+      scale = "1000 1000 1";
+      UseDepthMask = "1";
+      surfaceTexture = "~/data/water/water";
+      ShoreTexture = "~/data/water/water";
+      envMapOverTexture = "~/data/skies/day_0007";
+      envMapUnderTexture = "~/data/skies/day_0001";
+      liquidType = "OceanWater";
+      density = "1";
+      viscosity = "15";
+      waveMagnitude = "1";
+      surfaceOpacity = "0.1";
+      envMapIntensity = "0.4";
+      TessSurface = "50";
+      TessShore = "60";
+      SurfaceParallax = "0.5";
+      FlowAngle = "0";
+      FlowRate = "0";
+      DistortGridScale = "0.1";
+      DistortMag = "0.05";
+      DistortTime = "0.5";
+      ShoreDepth = "20";
+      DepthGradient = "1";
+      MinAlpha = "0.03";
+      MaxAlpha = "0.7";
+      tile = "1";
+      removeWetEdges = "0";
+      specularColor = "1 1 1 1";
+      specularPower = "6";
+         params1 = "0.63 -2.41 0.33 0.21";
+         textureSize = "32 32";
+         envMapTexture = "~/data/skies/sunset_0007";
+         params2 = "0.39 0.39 0.2 0.133";
+         seedPoints = "0 0 1 0 1 1 0 1";
+         floodFill = "1";
+         Extent = "100 100 10";
+         params3 = "1.21 -0.61 0.13 -0.33";
+         params0 = "0.32 -0.67 0.066 0.5";
+   };
+   new Sky(Sky) {
+      canSaveDynamicFields = "1";
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      materialList = "~/data/skies/sky_day.dml";
+      cloudHeightPer[0] = "0.349971";
+      cloudHeightPer[1] = "0.3";
+      cloudHeightPer[2] = "0.199973";
+      cloudSpeed1 = "0.0005";
+      cloudSpeed2 = "0.001";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      fogDistance = "300";
+      fogColor = "0.6 0.6 0.6 1";
+      fogStorm1 = "0";
+      fogStorm2 = "0";
+      fogStorm3 = "0";
+      fogVolume1 = "0 0 0";
+      fogVolume2 = "0 0 0";
+      fogVolume3 = "0 0 0";
+      fogVolumeColor1 = "128 128 128 -2.22768e+038";
+      fogVolumeColor2 = "128 128 128 0";
+      fogVolumeColor3 = "128 128 128 -1.70699e+038";
+      windVelocity = "1 1 0";
+      windEffectPrecipitation = "1";
+      SkySolidColor = "0.6 0.6 0.6 1";
+      useSkyTextures = "1";
+      renderBottomTexture = "0";
+      noRenderBans = "0";
+         locked = "true";
+   };
+   new Sun(Sun) {
+      canSaveDynamicFields = "1";
+      azimuth = "0";
+      elevation = "45";
+      color = "0.6 0.6 0.6 1";
+      ambient = "0.4 0.4 0.4 1";
+      CastsShadows = "1";
+         position = "0 0 0";
+         locked = "true";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         direction = "0.57735 0.57735 -0.57735";
+   };
+   new TerrainBlock(Terrain) {
+      canSaveDynamicFields = "1";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      detailTexture = "~/data/terrains/details/brush2.jpg";
+      terrainFile = "./chatspot.ter";
+      squareSize = "8";
+      bumpScale = "2";
+      bumpOffset = "0.007";
+      zeroBumpScale = "7";
+      tile = "1";
+         position = "-1024 -1024 0";
+         locked = "False";
+   };
+   new Forest(newForest) {
+      canSaveDynamicFields = "1";
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      randomSeed = "679";
+      forestCount = "9204";
+      treeDistance = "1";
+      minOcclusionLevel = "3";
+      maxOcclusionLevel = "5";
+      singleBlock = "0";
+   };
+   new SimGroup(PlayerDropPoints) {
+      canSaveDynamicFields = "1";
+
+      new SpawnSphere() {
+         canSaveDynamicFields = "1";
+         position = "0 0 12";
+         rotation = "0 0 1 65";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "0.1";
+         sphereWeight = "1";
+         indoorWeight = "1";
+         outdoorWeight = "1";
+            lockCount = "0";
+            locked = "False";
+            homingCount = "0";
+      };
+   };
+   new SimGroup(NPCDropPoints) {
+      canSaveDynamicFields = "1";
+
+      new SpawnSphere() {
+         canSaveDynamicFields = "1";
+         position = "30 30 12";
+         rotation = "0 0 1 225";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+            role = "key";
+            index = "1";
+      };
+      new SpawnSphere() {
+         canSaveDynamicFields = "1";
+         position = "25 30 12";
+         rotation = "0 0 -1 75";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+            role = "normal";
+            index = "1";
+      };
+      new SpawnSphere() {
+         canSaveDynamicFields = "1";
+         position = "20 30 12";
+         rotation = "0 0 1 125";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+            role = "normal";
+            index = "2";
+      };
+      new SpawnSphere() {
+         canSaveDynamicFields = "1";
+         position = "15 30 12";
+         rotation = "0 0 1 95";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+            role = "key";
+            index = "2";
+      };
+      new SpawnSphere() {
+         canSaveDynamicFields = "1";
+         position = "10 30 12";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+            role = "background";
+            index = "1";
+      };
+      new SpawnSphere() {
+         canSaveDynamicFields = "1";
+         position = "6.2 30 12";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+            role = "background";
+            index = "2";
+      };
+      new SpawnSphere() {
+         canSaveDynamicFields = "1";
+         position = "0 30 12";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+            role = "key";
+            index = "3";
+      };
+      new SpawnSphere() {
+         canSaveDynamicFields = "1";
+         position = "-6 30 12";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+            role = "key";
+            index = "4";
+      };
+      new SpawnSphere() {
+         canSaveDynamicFields = "1";
+         position = "-10 30 12";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+            role = "normal";
+            index = "3";
+      };
+      new SpawnSphere() {
+         canSaveDynamicFields = "1";
+         position = "-15 30 12";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+            role = "normal";
+            index = "4";
+      };
+      new SpawnSphere() {
+         canSaveDynamicFields = "1";
+         position = "-20 30 12";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+            role = "key";
+            index = "5";
+      };
+   };
+   new SimGroup(ItemSpawnPoints) {
+      canSaveDynamicFields = "1";
+
+      new SpawnSphere() {
+         canSaveDynamicFields = "1";
+         position = "-25 -30 12";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+      new SpawnSphere() {
+         canSaveDynamicFields = "1";
+         position = "-20 -30 12";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+      new SpawnSphere() {
+         canSaveDynamicFields = "1";
+         position = "-15 -30 12";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+      new SpawnSphere() {
+         canSaveDynamicFields = "1";
+         position = "-10 -30 12";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+      new SpawnSphere() {
+         canSaveDynamicFields = "1";
+         position = "-5 -30 12";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+      new SpawnSphere() {
+         canSaveDynamicFields = "1";
+         position = "0 -30 12";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+      new SpawnSphere() {
+         canSaveDynamicFields = "1";
+         position = "5 -30 12";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+      new SpawnSphere() {
+         canSaveDynamicFields = "1";
+         position = "10 -30 12";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+      new SpawnSphere() {
+         canSaveDynamicFields = "1";
+         position = "15 -30 12";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+   };
+   new SimGroup(CheckPoints) {
+      canSaveDynamicFields = "1";
+
+      new SpawnSphere(1) {
+         canSaveDynamicFields = "1";
+         position = "26.6 103.4 12";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+      new SpawnSphere(2) {
+         canSaveDynamicFields = "1";
+         position = "51.4 19.6 12";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+      new SpawnSphere(3) {
+         canSaveDynamicFields = "1";
+         position = "-20 -30 12";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+      new Trigger(1) {
+         canSaveDynamicFields = "1";
+         position = "19.9671 124.277 12";
+         rotation = "1 0 0 0";
+         scale = "18 12 3.5";
+         dataBlock = "CheckpointTrigger";
+         polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+      };
+      new Trigger(2) {
+         canSaveDynamicFields = "1";
+         position = "42 27 12";
+         rotation = "1 0 0 0";
+         scale = "16.65 16.2 3.5";
+         dataBlock = "CheckpointTrigger";
+         polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+      };
+      new Trigger(3) {
+         canSaveDynamicFields = "1";
+         position = "-30 -20 12";
+         rotation = "1 0 0 0";
+         scale = "20 20 3.5";
+         dataBlock = "CheckpointTrigger";
+         polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+      };
+   };
+   new TSStatic() {
+      canSaveDynamicFields = "1";
+      position = "50 12 12";
+      rotation = "0 0 1 135";
+      scale = "1 1 1";
+      shapeName = "~/data/Shapes/static/rpg.dts";
+      receiveSunLight = "1";
+      receiveLMLighting = "1";
+      useAdaptiveSelfIllumination = "0";
+      useCustomAmbientLighting = "0";
+      customAmbientSelfIllumination = "0";
+      customAmbientLighting = "0 0 0 1";
+      useLightingOcclusion = "1";
+   };
+   new SimGroup(Ground) {
+      canSaveDynamicFields = "1";
+
+      new InteriorInstance() {
+         canSaveDynamicFields = "1";
+         position = "25 98 11.5";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         interiorFile = "~/data/interiors/showroom/showroom.dif";
+         useGLLighting = "1";
+         showTerrainInside = "0";
+      };
+      new InteriorInstance() {
+         canSaveDynamicFields = "1";
+         position = "0 0 10";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         interiorFile = "~/data/interiors/Street/junction.dif";
+         useGLLighting = "1";
+         showTerrainInside = "0";
+      };
+      new InteriorInstance() {
+         canSaveDynamicFields = "1";
+         position = "80 0 10";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         interiorFile = "~/data/interiors/Street/junction.dif";
+         useGLLighting = "1";
+         showTerrainInside = "0";
+      };
+      new InteriorInstance() {
+         canSaveDynamicFields = "1";
+         position = "-80 0 10";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         interiorFile = "~/data/interiors/Street/junction.dif";
+         useGLLighting = "1";
+         showTerrainInside = "0";
+      };
+      new InteriorInstance() {
+         canSaveDynamicFields = "1";
+         position = "0 60 10";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         interiorFile = "~/data/interiors/Street/junction.dif";
+         useGLLighting = "1";
+         showTerrainInside = "0";
+      };
+      new InteriorInstance() {
+         canSaveDynamicFields = "1";
+         position = "0 -60 10";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         interiorFile = "~/data/interiors/Street/junction.dif";
+         useGLLighting = "1";
+         showTerrainInside = "0";
+      };
+   };
+   new SimGroup(quest) {
+      canSaveDynamicFields = "1";
+
+      new Trigger(Quest01_01) {
+         canSaveDynamicFields = "1";
+         position = "-81.2 111.8 11";
+         rotation = "1 0 0 0";
+         scale = "5 5 5";
+         dataBlock = "QuestTrigger";
+         polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+            Command = "Quest01.step01";
+      };
+      new Trigger(Quest01_02) {
+         canSaveDynamicFields = "1";
+         position = "-105 111 11";
+         rotation = "1 0 0 0";
+         scale = "5 5 5";
+         dataBlock = "QuestTrigger";
+         polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+            Command = "Quest01.step02";
+      };
+      new Trigger(Quest01_03) {
+         canSaveDynamicFields = "1";
+         position = "-148.5 110 11";
+         rotation = "1 0 0 0";
+         scale = "5 5 5";
+         dataBlock = "QuestTrigger";
+         polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+            Command = "Quest01.step03";
+      };
+      new Trigger(Quest02_01) {
+         canSaveDynamicFields = "1";
+         position = "-146 51 11";
+         rotation = "1 0 0 0";
+         scale = "8 8 5";
+         dataBlock = "QuestTrigger";
+         polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+            Command = "Quest02.stop01";
+      };
+      new Trigger(Quest02_02) {
+         canSaveDynamicFields = "1";
+         position = "-150 15 11";
+         rotation = "1 0 0 0";
+         scale = "8 8 5";
+         dataBlock = "QuestTrigger";
+         polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+            Command = "Quest02.stop02";
+      };
+      new Trigger(Quest02_02) {
+         canSaveDynamicFields = "1";
+         position = "144 50.6 11";
+         rotation = "1 0 0 0";
+         scale = "8 8 5";
+         dataBlock = "QuestTrigger";
+         polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+            Command = "Quest02.stop03";
+      };
+      new Trigger(Quest02_04) {
+         canSaveDynamicFields = "1";
+         position = "150 15 11";
+         rotation = "1 0 0 0";
+         scale = "8 8 5";
+         dataBlock = "QuestTrigger";
+         polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+            Command = "Quest02.stop04";
+      };
+   };
+   new Path(Route01) {
+      canSaveDynamicFields = "1";
+      isLooping = "1";
+
+      new Marker(stop01) {
+         canSaveDynamicFields = "1";
+         position = "-196 187 12";
+         rotation = "0 0 -1 90";
+         scale = "1 1 1";
+         seqNum = "1";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Linear";
+      };
+      new Marker(stop02) {
+         canSaveDynamicFields = "1";
+         position = "-208 175 12";
+         rotation = "0 0 1 180";
+         scale = "1 1 1";
+         seqNum = "2";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Linear";
+      };
+      new Marker(stop03) {
+         canSaveDynamicFields = "1";
+         position = "-208 49 12";
+         rotation = "0 0 1 180";
+         scale = "1 1 1";
+         seqNum = "3";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Linear";
+      };
+      new Marker(stop04) {
+         canSaveDynamicFields = "1";
+         position = "-196 37 12";
+         rotation = "0 0 1 90";
+         scale = "1 1 1";
+         seqNum = "4";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Linear";
+      };
+      new Marker(stop05) {
+         canSaveDynamicFields = "1";
+         position = "-142 37 12";
+         rotation = "0 0 1 90";
+         scale = "1 1 1";
+         seqNum = "5";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Linear";
+      };
+      new Marker(stop06) {
+         canSaveDynamicFields = "1";
+         position = "144 37 12";
+         rotation = "0 0 1 90";
+         scale = "1 1 1";
+         seqNum = "6";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Linear";
+      };
+      new Marker(stop07) {
+         canSaveDynamicFields = "1";
+         position = "199 37 12";
+         rotation = "0 0 1 90";
+         scale = "1 1 1";
+         seqNum = "7";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Linear";
+      };
+      new Marker(stop08) {
+         canSaveDynamicFields = "1";
+         position = "211 49 12";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         seqNum = "8";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Linear";
+      };
+      new Marker(stop09) {
+         canSaveDynamicFields = "1";
+         position = "211 175 12";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         seqNum = "9";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Linear";
+      };
+      new Marker(stop10) {
+         canSaveDynamicFields = "1";
+         position = "199 187 12";
+         rotation = "0 0 -1 90";
+         scale = "1 1 1";
+         seqNum = "10";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Linear";
+      };
+   };
+   new InteriorInstance() {
+      canSaveDynamicFields = "1";
+      position = "-34 84 11.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/prison/prison.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      canSaveDynamicFields = "1";
+      position = "-185.527 149.199 6";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/roads/shit2.dif";
+      useGLLighting = "0";
+      showTerrainInside = "0";
+   };
+};
+//--- OBJECT WRITE END ---

@@ -1,0 +1,58 @@
+<just:center><bitmap:demo/client/ui/features/images/tge-features>
+
+<just:left><bitmap:demo/client/ui/features/images/3dtoolset_screen> <bitmap:demo/client/ui/features/images/toolset2><font:Arial Bold:22>  <a:www.garagegames.com/products/torque/tge/features/3Dtoolset>3D Toolset</a>
+<font:Arial Italic:18>Integrated WYSIWYG "sandbox" Mission, GUI, and Terrain Builder editors for creating 3D environments.
+<font:Arial:16>Edit every aspect of your world, including terrain attributes, weather and fog, configure objects, set triggers and mission logic all in the WYSIWYG Mission Builder. Build fully scriptable interfaces, write custom controls, edit and test without exiting the GUI Builder. Includes mesh exporters for Maya, 3D Studio Max, LightWave, Blender, MilkShape and more.
+
+
+<just:left><bitmap:demo/client/ui/features/images/torquenet_screen> <bitmap:demo/client/ui/features/images/torquenet><font:Arial Bold:22>  <a:www.garagegames.com/products/torque/tge/features/torquenet>TorqueNet</a>
+<font:Arial Italic:18>Create large multiplayer games with the award-winning TorqueNet client/server networking architecture.
+<font:Arial:16>The Torque Game Engine has a strong multiplayer networking foundation built into the code. TorqueNet uses both UDP and TCP, and key features include support of multiple data delivery requirements, partial object state updates and ghost manager, packet stream manager, and an optimized Notified Delivery Protocol.
+
+
+<just:left><bitmap:demo/client/ui/features/images/enviroterrain_screen> <bitmap:demo/client/ui/features/images/mapterrain2><font:Arial Bold:22>  <a:www.garagegames.com/products/torque/tge/features/geoterrain>GeoTerrain</a>
+<font:Arial Italic:18>Generate mountains, valleys, and other terrain that spans incredibly vast distances.
+<font:Arial:16>The GeoTerrain heightfield generator is used to algorithmically create realistic heightfields which span miles of terrain. The heightfield generator contains several algorithmic and fractal generators, ridge and valley localized smoothing, thermal and hydraulic erosion operators and much more.
+
+
+<just:left><bitmap:demo/client/ui/features/images/tlk_screen> <bitmap:demo/client/ui/features/images/torquelightkit><font:Arial Bold:22>  <a:www.garagegames.com/products/torque/tge/features/lighting>Torque Lighting Kit</a>
+<font:Arial Italic:18>New in TGE version 1.5! Torque Lighting Kit is now integrated into the engine.
+<font:Arial:16>The Torque Lighting Kit enhances Torque's lighting and rendering models, and adds flexible in-game lighting editors and tools that significantly increase game atmosphere and design efficiency. New mission light objects can be configured as static or dynamic, omni or spotlights, and are capable of illuminating multiple interiors, DTS objects and terrain.
+
+
+<just:left><bitmap:demo/client/ui/features/images/doorway_screen> <bitmap:demo/client/ui/features/images/doorway><font:Arial Bold:22>  <a:www.garagegames.com/products/torque/tge/features/doorway>Doorway</a>
+<font:Arial Italic:18>Create realistic indoor to outdoor transitions with seamless interior and exterior rendering.
+<font:Arial:16>Torque Game Engine features seamless integration of interior and exterior rendering. The portal-based interiors, with detail brushes and animated lightmaps are able to connect directly with the environment-mapped terrain, featuring multi-pass texturing and lighting, and layered volumetric fog.
+
+
+<just:left><bitmap:demo/client/ui/features/images/puppeteer_screen> <bitmap:demo/client/ui/features/images/puppeteer2><font:Arial Bold:22>  <a:www.garagegames.com/products/torque/tge/features/puppeteer>Puppeteer</a>
+<font:Arial Italic:18> Incorporate your animated models with ease using Torque Game Engine's mesh engine animation system.
+<font:Arial:16>Torque Game Engine's mesh engine allows the use of animated multi-bone skeletons for dynamic, flexible character actions with a high level of detail. Other features include dynamic projected shadow maps, mesh vertex deformation animation, and support for complex multi-layered animation.
+
+
+<just:left><bitmap:demo/client/ui/features/images/sourcewater_screen> <bitmap:demo/client/ui/features/images/sourceincluded><font:Arial Bold:22>  <a:www.garagegames.com/products/torque/tge/features/sourceincluded>SourceIncluded</a>
+<font:Arial Italic:18>Modify the functionality of the engine to suit your own purposes.
+<font:Arial:16>The source code provides you with near limitless ability to modify and improve upon the TGE engine. Modify the networking code, convert the level editor to an isometric level editor, or just use all of the cool stuff that all of the other TGE users are making and contributing to the community.
+
+
+
+<just:left><bitmap:demo/client/ui/features/images/torquescript_screen> <bitmap:demo/client/ui/features/images/torquescript><font:Arial Bold:22>  <a:www.garagegames.com/products/torque/tge/features/torquescript>TorqueScript</a>
+<font:Arial Italic:18>Use the scripting language you know and love (or will grow to love)!
+<font:Arial:16>TGE uses the same scripting language as other Torque products. If you already use TGB, scripting will be second nature... if this is your first Torque product, the skills you learn will be translatable to other Torque products in the future. TorqueScript syntax is similar to C++, so if you are a C++ programmer, you already have a head start.
+
+
+
+<just:left><bitmap:demo/client/ui/features/images/codeonce_screen> <bitmap:demo/client/ui/features/images/codeonce2><font:Arial Bold:22>  <a:www.garagegames.com/products/torque/tge/features/codeonce>CodeOnce</a>
+<font:Arial Italic:18>Reach a wider audience by publishing your game on multiple platforms.
+<font:Arial:16>The same scripts will run on Windows or OSX, and can be ported into other Torque products as well. There is also a community-supported Linux version, and you can build your game onto Xbox 360 with a separate license. We are committed to multi-platform functionality, and are always looking to increase our platform support.
+
+
+
+<just:left><bitmap:demo/client/ui/features/images/compatiblemarble_screen> <bitmap:demo/client/ui/features/images/user-compatibility><font:Arial Bold:22>  <a:www.garagegames.com/products/torque/tge/features/audience>Audience Compatibility</a>
+<font:Arial Italic:18>Maximize your potential user base by catering to users with a wide range of hardware.
+<font:Arial:16>With support for hardware reaching all the way back to Windows 98 operating system and Voodoo 3 video cards, in addition to CodeOnce platform support, Torque Game Engine has the potential to reach a huge audience, which is a very important point for independent developers.
+
+
+<just:left><bitmap:demo/client/ui/features/images/content_screen> <bitmap:demo/client/ui/features/images/resourcepacksx><font:Arial Bold:22>  <a:www.garagegames.com/products/torque/tge/features/resources>Helpful Resources</a>
+<font:Arial Italic:18>Additional functionality tools, game genre starter kits, and all kinds of content packs.
+<font:Arial:16> In addition to the engine you can purchase a plethora of additional resources such as Torque ShowTool Pro, the RTS Starter Kit, or Content Packs featuring models and environments from the likes of BraveTree and Tim Aste. Increase your knowledge of TGE using one of the available books, such as The Game Programmer's Guide to Torque.

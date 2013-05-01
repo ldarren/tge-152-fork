@@ -1,0 +1,52 @@
+<lmargin%:5>
+<rmargin%:95>
+<linkcolor:66CCCC>
+<tab:120, 260>
+<spush>
+<just:center>
+<font:Smilage:60>
+<color:dddddd>
+<shadowcolor:ff2222>
+<shadow:1:1>
+Credits
+<spop>
+<br>
+<just:center><spush><color:e8c800><font:Smilage:42>Game Design and Levels
+<br>
+<font:Smilage:38>
+<a:www.hallofworlds.com>Hall Of Worlds, LLC.</a><font:Smilage:36><spop><br><just:left>
+	Edward F. Maurina 3rd	Co-Owner/Lead Designer<br>
+	Teresa WC. Tse	Co-Owner/Business Manager<br>
+	Jerry Shaw	Level Designer<br>
+<br>
+<just:center><spush><color:e8c800><font:Smilage:42>Torque Game Engine
+<br>
+<font:Smilage:38>
+<a:www.garagegames.com>GarageGames, Inc.</a><font:Smilage:36><spop><br><just:left>
+<br>
+<just:center><spush><color:e8c800><font:Smilage:42>Artwork
+<br>
+<font:Smilage:38>
+<a:www.frogames.com>FroGames</a><font:Smilage:36><spop><br><just:left>
+	Christophe Canon	Artist
+<br><br>
+<just:center><spush><color:e8c800><font:Smilage:42>Button Sounds
+<br>
+<font:Smilage:38>
+<a:www.echovibes.com>Echo Vibes</a><font:Smilage:36><spop><br><just:left>
+<br>
+<just:center><spush><color:e8c800><font:Smilage:42>Sound Loops
+<br>
+<font:Smilage:38>
+<a:www.flashkit.com>Flash Kit</a><font:Smilage:36><spop><br><just:left>
+	<linkcolor:FFFFFF><a:www.flashkit.com/search.php?cat=loops&per=10&page=1&term=Asim%20Khan&field=Contact_Name>Omegear</a>	In-Game Loop
+
+<br><br>
+<spush>
+<just:center>
+<font:Comic Sans:30>
+<color:e8c800>
+(Escape for Main Menu)
+<spop>
+
+

@@ -1,0 +1,2221 @@
+//-----------------------------------------------
+// Copyright © Synapse Gaming 2004
+// Written by John Kabus
+//-----------------------------------------------
+
+$sgLightEditor::profilePath = "common/ui/";
+
+$sgLightEditor::profileScrollImage = $sgLightEditor::profilePath @ (($platform $= "macos") ? "osxScroll" : "darkScroll");
+$sgLightEditor::profileCheckImage = $sgLightEditor::profilePath @ (($platform $= "macos") ? "osxCheck" : "torqueCheck");
+$sgLightEditor::profileMenuImage = $sgLightEditor::profilePath @ (($platform $= "macos") ? "osxMenu" : "torqueMenu");
+
+$sgLightEditor::profileSliderImage = $sgLightEditor::profilePath @ (($platform $= "macos") ? "darkSlider" : "darkSlider");
+
+
+if(!isObject(sgGuiTextProfile)) new GuiControlProfile (sgGuiTextProfile)
+{
+   fontColor = "0 0 0";
+   fontColorLink = "255 96 96";
+   fontColorLinkHL = "0 0 255";
+   fontSize = 12;
+   autoSizeWidth = true;
+   autoSizeHeight = true;
+};
+
+if(!isObject(sgGuiPopUpMenuProfile)) new GuiControlProfile (sgGuiPopUpMenuProfile)
+{
+   opaque = true;
+   mouseOverSelected = true;
+
+   border = 2;
+   borderThickness = 2;
+   borderColor = "0 0 0";
+   fontSize = 12;
+   fontColor = "0 0 0";
+   fontColorHL = "32 100 100";
+   fontColorSEL = "32 100 100";
+   fixedExtent = true;
+   justify = "center";
+   bitmap = $sgLightEditor::profileScrollImage;
+   hasBitmapArray = true;
+};
+
+if(!isObject(sgGuiSliderProfile)) new GuiControlProfile (sgGuiSliderProfile)
+{
+   opaque = true;
+   mouseOverSelected = true;
+
+   border = 4;
+   borderThickness = 2;
+   borderColor = "0 0 0";
+   fontSize = 12;
+   fontColor = "0 0 0";
+   fontColorHL = "32 100 100";
+   fontColorSEL = "32 100 100";
+   fixedExtent = true;
+   justify = "center";
+   bitmap = $sgLightEditor::profileSliderImage;
+   hasBitmapArray = true;
+};
+
+if(!isObject(sgGuiCheckBoxProfile)) new GuiControlProfile (sgGuiCheckBoxProfile)
+{
+   opaque = false;
+   fillColor = "232 232 232";
+   border = false;
+   borderColor = "0 0 0";
+   fontSize = 12;
+   fontColor = "0 0 0";
+   fontColorHL = "32 100 100";
+   fixedExtent = true;
+   justify = "left";
+   bitmap = $sgLightEditor::profileCheckImage;
+   hasBitmapArray = true;
+
+};
+
+if(!isObject(sgGuiTextEditProfile)) new GuiControlProfile (sgGuiTextEditProfile)
+{
+   opaque = true;
+   fillColor = "255 255 255";
+   fillColorHL = "128 128 128";
+   border = 3;
+   borderThickness = 2;
+   borderColor = "0 0 0";
+   fontColor = "0 0 0";
+   fontColorHL = "255 255 255";
+   fontColorNA = "128 128 128";
+   fontSize = 12;
+   textOffset = "0 2";
+   autoSizeWidth = false;
+   autoSizeHeight = true;
+   tab = true;
+   canKeyFocus = true;
+};
+
+if(!isObject(sgGuiButtonProfile)) new GuiControlProfile (sgGuiButtonProfile)
+{
+   opaque = true;
+   border = true;
+   fontColor = "0 0 0";
+   fontColorHL = "32 100 100";
+   fontSize = 12;
+   fixedExtent = true;
+   justify = "center";
+	canKeyFocus = false;
+};
+
+if(!isObject(sgGuiMenuBarProfile)) new GuiControlProfile (sgGuiMenuBarProfile)
+{
+   opaque = true;
+   //fillColor = ($platform $= "macos") ? "211 211 211" : "192 192 192";
+   fillColorHL = "0 0 96";
+   border = 1;
+   fontColor = "0 0 0";
+   fontColorHL = "255 255 255";
+   fontColorNA = "128 128 128";
+   fontSize = 12;
+   fixedExtent = true;
+   justify = "center";
+   canKeyFocus = false;
+   mouseOverSelected = true;
+   bitmap = $sgLightEditor::profileMenuImage;
+   hasBitmapArray = true;
+};
+
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(sgLightEditor) {
+   profile = "GuiModelessDialogProfile";
+   horizSizing = "right";
+   vertSizing = "bottom";
+   position = "0 0";
+   extent = "640 480";
+   minExtent = "8 2";
+   visible = "1";
+      constants_lightEditor_panel1 = "sgLightEditorColorPanel";
+      constants_panel1 = "sgLightEditorCinematicFilterEditorPanel";
+      constants_menuName1 = "Relight";
+      constants_lightEditor_panelCount = "4";
+      constants_panel0 = "sgLightEditorLightEditorPanel";
+      constants_lightEditor_panel0 = "sgLightEditorTypePanel";
+      constants_filterEditor_panel1 = "sgLightEditorCinematicFilterEditorFilterPanel";
+      constants_menuName0 = "File";
+      constants_menuName2 = "Editor";
+      constants_lightEditor_panel3 = "sgLightEditorAnimationPanel";
+      constants_filterEditor_panel0 = "sgLightEditorCinematicFilterEditorColorPanel";
+      constants_filterEditor_panelCount = "2";
+      constants_menuIdEditor = "2";
+      state = "0";
+      constants_lightEditor_panel2 = "sgLightEditorFlarePanel";
+      constants_menuIdFile = "0";
+      constants_menuIdRelight = "1";
+      activePanel = "sgLightEditorCinematicFilterEditorPanel";
+      constants_panelCount = "2";
+
+   new GuiWindowCtrl(sgLightEditorWindow) {
+      profile = "GuiWindowProfile";
+      horizSizing = "right";
+      vertSizing = "top";
+      position = "3 203";
+      extent = "173 275";
+      minExtent = "8 2";
+      visible = "1";
+      maxLength = "255";
+      resizeWidth = "0";
+      resizeHeight = "0";
+      canMove = "1";
+      canClose = "0";
+      canMinimize = "0";
+      canMaximize = "0";
+      MinSize = "50 50";
+
+      new GuiControl(sgLightEditorLightEditorPanel) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "0 48";
+         extent = "171 197";
+         minExtent = "8 2";
+         visible = "0";
+            sgDatablockField0 = "EffectsDTSObjects";
+            sgDatablockField19 = "NearDistance";
+            sgWindowField6 = "sgLightEditorLightOn";
+            sgWindowField17 = "sgLightEditorFlareSizeNear";
+            sgDatablockField3 = "Brightness";
+            sgDatablockField14 = "FlareOn";
+            sgWindowField16 = "sgLightEditorFlareFileName";
+            sgDatablockField5 = "StaticLight";
+            sgWindowField5 = "sgLightEditorStaticLight";
+            sgWindowField24 = "sgLightEditorAnimationIntensityOn";
+            sgWindowField14 = "sgLightEditorFlareOn";
+            sgWindowField12 = "sgLightEditorRadius";
+            sgDatablockField6 = "LightOn";
+            sgWindowField28 = "sgLightEditorAnimationIntensity2";
+            datablockType_name = "sgUniversalStaticLightData";
+            sgWindowField9 = "sgLightEditorRestrictZoneAmbient";
+            sgDatablockField2 = "SpotLight";
+            sgDatablockField4 = "LocalAmbientAmount";
+            sgDatablockField27 = "MinRadius";
+            sgDatablockField15 = "BlendMode";
+            sgDatablockField7 = "CastsShadows";
+            currentDBName = "testFilter";
+            sgWindowField18 = "sgLightEditorFlareSizeFar";
+            sgDatablockField24 = "AnimBrightness";
+            sgDatablockField16 = "FlareBitmap";
+            sgDatablockField18 = "FarSize";
+            datablockType_text = "Light Editor";
+            sgWindowField29 = "sgLightEditorAnimationColor2Time";
+            datablockType_path = "starter.fps/server/scripts/sgLights/";
+            sgDatablockField29 = "ColourTime";
+            sgWindowField7 = "sgLightEditorShadows";
+            sgWindowField27 = "sgLightEditorAnimationRadius2";
+            sgDatablockField23 = "AnimColour";
+            sgDatablockField10 = "SmoothSpotLight";
+            sgDatablockField1 = "SpotAngle";
+            sgDatablockField11 = "DoubleSidedAmbient";
+            sgWindowField13 = "sgLightEditorFlareConstantSize";
+            datablockType_list = "sgLightDBList";
+            sgWindowField4 = "sgLightEditorAmbient";
+            sgDatablockField12 = "Radius";
+            sgWindowField21 = "sgLightEditorFlareFadeTime";
+            sgWindowField1 = "sgLightEditorSpotAngle";
+            sgWindowField11 = "sgLightEditorTwoSidedAmbient";
+            sgWindowField23 = "sgLightEditorAnimationColorOn";
+            sgWindowField26 = "sgLightEditorAnimationRadius2Time";
+            sgDatablockField9 = "AmbientRestrictZone";
+            sgDatablockField21 = "FadeTime";
+            sgDatablockField20 = "FarDistance";
+            sgDatablockField28 = "MinBrightness";
+            sgWindowField22 = "sgLightEditorAnimationRadiusOn";
+            sgWindowField8 = "sgLightEditorRestrictZoneDiffuse";
+            sgDatablockField13 = "ConstantSizeOn";
+            sgWindowField2 = "sgLightEditorSpotLight";
+            sgWindowField19 = "sgLightEditorFlareDistanceNear";
+            currentDB = "130";
+            sgDatablockField22 = "AnimRadius";
+            sgDatablockField17 = "NearSize";
+            sgWindowField15 = "sgLightEditorFlareBlendMode";
+            sgWindowField10 = "sgLightEditorSmoothing";
+            sgDatablockField25 = "BrightnessTime";
+            sgWindowField0 = "sgLightEditorEffectsDTSObjects";
+            sgWindowField20 = "sgLightEditorFlareDistanceFar";
+            sgDatablockField8 = "DiffuseRestrictZone";
+            sgDatablockField26 = "RadiusTime";
+            sgFieldCount = "30";
+            sgWindowField25 = "sgLightEditorAnimationIntensity2Time";
+            sgWindowField3 = "sgLightEditorIntensity";
+
+         new GuiPopUpMenuCtrl(sgLightDBList) {
+            profile = "sgGuiPopUpMenuProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "51 3";
+            extent = "115 16";
+            minExtent = "8 2";
+            visible = "1";
+            maxLength = "255";
+            maxPopupHeight = "200";
+         };
+         new GuiTextCtrl() {
+            profile = "sgGuiTextProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "6 3";
+            extent = "39 16";
+            minExtent = "8 2";
+            visible = "1";
+            text = "Light DB:";
+            maxLength = "255";
+         };
+         new GuiControl(sgLightEditorTypePanel) {
+            profile = "GuiWindowProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "6 42";
+            extent = "160 151";
+            minExtent = "8 2";
+            visible = "1";
+
+            new GuiCheckBoxCtrl(sgLightEditorLightOn) {
+               profile = "sgGuiCheckBoxProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "14 25";
+               extent = "66 22";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorLightEditorPanel.setDB();";
+               text = "Enabled";
+               groupNum = "-1";
+               buttonType = "ToggleButton";
+            };
+            new GuiCheckBoxCtrl(sgLightEditorStaticLight) {
+               profile = "sgGuiCheckBoxProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "89 25";
+               extent = "56 22";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorLightEditorPanel.setDB();";
+               text = "Static";
+               groupNum = "-1";
+               buttonType = "ToggleButton";
+                  fieldDependency = "sgLightEditorLightOn";
+            };
+            new GuiCheckBoxCtrl(sgLightEditorShadows) {
+               profile = "sgGuiCheckBoxProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "89 40";
+               extent = "66 22";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorLightEditorPanel.setDB();";
+               text = "Shadows";
+               groupNum = "-1";
+               buttonType = "ToggleButton";
+                  fieldDependency = "sgLightEditorStaticLight";
+            };
+            new GuiCheckBoxCtrl(sgLightEditorRestrictZoneDiffuse) {
+               profile = "sgGuiCheckBoxProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "14 55";
+               extent = "126 22";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorLightEditorPanel.setDB();";
+               text = "Restrict Diffuse To Zone";
+               groupNum = "-1";
+               buttonType = "ToggleButton";
+                  fieldDependency = "sgLightEditorStaticLight";
+            };
+            new GuiCheckBoxCtrl(sgLightEditorTwoSidedAmbient) {
+               profile = "sgGuiCheckBoxProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "14 85";
+               extent = "127 22";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorLightEditorPanel.setDB();";
+               text = "Two Sided Ambient";
+               groupNum = "-1";
+               buttonType = "ToggleButton";
+                  fieldDependency = "sgLightEditorStaticLight";
+            };
+            new GuiPopUpMenuCtrl(sgLightingModelList) {
+               profile = "sgGuiPopUpMenuProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "72 7";
+               extent = "80 16";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorLightEditorPanel.setDB();";
+               maxLength = "255";
+               maxPopupHeight = "200";
+            };
+            new GuiTextCtrl() {
+               profile = "sgGuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "7 7";
+               extent = "62 16";
+               minExtent = "8 2";
+               visible = "1";
+               text = "Lighting Model:";
+               maxLength = "255";
+            };
+            new GuiCheckBoxCtrl(sgLightEditorRestrictZoneAmbient) {
+               profile = "sgGuiCheckBoxProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "14 70";
+               extent = "127 22";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorLightEditorPanel.setDB();";
+               text = "Restrict Ambient To Zone";
+               groupNum = "-1";
+               buttonType = "ToggleButton";
+                  fieldDependency = "sgLightEditorStaticLight";
+            };
+            new GuiCheckBoxCtrl(sgLightEditorEffectsDTSObjects) {
+               profile = "sgGuiCheckBoxProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "14 40";
+               extent = "69 22";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorLightEditorPanel.setDB();";
+               text = "DTS Objects";
+               groupNum = "-1";
+               buttonType = "ToggleButton";
+                  fieldDependency = "sgLightEditorStaticLight";
+            };
+            new GuiCheckBoxCtrl(sgLightEditorSpotLight) {
+               profile = "sgGuiCheckBoxProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "14 100";
+               extent = "62 22";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorLightEditorPanel.setDB();";
+               text = "Spotlight";
+               groupNum = "-1";
+               buttonType = "ToggleButton";
+                  fieldDependency = "sgLightEditorStaticLight";
+            };
+            new GuiCheckBoxCtrl(sgLightEditorSmoothing) {
+               profile = "sgGuiCheckBoxProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "89 100";
+               extent = "62 22";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorLightEditorPanel.setDB();";
+               text = "Smoothing";
+               groupNum = "-1";
+               buttonType = "ToggleButton";
+                  fieldDependency = "sgLightEditorSpotLight";
+            };
+            new GuiTextEditCtrl(sgLightEditorRadius) {
+               profile = "sgGuiTextEditProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "70 126";
+               extent = "82 16";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorLightEditorPanel.setDB();";
+               maxLength = "255";
+               historySize = "0";
+               password = "0";
+               tabComplete = "0";
+               sinkAllKeyEvents = "0";
+                  fieldDependency = "sgLightEditorLightOn";
+            };
+            new GuiTextCtrl() {
+               profile = "sgGuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "7 126";
+               extent = "32 16";
+               minExtent = "8 2";
+               visible = "1";
+               text = "Radius:";
+               maxLength = "255";
+            };
+         };
+         new GuiControl(sgLightEditorColorPanel) {
+            profile = "GuiWindowProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "6 42";
+            extent = "160 151";
+            minExtent = "8 2";
+            visible = "0";
+
+            new GuiTextCtrl() {
+               profile = "sgGuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "7 7";
+               extent = "25 16";
+               minExtent = "8 2";
+               visible = "1";
+               text = "Color:";
+               maxLength = "255";
+            };
+            new GuiSliderCtrl(sgLightEditorColorRed) {
+               profile = "sgGuiSliderProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "55 5";
+               extent = "97 21";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorLightEditorPanel.setDB();";
+               range = "0.000000 1.000000";
+               ticks = "10";
+               value = "0";
+            };
+            new GuiSliderCtrl(sgLightEditorColorGreen) {
+               profile = "sgGuiSliderProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "55 26";
+               extent = "97 21";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorLightEditorPanel.setDB();";
+               range = "0.000000 1.000000";
+               ticks = "10";
+               value = "0";
+            };
+            new GuiSliderCtrl(sgLightEditorColorBlue) {
+               profile = "sgGuiSliderProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "55 47";
+               extent = "97 21";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorLightEditorPanel.setDB();";
+               range = "0.000000 1.000000";
+               ticks = "10";
+               value = "0";
+            };
+            new GuiTextCtrl() {
+               profile = "sgGuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "7 74";
+               extent = "40 16";
+               minExtent = "8 2";
+               visible = "1";
+               text = "Intensity:";
+               maxLength = "255";
+            };
+            new GuiSliderCtrl(sgLightEditorIntensity) {
+               profile = "sgGuiSliderProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "55 72";
+               extent = "97 21";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorLightEditorPanel.setDB();";
+               range = "0.000000 1.000000";
+               ticks = "10";
+               value = "0";
+                  fieldDependency = "sgLightEditorLightOn";
+            };
+            new GuiTextCtrl() {
+               profile = "sgGuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "7 100";
+               extent = "37 16";
+               minExtent = "8 2";
+               visible = "1";
+               text = "Ambient:";
+               maxLength = "255";
+            };
+            new GuiSliderCtrl(sgLightEditorAmbient) {
+               profile = "sgGuiSliderProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "55 98";
+               extent = "97 21";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorLightEditorPanel.setDB();";
+               range = "0.000000 1.000000";
+               ticks = "10";
+               value = "0";
+                  fieldDependency = "sgLightEditorStaticLight";
+            };
+            new GuiTextCtrl() {
+               profile = "sgGuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "7 126";
+               extent = "26 16";
+               minExtent = "8 2";
+               visible = "1";
+               text = "Angle:";
+               maxLength = "255";
+            };
+            new GuiSliderCtrl(sgLightEditorSpotAngle) {
+               profile = "sgGuiSliderProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "55 124";
+               extent = "97 21";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorLightEditorPanel.setDB();";
+               range = "1.000000 179.000000";
+               ticks = "10";
+               value = "1";
+                  fieldDependency = "sgLightEditorSpotLight";
+            };
+         };
+         new GuiButtonCtrl(sgLightEditorTypeButton) {
+            profile = "sgGuiButtonProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "6 27";
+            extent = "38 16";
+            minExtent = "8 2";
+            visible = "1";
+            command = "sgLightEditor.setLightEditorPanel(sgLightEditorTypePanel);";
+            text = "Type";
+            groupNum = "-1";
+            buttonType = "RadioButton";
+               helpTag = "0";
+         };
+         new GuiButtonCtrl() {
+            profile = "sgGuiButtonProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "43 27";
+            extent = "38 16";
+            minExtent = "8 2";
+            visible = "1";
+            command = "sgLightEditor.setLightEditorPanel(sgLightEditorColorPanel);";
+            text = "Color";
+            groupNum = "-1";
+            buttonType = "RadioButton";
+               helpTag = "0";
+         };
+         new GuiButtonCtrl() {
+            profile = "sgGuiButtonProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "80 27";
+            extent = "38 16";
+            minExtent = "8 2";
+            visible = "1";
+            command = "sgLightEditor.setLightEditorPanel(sgLightEditorFlarePanel);";
+            text = "Flare";
+            groupNum = "-1";
+            buttonType = "RadioButton";
+               helpTag = "0";
+         };
+         new GuiButtonCtrl() {
+            profile = "sgGuiButtonProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "117 27";
+            extent = "48 16";
+            minExtent = "8 2";
+            visible = "1";
+            command = "sgLightEditor.setLightEditorPanel(sgLightEditorAnimationPanel);";
+            text = "Animation";
+            groupNum = "-1";
+            buttonType = "RadioButton";
+               helpTag = "0";
+         };
+         new GuiControl(sgLightEditorFlarePanel) {
+            profile = "GuiWindowProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "6 42";
+            extent = "160 151";
+            minExtent = "8 2";
+            visible = "0";
+
+            new GuiCheckBoxCtrl(sgLightEditorFlareConstantSize) {
+               profile = "sgGuiCheckBoxProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "14 35";
+               extent = "77 22";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorLightEditorPanel.setDB();";
+               text = "Constant Size";
+               groupNum = "-1";
+               buttonType = "ToggleButton";
+                  fieldDependency = "sgLightEditorFlareOn";
+            };
+            new GuiCheckBoxCtrl(sgLightEditorFlareOn) {
+               profile = "sgGuiCheckBoxProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "14 5";
+               extent = "66 22";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorLightEditorPanel.setDB();";
+               text = "Enabled";
+               groupNum = "-1";
+               buttonType = "ToggleButton";
+                  fieldDependency = "sgLightEditorLightOn";
+            };
+            new GuiCheckBoxCtrl(sgLightEditorFlareBlendMode) {
+               profile = "sgGuiCheckBoxProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "14 20";
+               extent = "65 22";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorLightEditorPanel.setDB();";
+               text = "Blend Mode";
+               groupNum = "-1";
+               buttonType = "ToggleButton";
+                  fieldDependency = "sgLightEditorFlareOn";
+            };
+            new GuiTextEditCtrl(sgLightEditorFlareFileName) {
+               profile = "sgGuiTextEditProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "30 61";
+               extent = "122 16";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorLightEditorPanel.setDB();";
+               maxLength = "255";
+               historySize = "0";
+               password = "0";
+               tabComplete = "0";
+               sinkAllKeyEvents = "0";
+                  fieldDependency = "sgLightEditorFlareOn";
+            };
+            new GuiTextCtrl() {
+               profile = "sgGuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "7 61";
+               extent = "18 16";
+               minExtent = "8 2";
+               visible = "1";
+               text = "File:";
+               maxLength = "255";
+            };
+            new GuiTextEditCtrl(sgLightEditorFlareSizeNear) {
+               profile = "sgGuiTextEditProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "55 83";
+               extent = "33 16";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorLightEditorPanel.setDB();";
+               maxLength = "255";
+               historySize = "0";
+               password = "0";
+               tabComplete = "0";
+               sinkAllKeyEvents = "0";
+                  fieldDependency = "sgLightEditorFlareOn";
+            };
+            new GuiTextCtrl() {
+               profile = "sgGuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "7 83";
+               extent = "43 16";
+               minExtent = "8 2";
+               visible = "1";
+               text = "Size Near:";
+               maxLength = "255";
+            };
+            new GuiTextEditCtrl(sgLightEditorFlareSizeFar) {
+               profile = "sgGuiTextEditProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "119 83";
+               extent = "33 16";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorLightEditorPanel.setDB();";
+               maxLength = "255";
+               historySize = "0";
+               password = "0";
+               tabComplete = "0";
+               sinkAllKeyEvents = "0";
+                  fieldDependency = "sgLightEditorFlareOn";
+            };
+            new GuiTextCtrl() {
+               profile = "sgGuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "96 83";
+               extent = "17 16";
+               minExtent = "8 2";
+               visible = "1";
+               text = "Far:";
+               maxLength = "255";
+            };
+            new GuiTextEditCtrl(sgLightEditorFlareDistanceNear) {
+               profile = "sgGuiTextEditProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "55 105";
+               extent = "33 16";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorLightEditorPanel.setDB();";
+               maxLength = "255";
+               historySize = "0";
+               password = "0";
+               tabComplete = "0";
+               sinkAllKeyEvents = "0";
+                  fieldDependency = "sgLightEditorFlareOn";
+            };
+            new GuiTextCtrl() {
+               profile = "sgGuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "7 105";
+               extent = "43 16";
+               minExtent = "8 2";
+               visible = "1";
+               text = "Dist Near:";
+               maxLength = "255";
+            };
+            new GuiTextEditCtrl(sgLightEditorFlareDistanceFar) {
+               profile = "sgGuiTextEditProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "119 105";
+               extent = "33 16";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorLightEditorPanel.setDB();";
+               maxLength = "255";
+               historySize = "0";
+               password = "0";
+               tabComplete = "0";
+               sinkAllKeyEvents = "0";
+                  fieldDependency = "sgLightEditorFlareOn";
+            };
+            new GuiTextCtrl() {
+               profile = "sgGuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "96 105";
+               extent = "17 16";
+               minExtent = "8 2";
+               visible = "1";
+               text = "Far:";
+               maxLength = "255";
+            };
+            new GuiTextEditCtrl(sgLightEditorFlareFadeTime) {
+               profile = "sgGuiTextEditProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "60 127";
+               extent = "92 16";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorLightEditorPanel.setDB();";
+               maxLength = "255";
+               historySize = "0";
+               password = "0";
+               tabComplete = "0";
+               sinkAllKeyEvents = "0";
+                  fieldDependency = "sgLightEditorFlareOn";
+            };
+            new GuiTextCtrl() {
+               profile = "sgGuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "7 127";
+               extent = "47 16";
+               minExtent = "8 2";
+               visible = "1";
+               text = "Fade Time:";
+               maxLength = "255";
+            };
+         };
+         new GuiControl(sgLightEditorAnimationPanel) {
+            profile = "GuiWindowProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "6 42";
+            extent = "160 151";
+            minExtent = "8 2";
+            visible = "0";
+
+            new GuiCheckBoxCtrl(sgLightEditorAnimationRadiusOn) {
+               profile = "sgGuiCheckBoxProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "107 5";
+               extent = "48 22";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorLightEditorPanel.setDB();";
+               text = "Radius";
+               groupNum = "-1";
+               buttonType = "ToggleButton";
+                  fieldDependency = "sgLightEditorLightOn";
+            };
+            new GuiCheckBoxCtrl(sgLightEditorAnimationColorOn) {
+               profile = "sgGuiCheckBoxProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "7 5";
+               extent = "41 22";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorLightEditorPanel.setDB();";
+               text = "Color";
+               groupNum = "-1";
+               buttonType = "ToggleButton";
+                  fieldDependency = "sgLightEditorLightOn";
+            };
+            new GuiCheckBoxCtrl(sgLightEditorAnimationIntensityOn) {
+               profile = "sgGuiCheckBoxProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "50 5";
+               extent = "55 22";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorLightEditorPanel.setDB();";
+               text = "Intensity";
+               groupNum = "-1";
+               buttonType = "ToggleButton";
+                  fieldDependency = "sgLightEditorLightOn";
+            };
+            new GuiTextEditCtrl(sgLightEditorAnimationIntensity2Time) {
+               profile = "sgGuiTextEditProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "118 127";
+               extent = "34 16";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorLightEditorPanel.setDB();";
+               maxLength = "255";
+               historySize = "0";
+               password = "0";
+               tabComplete = "0";
+               sinkAllKeyEvents = "0";
+                  fieldDependency = "sgLightEditorAnimationIntensityOn";
+            };
+            new GuiTextCtrl() {
+               profile = "sgGuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "89 127";
+               extent = "23 16";
+               minExtent = "8 2";
+               visible = "1";
+               text = "Time:";
+               maxLength = "255";
+            };
+            new GuiTextEditCtrl(sgLightEditorAnimationRadius2Time) {
+               profile = "sgGuiTextEditProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "118 107";
+               extent = "34 16";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorLightEditorPanel.setDB();";
+               maxLength = "255";
+               historySize = "0";
+               password = "0";
+               tabComplete = "0";
+               sinkAllKeyEvents = "0";
+                  fieldDependency = "sgLightEditorAnimationRadiusOn";
+            };
+            new GuiTextCtrl() {
+               profile = "sgGuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "89 107";
+               extent = "23 16";
+               minExtent = "8 2";
+               visible = "1";
+               text = "Time:";
+               maxLength = "255";
+            };
+            new GuiTextEditCtrl(sgLightEditorAnimationRadius2) {
+               profile = "sgGuiTextEditProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "49 107";
+               extent = "34 16";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorLightEditorPanel.setDB();";
+               maxLength = "255";
+               historySize = "0";
+               password = "0";
+               tabComplete = "0";
+               sinkAllKeyEvents = "0";
+                  fieldDependency = "sgLightEditorAnimationRadiusOn";
+            };
+            new GuiTextCtrl() {
+               profile = "sgGuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "7 107";
+               extent = "37 16";
+               minExtent = "8 2";
+               visible = "1";
+               text = "Radius2:";
+               maxLength = "255";
+            };
+            new GuiTextEditCtrl(sgLightEditorAnimationIntensity2) {
+               profile = "sgGuiTextEditProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "57 127";
+               extent = "26 16";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorLightEditorPanel.setDB();";
+               maxLength = "255";
+               historySize = "0";
+               password = "0";
+               tabComplete = "0";
+               sinkAllKeyEvents = "0";
+                  fieldDependency = "sgLightEditorAnimationIntensityOn";
+            };
+            new GuiTextCtrl() {
+               profile = "sgGuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "7 127";
+               extent = "45 16";
+               minExtent = "8 2";
+               visible = "1";
+               text = "Intensity2:";
+               maxLength = "255";
+            };
+            new GuiTextCtrl() {
+               profile = "sgGuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "7 28";
+               extent = "30 16";
+               minExtent = "8 2";
+               visible = "1";
+               text = "Color2:";
+               maxLength = "255";
+            };
+            new GuiSliderCtrl(sgLightEditorAnimationColor2Red) {
+               profile = "sgGuiSliderProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "55 26";
+               extent = "97 21";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorLightEditorPanel.setDB();";
+               range = "0.000000 1.000000";
+               ticks = "10";
+               value = "0";
+            };
+            new GuiSliderCtrl(sgLightEditorAnimationColor2Green) {
+               profile = "sgGuiSliderProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "55 46";
+               extent = "97 21";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorLightEditorPanel.setDB();";
+               range = "0.000000 1.000000";
+               ticks = "10";
+               value = "0";
+            };
+            new GuiSliderCtrl(sgLightEditorAnimationColor2Blue) {
+               profile = "sgGuiSliderProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "55 66";
+               extent = "97 21";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorLightEditorPanel.setDB();";
+               range = "0.000000 1.000000";
+               ticks = "10";
+               value = "0";
+            };
+            new GuiTextEditCtrl(sgLightEditorAnimationColor2Time) {
+               profile = "sgGuiTextEditProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "118 87";
+               extent = "34 16";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorLightEditorPanel.setDB();";
+               maxLength = "255";
+               historySize = "0";
+               password = "0";
+               tabComplete = "0";
+               sinkAllKeyEvents = "0";
+                  fieldDependency = "sgLightEditorAnimationColorOn";
+            };
+            new GuiTextCtrl() {
+               profile = "sgGuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "89 87";
+               extent = "23 16";
+               minExtent = "8 2";
+               visible = "1";
+               text = "Time:";
+               maxLength = "255";
+            };
+         };
+      };
+      new GuiButtonCtrl() {
+         profile = "sgGuiButtonProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "44 382";
+         extent = "40 16";
+         minExtent = "8 2";
+         visible = "0";
+         command = "sgLightEditor::newDB(true);";
+         text = "Clone";
+         groupNum = "-1";
+         buttonType = "PushButton";
+      };
+      new GuiTextCtrl() {
+         profile = "sgGuiTextProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "13 249";
+         extent = "56 16";
+         minExtent = "8 2";
+         visible = "1";
+         text = "Filter Radius:";
+         maxLength = "255";
+      };
+      new GuiButtonCtrl() {
+         profile = "sgGuiButtonProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "124 382";
+         extent = "40 16";
+         minExtent = "8 2";
+         visible = "0";
+         command = "sgLightEditor::restoreDB();";
+         text = "Restore";
+         groupNum = "-1";
+         buttonType = "PushButton";
+      };
+      new GuiButtonCtrl() {
+         profile = "sgGuiButtonProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "7 427";
+         extent = "153 16";
+         minExtent = "8 2";
+         visible = "0";
+         command = "sgLightEditor::filteredRelight();";
+         text = "Filtered Relight";
+         groupNum = "-1";
+         buttonType = "PushButton";
+      };
+      new GuiButtonCtrl() {
+         profile = "sgGuiButtonProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "84 382";
+         extent = "40 16";
+         minExtent = "8 2";
+         visible = "0";
+         command = "sgLightEditor::saveDB();";
+         text = "Save";
+         groupNum = "-1";
+         buttonType = "PushButton";
+      };
+      new GuiButtonCtrl() {
+         profile = "sgGuiButtonProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "4 382";
+         extent = "40 16";
+         minExtent = "8 2";
+         visible = "0";
+         command = "sgLightEditor::newDB(false);";
+         text = "New";
+         groupNum = "-1";
+         buttonType = "PushButton";
+      };
+      new GuiMenuBar(sgLightEditorMenuBar) {
+         profile = "sgGuiMenuBarProfile";
+         horizSizing = "width";
+         vertSizing = "bottom";
+         position = "2 24";
+         extent = "168 18";
+         minExtent = "8 2";
+         visible = "1";
+            scriptCommandEditor_1 = "sgLightEditor.setPanel(sgLightEditorLightEditorPanel);";
+            scriptCommandFile_4 = "sgLightEditor.restoreDB();";
+            scriptCommandRelight_1 = "sgLightEditor.filteredRelight();";
+            scriptCommandFile_3 = "sgLightEditor.saveDB();";
+            scriptCommandFile_2 = "sgLightEditor.newDB(true);";
+            scriptCommandRelight_3 = "sgLightEditor.resetLightAnimations();";
+            scriptCommandEditor_2 = "sgLightEditor.setPanel(sgLightEditorCinematicFilterEditorPanel);";
+            scriptCommandFile_1 = "sgLightEditor.newDB(false);";
+            scriptCommandRelight_2 = "lightScene(\"filteredRelightComplete\", forceAlways);";
+      };
+      new GuiTextEditCtrl(sgLightEditorFilterRadius) {
+         profile = "sgGuiTextEditProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "76 249";
+         extent = "82 16";
+         minExtent = "8 2";
+         visible = "1";
+         variable = "$SceneLighting::sgFilterRelightByDistanceRadius";
+         maxLength = "255";
+         historySize = "0";
+         password = "0";
+         tabComplete = "0";
+         sinkAllKeyEvents = "0";
+      };
+      new GuiControl(sgLightEditorCinematicFilterEditorPanel) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "0 48";
+         extent = "171 197";
+         minExtent = "8 2";
+         visible = "1";
+            sgDatablockField0 = "LightingIntensity";
+            sgDatablockField3 = "CinematicFilterReferenceIntensity";
+            datablockType_name = "sgMissionLightingFilterData";
+            sgDatablockField2 = "CinematicFilterAmount";
+            currentDBName = "testFilter";
+            datablockType_text = "Filter Editor";
+            datablockType_path = "starter.fps/server/scripts/sgFilters/";
+            sgDatablockField1 = "CinematicFilter";
+            datablockType_list = "sgFilterDBList";
+            sgWindowField1 = "sgLightEditorCinematicFilterEditorFilterOn";
+            sgWindowField2 = "sgLightEditorCinematicFilterEditorFilterAmount";
+            currentDB = "130";
+            sgWindowField0 = "sgLightEditorCinematicFilterEditorIntensity";
+            sgFieldCount = "4";
+            sgWindowField3 = "sgLightEditorCinematicFilterEditorFilterIntensity";
+
+         new GuiPopUpMenuCtrl(sgFilterDBList) {
+            profile = "sgGuiPopUpMenuProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "51 3";
+            extent = "115 16";
+            minExtent = "8 2";
+            visible = "1";
+            maxLength = "255";
+            maxPopupHeight = "200";
+         };
+         new GuiTextCtrl() {
+            profile = "sgGuiTextProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "6 3";
+            extent = "40 16";
+            minExtent = "8 2";
+            visible = "1";
+            text = "Filter DB:";
+            maxLength = "255";
+         };
+         new GuiControl(sgLightEditorCinematicFilterEditorColorPanel) {
+            profile = "GuiWindowProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "6 42";
+            extent = "160 151";
+            minExtent = "8 2";
+            visible = "1";
+
+            new GuiTextCtrl() {
+               profile = "sgGuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "7 7";
+               extent = "25 16";
+               minExtent = "8 2";
+               visible = "1";
+               text = "Color:";
+               maxLength = "255";
+            };
+            new GuiSliderCtrl(sgLightEditorCinematicFilterEditorColorRed) {
+               profile = "sgGuiSliderProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "55 5";
+               extent = "97 21";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorCinematicFilterEditorPanel.setDB();";
+               range = "0.000000 1.000000";
+               ticks = "10";
+               value = "1";
+            };
+            new GuiSliderCtrl(sgLightEditorCinematicFilterEditorColorGreen) {
+               profile = "sgGuiSliderProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "55 26";
+               extent = "97 21";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorCinematicFilterEditorPanel.setDB();";
+               range = "0.000000 1.000000";
+               ticks = "10";
+               value = "1";
+            };
+            new GuiSliderCtrl(sgLightEditorCinematicFilterEditorColorBlue) {
+               profile = "sgGuiSliderProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "55 47";
+               extent = "97 21";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorCinematicFilterEditorPanel.setDB();";
+               range = "0.000000 1.000000";
+               ticks = "10";
+               value = "1";
+            };
+            new GuiTextCtrl() {
+               profile = "sgGuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "7 74";
+               extent = "40 16";
+               minExtent = "8 2";
+               visible = "1";
+               text = "Intensity:";
+               maxLength = "255";
+            };
+            new GuiSliderCtrl(sgLightEditorCinematicFilterEditorIntensity) {
+               profile = "sgGuiSliderProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "55 72";
+               extent = "97 21";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorCinematicFilterEditorPanel.setDB();";
+               range = "0.000000 2.000000";
+               ticks = "10";
+               value = "0.425287";
+            };
+         };
+         new GuiButtonCtrl(sgLightEditorCinematicFilterEditorColorButton) {
+            profile = "sgGuiButtonProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "6 27";
+            extent = "38 16";
+            minExtent = "8 2";
+            visible = "1";
+            command = "sgLightEditor.setFilterEditorPanel(sgLightEditorCinematicFilterEditorColorPanel);";
+            text = "Color";
+            groupNum = "-1";
+            buttonType = "RadioButton";
+               helpTag = "0";
+         };
+         new GuiButtonCtrl() {
+            profile = "sgGuiButtonProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "43 27";
+            extent = "84 16";
+            minExtent = "8 2";
+            visible = "1";
+            command = "sgLightEditor.setFilterEditorPanel(sgLightEditorCinematicFilterEditorFilterPanel);";
+            text = "Cinematic Filter";
+            groupNum = "-1";
+            buttonType = "RadioButton";
+               helpTag = "0";
+         };
+         new GuiControl(sgLightEditorCinematicFilterEditorFilterPanel) {
+            profile = "GuiWindowProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "6 42";
+            extent = "160 151";
+            minExtent = "8 2";
+            visible = "0";
+
+            new GuiTextCtrl() {
+               profile = "sgGuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "7 28";
+               extent = "25 16";
+               minExtent = "8 2";
+               visible = "1";
+               text = "Color:";
+               maxLength = "255";
+            };
+            new GuiSliderCtrl(sgLightEditorCinematicFilterEditorFilterColorRed) {
+               profile = "sgGuiSliderProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "55 26";
+               extent = "97 21";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorCinematicFilterEditorPanel.setDB();";
+               range = "0.000000 1.000000";
+               ticks = "10";
+               value = "1";
+            };
+            new GuiSliderCtrl(sgLightEditorCinematicFilterEditorFilterColorGreen) {
+               profile = "sgGuiSliderProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "55 47";
+               extent = "97 21";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorCinematicFilterEditorPanel.setDB();";
+               range = "0.000000 1.000000";
+               ticks = "10";
+               value = "1";
+            };
+            new GuiSliderCtrl(sgLightEditorCinematicFilterEditorFilterColorBlue) {
+               profile = "sgGuiSliderProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "55 68";
+               extent = "97 21";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorCinematicFilterEditorPanel.setDB();";
+               range = "0.000000 1.000000";
+               ticks = "10";
+               value = "1";
+            };
+            new GuiTextCtrl() {
+               profile = "sgGuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "7 96";
+               extent = "40 16";
+               minExtent = "8 2";
+               visible = "1";
+               text = "Intensity:";
+               maxLength = "255";
+            };
+            new GuiSliderCtrl(sgLightEditorCinematicFilterEditorFilterIntensity) {
+               profile = "sgGuiSliderProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "55 94";
+               extent = "97 21";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorCinematicFilterEditorPanel.setDB();";
+               range = "0.000000 2.000000";
+               ticks = "10";
+               value = "1";
+                  fieldDependency = "sgLightEditorCinematicFilterEditorFilterOn";
+            };
+            new GuiTextCtrl() {
+               profile = "sgGuiTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "7 123";
+               extent = "35 16";
+               minExtent = "8 2";
+               visible = "1";
+               text = "Amount:";
+               maxLength = "255";
+            };
+            new GuiSliderCtrl(sgLightEditorCinematicFilterEditorFilterAmount) {
+               profile = "sgGuiSliderProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "55 121";
+               extent = "97 21";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorCinematicFilterEditorPanel.setDB();";
+               range = "0.000000 2.000000";
+               ticks = "10";
+               value = "1";
+                  fieldDependency = "sgLightEditorCinematicFilterEditorFilterOn";
+            };
+            new GuiCheckBoxCtrl(sgLightEditorCinematicFilterEditorFilterOn) {
+               profile = "sgGuiCheckBoxProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "7 5";
+               extent = "119 22";
+               minExtent = "8 2";
+               visible = "1";
+               command = "sgLightEditorCinematicFilterEditorPanel.setDB();";
+               text = "Enable Cinematic Filter";
+               groupNum = "-1";
+               buttonType = "ToggleButton";
+            };
+         };
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+
+sgLightEditor.activePanel = "";
+sgLightEditorLightEditorPanel.currentDBName = "";
+sgLightEditorCinematicFilterEditorPanel.currentDBName = "";
+
+function sgLightEditorMenuBar::onMenuItemSelect(%this, %menuId, %menu, %itemId, %item)
+{
+   if(%this.scriptCommand[%menu, %itemId] !$= "")
+      eval(%this.scriptCommand[%menu, %itemId]);
+   else
+      error("No script command defined for menu " @ %menu  @ " item " @ %item);
+}
+
+function sgLightEditor::setPanel(%this, %panel)
+{
+   for(%i=0; %i<%this.constants_panelCount; %i++)
+   {
+      %this.constants_panel[%i].visible = false;
+   }
+
+   %panel.visible = true;
+   %this.activePanel = %panel;
+   //%panel.setGui();
+   
+   //echo("trying to set the list item (should kick off the DB lookup)");
+   echo(%this.activePanel.datablockType_list);
+   echo(%this.activePanel.currentDBName);
+   echo(%this.activePanel.datablockType_list.findText(%this.activePanel.currentDBName));
+   %this.activePanel.datablockType_list.setSelected(%this.activePanel.datablockType_list.findText(%this.activePanel.currentDBName));
+   
+   //echo("what panel is this???");
+   //echo(%panel);
+   
+   sgLightEditorWindow.setText("Torque Lighting Kit " @ %this.activePanel.datablockType_text);
+}
+
+function sgLightEditor::setLightEditorPanel(%this, %panel)
+{
+   for(%i=0; %i<%this.constants_lightEditor_panelCount; %i++)
+   {
+      %this.constants_lightEditor_panel[%i].visible = false;
+   }
+
+   %panel.visible = true;
+}
+
+function sgLightEditor::setFilterEditorPanel(%this, %panel)
+{
+   for(%i=0; %i<%this.constants_filterEditor_panelCount; %i++)
+   {
+      %this.constants_filterEditor_panel[%i].visible = false;
+   }
+
+   %panel.visible = true;
+}
+
+function sgLightEditor::findDataBlocks(%this, %path, %list, %panel)
+{
+   %list.clear();
+
+   %file = findFirstFile(%path @ "*.cs");
+   %i = 0;
+  
+   while(%file !$= "")
+   {
+      %file = fileBase(%file);
+      %list.add(%file, %i);
+      %file = findNextFile(%path @ "*.cs");
+      %i++;
+   }
+
+   %list.sort();
+   
+   //if(%panel.currentDBName $= "")
+   //   %list.setSelected(0);
+   //else
+   //   %list.setSelected(%list.findText(%panel.currentDBName));
+}
+
+function sgLightEditor::findLightingModels(%this)
+{
+   sgLightingModelList.clear();
+   
+   %count = sgLightingModelCount();
+   //echo(%count);
+   for(%i=0; %i<%count; %i++)
+   {
+      sgLightingModelList.add(sgLightingModelName(%i), %i);
+   }
+}
+
+function sgLightEditor::resetLightAnimations(%this)
+{
+   %count = LightSet.getCount();
+   //echo(%count);
+   for(%i=0; %i<%count; %i++)
+   {
+      %light = LightSet.getObject(%i);
+      if(isObject(%light))
+         %light.reset();
+   }
+}
+
+function sgLightEditor::onWake(%this)
+{
+   sgLightEditorLightEditorPanel.datablockType_name = "sgLightObjectData";
+   sgLightEditorLightEditorPanel.datablockType_path = $sgLightEditor::lightDBPath;
+   sgLightEditorLightEditorPanel.datablockType_list = sgLightDBList;
+   sgLightEditorLightEditorPanel.datablockType_text = "Light Editor";
+   
+   sgLightEditorCinematicFilterEditorPanel.datablockType_name = "sgMissionLightingFilterData";
+   sgLightEditorCinematicFilterEditorPanel.datablockType_path = $sgLightEditor::filterDBPath;
+   sgLightEditorCinematicFilterEditorPanel.datablockType_list = sgFilterDBList;
+   sgLightEditorCinematicFilterEditorPanel.datablockType_text = "Filter Editor";
+   
+   %this.constants_panel[0] = sgLightEditorLightEditorPanel;
+   %this.constants_panel[1] = sgLightEditorCinematicFilterEditorPanel;
+   %this.constants_panelCount = 2;
+   
+   %this.constants_lightEditor_panel[0] = sgLightEditorTypePanel;
+   %this.constants_lightEditor_panel[1] = sgLightEditorColorPanel;
+   %this.constants_lightEditor_panel[2] = sgLightEditorFlarePanel;
+   %this.constants_lightEditor_panel[3] = sgLightEditorAnimationPanel;
+   %this.constants_lightEditor_panelCount = 4;
+   
+   %this.constants_filterEditor_panel[0] = sgLightEditorCinematicFilterEditorColorPanel;
+   %this.constants_filterEditor_panel[1] = sgLightEditorCinematicFilterEditorFilterPanel;
+   %this.constants_filterEditor_panelCount = 2;
+   
+   %this.constants_menuName[0] = "File";
+   %this.constants_menuName[1] = "Relight";
+   %this.constants_menuName[2] = "Editor";
+   %this.constants_menuName[3] = "Quality";
+   
+   %this.constants_menuId[%this.constants_menuName[0]] = 0;
+   %this.constants_menuId[%this.constants_menuName[1]] = 1;
+   %this.constants_menuId[%this.constants_menuName[2]] = 2;
+   %this.constants_menuId[%this.constants_menuName[3]] = 3;
+   
+   %this.constants_quality_menuItemId[0] = 100;
+   %this.constants_quality_menuItemId[1] = 101;
+   %this.constants_quality_menuItemId[2] = 102;
+   %this.constants_quality_menuItemId["shadows"] = 1000;
+   %this.constants_quality_menuItemId["drl"] = 1001;
+   %this.constants_quality_menuItemId["bloom"] = 1002;
+   %this.constants_quality_menuItemId["tonemapping"] = 1003;
+
+   sgClearFieldMapping(sgLightEditorLightEditorPanel);
+   sgAddFieldMapping(sgLightEditorLightEditorPanel, "sgLightEditorEffectsDTSObjects", "EffectsDTSObjects");
+   sgAddFieldMapping(sgLightEditorLightEditorPanel, "sgLightEditorSpotAngle", "SpotAngle");
+   sgAddFieldMapping(sgLightEditorLightEditorPanel, "sgLightEditorSpotLight", "SpotLight");
+   sgAddFieldMapping(sgLightEditorLightEditorPanel, "sgLightEditorIntensity", "Brightness");
+   sgAddFieldMapping(sgLightEditorLightEditorPanel, "sgLightEditorAmbient", "LocalAmbientAmount");
+   sgAddFieldMapping(sgLightEditorLightEditorPanel, "sgLightEditorStaticLight", "StaticLight");
+   sgAddFieldMapping(sgLightEditorLightEditorPanel, "sgLightEditorLightOn", "LightOn");
+   sgAddFieldMapping(sgLightEditorLightEditorPanel, "sgLightEditorShadows", "CastsShadows");
+   sgAddFieldMapping(sgLightEditorLightEditorPanel, "sgLightEditorRestrictZoneDiffuse", "DiffuseRestrictZone");
+   sgAddFieldMapping(sgLightEditorLightEditorPanel, "sgLightEditorRestrictZoneAmbient", "AmbientRestrictZone");
+   sgAddFieldMapping(sgLightEditorLightEditorPanel, "sgLightEditorSmoothing", "SmoothSpotLight");
+   sgAddFieldMapping(sgLightEditorLightEditorPanel, "sgLightEditorTwoSidedAmbient", "DoubleSidedAmbient");
+   sgAddFieldMapping(sgLightEditorLightEditorPanel, "sgLightEditorRadius", "Radius");
+
+   sgAddFieldMapping(sgLightEditorLightEditorPanel, "sgLightEditorFlareConstantSize", "ConstantSizeOn");
+   sgAddFieldMapping(sgLightEditorLightEditorPanel, "sgLightEditorFlareOn", "FlareOn");
+   sgAddFieldMapping(sgLightEditorLightEditorPanel, "sgLightEditorFlareBlendMode", "BlendMode");
+   sgAddFieldMapping(sgLightEditorLightEditorPanel, "sgLightEditorFlareFileName", "FlareBitmap");
+   sgAddFieldMapping(sgLightEditorLightEditorPanel, "sgLightEditorFlareSizeNear", "NearSize");
+   sgAddFieldMapping(sgLightEditorLightEditorPanel, "sgLightEditorFlareSizeFar", "FarSize");
+   sgAddFieldMapping(sgLightEditorLightEditorPanel, "sgLightEditorFlareDistanceNear", "NearDistance");
+   sgAddFieldMapping(sgLightEditorLightEditorPanel, "sgLightEditorFlareDistanceFar", "FarDistance");
+   sgAddFieldMapping(sgLightEditorLightEditorPanel, "sgLightEditorFlareFadeTime", "FadeTime");
+   sgAddFieldMapping(sgLightEditorLightEditorPanel, "sgLightEditorAnimationRadiusOn", "AnimRadius");
+   sgAddFieldMapping(sgLightEditorLightEditorPanel, "sgLightEditorAnimationColorOn", "AnimColour");
+   sgAddFieldMapping(sgLightEditorLightEditorPanel, "sgLightEditorAnimationIntensityOn", "AnimBrightness");
+   sgAddFieldMapping(sgLightEditorLightEditorPanel, "sgLightEditorAnimationIntensity2Time", "BrightnessTime");
+   sgAddFieldMapping(sgLightEditorLightEditorPanel, "sgLightEditorAnimationRadius2Time", "RadiusTime");
+   sgAddFieldMapping(sgLightEditorLightEditorPanel, "sgLightEditorAnimationRadius2", "MinRadius");
+   sgAddFieldMapping(sgLightEditorLightEditorPanel, "sgLightEditorAnimationIntensity2", "MinBrightness");
+   sgAddFieldMapping(sgLightEditorLightEditorPanel, "sgLightEditorAnimationColor2Time", "ColourTime");
+
+   sgLightEditorStaticLight.fieldDependency = sgLightEditorLightOn;
+   sgLightEditorRestrictZoneDiffuse.fieldDependency = sgLightEditorLightOn;
+   sgLightEditorIntensity.fieldDependency = sgLightEditorLightOn;
+   sgLightEditorRadius.fieldDependency = sgLightEditorLightOn;
+   sgLightEditorFlareOn.fieldDependency = sgLightEditorLightOn;
+   sgLightEditorAnimationRadiusOn.fieldDependency = sgLightEditorLightOn;
+   sgLightEditorAnimationColorOn.fieldDependency = sgLightEditorLightOn;
+   sgLightEditorAnimationIntensityOn.fieldDependency = sgLightEditorLightOn;
+   sgLightEditorTwoSidedAmbient.fieldDependency = sgLightEditorLightOn;
+   sgLightEditorShadows.fieldDependency = sgLightEditorLightOn;
+   sgLightEditorSpotLight.fieldDependency = sgLightEditorLightOn;
+
+   sgLightEditorRestrictZoneAmbient.fieldDependency = sgLightEditorStaticLight;
+   sgLightEditorEffectsDTSObjects.fieldDependency = sgLightEditorStaticLight;
+   sgLightEditorAmbient.fieldDependency = sgLightEditorStaticLight;
+
+   sgLightEditorSmoothing.fieldDependency = sgLightEditorSpotLight;
+   sgLightEditorSpotAngle.fieldDependency = sgLightEditorSpotLight;
+
+   sgLightEditorFlareConstantSize.fieldDependency = sgLightEditorFlareOn;
+   sgLightEditorFlareBlendMode.fieldDependency = sgLightEditorFlareOn;
+   sgLightEditorFlareFileName.fieldDependency = sgLightEditorFlareOn;
+   sgLightEditorFlareSizeNear.fieldDependency = sgLightEditorFlareOn;
+   sgLightEditorFlareSizeFar.fieldDependency = sgLightEditorFlareOn;
+   sgLightEditorFlareDistanceNear.fieldDependency = sgLightEditorFlareOn;
+   sgLightEditorFlareDistanceFar.fieldDependency = sgLightEditorFlareOn;
+   sgLightEditorFlareFadeTime.fieldDependency = sgLightEditorFlareOn;
+
+   sgLightEditorAnimationRadius2.fieldDependency = sgLightEditorAnimationRadiusOn;
+   sgLightEditorAnimationRadius2Time.fieldDependency = sgLightEditorAnimationRadiusOn;
+
+   sgLightEditorAnimationIntensity2.fieldDependency = sgLightEditorAnimationIntensityOn;
+   sgLightEditorAnimationIntensity2Time.fieldDependency = sgLightEditorAnimationIntensityOn;
+
+   sgLightEditorAnimationColor2Time.fieldDependency = sgLightEditorAnimationColorOn;
+   
+   sgClearFieldMapping(sgLightEditorCinematicFilterEditorPanel);
+   sgAddFieldMapping(sgLightEditorCinematicFilterEditorPanel, "sgLightEditorCinematicFilterEditorIntensity", "LightingIntensity");
+   sgAddFieldMapping(sgLightEditorCinematicFilterEditorPanel, "sgLightEditorCinematicFilterEditorFilterOn", "CinematicFilter");
+   sgAddFieldMapping(sgLightEditorCinematicFilterEditorPanel, "sgLightEditorCinematicFilterEditorFilterAmount", "CinematicFilterAmount");
+   sgAddFieldMapping(sgLightEditorCinematicFilterEditorPanel, "sgLightEditorCinematicFilterEditorFilterIntensity", "CinematicFilterReferenceIntensity");
+   
+   sgLightEditorCinematicFilterEditorFilterAmount.fieldDependency = sgLightEditorCinematicFilterEditorFilterOn;
+   sgLightEditorCinematicFilterEditorFilterIntensity.fieldDependency = sgLightEditorCinematicFilterEditorFilterOn;
+
+   sgLightEditorMenuBar.clearMenus();
+   
+   %menuname = %this.constants_menuName[0];
+   %menuid = %this.constants_menuId[%menuname];
+
+   sgLightEditorMenuBar.addMenu(%menuname, %menuid);
+   %i = 1;
+   sgLightEditorMenuBar.addMenuItem(%menuname, "New...", %i);
+   sgLightEditorMenuBar.scriptCommand[%menuname, %i] = "sgLightEditor.newDB(false);";
+   %i = %i + 1;
+   sgLightEditorMenuBar.addMenuItem(%menuname, "Clone...", %i);
+   sgLightEditorMenuBar.scriptCommand[%menuname, %i] = "sgLightEditor.newDB(true);";
+   sgLightEditorMenuBar.addMenuItem(%menuname, "-", 0);
+   %i = %i + 1;
+   sgLightEditorMenuBar.addMenuItem(%menuname, "Save", %i);
+   sgLightEditorMenuBar.scriptCommand[%menuname, %i] = "sgLightEditor.saveDB();";
+   %i = %i + 1;
+   sgLightEditorMenuBar.addMenuItem(%menuname, "Restore", %i);
+   sgLightEditorMenuBar.scriptCommand[%menuname, %i] = "sgLightEditor.restoreDB();";
+   sgLightEditorMenuBar.addMenuItem(%menuname, "-", 0);
+   %i = %i + 1;
+   sgLightEditorMenuBar.addMenuItem(%menuname, "Close", %i, "F12");
+   sgLightEditorMenuBar.scriptCommand[%menuname, %i] = "sgLightEditor.toggle();";
+   
+   %menuname = %this.constants_menuName[2];
+   %menuid = %this.constants_menuId[%menuname];
+
+   sgLightEditorMenuBar.addMenu(%menuname, %menuid);
+   %i = 1;
+   sgLightEditorMenuBar.addMenuItem(%menuname, "Light Editor", %i);
+   sgLightEditorMenuBar.scriptCommand[%menuname, %i] = "sgLightEditor.setPanel(sgLightEditorLightEditorPanel);";
+   %i = %i + 1;
+   sgLightEditorMenuBar.addMenuItem(%menuname, "Cinematic Filter Editor", %i);
+   sgLightEditorMenuBar.scriptCommand[%menuname, %i] = "sgLightEditor.setPanel(sgLightEditorCinematicFilterEditorPanel);";
+
+   %menuname = %this.constants_menuName[3];
+   %menuid = %this.constants_menuId[%menuname];
+
+   sgLightEditorMenuBar.addMenu(%menuname, %menuid);
+   %i = %this.constants_quality_menuItemId[0];
+   sgLightEditorMenuBar.addMenuItem(%menuname, "Production", %i, "", 1);
+   sgLightEditorMenuBar.scriptCommand[%menuname, %i] = "sgLightEditor.setQuality(0);";
+   %i = %this.constants_quality_menuItemId[1];
+   sgLightEditorMenuBar.addMenuItem(%menuname, "Design", %i, "", 1);
+   sgLightEditorMenuBar.scriptCommand[%menuname, %i] = "sgLightEditor.setQuality(1);";
+   %i = %this.constants_quality_menuItemId[2];
+   sgLightEditorMenuBar.addMenuItem(%menuname, "Draft", %i, "", 1);
+   sgLightEditorMenuBar.scriptCommand[%menuname, %i] = "sgLightEditor.setQuality(2);";
+   sgLightEditorMenuBar.addMenuItem(%menuname, "-", 0);
+   %i = %this.constants_quality_menuItemId["shadows"];
+   sgLightEditorMenuBar.addMenuItem(%menuname, "Shadows", %i, "", 2);
+   sgLightEditorMenuBar.scriptCommand[%menuname, %i] = "sgLightEditor.setShadows(!$pref::LightManager::sgLightingProfileAllowShadows);";
+   
+   //sgLightEditorMenuBar.addMenuItem(%menuname, "-", 0);
+   //%i = %this.constants_quality_menuItemId["drl"];
+   //sgLightEditorMenuBar.addMenuItem(%menuname, "Dynamic Range Lighting", %i, "", 3);
+   //sgLightEditorMenuBar.scriptCommand[%menuname, %i] = "sgLightEditor.setDRL(!$pref::LightManager::sgUseDynamicRangeLighting);";
+   //%i = %this.constants_quality_menuItemId["bloom"];
+   //sgLightEditorMenuBar.addMenuItem(%menuname, "Bloom", %i, "", 4);
+   //sgLightEditorMenuBar.scriptCommand[%menuname, %i] = "sgLightEditor.setBloom(!$pref::LightManager::sgUseBloom);";
+   //%i = %this.constants_quality_menuItemId["tonemapping"];
+   //sgLightEditorMenuBar.addMenuItem(%menuname, "Full Screen Cinematic Filtering", %i, "", 5);
+   //sgLightEditorMenuBar.scriptCommand[%menuname, %i] = "sgLightEditor.setToneMapping(!$pref::LightManager::sgUseToneMapping);";
+
+   %menuname = %this.constants_menuName[1];
+   %menuid = %this.constants_menuId[%menuname];
+
+   sgLightEditorMenuBar.addMenu(%menuname, %menuid);
+   %i = 1;
+   sgLightEditorMenuBar.addMenuItem(%menuname, "Filtered Relight", %i);
+   sgLightEditorMenuBar.scriptCommand[%menuname, %i] = "sgLightEditor.filteredRelight();";
+   //sgLightEditorMenuBar.addMenuItem(%menuname, "-", 0);
+   %i = %i + 1;
+   sgLightEditorMenuBar.addMenuItem(%menuname, "Full Relight", %i);
+   sgLightEditorMenuBar.scriptCommand[%menuname, %i] = "lightScene(\"filteredRelightComplete\", forceAlways);";
+   sgLightEditorMenuBar.addMenuItem(%menuname, "-", 0);
+   %i = %i + 1;
+   sgLightEditorMenuBar.addMenuItem(%menuname, "Reset All Light Animation", %i);
+   sgLightEditorMenuBar.scriptCommand[%menuname, %i] = "sgLightEditor.resetLightAnimations();";
+
+   // load first!
+   %this.findLightingModels();
+   %this.findDataBlocks($sgLightEditor::lightDBPath, sgLightDBList, sgLightEditorLightEditorPanel);
+   %this.findDataBlocks($sgLightEditor::filterDBPath, sgFilterDBList, sgLightEditorCinematicFilterEditorPanel);
+
+   // set the active panel next...
+   echo("onwake state");
+   echo(%this.activePanel);
+   if(!isObject(%this.activePanel))
+      %this.setPanel(sgLightEditorLightEditorPanel);
+   else
+      %this.setPanel(%this.activePanel);
+   
+   //echo("calling activePanel.setGUI();");
+   //%this.activePanel.setGui();
+   //echo("done");
+   
+   sgLightEditorTypeButton.performClick();
+   sgLightEditorCinematicFilterEditorColorButton.performClick();
+   
+   $SceneLighting::sgFilterRelightVisible = true;
+   
+   %this.setQuality($pref::LightManager::sgLightingProfileQuality);
+   %this.setShadows($pref::LightManager::sgLightingProfileAllowShadows);
+   %this.setDRL($pref::LightManager::sgUseDynamicRangeLighting);
+   %this.setBloom($pref::LightManager::sgUseBloom);
+   %this.setToneMapping($pref::LightManager::sgUseToneMapping);
+}
+
+function sgLightEditor::onSleep(%this)
+{
+   %this.state = 0;
+
+   $SceneLighting::sgFilterRelightVisible = false;
+}
+
+function sgLightEditor::toggle(%this)
+{
+   //echo("sgLightEditor::toggle()");
+   if(%this.state == 0)
+   {
+      canvas.pushdialog(sgLightEditor);
+      %this.state = 1;
+   }
+   else
+   {
+      canvas.popdialog(sgLightEditor);
+      %this.state = 0;
+   }
+}
+
+
+//-----------------------------------------------
+// datablock streaming
+//-----------------------------------------------
+
+function sgLightEditor::newDB(%this, %clone)
+{
+   sgLightEditorNewDB.clone = %clone;
+   Canvas.pushDialog(sgLightEditorNewDB);
+}
+
+function sgLightEditor::createDB(%this, %name)
+{
+   %path = %this.activePanel.datablockType_path @ %name @ ".cs";
+   
+   if(!isFile(%path))
+   {
+      %file = new FileObject();
+      %file.openForWrite(%path);
+      %file.writeLine("//--- OBJECT WRITE BEGIN ---");
+      %file.writeLine("datablock " @ %this.activePanel.datablockType_name @ "(" @ %name @ ") {");
+      %file.writeLine("className = \"" @ %this.activePanel.datablockType_name @ "\";");
+      %file.writeLine("};");
+      %file.writeLine("//--- OBJECT WRITE END ---");
+      %file.delete();
+   
+      exec(%path);
+      
+      %this.onWake();
+   }
+   
+   echo("Creating new db...");
+   echo(%this.activePanel);
+   echo(%this.activePanel.datablockType_list);
+   echo(%name);
+   echo("Done.");
+   
+   %this.activePanel.datablockType_list.setSelected(%this.activePanel.datablockType_list.findText(%name));
+}
+
+function sgLightEditor::cloneDB(%this, %name)
+{
+   %path = %this.activePanel.datablockType_path @ %name @ ".cs";
+   %this.activePanel.currentDB.save(%path);
+   
+   //update file to define datablock...
+   %file = new FileObject();
+   %file.openForRead(%path);
+   %line = "";
+   while(!%file.isEOF())
+      %line = %line @ %file.readLine() @ "\n";
+   %file.delete();
+   
+   %line = strreplace(%line, "//--- OBJECT WRITE BEGIN ---\nnew", "//--- OBJECT WRITE BEGIN ---\ndatablock");
+   %line = strreplace(%line, %this.activePanel.currentDBName, %name);
+   
+   %file = new FileObject();
+   %file.openForWrite(%path);
+   %file.writeLine(%line);
+   %file.delete();
+   
+   exec(%path);
+   
+   %this.onWake();
+   %this.activePanel.datablockType_list.setSelected(%this.activePanel.datablockType_list.findText(%name));
+}
+
+function sgLightEditor::saveDB(%this)
+{
+   %path = %this.activePanel.datablockType_path @ %this.activePanel.currentDBName @ ".cs";
+   %this.activePanel.currentDB.save(%path);
+   
+   //update file to define datablock...
+   %file = new FileObject();
+   %file.openForRead(%path);
+   %line = "";
+   while(!%file.isEOF())
+      %line = %line @ %file.readLine() @ "\n";
+   %file.delete();
+   
+   %line = strreplace(%line, "//--- OBJECT WRITE BEGIN ---\nnew", "//--- OBJECT WRITE BEGIN ---\ndatablock");
+   
+   //%line = strreplace(%line, "sgUniversalStaticLightData", "sgLightObjectData");
+   
+   %file = new FileObject();
+   %file.openForWrite(%path);
+   %file.writeLine(%line);
+   %file.delete();
+}
+
+function sgLightEditor::restoreDB(%this)
+{
+   %path = %this.activePanel.datablockType_path @ %this.activePanel.currentDBName @ ".cs";
+   exec(%path);
+   %this.activePanel.setGui();
+}
+
+
+//-----------------------------------------------
+// Synapse Gaming GUI Framework
+//-----------------------------------------------
+
+function sgClearFieldMapping(%obj)
+{
+   %obj.sgFieldCount = 0;
+}
+
+function sgAddFieldMapping(%obj, %windowfield, %datablockfield)
+{
+   %obj.sgWindowField[%obj.sgFieldCount] = %windowfield;
+   %obj.sgDatablockField[%obj.sgFieldCount] = %datablockfield;
+   %obj.sgFieldCount = %obj.sgFieldCount + 1;
+
+   %windowfield.fieldDependency = "";
+}
+
+function sgProcessFields(%obj)
+{
+   //echo("sgProcessFields");
+   //echo(%obj.sgFieldCount);
+
+   for(%i=0; %i<%obj.sgFieldCount; %i++)
+   {
+      sgProcessField(%obj, %obj.sgWindowField[%i]);
+   }
+}
+
+function sgProcessField(%obj, %field)
+{
+   //echo("sgLightEditor::processField");
+   //echo(%field);
+
+   %dep = %field.fieldDependency;
+   if(!isObject(%dep))
+      return;
+
+   //echo("Found dependency...");
+
+   sgProcessField(%obj, %dep);
+
+   if(%dep.isActive() && (%dep.getValue() $= "1"))
+   {
+      %field.setActive(true);
+	  //echo("Setting " @ %field @ " active.");
+	}
+   else
+   {
+      %field.setActive(false);
+	  //echo("Setting " @ %field @ " inactive.");
+	}
+}
+
+
+//-----------------------------------------------
+// panel specific code
+//-----------------------------------------------
+
+function sgLightEditorLightEditorPanel::setDB(%this)
+{
+   %color = sgLightEditorColorRed.value @ " " @
+            sgLightEditorColorGreen.value @ " " @
+            sgLightEditorColorBlue.value;
+   %this.currentDB.Colour = %color;
+   %this.currentDB.MaxColour = %color;
+
+   %color = sgLightEditorAnimationColor2Red.value @ " " @
+            sgLightEditorAnimationColor2Green.value @ " " @
+            sgLightEditorAnimationColor2Blue.value;
+   %this.currentDB.MinColour = %color;
+
+   //echo(%this.sgFieldCount);
+
+   for(%i=0; %i<%this.sgFieldCount; %i++)
+   {
+      %cmd = "%this.currentDB." @ %this.sgDatablockField[%i] @
+         " = " @ %this.sgWindowField[%i] @ ".getValue();";
+      //echo(%cmd);
+      eval(%cmd);
+   }
+
+   %this.currentDB.ConstantSize = %this.currentDB.NearSize;
+   %this.currentDB.MaxBrightness = %this.currentDB.Brightness;
+   %this.currentDB.MaxRadius = %this.currentDB.Radius;
+
+   %this.currentDB.LightingModelName = sgLightingModelList.getText();
+
+   sgProcessFields(%this);
+}
+
+function sgLightEditorLightEditorPanel::setGui(%this)
+{
+   //echo("what db is this???");
+   //echo(%this.currentDB);
+   //echo(%this.currentDBName);
+   
+   %r = getWord(%this.currentDB.Colour, 0);
+   %g = getWord(%this.currentDB.Colour, 1);
+   %b = getWord(%this.currentDB.Colour, 2);
+   sgLightEditorColorRed.setValue(%r);
+   sgLightEditorColorGreen.setValue(%g);
+   sgLightEditorColorBlue.setValue(%b);
+
+   %r = getWord(%this.currentDB.MinColour, 0);
+   %g = getWord(%this.currentDB.MinColour, 1);
+   %b = getWord(%this.currentDB.MinColour, 2);
+   sgLightEditorAnimationColor2Red.setValue(%r);
+   sgLightEditorAnimationColor2Green.setValue(%g);
+   sgLightEditorAnimationColor2Blue.setValue(%b);
+
+   //echo(%this.sgFieldCount);
+
+   for(%i=0; %i<%this.sgFieldCount; %i++)
+   {
+      %cmd = %this.sgWindowField[%i] @ ".setValue(%this.currentDB." @
+         %this.sgDatablockField[%i] @ ");";
+      //echo(%cmd);
+      eval(%cmd);
+   }
+   
+   sgLightingModelList.setSelected(sgLightingModelList.findText(%this.currentDB.LightingModelName));
+
+   sgProcessFields(%this);
+}
+
+function sgLightEditorCinematicFilterEditorPanel::setDB(%this)
+{
+   %color = sgLightEditorCinematicFilterEditorColorRed.value @ " " @
+            sgLightEditorCinematicFilterEditorColorGreen.value @ " " @
+            sgLightEditorCinematicFilterEditorColorBlue.value;
+   %this.currentDB.LightingFilter = %color;
+   
+   %color = sgLightEditorCinematicFilterEditorFilterColorRed.value @ " " @
+            sgLightEditorCinematicFilterEditorFilterColorGreen.value @ " " @
+            sgLightEditorCinematicFilterEditorFilterColorBlue.value;
+   %this.currentDB.CinematicFilterReferenceColor = %color;
+
+   //echo(%this.sgFieldCount);
+
+   for(%i=0; %i<%this.sgFieldCount; %i++)
+   {
+      %cmd = "%this.currentDB." @ %this.sgDatablockField[%i] @
+         " = " @ %this.sgWindowField[%i] @ ".getValue();";
+      //echo(%cmd);
+      eval(%cmd);
+   }
+
+   sgProcessFields(%this);
+}
+
+function sgLightEditorCinematicFilterEditorPanel::setGui(%this)
+{
+   %r = getWord(%this.currentDB.LightingFilter, 0);
+   %g = getWord(%this.currentDB.LightingFilter, 1);
+   %b = getWord(%this.currentDB.LightingFilter, 2);
+   sgLightEditorCinematicFilterEditorColorRed.setValue(%r);
+   sgLightEditorCinematicFilterEditorColorGreen.setValue(%g);
+   sgLightEditorCinematicFilterEditorColorBlue.setValue(%b);
+   
+   %r = getWord(%this.currentDB.CinematicFilterReferenceColor, 0);
+   %g = getWord(%this.currentDB.CinematicFilterReferenceColor, 1);
+   %b = getWord(%this.currentDB.CinematicFilterReferenceColor, 2);
+   sgLightEditorCinematicFilterEditorFilterColorRed.setValue(%r);
+   sgLightEditorCinematicFilterEditorFilterColorGreen.setValue(%g);
+   sgLightEditorCinematicFilterEditorFilterColorBlue.setValue(%b);
+
+   //echo(%this.sgFieldCount);
+
+   for(%i=0; %i<%this.sgFieldCount; %i++)
+   {
+      %cmd = %this.sgWindowField[%i] @ ".setValue(%this.currentDB." @
+         %this.sgDatablockField[%i] @ ");";
+      //echo(%cmd);
+      eval(%cmd);
+   }
+
+   sgProcessFields(%this);
+}
+
+
+//-----------------------------------------------
+// datablock id info
+//-----------------------------------------------
+
+function clientCmdsgGetLightDBIdCallback(%id)
+{
+   echo("clientCmdsgGetLightDBIdCallback");
+   sgLightEditor.activePanel.currentDB = %id;
+   sgLightEditor.activePanel.setGui();
+}
+
+function sgLightDBList::onSelect(%this, %id, %text)
+{
+   if(sgLightEditor.activePanel != sgLightEditorLightEditorPanel)
+   {
+      error("sgLightDBList::onSelect> Error Light Editor panel not set.");
+	  return;
+   }
+   
+   sgLightEditor.activePanel.currentDBName = sgLightDBList.getText();  
+   //commandToServer('sgGetLightDBId', sgLightEditor.activePanel.currentDBName);
+   //this never used to work...
+   sgLightEditor.activePanel.currentDB = nameToId(sgLightEditor.activePanel.currentDBName);
+   //echo(sgLightEditor.activePanel.currentDBName);
+   //echo(sgLightEditor.activePanel.currentDB);
+   sgLightEditor.activePanel.setGui();
+}
+
+function sgFilterDBList::onSelect(%this, %id, %text)
+{
+   if(sgLightEditor.activePanel != sgLightEditorCinematicFilterEditorPanel)
+   {
+      error("sgFilterDBList::onSelect> Error Filter Editor panel not set.");
+	  return;
+   }
+   
+   sgLightEditor.activePanel.currentDBName = sgFilterDBList.getText();  
+   //commandToServer('sgGetLightDBId', sgLightEditor.activePanel.currentDBName);
+   sgLightEditor.activePanel.currentDB = nameToId(sgLightEditor.activePanel.currentDBName);
+   //echo(sgLightEditor.activePanel.currentDBName);
+   //echo(sgLightEditor.activePanel.currentDB);
+   sgLightEditor.activePanel.setGui();
+}
+
+
+//-----------------------------------------------
+// filtered relight
+//-----------------------------------------------
+
+function sgLightEditor::filteredRelight(%this)
+{
+   $SceneLighting::sgFilterRelight = "true";
+   $SceneLighting::sgFilterRelightByDistance = "true";
+   lightScene("filteredRelightComplete", forceAlways);
+}
+
+function filteredRelightComplete()
+{
+   $SceneLighting::sgFilterRelight = "false";
+}
+
+function sgLightEditor::setQuality(%this, %qual)
+{
+   $pref::LightManager::sgLightingProfileQuality = %qual;
+   %menuid = %this.constants_quality_menuItemId[%qual];
+   sgLightEditorMenuBar.setMenuItemChecked(%this.constants_menuId[%this.constants_menuName[3]], %menuid, true);
+}
+
+function sgLightEditor::setShadows(%this, %value)
+{
+   $pref::LightManager::sgLightingProfileAllowShadows = %value;
+   %menuid = %this.constants_quality_menuItemId["shadows"];
+   sgLightEditorMenuBar.setMenuItemChecked(%this.constants_menuId[%this.constants_menuName[3]], %menuid, $pref::LightManager::sgLightingProfileAllowShadows);
+}
+
+function sgLightEditor::setDRL(%this, %value)
+{
+   $pref::LightManager::sgUseDynamicRangeLighting = %value;
+   %menuid = %this.constants_quality_menuItemId["drl"];
+   sgLightEditorMenuBar.setMenuItemChecked(%this.constants_menuId[%this.constants_menuName[3]], %menuid, %value);
+}
+
+function sgLightEditor::setBloom(%this, %value)
+{
+   $pref::LightManager::sgUseBloom = %value;
+   %menuid = %this.constants_quality_menuItemId["bloom"];
+   sgLightEditorMenuBar.setMenuItemChecked(%this.constants_menuId[%this.constants_menuName[3]], %menuid, %value);
+}
+
+function sgLightEditor::setToneMapping(%this, %value)
+{
+   $pref::LightManager::sgUseToneMapping = %value;
+   %menuid = %this.constants_quality_menuItemId["tonemapping"];
+   sgLightEditorMenuBar.setMenuItemChecked(%this.constants_menuId[%this.constants_menuName[3]], %menuid, %value);
+}

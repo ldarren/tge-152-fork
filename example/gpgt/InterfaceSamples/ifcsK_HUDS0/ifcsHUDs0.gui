@@ -1,0 +1,380 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(ifcsHUDs0) {
+   profile = "gsDefaultProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "800 600";
+   minExtent = "8 8";
+   visible = "1";
+      Parent = "SampleInterfacesSelector";
+
+   new GuiChunkedBitmapCtrl() {
+      profile = "gsDefaultProfile";
+      horizSizing = "width";
+      vertSizing = "height";
+      position = "0 0";
+      extent = "800 600";
+      minExtent = "8 2";
+      visible = "1";
+      bitmap = $SA::Background1;
+      useVariable = "0";
+      tile = "0";
+
+      new GuiBitmapButtonCtrl(guiSamplerLeft) {
+         profile = "gpgtButtonProfile1";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         position = "125 525";
+         extent = "75 75";
+         minExtent = "8 2";
+         visible = "1";
+         command = "Canvas.setContent(Canvas.getContent().Parent);";
+         accelerator = "escape";
+         text = "Button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "~/client/sharedAssets/button0/leftButton0";
+      };
+
+      new GuiControl() {
+         profile = "gsDefaultProfile";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         position = "100 100";
+         extent = "600 400";
+         minExtent = "8 2";
+         visible = "1";
+
+         new GuiControl(skinnyFrame6DigitCounter) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "10 10";
+            extent = "335 60";
+            minExtent = "8 2";
+            visible = "1";
+			numDigits = 6;
+			digitTileName = "aDigit";
+			digitPath = "./counters/blueDigits/digi";
+
+            new GuiBitmapCtrl(aDigit0) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "280 5";
+               extent = "50 50";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./counters/blueDigits/digi0";
+               wrap = "0";
+            };
+            new GuiBitmapCtrl(aDigit1) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "225 5";
+               extent = "50 50";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./counters/blueDigits/digi0";
+               wrap = "0";
+            };
+            new GuiBitmapCtrl(aDigit2) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "170 5";
+               extent = "50 50";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./counters/blueDigits/digi0";
+               wrap = "0";
+            };
+            new GuiBitmapCtrl(aDigit3) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "115 5";
+               extent = "50 50";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./counters/blueDigits/digi0";
+               wrap = "0";
+            };
+            new GuiBitmapCtrl(aDigit4) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "60 5";
+               extent = "50 50";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./counters/blueDigits/digi0";
+               wrap = "0";
+            };
+            new GuiBitmapCtrl(aDigit5) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "5 5";
+               extent = "50 50";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./counters/blueDigits/digi0";
+               wrap = "0";
+            };
+            new GuiBitmapCtrl() {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "0 0";
+               extent = "335 60";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./counters/6frameskinny";
+               wrap = "0";
+            };
+         };
+         new GuiControl(FatFrame6DigitCounter) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "10 80";
+            extent = "335 60";
+            minExtent = "8 2";
+            visible = "1";
+			numDigits = 6;
+			digitTileName = "myFatDigit";
+			digitPath = "./counters/greenDigits/digi";
+
+            new GuiBitmapCtrl(myFatDigit0) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "280 5";
+               extent = "50 50";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./counters/greenDigits/digi0";
+               wrap = "0";
+            };
+            new GuiBitmapCtrl(myFatDigit1) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "225 5";
+               extent = "50 50";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./counters/greenDigits/digi0";
+               wrap = "0";
+            };
+            new GuiBitmapCtrl(myFatDigit2) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "170 5";
+               extent = "50 50";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./counters/greenDigits/digi0";
+               wrap = "0";
+            };
+            new GuiBitmapCtrl(myFatDigit3) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "115 5";
+               extent = "50 50";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./counters/greenDigits/digi0";
+               wrap = "0";
+            };
+            new GuiBitmapCtrl(myFatDigit4) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "60 5";
+               extent = "50 50";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./counters/greenDigits/digi0";
+               wrap = "0";
+            };
+            new GuiBitmapCtrl(myFatDigit5) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "5 5";
+               extent = "50 50";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./counters/greenDigits/digi0";
+               wrap = "0";
+            };
+            new GuiBitmapCtrl() {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "0 0";
+               extent = "335 60";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./counters/6framefat";
+               wrap = "0";
+            };
+         };
+         new GuiControl(arcade5DigitCounter) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "10 160";
+            extent = "335 60";
+            minExtent = "8 2";
+            visible = "1";
+			numDigits = 5;
+			digitTileName = "comicDigit";
+			digitPath = "./counters/yellowDigits/comic";
+
+            new GuiBitmapCtrl(comicDigit0) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "280 5";
+               extent = "50 50";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./counters/yellowDigits/comic0";
+               wrap = "0";
+            };
+            new GuiBitmapCtrl(comicDigit1) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "225 5";
+               extent = "50 50";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./counters/yellowDigits/comic0";
+               wrap = "0";
+            };
+            new GuiBitmapCtrl(comicDigit2) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "170 5";
+               extent = "50 50";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./counters/yellowDigits/comic0";
+               wrap = "0";
+            };
+            new GuiBitmapCtrl(comicDigit3) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "115 5";
+               extent = "50 50";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./counters/yellowDigits/comic0";
+               wrap = "0";
+            };
+            new GuiBitmapCtrl(comicDigit4) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "60 5";
+               extent = "50 50";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./counters/yellowDigits/comic0";
+               wrap = "0";
+            };
+         };
+         new GuiControl(overlapping6DigitComicCounter) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "10 220";
+            extent = "155 60";
+            minExtent = "8 2";
+            visible = "1";
+			numDigits = 6;
+			digitTileName = "overlapComicDigit";
+			digitPath = "./counters/yellowDigits/comic";
+
+            new GuiBitmapCtrl(overlapComicDigit0) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "105 5";
+               extent = "50 50";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./counters/yellowDigits/comic0";
+               wrap = "0";
+            };
+            new GuiBitmapCtrl(overlapComicDigit1) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "85 5";
+               extent = "50 50";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./counters/yellowDigits/comic0";
+               wrap = "0";
+            };
+            new GuiBitmapCtrl(overlapComicDigit2) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "65 5";
+               extent = "50 50";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./counters/yellowDigits/comic0";
+               wrap = "0";
+            };
+            new GuiBitmapCtrl(overlapComicDigit3) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "45 5";
+               extent = "50 50";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./counters/yellowDigits/comic0";
+               wrap = "0";
+            };
+            new GuiBitmapCtrl(overlapComicDigit4) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "25 5";
+               extent = "50 50";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./counters/yellowDigits/comic0";
+               wrap = "0";
+            };
+            new GuiBitmapCtrl(overlapComicDigit5) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "5 5";
+               extent = "50 50";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./counters/yellowDigits/comic0";
+               wrap = "0";
+            };
+         };
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+

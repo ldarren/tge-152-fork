@@ -1,0 +1,148 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(MainMenuDlg) {
+   canSaveDynamicFields = "0";
+   Profile = "GuiModelessDialogProfile";
+   HorizSizing = "width";
+   VertSizing = "height";
+   position = "0 0";
+   Extent = "800 600";
+   MinExtent = "8 8";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+
+   new GuiControl() {
+      canSaveDynamicFields = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      //position = "40 39";
+      position = "0 0";
+      Extent = "800 600";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+
+      
+      //       new GuiBitmapCtrl() {
+//          canSaveDynamicFields = "0";
+//          Profile = "GuiDefaultProfile";
+//          HorizSizing = "relative";
+//          VertSizing = "relative";
+//          position = "427 26";
+//          Extent = "213 300";
+//          MinExtent = "8 2";
+//          canSave = "1";
+//          Visible = "1";
+//          hovertime = "1000";
+//          bitmap = "./orc";
+//          wrap = "0";
+//       };
+
+
+      new GuiBitmapCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "relative";
+         VertSizing = "relative";
+         position = "27 53";
+         Extent = "740 555";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         bitmap = "./main_screen";
+         wrap = "0";
+      };
+      
+      
+      
+      new GuiBitmapButtonCtrl(Features) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiButtonProfile";
+         HorizSizing = "relative";
+         VertSizing = "relative";
+         position = "412 452";
+         Extent = "354 33";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "MainMenuGui.pushthread(features_thread);";
+         hovertime = "1000";
+         text = "Button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./buttons/features";
+      };
+      new GuiBitmapCtrl(logo) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "relative";
+         VertSizing = "relative";
+         position = "35 20";
+         Extent = "345 98";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         bitmap = "./tge_logo";
+         wrap = "0";
+      };
+      new GuiBitmapButtonCtrl(Walkthrough) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiButtonProfile";
+         HorizSizing = "relative";
+         VertSizing = "relative";
+         position = "412 415";
+         Extent = "354 33";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "loadFeatureMission();";
+         hovertime = "1000";
+         text = "Button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./buttons/walkthrough";
+      };
+      new GuiBitmapButtonCtrl(TPG) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiButtonProfile";
+         HorizSizing = "relative";
+         VertSizing = "relative";
+         position = "412 489";
+         Extent = "354 33";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "MainMenuGui.pushthread(products_thread);";
+         hovertime = "1000";
+         text = "Button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./buttons/tpg";
+      };
+   new GuiMLTextCtrl() {
+      canSaveDynamicFields = "0";
+      Profile = "GuiMLTextProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "54 156";
+      Extent = "64 14";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      lineSpacing = "2";
+      allowColorChars = "0";
+      maxChars = "-1";
+      fileName = "demo/client/ui/mainMenuText.txt";
+   };
+
+   };
+};
+//--- OBJECT WRITE END ---
+
+
+

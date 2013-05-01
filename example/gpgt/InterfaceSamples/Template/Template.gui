@@ -1,0 +1,51 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(ifcsTemplate) {
+   Profile = "gsDefaultProfile";
+   HorizSizing = "width";
+   VertSizing = "height";
+   position = "0 0";
+   Extent = "800 600";
+   MinExtent = "8 8";
+   Visible = "1";
+      Parent = "SampleInterfacesSelector";
+
+   new GuiChunkedBitmapCtrl() {
+      Profile = "gsDefaultProfile";
+      HorizSizing = "width";
+      VertSizing = "height";
+      position = "0 0";
+      Extent = "800 600";
+      MinExtent = "8 2";
+      Visible = "1";
+      bitmap = "~/client/sharedAssets/Background1.png";
+      useVariable = "0";
+      tile = "0";
+
+      new GuiBitmapButtonCtrl(guiSamplerLeft) {
+         Profile = "gpgtButtonProfile1";
+         HorizSizing = "relative";
+         VertSizing = "relative";
+         position = "125 525";
+         Extent = "75 75";
+         MinExtent = "8 2";
+         Visible = "1";
+         Command = "Canvas.setContent(Canvas.getContent().Parent);";
+         Accelerator = "escape";
+         text = "Button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "~/client/sharedAssets/button0/leftButton0";
+      };
+      new GuiControl() {
+         Profile = "gsDefaultProfile";
+         HorizSizing = "relative";
+         VertSizing = "relative";
+         position = "100 100";
+         Extent = "600 400";
+         MinExtent = "8 2";
+         Visible = "1";
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+

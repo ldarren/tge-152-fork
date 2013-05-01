@@ -1,0 +1,96 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(MainChatHud) {
+   Profile = "GuiModelessDialogProfile";
+   HorizSizing = "width";
+   VertSizing = "height";
+   position = "0 0";
+   Extent = "1024 768";
+   MinExtent = "8 8";
+   Visible = "1";
+      helpTag = "0";
+      noCursor = "1";
+
+   new GuiControl() {
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "relative";
+      VertSizing = "bottom";
+      position = "235 8";
+      Extent = "640 300";
+      MinExtent = "8 8";
+      Visible = "1";
+         helpTag = "0";
+
+      new GuiBitmapCtrl(OuterChatHud) {
+         Profile = "ChatHudBorderProfile";
+         HorizSizing = "width";
+         VertSizing = "bottom";
+         position = "0 0";
+         Extent = "512 72";
+         MinExtent = "8 8";
+         Visible = "1";
+         wrap = "0";
+            helpTag = "0";
+            useVariable = "0";
+            tile = "0";
+
+         new GuiBitmapCtrl() {
+            Profile = "GuiDefaultProfile";
+            HorizSizing = "width";
+            VertSizing = "height";
+            position = "8 8";
+            Extent = "496 56";
+            MinExtent = "8 8";
+            Visible = "1";
+            bitmap = "./hudfill.png";
+            wrap = "0";
+               helpTag = "0";
+         };
+         new GuiButtonCtrl(chatPageDown) {
+            Profile = "GuiButtonProfile";
+            HorizSizing = "left";
+            VertSizing = "top";
+            position = "460 42";
+            Extent = "36 14";
+            MinExtent = "8 8";
+            Visible = "0";
+            text = "Dwn";
+            groupNum = "-1";
+            buttonType = "PushButton";
+               helpTag = "0";
+         };
+         new GuiScrollCtrl(ChatScrollHud) {
+            Profile = "ChatHudScrollProfile";
+            HorizSizing = "width";
+            VertSizing = "height";
+            position = "8 8";
+            Extent = "496 56";
+            MinExtent = "8 8";
+            Visible = "1";
+            willFirstRespond = "1";
+            hScrollBar = "alwaysOff";
+            vScrollBar = "alwaysOff";
+            constantThumbHeight = "0";
+            childMargin = "0 0";
+               helpTag = "0";
+
+            new GuiMessageVectorCtrl(ChatHud) {
+               Profile = "ChatHudMessageProfile";
+               HorizSizing = "width";
+               VertSizing = "height";
+               position = "1 1";
+               Extent = "492 16";
+               MinExtent = "8 8";
+               Visible = "1";
+               lineSpacing = "0";
+               lineContinuedIndex = "10";
+               allowedMatches[0] = "http";
+               allowedMatches[1] = "tgeserver";
+               matchColor = "0 0 255 255";
+               maxColorIndex = "5";
+                  helpTag = "0";
+            };
+         };
+      };
+   };
+};
+//--- OBJECT WRITE END ---

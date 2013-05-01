@@ -1,0 +1,89 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiBitmapCtrl(MainMenu) {
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "width";
+   VertSizing = "height";
+   position = "0 0";
+   Extent = "640 480";
+   MinExtent = "8 2";
+   Visible = "1";
+   bitmap = "./back";
+   wrap = "0";
+      useVariable = "0";
+      mymusic = "-2147483644";
+      tile = "0";
+
+   new GuiBitmapButtonCtrl(EditButton) {
+      Profile = "MainMenuButtonProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "264 218";
+      Extent = "109 35";
+      MinExtent = "8 2";
+      Visible = "1";
+      Command = "MainMenu.playGame( true );";
+      text = "back";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      bitmap = "./edit";
+   };
+   new GuiBitmapButtonCtrl(OptionsButton) {
+      Profile = "MainMenuButtonProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "264 260";
+      Extent = "109 36";
+      MinExtent = "8 2";
+      Visible = "1";
+      Command = "Canvas.pushDialog( OptionsDlg , 0 );";
+      text = "back";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      bitmap = "./options";
+   };
+   new GuiBitmapButtonCtrl(CreditsButton) {
+      Profile = "MainMenuButtonProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "264 300";
+      Extent = "109 37";
+      MinExtent = "8 2";
+      Visible = "1";
+      Command = "Canvas.setContent(Credits);";
+      text = "back";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      bitmap = "./credits";
+   };
+   new GuiBitmapButtonCtrl(QuitButton) {
+      Profile = "MainMenuButtonProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "264 340";
+      Extent = "109 41";
+      MinExtent = "8 2";
+      Visible = "1";
+      Command = "quit();";
+      Accelerator = "escape";
+      text = "back";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      bitmap = "./quit";
+   };
+   new GuiBitmapButtonCtrl(PlayButton) {
+      Profile = "MainMenuButtonProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "264 157";
+      Extent = "109 52";
+      MinExtent = "8 2";
+      Visible = "1";
+      Command = "MainMenu.playGame();";
+      text = "back";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      bitmap = "./play";
+   };
+};
+//--- OBJECT WRITE END ---
+

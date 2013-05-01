@@ -1,0 +1,236 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(serverQuery) {
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "width";
+   VertSizing = "height";
+   position = "0 0";
+   Extent = "800 600";
+   MinExtent = "8 8";
+   Visible = "1";
+      Parent = "GUISamplerInterface";
+
+   new GuiChunkedBitmapCtrl() {
+      Profile = "serverQueryDefaultProfile";
+      HorizSizing = "width";
+      VertSizing = "height";
+      position = "0 0";
+      Extent = "800 600";
+      MinExtent = "8 2";
+      Visible = "1";
+      bitmap = "~/client/sharedAssets/Background1.png";
+      useVariable = "0";
+      tile = "0";
+
+      new GuiControl() {
+         Profile = "serverQueryDefaultProfile";
+         HorizSizing = "relative";
+         VertSizing = "relative";
+         position = "100 100";
+         Extent = "600 400";
+         MinExtent = "8 2";
+         Visible = "1";
+
+         new GuiControl() {
+            Profile = "serverQueryBorder";
+            HorizSizing = "center";
+            VertSizing = "center";
+            position = "30 30";
+            Extent = "540 340";
+            MinExtent = "8 2";
+            Visible = "1";
+
+            new GuiScrollCtrl() {
+               Profile = "GuiScrollProfile";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "20 20";
+               Extent = "200 200";
+               MinExtent = "8 2";
+               Visible = "1";
+               willFirstRespond = "1";
+               hScrollBar = "dynamic";
+               vScrollBar = "dynamic";
+               constantThumbHeight = "0";
+               childMargin = "4 4";
+
+               new GuiTextListCtrl(serverQueryTextList) {
+                  Profile = "GuiTextProfile";
+                  HorizSizing = "right";
+                  VertSizing = "bottom";
+                  position = "6 6";
+                  Extent = "9 2";
+                  MinExtent = "8 2";
+                  Visible = "1";
+                  enumerate = "0";
+                  resizeCell = "1";
+                  columns = "0";
+                  fitParentWidth = "0";
+                  clipColumnText = "0";
+                     lastQueryType = "lan";
+               };
+            };
+            new GuiControl() {
+               Profile = "serverQueryBorder";
+               HorizSizing = "relative";
+               VertSizing = "relative";
+               position = "19 225";
+               Extent = "201 40";
+               MinExtent = "8 2";
+               Visible = "1";
+
+               new GuiRadioCtrl(lanQueryTextListSelect) {
+                  Profile = "GuiRadioProfile";
+                  HorizSizing = "relative";
+                  VertSizing = "relative";
+                  position = "10 4";
+                  Extent = "82 30";
+                  MinExtent = "8 2";
+                  Visible = "1";
+                  Command = "serverQueryTextList.startQuery(\"lan\");";
+                  text = "LAN Servers";
+                  groupNum = "-1";
+                  buttonType = "RadioButton";
+               };
+               new GuiRadioCtrl(masterQueryTextListSelect) {
+                  Profile = "GuiRadioProfile";
+                  HorizSizing = "relative";
+                  VertSizing = "relative";
+                  position = "102 4";
+                  Extent = "90 30";
+                  MinExtent = "8 2";
+                  Visible = "1";
+                  Command = "serverQueryTextList.startQuery(\"master\");";
+                  text = "Master Servers";
+                  groupNum = "-1";
+                  buttonType = "RadioButton";
+               };
+            };
+            new GuiButtonCtrl(JoinCurrentServer) {
+               Profile = "GuiButtonProfile";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "20 285";
+               Extent = "120 30";
+               MinExtent = "8 2";
+               Visible = "1";
+               Command = "connectToServer();";
+               text = "Join";
+               groupNum = "-1";
+               buttonType = "PushButton";
+            };
+            new GuiScrollCtrl() {
+               Profile = "GuiScrollProfile";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "240 20";
+               Extent = "280 245";
+               MinExtent = "8 2";
+               Visible = "1";
+               willFirstRespond = "1";
+               hScrollBar = "alwaysOff";
+               vScrollBar = "dynamic";
+               constantThumbHeight = "0";
+               childMargin = "0 0";
+
+               new GuiMLTextCtrl(currentServerInfo) {
+                  Profile = "serverQueryMLTextProfile";
+                  HorizSizing = "right";
+                  VertSizing = "bottom";
+                  position = "2 2";
+                  Extent = "260 11";
+                  MinExtent = "8 2";
+                  Visible = "1";
+                  lineSpacing = "2";
+                  allowColorChars = "0";
+                  maxChars = "-1";
+               };
+            };
+            new GuiButtonCtrl(RefreshCurrentServer) {
+               Profile = "GuiButtonProfile";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "170 285";
+               Extent = "120 30";
+               MinExtent = "8 2";
+               Visible = "1";
+               Command = "serverQueryTextList.refreshCurrentSelection();";
+               text = "Refresh";
+               groupNum = "-1";
+               buttonType = "PushButton";
+            };
+            new GuiButtonCtrl(serverQueryCancelButton) {
+               Profile = "GuiButtonProfile";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "-10 -10";
+               Extent = "8 2";
+               MinExtent = "8 2";
+               Visible = "1";
+               Command = "cancelServerQuery();Canvas.setContent(MainMenuGui);";
+               Accelerator = "escape";
+               text = "Cancel";
+               groupNum = "-1";
+               buttonType = "PushButton";
+            };
+            new GuiTextCtrl() {
+               Profile = "GuiTextProfile";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "303 290";
+               Extent = "30 18";
+               MinExtent = "8 2";
+               Visible = "1";
+               text = "Name:";
+               maxLength = "255";
+            };
+            new GuiTextEditCtrl() {
+               Profile = "GuiTextEditProfile";
+               HorizSizing = "right";
+               VertSizing = "bottom";
+               position = "345 290";
+               Extent = "140 18";
+               MinExtent = "8 2";
+               Visible = "1";
+               Variable = "pref::Player::Name";
+               maxLength = "255";
+               historySize = "0";
+               password = "0";
+               tabComplete = "0";
+               sinkAllKeyEvents = "0";
+               password = "0";
+               passwordMask = "*";
+            };
+         };
+         new GuiMLTextCtrl() {
+            Profile = "GuiMLTextProfile";
+            HorizSizing = "center";
+            VertSizing = "top";
+            position = "100 379";
+            Extent = "400 14";
+            MinExtent = "8 2";
+            Visible = "1";
+            Accelerator = "escape";
+            lineSpacing = "2";
+            allowColorChars = "0";
+            maxChars = "-1";
+            text = "<just:center><font:Lucida Console:14>( Press ESCAPE to return to Main Menu)";
+         };
+         new GuiMLTextCtrl(serverQueryStatus) {
+            Profile = "GuiMLTextProfile";
+            HorizSizing = "center";
+            VertSizing = "bottom";
+            position = "100 9";
+            Extent = "400 14";
+            MinExtent = "8 2";
+            Visible = "1";
+            Accelerator = "escape";
+            lineSpacing = "2";
+            allowColorChars = "0";
+            maxChars = "-1";
+            text = "<just:center><font:Lucida Console:14>";
+         };
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+

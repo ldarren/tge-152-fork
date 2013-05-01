@@ -1,0 +1,721 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		525A344706F7A91E00003BE3 /* DTSBrushMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525A340F06F7A91E00003BE3 /* DTSBrushMesh.cpp */; };
+		525A344806F7A91E00003BE3 /* DTSBrushMesh.h in Headers */ = {isa = PBXBuildFile; fileRef = 525A341006F7A91E00003BE3 /* DTSBrushMesh.h */; };
+		525A344906F7A91E00003BE3 /* DTSEndian.h in Headers */ = {isa = PBXBuildFile; fileRef = 525A341106F7A91E00003BE3 /* DTSEndian.h */; };
+		525A344A06F7A91E00003BE3 /* DTSInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 525A341206F7A91E00003BE3 /* DTSInputStream.h */; };
+		525A344B06F7A91E00003BE3 /* DTSInterpolation.h in Headers */ = {isa = PBXBuildFile; fileRef = 525A341306F7A91E00003BE3 /* DTSInterpolation.h */; };
+		525A344C06F7A91E00003BE3 /* DTSMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525A341406F7A91E00003BE3 /* DTSMatrix.cpp */; };
+		525A344D06F7A91E00003BE3 /* DTSMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 525A341506F7A91E00003BE3 /* DTSMatrix.h */; };
+		525A344E06F7A91E00003BE3 /* DTSMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525A341606F7A91E00003BE3 /* DTSMesh.cpp */; };
+		525A344F06F7A91E00003BE3 /* DTSMesh.h in Headers */ = {isa = PBXBuildFile; fileRef = 525A341706F7A91E00003BE3 /* DTSMesh.h */; };
+		525A345006F7A91E00003BE3 /* DTSNormalTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525A341806F7A91E00003BE3 /* DTSNormalTable.cpp */; };
+		525A345106F7A91E00003BE3 /* DTSOutputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 525A341906F7A91E00003BE3 /* DTSOutputStream.h */; };
+		525A345206F7A91E00003BE3 /* DTSPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 525A341A06F7A91E00003BE3 /* DTSPoint.h */; };
+		525A345306F7A91E00003BE3 /* DTSQuaternion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525A341B06F7A91E00003BE3 /* DTSQuaternion.cpp */; };
+		525A345406F7A91E00003BE3 /* DTSQuaternion.h in Headers */ = {isa = PBXBuildFile; fileRef = 525A341C06F7A91E00003BE3 /* DTSQuaternion.h */; };
+		525A345506F7A91E00003BE3 /* DTSShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525A341D06F7A91E00003BE3 /* DTSShape.cpp */; };
+		525A345606F7A91E00003BE3 /* DTSShape.h in Headers */ = {isa = PBXBuildFile; fileRef = 525A341E06F7A91E00003BE3 /* DTSShape.h */; };
+		525A345706F7A91E00003BE3 /* DTSTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 525A341F06F7A91E00003BE3 /* DTSTypes.h */; };
+		525A345806F7A91E00003BE3 /* DTSVector.h in Headers */ = {isa = PBXBuildFile; fileRef = 525A342006F7A91E00003BE3 /* DTSVector.h */; };
+		525A345906F7A91E00003BE3 /* appConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525A342206F7A91E00003BE3 /* appConfig.cpp */; };
+		525A345A06F7A91E00003BE3 /* appConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 525A342306F7A91E00003BE3 /* appConfig.h */; };
+		525A345B06F7A91E00003BE3 /* appIfl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525A342406F7A91E00003BE3 /* appIfl.cpp */; };
+		525A345C06F7A91E00003BE3 /* appIfl.h in Headers */ = {isa = PBXBuildFile; fileRef = 525A342506F7A91E00003BE3 /* appIfl.h */; };
+		525A345D06F7A91E00003BE3 /* appMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525A342606F7A91E00003BE3 /* appMesh.cpp */; };
+		525A345E06F7A91E00003BE3 /* appMesh.h in Headers */ = {isa = PBXBuildFile; fileRef = 525A342706F7A91E00003BE3 /* appMesh.h */; };
+		525A345F06F7A91E00003BE3 /* appNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525A342806F7A91E00003BE3 /* appNode.cpp */; };
+		525A346006F7A91E00003BE3 /* appNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 525A342906F7A91E00003BE3 /* appNode.h */; };
+		525A346106F7A91E00003BE3 /* appSceneEnum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525A342A06F7A91E00003BE3 /* appSceneEnum.cpp */; };
+		525A346206F7A91E00003BE3 /* appSceneEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 525A342B06F7A91E00003BE3 /* appSceneEnum.h */; };
+		525A346306F7A91E00003BE3 /* appSequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525A342C06F7A91E00003BE3 /* appSequence.cpp */; };
+		525A346406F7A91E00003BE3 /* appSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 525A342D06F7A91E00003BE3 /* appSequence.h */; };
+		525A346506F7A91E00003BE3 /* appTime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525A342E06F7A91E00003BE3 /* appTime.cpp */; };
+		525A346606F7A91E00003BE3 /* appTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 525A342F06F7A91E00003BE3 /* appTime.h */; };
+		525A346706F7A91E00003BE3 /* Decompose.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525A343106F7A91E00003BE3 /* Decompose.cpp */; };
+		525A346806F7A91E00003BE3 /* Decompose.h in Headers */ = {isa = PBXBuildFile; fileRef = 525A343206F7A91E00003BE3 /* Decompose.h */; };
+		525A346906F7A91E00003BE3 /* dtsBitMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 525A343306F7A91E00003BE3 /* dtsBitMatrix.h */; };
+		525A346A06F7A91E00003BE3 /* DTSPlusTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 525A343406F7A91E00003BE3 /* DTSPlusTypes.h */; };
+		525A346B06F7A91E00003BE3 /* DTSUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525A343506F7A91E00003BE3 /* DTSUtil.cpp */; };
+		525A346C06F7A91E00003BE3 /* DTSUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 525A343606F7A91E00003BE3 /* DTSUtil.h */; };
+		525A346D06F7A91E00003BE3 /* nvStripWrap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525A343706F7A91E00003BE3 /* nvStripWrap.cpp */; };
+		525A346E06F7A91E00003BE3 /* nvStripWrap.h in Headers */ = {isa = PBXBuildFile; fileRef = 525A343806F7A91E00003BE3 /* nvStripWrap.h */; };
+		525A346F06F7A91E00003BE3 /* NvTriStrip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525A343A06F7A91E00003BE3 /* NvTriStrip.cpp */; };
+		525A347006F7A91E00003BE3 /* NvTriStrip.h in Headers */ = {isa = PBXBuildFile; fileRef = 525A343B06F7A91E00003BE3 /* NvTriStrip.h */; };
+		525A347106F7A91E00003BE3 /* NvTriStripObjects.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525A343C06F7A91E00003BE3 /* NvTriStripObjects.cpp */; };
+		525A347206F7A91E00003BE3 /* NvTriStripObjects.h in Headers */ = {isa = PBXBuildFile; fileRef = 525A343D06F7A91E00003BE3 /* NvTriStripObjects.h */; };
+		525A347306F7A91E00003BE3 /* VertexCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 525A343F06F7A91E00003BE3 /* VertexCache.h */; };
+		525A347406F7A91E00003BE3 /* sceneEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 525A344006F7A91E00003BE3 /* sceneEnum.h */; };
+		525A347506F7A91E00003BE3 /* ShapeMimic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525A344106F7A91E00003BE3 /* ShapeMimic.cpp */; };
+		525A347606F7A91E00003BE3 /* ShapeMimic.h in Headers */ = {isa = PBXBuildFile; fileRef = 525A344206F7A91E00003BE3 /* ShapeMimic.h */; };
+		525A347706F7A91E00003BE3 /* stripper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525A344306F7A91E00003BE3 /* stripper.cpp */; };
+		525A347806F7A91E00003BE3 /* stripper.h in Headers */ = {isa = PBXBuildFile; fileRef = 525A344406F7A91E00003BE3 /* stripper.h */; };
+		525A347906F7A91E00003BE3 /* translucentSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525A344506F7A91E00003BE3 /* translucentSort.cpp */; };
+		525A347A06F7A91E00003BE3 /* translucentSort.h in Headers */ = {isa = PBXBuildFile; fileRef = 525A344606F7A91E00003BE3 /* translucentSort.h */; };
+		525A348306F7A94500003BE3 /* exportDTSCmd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525A347C06F7A94500003BE3 /* exportDTSCmd.cpp */; };
+		525A348406F7A94500003BE3 /* mayaAppMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525A347D06F7A94500003BE3 /* mayaAppMesh.cpp */; };
+		525A348506F7A94500003BE3 /* mayaAppMesh.h in Headers */ = {isa = PBXBuildFile; fileRef = 525A347E06F7A94500003BE3 /* mayaAppMesh.h */; };
+		525A348606F7A94500003BE3 /* mayaAppNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525A347F06F7A94500003BE3 /* mayaAppNode.cpp */; };
+		525A348706F7A94500003BE3 /* mayaAppNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 525A348006F7A94500003BE3 /* mayaAppNode.h */; };
+		525A348806F7A94500003BE3 /* mayaSceneEnum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525A348106F7A94500003BE3 /* mayaSceneEnum.cpp */; };
+		525A348906F7A94500003BE3 /* mayaSceneEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 525A348206F7A94500003BE3 /* mayaSceneEnum.h */; };
+		D2CADFB909A1473200EC871F /* translucentSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525A344506F7A91E00003BE3 /* translucentSort.cpp */; };
+		D2CADFBA09A1473200EC871F /* nvStripWrap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525A343706F7A91E00003BE3 /* nvStripWrap.cpp */; };
+		D2CADFBB09A1473200EC871F /* NvTriStripObjects.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525A343C06F7A91E00003BE3 /* NvTriStripObjects.cpp */; };
+		D2CADFBC09A1473200EC871F /* appSequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525A342C06F7A91E00003BE3 /* appSequence.cpp */; };
+		D2CADFBD09A1473200EC871F /* Decompose.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525A343106F7A91E00003BE3 /* Decompose.cpp */; };
+		D2CADFBE09A1473200EC871F /* appConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525A342206F7A91E00003BE3 /* appConfig.cpp */; };
+		D2CADFBF09A1473200EC871F /* ShapeMimic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525A344106F7A91E00003BE3 /* ShapeMimic.cpp */; };
+		D2CADFC009A1473200EC871F /* appIfl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525A342406F7A91E00003BE3 /* appIfl.cpp */; };
+		D2CADFC109A1473200EC871F /* NvTriStrip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525A343A06F7A91E00003BE3 /* NvTriStrip.cpp */; };
+		D2CADFC209A1473200EC871F /* DTSUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525A343506F7A91E00003BE3 /* DTSUtil.cpp */; };
+		D2CADFC309A1473200EC871F /* appNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525A342806F7A91E00003BE3 /* appNode.cpp */; };
+		D2CADFC409A1473200EC871F /* stripper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525A344306F7A91E00003BE3 /* stripper.cpp */; };
+		D2CADFC509A1473200EC871F /* appTime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525A342E06F7A91E00003BE3 /* appTime.cpp */; };
+		D2CADFC609A1473200EC871F /* appMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525A342606F7A91E00003BE3 /* appMesh.cpp */; };
+		D2CADFC709A1473200EC871F /* appSceneEnum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 525A342A06F7A91E00003BE3 /* appSceneEnum.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		D284EA0E09E71D0100BFA6E3 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.gcc.3_3;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+		D2CAE02109A14BBE00EC871F /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.gcc.4_0;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXFileReference section */
+		525A340F06F7A91E00003BE3 /* DTSBrushMesh.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = DTSBrushMesh.cpp; sourceTree = "<group>"; };
+		525A341006F7A91E00003BE3 /* DTSBrushMesh.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DTSBrushMesh.h; sourceTree = "<group>"; };
+		525A341106F7A91E00003BE3 /* DTSEndian.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DTSEndian.h; sourceTree = "<group>"; };
+		525A341206F7A91E00003BE3 /* DTSInputStream.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DTSInputStream.h; sourceTree = "<group>"; };
+		525A341306F7A91E00003BE3 /* DTSInterpolation.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DTSInterpolation.h; sourceTree = "<group>"; };
+		525A341406F7A91E00003BE3 /* DTSMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = DTSMatrix.cpp; sourceTree = "<group>"; };
+		525A341506F7A91E00003BE3 /* DTSMatrix.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = DTSMatrix.h; sourceTree = "<group>"; };
+		525A341606F7A91E00003BE3 /* DTSMesh.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = DTSMesh.cpp; sourceTree = "<group>"; };
+		525A341706F7A91E00003BE3 /* DTSMesh.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DTSMesh.h; sourceTree = "<group>"; };
+		525A341806F7A91E00003BE3 /* DTSNormalTable.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = DTSNormalTable.cpp; sourceTree = "<group>"; };
+		525A341906F7A91E00003BE3 /* DTSOutputStream.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DTSOutputStream.h; sourceTree = "<group>"; };
+		525A341A06F7A91E00003BE3 /* DTSPoint.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DTSPoint.h; sourceTree = "<group>"; };
+		525A341B06F7A91E00003BE3 /* DTSQuaternion.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = DTSQuaternion.cpp; sourceTree = "<group>"; };
+		525A341C06F7A91E00003BE3 /* DTSQuaternion.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DTSQuaternion.h; sourceTree = "<group>"; };
+		525A341D06F7A91E00003BE3 /* DTSShape.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = DTSShape.cpp; sourceTree = "<group>"; };
+		525A341E06F7A91E00003BE3 /* DTSShape.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DTSShape.h; sourceTree = "<group>"; };
+		525A341F06F7A91E00003BE3 /* DTSTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DTSTypes.h; sourceTree = "<group>"; };
+		525A342006F7A91E00003BE3 /* DTSVector.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DTSVector.h; sourceTree = "<group>"; };
+		525A342206F7A91E00003BE3 /* appConfig.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = appConfig.cpp; sourceTree = "<group>"; };
+		525A342306F7A91E00003BE3 /* appConfig.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = appConfig.h; sourceTree = "<group>"; };
+		525A342406F7A91E00003BE3 /* appIfl.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = appIfl.cpp; sourceTree = "<group>"; };
+		525A342506F7A91E00003BE3 /* appIfl.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = appIfl.h; sourceTree = "<group>"; };
+		525A342606F7A91E00003BE3 /* appMesh.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = appMesh.cpp; sourceTree = "<group>"; };
+		525A342706F7A91E00003BE3 /* appMesh.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = appMesh.h; sourceTree = "<group>"; };
+		525A342806F7A91E00003BE3 /* appNode.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = appNode.cpp; sourceTree = "<group>"; };
+		525A342906F7A91E00003BE3 /* appNode.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = appNode.h; sourceTree = "<group>"; };
+		525A342A06F7A91E00003BE3 /* appSceneEnum.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = appSceneEnum.cpp; sourceTree = "<group>"; };
+		525A342B06F7A91E00003BE3 /* appSceneEnum.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = appSceneEnum.h; sourceTree = "<group>"; };
+		525A342C06F7A91E00003BE3 /* appSequence.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = appSequence.cpp; sourceTree = "<group>"; };
+		525A342D06F7A91E00003BE3 /* appSequence.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = appSequence.h; sourceTree = "<group>"; };
+		525A342E06F7A91E00003BE3 /* appTime.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 2; path = appTime.cpp; sourceTree = "<group>"; };
+		525A342F06F7A91E00003BE3 /* appTime.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = appTime.h; sourceTree = "<group>"; };
+		525A343106F7A91E00003BE3 /* Decompose.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Decompose.cpp; sourceTree = "<group>"; };
+		525A343206F7A91E00003BE3 /* Decompose.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Decompose.h; sourceTree = "<group>"; };
+		525A343306F7A91E00003BE3 /* dtsBitMatrix.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = dtsBitMatrix.h; sourceTree = "<group>"; };
+		525A343406F7A91E00003BE3 /* DTSPlusTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DTSPlusTypes.h; sourceTree = "<group>"; };
+		525A343506F7A91E00003BE3 /* DTSUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = DTSUtil.cpp; sourceTree = "<group>"; };
+		525A343606F7A91E00003BE3 /* DTSUtil.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = DTSUtil.h; sourceTree = "<group>"; };
+		525A343706F7A91E00003BE3 /* nvStripWrap.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = nvStripWrap.cpp; sourceTree = "<group>"; };
+		525A343806F7A91E00003BE3 /* nvStripWrap.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = nvStripWrap.h; sourceTree = "<group>"; };
+		525A343A06F7A91E00003BE3 /* NvTriStrip.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = NvTriStrip.cpp; sourceTree = "<group>"; };
+		525A343B06F7A91E00003BE3 /* NvTriStrip.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NvTriStrip.h; sourceTree = "<group>"; };
+		525A343C06F7A91E00003BE3 /* NvTriStripObjects.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = NvTriStripObjects.cpp; sourceTree = "<group>"; };
+		525A343D06F7A91E00003BE3 /* NvTriStripObjects.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NvTriStripObjects.h; sourceTree = "<group>"; };
+		525A343E06F7A91E00003BE3 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		525A343F06F7A91E00003BE3 /* VertexCache.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VertexCache.h; sourceTree = "<group>"; };
+		525A344006F7A91E00003BE3 /* sceneEnum.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = sceneEnum.h; sourceTree = "<group>"; };
+		525A344106F7A91E00003BE3 /* ShapeMimic.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 2; path = ShapeMimic.cpp; sourceTree = "<group>"; };
+		525A344206F7A91E00003BE3 /* ShapeMimic.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ShapeMimic.h; sourceTree = "<group>"; };
+		525A344306F7A91E00003BE3 /* stripper.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = stripper.cpp; sourceTree = "<group>"; };
+		525A344406F7A91E00003BE3 /* stripper.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = stripper.h; sourceTree = "<group>"; };
+		525A344506F7A91E00003BE3 /* translucentSort.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = translucentSort.cpp; sourceTree = "<group>"; };
+		525A344606F7A91E00003BE3 /* translucentSort.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = translucentSort.h; sourceTree = "<group>"; };
+		525A347C06F7A94500003BE3 /* exportDTSCmd.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = exportDTSCmd.cpp; sourceTree = "<group>"; };
+		525A347D06F7A94500003BE3 /* mayaAppMesh.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = mayaAppMesh.cpp; sourceTree = "<group>"; };
+		525A347E06F7A94500003BE3 /* mayaAppMesh.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = mayaAppMesh.h; sourceTree = "<group>"; };
+		525A347F06F7A94500003BE3 /* mayaAppNode.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = mayaAppNode.cpp; sourceTree = "<group>"; };
+		525A348006F7A94500003BE3 /* mayaAppNode.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = mayaAppNode.h; sourceTree = "<group>"; };
+		525A348106F7A94500003BE3 /* mayaSceneEnum.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = mayaSceneEnum.cpp; sourceTree = "<group>"; };
+		525A348206F7A94500003BE3 /* mayaSceneEnum.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = mayaSceneEnum.h; sourceTree = "<group>"; };
+		D2AAC0630554660B00DB518D /* Maya2DTSExporter.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Maya2DTSExporter.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2CADFB609A1470C00EC871F /* libdtssdkplus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libdtssdkplus.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2CADFB409A1470C00EC871F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* Maya2DTSExporter */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+				8AC81D2805F69AB400F26EB4 /* Mel */,
+				8AC81D2D05F69AC500F26EB4 /* Resources */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = Maya2DTSExporter;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				525A347B06F7A94500003BE3 /* maya2dtsExporter */,
+				525A340E06F7A91E00003BE3 /* dtsSDK */,
+				525A342106F7A91E00003BE3 /* dtsSDKPlus */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC0630554660B00DB518D /* Maya2DTSExporter.dylib */,
+				D2CADFB609A1470C00EC871F /* libdtssdkplus.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		525A340E06F7A91E00003BE3 /* dtsSDK */ = {
+			isa = PBXGroup;
+			children = (
+				525A340F06F7A91E00003BE3 /* DTSBrushMesh.cpp */,
+				525A341006F7A91E00003BE3 /* DTSBrushMesh.h */,
+				525A341106F7A91E00003BE3 /* DTSEndian.h */,
+				525A341206F7A91E00003BE3 /* DTSInputStream.h */,
+				525A341306F7A91E00003BE3 /* DTSInterpolation.h */,
+				525A341406F7A91E00003BE3 /* DTSMatrix.cpp */,
+				525A341506F7A91E00003BE3 /* DTSMatrix.h */,
+				525A341606F7A91E00003BE3 /* DTSMesh.cpp */,
+				525A341706F7A91E00003BE3 /* DTSMesh.h */,
+				525A341806F7A91E00003BE3 /* DTSNormalTable.cpp */,
+				525A341906F7A91E00003BE3 /* DTSOutputStream.h */,
+				525A341A06F7A91E00003BE3 /* DTSPoint.h */,
+				525A341B06F7A91E00003BE3 /* DTSQuaternion.cpp */,
+				525A341C06F7A91E00003BE3 /* DTSQuaternion.h */,
+				525A341D06F7A91E00003BE3 /* DTSShape.cpp */,
+				525A341E06F7A91E00003BE3 /* DTSShape.h */,
+				525A341F06F7A91E00003BE3 /* DTSTypes.h */,
+				525A342006F7A91E00003BE3 /* DTSVector.h */,
+			);
+			name = dtsSDK;
+			path = ../lib/dtsSDK;
+			sourceTree = SOURCE_ROOT;
+		};
+		525A342106F7A91E00003BE3 /* dtsSDKPlus */ = {
+			isa = PBXGroup;
+			children = (
+				525A342206F7A91E00003BE3 /* appConfig.cpp */,
+				525A342306F7A91E00003BE3 /* appConfig.h */,
+				525A342406F7A91E00003BE3 /* appIfl.cpp */,
+				525A342506F7A91E00003BE3 /* appIfl.h */,
+				525A342606F7A91E00003BE3 /* appMesh.cpp */,
+				525A342706F7A91E00003BE3 /* appMesh.h */,
+				525A342806F7A91E00003BE3 /* appNode.cpp */,
+				525A342906F7A91E00003BE3 /* appNode.h */,
+				525A342A06F7A91E00003BE3 /* appSceneEnum.cpp */,
+				525A342B06F7A91E00003BE3 /* appSceneEnum.h */,
+				525A342C06F7A91E00003BE3 /* appSequence.cpp */,
+				525A342D06F7A91E00003BE3 /* appSequence.h */,
+				525A342E06F7A91E00003BE3 /* appTime.cpp */,
+				525A342F06F7A91E00003BE3 /* appTime.h */,
+				525A343006F7A91E00003BE3 /* decomp */,
+				525A343306F7A91E00003BE3 /* dtsBitMatrix.h */,
+				525A343406F7A91E00003BE3 /* DTSPlusTypes.h */,
+				525A343506F7A91E00003BE3 /* DTSUtil.cpp */,
+				525A343606F7A91E00003BE3 /* DTSUtil.h */,
+				525A343706F7A91E00003BE3 /* nvStripWrap.cpp */,
+				525A343806F7A91E00003BE3 /* nvStripWrap.h */,
+				525A343906F7A91E00003BE3 /* nvtristrip */,
+				525A344006F7A91E00003BE3 /* sceneEnum.h */,
+				525A344106F7A91E00003BE3 /* ShapeMimic.cpp */,
+				525A344206F7A91E00003BE3 /* ShapeMimic.h */,
+				525A344306F7A91E00003BE3 /* stripper.cpp */,
+				525A344406F7A91E00003BE3 /* stripper.h */,
+				525A344506F7A91E00003BE3 /* translucentSort.cpp */,
+				525A344606F7A91E00003BE3 /* translucentSort.h */,
+			);
+			name = dtsSDKPlus;
+			path = ../lib/dtsSDKPlus;
+			sourceTree = SOURCE_ROOT;
+		};
+		525A343006F7A91E00003BE3 /* decomp */ = {
+			isa = PBXGroup;
+			children = (
+				525A343106F7A91E00003BE3 /* Decompose.cpp */,
+				525A343206F7A91E00003BE3 /* Decompose.h */,
+			);
+			path = decomp;
+			sourceTree = "<group>";
+		};
+		525A343906F7A91E00003BE3 /* nvtristrip */ = {
+			isa = PBXGroup;
+			children = (
+				525A343A06F7A91E00003BE3 /* NvTriStrip.cpp */,
+				525A343B06F7A91E00003BE3 /* NvTriStrip.h */,
+				525A343C06F7A91E00003BE3 /* NvTriStripObjects.cpp */,
+				525A343D06F7A91E00003BE3 /* NvTriStripObjects.h */,
+				525A343E06F7A91E00003BE3 /* README.txt */,
+				525A343F06F7A91E00003BE3 /* VertexCache.h */,
+			);
+			path = nvtristrip;
+			sourceTree = "<group>";
+		};
+		525A347B06F7A94500003BE3 /* maya2dtsExporter */ = {
+			isa = PBXGroup;
+			children = (
+				525A347C06F7A94500003BE3 /* exportDTSCmd.cpp */,
+				525A347D06F7A94500003BE3 /* mayaAppMesh.cpp */,
+				525A347E06F7A94500003BE3 /* mayaAppMesh.h */,
+				525A347F06F7A94500003BE3 /* mayaAppNode.cpp */,
+				525A348006F7A94500003BE3 /* mayaAppNode.h */,
+				525A348106F7A94500003BE3 /* mayaSceneEnum.cpp */,
+				525A348206F7A94500003BE3 /* mayaSceneEnum.h */,
+			);
+			name = maya2dtsExporter;
+			path = ../tools/maya2dtsExporter;
+			sourceTree = SOURCE_ROOT;
+		};
+		8AC81D2805F69AB400F26EB4 /* Mel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Mel;
+			sourceTree = "<group>";
+		};
+		8AC81D2D05F69AC500F26EB4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC0600554660B00DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				525A344806F7A91E00003BE3 /* DTSBrushMesh.h in Headers */,
+				525A344906F7A91E00003BE3 /* DTSEndian.h in Headers */,
+				525A344A06F7A91E00003BE3 /* DTSInputStream.h in Headers */,
+				525A344B06F7A91E00003BE3 /* DTSInterpolation.h in Headers */,
+				525A344D06F7A91E00003BE3 /* DTSMatrix.h in Headers */,
+				525A344F06F7A91E00003BE3 /* DTSMesh.h in Headers */,
+				525A345106F7A91E00003BE3 /* DTSOutputStream.h in Headers */,
+				525A345206F7A91E00003BE3 /* DTSPoint.h in Headers */,
+				525A345406F7A91E00003BE3 /* DTSQuaternion.h in Headers */,
+				525A345606F7A91E00003BE3 /* DTSShape.h in Headers */,
+				525A345706F7A91E00003BE3 /* DTSTypes.h in Headers */,
+				525A345806F7A91E00003BE3 /* DTSVector.h in Headers */,
+				525A345A06F7A91E00003BE3 /* appConfig.h in Headers */,
+				525A345C06F7A91E00003BE3 /* appIfl.h in Headers */,
+				525A345E06F7A91E00003BE3 /* appMesh.h in Headers */,
+				525A346006F7A91E00003BE3 /* appNode.h in Headers */,
+				525A346206F7A91E00003BE3 /* appSceneEnum.h in Headers */,
+				525A346406F7A91E00003BE3 /* appSequence.h in Headers */,
+				525A346606F7A91E00003BE3 /* appTime.h in Headers */,
+				525A346806F7A91E00003BE3 /* Decompose.h in Headers */,
+				525A346906F7A91E00003BE3 /* dtsBitMatrix.h in Headers */,
+				525A346A06F7A91E00003BE3 /* DTSPlusTypes.h in Headers */,
+				525A346C06F7A91E00003BE3 /* DTSUtil.h in Headers */,
+				525A346E06F7A91E00003BE3 /* nvStripWrap.h in Headers */,
+				525A347006F7A91E00003BE3 /* NvTriStrip.h in Headers */,
+				525A347206F7A91E00003BE3 /* NvTriStripObjects.h in Headers */,
+				525A347306F7A91E00003BE3 /* VertexCache.h in Headers */,
+				525A347406F7A91E00003BE3 /* sceneEnum.h in Headers */,
+				525A347606F7A91E00003BE3 /* ShapeMimic.h in Headers */,
+				525A347806F7A91E00003BE3 /* stripper.h in Headers */,
+				525A347A06F7A91E00003BE3 /* translucentSort.h in Headers */,
+				525A348506F7A94500003BE3 /* mayaAppMesh.h in Headers */,
+				525A348706F7A94500003BE3 /* mayaAppNode.h in Headers */,
+				525A348906F7A94500003BE3 /* mayaSceneEnum.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2CADFB209A1470C00EC871F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC0620554660B00DB518D /* Maya2DTSExporter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2CADFA709A146EC00EC871F /* Build configuration list for PBXNativeTarget "Maya2DTSExporter" */;
+			buildPhases = (
+				D2AAC0600554660B00DB518D /* Headers */,
+				D2AAC0610554660B00DB518D /* Sources */,
+				8A8F789E05E54A880032FA51 /* ShellScript */,
+			);
+			buildRules = (
+				D284EA0E09E71D0100BFA6E3 /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = Maya2DTSExporter;
+			productName = Maya2DTSExporterPlugin;
+			productReference = D2AAC0630554660B00DB518D /* Maya2DTSExporter.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		D2CADFB509A1470C00EC871F /* dtssdkplus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2CADFCC09A1475000EC871F /* Build configuration list for PBXNativeTarget "dtssdkplus" */;
+			buildPhases = (
+				D2CADFB209A1470C00EC871F /* Headers */,
+				D2CADFB309A1470C00EC871F /* Sources */,
+				D2CADFB409A1470C00EC871F /* Frameworks */,
+			);
+			buildRules = (
+				D2CAE02109A14BBE00EC871F /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = dtssdkplus;
+			productName = dtssdkplus;
+			productReference = D2CADFB609A1470C00EC871F /* libdtssdkplus.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = D2CADFAB09A146EC00EC871F /* Build configuration list for PBXProject "Maya2DTSExporter" */;
+			hasScannedForEncodings = 1;
+			mainGroup = 08FB7794FE84155DC02AAC07 /* Maya2DTSExporter */;
+			projectDirPath = "";
+			targets = (
+				D2AAC0620554660B00DB518D /* Maya2DTSExporter */,
+				D2CADFB509A1470C00EC871F /* dtssdkplus */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8A8F789E05E54A880032FA51 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				$TARGET_BUILD_DIR/$EXECUTABLE_PATH,
+			);
+			outputPaths = (
+				$TARGET_BUILD_DIR/$PRODUCT_NAME.lib,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp \"$TARGET_BUILD_DIR/$EXECUTABLE_PATH\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.lib\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC0610554660B00DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				525A344706F7A91E00003BE3 /* DTSBrushMesh.cpp in Sources */,
+				525A344C06F7A91E00003BE3 /* DTSMatrix.cpp in Sources */,
+				525A344E06F7A91E00003BE3 /* DTSMesh.cpp in Sources */,
+				525A345006F7A91E00003BE3 /* DTSNormalTable.cpp in Sources */,
+				525A345306F7A91E00003BE3 /* DTSQuaternion.cpp in Sources */,
+				525A345506F7A91E00003BE3 /* DTSShape.cpp in Sources */,
+				525A345906F7A91E00003BE3 /* appConfig.cpp in Sources */,
+				525A345B06F7A91E00003BE3 /* appIfl.cpp in Sources */,
+				525A345D06F7A91E00003BE3 /* appMesh.cpp in Sources */,
+				525A345F06F7A91E00003BE3 /* appNode.cpp in Sources */,
+				525A346106F7A91E00003BE3 /* appSceneEnum.cpp in Sources */,
+				525A346306F7A91E00003BE3 /* appSequence.cpp in Sources */,
+				525A346506F7A91E00003BE3 /* appTime.cpp in Sources */,
+				525A346706F7A91E00003BE3 /* Decompose.cpp in Sources */,
+				525A346B06F7A91E00003BE3 /* DTSUtil.cpp in Sources */,
+				525A346D06F7A91E00003BE3 /* nvStripWrap.cpp in Sources */,
+				525A346F06F7A91E00003BE3 /* NvTriStrip.cpp in Sources */,
+				525A347106F7A91E00003BE3 /* NvTriStripObjects.cpp in Sources */,
+				525A347506F7A91E00003BE3 /* ShapeMimic.cpp in Sources */,
+				525A347706F7A91E00003BE3 /* stripper.cpp in Sources */,
+				525A347906F7A91E00003BE3 /* translucentSort.cpp in Sources */,
+				525A348306F7A94500003BE3 /* exportDTSCmd.cpp in Sources */,
+				525A348406F7A94500003BE3 /* mayaAppMesh.cpp in Sources */,
+				525A348606F7A94500003BE3 /* mayaAppNode.cpp in Sources */,
+				525A348806F7A94500003BE3 /* mayaSceneEnum.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2CADFB309A1470C00EC871F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2CADFB909A1473200EC871F /* translucentSort.cpp in Sources */,
+				D2CADFBA09A1473200EC871F /* nvStripWrap.cpp in Sources */,
+				D2CADFBB09A1473200EC871F /* NvTriStripObjects.cpp in Sources */,
+				D2CADFBC09A1473200EC871F /* appSequence.cpp in Sources */,
+				D2CADFBD09A1473200EC871F /* Decompose.cpp in Sources */,
+				D2CADFBE09A1473200EC871F /* appConfig.cpp in Sources */,
+				D2CADFBF09A1473200EC871F /* ShapeMimic.cpp in Sources */,
+				D2CADFC009A1473200EC871F /* appIfl.cpp in Sources */,
+				D2CADFC109A1473200EC871F /* NvTriStrip.cpp in Sources */,
+				D2CADFC209A1473200EC871F /* DTSUtil.cpp in Sources */,
+				D2CADFC309A1473200EC871F /* appNode.cpp in Sources */,
+				D2CADFC409A1473200EC871F /* stripper.cpp in Sources */,
+				D2CADFC509A1473200EC871F /* appTime.cpp in Sources */,
+				D2CADFC609A1473200EC871F /* appMesh.cpp in Sources */,
+				D2CADFC709A1473200EC871F /* appSceneEnum.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D2CADFA809A146EC00EC871F /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_STYLE = DYNAMIC;
+				MACH_O_TYPE = mh_dylib;
+				MAYA_DIRECTORY = /Applications/Alias/maya7.0;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = Maya2DTSExporter;
+				WARNING_CFLAGS = "-Wmost";
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		D2CADFA909A146EC00EC871F /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_STYLE = DYNAMIC;
+				MACH_O_TYPE = mh_dylib;
+				MAYA_DIRECTORY = /Applications/Alias/maya7.0;
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = Maya2DTSExporter;
+				WARNING_CFLAGS = "-Wmost";
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		D2CADFAA09A146EC00EC871F /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_STYLE = DYNAMIC;
+				MACH_O_TYPE = mh_dylib;
+				MAYA_DIRECTORY = /Applications/Alias/maya7.0;
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = Maya2DTSExporter;
+				WARNING_CFLAGS = "-Wmost";
+			};
+			name = Default;
+		};
+		D2CADFAC09A146EC00EC871F /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(MAYA_DIRECTORY)/devkit/include/maya/OpenMayaMac.h";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					MAC_PLUGIN,
+					_BOOL,
+					REQUIRE_IOSTREAM,
+				);
+				HEADER_SEARCH_PATHS = "$(MAYA_DIRECTORY)/devkit/include/";
+				LIBRARY_SEARCH_PATHS = "$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS";
+				MAYA_DIRECTORY = /Applications/Alias/maya7.0;
+				OTHER_LDFLAGS = (
+					"-lFoundation",
+					"-lOpenMayaAnim",
+					"-lOpenMaya",
+					"-Wl,-executable_path,$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS",
+					"-lFoundation",
+					"-lOpenMayaAnim",
+					"-lOpenMaya",
+				);
+			};
+			name = Development;
+		};
+		D2CADFAD09A146EC00EC871F /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(MAYA_DIRECTORY)/devkit/include/maya/OpenMayaMac.h";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					MAC_PLUGIN,
+					_BOOL,
+					REQUIRE_IOSTREAM,
+				);
+				HEADER_SEARCH_PATHS = "$(MAYA_DIRECTORY)/devkit/include/";
+				LIBRARY_SEARCH_PATHS = "$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS";
+				MAYA_DIRECTORY = /Applications/Alias/maya7.0;
+				OTHER_LDFLAGS = (
+					"-lFoundation",
+					"-lOpenMayaAnim",
+					"-lOpenMaya",
+					"-Wl,-executable_path,$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS",
+					"-lFoundation",
+					"-lOpenMayaAnim",
+					"-lOpenMaya",
+				);
+			};
+			name = Deployment;
+		};
+		D2CADFAE09A146EC00EC871F /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(MAYA_DIRECTORY)/devkit/include/maya/OpenMayaMac.h";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					MAC_PLUGIN,
+					_BOOL,
+					REQUIRE_IOSTREAM,
+				);
+				HEADER_SEARCH_PATHS = "$(MAYA_DIRECTORY)/devkit/include/";
+				LIBRARY_SEARCH_PATHS = "$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS";
+				MAYA_DIRECTORY = /Applications/Alias/maya7.0;
+				OTHER_LDFLAGS = (
+					"-lFoundation",
+					"-lOpenMayaAnim",
+					"-lOpenMaya",
+					"-Wl,-executable_path,$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS",
+					"-lFoundation",
+					"-lOpenMayaAnim",
+					"-lOpenMaya",
+				);
+			};
+			name = Default;
+		};
+		D2CADFCD09A1475000EC871F /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = dtssdkplus;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		D2CADFCE09A1475000EC871F /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_TREAT_NONCONFORMANT_CODE_ERRORS_AS_WARNINGS = YES;
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = dtssdkplus;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		D2CADFCF09A1475000EC871F /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = dtssdkplus;
+				ZERO_LINK = YES;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2CADFA709A146EC00EC871F /* Build configuration list for PBXNativeTarget "Maya2DTSExporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2CADFA809A146EC00EC871F /* Development */,
+				D2CADFA909A146EC00EC871F /* Deployment */,
+				D2CADFAA09A146EC00EC871F /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		D2CADFAB09A146EC00EC871F /* Build configuration list for PBXProject "Maya2DTSExporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2CADFAC09A146EC00EC871F /* Development */,
+				D2CADFAD09A146EC00EC871F /* Deployment */,
+				D2CADFAE09A146EC00EC871F /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		D2CADFCC09A1475000EC871F /* Build configuration list for PBXNativeTarget "dtssdkplus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2CADFCD09A1475000EC871F /* Development */,
+				D2CADFCE09A1475000EC871F /* Deployment */,
+				D2CADFCF09A1475000EC871F /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

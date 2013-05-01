@@ -1,0 +1,320 @@
+Max file C:\Torque\TGE_1_5_2\example\Test_LTA\MaxFile\Level05.max exported to c:\torque\tge_1_5_2\example\test_lta\data\terrains\streets\garbagebin.dts
+Exported on Thu Aug 09 13:32:33 2007
+
+
+Config file not found.
+First pass: collect useful nodes...
+
+Processing Node Particle View 01 with parent Scene Root
+Found subtree starting at Node "Particle View 01"
+Processing Node Render 01 with parent Scene Root
+Found subtree starting at Node "Render 01"
+Processing Node Event 01 with parent Scene Root
+Found subtree starting at Node "Event 01"
+Processing Node Display 01 with parent Scene Root
+Found subtree starting at Node "Display 01"
+Processing Node Street with parent Scene Root
+Mesh Node "Street" with parent "Scene Root" added to entry list
+Processing Node Trafficlight_4s with parent Scene Root
+Mesh Node "Trafficlight_4s" with parent "Scene Root" added to entry list
+Processing Node Cylinder01 with parent Scene Root
+Mesh Node "Cylinder01" with parent "Scene Root" added to entry list
+Processing Node Bus_Stop with parent Scene Root
+Mesh Node "Bus_Stop" with parent "Scene Root" added to entry list
+Processing Node collision for bus stop with parent Scene Root
+Mesh Node "collision for bus stop" with parent "Scene Root" added to entry list
+Processing Node collision for trafficlight 4s with parent Scene Root
+Mesh Node "collision for trafficlight 4s" with parent "Scene Root" added to entry list
+Processing Node collision for street light with parent Scene Root
+Mesh Node "collision for street light" with parent "Scene Root" added to entry list
+Processing Node collision for trafficlight 3s with parent Scene Root
+Mesh Node "collision for trafficlight 3s" with parent "Scene Root" added to entry list
+Processing Node Trafficlight_3d with parent Scene Root
+Mesh Node "Trafficlight_3d" with parent "Scene Root" added to entry list
+Processing Node StreetName_AngMoKio with parent Scene Root
+Mesh Node "StreetName_AngMoKio" with parent "Scene Root" added to entry list
+Processing Node Sign_Parking_Car with parent Scene Root
+Mesh Node "Sign_Parking_Car" with parent "Scene Root" added to entry list
+Processing Node Sign_Stop with parent Scene Root
+Mesh Node "Sign_Stop" with parent "Scene Root" added to entry list
+Processing Node Sign_TrafficLight with parent Scene Root
+Mesh Node "Sign_TrafficLight" with parent "Scene Root" added to entry list
+Processing Node Sign_T-Junction with parent Scene Root
+Mesh Node "Sign_T-Junction" with parent "Scene Root" added to entry list
+Processing Node Sign_Parking_Bicycle with parent Scene Root
+Mesh Node "Sign_Parking_Bicycle" with parent "Scene Root" added to entry list
+Processing Node Sign_Pedestrian with parent Scene Root
+Mesh Node "Sign_Pedestrian" with parent "Scene Root" added to entry list
+Processing Node StreetName_SpringWood with parent Scene Root
+Mesh Node "StreetName_SpringWood" with parent "Scene Root" added to entry list
+Processing Node StreetName_PrincePhilip with parent Scene Root
+Mesh Node "StreetName_PrincePhilip" with parent "Scene Root" added to entry list
+Processing Node StreetName_Morning with parent Scene Root
+Mesh Node "StreetName_Morning" with parent "Scene Root" added to entry list
+Processing Node StreetName_TuasSouth with parent Scene Root
+Mesh Node "StreetName_TuasSouth" with parent "Scene Root" added to entry list
+Processing Node StreetName_Auckland with parent Scene Root
+Mesh Node "StreetName_Auckland" with parent "Scene Root" added to entry list
+Processing Node collision for parking bicycle with parent Scene Root
+Mesh Node "collision for parking bicycle" with parent "Scene Root" added to entry list
+Processing Node collision for parking car with parent Scene Root
+Mesh Node "collision for parking car" with parent "Scene Root" added to entry list
+Processing Node collision for stop sign with parent Scene Root
+Mesh Node "collision for stop sign" with parent "Scene Root" added to entry list
+Processing Node collision for traffic light sign with parent Scene Root
+Mesh Node "collision for traffic light sign" with parent "Scene Root" added to entry list
+Processing Node collision for t junction with parent Scene Root
+Mesh Node "collision for t junction" with parent "Scene Root" added to entry list
+Processing Node collision for pedestrian sign with parent Scene Root
+Mesh Node "collision for pedestrian sign" with parent "Scene Root" added to entry list
+Processing Node collision for streetname with parent Scene Root
+Mesh Node "collision for streetname" with parent "Scene Root" added to entry list
+Processing Node collision for streetname01 with parent Scene Root
+Mesh Node "collision for streetname01" with parent "Scene Root" added to entry list
+Processing Node collision for streetname02 with parent Scene Root
+Mesh Node "collision for streetname02" with parent "Scene Root" added to entry list
+Processing Node collision for streetname03 with parent Scene Root
+Mesh Node "collision for streetname03" with parent "Scene Root" added to entry list
+Processing Node collision for streetname04 with parent Scene Root
+Mesh Node "collision for streetname04" with parent "Scene Root" added to entry list
+Processing Node collision for streetname05 with parent Scene Root
+Mesh Node "collision for streetname05" with parent "Scene Root" added to entry list
+Processing Node Cylinder03 with parent Scene Root
+Mesh Node "Cylinder03" with parent "Scene Root" added to entry list
+Processing Node collision for tree with parent Scene Root
+Mesh Node "collision for tree" with parent "Scene Root" added to entry list
+Processing Node BuidlingA_Blue01 with parent Scene Root
+Mesh Node "BuidlingA_Blue01" with parent "Scene Root" added to entry list
+Processing Node BuidlingAGreen_01 with parent Scene Root
+Mesh Node "BuidlingAGreen_01" with parent "Scene Root" added to entry list
+Processing Node BuidlingA_Orange with parent Scene Root
+Mesh Node "BuidlingA_Orange" with parent "Scene Root" added to entry list
+Processing Node BuidlingARed with parent Scene Root
+Mesh Node "BuidlingARed" with parent "Scene Root" added to entry list
+Processing Node collision buidling blue with parent Scene Root
+Mesh Node "collision buidling blue" with parent "Scene Root" added to entry list
+Processing Node collision buidling green with parent Scene Root
+Mesh Node "collision buidling green" with parent "Scene Root" added to entry list
+Processing Node collision buidling orange with parent Scene Root
+Mesh Node "collision buidling orange" with parent "Scene Root" added to entry list
+Processing Node collision buidling red with parent Scene Root
+Mesh Node "collision buidling red" with parent "Scene Root" added to entry list
+Processing Node collision for street with parent Scene Root
+Mesh Node "collision for street" with parent "Scene Root" added to entry list
+Processing Node base01 with parent Scene Root
+Found subtree starting at Node "base01"
+Processing Node start01 with parent base01
+Processing Node GarbageBin2 with parent start01
+Processing Node col-1 with parent start01
+Processing Node detail2 with parent base01
+Processing Node collision-1 with parent base01
+Processing Node bounds with parent Scene Root
+Bounding box found
+
+Second pass:  put shape structure together...
+
+Adding detail named "detail2" of size 2 to subtree "base01".
+Adding detail named "collision-1" of size -1 to subtree "base01".
+Adding node "base01" with parent "base01" to subtree rooted on max-node "base01".
+Adding node "start01" with parent "base01" to subtree rooted on max-node "base01".
+Adding node "GarbageBin2" with parent "start01" to subtree rooted on max-node "base01".
+Attaching object to node.
+Adding object named "GarbageBin".
+Adding mesh of size 2 to object "GarbageBin".
+Object offset transform:
+    scale:            x=0.10284, y=0.11140, z=0.11140
+    stretch rotation: x=-0.00000, y=-0.00000, z=0.25882, w=0.96593
+    translation:      x=0.00000, y=0.00000, z=0.00000
+    actual rotation:  x=-0.00000, y=-0.00000, z=0.00000, w=1.00000
+Adding node "col-1" with parent "start01" to subtree rooted on max-node "base01".
+Attaching object to node.
+Adding object named "col".
+Adding mesh of size -1 to object "col".
+Object offset transform:
+    scale:            x=0.15474, y=0.15474, z=0.15474
+    stretch rotation: x=-0.00000, y=-0.00000, z=-0.00000, w=1.00000
+    translation:      x=0.00000, y=0.00000, z=0.00000
+    actual rotation:  x=-0.00000, y=-0.00000, z=-0.00000, w=1.00000
+Adding object named "Street".
+Adding mesh of size -1 to object "Street".
+Adding object named "Trafficlight_4s".
+Adding mesh of size -1 to object "Trafficlight_4s".
+Adding object named "Cylinder".
+Adding mesh of size 1 to object "Cylinder".
+Adding object named "Bus_Stop".
+Adding mesh of size -1 to object "Bus_Stop".
+Adding object named "collision for bus stop".
+Adding mesh of size -1 to object "collision for bus stop".
+Adding object named "collision for trafficlight 4s".
+Adding mesh of size -1 to object "collision for trafficlight 4s".
+Adding object named "collision for street light".
+Adding mesh of size -1 to object "collision for street light".
+Adding object named "collision for trafficlight 3s".
+Adding mesh of size -1 to object "collision for trafficlight 3s".
+Adding object named "Trafficlight_3d".
+Adding mesh of size -1 to object "Trafficlight_3d".
+Adding object named "StreetName_AngMoKio".
+Adding mesh of size -1 to object "StreetName_AngMoKio".
+Adding object named "Sign_Parking_Car".
+Adding mesh of size -1 to object "Sign_Parking_Car".
+Adding object named "Sign_Stop".
+Adding mesh of size -1 to object "Sign_Stop".
+Adding object named "Sign_TrafficLight".
+Adding mesh of size -1 to object "Sign_TrafficLight".
+Adding object named "Sign_T-Junction".
+Adding mesh of size -1 to object "Sign_T-Junction".
+Adding object named "Sign_Parking_Bicycle".
+Adding mesh of size -1 to object "Sign_Parking_Bicycle".
+Adding object named "Sign_Pedestrian".
+Adding mesh of size -1 to object "Sign_Pedestrian".
+Adding object named "StreetName_SpringWood".
+Adding mesh of size -1 to object "StreetName_SpringWood".
+Adding object named "StreetName_PrincePhilip".
+Adding mesh of size -1 to object "StreetName_PrincePhilip".
+Adding object named "StreetName_Morning".
+Adding mesh of size -1 to object "StreetName_Morning".
+Adding object named "StreetName_TuasSouth".
+Adding mesh of size -1 to object "StreetName_TuasSouth".
+Adding object named "StreetName_Auckland".
+Adding mesh of size -1 to object "StreetName_Auckland".
+Adding object named "collision for parking bicycle".
+Adding mesh of size -1 to object "collision for parking bicycle".
+Adding object named "collision for parking car".
+Adding mesh of size -1 to object "collision for parking car".
+Adding object named "collision for stop sign".
+Adding mesh of size -1 to object "collision for stop sign".
+Adding object named "collision for traffic light sign".
+Adding mesh of size -1 to object "collision for traffic light sign".
+Adding object named "collision for t junction".
+Adding mesh of size -1 to object "collision for t junction".
+Adding object named "collision for pedestrian sign".
+Adding mesh of size -1 to object "collision for pedestrian sign".
+Adding object named "collision for streetname".
+Adding mesh of size -1 to object "collision for streetname".
+Adding mesh of size 1 to object "collision for streetname".
+Adding mesh of size 2 to object "collision for streetname".
+Adding mesh of size 3 to object "collision for streetname".
+Adding mesh of size 4 to object "collision for streetname".
+Adding mesh of size 5 to object "collision for streetname".
+Adding mesh of size 3 to object "Cylinder".
+Adding object named "collision for tree".
+Adding mesh of size -1 to object "collision for tree".
+Adding object named "BuidlingA_Blue".
+Adding mesh of size 1 to object "BuidlingA_Blue".
+Adding object named "BuidlingAGreen_".
+Adding mesh of size 1 to object "BuidlingAGreen_".
+Adding object named "BuidlingA_Orange".
+Adding mesh of size -1 to object "BuidlingA_Orange".
+Adding object named "BuidlingARed".
+Adding mesh of size -1 to object "BuidlingARed".
+Adding object named "collision buidling blue".
+Adding mesh of size -1 to object "collision buidling blue".
+Adding object named "collision buidling green".
+Adding mesh of size -1 to object "collision buidling green".
+Adding object named "collision buidling orange".
+Adding mesh of size -1 to object "collision buidling orange".
+Adding object named "collision buidling red".
+Adding mesh of size -1 to object "collision buidling red".
+Adding object named "collision for street".
+Adding mesh of size -1 to object "collision for street".
+
+Third pass:  Collapsing unneeded nodes...
+
+
+Add default object states...
+
+Adding object state to 1 detail level(s) of mesh "GarbageBin".
+Adding frame.
+Object is visible.
+137 faces, 411 verts, 411 tverts before cropping textures and joining verts
+---------------------------------
+Adding object state to 1 detail level(s) of mesh "col".
+Adding frame.
+Object is visible.
+24 faces, 72 verts, 72 tverts before cropping textures and joining verts
+---------------------------------
+
+Add default node states...
+
+Adding node rotation at time 0 for node "base01".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0 for node "base01".
+  translation:     x=-93.82706, y=-144.90392, z=0.00000
+---------------------------------
+Adding node rotation at time 0 for node "start01".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0 for node "start01".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding node rotation at time 0 for node "GarbageBin2".
+  rotation:     x=0.00000, y=0.00000, z=-0.25880, w=0.96591
+---------------------------------
+Adding node translation at time 0 for node "GarbageBin2".
+  translation:     x=93.82697, y=144.90392, z=29.18269
+---------------------------------
+Adding node rotation at time 0 for node "col-1".
+  rotation:     x=0.00000, y=0.00000, z=-0.25880, w=0.96591
+---------------------------------
+Adding node translation at time 0 for node "col-1".
+  translation:     x=93.82265, y=144.91245, z=29.24306
+---------------------------------
+
+Adding 0 sequences...
+
+
+Optimizing meshes...
+
+Optimizing mesh "GarbageBin" detail level 2.
+411 verts before joining verts
+173 verts after joining verts
+137 faces before stripping
+Using quick and dirty stripping method.
+40 strips with average length 5.88 (range 3 to 16) and 18 reversals
+Results in 178 cache misses
+
+Optimizing mesh "col" detail level -1.
+72 verts before joining verts
+26 verts after joining verts
+24 faces before stripping
+Using quick and dirty stripping method.
+3 strips with average length 12.67 (range 12 to 14) and 8 reversals
+Results in 26 cache misses
+
+Shape Hierarchy:
+
+   Details:
+      detail2, Subtree 0, objectDetail 0, size 2
+      collision-1, Subtree 0, objectDetail 1, size -1
+
+   Subtrees:
+      Subtree 0
+         base01
+            start01
+               GarbageBin2 --> Object GarbageBin with following details:  2
+               col-1 --> Object col with following details:  -1
+
+   Sequences:
+
+   Material list:
+   material #0: "colors2".
+   material #1: "whiteFloor".
+   material #2: "GroundMarble".
+   material #3: "RoadTex_n_diffuse".
+   material #4: "RoadTex_3Arrow_diffuse".
+   material #5: "RoadTex_pedes_diffuse".
+   material #6: "RoadTex_j_diffuse".
+   material #7: "RoadTex_2ArrowL_diffuse".
+   material #8: "RoadTex_2ArrowR_diffuse".
+   material #9: "RoadTex_2ArrowLR_diffuse".
+   material #10: "TrafficLight".
+   material #11: "tree".
+   material #12: "BusStopSign".
+   material #13: "SignAndStreetName".
+   material #14: "BuildingA".
+   material #15: "BuildingA01".
+
+Checking for duplicate nodes...
+
+Checking for duplicate objects...

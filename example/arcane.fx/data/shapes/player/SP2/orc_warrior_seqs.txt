@@ -1,0 +1,4 @@
+// Orc Warrior Sequences
+./SP2/ChillKill_impact.dsq ck_hit
+
+

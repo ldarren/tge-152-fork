@@ -1,0 +1,5 @@
+1) fixed: unable to execute same mellee move straight in a row
+2) discover: call disconnect in onSleep will crash the application
+3) in gui's command can use $ThisControl to represent current control
+4) placed gravity affected objects such as player to a freefall location can caused program crashed
+5) ShapeBaseImageData (or all other object) put ifl content as part of the animation system. for ShapeBaseImageData can call them by setting the animation to "state"

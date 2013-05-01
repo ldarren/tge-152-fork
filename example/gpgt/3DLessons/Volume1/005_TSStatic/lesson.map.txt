@@ -1,0 +1,6 @@
+TSStaticLesson.cs
+TSStatic
+TSStaticLesson
+TSStaticLesson.ml.txt
+tsstatic
+clientScripts.cs

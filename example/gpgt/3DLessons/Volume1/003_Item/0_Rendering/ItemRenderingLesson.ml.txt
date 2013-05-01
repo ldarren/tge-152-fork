@@ -1,0 +1,11 @@
+<spush><just:center><font:Arial Bold:18><color:FFFF00>
+Item Rendering<spop>
+<just:left><font:Arial:16><br><lmargin%:5>
+Show various Item/ItemData supported rendering features:<br><br>
+<color:FF2222>
+- Constant Lights<br>
+- Pulsing Lights<br>
+- Constant Light + Fading<br>
+- Constant Light + Cloaking<br>
+- Pulsing Light + Cloaking<br>
+

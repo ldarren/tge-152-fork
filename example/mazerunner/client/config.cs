@@ -1,0 +1,24 @@
+// Torque Input Map File
+if (isObject(moveMap)) moveMap.delete();
+new ActionMap(moveMap);
+moveMap.bindCmd(keyboard, "escape", "", "escapeFromGame();");
+moveMap.bind(keyboard, "a", moveleft);
+moveMap.bind(keyboard, "d", moveright);
+moveMap.bind(keyboard, "w", moveforward);
+moveMap.bind(keyboard, "s", movebackward);
+moveMap.bind(keyboard, "space", jump);
+moveMap.bind(keyboard, "r", setZoomFOV);
+moveMap.bind(keyboard, "e", toggleZoom);
+moveMap.bind(keyboard, "z", toggleFreeLook);
+moveMap.bind(keyboard, "tab", toggleFirstPerson);
+moveMap.bind(keyboard, "alt c", toggleCamera);
+moveMap.bindCmd(keyboard, "ctrl w", "commandToServer(\'playCel\',\"wave\");", "");
+moveMap.bindCmd(keyboard, "ctrl s", "commandToServer(\'playCel\',\"salute\");", "");
+moveMap.bindCmd(keyboard, "ctrl k", "commandToServer(\'suicide\');", "");
+moveMap.bind(keyboard, "f8", dropCameraAtPlayer);
+moveMap.bind(keyboard, "f7", dropPlayerAtCamera);
+moveMap.bind(keyboard, "ctrl o", bringUpOptions);
+moveMap.bindCmd(keyboard, "n", "NetGraph::toggleNetGraph();", "");
+moveMap.bind(mouse0, "xaxis", yaw);
+moveMap.bind(mouse0, "yaxis", pitch);
+moveMap.bind(mouse0, "button0", mouseFire);

@@ -1,0 +1,10 @@
+<spush><just:center><font:Arial Bold:18><color:FFFF00>
+Explosions<spop>
+<just:left><font:Arial:16><br><lmargin%:5>
+Explosion lesson, showing examples of:<br><br>
+<color:FF2222>
+- Sub-Explosions<br>
+- Particle Usage<br>
+- Debris<br>
+- Camera Shake<br>
+

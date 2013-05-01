@@ -1,0 +1,14 @@
+<just:center><font:Arial Bold:18>
+<spush><color:FFFF00>ShapeBase Rendering
+<spop>
+<font:Arial:16><br>
+<just:left>
+<lmargin%:5>
+Shows various shapeBase supported rendering features:<br><br>
+<color:FF2222>
+- Fading<br>
+- Fading & Hiding<br>
+- Cloaking Levels<br>
+- Blank cloakTexture<br>
+- Re-Skinning<br>
+

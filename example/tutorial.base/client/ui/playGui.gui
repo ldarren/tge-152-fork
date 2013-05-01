@@ -1,0 +1,16 @@
+//--- OBJECT WRITE BEGIN ---
+new GameTSCtrl(PlayGui) {
+   canSaveDynamicFields = "1";
+   profile = "GuiContentProfile";
+   horizSizing = "right";
+   vertSizing = "bottom";
+   position = "0 0";
+   extent = "640 480";
+   minExtent = "8 8";
+   visible = "1";
+   cameraZRot = "0";
+   forceFOV = "0";
+      noCursor = "1";
+      helpTag = "0";
+};
+//--- OBJECT WRITE END ---

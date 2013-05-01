@@ -1,0 +1,49 @@
+<just:center>
+<color:FFFFFF>
+<spush>
+<just:center>
+<br><br>
+
+<font:Arial Bold:60>
+<color:dddddd>
+<shadowcolor:ff2222>
+<shadow:1:1>
+Maze Runner
+<spop>
+<br>
+<br>
+<br>
+<just:left>
+<spush><font:Tahoma Bold:20>
+<color:dddddd>
+Maze Runner is a simple / instructional / single-player game.  You will write a prototype of this game while working through the chapters in:
+<br>
+<br>
+<just:center>
+<font:Tahoma Bold:24>
+<color:00ccff>
+The Game Programmer's Guide<br>to Torque
+<just:left>
+<font:Tahoma Bold:20>
+<color:dddddd>
+<br>
+<br>
+Although it is aimed at the game programmer/scripter, this guide and the accompanying lesson kits, starter kits, and samplers are useful to all members of a game development team, as well as teachers and students. 
+
+<br>
+<br>
+To learn more about: This Game, Game Programmer's Guide to Torque, Hall Of Worlds, GarageGames, and the assets used in the production of this simple title, please press F1 to bring up the help menus.
+
+<br>
+<br>
+<br>
+<br>
+<spop>
+<spush>
+<just:center>
+<font:Comic Sans:30>
+<color:ff4444>
+(Escape for Main Menu)
+<spop>
+
+

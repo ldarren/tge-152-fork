@@ -1,0 +1,131 @@
+if(!isObject(lsGuiMLTextProfile)) new GuiControlProfile ("GuiMLTextlessonMetricsProfile")
+{
+	opaque    = true;
+   fontType = "Lucida Console";
+  	fontSize    = 14;
+	fontColor   = "51 255 153";
+	fillColor = "32 32 32 192 ";
+};
+
+if(!isObject(lsGuiScrollProfile)) new GuiControlProfile (GuiScrolllessonMetricsProfile)
+{
+	opaque    = true;
+	fillColor = "20 20 20 255";
+	border = 3;
+	borderThickness = 2;
+	borderColor = "0 0 0";
+	bitmap = "./darkScroll";
+	hasBitmapArray = true;
+};
+
+//--- OBJECT WRITE BEGIN ---
+new GameTSCtrl(playGui) {
+   Profile = "GuiContentProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   position = "0 0";
+   Extent = "800 600";
+   MinExtent = "8 8";
+   Visible = "1";
+   applyFilterToChildren = "1";
+   cameraZRot = "0";
+   forceFOV = "0";
+      noCursor = "1";
+      helpTag = "0";
+
+   new GuiBitmapCtrl(LagIcon) {
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      position = "572 3";
+      Extent = "32 32";
+      MinExtent = "8 8";
+      Visible = "0";
+      bitmap = "./lagIcon.png";
+      wrap = "0";
+         helpTag = "0";
+   };
+   new GuiShapeNameHud() {
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "width";
+      VertSizing = "height";
+      position = "0 0";
+      Extent = "813 605";
+      MinExtent = "8 8";
+      Visible = "1";
+      fillColor = "0 0 0 0.25";
+      frameColor = "0 1 0 1";
+      textColor = "0 1 0 1";
+      showFill = "0";
+      showFrame = "0";
+      verticalOffset = "0.2";
+      distanceFade = "0.1";
+         damageFillColor = "0.000000 1.000000 0.000000 1.000000";
+         damageRect = "30 4";
+         helpTag = "0";
+         damageFrameColor = "1.000000 0.600000 0.000000 1.000000";
+   };
+   new GuiCrossHairHud() {
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "center";
+      VertSizing = "center";
+      position = "384 284";
+      Extent = "32 32";
+      MinExtent = "8 8";
+      Visible = "1";
+      bitmap = "./crossHair";
+      wrap = "0";
+      damageFillColor = "0 1 0 1";
+      damageFrameColor = "1 0.6 0 1";
+      damageRect = "50 4";
+      damageOffset = "0 10";
+         helpTag = "0";
+   };
+   new GuiMLTextCtrl(lessonMetrics) {
+      Profile = "GuiMLTextlessonMetricsProfile";
+      HorizSizing = "relative";
+      VertSizing = "bottom";
+      position = "6 10";
+      Extent = "225 14";
+      MinExtent = "8 2";
+      Visible = "1";
+      lineSpacing = "2";
+      allowColorChars = "0";
+      maxChars = "-1";
+   };
+   new GuiControl(lessonCompass) {
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "center";
+      VertSizing = "bottom";
+      position = "200 10";
+      Extent = "400 50";
+      MinExtent = "8 2";
+      Visible = "1";
+         stripName = "lessonCompassStrip";
+         stripWidth = "1200";
+
+      new GuiBitmapCtrl(lessonCompassStrip) {
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "0 0";
+         Extent = "1200 50";
+         MinExtent = "8 2";
+         Visible = "1";
+         bitmap = "./compassStrip";
+         wrap = "0";
+      };
+      new GuiBitmapCtrl(lessonCompassFrame) {
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "0 0";
+         Extent = "400 50";
+         MinExtent = "8 2";
+         Visible = "1";
+         bitmap = "./compassFrameWorn";
+         wrap = "0";
+      };
+   };
+};
+//--- OBJECT WRITE END ---

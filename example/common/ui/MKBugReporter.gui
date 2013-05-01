@@ -1,0 +1,339 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(MKBugReporter) {
+   canSaveDynamicFields = "0";
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   position = "0 0";
+   Extent = "1024 768";
+   MinExtent = "8 2";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+
+   new GuiWindowCtrl() {
+      canSaveDynamicFields = "0";
+      Profile = "GuiWindowProfile";
+      HorizSizing = "center";
+      VertSizing = "center";
+      position = "321 213";
+      Extent = "408 306";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      text = "Bug Report";
+      maxLength = "1024";
+      resizeWidth = "0";
+      resizeHeight = "0";
+      canMove = "1";
+      canClose = "1";
+      canMinimize = "0";
+      canMaximize = "0";
+      minSize = "50 50";
+      closeCommand = "Canvas.popDialog(MKBugReporter);";
+
+      new GuiTextCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiTextProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "8 27";
+         Extent = "97 17";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         text = "Your email address:";
+         maxLength = "1024";
+      };
+      new GuiTextCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiTextProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "8 52";
+         Extent = "92 17";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         text = "Description of Bug:";
+         maxLength = "1024";
+      };
+      new GuiTextEditCtrl(userEmail) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiTextEditProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "120 27";
+         Extent = "270 17";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         text = "delerium10101@gmail.com";
+         maxLength = "1024";
+         historySize = "0";
+         password = "0";
+         tabComplete = "0";
+         sinkAllKeyEvents = "0";
+         password = "0";
+         passwordMask = "*";
+      };
+      new GuiScrollCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiScrollProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "120 54";
+         Extent = "269 200";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         willFirstRespond = "1";
+         hScrollBar = "alwaysOff";
+         vScrollBar = "dynamic";
+         constantThumbHeight = "0";
+         childMargin = "0 0";
+
+         new GuiMLTextEditCtrl(bugDesc) {
+            canSaveDynamicFields = "0";
+            Profile = "GuiMLTextEditProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "2 2";
+            Extent = "245 200";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            lineSpacing = "2";
+            allowColorChars = "0";
+            maxChars = "-1";
+         };
+      };
+      new GuiButtonCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiButtonProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "10 260";
+         Extent = "56 30";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "mkSubmitBug();";
+         hovertime = "1000";
+         text = "Submit";
+         groupNum = "-1";
+         buttonType = "PushButton";
+      };
+      new GuiTextCtrl(curStatus) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiTextProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "120 269";
+         Extent = "8 17";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         maxLength = "1024";
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+
+function MKBugReporter::onWake()
+{
+   curStatus.setText("");
+   bugDesc.setText("");
+   userEmail.setText($pref::MKBug::userEmail);
+}
+
+function dec2hex(%val)
+{
+	// Converts a decimal number into a 2 digit HEX number
+	%digits ="0123456789ABCDEF";	//HEX digit table
+	
+	// To get the first number we divide by 16 and then round down, using 
+	// that number as a lookup into our HEX table.
+	%firstDigit = getSubStr(%digits,mFloor(%val/16),1);
+	
+	// To get the second number we do a MOD 16 and using that number as a
+	// lookup into our HEX table.
+	%secDigit = getSubStr(%digits,%val % 16,1);
+	
+	// return our two digit HEX number
+	return %firstDigit @ %secDigit;
+}
+
+function chrValue(%chr)
+{
+	// So we don't have to do any C++ changes we approximate the function
+	// to return ASCII Values for a character.  This ignores the first 31 
+	// characters and the last 128.
+	
+	// Setup our Character Table.  Starting with ASCII character 32 (SPACE)
+	%charTable = " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_'abcdefghijklmnopqrstuvwxyz{|}~\t\n\r";
+	
+	//Find the position in the string for the Character we are looking for the value of
+	%value = strpos(%charTable,%chr);
+
+	// Add 32 to the value to get the true ASCII value
+	%value = %value + 32;
+	
+	//HACK:  Encode TAB, New Line and Carriage Return
+	
+	if (%value >= 127)
+	{
+			if(%value == 127)
+				%value = 9;
+			if(%value == 128)
+				%value = 10;
+			if(%value == 129)
+				%value = 13;
+	}
+	
+	//return the value of the character
+	return %value;
+}
+
+function URLEncode(%rawString, %withAmpersand)
+{
+	// Encode strings to be HTTP safe for URL use	
+	
+	// Table of characters that are valid in an HTTP URL
+   if(%withAmpersand)
+   {
+      %validChars = %validChars = "1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz:/.?=_-$(){}~&";
+   }
+   else
+   {
+      %validChars = "1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz:/.?=_-$(){}~";
+   }
+
+
+	// If the string we are encoding has text... start encoding
+	if (strlen(%rawString) > 0)
+	{
+		// Loop through each character in the string
+		for(%i=0;%i<strlen(%rawString);%i++)
+		{
+			// Grab the character at our current index location
+			%chrTemp = getSubStr(%rawString,%i,1);
+
+			//  If the character is not valid for an HTTP URL... Encode it 		  
+ 		  if (strstr(%validChars,%chrTemp) == -1)
+ 		  {
+ 		  	//Get the HEX value for the character
+ 		  	%chrTemp = dec2hex(chrValue(%chrTemp));
+ 		  	
+ 		  	// Is it a space?  Change it to a "+" symbol
+ 		  	if (%chrTemp $= "20")
+ 		  	{
+ 		  		%chrTemp = "+";
+ 		  	}
+ 		  	else
+ 		  	{
+ 		  			// It's not a space, prepend the HEX value with a % 
+ 		  			%chrTemp = "%" @ %chrTemp;
+ 		  	}	  	
+ 		  }
+ 		  // Build our encoded string
+			%encodeString = %encodeString @ %chrTemp;
+		}
+	}
+	// Return the encoded string value
+	return %encodeString;
+}
+
+function openBugReport(%val)
+{
+   if(%val)
+   {
+      Canvas.pushDialog(MKBugReporter);
+   }
+}
+
+function mkSubmitBug()
+{
+	%obj = new TCPObject(MKBugConnection);	
+	%obj.email = userEmail.getText();
+   $pref::MKBug::userEmail = %obj.email;
+   %obj.description = bugDesc.getText();
+   %obj.proc = getProcessorName();
+   %obj.procSpeed = getProcessorSpeed();
+   %obj.vendor = getGLVendor();
+   %obj.renderer = getGLRenderer();
+   %obj.glver = getGLVersion();
+   %obj.mkver = getMKVersion();
+	%obj.connect("www.ttrgame.com:80");
+   curStatus.setText("Connecting to server...");
+}	
+
+function MKBugConnection::onDNSResolved(%this)
+{
+   curStatus.setText("DNS resolved...");
+}
+
+function MKBugConnection::onDNSFailed(%this)
+{
+   curStatus.setText("Failed to resolve DNS.");
+}
+
+function MKBugConnection::onConnected(%this)
+{
+   curStatus.setText("Processing request...");
+   lockConsole();
+   %maxLog = getNumberOfConsoleEntries();
+   %text = getConsoleEntry(0) @ "\r\n";
+   for(%i = 1; %i < %maxLog; %i++)
+   {
+      %text = %text @ getConsoleEntry(%i) @ "\r\n";
+   }
+   unlockConsole();
+   //echo(%text);
+   
+	%data="subject=MK Bug&email=" @ %this.email @ "&os=" @ $platform @ "&MKVer=" @ %this.mkver @ "&Processor=" @ %this.proc @ "&ProcSpeed=" @ %this.procSpeed;
+   %data = %data @ "&GLVendor=" @ %this.vendor @ "&GLRenderer=" @ %this.renderer @ "&GLVersion=" @ %this.glver @ "&Description=" @ %this.description;
+   %data = %data @ "&Log=";
+	%data = URLEncode(%data, true);
+   %data = %data @ URLEncode(%text, false);
+	%httpCmd="POST /MK/mkbugreporter.php HTTP/1.0\nHost: www.ttrgame.com:80\nUser-Agent: ModKit/0.8 \nAccept: */*\nContent-Length: "@ strlen(%data) @"\nContent-Type: application/x-www-form-urlencoded; charset=UTF-8\n\n" @ %data @ "\r\n";
+
+	//echo(%httpCmd);
+   %length = strlen(%httpCmd);
+   %curPos = 0;
+   while(%curPos < %length)
+   {
+      %string = getSubStr(%httpCmd, %curPos, 1023);
+      %this.send(%string);
+      %curPos += 1024;
+   }
+	%this.send(%httpCmd @ " \r\n");
+}
+
+function MKBugConnection::onConnectFailed(%this)
+{
+   curStatus.setText("Failed to connect, please try again later.");
+}
+
+function MKBugConnection::onDisconnect(%this)
+{
+	%this.delete();
+}
+
+function MKBugConnection::onLine(%this, %line)
+{
+	if(firstword(%line) $= "Thank")
+	{
+      curStatus.setText("Your bug report has been submitted.");
+		%this.disconnect();
+	}
+}
+
+GlobalActionMap.bind(keyboard, "ctrl b", openBugReport);

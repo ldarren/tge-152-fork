@@ -1,0 +1,3 @@
+Welcome to rail money exchanger, <<PlayerName>>. Please choose a service~Sound:NPCVoice01<AnswerStart><a:RPGDialog 1>Cash to Bank</a><BR><a:RPGDialog 2>Bank to Fare</a><BR><a:RPGDialog 3>Bank to CashCard</a><BR><a:RPGDialog 4>Is ok, i dun need your services right now</a>
+Thanks <<PlayerName>>, transaction has been done, and we had deducted <<Custom>> for service charge<AnswerStart><a:RPGDialog 1>Huh? <<Custom>> for service charge? wtf!?</a>
+Sorry your <<Custom>> account dun have enough fund<AnswerStart><a:RPGDialog 1>Oh, i'll come back later</a>

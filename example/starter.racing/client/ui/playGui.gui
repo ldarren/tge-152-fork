@@ -1,0 +1,136 @@
+//--- OBJECT WRITE BEGIN ---
+new GameTSCtrl(PlayGui) {
+   canSaveDynamicFields = "1";
+   profile = "GuiContentProfile";
+   horizSizing = "right";
+   vertSizing = "bottom";
+   position = "0 0";
+   extent = "640 480";
+   minExtent = "8 8";
+   visible = "1";
+   cameraZRot = "0";
+   forceFOV = "0";
+   noCursor = "1";
+
+   new GuiBitmapCtrl(CenterPrintDlg) {
+      profile = "CenterPrintProfile";
+      horizSizing = "center";
+      vertSizing = "center";
+      position = "45 230";
+      extent = "550 20";
+      minExtent = "8 8";
+      visible = "0";
+      bitmap = "./hudfill.png";
+      wrap = "0";
+
+      new GuiMLTextCtrl(CenterPrintText) {
+         profile = "CenterPrintTextProfile";
+         horizSizing = "center";
+         vertSizing = "center";
+         position = "0 0";
+         extent = "546 12";
+         minExtent = "8 8";
+         visible = "1";
+         lineSpacing = "2";
+         allowColorChars = "0";
+         maxChars = "-1";
+      };
+   };
+   new GuiBitmapCtrl(BottomPrintDlg) {
+      profile = "CenterPrintProfile";
+      horizSizing = "center";
+      vertSizing = "top";
+      position = "45 375";
+      extent = "550 20";
+      minExtent = "8 8";
+      visible = "0";
+      bitmap = "./hudfill.png";
+      wrap = "0";
+
+      new GuiMLTextCtrl(BottomPrintText) {
+         profile = "CenterPrintTextProfile";
+         horizSizing = "center";
+         vertSizing = "center";
+         position = "0 0";
+         extent = "546 12";
+         minExtent = "8 8";
+         visible = "1";
+         lineSpacing = "2";
+         allowColorChars = "0";
+         maxChars = "-1";
+      };
+   };
+   new GuiBitmapCtrl(LagIcon) {
+      profile = "GuiDefaultProfile";
+      horizSizing = "right";
+      vertSizing = "bottom";
+      position = "572 3";
+      extent = "32 32";
+      minExtent = "8 8";
+      visible = "0";
+      bitmap = "./lagIcon.png";
+      wrap = "0";
+   };
+   new GuiShapeNameHud() {
+      profile = "GuiDefaultProfile";
+      horizSizing = "width";
+      vertSizing = "height";
+      position = "2 -1";
+      extent = "653 485";
+      minExtent = "8 8";
+      visible = "1";
+      fillColor = "0.000000 0.000000 0.000000 0.250000";
+      frameColor = "0.000000 1.000000 0.000000 1.000000";
+      textColor = "0.000000 1.000000 0.000000 1.000000";
+      showFill = "0";
+      showFrame = "0";
+      verticalOffset = "0.2";
+      distanceFade = "0.1";
+         damageFrameColor = "1.000000 0.600000 0.000000 1.000000";
+         damageRect = "30 4";
+         helpTag = "0";
+         damageFillColor = "0.000000 1.000000 0.000000 1.000000";
+   };
+   new GuiSpeedometerHud() {
+      profile = "GuiDefaultProfile";
+      horizSizing = "left";
+      vertSizing = "top";
+      position = "440 280";
+      extent = "200 200";
+      minExtent = "8 2";
+      visible = "1";
+      bitmap = "./speedometer";
+      wrap = "0";
+      maxSpeed = "100";
+      minAngle = "215";
+      maxAngle = "0";
+      color = "1.000000 0.300000 0.300000 1.000000";
+      center = "130.000000 123.000000";
+      length = "100";
+      width = "2";
+      tail = "0";
+   };
+   new GuiBitmapCtrl(counter) {
+      profile = "GuiDefaultProfile";
+      horizSizing = "center";
+      vertSizing = "center";
+      position = "130 110";
+      extent = "380 260";
+      minExtent = "8 2";
+      visible = "0";
+      bitmap = "./hud/go.png";
+      wrap = "0";
+   };
+   new GuiTextCtrl(LapCounter) {
+      profile = "GuiBigTextProfile";
+      horizSizing = "left";
+      vertSizing = "bottom";
+      position = "450 5";
+      extent = "170 39";
+      minExtent = "8 2";
+      visible = "1";
+      text = "Laps: 0";
+      maxLength = "255";
+   };
+};
+//--- OBJECT WRITE END ---

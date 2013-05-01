@@ -1,0 +1,13 @@
+%pName = "Female Fighter";
+%pDesc = "Uses light weight machine gun";
+%pPlayerDTS = "LTA/data/Shapes/Player/models/human_female/human_female_1.dts";
+%pWeapon = "MD 5";
+%pWeaponDTS = "LTA/data/Shapes/Player/equips/AK47/ak47.dts";
+%pModel = 2;
+%skinHead = "base orc elf";
+%skinBody = "base armor spider";
+%skinArms = "base armor spider";
+%skinHands = "base armor spider";
+%skinLegs = "base armor spider";
+%skinFeet = "base armor spider";
+%skinFolder = "LTA/data/shapes/Player/Models/human_female/";

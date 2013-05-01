@@ -1,0 +1,205 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(gsFilter) {
+   profile = "GuiDefaultProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "800 600";
+   minExtent = "8 8";
+   visible = "1";
+      Parent = "GUISamplerInterface";
+
+   new GuiChunkedBitmapCtrl() {
+      profile = "gsDefaultProfile";
+      horizSizing = "width";
+      vertSizing = "height";
+      position = "0 0";
+      extent = "800 600";
+      minExtent = "8 2";
+      visible = "1";
+      bitmap = $SA::Background1;
+      useVariable = "0";
+      tile = "0";
+
+      new GuiBitmapButtonCtrl(guiSamplerLeft) {
+         profile = "gpgtButtonProfile1";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         position = "125 525";
+         extent = "75 75";
+         minExtent = "8 2";
+         visible = "1";
+         command = "Canvas.setContent(Canvas.getContent().Parent);";
+         accelerator = "escape";
+         text = "Button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "~/client/sharedAssets/button0/leftButton0";
+      };
+      new GuiControl() {
+         profile = "gsDefaultProfile";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         position = "100 100";
+         extent = "600 400";
+         minExtent = "8 2";
+         visible = "1";
+
+         new GuiBitmapCtrl(FilterEnergyStream) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "253 121";
+            extent = "123 30";
+            minExtent = "8 2";
+            visible = "1";
+            bitmap = "./energystream";
+            wrap = "1";
+               taskMgr = "1521";
+               curY = "128";
+               curX = "80";
+         };
+         new GuiBitmapCtrl() {
+            profile = "GuiDefaultProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "253 121";
+            extent = "122 31";
+            minExtent = "8 2";
+            visible = "1";
+            bitmap = "./energypipe";
+            wrap = "0";
+         };
+         new GuiBitmapBorderCtrl() {
+            profile = "gpgtBitmapBorder";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "68 33";
+            extent = "200 200";
+            minExtent = "8 2";
+            visible = "1";
+
+            new GuiFilterCtrl(TestFilter0) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "width";
+               vertSizing = "height";
+               position = "5 11";
+               extent = "188 183";
+               minExtent = "8 2";
+               visible = "1";
+               controlPoints = "5";
+               filter = "0.000000 0.464435 0.384937 0.506276 1.000000";
+                  taskMgr = "1526";
+            };
+         };
+         new GuiBitmapBorderCtrl() {
+            profile = "gpgtBitmapBorder";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "347 33";
+            extent = "200 200";
+            minExtent = "8 2";
+            visible = "1";
+
+            new GuiFilterCtrl(TestFilter1) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "width";
+               vertSizing = "height";
+               position = "0 0";
+               extent = "200 200";
+               minExtent = "8 2";
+               visible = "1";
+               controlPoints = "5";
+               filter = "0.000000 0.464440 0.384940 0.506280 1.000000";
+            };
+         };
+         new GuiControl() {
+            profile = "gsBorder";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "193 258";
+            extent = "200 100";
+            minExtent = "8 2";
+            visible = "1";
+
+            new GuiButtonCtrl(resetFilterButton) {
+               profile = "GuiButtonProfile";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "100 37";
+               extent = "71 20";
+               minExtent = "8 2";
+               visible = "1";
+               command = "TestFilter0.identity();";
+               text = "Reset";
+               groupNum = "-1";
+               buttonType = "PushButton";
+            };
+            new GuiControl() {
+               profile = "gsBorder";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "18 7";
+               extent = "59 80";
+               minExtent = "8 2";
+               visible = "1";
+
+               new GuiRadioCtrl(numKnots) {
+                  profile = "GuiRadioProfile";
+                  horizSizing = "relative";
+                  vertSizing = "relative";
+                  position = "7 0";
+                  extent = "39 18";
+                  minExtent = "8 2";
+                  visible = "1";
+                  command = "$thisControl.updateKnots();";
+                  text = "2";
+                  groupNum = "1";
+                  buttonType = "RadioButton";
+               };
+               new GuiRadioCtrl(numKnots) {
+                  profile = "GuiRadioProfile";
+                  horizSizing = "relative";
+                  vertSizing = "relative";
+                  position = "7 18";
+                  extent = "39 19";
+                  minExtent = "8 2";
+                  visible = "1";
+                  command = "$thisControl.updateKnots();";
+                  text = "3";
+                  groupNum = "1";
+                  buttonType = "RadioButton";
+               };
+               new GuiRadioCtrl(numKnots) {
+                  profile = "GuiRadioProfile";
+                  horizSizing = "relative";
+                  vertSizing = "relative";
+                  position = "7 37";
+                  extent = "39 20";
+                  minExtent = "8 2";
+                  visible = "1";
+                  command = "$thisControl.updateKnots();";
+                  text = "4";
+                  groupNum = "1";
+                  buttonType = "RadioButton";
+               };
+               new GuiRadioCtrl(numKnots) {
+                  profile = "GuiRadioProfile";
+                  horizSizing = "relative";
+                  vertSizing = "relative";
+                  position = "7 57";
+                  extent = "39 23";
+                  minExtent = "8 2";
+                  visible = "1";
+                  command = "$thisControl.updateKnots();";
+                  text = "5";
+                  groupNum = "1";
+                  buttonType = "RadioButton";
+               };
+            };
+         };
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+

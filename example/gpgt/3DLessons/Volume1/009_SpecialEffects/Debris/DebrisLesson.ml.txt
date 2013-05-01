@@ -1,0 +1,15 @@
+<spush><just:center><font:Arial Bold:18><color:FFFF00>
+Debris<spop>
+<just:left><font:Arial:16><br><lmargin%:5>
+Debris lesson, showing examples of:<br><br>
+<color:FF2222>
+- 2D Debris<br>
+- 3D Debris<br>
+- Debris w/ Fire Trail (particles)<br>
+- Fast Moving Debris<br>
+- Fading Debris<br>
+- Non-Fading (popping) Debris<br>
+- Debris w/ Low Friction<br>
+- Bouncing Debris<br>
+- Static on maxBounce<br>
+

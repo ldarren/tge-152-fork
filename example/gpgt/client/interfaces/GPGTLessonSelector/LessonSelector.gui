@@ -1,0 +1,356 @@
+if(!isObject(lsGuiMLTextProfile)) new GuiControlProfile ("lsGuiMLTextProfile")
+{
+	opaque    = true;
+	fillColor = "0 0 0";
+	fontColor = "255 255 255 255";
+};
+
+if(!isObject(lsGuiScrollProfile)) new GuiControlProfile (lsGuiScrollProfile)
+{
+	opaque    = true;
+	fillColor = "0 0 0 255";
+	border = 3;
+	borderThickness = 2;
+	borderColor = "0 0 0";
+	bitmap = "./darkScroll";
+	hasBitmapArray = true;
+};
+
+
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(lessonSelector) {
+   profile = "GuiDefaultProfile";
+   horizSizing = "right";
+   vertSizing = "bottom";
+   position = "0 0";
+   extent = "800 600";
+   minExtent = "8 8";
+   visible = "1";
+      currentSelectedLesson = "0";
+      helpTag = "0";
+
+   new GuiControl() {
+      profile = "GuiDefaultProfile";
+      horizSizing = "center";
+      vertSizing = "center";
+      position = "200 100";
+      extent = "400 400";
+      minExtent = "8 8";
+      visible = "1";
+         helpTag = "0";
+
+      new GuiBitmapCtrl(tile2) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "18 252";
+         extent = "105 105";
+         minExtent = "8 2";
+         visible = "1";
+         wrap = "0";
+            currentLesson = "2";
+            Selected = "0";
+
+         new GuiMLTextCtrl(tileText) {
+            profile = "lsGuiMLTextProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "20 45";
+            extent = "64 14";
+            minExtent = "8 2";
+            visible = "0";
+            lineSpacing = "2";
+            allowColorChars = "0";
+            maxChars = "-1";
+         };
+      };
+      new GuiBitmapCtrl(tile1) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "18 148";
+         extent = "105 105";
+         minExtent = "8 2";
+         visible = "1";
+         wrap = "0";
+            currentLesson = "1";
+            Selected = "0";
+
+         new GuiMLTextCtrl(tileText) {
+            profile = "lsGuiMLTextProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "20 45";
+            extent = "64 14";
+            minExtent = "8 2";
+            visible = "0";
+            lineSpacing = "2";
+            allowColorChars = "0";
+            maxChars = "-1";
+         };
+      };
+      new GuiBitmapCtrl(tile0) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "18 44";
+         extent = "105 105";
+         minExtent = "8 2";
+         visible = "1";
+         wrap = "0";
+            currentLesson = "0";
+            Selected = "1";
+
+         new GuiMLTextCtrl(tileText) {
+            profile = "lsGuiMLTextProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "20 45";
+            extent = "64 14";
+            minExtent = "8 2";
+            visible = "0";
+            lineSpacing = "2";
+            allowColorChars = "0";
+            maxChars = "-1";
+         };
+      };
+      new GuiControl(LessonDescriptionFrame) {
+         profile = "GuiWindowProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "170 38";
+         extent = "205 347";
+         minExtent = "8 2";
+         visible = "1";
+
+         new GuiScrollCtrl(LessonDescriptionScroll) {
+            profile = "lsGuiScrollProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "1 1";
+            extent = "199 323";
+            minExtent = "8 2";
+            visible = "1";
+            willFirstRespond = "1";
+            hScrollBar = "alwaysOff";
+            vScrollBar = "alwaysOff";
+            constantThumbHeight = "0";
+            childMargin = "4 4";
+
+            new GuiMLTextCtrl(LessonDescription) {
+               profile = "lsGuiMLTextProfile";
+               horizSizing = "width";
+               vertSizing = "height";
+               position = "6 6";
+               extent = "188 14";
+               minExtent = "8 2";
+               visible = "1";
+               lineSpacing = "2";
+               allowColorChars = "0";
+               maxChars = "-1";
+            };
+         };
+      };
+      new GuiChunkedBitmapCtrl(LessonSelectorHUD) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "width";
+         vertSizing = "height";
+         position = "0 0";
+         extent = "400 400";
+         minExtent = "8 2";
+         visible = "1";
+         bitmap = "./lessonselector";
+         useVariable = "0";
+         tile = "0";
+
+         new GuiBitmapButtonCtrl(CancelSelectLessonButton) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "20 363";
+            extent = "100 26";
+            minExtent = "8 2";
+            visible = "1";
+            command = "Canvas.popDialog(LessonSelector);";
+            accelerator = "escape";
+            text = "Button";
+            groupNum = "-1";
+            buttonType = "PushButton";
+            bitmap = "./CancelButton";
+         };
+         new GuiBitmapButtonCtrl(SelectLessonButton) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "20 12";
+            extent = "100 26";
+            minExtent = "8 2";
+            visible = "1";
+            command = "if(true == LessonSelector.GotoLesson()) Canvas.popDialog(LessonSelector);";
+            accelerator = "enter";
+            text = "Button";
+            groupNum = "-1";
+            buttonType = "PushButton";
+            bitmap = "./SelectButton";
+         };
+         new GuiBitmapButtonCtrl(UpLesson) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "126 133";
+            extent = "32 53";
+            minExtent = "8 2";
+            visible = "1";
+            command = "scrollLessons(0);";
+            accelerator = "up";
+            text = "Button";
+            groupNum = "-1";
+            buttonType = "PushButton";
+            bitmap = "./UpLesson";
+         };
+         new GuiBitmapButtonCtrl(DownLesson) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "126 213";
+            extent = "32 53";
+            minExtent = "8 2";
+            visible = "1";
+            command = "scrollLessons(1);";
+            accelerator = "down";
+            text = "Button";
+            groupNum = "-1";
+            buttonType = "PushButton";
+            bitmap = "./DownLesson";
+         };
+         new GuiBitmapButtonCtrl(DownDownLesson) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "126 273";
+            extent = "32 53";
+            minExtent = "8 2";
+            visible = "1";
+            command = "scrollLessons(1);scrollLessons(1);scrollLessons(1);";
+            accelerator = "down";
+            text = "Button";
+            groupNum = "-1";
+            buttonType = "PushButton";
+            bitmap = "./DownDownLesson";
+         };
+         new GuiBitmapButtonCtrl(UpUpLesson) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "126 73";
+            extent = "32 53";
+            minExtent = "8 2";
+            visible = "1";
+            command = "scrollLessons(0);scrollLessons(0);scrollLessons(0);";
+            accelerator = "up";
+            text = "Button";
+            groupNum = "-1";
+            buttonType = "PushButton";
+            bitmap = "./UpUpLesson";
+         };
+         new GuiBitmapButtonCtrl(CommunityEnableLessonButton) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "161 371";
+            extent = "90 20";
+            minExtent = "8 2";
+            visible = "1";
+            variable = "";
+            //command = "lessonSelector.community=!lessonSelector.community;lessonSelector.reInitLessons();";
+            accelerator = "escape";
+            text = "Button";
+            groupNum = "-1";
+            buttonType = "ToggleButton";
+            bitmap = "./communityButton";
+         };
+         new GuiBitmapButtonCtrl(QAEnableLessonButton) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "291 371";
+            extent = "90 20";
+            minExtent = "8 2";
+            visible = "1";
+            variable = "";
+            //command = "lessonSelector.qa=!lessonSelector.qa;lessonSelector.reInitLessons();";
+            accelerator = "escape";
+            text = "Button";
+            groupNum = "-1";
+            buttonType = "ToggleButton";
+            bitmap = "./qaButton";
+         };
+         new GuiBitmapButtonCtrl(Vol2EnableLessonButton) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "291 11";
+            extent = "90 20";
+            minExtent = "8 2";
+            visible = "1";
+            variable = "";
+            //command = "lessonSelector.vol2=!lessonSelector.vol2;lessonSelector.reInitLessons();";
+            accelerator = "escape";
+            text = "Button";
+            groupNum = "-1";
+            buttonType = "ToggleButton";
+            bitmap = "./vol2Button";
+         };
+         new GuiBitmapButtonCtrl(Vol1EnableLessonButton) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "161 11";
+            extent = "90 20";
+            minExtent = "8 2";
+            visible = "1";
+            variable = "";
+            //command = "lessonSelector.vol1=!lessonSelector.vol1;lessonSelector.reInitLessons();";
+            accelerator = "escape";
+            text = "Button";
+            groupNum = "-1";
+            buttonType = "ToggleButton";
+            bitmap = "./vol1Button";
+         };
+      };
+      new GuiMouseEventCtrl(tileMouseEvent) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "18 45";
+         extent = "105 105";
+         minExtent = "8 2";
+         visible = "1";
+         lockMouse = "0";
+            tileNum = "0";
+      };
+      new GuiMouseEventCtrl(tileMouseEvent) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "18 148";
+         extent = "105 105";
+         minExtent = "8 2";
+         visible = "1";
+         lockMouse = "0";
+            tileNum = "1";
+      };
+      new GuiMouseEventCtrl(tileMouseEvent) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "18 252";
+         extent = "105 105";
+         minExtent = "8 2";
+         visible = "1";
+         lockMouse = "0";
+            tileNum = "2";
+      };
+   };
+};
+//--- OBJECT WRITE END ---

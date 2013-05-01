@@ -1,0 +1,42 @@
+if (!isObject(DefaultNoBorderProfile))	new GuiControlProfile(DefaultNoBorderProfile : GuiDefaultProfile)
+{
+	border = 0;
+	borderThickness = 0;
+	borderColor = "0 0 0 0";
+};
+
+if (!isObject(BigNiceTextProfile))	new GuiControlProfile (BigNiceTextProfile : GuiBigTextProfile)
+{
+	fontType = "Verdana Bold";
+	fontColor = "255 255 255";
+	fontColorLink = "255 96 96";
+	fontColorLinkHL = "0 0 255";
+};
+
+if (!isObject(ControlPanelProfile))	new GuiControlProfile (ControlPanelProfile)
+{
+   opaque = true;
+   fillColor = "50 50 50 128";
+   border = 0;
+   borderColor   = "0 0 0";
+};
+
+//--- OBJECT WRITE BEGIN ---
+new GameTSCtrl(PlayGui) {
+   canSaveDynamicFields = "1";
+   Profile = "GuiContentProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   position = "0 0";
+   Extent = "1024 768";
+   MinExtent = "8 8";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+   applyFilterToChildren = "1";
+   cameraZRot = "0";
+   forceFOV = "0";
+      helpTag = "0";
+      noCursor = "0";
+};
+//--- OBJECT WRITE END ---

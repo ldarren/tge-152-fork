@@ -1,0 +1,147 @@
+new GuiControlProfile ("LoadingGuiContentProfile")
+{
+   opaque = true;
+   fillColor = "200 200 200 128";
+   border = 0;
+   borderColor   = "0 0 0";
+};
+
+//--- OBJECT WRITE BEGIN ---
+new GuiChunkedBitmapCtrl(LoadingGui) {
+   canSaveDynamicFields = "0";
+   Profile = "GuiContentProfile";
+   HorizSizing = "width";
+   VertSizing = "height";
+   position = "0 0";
+   Extent = "1024 768";
+   MinExtent = "8 8";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+   bitmap = "./windows/loading";
+   useVariable = "0";
+   tile = "0";
+
+   new GuiControl() {
+      canSaveDynamicFields = "0";
+      Profile = "LoadingGuiContentProfile";
+      HorizSizing = "center";
+      VertSizing = "center";
+      position = "284 230";
+      Extent = "455 308";
+      MinExtent = "8 8";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+
+      new GuiTextCtrl(LOAD_MapName) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiMediumTextProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "7 6";
+         Extent = "439 28";
+         MinExtent = "8 8";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         maxLength = "255";
+      };
+      new GuiMLTextCtrl(LOAD_MapDescription) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiMLTextProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "7 62";
+         Extent = "303 14";
+         MinExtent = "8 8";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         lineSpacing = "2";
+         allowColorChars = "0";
+         maxChars = "-1";
+      };
+      new GuiProgressCtrl(LoadingProgress) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiProgressProfile";
+         HorizSizing = "right";
+         VertSizing = "top";
+         position = "128 262";
+         Extent = "262 25";
+         MinExtent = "8 8";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         maxLength = "1024";
+         startColor = "0 0 0 0";
+         endColor = "0 0 0 0";
+
+         new GuiTextCtrl(LoadingProgressTxt) {
+            canSaveDynamicFields = "0";
+            Profile = "GuiProgressTextProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "-4 3";
+            Extent = "262 20";
+            MinExtent = "8 8";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            text = "WAITING FOR SERVER";
+            maxLength = "255";
+         };
+      };
+      new GuiButtonCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiButtonProfile";
+         HorizSizing = "right";
+         VertSizing = "top";
+         position = "58 262";
+         Extent = "65 25";
+         MinExtent = "20 20";
+         canSave = "1";
+         Visible = "1";
+         Command = "disconnect();";
+         Accelerator = "escape";
+         hovertime = "1000";
+         text = "CANCEL";
+         groupNum = "-1";
+         buttonType = "PushButton";
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+
+//------------------------------------------------------------------------------
+function LoadingGui::onAdd(%this)
+{
+   %this.qLineCount = 0;
+}
+
+//------------------------------------------------------------------------------
+function LoadingGui::onWake(%this)
+{
+   // Play sound...
+   CloseMessagePopup();
+}
+
+//------------------------------------------------------------------------------
+function LoadingGui::onSleep(%this)
+{
+   // Clear the load info:
+   if ( %this.qLineCount !$= "" )
+   {
+      for ( %line = 0; %line < %this.qLineCount; %line++ )
+         %this.qLine[%line] = "";
+   }      
+   %this.qLineCount = 0;
+
+   LOAD_MapName.setText( "" );
+   LOAD_MapDescription.setText( "" );
+   LoadingProgress.setValue( 0 );
+   LoadingProgressTxt.setValue( "WAITING FOR SERVER" );
+
+   // Stop sound...
+   //LuckyStarClient.stopSong(); // already handled in common
+}

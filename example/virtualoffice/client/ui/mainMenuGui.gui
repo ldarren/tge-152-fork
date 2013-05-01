@@ -1,0 +1,81 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiChunkedBitmapCtrl(MainMenuGui) {
+   canSaveDynamicFields = "0";
+   Profile = "GuiContentProfile";
+   HorizSizing = "width";
+   VertSizing = "height";
+   position = "0 0";
+   Extent = "1024 768";
+   MinExtent = "8 8";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+   bitmap = "./background";
+   useVariable = "0";
+   tile = "0";
+
+   new GuiButtonCtrl() {
+      canSaveDynamicFields = "0";
+      Profile = "GuiButtonProfile";
+      HorizSizing = "right";
+      VertSizing = "top";
+      position = "36 700";
+      Extent = "110 20";
+      MinExtent = "8 8";
+      canSave = "1";
+      Visible = "1";
+      Command = "quit();";
+      hovertime = "1000";
+      text = "Quit!";
+      groupNum = "-1";
+      buttonType = "PushButton";
+   };
+   new GuiButtonCtrl() {
+      canSaveDynamicFields = "0";
+      Profile = "GuiButtonProfile";
+      HorizSizing = "right";
+      VertSizing = "top";
+      position = "38 633";
+      Extent = "110 20";
+      MinExtent = "8 8";
+      canSave = "1";
+      Visible = "1";
+      Command = "Canvas.setContent(startMissionGui);";
+      hovertime = "1000";
+      text = "Start Tour...";
+      groupNum = "-1";
+      buttonType = "PushButton";
+   };
+   new GuiButtonCtrl() {
+      canSaveDynamicFields = "0";
+      Profile = "GuiButtonProfile";
+      HorizSizing = "right";
+      VertSizing = "top";
+      position = "36 666";
+      Extent = "110 20";
+      MinExtent = "8 8";
+      canSave = "1";
+      Visible = "1";
+      Command = "Canvas.setContent(JoinServerGui);";
+      hovertime = "1000";
+      text = "Join Tour...";
+      groupNum = "-1";
+      buttonType = "PushButton";
+   };
+};
+//--- OBJECT WRITE END ---
+
+function MainMenuGui::onWake(%this)
+{
+	if (alxIsPlaying($GameMusicHandle))
+	{
+		alxStop($GameMusicHandle);
+	}
+	if (!alxIsPlaying($musicHandle))
+	{
+		$musicHandle = alxPlay(AudioMainMenu);
+	}
+}
+
+
+

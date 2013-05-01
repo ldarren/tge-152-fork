@@ -1,0 +1,18 @@
+{
+"classname" "worldspawn"
+"min_pixels" "250"
+"geometry_scale" "32.0"
+"light_geometry_scale" "32.0"
+"ambient_color" "0 0 0"
+"emergency_ambient_color" "0 0 0"
+"mapversion" "220"
+"wad" "\home\projects\v12\example\data\interiors\evil1\textures.wad;\home\projects\v12\example\data\interiors\test\textures.wad"
+{
+( -384 384 3584 ) ( 384 384 3584 ) ( 384 -384 3584 ) F [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1 
+( -384 -384 0 ) ( 384 -384 0 ) ( 384 384 0 ) F [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1 
+( -384 384 3584 ) ( -384 -384 3584 ) ( -384 -384 0 ) F [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1 
+( 384 384 0 ) ( 384 -384 0 ) ( 384 -384 3584 ) F [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1 
+( 384 384 3584 ) ( -384 384 3584 ) ( -384 384 0 ) F [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1 
+( 384 -384 0 ) ( -384 -384 0 ) ( -384 -384 3584 ) F [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1 
+}
+}

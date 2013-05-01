@@ -1,0 +1,29 @@
+10/Feb/2008
+===========
+- Game option, allow screen resolution change - done 17/Feb
+- continuous wrong animation - done 19/feb
+- change congratulation text -21/feb
+- fix crash bug, that's happen when do right again when lower animation is pose - not able to reproduce
+- better playGui - done 6/april
+- camera system then allow zooming - wait for multiplayer
+- added another column for attempt (totally 3 colums, word, attempt, result) - done 16/Feb
+- make tweenable progress bar and textbox - progress done 17/feb. textbox
+- if game end at spell wrong, the avatar can't walk properly, may be a problem in online game
+
+
+23/Feb/2008
+===========
+- add shadow level to graphics option, setShadowDetailLevel to execute it
+- improve RPGDialog system, 
+	1) allow content change without close-reopen dialog
+	2) better bulleting
+	3) have session id, to avoid closing the wrong dialogbox
+	4) remove player transformation/aiming code in dialog class
+	5) allow standard event, such as [next], [close], doing this by disconnect "answer" rendering and command being tied together
+
+
+6/April/2008
+============
+- fix "robot" motion, very obvious in multiplayer mode. almost happen everytime change from "fail move" to normal move
+- chat and lobby in multi player
+- auto arrange player stand position

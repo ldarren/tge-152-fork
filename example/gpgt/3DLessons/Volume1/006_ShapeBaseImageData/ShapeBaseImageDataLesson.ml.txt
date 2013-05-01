@@ -1,0 +1,8 @@
+<spush><just:center><font:Arial Bold:18><color:FFFF00>
+Images<spop>
+<just:left><font:Arial:16><br><lmargin%:5>
+Gives sample usage of ShapeBaseImage:<br><br>
+<color:FF2222>
+- Mounting Image to Shape<br>
+- State Machine Driven (IFL) Animation<br>
+

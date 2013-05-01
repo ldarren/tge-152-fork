@@ -1,0 +1,19 @@
+3D Studio Max DTS Exporter 1.3 License
+==================
+
+Except where otherwise noted, all of the documentation and software included
+in the 3D Studio Max DTS  exporter is copyrighted by Dark Industries.
+
+Copyright (C) 2004-2006 Dark Industries. All rights reserved.
+
+This software is provided "as-is," without any express or implied warranty.
+In no event shall the author be held liable for any damages arising from the
+use of this software.
+
+Permission is granted to liscensed users to use this software for any purpose,
+including commercial applications, and to alter it for their own use.
+
+
+Dark Industries
+info@darkindustries.com
+http://www.darkindustries.com/

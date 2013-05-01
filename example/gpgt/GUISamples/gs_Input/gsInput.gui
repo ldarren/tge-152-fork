@@ -1,0 +1,156 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(gsInput) {
+   profile = "GuiDefaultProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "800 600";
+   minExtent = "8 8";
+   visible = "1";
+      Parent = "GUISamplerInterface";
+
+   new GuiChunkedBitmapCtrl() {
+      profile = "gsDefaultProfile";
+      horizSizing = "width";
+      vertSizing = "height";
+      position = "0 0";
+      extent = "800 600";
+      minExtent = "8 2";
+      visible = "1";
+      bitmap = $SA::Background1;
+      useVariable = "0";
+      tile = "0";
+
+      new GuiBitmapButtonCtrl(guiSamplerLeft) {
+         profile = "gpgtButtonProfile1";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         position = "125 525";
+         extent = "75 75";
+         minExtent = "8 2";
+         visible = "1";
+         command = "Canvas.setContent(Canvas.getContent().Parent);";
+         accelerator = "escape";
+         text = "Button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "~/client/sharedAssets/button0/leftButton0";
+      };
+      new GuiControl() {
+         profile = "gsDefaultProfile";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         position = "100 100";
+         extent = "600 400";
+         minExtent = "8 2";
+         visible = "1";
+
+         new GuiMLTextCtrl() {
+            profile = "GuiMLTextProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "137 135";
+            extent = "80 14";
+            minExtent = "64 14";
+            visible = "1";
+            lineSpacing = "2";
+            allowColorChars = "0";
+            maxChars = "-1";
+            text = "deviceString:";
+         };
+         new GuiMLTextCtrl() {
+            profile = "GuiMLTextProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "137 166";
+            extent = "80 14";
+            minExtent = "64 14";
+            visible = "1";
+            lineSpacing = "2";
+            allowColorChars = "0";
+            maxChars = "-1";
+            text = "actionString:";
+         };
+         new GuiMLTextCtrl() {
+            profile = "GuiMLTextProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "130 195";
+            extent = "80 14";
+            minExtent = "64 14";
+            visible = "1";
+            lineSpacing = "2";
+            allowColorChars = "0";
+            maxChars = "-1";
+            text = "makeOrBreak:";
+         };
+         new GuiMLTextCtrl(makeOrBreak) {
+            profile = "GuiMLTextProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "217 195";
+            extent = "165 14";
+            minExtent = "132 14";
+            visible = "1";
+            lineSpacing = "2";
+            allowColorChars = "0";
+            maxChars = "-1";
+            text = "<NULL>";
+         };
+         new GuiMLTextCtrl(actionString) {
+            profile = "GuiMLTextProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "217 166";
+            extent = "165 14";
+            minExtent = "132 14";
+            visible = "1";
+            lineSpacing = "2";
+            allowColorChars = "0";
+            maxChars = "-1";
+            text = "<NULL>";
+         };
+         new GuiMLTextCtrl(deviceString) {
+            profile = "GuiMLTextProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "217 135";
+            extent = "165 14";
+            minExtent = "132 14";
+            visible = "1";
+            lineSpacing = "2";
+            allowColorChars = "0";
+            maxChars = "-1";
+            text = "<NULL>";
+         };
+         new GuiMLTextCtrl() {
+            profile = "GuiMLTextProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "137 235";
+            extent = "400 36";
+            minExtent = "300 14";
+            visible = "1";
+            lineSpacing = "2";
+            allowColorChars = "0";
+            maxChars = "-1";
+            text = "<font:Arial Bold:18>Press ESCAPE twice (in a row) to deactivate the GuiInputCtrl";
+         };
+      };
+      new GuiButtonCtrl(captureInputs) {
+         profile = "GuiButtonProfile";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         position = "377 256";
+         extent = "250 29";
+         minExtent = "8 2";
+         visible = "1";
+         command = "$thisControl.activateInputCtrl();";
+         text = "Press To Activate GuiInputCtrl";
+         groupNum = "-1";
+         buttonType = "PushButton";
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+

@@ -1,0 +1,9 @@
+I'm waiting somebody else~Sound:NPCVoice01<AnswerStart><a:RPGDialog 1>ok</a>
+I'm talking to somebody else~Sound:NPCVoice01<AnswerStart><a:RPGDialog 1>ok</a>
+Hello, <<PlayerName>>. Do you need escort service?~Sound:NPCVoice01<AnswerStart><a:RPGDialog 1>Yes! please (drooling)</a><BR><a:RPGDialog 2>hmmm... do you mind to serve my brother as well?</a><BR><a:RPGDialog 3>No thanks, I been here before</a>
+Then what are we waiting for?<AnswerStart><a:RPGDialog 1>Let's do it, babe</a>
+Ya, why not?<AnswerStart><a:RPGDialog 1>Double joy!</a>
+Too bad, <<PlayerName>> see you around~Sound:NPCVoice01<AnswerStart><a:RPGDialog 1>Ya maybe next time</a>
+<<PlayerName>>, What animal is this?<AnswerStart><a:RPGDialog 1>cat</a><BR><a:RPGDialog 2>women</a>
+<<PlayerName>>, What about this?<AnswerStart><a:RPGDialog 1>dog</a><BR><a:RPGDialog 2>women</a>
+Alright then, you know s'pore pretty well, you can be on your own<AnswerStart><a:RPGDialog 1>ok</a>

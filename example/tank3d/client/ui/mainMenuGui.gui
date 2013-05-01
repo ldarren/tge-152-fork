@@ -1,0 +1,93 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiChunkedBitmapCtrl(MainMenuGui) {
+   canSaveDynamicFields = "0";
+   Profile = "GuiContentProfile";
+   HorizSizing = "width";
+   VertSizing = "height";
+   position = "0 0";
+   Extent = "800 600";
+   MinExtent = "8 8";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+   bitmap = "./tankbg";
+   useVariable = "0";
+   tile = "0";
+
+   new GuiChunkedBitmapCtrl(buttonsGUI) {
+      canSaveDynamicFields = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "center";
+      VertSizing = "bottom";
+      position = "685 15";
+      Extent = "95 55";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      bitmap = "./gray_bar";
+      useVariable = "0";
+      tile = "0";
+
+      new GuiBitmapButtonCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiBorderButtonProfile";
+         HorizSizing = "left";
+         VertSizing = "top";
+         position = "56 5";
+         Extent = "31 43";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "quit();";
+         tooltipprofile = "GuiToolTipProfile";
+         ToolTip = "Close down the engine";
+         hovertime = "1000";
+         text = "Button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./buttons/exit";
+      };
+      new GuiBitmapButtonCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiBorderButtonProfile";
+         HorizSizing = "left";
+         VertSizing = "top";
+         position = "5 6";
+         Extent = "41 42";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "Canvas.pushDialog(optionsDlg);";
+         tooltipprofile = "GuiToolTipProfile";
+         ToolTip = "Adjust basic video, sound and other options";
+         hovertime = "1000";
+         text = "Button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./buttons/options";
+      };
+   };
+   new GuiBitmapButtonCtrl() {
+      canSaveDynamicFields = "0";
+      Profile = "GuiBorderButtonProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "16 523";
+      Extent = "141 30";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      Command = "loadMyMission();";
+      hovertime = "1000";
+      text = "Button";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      bitmap = "./buttons/startgame";
+   };
+};
+//--- OBJECT WRITE END ---
+
+function MainMenuGui::onWake(%this)
+{
+}

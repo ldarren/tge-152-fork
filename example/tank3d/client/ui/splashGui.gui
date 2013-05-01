@@ -1,0 +1,31 @@
+// ============================================================
+// Project            :  TankAttack3D
+// File               :  .\tank3d\client\ui\splashGui.gui
+// Copyright          :  
+// Author             :  Alucard
+// Created on         :  Wednesday, August 29, 2007 2:57 PM
+//
+// Editor             :  Codeweaver v. 1.2.2685.32755
+//
+// Description        :  
+//                    :  
+//                    :  
+// ============================================================
+
+//--- OBJECT WRITE BEGIN ---
+new GuiFadeinBitmapCtrl(splashScreen) {
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   position = "0 0";
+   Extent = "1024 768";
+   MinExtent = "8 2";
+   Visible = "1";
+   bitmap = "./tankbg";
+   wrap = "0";
+   fadeinTime = "0";
+   waitTime = "10";
+   fadeoutTime = "0";
+   noCursor = "1";
+   done = "0";
+};

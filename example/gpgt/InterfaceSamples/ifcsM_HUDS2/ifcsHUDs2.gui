@@ -1,0 +1,124 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(ifcsHUDs2) {
+   profile = "gsDefaultProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "800 600";
+   minExtent = "8 8";
+   visible = "1";
+      Parent = "SampleInterfacesSelector";
+
+   new GuiChunkedBitmapCtrl() {
+      profile = "gsDefaultProfile";
+      horizSizing = "width";
+      vertSizing = "height";
+      position = "0 0";
+      extent = "800 600";
+      minExtent = "8 2";
+      visible = "1";
+      bitmap = $SA::Background1;
+      useVariable = "0";
+      tile = "0";
+
+      new GuiBitmapButtonCtrl(guiSamplerLeft) {
+         profile = "gpgtButtonProfile1";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         position = "125 525";
+         extent = "75 75";
+         minExtent = "8 2";
+         visible = "1";
+         command = "Canvas.setContent(Canvas.getContent().Parent);";
+         accelerator = "escape";
+         text = "Button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "~/client/sharedAssets/button0/leftButton0";
+      };
+
+      new GuiControl() {
+         profile = "gsDefaultProfile";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         position = "100 100";
+         extent = "600 400";
+         minExtent = "8 2";
+         visible = "1";
+
+         new GuiControl(theCompass) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "center";
+            vertSizing = "bottom";
+            position = "50 100";
+            extent = "400 50";
+            minExtent = "8 2";
+            visible = "1";
+			stripName = "compassStrip";
+			stripWidth = 1200;
+
+            new GuiBitmapCtrl(compassStrip) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "0 0";
+               extent = "1200 50";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./compassStrip";
+               wrap = "0";
+            };
+            new GuiBitmapCtrl(compassFrame) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "0 0";
+               extent = "400 50";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./compassFrame";
+               wrap = "0";
+            };
+         };
+
+         new GuiControl(theCompass2) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "center";
+            vertSizing = "top";
+            position = "50 200";
+            extent = "400 50";
+            minExtent = "8 2";
+            visible = "1";
+			stripName = "compassStrip2";
+			stripWidth = 1200;
+
+            new GuiBitmapCtrl(compassStrip2) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "0 0";
+               extent = "1200 50";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./compassStrip";
+               wrap = "0";
+            };
+            new GuiBitmapCtrl(compassFrame2) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "0 0";
+               extent = "400 50";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./compassFrame";
+               wrap = "0";
+            };
+         };
+
+
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+

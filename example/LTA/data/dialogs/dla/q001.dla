@@ -1,0 +1,5 @@
+<1>GotoQuestion(2)<2>GotoQuestion(3)<3>CloseDialog()<4>
+<1>GotoQuestion(3)<2>
+<1>GotoQuestion(4)<2>
+<1>GotoQuestion(5)<2>GotoQuestion(5)<3>GotoQuestion(5)<4>
+<1>CloseDialog()<2>

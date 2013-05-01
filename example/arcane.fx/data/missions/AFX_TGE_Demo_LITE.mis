@@ -1,0 +1,310 @@
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+   new ScriptObject(MissionInfo) {
+      desc[0] = "This is a lightweight variation of the DAY mission. Water, trees, and buildings are absent.";
+      desc[1] = "\n\n   -- Legacy terrain\n";
+      desc[2] = "   -- Living and dead orc targets\n";
+      desc[3] = "   -- Daytime lighting";
+      name = "AFX: Lightweight test mission -- legacy terrain";
+      hasBrightLighting = true;
+   };
+   new MissionArea(MissionArea) {
+      area = "-152 -352 1040 1056";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+      locked = "true";
+   };
+   new Sky(Sky) {
+      position = "-1088 -928 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      materialList = "~/data/skies/sky_storm.dml";
+      cloudHeightPer[0] = "7";
+      cloudHeightPer[1] = "0.3";
+      cloudHeightPer[2] = "0.199973";
+      cloudSpeed1 = "0.002";
+      cloudSpeed2 = "0.001";
+      cloudSpeed3 = "0.003";
+      visibleDistance = "800";
+      fogDistance = "500";
+      fogColor = "0.4 0.4 0.4 1.0";
+      fogStorm1 = false;
+      fogStorm2 = true;
+      fogStorm3 = false;
+      fogVolume1 = "100 0 169.5";
+      fogVolume2 = "150 170 250";
+      fogVolume3 = "0 0 0";
+      windVelocity = "0.2 0.2 0";
+      windEffectPrecipitation = true;
+      SkySolidColor = "0.64 0.148 0.215 0";
+      useSkyTextures = true;
+      renderBottomTexture = false;
+      noRenderBans = false;
+      skyGlow = false;
+      locked = "true";
+   };
+   new Sun() {
+      azimuth = "45";
+      elevation = "35";
+      color = "0.36 0.35 0.31 1.0";
+      ambient = "0.18 0.18 0.2 1.0";
+      locked = "true";
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+   };
+   new fxSunLight(sunflare1) {
+      canSaveDynamicFields = "1";
+      position = "98.5277 -289.053 188.13";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      Enable = "1";
+      LocalFlareBitmap = "common/lighting/corona";
+      RemoteFlareBitmap = "common/lighting/corona";
+      SunAzimuth = "224";
+      SunElevation = "10";
+      LockToRealSun = "1";
+      FlareTP = "1";
+      Colour = "0.3 0.1 0.1 1";
+      Brightness = "1";
+      FlareSize = "1";
+      LocalScale = "1";
+      FadeTime = "0.1";
+      BlendMode = "0";
+      AnimColour = "0";
+      AnimBrightness = "1";
+      AnimRotation = "1";
+      AnimSize = "1";
+      AnimAzimuth = "0";
+      AnimElevation = "0";
+      LerpColour = "1";
+      LerpBrightness = "1";
+      LerpRotation = "1";
+      LerpSize = "1";
+      LerpAzimuth = "1";
+      LerpElevation = "1";
+      LinkFlareSize = "0";
+      SingleColourKeys = "1";
+      MinColour = "0 0 0 1";
+      MaxColour = "1 1 1 1";
+      MinBrightness = "0.4";
+      MaxBrightness = "1";
+      MinRotation = "0";
+      MaxRotation = "359";
+      minSize = "0.5";
+      MaxSize = "1";
+      MinAzimuth = "0";
+      MaxAzimuth = "359";
+      MinElevation = "-30";
+      MaxElevation = "210";
+      RedKeys = "AZA";
+      GreenKeys = "AZA";
+      BlueKeys = "AZA";
+      BrightnessKeys = "JAZJTAJ";
+      RotationKeys = "ZA";
+      SizeKeys = "ATAZA";
+      AzimuthKeys = "AZ";
+      ElevationKeys = "AZ";
+      ColourTime = "5";
+      BrightnessTime = "10";
+      RotationTime = "40";
+      SizeTime = "30";
+      AzimuthTime = "5";
+      ElevationTime = "5";
+   };
+   new fxSunLight(sunflare2) {
+      canSaveDynamicFields = "1";
+      position = "72.9234 -289.051 187.692";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      Enable = "1";
+      LocalFlareBitmap = "common/lighting/corona";
+      RemoteFlareBitmap = "common/lighting/corona";
+      SunAzimuth = "224";
+      SunElevation = "10";
+      LockToRealSun = "1";
+      FlareTP = "1";
+      Colour = "1 1 0 1";
+      Brightness = "1";
+      FlareSize = "0.5";
+      LocalScale = "1";
+      FadeTime = "0.1";
+      BlendMode = "0";
+      AnimColour = "0";
+      AnimBrightness = "1";
+      AnimRotation = "1";
+      AnimSize = "0";
+      AnimAzimuth = "0";
+      AnimElevation = "0";
+      LerpColour = "1";
+      LerpBrightness = "1";
+      LerpRotation = "1";
+      LerpSize = "1";
+      LerpAzimuth = "1";
+      LerpElevation = "1";
+      LinkFlareSize = "0";
+      SingleColourKeys = "1";
+      MinColour = "0 0 0 1";
+      MaxColour = "1 1 1 1";
+      MinBrightness = "0.25";
+      MaxBrightness = "0.5";
+      MinRotation = "0";
+      MaxRotation = "359";
+      minSize = "0.5";
+      MaxSize = "1";
+      MinAzimuth = "0";
+      MaxAzimuth = "359";
+      MinElevation = "-30";
+      MaxElevation = "210";
+      RedKeys = "AZA";
+      GreenKeys = "AZA";
+      BlueKeys = "AZA";
+      BrightnessKeys = "AZJTA";
+      RotationKeys = "AZ";
+      SizeKeys = "ATAZA";
+      AzimuthKeys = "AZ";
+      ElevationKeys = "AZ";
+      ColourTime = "5";
+      BrightnessTime = "6";
+      RotationTime = "80";
+      SizeTime = "5";
+      AzimuthTime = "5";
+      ElevationTime = "5";
+   };
+   new TerrainBlock(Terrain) {
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      detailTexture = "~/data/terrains/details/detail1";
+      terrainFile = "./AFX_TGE_Demo_Terrain.ter";
+      squareSize = "8";
+      bumpScale = "1";
+      bumpOffset = "0.01";
+      zeroBumpScale = "8";
+      position = "-1024 -1024 0";
+      locked = "true";
+      tile = true;
+   };
+   new SimGroup(PlayerDropPoints) {
+      new SpawnSphere(Spawn_Mark) {
+         position = "430 310 218.6";
+         rotation = "0 0 -1 87.6625";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+   };
+   new SimGroup(NearTeleports) {
+     new SpawnSphere(:Spawn_Mark) {
+         position = "430 310 218.6";
+         rotation = "0 0 -1 87.6625";
+      };
+      new SpawnSphere(:Spawn_Mark) {
+         position = "402 331 219.832";
+         rotation = "0 0 -1 87.6625";
+      };
+      new SpawnSphere(:Spawn_Mark) {
+         position = "333 339 218.849";
+         rotation = "0 0 1 154.699";
+      };
+      new SpawnSphere(:Spawn_Mark) {
+         position = "356 246 202.064";
+         rotation = "0 0 1 16.0429";
+      };
+   };
+   new SimGroup(FarTeleports) {
+      new SpawnSphere(:Spawn_Mark) {
+         position = "574.0 155.0 268.876";
+         rotation = "0 0 -1 50.0039";
+      };
+      new SpawnSphere(:Spawn_Mark) {
+         position = "215 169.5 226.176";
+         rotation = "0 0 1 41.8259";
+      };
+      new SpawnSphere(:Spawn_Mark) {
+         position = "33 -17.8 277.821";
+         rotation = "0 0 1 44.6907";
+      };
+      new SpawnSphere(:Spawn_Mark) {
+         position = "-39 -415 245.829";
+         rotation = "0 0 1 40.1071";
+      };
+      new SpawnSphere(:Spawn_Mark) {
+         position = "504 439.5 270.826";
+         rotation = "0 0 1 225.355";
+      };
+      new SpawnSphere(:Spawn_Mark) {
+         position = "406.5 528 233.048";
+         rotation = "0 0 1 179.336";
+      };
+   };
+   new SimGroup(Campfires) {
+      new TSStatic(CampFire) {
+         position = "360.173 309.959 217.714";
+         rotation = "1 0 0 0.573347";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/campfires/campfire.dts";
+         receiveSunLight = "1";
+         receiveLMLighting = "1";
+         useAdaptiveSelfIllumination = "0";
+         useCustomAmbientLighting = "0";
+         customAmbientSelfIllumination = "0";
+         customAmbientLighting = "0 0 0 1";
+         disableDynamicShadows = "0";
+         disableDynamicShadowMove = "0";
+         disableDynamicShadowAnimate = "0";
+      };
+   };
+   new SimGroup(Paths) {
+      new Path(Path1) {
+         isLooping = "1";
+         new Marker(Path_Mark) {
+            position = "420 300 221.011";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            type = "Normal";
+            msToNext = "100";
+            smoothingType = "Spline";
+         };
+         new Marker(:Path_Mark) {
+            position = "447.831 207.249 211.417";
+            seqNum = "2";
+         };
+         new Marker(:Path_Mark) {
+            position = "318.054 333.549 218.804";
+            seqNum = "3";
+         };
+         new Marker(:Path_Mark) {
+            position = "326.058 411.942 218.216";
+            seqNum = "4";
+         };
+         new Marker(:Path_Mark) {
+            position = "427.95 357.661 220.594";
+            seqNum = "5";
+         };
+      };
+      new Path(RouteNPC01) {
+        isLooping = "1";
+        new Marker(:Path_Mark) {
+          position = "335.673 334.697 218.5";
+          seqNum = "1";
+        };
+        new Marker(:Path_Mark) {
+          position = "384.192 296.064 219.3";
+          seqNum = "2";
+        };
+        new Marker(:Path_Mark) {
+          position = "392.792 327.464 220.7";
+          seqNum = "3";
+        };
+        new Marker(:Path_Mark) {
+          position = "337.392 304.464 218.5";
+          seqNum = "4";
+        };
+      };
+   };
+};
+//--- OBJECT WRITE END ---

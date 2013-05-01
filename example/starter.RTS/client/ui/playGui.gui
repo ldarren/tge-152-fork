@@ -1,0 +1,902 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiRTSTSCtrl(PlayGui) {
+   profile = "GuiRTSContentProfile";
+   horizSizing = "right";
+   vertSizing = "bottom";
+   position = "0 0";
+   extent = "800 600";
+   minExtent = "8 8";
+   visible = "1";
+   cameraZRot = "0";
+   forceFOV = "0";
+   renderMissionArea = "0";
+   missionAreaFillColor = "255 0 0 20";
+   missionAreaFrameColor = "255 0 0 128";
+   consoleFrameColor = "255 0 0 255";
+   consoleFillColor = "255 255 255 120";
+   consoleSphereLevel = "1";
+   consoleCircleSegments = "32";
+   consoleLineWidth = "1";
+   selectionLocked = "0";
+   selectionIncludesTeam = "1";
+   dragSelectionIncludesTeam = "0";
+      helpTag = "0";
+      firstResponder = "1";
+      tooltipprofile = "tooltipprofile";
+
+   new GuiBitmapCtrl(LagIcon) {
+      profile = "GuiDefaultProfile";
+      horizSizing = "right";
+      vertSizing = "bottom";
+      position = "572 3";
+      extent = "32 32";
+      minExtent = "8 8";
+      visible = "0";
+      bitmap = "./lagIcon.png";
+      wrap = "0";
+         helpTag = "0";
+   };
+   new GuiBitmapCtrl(centerPrintDlg) {
+      profile = "CenterPrintProfile";
+      horizSizing = "center";
+      vertSizing = "center";
+      position = "125 290";
+      extent = "550 20";
+      minExtent = "8 8";
+      visible = "0";
+      bitmap = "./hudfill.png";
+      wrap = "0";
+
+      new GuiMLTextCtrl(CenterPrintText) {
+         profile = "CenterPrintTextProfile";
+         horizSizing = "center";
+         vertSizing = "center";
+         position = "0 0";
+         extent = "546 12";
+         minExtent = "8 8";
+         visible = "1";
+         lineSpacing = "2";
+         allowColorChars = "0";
+         maxChars = "-1";
+      };
+   };
+   new GuiBitmapCtrl(bottomPrintDlg) {
+      profile = "CenterPrintProfile";
+      horizSizing = "center";
+      vertSizing = "top";
+      position = "125 350";
+      extent = "550 36";
+      minExtent = "8 8";
+      visible = "0";
+      bitmap = "./hudfill.png";
+      wrap = "0";
+         tooltipprofile = "CenterPrintProfile";
+
+      new GuiMLTextCtrl(bottomPrintText) {
+         profile = "CenterPrintTextProfile";
+         horizSizing = "center";
+         vertSizing = "center";
+         position = "0 0";
+         extent = "546 12";
+         minExtent = "8 8";
+         visible = "1";
+         lineSpacing = "2";
+         allowColorChars = "0";
+         maxChars = "-1";
+            tooltipprofile = "CenterPrintTextProfile";
+      };
+   };
+   new GuiControl(CommandMenu) {
+      profile = "GuiDefaultProfile";
+      horizSizing = "left";
+      vertSizing = "top";
+      position = "650 520";
+      extent = "150 80";
+      minExtent = "8 2";
+      visible = "1";
+
+      new GuiBitmapCtrl(CM_Background) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "0 0";
+         extent = "148 80";
+         minExtent = "8 2";
+         visible = "1";
+         bitmap = "./commands/background";
+         wrap = "0";
+      };
+      new GuiBitmapButtonCtrl(CM_Move) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "left";
+         vertSizing = "top";
+         position = "7 7";
+         extent = "32 32";
+         minExtent = "8 2";
+         visible = "1";
+         command = "CommandMenu::onMoveClick();";
+         text = "Move";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./commands/move";
+            tooltipprofile = "GuiButtonProfile";
+            ToolTip = "Move";
+      };
+      new GuiBitmapButtonCtrl(CM_Stop) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "left";
+         vertSizing = "top";
+         position = "42 7";
+         extent = "32 32";
+         minExtent = "8 2";
+         visible = "1";
+         command = "CommandMenu::onStopClick();";
+         text = "Stop";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./commands/stop";
+            tooltipprofile = "GuiButtonProfile";
+            ToolTip = "stop";
+      };
+      new GuiBitmapButtonCtrl(CM_BuffMinus) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "left";
+         vertSizing = "top";
+         position = "109 42";
+         extent = "32 32";
+         minExtent = "8 2";
+         visible = "1";
+         command = "CommandMenu::onBuffMinusClick();";
+         text = "BuffMinus";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./commands/buffminus";
+            tooltipprofile = "GuiButtonProfile";
+            ToolTip = "Debuff";
+      };
+      new GuiBitmapButtonCtrl(CM_BuffPlus) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "left";
+         vertSizing = "top";
+         position = "109 7";
+         extent = "32 32";
+         minExtent = "8 2";
+         visible = "1";
+         command = "CommandMenu::onBuffPlusClick();";
+         text = "BuffPlus";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./commands/buffplus";
+            tooltipprofile = "GuiButtonProfile";
+            ToolTip = "Buff";
+      };
+      new GuiBitmapButtonCtrl(CM_Attack) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "left";
+         vertSizing = "top";
+         position = "7 42";
+         extent = "32 32";
+         minExtent = "8 2";
+         visible = "1";
+         command = "CommandMenu::onAttackClick();";
+         text = "Attack";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./commands/attack";
+            tooltipprofile = "GuiButtonProfile";
+            ToolTip = "Attack";
+      };
+      new GuiBitmapButtonCtrl(CM_Hold) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "left";
+         vertSizing = "top";
+         position = "42 42";
+         extent = "32 32";
+         minExtent = "8 2";
+         visible = "1";
+         command = "CommandMenu::onHoldClick();";
+         text = "Hold";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./commands/hold";
+            tooltipprofile = "GuiButtonProfile";
+            ToolTip = "Hold";
+      };
+   };
+   new GuiControl(MapDisplay) {
+      profile = "GuiDefaultProfile";
+      horizSizing = "right";
+      vertSizing = "top";
+      position = "0 390";
+      extent = "210 210";
+      minExtent = "8 2";
+      visible = "1";
+
+      new GuiBitmapCtrl(MapDisplay_Background) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "left";
+         vertSizing = "top";
+         position = "0 0";
+         extent = "210 210";
+         minExtent = "8 2";
+         visible = "1";
+         bitmap = "./mapHud_Background";
+         wrap = "0";
+            tooltipprofile = "GuiDefaultProfile";
+      };
+      new GuiMapHud(MapHud) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "right";
+         vertSizing = "top";
+         position = "5 5";
+         extent = "200 200";
+         minExtent = "8 2";
+         visible = "1";
+         cameraZRot = "0";
+         forceFOV = "0";
+         textureSize = "200";
+         pingTexture = "./ring_white";
+            tooltipprofile = "GuiDefaultProfile";
+      };
+   };
+   new GuiControl(SelectionDisplay) {
+      profile = "GuiDefaultProfile";
+      horizSizing = "left";
+      vertSizing = "top";
+      position = "418 520";
+      extent = "232 80";
+      minExtent = "8 2";
+      visible = "1";
+
+      new GuiBitmapCtrl(SD_Background) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "0 0";
+         extent = "237 80";
+         minExtent = "8 2";
+         visible = "1";
+         bitmap = "./SD_Background";
+         wrap = "0";
+            tooltipprofile = "GuiDefaultProfile";
+      };
+      new GuiBitmapCtrl(SD_Portrait_0) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "10 10";
+         extent = "32 32";
+         minExtent = "8 2";
+         visible = "0";
+         bitmap = "./selectionDisplay/bonecrackerPortrait";
+         wrap = "0";
+      };
+      new GuiBitmapCtrl(SD_Portrait_1) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "47 10";
+         extent = "32 32";
+         minExtent = "8 2";
+         visible = "0";
+         bitmap = "./selectionDisplay/bonecrackerPortrait";
+         wrap = "0";
+      };
+      new GuiBitmapCtrl(SD_Portrait_2) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "84 10";
+         extent = "32 32";
+         minExtent = "8 2";
+         visible = "0";
+         bitmap = "./selectionDisplay/riflemanPortrait";
+         wrap = "0";
+      };
+      new GuiBitmapCtrl(SD_Portrait_3) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "121 10";
+         extent = "32 32";
+         minExtent = "8 2";
+         visible = "0";
+         bitmap = "./selectionDisplay/riflemanPortrait";
+         wrap = "0";
+      };
+      new GuiBitmapCtrl(SD_Portrait_4) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "158 10";
+         extent = "32 32";
+         minExtent = "8 2";
+         visible = "0";
+         bitmap = "./selectionDisplay/riflemanPortrait";
+         wrap = "0";
+      };
+      new GuiBitmapCtrl(SD_Portrait_5) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "195 10";
+         extent = "32 32";
+         minExtent = "8 2";
+         visible = "0";
+         bitmap = "./selectionDisplay/riflemanPortrait";
+         wrap = "0";
+      };
+      new GuiTextListCtrl(SD_Selection) {
+         profile = "GuiTextArrayProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "10 42";
+         extent = "11 34";
+         minExtent = "8 8";
+         visible = "1";
+         enumerate = "0";
+         resizeCell = "0";
+         columns = "3 40 77 114 151 188";
+         fitParentWidth = "0";
+         clipColumnText = "0";
+            tooltipprofile = "GuiTextArrayProfile";
+      };
+   };
+   new GuiControl(WorkingOrders) {
+      profile = "GuiDefaultProfile";
+      horizSizing = "left";
+      vertSizing = "top";
+      position = "650 520";
+      extent = "150 80";
+      minExtent = "8 2";
+      visible = "0";
+
+      new GuiBitmapCtrl(WO_Background) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "0 0";
+         extent = "148 80";
+         minExtent = "8 2";
+         visible = "1";
+         bitmap = "./commands/background";
+         wrap = "0";
+      };
+      new GuiBitmapButtonCtrl(WO_TownCenter) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "left";
+         vertSizing = "top";
+         position = "7 7";
+         extent = "32 32";
+         minExtent = "8 2";
+         visible = "1";
+         command = "startPlaceBuilding(\"townCenter\");";
+         text = "TownCenter";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./buildingDisplay/icon_townCenter";
+            tooltipprofile = "GuiButtonProfile";
+            ToolTip = "TownCenter";
+      };
+      new GuiBitmapButtonCtrl(WO_Barracks) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "left";
+         vertSizing = "top";
+         position = "42 7";
+         extent = "32 32";
+         minExtent = "8 2";
+         visible = "1";
+         command = "startPlaceBuilding(\"barracks\");";
+         text = "Barracks";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./buildingDisplay/icon_barracks";
+            tooltipprofile = "GuiButtonProfile";
+            ToolTip = "Barracks";
+      };
+      new GuiBitmapButtonCtrl(WO_Foundry) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "left";
+         vertSizing = "top";
+         position = "109 42";
+         extent = "32 32";
+         minExtent = "8 2";
+         visible = "1";
+         command = "startPlaceBuilding(\"foundry\");";
+         text = "Foundry";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./buildingDisplay/icon_foundry";
+            tooltipprofile = "GuiButtonProfile";
+            ToolTip = "Foundry";
+      };
+      new GuiBitmapButtonCtrl(WO_Shop) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "left";
+         vertSizing = "top";
+         position = "109 7";
+         extent = "32 32";
+         minExtent = "8 2";
+         visible = "1";
+         command = "startPlaceBuilding(\"shop\");";
+         text = "Shop";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./buildingDisplay/icon_foundry";
+            tooltipprofile = "GuiButtonProfile";
+            ToolTip = "Shop";
+      };
+      new GuiBitmapButtonCtrl(WO_Factory) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "left";
+         vertSizing = "top";
+         position = "7 42";
+         extent = "32 32";
+         minExtent = "8 2";
+         visible = "1";
+         command = "startPlaceBuilding(\"factory\");";
+         text = "Factory";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./buildingDisplay/icon_factory";
+            tooltipprofile = "GuiButtonProfile";
+            ToolTip = "Factory";
+      };
+      new GuiBitmapButtonCtrl(WO_Farm) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "left";
+         vertSizing = "top";
+         position = "42 42";
+         extent = "32 32";
+         minExtent = "8 2";
+         visible = "1";
+         command = "startPlaceBuilding(\"farm\");";
+         text = "Farm";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./buildingDisplay/icon_factory";
+            tooltipprofile = "GuiButtonProfile";
+            ToolTip = "Farm";
+      };
+   };
+   new GuiControl(MainChatHud) {
+      profile = "GuiModelessDialogProfile";
+      horizSizing = "width";
+      vertSizing = "height";
+      position = "211 561";
+      extent = "205 128";
+      minExtent = "8 8";
+      visible = "1";
+         helpTag = "0";
+
+      new GuiControl(ChatHud) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "left";
+         vertSizing = "top";
+         position = "-224 -167";
+         extent = "427 188";
+         minExtent = "8 8";
+         visible = "1";
+            helpTag = "0";
+            tooltipprofile = "GuiDefaultProfile";
+
+         new GuiBitmapBorderCtrl(OuterChatHud) {
+            profile = "ChatHudBorderProfile";
+            horizSizing = "width";
+            vertSizing = "bottom";
+            position = "0 0";
+            extent = "428 72";
+            minExtent = "8 8";
+            visible = "1";
+               helpTag = "0";
+               useVariable = "0";
+               tooltipprofile = "ChatHudBorderProfile";
+               tile = "0";
+
+            new GuiBitmapCtrl() {
+               profile = "GuiDefaultProfile";
+               horizSizing = "width";
+               vertSizing = "height";
+               position = "8 8";
+               extent = "412 56";
+               minExtent = "8 8";
+               visible = "1";
+               bitmap = "./hudfill.png";
+               wrap = "0";
+                  helpTag = "0";
+            };
+            new GuiButtonCtrl(ChatPageDown) {
+               profile = "GuiButtonProfile";
+               horizSizing = "left";
+               vertSizing = "top";
+               position = "376 42";
+               extent = "36 14";
+               minExtent = "8 8";
+               visible = "0";
+               text = "Dwn";
+               groupNum = "-1";
+               buttonType = "PushButton";
+                  helpTag = "0";
+            };
+            new GuiScrollCtrl(ChatScrollHud) {
+               profile = "ChatHudScrollProfile";
+               horizSizing = "width";
+               vertSizing = "height";
+               position = "8 8";
+               extent = "412 56";
+               minExtent = "8 8";
+               visible = "1";
+               willFirstRespond = "1";
+               hScrollBar = "alwaysOff";
+               vScrollBar = "alwaysOff";
+               constantThumbHeight = "0";
+               childMargin = "0 0";
+                  helpTag = "0";
+                  tooltipprofile = "ChatHudScrollProfile";
+
+               new GuiMessageVectorCtrl(ChatHud) {
+                  profile = "ChatHudMessageProfile";
+                  horizSizing = "width";
+                  vertSizing = "height";
+                  position = "1 1";
+                  extent = "408 16";
+                  minExtent = "8 8";
+                  visible = "1";
+                  lineSpacing = "0";
+                  lineContinuedIndex = "10";
+                  allowedMatches[0] = "http";
+                  allowedMatches[1] = "tgeserver";
+                  matchColor = "0 0 255 255";
+                  maxColorIndex = "5";
+                     helpTag = "0";
+                     tooltipprofile = "ChatHudMessageProfile";
+               };
+            };
+         };
+      };
+   };
+   new GuiControl(SupplyDisplay) {
+      profile = "GuiDefaultProfile";
+      horizSizing = "left";
+      vertSizing = "top";
+      position = "601 440";
+      extent = "189 76";
+      minExtent = "8 2";
+      visible = "1";
+         tooltipprofile = "GuiDefaultProfile";
+
+      new GuiBitmapCtrl(SUP_Gold) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "left";
+         vertSizing = "top";
+         position = "10 10";
+         extent = "32 32";
+         minExtent = "8 2";
+         visible = "1";
+         bitmap = "./resourceDisplay/icon_gold";
+         wrap = "0";
+            tooltipprofile = "GuiDefaultProfile";
+            ToolTip = "Gold";
+      };
+      new GuiBitmapCtrl(SUP_Wood) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "left";
+         vertSizing = "top";
+         position = "48 10";
+         extent = "32 32";
+         minExtent = "8 2";
+         visible = "1";
+         bitmap = "./resourceDisplay/icon_wood";
+         wrap = "0";
+            tooltipprofile = "GuiDefaultProfile";
+            ToolTip = "Wood";
+      };
+      new GuiBitmapCtrl(SUP_Food) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "left";
+         vertSizing = "top";
+         position = "84 10";
+         extent = "32 32";
+         minExtent = "8 2";
+         visible = "1";
+         bitmap = "./resourceDisplay/icon_food";
+         wrap = "0";
+            tooltipprofile = "GuiDefaultProfile";
+            ToolTip = "Food";
+      };
+      new GuiBitmapCtrl(SUP_Stone) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "left";
+         vertSizing = "top";
+         position = "122 10";
+         extent = "32 32";
+         minExtent = "8 2";
+         visible = "1";
+         bitmap = "./resourceDisplay/icon_stone";
+         wrap = "0";
+            tooltipprofile = "GuiDefaultProfile";
+            ToolTip = "Stone";
+      };
+      new GuiTextCtrl(SUP_Gold_Count) {
+         profile = "NormalTextProfile";
+         horizSizing = "left";
+         vertSizing = "top";
+         position = "12 48";
+         extent = "24 18";
+         minExtent = "8 18";
+         visible = "1";
+         maxLength = "5";
+            tooltipprofile = "GuiDefaultProfile";
+      };
+      new GuiTextCtrl(SUP_Wood_Count) {
+         profile = "NormalTextProfile";
+         horizSizing = "left";
+         vertSizing = "top";
+         position = "55 48";
+         extent = "18 18";
+         minExtent = "8 18";
+         visible = "1";
+         maxLength = "5";
+            tooltipprofile = "GuiDefaultProfile";
+      };
+      new GuiTextCtrl(SUP_Food_count) {
+         profile = "GettingLowTextProfile";
+         horizSizing = "left";
+         vertSizing = "top";
+         position = "94 48";
+         extent = "12 18";
+         minExtent = "8 18";
+         visible = "1";
+         maxLength = "5";
+            tooltipprofile = "GuiDefaultProfile";
+      };
+      new GuiTextCtrl(SUP_Stone_count) {
+         profile = "NormalTextProfile";
+         horizSizing = "left";
+         vertSizing = "top";
+         position = "125 48";
+         extent = "18 18";
+         minExtent = "8 18";
+         visible = "1";
+         maxLength = "5";
+      };
+   };
+   new GuiControl(BuildingDisplay) {
+      profile = "GuiDefaultProfile";
+      horizSizing = "left";
+      vertSizing = "top";
+      position = "650 520";
+      extent = "150 80";
+      minExtent = "8 2";
+      visible = "0";
+         tooltipprofile = "GuiDefaultProfile";
+
+      new GuiBitmapCtrl(Building_Background) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "0 0";
+         extent = "148 80";
+         minExtent = "8 2";
+         visible = "1";
+         bitmap = "./commands/background";
+         wrap = "0";
+            tooltipprofile = "GuiDefaultProfile";
+      };
+      new GuiBitmapCtrl(BD_Selected_Image) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "7 8";
+         extent = "138 75";
+         minExtent = "8 2";
+         visible = "1";
+         wrap = "0";
+            tooltipprofile = "GuiDefaultProfile";
+      };
+   };
+   new GuiControl(BuildingMenu) {
+      profile = "GuiDefaultProfile";
+      horizSizing = "left";
+      vertSizing = "top";
+      position = "418 520";
+      extent = "232 80";
+      minExtent = "8 2";
+      visible = "0";
+         tooltipprofile = "GuiDefaultProfile";
+
+      new GuiBitmapCtrl(BM_Background) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "0 0";
+         extent = "237 80";
+         minExtent = "8 2";
+         visible = "1";
+         bitmap = "./SD_Background";
+         wrap = "0";
+            tooltipprofile = "GuiDefaultProfile";
+      };
+      new GuiBitmapButtonCtrl(BM_Action_0) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "10 10";
+         extent = "32 32";
+         minExtent = "8 2";
+         visible = "1";
+         command = "BuildingMenu::onTrain0Click();";
+         text = "Button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./buildingDisplay/train_0";
+            wrap = "0";
+            tooltipprofile = "GuiDefaultProfile";
+            ToolTip = "Train BoneCracker";
+      };
+      new GuiBitmapButtonCtrl(BM_Action_1) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "47 10";
+         extent = "32 32";
+         minExtent = "8 2";
+         visible = "1";
+         command = "BuildingMenu::onTrain1Click();";
+         text = "Button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./buildingDisplay/train_1";
+            wrap = "0";
+            tooltipprofile = "GuiDefaultProfile";
+            ToolTip = "Train Shocker";
+      };
+      new GuiBitmapButtonCtrl(BM_Action_2) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "84 10";
+         extent = "32 32";
+         minExtent = "8 2";
+         visible = "1";
+         command = "BuildingMenu::onTrain2Click();";
+         text = "Button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./buildingDisplay/train_2";
+            wrap = "0";
+            tooltipprofile = "GuiDefaultProfile";
+            ToolTip = "Train Rifleman";
+      };
+      new GuiProgressCtrl(BM_CurActionStatus) {
+         profile = "GuiTextProfile";
+         horizSizing = "left";
+         vertSizing = "top";
+         position = "45 55";
+         extent = "70 8";
+         minExtent = "70 8";
+         visible = "0";
+            maxLength = "255";
+            tooltipprofile = "GuiTextProfile";
+      };
+      new GuiBitmapCtrl(BM_CurActionPortrait) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "10 43";
+         extent = "32 32";
+         minExtent = "8 2";
+         visible = "0";
+         bitmap = "./selectionDisplay/bonecrackerPortrait";
+         wrap = "0";
+            tooltipprofile = "GuiDefaultProfile";
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+$CommandMenu::currentCommand = "None";
+
+function CommandMenu::onMoveClick()
+{
+   PlayGui.setCommandState("Move");
+}
+
+function CommandMenu::onStopClick()
+{
+   commandToServer('IssueStop');
+}
+
+function CommandMenu::onHoldClick()
+{
+   PlayGui.setCommandState("Hold");
+   commandToServer('IssueStop');
+}
+
+function CommandMenu::onBuffPlusClick()
+{
+   PlayGui.setCommandState("BuffPlus");
+}
+
+function CommandMenu::onAttackClick()
+{
+   PlayGui.setCommandState("Attack");
+}
+
+
+function CommandMenu::onCancelClick()
+{
+   PlayGui.setCommandState("None");
+}
+
+function CommandMenu::onBuffMinusClick()
+{
+   PlayGui.setCommandState("BuffMinus");
+}
+function CommandMenu::onFormSquareClick()
+{
+  $Player::CurSquadFormation = "FormSquare";
+}
+
+function CommandMenu::onFormDoubleLineClick()
+{
+  $Player::CurSquadFormation = "FormDoubleLine";
+}
+
+// dispatch functions for Building menu clicks
+
+function BuildingMenu::onTrain0Click()
+{
+  if (isObject($BuildingMenu::CurrentSelectedBuilding) )
+  {
+    %buildingIndex = getBuildingTypeID($BuildingMenu::CurrentSelectedBuilding);
+    echo("BuildingMenu::onTrain0Click: building action type is (" @ getWord($BD_ActionType[%buildingIndex], 0)
+         @ ") unit type is (" @ getWord($BD_ActionType[%buildingIndex],1) @ ")"  );
+//    if ( $BD_ActionType[%buildingIndex] $= "Hire" )
+    switch$(getWord($BD_ActionType[%buildingIndex],0))
+    {
+      case "Hire" :
+        PlayGui.setBuildCommandState(getWord($BD_ActionType[%buildingIndex], 1));
+// echo("BuildingMenu::onTrain0Click()--setting building (" @ %buildingIndex @ ") to state Hire" SPC
+//     $BD_ActionType[%buildingIndex] @ ")");       
+      case "Harvest" :
+        return;
+      default :
+        return;
+    }
+  }    
+}
+function BuildingMenu::onTrain1Click()
+{
+  if (isObject($BuildingMenu::CurrentSelectedBuilding) )
+  {
+    %buildingIndex = getBuildingTypeID($BuildingMenu::CurrentSelectedBuilding);
+    echo(getWord($BD_ActionType[%buildingIndex], 2));
+//    if ( $BD_ActionType[%buildingIndex] $= "Hire" )
+    switch$(getWord($BD_ActionType[%buildingIndex],0))
+    {
+      case "Hire" :
+        PlayGui.setBuildCommandState(getWord($BD_ActionType[%buildingIndex], 2));
+      case "Harvest" :
+        return;
+      default :
+        return;
+    }
+  }   }
+function BuildingMenu::onTrain2Click()
+{
+  if (isObject($BuildingMenu::CurrentSelectedBuilding) )
+  {
+    %buildingIndex = getBuildingTypeID($BuildingMenu::CurrentSelectedBuilding);
+    echo(getWord($BD_ActionType[%buildingIndex], 3));
+//    if ( $BD_ActionType[%buildingIndex] $= "Hire" )
+    switch$(getWord($BD_ActionType[%buildingIndex],0))
+    {
+      case "Hire" :
+       PlayGui.setBuildCommandState(getWord($BD_ActionType[%buildingIndex], 3));
+      case "Harvest" :
+        return;
+      default :
+        return;
+    }
+  }   
+}

@@ -1,0 +1,422 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(gsCheckBox) {
+   profile = "gsDefaultProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "800 600";
+   minExtent = "8 8";
+   visible = "1";
+      Parent = "GUISamplerInterface";
+
+   new GuiChunkedBitmapCtrl() {
+      profile = "gsDefaultProfile";
+      horizSizing = "width";
+      vertSizing = "height";
+      position = "0 0";
+      extent = "800 600";
+      minExtent = "8 2";
+      visible = "1";
+      bitmap = $SA::Background1;
+      useVariable = "0";
+      tile = "0";
+
+      new GuiBitmapButtonCtrl(guiSamplerLeft) {
+         profile = "gpgtButtonProfile1";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         position = "125 525";
+         extent = "75 75";
+         minExtent = "8 2";
+         visible = "1";
+         command = "Canvas.setContent(Canvas.getContent().Parent);";
+         accelerator = "escape";
+         text = "Button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "~/client/sharedAssets/button0/leftButton0";
+      };
+      new GuiControl() {
+         profile = "gsDefaultProfile";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         position = "100 100";
+         extent = "600 400";
+         minExtent = "8 2";
+         visible = "1";
+
+         new GuiControl() {
+            profile = "gsDefaultProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "60 225";
+            extent = "100 119";
+            minExtent = "8 2";
+            visible = "1";
+
+            new GuiCheckBoxCtrl(CheckBoxActivator) {
+               profile = "wincheck";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "19 9";
+               extent = "60 60";
+               minExtent = "8 2";
+               visible = "1";
+               command = "$thisControl.toggleButtonsActive();";
+               text = "Active?";
+               groupNum = "-1";
+               buttonType = "ToggleButton";
+            };
+            new GuiTextCtrl() {
+               profile = "GuiTextProfile";
+               horizSizing = "center";
+               vertSizing = "relative";
+               position = "20 90";
+               extent = "59 13";
+               minExtent = "8 2";
+               visible = "1";
+               text = "(De)activate";
+               maxLength = "255";
+            };
+            new GuiTextCtrl() {
+               profile = "GuiTextProfile";
+               horizSizing = "center";
+               vertSizing = "relative";
+               position = "31 80";
+               extent = "37 13";
+               minExtent = "8 2";
+               visible = "1";
+               text = "Buttons";
+               maxLength = "255";
+            };
+         };
+      };
+      new GuiControl() {
+         profile = "gsDefaultProfile";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         position = "300 325";
+         extent = "340 119";
+         minExtent = "8 2";
+         visible = "1";
+
+         new GuiCheckBoxCtrl(ChangeCheckBoxTheme) {
+            profile = "wincheck";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "19 9";
+            extent = "60 60";
+            minExtent = "8 2";
+            visible = "1";
+            accelerator = "F5";
+            text = "Theme 0";
+            groupNum = "1";
+            buttonType = "RadioButton";
+               theme = "wincheck";
+         };
+         new GuiCheckBoxCtrl(ChangeCheckBoxTheme) {
+            profile = "osxcheck";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "99 9";
+            extent = "60 60";
+            minExtent = "8 2";
+            visible = "1";
+            accelerator = "F6";
+            text = "Theme 1";
+            groupNum = "1";
+            buttonType = "RadioButton";
+               theme = "osxcheck";
+         };
+         new GuiCheckBoxCtrl(ChangeCheckBoxTheme) {
+            profile = "gemcheck";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "179 9";
+            extent = "60 60";
+            minExtent = "8 2";
+            visible = "1";
+            accelerator = "F7";
+            text = "Theme 2";
+            groupNum = "1";
+            buttonType = "RadioButton";
+               theme = "gemcheck";
+         };
+         new GuiCheckBoxCtrl(ChangeCheckBoxTheme) {
+            profile = "coolcheck";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "259 9";
+            extent = "60 60";
+            minExtent = "8 2";
+            visible = "1";
+            accelerator = "F8";
+            text = "Theme 3";
+            groupNum = "1";
+            buttonType = "RadioButton";
+               theme = "coolcheck";
+         };
+         new GuiTextCtrl() {
+            profile = "GuiTextProfile";
+            horizSizing = "center";
+            vertSizing = "relative";
+            position = "111 90";
+            extent = "117 13";
+            minExtent = "8 2";
+            visible = "1";
+            text = "Select CheckBox Theme";
+            maxLength = "255";
+         };
+         new GuiTextCtrl() {
+            profile = "GuiTextProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "40 76";
+            extent = "8 13";
+            minExtent = "8 2";
+            visible = "1";
+            text = "F5";
+            maxLength = "255";
+         };
+         new GuiTextCtrl() {
+            profile = "GuiTextProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "122 76";
+            extent = "8 13";
+            minExtent = "8 2";
+            visible = "1";
+            text = "F6";
+            maxLength = "255";
+         };
+         new GuiTextCtrl() {
+            profile = "GuiTextProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "200 76";
+            extent = "9 13";
+            minExtent = "8 2";
+            visible = "1";
+            text = "F7";
+            maxLength = "255";
+         };
+         new GuiTextCtrl() {
+            profile = "GuiTextProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "279 76";
+            extent = "8 13";
+            minExtent = "8 2";
+            visible = "1";
+            text = "F5";
+            maxLength = "255";
+         };
+      };
+      new GuiControl() {
+         profile = "gsDefaultProfile";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         position = "160 110";
+         extent = "480 200";
+         minExtent = "8 2";
+         visible = "1";
+
+         new GuiTextCtrl() {
+            profile = "GuiTextProfile";
+            horizSizing = "center";
+            vertSizing = "relative";
+            position = "132 156";
+            extent = "216 13";
+            minExtent = "8 2";
+            visible = "1";
+            text = "Try these!! (select a CheckBox theme below)";
+            maxLength = "255";
+         };
+         new GuiControl() {
+            profile = "gsDefaultProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "4 9";
+            extent = "100 120";
+            minExtent = "8 2";
+            visible = "1";
+
+            new GuiCheckBoxCtrl(TestCheckBoxPushButton) {
+               profile = "wincheck";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "19 9";
+               extent = "60 60";
+               minExtent = "8 2";
+               visible = "1";
+               accelerator = "ALT P";
+               text = "Push";
+               groupNum = "-1";
+               buttonType = "PushButton";
+            };
+            new GuiTextCtrl() {
+               profile = "GuiTextProfile";
+               horizSizing = "center";
+               vertSizing = "relative";
+               position = "21 91";
+               extent = "58 13";
+               minExtent = "8 2";
+               visible = "1";
+               text = "Push Button";
+               maxLength = "255";
+            };
+            new GuiTextCtrl() {
+               profile = "GuiTextProfile";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "41 77";
+               extent = "20 13";
+               minExtent = "8 2";
+               visible = "1";
+               text = "ALT P";
+               maxLength = "255";
+            };
+         };
+         new GuiControl() {
+            profile = "gsDefaultProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "109 9";
+            extent = "100 120";
+            minExtent = "8 2";
+            visible = "1";
+
+            new GuiCheckBoxCtrl(TestCheckBoxToggleButton) {
+               profile = "wincheck";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "19 9";
+               extent = "60 60";
+               minExtent = "8 2";
+               visible = "1";
+               accelerator = "CTRL T";
+               text = "Toggle";
+               groupNum = "-1";
+               buttonType = "ToggleButton";
+            };
+            new GuiTextCtrl() {
+               profile = "GuiTextProfile";
+               horizSizing = "center";
+               vertSizing = "relative";
+               position = "17 91";
+               extent = "66 13";
+               minExtent = "8 2";
+               visible = "1";
+               text = "Toggle Button";
+               maxLength = "255";
+            };
+            new GuiTextCtrl() {
+               profile = "GuiTextProfile";
+               horizSizing = "center";
+               vertSizing = "relative";
+               position = "32 77";
+               extent = "35 13";
+               minExtent = "8 2";
+               visible = "1";
+               text = "CTRL T";
+               maxLength = "255";
+            };
+         };
+         new GuiControl() {
+            profile = "gsDefaultProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "214 9";
+            extent = "260 120";
+            minExtent = "8 2";
+            visible = "1";
+
+            new GuiCheckBoxCtrl(TestCheckBoxRadioButton0) {
+               profile = "wincheck";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "19 9";
+               extent = "60 60";
+               minExtent = "8 2";
+               visible = "1";
+               accelerator = "1";
+               text = "Radio0";
+               groupNum = "2";
+               buttonType = "RadioButton";
+            };
+            new GuiCheckBoxCtrl(TestCheckBoxRadioButton1) {
+               profile = "wincheck";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "99 9";
+               extent = "60 60";
+               minExtent = "8 2";
+               visible = "1";
+               accelerator = "2";
+               text = "Radio1";
+               groupNum = "2";
+               buttonType = "RadioButton";
+            };
+            new GuiCheckBoxCtrl(TestCheckBoxRadioButton2) {
+               profile = "wincheck";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "179 9";
+               extent = "60 60";
+               minExtent = "8 2";
+               visible = "1";
+               accelerator = "3";
+               text = "Radio2";
+               groupNum = "2";
+               buttonType = "RadioButton";
+            };
+            new GuiTextCtrl() {
+               profile = "GuiTextProfile";
+               horizSizing = "center";
+               vertSizing = "relative";
+               position = "84 91";
+               extent = "91 13";
+               minExtent = "8 2";
+               visible = "1";
+               text = "Radio CheckBoxes";
+               maxLength = "255";
+            };
+            new GuiTextCtrl() {
+               profile = "GuiTextProfile";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "44 77";
+               extent = "8 13";
+               minExtent = "8 2";
+               visible = "1";
+               text = "1";
+               maxLength = "255";
+            };
+            new GuiTextCtrl() {
+               profile = "GuiTextProfile";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "128 77";
+               extent = "8 13";
+               minExtent = "8 2";
+               visible = "1";
+               text = "2";
+               maxLength = "255";
+            };
+            new GuiTextCtrl() {
+               profile = "GuiTextProfile";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "204 77";
+               extent = "8 13";
+               minExtent = "8 2";
+               visible = "1";
+               text = "3";
+               maxLength = "255";
+            };
+         };
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+

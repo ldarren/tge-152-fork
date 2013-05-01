@@ -1,0 +1,1222 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 39;
+	objects = {
+		014CEA520018CE5811CA2923 = {
+			buildRules = (
+			);
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OPTIMIZATION_CFLAGS = "-O0";
+				ZERO_LINK = YES;
+			};
+			isa = PBXBuildStyle;
+			name = Development;
+		};
+		014CEA530018CE5811CA2923 = {
+			buildRules = (
+			);
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				ZERO_LINK = NO;
+			};
+			isa = PBXBuildStyle;
+			name = Deployment;
+		};
+//010
+//011
+//012
+//013
+//014
+//080
+//081
+//082
+//083
+//084
+		08FB7793FE84155DC02AAC07 = {
+			buildSettings = {
+			};
+			buildStyles = (
+				014CEA520018CE5811CA2923,
+				014CEA530018CE5811CA2923,
+			);
+			hasScannedForEncodings = 1;
+			isa = PBXProject;
+			mainGroup = 08FB7794FE84155DC02AAC07;
+			projectDirPath = "";
+			targets = (
+				D2AAC0620554660B00DB518D,
+			);
+		};
+		08FB7794FE84155DC02AAC07 = {
+			children = (
+				08FB7795FE84155DC02AAC07,
+				8AC81D2805F69AB400F26EB4,
+				8AC81D2D05F69AC500F26EB4,
+				1AB674ADFE9D54B511CA2CBB,
+			);
+			isa = PBXGroup;
+			name = Maya2DTSExporter;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 = {
+			children = (
+				525A347B06F7A94500003BE3,
+				525A340E06F7A91E00003BE3,
+				525A342106F7A91E00003BE3,
+			);
+			isa = PBXGroup;
+			name = Source;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+//080
+//081
+//082
+//083
+//084
+//1A0
+//1A1
+//1A2
+//1A3
+//1A4
+		1AB674ADFE9D54B511CA2CBB = {
+			children = (
+				D2AAC0630554660B00DB518D,
+			);
+			isa = PBXGroup;
+			name = Products;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+//1A0
+//1A1
+//1A2
+//1A3
+//1A4
+//520
+//521
+//522
+//523
+//524
+		525A340E06F7A91E00003BE3 = {
+			children = (
+				525A340F06F7A91E00003BE3,
+				525A341006F7A91E00003BE3,
+				525A341106F7A91E00003BE3,
+				525A341206F7A91E00003BE3,
+				525A341306F7A91E00003BE3,
+				525A341406F7A91E00003BE3,
+				525A341506F7A91E00003BE3,
+				525A341606F7A91E00003BE3,
+				525A341706F7A91E00003BE3,
+				525A341806F7A91E00003BE3,
+				525A341906F7A91E00003BE3,
+				525A341A06F7A91E00003BE3,
+				525A341B06F7A91E00003BE3,
+				525A341C06F7A91E00003BE3,
+				525A341D06F7A91E00003BE3,
+				525A341E06F7A91E00003BE3,
+				525A341F06F7A91E00003BE3,
+				525A342006F7A91E00003BE3,
+			);
+			isa = PBXGroup;
+			name = dtsSDK;
+			path = lib/dtsSDK;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A340F06F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			path = DTSBrushMesh.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A341006F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = DTSBrushMesh.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A341106F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = DTSEndian.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A341206F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = DTSInputStream.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A341306F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = DTSInterpolation.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A341406F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			path = DTSMatrix.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A341506F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = DTSMatrix.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A341606F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			path = DTSMesh.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A341706F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = DTSMesh.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A341806F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			path = DTSNormalTable.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A341906F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = DTSOutputStream.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A341A06F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = DTSPoint.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A341B06F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			path = DTSQuaternion.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A341C06F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = DTSQuaternion.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A341D06F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			path = DTSShape.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A341E06F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = DTSShape.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A341F06F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = DTSTypes.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A342006F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = DTSVector.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A342106F7A91E00003BE3 = {
+			children = (
+				525A342206F7A91E00003BE3,
+				525A342306F7A91E00003BE3,
+				525A342406F7A91E00003BE3,
+				525A342506F7A91E00003BE3,
+				525A342606F7A91E00003BE3,
+				525A342706F7A91E00003BE3,
+				525A342806F7A91E00003BE3,
+				525A342906F7A91E00003BE3,
+				525A342A06F7A91E00003BE3,
+				525A342B06F7A91E00003BE3,
+				525A342C06F7A91E00003BE3,
+				525A342D06F7A91E00003BE3,
+				525A342E06F7A91E00003BE3,
+				525A342F06F7A91E00003BE3,
+				525A343006F7A91E00003BE3,
+				525A343306F7A91E00003BE3,
+				525A343406F7A91E00003BE3,
+				525A343506F7A91E00003BE3,
+				525A343606F7A91E00003BE3,
+				525A343706F7A91E00003BE3,
+				525A343806F7A91E00003BE3,
+				525A343906F7A91E00003BE3,
+				525A344006F7A91E00003BE3,
+				525A344106F7A91E00003BE3,
+				525A344206F7A91E00003BE3,
+				525A344306F7A91E00003BE3,
+				525A344406F7A91E00003BE3,
+				525A344506F7A91E00003BE3,
+				525A344606F7A91E00003BE3,
+			);
+			isa = PBXGroup;
+			name = dtsSDKPlus;
+			path = lib/dtsSDKPlus;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A342206F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			path = appConfig.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A342306F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = appConfig.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A342406F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			path = appIfl.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A342506F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = appIfl.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A342606F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			path = appMesh.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A342706F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = appMesh.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A342806F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			path = appNode.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A342906F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = appNode.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A342A06F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			path = appSceneEnum.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A342B06F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = appSceneEnum.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A342C06F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			path = appSequence.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A342D06F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = appSequence.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A342E06F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			path = appTime.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A342F06F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = appTime.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A343006F7A91E00003BE3 = {
+			children = (
+				525A343106F7A91E00003BE3,
+				525A343206F7A91E00003BE3,
+			);
+			isa = PBXGroup;
+			path = decomp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A343106F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			path = Decompose.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A343206F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = Decompose.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A343306F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = dtsBitMatrix.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A343406F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = DTSPlusTypes.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A343506F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			path = DTSUtil.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A343606F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = DTSUtil.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A343706F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			path = nvStripWrap.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A343806F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = nvStripWrap.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A343906F7A91E00003BE3 = {
+			children = (
+				525A343A06F7A91E00003BE3,
+				525A343B06F7A91E00003BE3,
+				525A343C06F7A91E00003BE3,
+				525A343D06F7A91E00003BE3,
+				525A343E06F7A91E00003BE3,
+				525A343F06F7A91E00003BE3,
+			);
+			isa = PBXGroup;
+			path = nvtristrip;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A343A06F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			path = NvTriStrip.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A343B06F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = NvTriStrip.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A343C06F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			path = NvTriStripObjects.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A343D06F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = NvTriStripObjects.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A343E06F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text;
+			path = README.txt;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A343F06F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = VertexCache.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A344006F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = sceneEnum.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A344106F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			path = ShapeMimic.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A344206F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = ShapeMimic.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A344306F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			path = stripper.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A344406F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = stripper.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A344506F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			path = translucentSort.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A344606F7A91E00003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = translucentSort.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A344706F7A91E00003BE3 = {
+			fileRef = 525A340F06F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A344806F7A91E00003BE3 = {
+			fileRef = 525A341006F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A344906F7A91E00003BE3 = {
+			fileRef = 525A341106F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A344A06F7A91E00003BE3 = {
+			fileRef = 525A341206F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A344B06F7A91E00003BE3 = {
+			fileRef = 525A341306F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A344C06F7A91E00003BE3 = {
+			fileRef = 525A341406F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A344D06F7A91E00003BE3 = {
+			fileRef = 525A341506F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A344E06F7A91E00003BE3 = {
+			fileRef = 525A341606F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A344F06F7A91E00003BE3 = {
+			fileRef = 525A341706F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A345006F7A91E00003BE3 = {
+			fileRef = 525A341806F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A345106F7A91E00003BE3 = {
+			fileRef = 525A341906F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A345206F7A91E00003BE3 = {
+			fileRef = 525A341A06F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A345306F7A91E00003BE3 = {
+			fileRef = 525A341B06F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A345406F7A91E00003BE3 = {
+			fileRef = 525A341C06F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A345506F7A91E00003BE3 = {
+			fileRef = 525A341D06F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A345606F7A91E00003BE3 = {
+			fileRef = 525A341E06F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A345706F7A91E00003BE3 = {
+			fileRef = 525A341F06F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A345806F7A91E00003BE3 = {
+			fileRef = 525A342006F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A345906F7A91E00003BE3 = {
+			fileRef = 525A342206F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A345A06F7A91E00003BE3 = {
+			fileRef = 525A342306F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A345B06F7A91E00003BE3 = {
+			fileRef = 525A342406F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A345C06F7A91E00003BE3 = {
+			fileRef = 525A342506F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A345D06F7A91E00003BE3 = {
+			fileRef = 525A342606F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A345E06F7A91E00003BE3 = {
+			fileRef = 525A342706F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A345F06F7A91E00003BE3 = {
+			fileRef = 525A342806F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A346006F7A91E00003BE3 = {
+			fileRef = 525A342906F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A346106F7A91E00003BE3 = {
+			fileRef = 525A342A06F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A346206F7A91E00003BE3 = {
+			fileRef = 525A342B06F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A346306F7A91E00003BE3 = {
+			fileRef = 525A342C06F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A346406F7A91E00003BE3 = {
+			fileRef = 525A342D06F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A346506F7A91E00003BE3 = {
+			fileRef = 525A342E06F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A346606F7A91E00003BE3 = {
+			fileRef = 525A342F06F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A346706F7A91E00003BE3 = {
+			fileRef = 525A343106F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A346806F7A91E00003BE3 = {
+			fileRef = 525A343206F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A346906F7A91E00003BE3 = {
+			fileRef = 525A343306F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A346A06F7A91E00003BE3 = {
+			fileRef = 525A343406F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A346B06F7A91E00003BE3 = {
+			fileRef = 525A343506F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A346C06F7A91E00003BE3 = {
+			fileRef = 525A343606F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A346D06F7A91E00003BE3 = {
+			fileRef = 525A343706F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A346E06F7A91E00003BE3 = {
+			fileRef = 525A343806F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A346F06F7A91E00003BE3 = {
+			fileRef = 525A343A06F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A347006F7A91E00003BE3 = {
+			fileRef = 525A343B06F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A347106F7A91E00003BE3 = {
+			fileRef = 525A343C06F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A347206F7A91E00003BE3 = {
+			fileRef = 525A343D06F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A347306F7A91E00003BE3 = {
+			fileRef = 525A343F06F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A347406F7A91E00003BE3 = {
+			fileRef = 525A344006F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A347506F7A91E00003BE3 = {
+			fileRef = 525A344106F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A347606F7A91E00003BE3 = {
+			fileRef = 525A344206F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A347706F7A91E00003BE3 = {
+			fileRef = 525A344306F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A347806F7A91E00003BE3 = {
+			fileRef = 525A344406F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A347906F7A91E00003BE3 = {
+			fileRef = 525A344506F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A347A06F7A91E00003BE3 = {
+			fileRef = 525A344606F7A91E00003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A347B06F7A94500003BE3 = {
+			children = (
+				525A347C06F7A94500003BE3,
+				525A347D06F7A94500003BE3,
+				525A347E06F7A94500003BE3,
+				525A347F06F7A94500003BE3,
+				525A348006F7A94500003BE3,
+				525A348106F7A94500003BE3,
+				525A348206F7A94500003BE3,
+			);
+			isa = PBXGroup;
+			name = maya2dtsExporter;
+			path = tools/maya2dtsExporter;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A347C06F7A94500003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			path = exportDTSCmd.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A347D06F7A94500003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			path = mayaAppMesh.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A347E06F7A94500003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = mayaAppMesh.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A347F06F7A94500003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			path = mayaAppNode.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A348006F7A94500003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = mayaAppNode.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A348106F7A94500003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			path = mayaSceneEnum.cpp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A348206F7A94500003BE3 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = mayaSceneEnum.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		525A348306F7A94500003BE3 = {
+			fileRef = 525A347C06F7A94500003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A348406F7A94500003BE3 = {
+			fileRef = 525A347D06F7A94500003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A348506F7A94500003BE3 = {
+			fileRef = 525A347E06F7A94500003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A348606F7A94500003BE3 = {
+			fileRef = 525A347F06F7A94500003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A348706F7A94500003BE3 = {
+			fileRef = 525A348006F7A94500003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A348806F7A94500003BE3 = {
+			fileRef = 525A348106F7A94500003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		525A348906F7A94500003BE3 = {
+			fileRef = 525A348206F7A94500003BE3;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+//520
+//521
+//522
+//523
+//524
+//8A0
+//8A1
+//8A2
+//8A3
+//8A4
+		8A8F789E05E54A880032FA51 = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				$BUILD_DIR/$EXECUTABLE_PATH,
+			);
+			isa = PBXShellScriptBuildPhase;
+			outputPaths = (
+				$BUILD_DIR/../$PRODUCT_NAME.lib,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp $BUILD_DIR/$EXECUTABLE_PATH $BUILD_DIR/../$PRODUCT_NAME.lib\n";
+		};
+		8AC81D2805F69AB400F26EB4 = {
+			children = (
+			);
+			isa = PBXGroup;
+			name = Mel;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		8AC81D2D05F69AC500F26EB4 = {
+			children = (
+			);
+			isa = PBXGroup;
+			name = Resources;
+			path = "";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+//8A0
+//8A1
+//8A2
+//8A3
+//8A4
+//D20
+//D21
+//D22
+//D23
+//D24
+		D2AAC0600554660B00DB518D = {
+			buildActionMask = 2147483647;
+			files = (
+				525A344806F7A91E00003BE3,
+				525A344906F7A91E00003BE3,
+				525A344A06F7A91E00003BE3,
+				525A344B06F7A91E00003BE3,
+				525A344D06F7A91E00003BE3,
+				525A344F06F7A91E00003BE3,
+				525A345106F7A91E00003BE3,
+				525A345206F7A91E00003BE3,
+				525A345406F7A91E00003BE3,
+				525A345606F7A91E00003BE3,
+				525A345706F7A91E00003BE3,
+				525A345806F7A91E00003BE3,
+				525A345A06F7A91E00003BE3,
+				525A345C06F7A91E00003BE3,
+				525A345E06F7A91E00003BE3,
+				525A346006F7A91E00003BE3,
+				525A346206F7A91E00003BE3,
+				525A346406F7A91E00003BE3,
+				525A346606F7A91E00003BE3,
+				525A346806F7A91E00003BE3,
+				525A346906F7A91E00003BE3,
+				525A346A06F7A91E00003BE3,
+				525A346C06F7A91E00003BE3,
+				525A346E06F7A91E00003BE3,
+				525A347006F7A91E00003BE3,
+				525A347206F7A91E00003BE3,
+				525A347306F7A91E00003BE3,
+				525A347406F7A91E00003BE3,
+				525A347606F7A91E00003BE3,
+				525A347806F7A91E00003BE3,
+				525A347A06F7A91E00003BE3,
+				525A348506F7A94500003BE3,
+				525A348706F7A94500003BE3,
+				525A348906F7A94500003BE3,
+			);
+			isa = PBXHeadersBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC0610554660B00DB518D = {
+			buildActionMask = 2147483647;
+			files = (
+				525A344706F7A91E00003BE3,
+				525A344C06F7A91E00003BE3,
+				525A344E06F7A91E00003BE3,
+				525A345006F7A91E00003BE3,
+				525A345306F7A91E00003BE3,
+				525A345506F7A91E00003BE3,
+				525A345906F7A91E00003BE3,
+				525A345B06F7A91E00003BE3,
+				525A345D06F7A91E00003BE3,
+				525A345F06F7A91E00003BE3,
+				525A346106F7A91E00003BE3,
+				525A346306F7A91E00003BE3,
+				525A346506F7A91E00003BE3,
+				525A346706F7A91E00003BE3,
+				525A346B06F7A91E00003BE3,
+				525A346D06F7A91E00003BE3,
+				525A346F06F7A91E00003BE3,
+				525A347106F7A91E00003BE3,
+				525A347506F7A91E00003BE3,
+				525A347706F7A91E00003BE3,
+				525A347906F7A91E00003BE3,
+				525A348306F7A94500003BE3,
+				525A348406F7A94500003BE3,
+				525A348606F7A94500003BE3,
+				525A348806F7A94500003BE3,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC0620554660B00DB518D = {
+			buildPhases = (
+				D2AAC0600554660B00DB518D,
+				D2AAC0610554660B00DB518D,
+				8A8F789E05E54A880032FA51,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(MAYA_DIRECTORY)/devkit/include/maya/OpenMayaMac.h";
+				GCC_PREPROCESSOR_DEFINITIONS = "MAC_PLUGIN _BOOL";
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "$(MAYA_DIRECTORY)/devkit/include/";
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = "$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS";
+				LIBRARY_STYLE = DYNAMIC;
+				MAYA_DIRECTORY = /Applications/Alias/maya6.0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = " -lOpenMaya -lOpenMayaAnim -lFoundation -dylib_file @executable_path/libBase.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libBase.dylib\" -dylib_file @executable_path/libFoundation.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libFoundation.dylib\" -dylib_file @executable_path/libSubdivEngine.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libSubdivEngine.dylib\" -dylib_file @executable_path/libGeometryEngine.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libGeometryEngine.dylib\" -dylib_file @executable_path/libAG.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libAG.dylib\" -dylib_file @executable_path/libExplorerSlice.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libExplorerSlice.dylib\" -dylib_file @executable_path/libShared.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libShared.dylib\" -dylib_file @executable_path/libNurbsEngine.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libNurbsEngine.dylib\" -dylib_file @executable_path/libSubdiv.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libSubdiv.dylib\" -dylib_file @executable_path/libDataModel.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libDataModel.dylib\" -dylib_file @executable_path/libNurbs.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libNurbs.dylib\" -dylib_file @executable_path/libExtensionLayer.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libExtensionLayer.dylib\" -dylib_file @executable_path/libPolyEngine.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libPolyEngine.dylib\" -dylib_file @executable_path/libCommandEngine.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libCommandEngine.dylib\" -dylib_file @executable_path/libDependEngine.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libDependEngine.dylib\" -dylib_file @executable_path/libPoly.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libPoly.dylib\" -dylib_file @executable_path/libSubdivGeom.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libSubdivGeom.dylib\" -dylib_file @executable_path/libModelSlice.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libModelSlice.dylib\" -dylib_file @executable_path/libRenderModel.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libRenderModel.dylib\" -dylib_file @executable_path/lib3dGraphics.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/lib3dGraphics.dylib\" -dylib_file @executable_path/libImage.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libImage.dylib\" -dylib_file @executable_path/libAnimEngine.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libAnimEngine.dylib\" -dylib_file @executable_path/libHWRender.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libHWRender.dylib\" -dylib_file @executable_path/libHWFoundation.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libHWFoundation.dylib\" -dylib_file @executable_path/libHWGL.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libHWGL.dylib\" -dylib_file @executable_path/libNurbsSlice.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libNurbsSlice.dylib\" -dylib_file @executable_path/libDependCommand.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libDependCommand.dylib\" -dylib_file @executable_path/libPolySlice.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libPolySlice.dylib\" -dylib_file @executable_path/libKinSlice.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libKinSlice.dylib\" -dylib_file @executable_path/libDynSlice.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libDynSlice.dylib\" -dylib_file @executable_path/libDeformSlice.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libDeformSlice.dylib\" -dylib_file @executable_path/libAnimSlice.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libAnimSlice.dylib\" -dylib_file @executable_path/libManips.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libManips.dylib\" -dylib_file @executable_path/libModelUISlice.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libModelUISlice.dylib\" -dylib_file @executable_path/libSharedUI.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libSharedUI.dylib\" -dylib_file @executable_path/libImageUI.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libImageUI.dylib\" -dylib_file @executable_path/libRenderSlice.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libRenderSlice.dylib\" -dylib_file @executable_path/libPopLib.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libPopLib.dylib\" -dylib_file @executable_path/libIMF.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libIMF.dylib\" -dylib_file @executable_path/libDynUISlice.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libDynUISlice.dylib\" -dylib_file @executable_path/libOpenMaya.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libOpenMaya.dylib\" -dylib_file @executable_path/libxpcom.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libxpcom.dylib\" -dylib_file @executable_path/libnspr4.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libnspr4.dylib\" -dylib_file @executable_path/libplc4.dylib:\"$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS/libplc4.dylib\" -dylib_file \"@executable_path/libplds4.dylib:/Applications/Alias/maya6.0/Maya.app/Contents/MacOS/libplds4.dylib\"";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Maya2DTSExporter;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost";
+			};
+			dependencies = (
+			);
+			isa = PBXNativeTarget;
+			name = Maya2DTSExporter;
+			productName = Maya2DTSExporterPlugin;
+			productReference = D2AAC0630554660B00DB518D;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		D2AAC0630554660B00DB518D = {
+			explicitFileType = "compiled.mach-o.dylib";
+			includeInIndex = 0;
+			isa = PBXFileReference;
+			path = Maya2DTSExporter.dylib;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+	};
+	rootObject = 08FB7793FE84155DC02AAC07;
+}

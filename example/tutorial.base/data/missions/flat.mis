@@ -1,0 +1,86 @@
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+
+   new ScriptObject(MissionInfo) {
+         desc0 = "The tutorial base example mission. This mission contains a minimal set of example art and textures.";
+         name = "F World";
+   };
+   new MissionArea(MissionArea) {
+      Area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      materialList = "~/data/skies/sky_day.dml";
+      cloudHeightPer[0] = "0.349971";
+      cloudHeightPer[1] = "0.25";
+      cloudHeightPer[2] = "0.199973";
+      cloudSpeed1 = "0.0001";
+      cloudSpeed2 = "0.0002";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      fogDistance = "300";
+      fogColor = "0.82 0.828 0.844 1";
+      fogStorm1 = "0";
+      fogStorm2 = "0";
+      fogStorm3 = "0";
+      fogVolume1 = "300 0 71";
+      fogVolume2 = "0 0 0";
+      fogVolume3 = "0 0 0";
+      fogVolumeColor1 = "128 128 128 -2.22768e+038";
+      fogVolumeColor2 = "128 128 128 0";
+      fogVolumeColor3 = "128 128 128 -1.70699e+038";
+      windVelocity = "1 1 0";
+      windEffectPrecipitation = "1";
+      SkySolidColor = "0.547 0.641 0.789 0";
+      useSkyTextures = "1";
+      renderBottomTexture = "0";
+      noRenderBans = "0";
+         locked = "true";
+   };
+   new Sun() {
+      azimuth = "0";
+      elevation = "35";
+      color = "0.988 0.985 0.98 1";
+      ambient = "0.5 0.5 0.5 1";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         direction = "0.57735 0.57735 -0.57735";
+         position = "0 0 0";
+         locked = "true";
+   };
+   new TerrainBlock(Terrain) {
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      terrainFile = "./flat.ter";
+      squareSize = "8";
+      emptySquares = "99744 443522 443778 444034";
+      bumpScale = "1";
+      bumpOffset = "0.01";
+      zeroBumpScale = "8";
+      tile = "1";
+         position = "-1024 -1024 0";
+         locked = "true";
+   };
+   new SimGroup(PlayerDropPoints) {
+
+      new SpawnSphere() {
+         position = "23.1063 -410.857 166.036";
+         rotation = "0 0 1 130.062";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "100";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+            lockCount = "0";
+            locked = "false";
+            homingCount = "0";
+      };
+   };
+};
+//--- OBJECT WRITE END ---

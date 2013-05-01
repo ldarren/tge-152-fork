@@ -1,0 +1,522 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiChunkedBitmapCtrl(PlayerCreation) {
+   canSaveDynamicFields = "0";
+   Profile = "GuiContentProfile";
+   HorizSizing = "width";
+   VertSizing = "height";
+   position = "0 0";
+   Extent = "1024 768";
+   MinExtent = "8 8";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+   bitmap = "./pictures/windows/selection";
+   useVariable = "0";
+   tile = "0";
+
+   new GuiObjectView(PlayerPreview) {
+      canSaveDynamicFields = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      position = "299 27";
+      Extent = "340 640";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      applyFilterToChildren = "1";
+      cameraZRot = "0";
+      forceFOV = "0";
+      lightPosition = "10 10 10";
+      lightDirection = "-0.57735 -0.57735 -0.57735";
+      lightColor = "0.9 0.88 0.8 1";
+      ambientColor = "0.3 0.3 0.3 1";
+   };
+   new GuiControl() {
+      canSaveDynamicFields = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      position = "0 700";
+      Extent = "1024 68";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+
+      new GuiButtonCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiButtonProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "15 28";
+         Extent = "140 30";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "Canvas.setContent(PlayerSelection);";
+         hovertime = "1000";
+         text = "Back";
+         groupNum = "-1";
+         buttonType = "PushButton";
+      };
+      new GuiButtonCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiButtonProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "867 29";
+         Extent = "140 30";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         text = "Create";
+         groupNum = "-1";
+         buttonType = "PushButton";
+      };
+   };
+   new GuiWindowCtrl() {
+      canSaveDynamicFields = "0";
+      Profile = "GuiWindowProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      position = "771 81";
+      Extent = "235 523";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      text = "Create Character";
+      maxLength = "1024";
+      resizeWidth = "0";
+      resizeHeight = "0";
+      canMove = "1";
+      canClose = "0";
+      canMinimize = "0";
+      canMaximize = "0";
+      minSize = "50 50";
+
+      new GuiTextCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiTextProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "12 36";
+         Extent = "30 18";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         text = "Name:";
+         maxLength = "32";
+      };
+      new GuiTextCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiTextProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "12 78";
+         Extent = "42 18";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         text = "Fraction:";
+         maxLength = "32";
+      };
+      new GuiTextCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiTextProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "12 120";
+         Extent = "39 18";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         text = "Gender:";
+         maxLength = "32";
+      };
+      new GuiTextCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiTextProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "12 162";
+         Extent = "44 18";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         text = "Strength:";
+         maxLength = "32";
+      };
+      new GuiTextCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiTextProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "12 204";
+         Extent = "46 18";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         text = "Dexterity:";
+         maxLength = "32";
+      };
+      new GuiTextCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiTextProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "12 246";
+         Extent = "59 18";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         text = "Constitution:";
+         maxLength = "32";
+      };
+      new GuiTextCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiTextProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "12 288";
+         Extent = "56 18";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         text = "Intelligence:";
+         maxLength = "32";
+      };
+      new GuiTextEditCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiTextEditProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "75 36";
+         Extent = "150 18";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         maxLength = "1024";
+         historySize = "0";
+         tabComplete = "0";
+         sinkAllKeyEvents = "0";
+         password = "0";
+         passwordMask = "*";
+      };
+      new GuiPopUpMenuCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiPopUpMenuProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "75 78";
+         Extent = "150 18";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         maxLength = "1024";
+         maxPopupHeight = "200";
+      };
+      new GuiPopUpMenuCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiPopUpMenuProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "75 120";
+         Extent = "150 18";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         maxLength = "1024";
+         maxPopupHeight = "200";
+      };
+      new GuiProgressCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiProgressProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "75 162";
+         Extent = "150 18";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         maxLength = "1024";
+      };
+      new GuiProgressCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiProgressProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "75 204";
+         Extent = "150 18";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         maxLength = "1024";
+      };
+      new GuiProgressCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiProgressProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "75 246";
+         Extent = "150 18";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         maxLength = "1024";
+      };
+      new GuiProgressCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiProgressProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "75 288";
+         Extent = "150 18";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         maxLength = "1024";
+      };
+      new GuiTextCtrl(SP_name) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiTextProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "12 330";
+         Extent = "66 18";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         text = "Human Knight";
+         maxLength = "32";
+      };
+      new GuiMLTextCtrl(PlayerDescription) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiMLTextProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "12 372";
+         Extent = "213 14";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         lineSpacing = "2";
+         allowColorChars = "0";
+         maxChars = "-1";
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+
+function PlayerCreation::onWake(%this)
+{
+	$playerNum = 0; // 
+	$playerCur = 0;
+	//I changed this to look for player_info.cs rather than player.dts, so that every thing we pull
+	//up here has a valid info file, no chance it will come up as blank.
+	%filename = "*/player_info.cs";
+	for (%file = findFirstFile(%filename); %file !$= ""; %file = findNextFile(%filename)) {
+		exec(%file);
+		$playerList[$playerNum] = %pPlayerDTS;
+		$pNameList[$playerNum] = %pHeader;
+		$pDescList[$playerNum] = %pDesc;
+		$pWeaponList[$playerNum] = %pWeapon;
+		$pWeaponDTSList[$playerNum] = %pWeaponDTS;
+		$pModelList[$playerNum] = %pModel;
+
+		$pHeadSkin[$playerNum] = %skinHead;
+		$pHeadSkinCount[$playerNum] = getWordCount(%skinHead);
+		$pHeadSkinCur[$playerNum] = 0;
+		$pBodySkin[$playerNum] = %skinBody;
+		$pBodySkinCount[$playerNum] = getWordCount(%skinBody);
+		$pBodySkinCur[$playerNum] = 0;
+		$pArmsSkin[$playerNum] = %skinArms;
+		$pArmsSkinCount[$playerNum] = getWordCount(%skinArms);
+		$pArmsSkinCur[$playerNum] = 0;
+		$pHandsSkin[$playerNum] = %skinHands;
+		$pHandsSkinCount[$playerNum] = getWordCount(%skinHands);
+		$pHandsSkinCur[$playerNum] = 0;
+		$pLegsSkin[$playerNum] = %skinLegs;
+		$pLegsSkinCount[$playerNum] = getWordCount(%skinLegs);
+		$pLegsSkinCur[$playerNum] = 0;
+		$pFeetSkin[$playerNum] = %skinFeet;
+		$pFeetSkinCount[$playerNum] = getWordCount(%skinFeet);
+		$pFeetSkinCur[$playerNum] = 0;
+		$pSkinFolder[$playerNum] = %skinFolder;
+
+		$playerNum++;
+	}
+	
+	$playerCur = -1;
+	if ($playerNum > 0) %this.setModel(0);
+}
+
+function PlayerCreation::showNextModel(%this)
+{
+   if ( ($playerCur+1) == $playerNum )   %this.setModel(0);   // go back to the first model
+   else   %this.setModel($playerCur+1);   // go to the next model
+}
+
+function PlayerCreation::showPrevModel(%this)
+{
+   if ( $playerCur == 0 )   %this.setModel($playerNum-1);   // we were at the first model so lets go to the last
+   else   %this.setModel($playerCur-1);
+}
+
+function PlayerCreation::setModel(%this, %index)
+{
+	if ($playerNum == 0) return;
+	if ($playerNum < %index) return;
+	if ($playerCur == %index) return;
+	// set the name, description, and weapon of choice text fields
+	
+	SP_name.setText($pNameList[%index]);
+	//SP_weapon.setText($pWeaponList[%index]);
+	PlayerDescription.setText($pDescList[%index]);
+	
+	// Set main object
+	PlayerPreview.setObject($pNameList[%index], $playerList[%index], "", 0);
+	// Set animation
+	PlayerPreview.loadDSQ($pNameList[%index],filePath($playerList[%index]) @ "/idle.dsq"); // loaded in player.cs
+	PlayerPreview.setSequence($pNameList[%index], "idle", 1); // needs server connection
+	// Set mounting object
+	PlayerPreview.mountObject($pWeaponList[%index],$pWeaponDTSList[%index],"",$pNameList[%index],"mount0",0);
+	//PlayerPreview.setSequence($pWeaponList[%index], "activate", 1);
+	$playerCur = %index;
+
+	PlayerPreview.addSkinModifier(0, "head", getWord($pHeadSkin[$playerCur], $pHeadSkinCur[$playerCur]));
+	PlayerPreview.addSkinModifier(1, "body", getWord($pBodySkin[$playerCur], $pBodySkinCur[$playerCur]));
+	PlayerPreview.addSkinModifier(2, "arms", getWord($pArmsSkin[$playerCur], $pArmsSkinCur[$playerCur]));
+	PlayerPreview.addSkinModifier(3, "hands", getWord($pHandsSkin[$playerCur], $pHandsSkinCur[$playerCur]));
+	PlayerPreview.addSkinModifier(4, "legs", getWord($pLegsSkin[$playerCur], $pLegsSkinCur[$playerCur]));
+	PlayerPreview.addSkinModifier(5, "feet", getWord($pFeetSkin[$playerCur], $pFeetSkinCur[$playerCur]));
+
+	Canvas.repaint();
+}
+
+function PlayerCreation::showNextHead(%this)
+{
+	if ($pHeadSkinCount[$playerCur] == 0) return;
+	$pHeadSkinCur[$playerCur]++;
+	if ($pHeadSkinCur[$playerCur] >= $pHeadSkinCount[$playerCur]) $pHeadSkinCur[$playerCur]=0;
+	PlayerPreview.addSkinModifier(0, "head", getWord($pHeadSkin[$playerCur], $pHeadSkinCur[$playerCur]));
+}
+
+function PlayerCreation::showPrevHead(%this)
+{
+	if ($pHeadSkinCount[$playerCur] == 0) return;
+	$pHeadSkinCur[$playerCur]--;
+	if ($pHeadSkinCur[$playerCur] < 0) $pHeadSkinCur[$playerCur]=($pHeadSkinCount[$playerCur]-1);
+	PlayerPreview.addSkinModifier(0, "head", getWord($pHeadSkin[$playerCur], $pHeadSkinCur[$playerCur]));
+}
+
+function PlayerCreation::showNextBody(%this)
+{
+	if ($pBodySkinCount[$playerCur] == 0) return;
+	$pBodySkinCur[$playerCur]++;
+	if ($pBodySkinCur[$playerCur] >= $pBodySkinCount[$playerCur]) $pBodySkinCur[$playerCur]=0;
+	PlayerPreview.addSkinModifier(1, "body", getWord($pBodySkin[$playerCur], $pBodySkinCur[$playerCur]));
+}
+
+function PlayerCreation::showPrevBody(%this)
+{
+	if ($pBodySkinCount[$playerCur] == 0) return;
+	$pBodySkinCur[$playerCur]--;
+	if ($pBodySkinCur[$playerCur] < 0) $pBodySkinCur[$playerCur]=($pBodySkinCount[$playerCur]-1);
+	PlayerPreview.addSkinModifier(1, "body", getWord($pBodySkin[$playerCur], $pBodySkinCur[$playerCur]));
+}
+
+function PlayerCreation::showNextArms(%this)
+{
+	if ($pArmsSkinCount[$playerCur] == 0) return;
+	$pArmsSkinCur[$playerCur]++;
+	if ($pArmsSkinCur[$playerCur] >= $pArmsSkinCount[$playerCur]) $pArmsSkinCur[$playerCur]=0;
+	PlayerPreview.addSkinModifier(2, "arms", getWord($pArmsSkin[$playerCur], $pArmsSkinCur[$playerCur]));
+}
+
+function PlayerCreation::showPrevArms(%this)
+{
+	if ($pArmsSkinCount[$playerCur] == 0) return;
+	$pArmsSkinCur[$playerCur]--;
+	if ($pArmsSkinCur[$playerCur] < 0) $pArmsSkinCur[$playerCur]=($pArmsSkinCount[$playerCur]-1);
+	PlayerPreview.addSkinModifier(2, "arms", getWord($pArmsSkin[$playerCur], $pArmsSkinCur[$playerCur]));
+}
+
+function PlayerCreation::showNextHands(%this)
+{
+	if ($pHandsSkinCount[$playerCur] == 0) return;
+	$pHandsSkinCur[$playerCur]++;
+	if ($pHandsSkinCur[$playerCur] >= $pHandsSkinCount[$playerCur]) $pHandsSkinCur[$playerCur]=0;
+	PlayerPreview.addSkinModifier(3, "hands", getWord($pHandsSkin[$playerCur], $pHandsSkinCur[$playerCur]));
+}
+
+function PlayerCreation::showPrevHands(%this)
+{
+	if ($pHandsSkinCount[$playerCur] == 0) return;
+	$pHandsSkinCur[$playerCur]--;
+	if ($pHandsSkinCur[$playerCur] < 0) $pHandsSkinCur[$playerCur]=($pHandsSkinCount[$playerCur]-1);
+	PlayerPreview.addSkinModifier(3, "hands", getWord($pHandsSkin[$playerCur], $pHandsSkinCur[$playerCur]));
+}
+
+function PlayerCreation::showNextLegs(%this)
+{
+	if ($pLegsSkinCount[$playerCur] == 0) return;
+	$pLegsSkinCur[$playerCur]++;
+	if ($pLegsSkinCur[$playerCur] >= $pLegsSkinCount[$playerCur]) $pLegsSkinCur[$playerCur]=0;
+	PlayerPreview.addSkinModifier(4, "legs", getWord($pLegsSkin[$playerCur], $pLegsSkinCur[$playerCur]));
+}
+
+function PlayerCreation::showPrevLegs(%this)
+{
+	if ($pLegsSkinCount[$playerCur] == 0) return;
+	$pLegsSkinCur[$playerCur]--;
+	if ($pLegsSkinCur[$playerCur] < 0) $pLegsSkinCur[$playerCur]=($pLegsSkinCount[$playerCur]-1);
+	PlayerPreview.addSkinModifier(4, "legs", getWord($pLegsSkin[$playerCur], $pLegsSkinCur[$playerCur]));
+}
+
+function PlayerCreation::showNextFeet(%this)
+{
+	if ($pFeetSkinCount[$playerCur] == 0) return;
+	$pFeetSkinCur[$playerCur]++;
+	if ($pFeetSkinCur[$playerCur] >= $pFeetSkinCount[$playerCur]) $pFeetSkinCur[$playerCur]=0;
+	PlayerPreview.addSkinModifier(5, "feet", getWord($pFeetSkin[$playerCur], $pFeetSkinCur[$playerCur]));
+}
+
+function PlayerCreation::showPrevFeet(%this)
+{
+	if ($pFeetSkinCount[$playerCur] == 0) return;
+	$pFeetSkinCur[$playerCur]--;
+	if ($pFeetSkinCur[$playerCur] < 0) $pFeetSkinCur[$playerCur]=($pFeetSkinCount[$playerCur]-1);
+	PlayerPreview.addSkinModifier(5, "feet", getWord($pFeetSkin[$playerCur], $pFeetSkinCur[$playerCur]));
+}
+
+function PlayerCreation::select(%this)
+{
+	commandtoServer('spawnPlayer',$pModelList[$playerCur],
+		getWord($pHeadSkin[$playerCur], $pHeadSkinCur[$playerCur]),
+		getWord($pBodySkin[$playerCur], $pBodySkinCur[$playerCur]),
+		getWord($pArmsSkin[$playerCur], $pArmsSkinCur[$playerCur]),
+		getWord($pHandsSkin[$playerCur], $pHandsSkinCur[$playerCur]),
+		getWord($pLegsSkin[$playerCur], $pLegsSkinCur[$playerCur]),
+		getWord($pFeetSkin[$playerCur], $pFeetSkinCur[$playerCur]));
+	Canvas.setContent($Client::GameGUI); 
+}

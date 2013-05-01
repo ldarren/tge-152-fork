@@ -1,0 +1,8 @@
+<spush><just:center><font:Arial Bold:18><color:FFFF00>
+ShapeBase Sounds<spop>
+<just:left><font:Arial:16><br><lmargin%:5>
+Explores use of sound threads for shapes.<br><br>
+<color:FF2222>
+- MONO (16-bit) Sounds<br>
+- STEREO (16-bit) Sounds<br>
+

@@ -1,0 +1,20 @@
+<br>
+<just:center><font:Arial Bold:32>Game Programers Guide to Torque:<br>
+<lmargin%:2><font:Arial Bold:24>Under the Hood of the Torque Game Engine 
+<br><br>
+<just:left>
+<rmargin%:85><lmargin%:15><font:Arial Bold:20>  T<font:Arial:20>he author takes readers on an in-depth walkthrough of the Torque Game Engine -- one of the most popular, powerful, and easy to use game engines available today. With clear explanations of how to use Torque to create your own games and detailed discussions of the engine's inner workings, this book is a must read for any programmer interested in making games for fun or profit. It offers<br>
+<br>
+<rmargin%:70><lmargin%:20>
+- step-by-step examples, <br>
+- detailed system descriptions, <br>
+- in-depth references, <br>
+- practical tips, tricks, and more <br>
+<br>
+<rmargin%:85><lmargin%:15>
+that will provide readers all they need to understand the Torque Game Engine.
+<br>
+<br>
+<rmargin%:93><lmargin%:2><just:left><bitmap:gpgt/GUISamples/gs_MLText/how><just:right><bitmap:gpgt/GUISamples/gs_MLText/ggpress>
+<br>
+<br>

@@ -1,0 +1,99 @@
+new GuiControlProfile ("LoadingGuiContentProfile")
+{
+   opaque = true;
+   fillColor = "200 200 200";
+   border = true;
+   borderColor   = "0 0 0";
+};
+
+//--- OBJECT WRITE BEGIN ---
+new GuiChunkedBitmapCtrl(LoadingGui) {
+   Profile = "GuiContentProfile";
+   HorizSizing = "width";
+   VertSizing = "height";
+   position = "0 0";
+   Extent = "800 600";
+   MinExtent = "8 8";
+   Visible = "1";
+   bitmap = "./background";
+   useVariable = "0";
+   tile = "0";
+      helpTag = "0";
+      qLineCount = "0";
+
+   new GuiControl() {
+      Profile = "GuiWindowProfile";
+      HorizSizing = "center";
+      VertSizing = "center";
+      position = "172 146";
+      Extent = "455 308";
+      MinExtent = "8 8";
+      Visible = "1";
+         helpTag = "0";
+
+      new GuiTextCtrl(LOAD_MapName) {
+         Profile = "GuiMediumTextProfile";
+         HorizSizing = "center";
+         VertSizing = "bottom";
+         position = "8 6";
+         Extent = "439 28";
+         MinExtent = "8 8";
+         Visible = "1";
+         text = "Map Name";
+         maxLength = "255";
+            helpTag = "0";
+      };
+      new GuiMLTextCtrl(LOAD_MapDescription) {
+         Profile = "GuiMLTextProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "7 62";
+         Extent = "440 14";
+         MinExtent = "8 8";
+         Visible = "1";
+         lineSpacing = "2";
+         allowColorChars = "0";
+         maxChars = "-1";
+            helpTag = "0";
+      };
+      new GuiProgressCtrl(LoadingProgress) {
+         Profile = "GuiProgressProfile";
+         HorizSizing = "right";
+         VertSizing = "top";
+         position = "128 262";
+         Extent = "262 25";
+         MinExtent = "8 8";
+         Visible = "1";
+            helpTag = "0";
+
+         new GuiTextCtrl(LoadingProgressTxt) {
+            Profile = "GuiProgressTextProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "-4 3";
+            Extent = "262 20";
+            MinExtent = "8 8";
+            Visible = "1";
+            text = "LOADING MISSION";
+            maxLength = "255";
+               helpTag = "0";
+         };
+      };
+      new GuiButtonCtrl() {
+         Profile = "GuiButtonProfile";
+         HorizSizing = "right";
+         VertSizing = "top";
+         position = "48 262";
+         Extent = "75 25";
+         MinExtent = "20 20";
+         Visible = "1";
+         Command = "disconnect();";
+         Accelerator = "escape";
+         text = "Cancel";
+         groupNum = "-1";
+         buttonType = "PushButton";
+            helpTag = "0";
+      };
+   };
+};
+//--- OBJECT WRITE END ---

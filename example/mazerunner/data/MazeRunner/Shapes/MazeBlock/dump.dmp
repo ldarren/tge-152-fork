@@ -1,0 +1,2279 @@
+First pass:  enumerate scene...
+
+Processing Node Regroup2 with parent ROOT
+Adding skin object from skin "Regroup2" to bone "Joint10" (0).
+Adding skin object from skin "Regroup2" to bone "Joint9" (1).
+Adding skin object from skin "Regroup2" to bone "Joint12" (2).
+Adding skin object from skin "Regroup2" to bone "Joint11" (3).
+Adding skin object from skin "Regroup2" to bone "Joint8" (4).
+Adding skin object from skin "Regroup2" to bone "Joint15" (5).
+Adding skin object from skin "Regroup2" to bone "Joint23" (6).
+Adding skin object from skin "Regroup2" to bone "Joint22" (7).
+Adding skin object from skin "Regroup2" to bone "Joint19" (8).
+Adding skin object from skin "Regroup2" to bone "Joint18" (9).
+Adding skin object from skin "Regroup2" to bone "Joint6" (10).
+Adding skin object from skin "Regroup2" to bone "Joint21" (11).
+Adding skin object from skin "Regroup2" to bone "Joint17" (12).
+Adding skin object from skin "Regroup2" to bone "Joint14" (13).
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 0 ("Joint10")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 2 ("Joint12")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 6 ("Joint23")
+Adding weights for bone 6 ("Joint23")
+Adding weights for bone 6 ("Joint23")
+Adding weights for bone 6 ("Joint23")
+Adding weights for bone 6 ("Joint23")
+Adding weights for bone 6 ("Joint23")
+Adding weights for bone 6 ("Joint23")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 6 ("Joint23")
+Adding weights for bone 6 ("Joint23")
+Adding weights for bone 6 ("Joint23")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 6 ("Joint23")
+Adding weights for bone 6 ("Joint23")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 6 ("Joint23")
+Adding weights for bone 6 ("Joint23")
+Adding weights for bone 6 ("Joint23")
+Adding weights for bone 6 ("Joint23")
+Adding weights for bone 6 ("Joint23")
+Adding weights for bone 6 ("Joint23")
+Adding weights for bone 6 ("Joint23")
+Adding weights for bone 6 ("Joint23")
+Adding weights for bone 6 ("Joint23")
+Adding weights for bone 6 ("Joint23")
+Adding weights for bone 6 ("Joint23")
+Adding weights for bone 6 ("Joint23")
+Adding weights for bone 6 ("Joint23")
+Adding weights for bone 6 ("Joint23")
+Adding weights for bone 6 ("Joint23")
+Adding weights for bone 6 ("Joint23")
+Adding weights for bone 6 ("Joint23")
+Adding weights for bone 6 ("Joint23")
+Adding weights for bone 6 ("Joint23")
+Adding weights for bone 6 ("Joint23")
+Adding weights for bone 8 ("Joint19")
+Adding weights for bone 8 ("Joint19")
+Adding weights for bone 8 ("Joint19")
+Adding weights for bone 8 ("Joint19")
+Adding weights for bone 8 ("Joint19")
+Adding weights for bone 8 ("Joint19")
+Adding weights for bone 8 ("Joint19")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 8 ("Joint19")
+Adding weights for bone 8 ("Joint19")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 8 ("Joint19")
+Adding weights for bone 8 ("Joint19")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 8 ("Joint19")
+Adding weights for bone 8 ("Joint19")
+Adding weights for bone 8 ("Joint19")
+Adding weights for bone 8 ("Joint19")
+Adding weights for bone 8 ("Joint19")
+Adding weights for bone 8 ("Joint19")
+Adding weights for bone 8 ("Joint19")
+Adding weights for bone 8 ("Joint19")
+Adding weights for bone 8 ("Joint19")
+Adding weights for bone 8 ("Joint19")
+Adding weights for bone 8 ("Joint19")
+Adding weights for bone 8 ("Joint19")
+Adding weights for bone 8 ("Joint19")
+Adding weights for bone 8 ("Joint19")
+Adding weights for bone 8 ("Joint19")
+Adding weights for bone 8 ("Joint19")
+Adding weights for bone 8 ("Joint19")
+Adding weights for bone 8 ("Joint19")
+Adding weights for bone 8 ("Joint19")
+Adding weights for bone 8 ("Joint19")
+Adding weights for bone 8 ("Joint19")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 10 ("Joint6")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 11 ("Joint21")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 11 ("Joint21")
+Adding weights for bone 11 ("Joint21")
+Adding weights for bone 11 ("Joint21")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 11 ("Joint21")
+Adding weights for bone 11 ("Joint21")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 12 ("Joint17")
+Adding weights for bone 12 ("Joint17")
+Adding weights for bone 12 ("Joint17")
+Adding weights for bone 12 ("Joint17")
+Adding weights for bone 12 ("Joint17")
+Adding weights for bone 12 ("Joint17")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 10 ("Joint6")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 11 ("Joint21")
+Adding weights for bone 11 ("Joint21")
+Adding weights for bone 11 ("Joint21")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 7 ("Joint22")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 12 ("Joint17")
+Adding weights for bone 12 ("Joint17")
+Adding weights for bone 12 ("Joint17")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 9 ("Joint18")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 10 ("Joint6")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 10 ("Joint6")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 3 ("Joint11")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 4 ("Joint8")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 13 ("Joint14")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 5 ("Joint15")
+Adding weights for bone 1 ("Joint9")
+Adding weights for bone 1 ("Joint9")
+Skin "Regroup2" with parent "ROOT" added to entry list
+Processing Node Bounds with parent ROOT
+Bounding box found
+Processing Node __mainTree with parent ROOT
+Found subtree starting at Node "__mainTree"
+
+Second pass:  put shape structure together...
+
+Adding detail named "detail2" of size 2 to subtree "__mainTree".
+Adding detail named "Collision-1" of size -1 to subtree "__mainTree".
+Adding node "__mainTree" with parent "__mainTree" to subtree rooted on node "__mainTree".
+Adding node "__meshes" with parent "__mainTree" to subtree rooted on node "__mainTree".
+Adding node "Col-1" with parent "__meshes" to subtree rooted on node "__mainTree".
+Attaching object to node.
+Adding object named "Col".
+Adding mesh of size -1 to object "Col".
+Adding node "Joint6" with parent "__meshes" to subtree rooted on node "__mainTree".
+Adding node "Joint7" with parent "Joint6" to subtree rooted on node "__mainTree".
+Adding node "Joint8" with parent "Joint7" to subtree rooted on node "__mainTree".
+Adding node "Joint9" with parent "Joint8" to subtree rooted on node "__mainTree".
+Adding node "Joint10" with parent "Joint9" to subtree rooted on node "__mainTree".
+Adding node "Joint11" with parent "Joint9" to subtree rooted on node "__mainTree".
+Adding node "Joint12" with parent "Joint11" to subtree rooted on node "__mainTree".
+Adding node "Joint13" with parent "Joint12" to subtree rooted on node "__mainTree".
+Adding node "Joint14" with parent "Joint9" to subtree rooted on node "__mainTree".
+Adding node "Joint15" with parent "Joint14" to subtree rooted on node "__mainTree".
+Adding node "Joint16" with parent "Joint15" to subtree rooted on node "__mainTree".
+Adding node "Joint17" with parent "Joint7" to subtree rooted on node "__mainTree".
+Adding node "Joint18" with parent "Joint17" to subtree rooted on node "__mainTree".
+Adding node "Joint19" with parent "Joint18" to subtree rooted on node "__mainTree".
+Adding node "Joint20" with parent "Joint19" to subtree rooted on node "__mainTree".
+Adding node "Joint21" with parent "Joint7" to subtree rooted on node "__mainTree".
+Adding node "Joint22" with parent "Joint21" to subtree rooted on node "__mainTree".
+Adding node "Joint23" with parent "Joint22" to subtree rooted on node "__mainTree".
+Adding node "Joint24" with parent "Joint23" to subtree rooted on node "__mainTree".
+Adding node "Root" with parent "__meshes" to subtree rooted on node "__mainTree".
+Adding skin object from skin "Regroup2" to bone "Joint10" (0).
+Adding skin object from skin "Regroup2" to bone "Joint9" (1).
+Adding skin object from skin "Regroup2" to bone "Joint12" (2).
+Adding skin object from skin "Regroup2" to bone "Joint11" (3).
+Adding skin object from skin "Regroup2" to bone "Joint8" (4).
+Adding skin object from skin "Regroup2" to bone "Joint15" (5).
+Adding skin object from skin "Regroup2" to bone "Joint23" (6).
+Adding skin object from skin "Regroup2" to bone "Joint22" (7).
+Adding skin object from skin "Regroup2" to bone "Joint19" (8).
+Adding skin object from skin "Regroup2" to bone "Joint18" (9).
+Adding skin object from skin "Regroup2" to bone "Joint6" (10).
+Adding skin object from skin "Regroup2" to bone "Joint21" (11).
+Adding skin object from skin "Regroup2" to bone "Joint17" (12).
+Adding skin object from skin "Regroup2" to bone "Joint14" (13).
+Adding object named "Regroup".
+Adding mesh of size 2 to object "Regroup".
+Generating faces for skin "Regroup2".
+Adding object named "Bone::Joint6".
+Object is bone
+Adding object named "Bone::Joint8".
+Object is bone
+Adding object named "Bone::Joint9".
+Object is bone
+Adding object named "Bone::Joint10".
+Object is bone
+Adding object named "Bone::Joint11".
+Object is bone
+Adding object named "Bone::Joint12".
+Object is bone
+Adding object named "Bone::Joint14".
+Object is bone
+Adding object named "Bone::Joint15".
+Object is bone
+Adding object named "Bone::Joint17".
+Object is bone
+Adding object named "Bone::Joint18".
+Object is bone
+Adding object named "Bone::Joint19".
+Object is bone
+Adding object named "Bone::Joint21".
+Object is bone
+Adding object named "Bone::Joint22".
+Object is bone
+Adding object named "Bone::Joint23".
+Object is bone
+
+Third pass:  Collapsing unneeded nodes...
+
+Removing node "__mainTree"
+Removing node "__meshes"
+
+Add default object states...
+
+Adding object state to 1 detail level(s) of mesh "Col".
+Adding frame.
+Object is visible.
+Object offset transform for mesh dl=0:
+    scale:            x=1.00000, y=1.00000, z=1.00000
+    stretch rotation: x=0.00000, y=0.00000, z=0.00000, w=1.00000
+    translation:      x=0.00000, y=0.00000, z=0.00000
+    actual rotation:  x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding object state to 1 detail level(s) of mesh "Regroup".
+Adding frame.
+Object is visible.
+---------------------------------
+
+Add default node states...
+
+Adding node rotation at time 0.000000 for node "Col-1".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0.000000 for node "Col-1".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding node rotation at time 0.000000 for node "Joint6".
+  rotation:     x=0.00497, y=0.73032, z=0.68307, w=0.00465
+---------------------------------
+Adding node translation at time 0.000000 for node "Joint6".
+  translation:     x=-0.00247, y=0.13636, z=1.04331
+---------------------------------
+Adding node rotation at time 0.000000 for node "Joint7".
+  rotation:     x=-0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0.000000 for node "Joint7".
+  translation:     x=0.00000, y=2.04206, z=0.00000
+---------------------------------
+Adding node rotation at time 0.000000 for node "Joint8".
+  rotation:     x=0.00105, y=0.99992, z=0.01223, w=0.00001
+---------------------------------
+Adding node translation at time 0.000000 for node "Joint8".
+  translation:     x=0.00266, y=1.16301, z=0.05879
+---------------------------------
+Adding node rotation at time 0.000000 for node "Joint9".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0.000000 for node "Joint9".
+  translation:     x=0.00000, y=1.49276, z=-0.00000
+---------------------------------
+Adding node rotation at time 0.000000 for node "Joint10".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0.000000 for node "Joint10".
+  translation:     x=0.00045, y=1.10706, z=-0.03556
+---------------------------------
+Adding node rotation at time 0.000000 for node "Joint11".
+  rotation:     x=-0.03466, y=-0.00159, z=0.04577, w=0.99835
+---------------------------------
+Adding node translation at time 0.000000 for node "Joint11".
+  translation:     x=-0.18386, y=0.97994, z=-0.00915
+---------------------------------
+Adding node rotation at time 0.000000 for node "Joint12".
+  rotation:     x=0.01262, y=0.99986, z=-0.01139, w=-0.00014
+---------------------------------
+Adding node translation at time 0.000000 for node "Joint12".
+  translation:     x=-0.00000, y=0.79366, z=-0.00000
+---------------------------------
+Adding node rotation at time 0.000000 for node "Joint13".
+  rotation:     x=0.00000, y=-0.00000, z=-0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0.000000 for node "Joint13".
+  translation:     x=-0.00000, y=0.80107, z=-0.00000
+---------------------------------
+Adding node rotation at time 0.000000 for node "Joint14".
+  rotation:     x=0.03874, y=0.99853, z=-0.03790, w=-0.00147
+---------------------------------
+Adding node translation at time 0.000000 for node "Joint14".
+  translation:     x=0.19028, y=0.98823, z=-0.02006
+---------------------------------
+Adding node rotation at time 0.000000 for node "Joint15".
+  rotation:     x=0.00466, y=0.99996, z=0.00792, w=0.00004
+---------------------------------
+Adding node translation at time 0.000000 for node "Joint15".
+  translation:     x=-0.00000, y=0.78713, z=-0.00000
+---------------------------------
+Adding node rotation at time 0.000000 for node "Joint16".
+  rotation:     x=-0.00000, y=-0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0.000000 for node "Joint16".
+  translation:     x=-0.00000, y=0.82137, z=-0.00000
+---------------------------------
+Adding node rotation at time 0.000000 for node "Joint17".
+  rotation:     x=0.06813, y=0.00236, z=0.03457, w=0.99707
+---------------------------------
+Adding node translation at time 0.000000 for node "Joint17".
+  translation:     x=-0.07058, y=1.01371, z=0.06978
+---------------------------------
+Adding node rotation at time 0.000000 for node "Joint18".
+  rotation:     x=0.01423, y=0.99842, z=-0.05442, w=-0.00078
+---------------------------------
+Adding node translation at time 0.000000 for node "Joint18".
+  translation:     x=0.00000, y=0.67675, z=-0.00000
+---------------------------------
+Adding node rotation at time 0.000000 for node "Joint19".
+  rotation:     x=-0.07640, y=-0.00135, z=0.01764, w=0.99692
+---------------------------------
+Adding node translation at time 0.000000 for node "Joint19".
+  translation:     x=-0.00000, y=0.57181, z=-0.00000
+---------------------------------
+Adding node rotation at time 0.000000 for node "Joint20".
+  rotation:     x=-0.00000, y=0.00000, z=-0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0.000000 for node "Joint20".
+  translation:     x=0.00000, y=0.99769, z=-0.00000
+---------------------------------
+Adding node rotation at time 0.000000 for node "Joint21".
+  rotation:     x=0.03712, y=0.99705, z=0.06718, w=0.00250
+---------------------------------
+Adding node translation at time 0.000000 for node "Joint21".
+  translation:     x=0.07832, y=1.01358, z=0.06776
+---------------------------------
+Adding node rotation at time 0.000000 for node "Joint22".
+  rotation:     x=0.00845, y=0.99849, z=0.05419, w=0.00046
+---------------------------------
+Adding node translation at time 0.000000 for node "Joint22".
+  translation:     x=0.00000, y=0.68085, z=0.00000
+---------------------------------
+Adding node rotation at time 0.000000 for node "Joint23".
+  rotation:     x=0.07756, y=0.00189, z=0.02427, w=0.99669
+---------------------------------
+Adding node translation at time 0.000000 for node "Joint23".
+  translation:     x=-0.00000, y=0.57220, z=0.00000
+---------------------------------
+Adding node rotation at time 0.000000 for node "Joint24".
+  rotation:     x=-0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0.000000 for node "Joint24".
+  translation:     x=-0.00000, y=0.99191, z=0.00000
+---------------------------------
+Adding node rotation at time 0.000000 for node "Root".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0.000000 for node "Root".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+
+Generating skin "Regroup2".
+
+Vertex, bone, & weight data:
+
+Vertex 0
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 1
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 2
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 3
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 4
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 5
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 6
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 7
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 8
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 9
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 10
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 11
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 12
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 13
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 14
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 15
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 16
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 17
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 18
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 19
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 20
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 21
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 22
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 23
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 24
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 25
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 26
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 27
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 28
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 29
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 30
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 31
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 32
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 33
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 34
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 35
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 36
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 37
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 38
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 39
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 40
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 41
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 42
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 43
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 44
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 45
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 46
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 47
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 48
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 49
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 50
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 51
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 52
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 53
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 54
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 55
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 56
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 57
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 58
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 59
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 60
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 61
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 62
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 63
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 64
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 65
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 66
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 67
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 68
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 69
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 70
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 71
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 72
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 73
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 74
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 75
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 76
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 77
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 78
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 79
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 80
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 81
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 82
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 83
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 84
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 85
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 86
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 87
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 88
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 89
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 90
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 91
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 92
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 93
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 94
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 95
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 96
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 97
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 98
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 99
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 100
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 101
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 102
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 103
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 104
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 105
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 106
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 107
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 108
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 109
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 110
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 111
+  Bone 0, weight = 1.000, name =  "Joint10"
+Vertex 112
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 113
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 114
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 115
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 116
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 117
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 118
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 119
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 120
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 121
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 122
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 123
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 124
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 125
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 126
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 127
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 128
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 129
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 130
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 131
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 132
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 133
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 134
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 135
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 136
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 137
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 138
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 139
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 140
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 141
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 142
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 143
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 144
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 145
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 146
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 147
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 148
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 149
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 150
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 151
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 152
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 153
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 154
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 155
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 156
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 157
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 158
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 159
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 160
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 161
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 162
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 163
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 164
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 165
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 166
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 167
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 168
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 169
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 170
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 171
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 172
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 173
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 174
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 175
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 176
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 177
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 178
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 179
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 180
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 181
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 182
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 183
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 184
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 185
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 186
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 187
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 188
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 189
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 190
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 191
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 192
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 193
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 194
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 195
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 196
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 197
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 198
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 199
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 200
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 201
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 202
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 203
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 204
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 205
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 206
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 207
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 208
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 209
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 210
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 211
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 212
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 213
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 214
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 215
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 216
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 217
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 218
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 219
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 220
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 221
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 222
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 223
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 224
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 225
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 226
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 227
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 228
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 229
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 230
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 231
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 232
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 233
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 234
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 235
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 236
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 237
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 238
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 239
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 240
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 241
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 242
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 243
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 244
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 245
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 246
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 247
+  Bone 2, weight = 1.000, name =  "Joint12"
+Vertex 248
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 249
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 250
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 251
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 252
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 253
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 254
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 255
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 256
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 257
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 258
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 259
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 260
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 261
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 262
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 263
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 264
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 265
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 266
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 267
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 268
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 269
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 270
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 271
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 272
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 273
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 274
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 275
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 276
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 277
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 278
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 279
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 280
+  Bone 6, weight = 1.000, name =  "Joint23"
+Vertex 281
+  Bone 6, weight = 1.000, name =  "Joint23"
+Vertex 282
+  Bone 6, weight = 1.000, name =  "Joint23"
+Vertex 283
+  Bone 6, weight = 1.000, name =  "Joint23"
+Vertex 284
+  Bone 6, weight = 1.000, name =  "Joint23"
+Vertex 285
+  Bone 6, weight = 1.000, name =  "Joint23"
+Vertex 286
+  Bone 6, weight = 1.000, name =  "Joint23"
+Vertex 287
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 288
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 289
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 290
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 291
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 292
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 293
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 294
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 295
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 296
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 297
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 298
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 299
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 300
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 301
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 302
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 303
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 304
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 305
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 306
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 307
+  Bone 6, weight = 1.000, name =  "Joint23"
+Vertex 308
+  Bone 6, weight = 1.000, name =  "Joint23"
+Vertex 309
+  Bone 6, weight = 1.000, name =  "Joint23"
+Vertex 310
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 311
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 312
+  Bone 6, weight = 1.000, name =  "Joint23"
+Vertex 313
+  Bone 6, weight = 1.000, name =  "Joint23"
+Vertex 314
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 315
+  Bone 6, weight = 1.000, name =  "Joint23"
+Vertex 316
+  Bone 6, weight = 1.000, name =  "Joint23"
+Vertex 317
+  Bone 6, weight = 1.000, name =  "Joint23"
+Vertex 318
+  Bone 6, weight = 1.000, name =  "Joint23"
+Vertex 319
+  Bone 6, weight = 1.000, name =  "Joint23"
+Vertex 320
+  Bone 6, weight = 1.000, name =  "Joint23"
+Vertex 321
+  Bone 6, weight = 1.000, name =  "Joint23"
+Vertex 322
+  Bone 6, weight = 1.000, name =  "Joint23"
+Vertex 323
+  Bone 6, weight = 1.000, name =  "Joint23"
+Vertex 324
+  Bone 6, weight = 1.000, name =  "Joint23"
+Vertex 325
+  Bone 6, weight = 1.000, name =  "Joint23"
+Vertex 326
+  Bone 6, weight = 1.000, name =  "Joint23"
+Vertex 327
+  Bone 6, weight = 1.000, name =  "Joint23"
+Vertex 328
+  Bone 6, weight = 1.000, name =  "Joint23"
+Vertex 329
+  Bone 6, weight = 1.000, name =  "Joint23"
+Vertex 330
+  Bone 6, weight = 1.000, name =  "Joint23"
+Vertex 331
+  Bone 6, weight = 1.000, name =  "Joint23"
+Vertex 332
+  Bone 6, weight = 1.000, name =  "Joint23"
+Vertex 333
+  Bone 6, weight = 1.000, name =  "Joint23"
+Vertex 334
+  Bone 6, weight = 1.000, name =  "Joint23"
+Vertex 335
+  Bone 8, weight = 1.000, name =  "Joint19"
+Vertex 336
+  Bone 8, weight = 1.000, name =  "Joint19"
+Vertex 337
+  Bone 8, weight = 1.000, name =  "Joint19"
+Vertex 338
+  Bone 8, weight = 1.000, name =  "Joint19"
+Vertex 339
+  Bone 8, weight = 1.000, name =  "Joint19"
+Vertex 340
+  Bone 8, weight = 1.000, name =  "Joint19"
+Vertex 341
+  Bone 8, weight = 1.000, name =  "Joint19"
+Vertex 342
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 343
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 344
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 345
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 346
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 347
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 348
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 349
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 350
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 351
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 352
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 353
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 354
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 355
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 356
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 357
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 358
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 359
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 360
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 361
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 362
+  Bone 8, weight = 1.000, name =  "Joint19"
+Vertex 363
+  Bone 8, weight = 1.000, name =  "Joint19"
+Vertex 364
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 365
+  Bone 8, weight = 1.000, name =  "Joint19"
+Vertex 366
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 367
+  Bone 8, weight = 1.000, name =  "Joint19"
+Vertex 368
+  Bone 8, weight = 1.000, name =  "Joint19"
+Vertex 369
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 370
+  Bone 8, weight = 1.000, name =  "Joint19"
+Vertex 371
+  Bone 8, weight = 1.000, name =  "Joint19"
+Vertex 372
+  Bone 8, weight = 1.000, name =  "Joint19"
+Vertex 373
+  Bone 8, weight = 1.000, name =  "Joint19"
+Vertex 374
+  Bone 8, weight = 1.000, name =  "Joint19"
+Vertex 375
+  Bone 8, weight = 1.000, name =  "Joint19"
+Vertex 376
+  Bone 8, weight = 1.000, name =  "Joint19"
+Vertex 377
+  Bone 8, weight = 1.000, name =  "Joint19"
+Vertex 378
+  Bone 8, weight = 1.000, name =  "Joint19"
+Vertex 379
+  Bone 8, weight = 1.000, name =  "Joint19"
+Vertex 380
+  Bone 8, weight = 1.000, name =  "Joint19"
+Vertex 381
+  Bone 8, weight = 1.000, name =  "Joint19"
+Vertex 382
+  Bone 8, weight = 1.000, name =  "Joint19"
+Vertex 383
+  Bone 8, weight = 1.000, name =  "Joint19"
+Vertex 384
+  Bone 8, weight = 1.000, name =  "Joint19"
+Vertex 385
+  Bone 8, weight = 1.000, name =  "Joint19"
+Vertex 386
+  Bone 8, weight = 1.000, name =  "Joint19"
+Vertex 387
+  Bone 8, weight = 1.000, name =  "Joint19"
+Vertex 388
+  Bone 8, weight = 1.000, name =  "Joint19"
+Vertex 389
+  Bone 8, weight = 1.000, name =  "Joint19"
+Vertex 390
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 391
+  Bone 10, weight = 1.000, name =  "Joint6"
+Vertex 392
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 393
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 394
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 395
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 396
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 397
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 398
+  Bone 11, weight = 1.000, name =  "Joint21"
+Vertex 399
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 400
+  Bone 11, weight = 1.000, name =  "Joint21"
+Vertex 401
+  Bone 11, weight = 1.000, name =  "Joint21"
+Vertex 402
+  Bone 11, weight = 1.000, name =  "Joint21"
+Vertex 403
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 404
+  Bone 11, weight = 1.000, name =  "Joint21"
+Vertex 405
+  Bone 11, weight = 1.000, name =  "Joint21"
+Vertex 406
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 407
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 408
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 409
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 410
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 411
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 412
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 413
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 414
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 415
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 416
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 417
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 418
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 419
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 420
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 421
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 422
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 423
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 424
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 425
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 426
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 427
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 428
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 429
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 430
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 431
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 432
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 433
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 434
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 435
+  Bone 12, weight = 1.000, name =  "Joint17"
+Vertex 436
+  Bone 12, weight = 1.000, name =  "Joint17"
+Vertex 437
+  Bone 12, weight = 1.000, name =  "Joint17"
+Vertex 438
+  Bone 12, weight = 1.000, name =  "Joint17"
+Vertex 439
+  Bone 12, weight = 1.000, name =  "Joint17"
+Vertex 440
+  Bone 12, weight = 1.000, name =  "Joint17"
+Vertex 441
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 442
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 443
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 444
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 445
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 446
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 447
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 448
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 449
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 450
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 451
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 452
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 453
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 454
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 455
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 456
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 457
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 458
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 459
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 460
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 461
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 462
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 463
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 464
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 465
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 466
+  Bone 10, weight = 1.000, name =  "Joint6"
+Vertex 467
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 468
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 469
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 470
+  Bone 11, weight = 1.000, name =  "Joint21"
+Vertex 471
+  Bone 11, weight = 1.000, name =  "Joint21"
+Vertex 472
+  Bone 11, weight = 1.000, name =  "Joint21"
+Vertex 473
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 474
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 475
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 476
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 477
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 478
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 479
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 480
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 481
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 482
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 483
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 484
+  Bone 7, weight = 1.000, name =  "Joint22"
+Vertex 485
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 486
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 487
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 488
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 489
+  Bone 12, weight = 1.000, name =  "Joint17"
+Vertex 490
+  Bone 12, weight = 1.000, name =  "Joint17"
+Vertex 491
+  Bone 12, weight = 1.000, name =  "Joint17"
+Vertex 492
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 493
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 494
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 495
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 496
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 497
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 498
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 499
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 500
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 501
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 502
+  Bone 9, weight = 1.000, name =  "Joint18"
+Vertex 503
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 504
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 505
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 506
+  Bone 10, weight = 1.000, name =  "Joint6"
+Vertex 507
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 508
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 509
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 510
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 511
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 512
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 513
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 514
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 515
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 516
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 517
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 518
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 519
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 520
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 521
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 522
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 523
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 524
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 525
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 526
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 527
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 528
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 529
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 530
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 531
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 532
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 533
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 534
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 535
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 536
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 537
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 538
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 539
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 540
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 541
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 542
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 543
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 544
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 545
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 546
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 547
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 548
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 549
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 550
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 551
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 552
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 553
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 554
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 555
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 556
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 557
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 558
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 559
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 560
+  Bone 10, weight = 1.000, name =  "Joint6"
+Vertex 561
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 562
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 563
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 564
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 565
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 566
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 567
+  Bone 3, weight = 1.000, name =  "Joint11"
+Vertex 568
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 569
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 570
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 571
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 572
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 573
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 574
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 575
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 576
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 577
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 578
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 579
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 580
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 581
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 582
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 583
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 584
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 585
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 586
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 587
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 588
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 589
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 590
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 591
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 592
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 593
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 594
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 595
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 596
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 597
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 598
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 599
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 600
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 601
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 602
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 603
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 604
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 605
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 606
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 607
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 608
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 609
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 610
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 611
+  Bone 4, weight = 1.000, name =  "Joint8"
+Vertex 612
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 613
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 614
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 615
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 616
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 617
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 618
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 619
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 620
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 621
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 622
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 623
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 624
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 625
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 626
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 627
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 628
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 629
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 630
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 631
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 632
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 633
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 634
+  Bone 13, weight = 1.000, name =  "Joint14"
+Vertex 635
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 636
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 637
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 638
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 639
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 640
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 641
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 642
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 643
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 644
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 645
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 646
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 647
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 648
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 649
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 650
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 651
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 652
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 653
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 654
+  Bone 5, weight = 1.000, name =  "Joint15"
+Vertex 655
+  Bone 1, weight = 1.000, name =  "Joint9"
+Vertex 656
+  Bone 1, weight = 1.000, name =  "Joint9"
+
+Optimizing meshes...
+
+Optimizing mesh "Col" detail level -1.
+20 verts before joining verts
+20 verts after joining verts
+12 faces before stripping
+Using Quick, dirty, & ugly stripping method.
+6 strips with average length 4.00 (range 4 to 4) and 0 reversals
+
+Optimizing skin mesh "Regroup2" detail level 2.
+657 verts before joining verts
+657 verts after joining verts
+735 faces before stripping
+Using Quick, dirty, & ugly stripping method.
+127 strips with average length 8.99 (range 3 to 67) and 153 reversals
+
+Shape Hierarchy:
+
+   Details:
+      detail2, Subtree 0, objectDetail 0, size 2
+      Collision-1, Subtree 0, objectDetail 1, size -1
+
+   Subtrees:
+      Subtree 0
+         Col-1 --> Object Col with following details:  -1
+         Joint6
+            Joint7
+               Joint8
+                  Joint9
+                     Joint10
+                     Joint11
+                        Joint12
+                           Joint13
+                     Joint14
+                        Joint15
+                           Joint16
+               Joint17
+                  Joint18
+                     Joint19
+                        Joint20
+               Joint21
+                  Joint22
+                     Joint23
+                        Joint24
+         Root
+
+   Skins:
+      Skin Regroup with following details: 
+
+
+   Sequences:
+
+   Material list:
+   material #0: "ZOMBIE".

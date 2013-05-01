@@ -1,0 +1,95 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(InputBoxGui) {
+   canSaveDynamicFields = "0";
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   position = "0 0";
+   Extent = "800 600";
+   MinExtent = "8 2";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+
+   new GuiChunkedBitmapCtrl() {
+      canSaveDynamicFields = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      position = "200 171";
+      Extent = "400 258";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      bitmap = "./pictures/windows/CommonTextDialog.png";
+      useVariable = "0";
+      tile = "0";
+
+      new GuiTextCtrl(InputBoxDisplay) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiTextProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "40 40";
+         Extent = "8 18";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         maxLength = "1024";
+      };
+      new GuiTextEditCtrl(InputBoxInput) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiTextEditProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "59 153";
+         Extent = "281 18";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         maxLength = "1024";
+         historySize = "0";
+         password = "0";
+         tabComplete = "0";
+         sinkAllKeyEvents = "0";
+         password = "0";
+         passwordMask = "*";
+      };
+      new GuiBitmapButtonCtrl(InputBoxOKBtn) {
+         canSaveDynamicFields = "0";
+         Profile = "GameGuiButtonProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "262 193";
+         Extent = "62 31";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "Canvas.popDialog(InputBoxGui);";
+         hovertime = "1000";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./pictures/buttons/ok";
+      };
+      new GuiBitmapButtonCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GameGuiButtonProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "320 193";
+         Extent = "62 31";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "Canvas.popDialog(InputBoxGui);";
+         hovertime = "1000";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./pictures/buttons/cancle";
+      };
+   };
+};
+//--- OBJECT WRITE END ---

@@ -1,0 +1,11 @@
+<spush><just:center><font:Arial Bold:18><color:FFFF00>
+Item Physics<spop>
+<just:left><font:Arial:16><br><lmargin%:5>
+Show various Item/ItemData supported Physics features:<br><br>
+<color:FF2222>
+- Static vs. non-static<br>
+- Rotating<br>
+- Sticky vs. non-sticky<br>
+- Variations on friction<br>
+- Gravity Effects<br>
+- Elasticity<br>

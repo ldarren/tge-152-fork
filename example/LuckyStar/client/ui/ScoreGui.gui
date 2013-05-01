@@ -1,0 +1,183 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(ScoreGui) {
+   canSaveDynamicFields = "0";
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   position = "0 0";
+   Extent = "1024 768";
+   MinExtent = "8 2";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+
+   new GuiWindowCtrl() {
+      canSaveDynamicFields = "0";
+      Profile = "GuiWindowProfile";
+      HorizSizing = "center";
+      VertSizing = "center";
+      position = "312 80";
+      Extent = "400 480";
+      MinExtent = "400 480";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      text = "Score Board";
+      maxLength = "1024";
+      resizeWidth = "1";
+      resizeHeight = "1";
+      canMove = "1";
+      canClose = "1";
+      canMinimize = "0";
+      canMaximize = "1";
+      minSize = "50 50";
+      closeCommand = "Canvas.popDialog(ScoreGui);";
+
+      new GuiScrollCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiScrollProfile";
+         HorizSizing = "width";
+         VertSizing = "height";
+         position = "15 90";
+         Extent = "370 340";
+         MinExtent = "370 340";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         willFirstRespond = "1";
+         hScrollBar = "alwaysOff";
+         vScrollBar = "alwaysOn";
+         constantThumbHeight = "0";
+         childMargin = "0 0";
+
+         new GuiTextListCtrl(DanceWordTextList) {
+            canSaveDynamicFields = "0";
+            Profile = "GuiTextListProfile";
+            HorizSizing = "width";
+            VertSizing = "height";
+            position = "2 2";
+            Extent = "348 318";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            enumerate = "0";
+            resizeCell = "1";
+            columns = "0 190 260";
+            fitParentWidth = "1";
+            clipColumnText = "0";
+            HeaderBGColor = "100 100 100 255";
+            HeaderFontColor = "255 255 255 255";
+         };
+      };
+      new GuiTextCtrl(ScoreBoardScore) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiTextProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "17 41";
+         Extent = "368 18";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         text = "Score (1000 to pass): 1140";
+         maxLength = "1024";
+      };
+      new GuiTextCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiTextProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "18 68";
+         Extent = "49 18";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         text = "Word List:";
+         maxLength = "128";
+      };
+      new GuiButtonCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiButtonProfile";
+         HorizSizing = "center";
+         VertSizing = "top";
+         position = "130 440";
+         Extent = "140 30";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "Canvas.popDialog(ScoreGui);";
+         hovertime = "1000";
+         text = "OK";
+         groupNum = "-1";
+         buttonType = "PushButton";
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+function ScoreGui::onWake(%this)
+{
+	ScoreBoardScore.setText("Score ("@LuckyStarClient.passingScore@" to pass): "@LuckyStarClient.score);
+	DanceWordTextList.addHeader("Word" TAB "Right Attempt" TAB "Wrong Attempt");
+	DanceWordTextList.sort(1, true);
+	DanceWordTextList.resize(2, 2, 348, 318);
+}
+
+function ScoreGui::onSleep(%this)
+{
+	LuckyStarClient.changeState(LuckyStarClient.LobbyState, AudioLobby);
+}
+
+if (!isObject(WordsDict)) new ShuffledDeck(WordsDict)
+{
+	start = 0;
+	end = 55;
+};
+
+function DanceWordTextList::load(%this, %wordProfile)
+{
+	%this.quizIndex = -1;
+	%this.clear();
+	
+	// load word list
+	%file = new FileObject();
+	%filepattern = "*/data/words/"@%wordProfile;
+	%file.openForRead(findFirstFile(%filepattern));
+	%i = 0;
+	while (!%file.isEOF())
+	{
+		%word = %file.readLine();
+		if (%word $= "") break;
+		%this.addRow(%i, %word TAB "0" TAB "0");
+		%i++;
+	}
+	WordsDict.end = %i ? %i - 1 : 0;
+	WordsDict.reshuffle();
+	%file.close();
+	%file.delete();
+}
+
+function DanceWordTextList::getQuizWord(%this)
+{
+	%this.quizIndex = WordsDict.next();
+	return getField(%this.getRowTextById(%this.quizIndex), 0);
+}
+
+function DanceWordTextList::updateRow(%this, %result)
+{
+	if (%this.quizIndex == -1) return;
+	%updatedRow = %this.getRowTextById(%this.quizIndex);
+	
+	switch(%result)
+	{
+	case -1:
+		%updatedRow = setField(%updatedRow, 2, getField(%updatedRow, 2) + 1);
+	case 1:
+		%updatedRow = setField(%updatedRow, 1, getField(%updatedRow, 1) + 1);
+	}
+	
+	%this.setRowById(%this.quizIndex, %updatedRow);
+	%this.quizIndex = -1;
+}

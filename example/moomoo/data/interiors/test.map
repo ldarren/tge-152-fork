@@ -1,0 +1,19 @@
+{
+"classname" "worldspawn"
+"classname" "worldspawn"
+"min_pixels" "250"
+"geometry_scale" "32.0"
+"light_geometry_scale" "32.0"
+"ambient_color" "0 0 0"
+"emergency_ambient_color" "0 0 0"
+"mapversion" "220"
+"wad" "\test\hammerinterior\moomoo.wad"
+{
+( 0 64 0 ) ( 64 64 0 ) ( 64 0 0 ) MM64 [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1 
+( 0 0 -64 ) ( 64 0 -64 ) ( 64 64 -64 ) MM64 [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1 
+( 0 64 0 ) ( 0 0 0 ) ( 0 0 -64 ) MM64 [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1 
+( 64 64 -64 ) ( 64 0 -64 ) ( 64 0 0 ) MM64 [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1 
+( 64 64 0 ) ( 0 64 0 ) ( 0 64 -64 ) MM64 [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1 
+( 64 0 -64 ) ( 0 0 -64 ) ( 0 0 0 ) MM64 [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1 
+}
+}

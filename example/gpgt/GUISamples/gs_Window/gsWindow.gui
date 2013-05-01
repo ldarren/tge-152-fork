@@ -1,0 +1,215 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(gsWindow) {
+   profile = "GuiDefaultProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "800 600";
+   minExtent = "8 8";
+   visible = "1";
+      Parent = "GUISamplerInterface";
+
+   new GuiChunkedBitmapCtrl() {
+      profile = "gsDefaultProfile";
+      horizSizing = "width";
+      vertSizing = "height";
+      position = "0 0";
+      extent = "800 600";
+      minExtent = "8 2";
+      visible = "1";
+      bitmap = $SA::Background1;
+      useVariable = "0";
+      tile = "0";
+
+      new GuiBitmapButtonCtrl(guiSamplerLeft) {
+         profile = "gpgtButtonProfile1";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         position = "125 525";
+         extent = "75 75";
+         minExtent = "8 2";
+         visible = "1";
+         command = "Canvas.setContent(Canvas.getContent().Parent);";
+         accelerator = "escape";
+         text = "Button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "~/client/sharedAssets/button0/leftButton0";
+      };
+
+      new GuiControl() {
+         profile = "gsDefaultProfile";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         position = "100 100";
+         extent = "600 400";
+         minExtent = "8 2";
+         visible = "1";
+
+         new GuiWindowCtrl() {
+            profile = "gsGWindow";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "0 0";
+            extent = "200 150";
+            minExtent = "8 2";
+            visible = "1";
+            text = "gsGWindow";
+            maxLength = "255";
+            resizeWidth = "1";
+            resizeHeight = "1";
+            canMove = "1";
+            canClose = "1";
+            canMinimize = "1";
+            canMaximize = "1";
+            minSize = "50 50";
+         };
+         new GuiWindowCtrl() {
+            profile = "gpgtWindow";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "0 160";
+            extent = "200 150";
+            minExtent = "8 2";
+            visible = "1";
+            text = "gpgtWindow";
+            maxLength = "255";
+            resizeWidth = "1";
+            resizeHeight = "1";
+            canMove = "1";
+            canClose = "1";
+            canMinimize = "1";
+            canMaximize = "1";
+            minSize = "50 50";
+         };
+         new GuiWindowCtrl() {
+            profile = "gsGuiWinProf_OSX";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "205 159";
+            extent = "174 80";
+            minExtent = "8 2";
+            visible = "1";
+            text = "OSX Theme";
+            maxLength = "255";
+            resizeWidth = "1";
+            resizeHeight = "1";
+            canMove = "1";
+            canClose = "1";
+            canMinimize = "1";
+            canMaximize = "1";
+            minSize = "50 50";
+         };
+         new GuiWindowCtrl() {
+            profile = "gsGuiWinProf_Windows";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "205 79";
+            extent = "174 80";
+            minExtent = "8 2";
+            visible = "1";
+            text = "Windows Theme";
+            maxLength = "255";
+            resizeWidth = "1";
+            resizeHeight = "1";
+            canMove = "1";
+            canClose = "1";
+            canMinimize = "1";
+            canMaximize = "1";
+            minSize = "50 50";
+         };
+         new GuiWindowCtrl() {
+            profile = "gsGuiWinProf_NoBMP";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "205 0";
+            extent = "133 79";
+            minExtent = "8 2";
+            visible = "1";
+            text = "No BMP";
+            maxLength = "255";
+            resizeWidth = "1";
+            resizeHeight = "1";
+            canMove = "1";
+            canClose = "1";
+            canMinimize = "1";
+            canMaximize = "1";
+            minSize = "50 50";
+         };
+         new GuiWindowCtrl() {
+            profile = "gsGuiWinProf_TranWin";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "264 100";
+            extent = "120 59";
+            minExtent = "8 2";
+            visible = "1";
+            text = "Windows Translucent";
+            maxLength = "255";
+            resizeWidth = "0";
+            resizeHeight = "0";
+            canMove = "1";
+            canClose = "0";
+            canMinimize = "0";
+            canMaximize = "0";
+            minSize = "50 50";
+         };
+         new GuiWindowCtrl() {
+            profile = "gsGuiWinProf_TranOSX";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "264 179";
+            extent = "120 59";
+            minExtent = "8 2";
+            visible = "1";
+            text = "OSX Translucent";
+            maxLength = "255";
+            resizeWidth = "0";
+            resizeHeight = "0";
+            canMove = "1";
+            canClose = "0";
+            canMinimize = "0";
+            canMaximize = "0";
+            minSize = "50 50";
+         };
+         new GuiWindowCtrl() {
+            profile = "gsGuiWinTest0";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "205 239";
+            extent = "153 80";
+            minExtent = "8 2";
+            visible = "1";
+            text = "Test Window 0";
+            maxLength = "255";
+            resizeWidth = "1";
+            resizeHeight = "1";
+            canMove = "1";
+            canClose = "1";
+            canMinimize = "1";
+            canMaximize = "1";
+            minSize = "50 50";
+         };
+         new GuiWindowCtrl() {
+            profile = "gsGuiWinTest1";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "245 269";
+            extent = "141 81";
+            minExtent = "8 2";
+            visible = "1";
+            text = "Test Window 1";
+            maxLength = "255";
+            resizeWidth = "1";
+            resizeHeight = "1";
+            canMove = "1";
+            canClose = "1";
+            canMinimize = "1";
+            canMaximize = "1";
+            minSize = "50 50";
+         };
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+

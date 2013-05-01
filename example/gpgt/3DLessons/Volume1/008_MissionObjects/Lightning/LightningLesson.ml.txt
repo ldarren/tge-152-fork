@@ -1,0 +1,9 @@
+<spush><just:center><font:Arial Bold:18><color:FFFF00>
+Lightning<spop>
+<just:left><font:Arial:16><br><lmargin%:5>
+This lesson demonstrates:<br><br>
+<color:FF2222>
+- Lightning<br>
+- Thunder<br>
+- Lightning Scripting<br>
+

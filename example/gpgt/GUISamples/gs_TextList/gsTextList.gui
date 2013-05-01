@@ -1,0 +1,150 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(gsTextList) {
+   profile = "GuiDefaultProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "800 600";
+   minExtent = "8 8";
+   visible = "1";
+      Parent = "GUISamplerInterface";
+
+   new GuiChunkedBitmapCtrl() {
+      profile = "gsDefaultProfile";
+      horizSizing = "width";
+      vertSizing = "height";
+      position = "0 0";
+      extent = "800 600";
+      minExtent = "8 2";
+      visible = "1";
+      bitmap = $SA::Background1;
+      useVariable = "0";
+      tile = "0";
+
+      new GuiBitmapButtonCtrl(guiSamplerLeft) {
+         profile = "gpgtButtonProfile1";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         position = "125 525";
+         extent = "75 75";
+         minExtent = "8 2";
+         visible = "1";
+         command = "Canvas.setContent(Canvas.getContent().Parent);";
+         accelerator = "escape";
+         text = "Button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "~/client/sharedAssets/button0/leftButton0";
+      };
+      new GuiControl() {
+         profile = "gsDefaultProfile";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         position = "100 100";
+         extent = "600 400";
+         minExtent = "8 2";
+         visible = "1";
+
+         new GuiControl() {
+            profile = "gsBorder";
+            horizSizing = "center";
+            vertSizing = "center";
+            position = "104 30";
+            extent = "400 340";
+            minExtent = "8 2";
+            visible = "1";
+
+            new GuiScrollCtrl() {
+               profile = "GuiScrollProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "20 20";
+               extent = "200 200";
+               minExtent = "8 2";
+               visible = "1";
+               willFirstRespond = "1";
+               hScrollBar = "dynamic";
+               vScrollBar = "dynamic";
+               constantThumbHeight = "0";
+               childMargin = "4 4";
+
+               new GuiTextListCtrl(TestTextList) {
+                  profile = "GuiTextListProfile";
+                  horizSizing = "right";
+                  vertSizing = "bottom";
+                  position = "6 6";
+                  extent = "9 2";
+                  minExtent = "8 2";
+                  visible = "1";
+                  enumerate = "0";
+                  resizeCell = "1";
+                  columns = "0";
+                  fitParentWidth = "0";
+                  clipColumnText = "0";
+               };
+            };
+            new GuiControl() {
+               profile = "gsBorder";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "19 225";
+               extent = "201 40";
+               minExtent = "8 2";
+               visible = "1";
+
+               new GuiRadioCtrl(PlayGamesTextListSelect) {
+                  profile = "GuiRadioProfile";
+                  horizSizing = "relative";
+                  vertSizing = "relative";
+                  position = "6 4";
+                  extent = "73 30";
+                  minExtent = "8 2";
+                  visible = "1";
+                  command = "TestTextList.updateTextList(0);";
+                  text = "Play Games";
+                  groupNum = "-1";
+                  buttonType = "RadioButton";
+               };
+               new GuiRadioCtrl(MakeGamesTextListSelect) {
+                  profile = "GuiRadioProfile";
+                  horizSizing = "relative";
+                  vertSizing = "relative";
+                  position = "98 4";
+                  extent = "73 30";
+                  minExtent = "8 2";
+                  visible = "1";
+                  command = "TestTextList.updateTextList(1);";
+                  text = "Make Games";
+                  groupNum = "-1";
+                  buttonType = "RadioButton";
+               };
+            };
+            new GuiButtonCtrl(OpenWebButton) {
+               profile = "GuiButtonProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "60 285";
+               extent = "120 30";
+               minExtent = "8 2";
+               visible = "1";
+               command = "$thisControl.openThePage();";
+               text = "Open Web Page";
+               groupNum = "-1";
+               buttonType = "PushButton";
+            };
+            new GuiBitmapCtrl(targetImage) {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "250 50";
+               extent = "120 150";
+               minExtent = "8 2";
+               visible = "1";
+               wrap = "0";
+            };
+         };
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+

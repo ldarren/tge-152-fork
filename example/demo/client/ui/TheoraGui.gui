@@ -1,0 +1,162 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiChunkedBitmapCtrl(TheoraGui) {
+   profile = "GuiDefaultProfile";
+   horizSizing = "right";
+   vertSizing = "bottom";
+   position = "0 0";
+   extent = "800 600";
+   minExtent = "8 2";
+   visible = "1";
+   bitmap = "./background";
+   useVariable = "0";
+   tile = "0";
+
+   new GuiTheoraCtrl(theo) {
+      profile = "GuiDefaultProfile";
+      horizSizing = "relative";
+      vertSizing = "relative";
+      position = "120 25";
+      extent = "560 420";
+      minExtent = "8 2";
+      visible = "1";
+      done = "0";
+      stopOnSleep = "0";
+      backgroundColor = "0 0 0 255";
+   };
+   new GuiBitmapButtonCtrl() {
+      profile = "GuiButtonProfile";
+      horizSizing = "relative";
+      vertSizing = "relative";
+      position = "30 475";
+      extent = "220 40";
+      minExtent = "8 2";
+      visible = "1";
+      command = "Theo.setFile(\"demo/data/video/320x240.ogg\");";
+      text = "Button";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      bitmap = "./button";
+         helpTag = "0";
+
+      new GuiMLTextCtrl() {
+         profile = "GuiMLTextNoSelectProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "9 7";
+         extent = "260 14";
+         minExtent = "8 2";
+         visible = "1";
+         lineSpacing = "2";
+         allowColorChars = "0";
+         maxChars = "-1";
+         text = "<color:ffffff><font:Arial Bold:14>Simple test pattern, no sound.";
+            helpTag = "0";
+      };
+   };
+   new GuiBitmapButtonCtrl() {
+      profile = "GuiButtonProfile";
+      horizSizing = "relative";
+      vertSizing = "relative";
+      position = "30 535";
+      extent = "220 40";
+      minExtent = "8 2";
+      visible = "1";
+      command = "Theo.setFile(\"demo/data/video/videotestsrc.ogg\");";
+      text = "Button";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      bitmap = "./button";
+         helpTag = "0";
+
+      new GuiMLTextCtrl() {
+         profile = "GuiMLTextNoSelectProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "9 7";
+         extent = "260 14";
+         minExtent = "8 2";
+         visible = "1";
+         lineSpacing = "2";
+         allowColorChars = "0";
+         maxChars = "-1";
+         text = "<color:ffffff><font:Arial Bold:14>The test pattern, at high resolution.";
+            helpTag = "0";
+      };
+   };
+   new GuiBitmapButtonCtrl() {
+      profile = "GuiButtonProfile";
+      horizSizing = "relative";
+      vertSizing = "relative";
+      position = "550 535";
+      extent = "220 40";
+      minExtent = "8 2";
+      visible = "1";
+      command = "Theo.setFile(\"demo/data/video/demovid.ogg\");";
+      text = "Button";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      bitmap = "./button";
+         helpTag = "0";
+
+      new GuiMLTextCtrl() {
+         profile = "GuiMLTextNoSelectProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "9 7";
+         extent = "176 14";
+         minExtent = "8 2";
+         visible = "1";
+         lineSpacing = "2";
+         allowColorChars = "0";
+         maxChars = "-1";
+         text = "<color:ffffff><font:Arial Bold:14>A demo of some of Torque's lovely goodness.";
+            helpTag = "0";
+      };
+   };
+   new GuiBitmapButtonCtrl() {
+      profile = "GuiButtonProfile";
+      horizSizing = "relative";
+      vertSizing = "relative";
+      position = "550 475";
+      extent = "220 40";
+      minExtent = "8 2";
+      visible = "1";
+      command = "Theo.setFile(\"demo/data/video/soundtest.ogg\");";
+      text = "Button";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      bitmap = "./button";
+         helpTag = "0";
+
+      new GuiMLTextCtrl() {
+         profile = "GuiMLTextNoSelectProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "9 7";
+         extent = "260 14";
+         minExtent = "8 2";
+         visible = "1";
+         lineSpacing = "2";
+         allowColorChars = "0";
+         maxChars = "-1";
+         text = "<color:ffffff><font:Arial Bold:14>A tone and sound synch test.";
+            helpTag = "0";
+      };
+   };
+   new GuiBitmapButtonCtrl(LeaveTheoraButton) {
+      profile = "GuiButtonProfile";
+      horizSizing = "relative";
+      vertSizing = "relative";
+      position = "384 555";
+      extent = "32 32";
+      minExtent = "8 2";
+      visible = "1";
+      command = "Canvas.setContent(mainMenuGui);";
+      text = "Button";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      bitmap = "./arrows/arrow_left";
+         helpTag = "0";
+   };
+};
+//--- OBJECT WRITE END ---

@@ -1,0 +1,255 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(gsScroll) {
+   profile = "GuiDefaultProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "800 600";
+   minExtent = "8 8";
+   visible = "1";
+      Parent = "GUISamplerInterface";
+
+   new GuiChunkedBitmapCtrl() {
+      profile = "gsDefaultProfile";
+      horizSizing = "width";
+      vertSizing = "height";
+      position = "0 0";
+      extent = "800 600";
+      minExtent = "8 2";
+      visible = "1";
+      bitmap = $SA::Background1;
+      useVariable = "0";
+      tile = "0";
+
+      new GuiBitmapButtonCtrl(guiSamplerLeft) {
+         profile = "gpgtButtonProfile1";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         position = "125 525";
+         extent = "75 75";
+         minExtent = "8 2";
+         visible = "1";
+         command = "Canvas.setContent(Canvas.getContent().Parent);";
+         accelerator = "escape";
+         text = "Button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "~/client/sharedAssets/button0/leftButton0";
+      };
+      new GuiControl() {
+         profile = "gsDefaultProfile";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         position = "100 100";
+         extent = "600 400";
+         minExtent = "8 2";
+         visible = "1";
+
+         new GuiControl(testScroll0) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "160 40";
+            extent = "150 150";
+            minExtent = "8 2";
+            visible = "1";
+
+            new GuiScrollCtrl() {
+               profile = "GuiScrollProfile";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 0";
+               extent = "150 150";
+               minExtent = "8 2";
+               visible = "1";
+               willFirstRespond = "1";
+               hScrollBar = "alwaysOff";
+               vScrollBar = "alwaysOff";
+               constantThumbHeight = "0";
+               childMargin = "0 0";
+
+               new GuiMLTextCtrl(TestScrollMLText) {
+                  profile = "GuiMLTextProfile";
+                  horizSizing = "width";
+                  vertSizing = "bottom";
+                  position = "2 2";
+                  extent = "150 4312";
+                  minExtent = "8 2";
+                  visible = "1";
+                  lineSpacing = "0";
+                  allowColorChars = "0";
+                  maxChars = "-1";
+               };
+            };
+         };
+         new GuiControl(testScroll1) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "320 40";
+            extent = "150 150";
+            minExtent = "8 2";
+            visible = "1";
+
+            new GuiScrollCtrl() {
+               profile = "GuiScrollProfile";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 0";
+               extent = "150 150";
+               minExtent = "8 2";
+               visible = "1";
+               willFirstRespond = "1";
+               hScrollBar = "dynamic";
+               vScrollBar = "dynamic";
+               constantThumbHeight = "0";
+               childMargin = "0 0";
+
+               new GuiMLTextCtrl(TestScrollMLText) {
+                  profile = "GuiMLTextProfile";
+                  horizSizing = "width";
+                  vertSizing = "bottom";
+                  position = "2 2";
+                  extent = "150 4312";
+                  minExtent = "8 2";
+                  visible = "1";
+                  lineSpacing = "0";
+                  allowColorChars = "0";
+                  maxChars = "-1";
+               };
+            };
+         };
+         new GuiControl(testScroll2) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "160 220";
+            extent = "150 150";
+            minExtent = "8 2";
+            visible = "1";
+
+            new GuiScrollCtrl() {
+               profile = "GuiScrollProfile";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 0";
+               extent = "150 150";
+               minExtent = "8 2";
+               visible = "1";
+               willFirstRespond = "1";
+               hScrollBar = "alwaysOn";
+               vScrollBar = "alwaysOff";
+               constantThumbHeight = "1";
+               childMargin = "10 10";
+
+               new GuiMLTextCtrl(TestScrollMLText) {
+                  profile = "GuiMLTextProfile";
+                  horizSizing = "width";
+                  vertSizing = "bottom";
+                  position = "12 12";
+                  extent = "150 4312";
+                  minExtent = "8 2";
+                  visible = "1";
+                  lineSpacing = "0";
+                  allowColorChars = "0";
+                  maxChars = "-1";
+               };
+            };
+            new GuiBitmapCtrl() {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "0 0";
+               extent = "150 150";
+               minExtent = "8 2";
+               visible = "1";
+               bitmap = "./ten_ten_hash";
+               wrap = "1";
+            };
+         };
+         new GuiControl(testScroll3) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "320 220";
+            extent = "150 150";
+            minExtent = "8 2";
+            visible = "1";
+
+            new GuiScrollCtrl(AutoScroll) {
+               profile = "GuiScrollProfile";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "0 0";
+               extent = "150 150";
+               minExtent = "8 2";
+               visible = "1";
+               willFirstRespond = "1";
+               hScrollBar = "alwaysOff";
+               vScrollBar = "alwaysOff";
+               constantThumbHeight = "0";
+               childMargin = "10 10";
+                  taskMgr = "1759";
+
+               new GuiBitmapCtrl() {
+                  profile = "GuiDefaultProfile";
+                  horizSizing = "right";
+                  vertSizing = "bottom";
+                  position = "12 -82";
+                  extent = "150 220";
+                  minExtent = "8 2";
+                  visible = "1";
+                  bitmap = "./HOW";
+                  wrap = "1";
+               };
+            };
+         };
+         new GuiTextCtrl() {
+            profile = "GuiTextProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "210 200";
+            extent = "60 18";
+            minExtent = "8 2";
+            visible = "1";
+            text = "Test Scroll 2";
+            maxLength = "255";
+         };
+         new GuiTextCtrl() {
+            profile = "GuiTextProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "210 20";
+            extent = "60 18";
+            minExtent = "8 2";
+            visible = "1";
+            text = "Test Scroll 0";
+            maxLength = "255";
+         };
+         new GuiTextCtrl() {
+            profile = "GuiTextProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "360 20";
+            extent = "60 18";
+            minExtent = "8 2";
+            visible = "1";
+            text = "Test Scroll 1";
+            maxLength = "255";
+         };
+         new GuiTextCtrl() {
+            profile = "GuiTextProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "360 200";
+            extent = "60 18";
+            minExtent = "8 2";
+            visible = "1";
+            text = "Test Scroll 3";
+            maxLength = "255";
+         };
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+

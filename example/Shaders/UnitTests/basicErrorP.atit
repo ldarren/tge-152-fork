@@ -1,0 +1,11 @@
+!!ATIfs1.0
+
+StartConstants;
+	CONSTANT c0 = { 0.0, 0.0, 0.0, 0.0 };
+EndConstants;
+
+StartOutputPass;
+
+ADD r0, c0, ;
+
+EndPass;

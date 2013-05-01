@@ -1,0 +1,13 @@
+[name]
+Para-Para Dance Demo
+[desc]
+Para Para is a popular Japanese solo dance. Unlike most club dancing and rave dancing, there are specific, preset movements for each song, and everyone does the same moves at once, much like line dancing
+[seq]
+para_head.sequence
+para_body.sequence
+para_legs.sequence
+para_blend.sequence
+[audio]
+AudioDance02
+[words]
+christmas.words

@@ -1,0 +1,128 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(gsCursor) {
+   profile = "GuiDefaultProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "800 600";
+   minExtent = "8 8";
+   visible = "1";
+      LastSchedule = "1333";
+      Parent = "GUISamplerInterface";
+
+   new GuiChunkedBitmapCtrl() {
+      profile = "gsDefaultProfile";
+      horizSizing = "width";
+      vertSizing = "height";
+      position = "0 0";
+      extent = "800 600";
+      minExtent = "8 2";
+      visible = "1";
+      bitmap = $SA::Background1;
+      useVariable = "0";
+      tile = "0";
+
+      new GuiBitmapButtonCtrl(guiSamplerLeft) {
+         profile = "gpgtButtonProfile1";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         position = "125 525";
+         extent = "75 75";
+         minExtent = "8 2";
+         visible = "1";
+         command = "Canvas.setContent(Canvas.getContent().Parent);";
+         accelerator = "escape";
+         text = "Button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "~/client/sharedAssets/button0/leftButton0";
+      };
+      new GuiControl() {
+         profile = "gsDefaultProfile";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         position = "100 100";
+         extent = "600 400";
+         minExtent = "8 2";
+         visible = "1";
+
+         new GuiBitmapButtonCtrl(selHOWCursor) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "140 120";
+            extent = "60 60";
+            minExtent = "8 2";
+            visible = "1";
+            text = "Button";
+            groupNum = "-1";
+            buttonType = "PushButton";
+            bitmap = "./buttonImages/HOWCrossHair";
+			cursorName = "HOWCrosshair";
+			command = "$thisControl.changeCursor();";
+         };
+         new GuiBitmapButtonCtrl(selNormalCursor) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "260 120";
+            extent = "32 64";
+            minExtent = "8 2";
+            visible = "1";
+            text = "Button";
+            groupNum = "-1";
+            buttonType = "PushButton";
+            bitmap = "./buttonImages/CUR_3darrow";
+			cursorName = "NormalCursor";
+			command = "$thisControl.changeCursor();";
+         };
+         new GuiBitmapButtonCtrl(selGrabCursor) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "140 220";
+            extent = "60 60";
+            minExtent = "8 2";
+            visible = "1";
+            text = "Button";
+            groupNum = "-1";
+            buttonType = "PushButton";
+            bitmap = "./buttonImages/CUR_grab";
+			cursorName = "GrabCursor";
+			command = "$thisControl.changeCursor();";
+         };
+         new GuiBitmapButtonCtrl(selHandCursor) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "260 220";
+            extent = "60 60";
+            minExtent = "8 2";
+            visible = "1";
+            text = "Button";
+            groupNum = "-1";
+            buttonType = "PushButton";
+            bitmap = "./buttonImages/CUR_hand";
+			cursorName = "HandCursor";
+			command = "$thisControl.changeCursor();";
+         };
+         new GuiBitmapButtonCtrl(selRotateCursor) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "360 120";
+            extent = "60 60";
+            minExtent = "8 2";
+            visible = "1";
+            text = "Button";
+            groupNum = "-1";
+            buttonType = "PushButton";
+            bitmap = "./buttonImages/CUR_rotate";
+			cursorName = "RotateCursor";
+			command = "$thisControl.changeCursor();";
+         };
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+

@@ -1,0 +1,93 @@
+  
+TGE 1.5.2 [24 Apr 2007]
+---------
+
+New:
+   - added dynamic static mesh lighting
+   - turned old static mesh rendering method into the "simple" method used for simple lighting mode and debug rendering mode
+
+Performance:
+   - created new static mesh rendering method that renders static and dynamic light at once, reducing rendering overhead
+   - bumped lower lighting profiles to static mesh collision hull shadows instead of geometry based
+   - avoid rendering calls on meshes which don't require it
+
+Bug Fixes:
+   - resolved lighting problems on objects that were mirrored in Torque Constructor
+   - light mapping now honors light's castShadows property
+   - fixed cases when water block size != 8
+   - smoother interpolation of the freecam
+   - fixed memory leak in NetEvent
+   - several minor changes for the Linux build
+   - don't try to do anything after deleting the object in Explosion::processTick()
+   - revert incorrect optimization in particle engine [introduced in 1.5.1]
+   - fixed dark lighting [introduced in 1.5.1]
+   - fixed assert when changing to fullscreen and the mission contains a new constructor dif [introduced in 1.5.1]
+   - remove degenerate tris from light mapping [fixes AssertFatal("!");]
+   - light type filtering to stop static lights set to affect DTS objects from illuminating static meshes dynamically
+   - fixed z-fighting on alpha static mesh surfaces
+   - fixed static mesh BVPT issue with choosing bad first plane on pipe-like objects
+   - fixed smoothing detection
+   - fixed lighting profiles
+   - avoid static mesh hulls in DTS environment lighting
+   - block dynamic shadows on static meshes
+   - fixed debug interior render mode
+   - fixed incorrect include for compiling fonttool
+   - fixed several map2dif_plus errors
+
+Removed:
+   - really old Max and Maya SDKs from the lib directory:
+      - maxsdk31
+      - mayasdk4
+      - mayasdk5
+  
+   
+TGE 1.5.1 [30 Mar 2007]
+---------
+
+Changes
+-------
+
+- allows use of DIFs created by Torque Constructor
+- integrate fixes and changes from TGB 1.1.3
+    - changes to StringBuffer class
+    - changes for better UNICODE support
+    - improvements to the font class
+    - Mac console improvements
+- merge in the Optimization Kit resource
+    - rendering optimizations for texture fog
+    - some Altivec improvements for terrain blending on PPC Macs
+    - batch rendering of precipitation, splashes, and decals
+    - eliminate a lot of object copying throughout the codebase
+    - change constant doubles into constant floats to improve gcc PPC code
+- Intel Macs now use the asm terrain blender
+- added a couple of asm routines to Intel Mac build
+- some code cleanup
+    - remove/deprecated files
+        - dgl/gNewFont becomes dgl/gFont
+        - sceneGraph/lightManager.[h,cc] are deprecated in favour of lightingSystem/sgLightManager.[h,cc]
+    - remove TORQUE_UNICODE from torqueConfig.h
+    - const-ified member functions and arguments in many places
+    - added a few asserts to catch problems in debugging
+- added levels of detail [LOD] to the interiors on the Stronghold mission in starter.fps
+- added a barebone mission that is just a terrain, a path for the AI, and an interior which includes a static mesh
+- other bugs fixed:
+    - integrate changes for ExtrudedPolyList resource to fix some collision issues
+    - AudioEmitter looping
+    - Two bugs in BitRender.cc
+        - shadows are not drawn correctly for meshes containing triangle list primitives
+        - runtime check failure
+    - possible fix for fxShapeReplicator hard lock on Windows
+    - fix for particle stream jumping around
+    - TelnetDebugger fixes and additions
+        - added file load updates
+        - fixed crash on breakpoint in invalid codeblock
+    - fix NetEvent ref count problem
+    - fix cursor issues when saving the play gui
+    - other miscellaneous bug fixes
+
+Known Issues With Constructor Integration
+-----------------------------------------
+
+- lighting of static meshes
+    - static meshes only support static lighting
+    - flipped objects (both brushes and static meshes) still produce odd shading

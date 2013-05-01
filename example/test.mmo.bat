@@ -1,0 +1,1 @@
+torqueDemo_debug -game test.mmo

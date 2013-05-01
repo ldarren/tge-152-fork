@@ -1,0 +1,753 @@
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+
+   new StaticShape() {
+      position = "32.7011 -81.985 28.5489";
+      rotation = "0.000988372 -0.0149994 0.999887 172.461";
+      scale = "1 1 1";
+      dataBlock = "Mmbarn";
+   };
+   new TSStatic(Crate) {
+      position = "45.9362 -109.717 28.9367";
+      rotation = "-0.0279952 -0.00740458 -0.999581 75.7386";
+      scale = "1 1 1";
+      shapeName = "~/data/shapes/moomoo/crate1.dts";
+   };
+   new ParticleEmitterNode(mmsmoke) {
+      position = "44.69 -111.635 30.011";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "FlameSmokeEmitterNode";
+      emitter = "FlameSmokeEmitter";
+      velocity = "1";
+   };
+   new TSStatic(mmTractor) {
+      position = "44.4415 -110.838 28.2229";
+      rotation = "-0.0248728 0.00277558 -0.999687 104.498";
+      scale = "1 1 1";
+      shapeName = "~/data/shapes/moomoo/tractor1.dts";
+   };
+   new TSStatic(mmTrolley) {
+      position = "41.7876 -110.777 28.4351";
+      rotation = "0.00963699 -0.0421547 0.999065 88.1091";
+      scale = "1 1 1";
+      shapeName = "~/data/shapes/moomoo/trolley1.dts";
+   };
+   new TSStatic(Crate) {
+      position = "49.6296 -110.213 28.8732";
+      rotation = "-0.936101 -0.350952 0.0234074 4.89553";
+      scale = "1 1 1";
+      shapeName = "~/data/shapes/moomoo/crate1.dts";
+   };
+   new TSStatic() {
+      position = "23.6209 -102.842 29.1122";
+      rotation = "0 0 1 180";
+      scale = "1 1 1";
+      shapeName = "~/data/shapes/moomoo/moomoo4.dts";
+   };
+   new TSStatic(mmSilo) {
+      position = "45.0213 -80.7516 28.3249";
+      rotation = "0.0184413 0.0151948 0.999714 144.806";
+      scale = "1 1 1";
+      shapeName = "~/data/shapes/moomoo/silo1.dts";
+   };
+   new ScriptObject(MissionInfo) {
+         desc0 = "Evil alien is abducting your lovely MooMoo!";
+         name = "MooMoo Field";
+   };
+   new fxShapeReplicator(mmTreeadwaas) {
+      position = "23.7609 39.467 29.6553";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      HideReplications = "0";
+      ShowPlacementArea = "0";
+      PlacementAreaHeight = "25";
+      PlacementColour = "0.4 0 0.8 1";
+      shapeFile = "~/data/shapes/moomoo/tree1.dts";
+      Seed = "1376312589";
+      ShapeCount = "20";
+      ShapeRetries = "50";
+      InnerRadiusX = "0";
+      InnerRadiusY = "0";
+      OuterRadiusX = "200";
+      OuterRadiusY = "50";
+      AllowOnTerrain = "1";
+      AllowOnInteriors = "0";
+      AllowOnStatics = "0";
+      AllowOnWater = "0";
+      AllowWaterSurface = "0";
+      AlignToTerrain = "1";
+      Interactions = "1";
+      AllowedTerrainSlope = "90";
+      TerrainAlignment = "1 1 1";
+      FixShapeAspect = "0";
+      ShapeScaleMin = "1.5 1.5 1.5";
+      ShapeScaleMax = "1 1 1";
+      ShapeRotateMin = "0 0 0";
+      ShapeRotateMax = "0 0 0";
+      OffsetZ = "0";
+   };
+   new MissionArea(MissionArea) {
+      Area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      materialList = "~/data/skies/mmsky.dml";
+      cloudHeightPer[0] = "0";
+      cloudHeightPer[1] = "0.25";
+      cloudHeightPer[2] = "0.199973";
+      cloudSpeed1 = "0.0001";
+      cloudSpeed2 = "0.0002";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      fogDistance = "100";
+      fogColor = "0.717647 0.717647 0.717647 1";
+      fogStorm1 = "1";
+      fogStorm2 = "0";
+      fogStorm3 = "0";
+      fogVolume1 = "100 100 50";
+      fogVolume2 = "0 0 0";
+      fogVolume3 = "0 0 0";
+      fogVolumeColor1 = "128 128 128 -2.22768e+038";
+      fogVolumeColor2 = "128 128 128 0";
+      fogVolumeColor3 = "128 128 128 -1.70699e+038";
+      windVelocity = "1 1 0";
+      windEffectPrecipitation = "1";
+      SkySolidColor = "0.980392 0.980392 0.980392 0";
+      useSkyTextures = "1";
+      renderBottomTexture = "0";
+      noRenderBans = "0";
+         locked = "true";
+   };
+   new Sun() {
+      azimuth = "0";
+      elevation = "35";
+      color = "1 1 1 1";
+      ambient = "0.55 0.55 0.55 1";
+         scale = "1 1 1";
+         position = "0 0 0";
+         locked = "true";
+         rotation = "1 0 0 0";
+         direction = "0.57735 0.57735 -0.57735";
+   };
+   new TerrainBlock(Terrain) {
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      detailTexture = "~/data/terrains/mmgrassdetail.jpg";
+      terrainFile = "./moomoo.ter";
+      squareSize = "8";
+      emptySquares = "99744 443522 443778 444034";
+      bumpScale = "1";
+      bumpOffset = "0.01";
+      zeroBumpScale = "8";
+      tile = "1";
+         position = "-1024 -1024 0";
+         locked = "true";
+   };
+   new SimGroup(PlayerDropPoints) {
+
+      new SpawnSphere() {
+         position = "34.1251 -122.983 29.236";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "100";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+            locked = "False";
+            homingCount = "0";
+            lockCount = "0";
+      };
+   };
+   new TSStatic() {
+      position = "20.1127 -105.378 29.1113";
+      rotation = "0.0172196 -0.0274168 0.999476 122.638";
+      scale = "1 1 1";
+      shapeName = "~/data/shapes/moomoo/moomoo3.dts";
+   };
+   new StaticShape() {
+      position = "116.336 31.6915 37.5596";
+      rotation = "0.00859791 -0.985092 -0.171815 5.81636";
+      scale = "1 1 1";
+      dataBlock = "Mmwindmill";
+   };
+   new StaticShape() {
+      position = "-23.9107 65.7412 37.1307";
+      rotation = "-0.00763054 0.985509 -0.169453 5.46689";
+      scale = "1 1 1";
+      dataBlock = "Mmwindmill";
+   };
+   new Lightning(mmlightning) {
+      position = "-164.413 95.965 33.7511";
+      rotation = "1 0 0 0";
+      scale = "200 300 500";
+      dataBlock = "LightningStorm";
+      strikesPerMinute = "50";
+      strikeWidth = "2.5";
+      strikeRadius = "20";
+      color = "1 1 1 1";
+      fadeColor = "0.4 0.4 0.1 1";
+      chanceToHitTarget = "0.5";
+      boltStartRadius = "20";
+      useFog = "1";
+   };
+   new Precipitation(Rain) {
+      position = "12.0634 -125.832 30.7529";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      nameTag = "mmRain";
+      dataBlock = "HeavyRain";
+      minSpeed = "10";
+      maxSpeed = "15";
+      minMass = "0.05";
+      maxMass = "5";
+      maxTurbulence = "0.1";
+      turbulenceSpeed = "0.2";
+      rotateWithCamVel = "1";
+      useTurbulence = "1";
+      numDrops = "800";
+      boxWidth = "50";
+      boxHeight = "100";
+      doCollision = "1";
+   };
+   new Precipitation(Rain) {
+      position = "22.8138 -126.815 33.1203";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      nameTag = "mmRain2";
+      dataBlock = "HeavyRain2";
+      minSpeed = "0.3";
+      maxSpeed = "0.6";
+      minMass = "0.01";
+      maxMass = "1";
+      maxTurbulence = "0.05";
+      turbulenceSpeed = "0.15";
+      rotateWithCamVel = "1";
+      useTurbulence = "1";
+      numDrops = "100";
+      boxWidth = "100";
+      boxHeight = "100";
+      doCollision = "1";
+   };
+   new SimGroup(mmFenceGroup) {
+
+      new TSStatic() {
+         position = "32.8726 -109.357 28.4129";
+         rotation = "0 0 1 180.482";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/moomoo/fence1.dts";
+      };
+      new TSStatic() {
+         position = "11.9227 -87.8622 28.4559";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/moomoo/fence1.dts";
+      };
+      new TSStatic() {
+         position = "21.9833 -87.8541 28.384";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/moomoo/fence1.dts";
+      };
+      new TSStatic() {
+         position = "22.5611 -109.031 28.2599";
+         rotation = "0 0 1 181.055";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/moomoo/fence1.dts";
+      };
+      new TSStatic() {
+         position = "11.9999 -108.902 28.294";
+         rotation = "0 0 1 181.055";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/moomoo/fence1.dts";
+      };
+      new TSStatic() {
+         position = "6.9007 -93.8668 28.4466";
+         rotation = "0 0 -1 89.9544";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/moomoo/fence1.dts";
+      };
+      new TSStatic() {
+         position = "6.9009 -103.927 28.3185";
+         rotation = "0 0 -1 89.9544";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/moomoo/fence1.dts";
+      };
+      new TSStatic() {
+         position = "53.3621 -108.511 28.3112";
+         rotation = "0.00999983 0.000258012 0.99995 177.044";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/moomoo/fence1.dts";
+      };
+      new TSStatic() {
+         position = "43.0219 -109.066 28.4391";
+         rotation = "0 0 1 177.044";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/moomoo/fence1.dts";
+      };
+      new TSStatic() {
+         position = "58.7429 -92.9514 28.4";
+         rotation = "0 0 1 88.8084";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/moomoo/fence1.dts";
+      };
+      new TSStatic() {
+         position = "58.8202 -103.114 28.5355";
+         rotation = "0 0 1 88.8084";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/moomoo/fence1.dts";
+      };
+      new TSStatic() {
+         position = "53.9361 -86.9804 28.4729";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/moomoo/fence1.dts";
+      };
+      new TSStatic() {
+         position = "43.7744 -86.8463 28.4388";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/moomoo/fence1.dts";
+      };
+   };
+   new Path(myPath2) {
+      isLooping = "1";
+
+      new Marker(myMarker0P2) {
+         position = "49.1202 -106.337 38.5624";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         seqNum = "1";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(myMarker1P2) {
+         position = "45.6223 -99.058 38.6848";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         seqNum = "2";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(myMarker2P2) {
+         position = "51.032 -97.2094 38.6784";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         seqNum = "3";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(myMarker3P2) {
+         position = "37.5569 -113.354 37.9071";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         seqNum = "4";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+   };
+   new Path(myPath3) {
+      isLooping = "1";
+
+      new Marker(MyMarker0P3) {
+         position = "31.884 -95.5 39.0181";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         seqNum = "1";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(myMarker1P3) {
+         position = "37.009 -95.361 38.8078";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         seqNum = "2";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(myMarker2P3) {
+         position = "27.165 -109.211 39.1663";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         seqNum = "3";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(myMarker3P3) {
+         position = "40.2498 -101.124 38.3198";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         seqNum = "4";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+   };
+   new Path(myPath1) {
+      isLooping = "1";
+
+      new Marker(myMarker1) {
+         position = "23.1274 -93.6344 38.652";
+         rotation = "0 0 1 22.9183";
+         scale = "1 1 1";
+         seqNum = "1";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(myMarker2) {
+         position = "13.8906 -98.9679 38.652";
+         rotation = "0 0 1 45.2637";
+         scale = "1 1 1";
+         seqNum = "2";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(myMarker0) {
+         position = "16.7986 -92.37 39.8261";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         seqNum = "3";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(myMarker3) {
+         position = "5.5442 -101.607 39.9873";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         seqNum = "4";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+   };
+   new Path(myPath4) {
+      isLooping = "1";
+
+      new Marker(myMarker1P4) {
+         position = "20.0827 -103.514 38.7201";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         seqNum = "1";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(myMarker2P4) {
+         position = "15.7911 -107.746 37.9152";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         seqNum = "2";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(myMarker3P4) {
+         position = "26.1911 -99.946 38.1152";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         seqNum = "3";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(myMarker4P4) {
+         position = "12.7644 -107.193 39.6404";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         seqNum = "4";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+   };
+   new Path(myPath5) {
+      isLooping = "1";
+
+      new Marker(myMarker1P5) {
+         position = "43.6412 -87.806 39.0381";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         seqNum = "1";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(myMarker2P5) {
+         position = "61.7169 -95.23 38.7129";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         seqNum = "2";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(myMarker3P5) {
+         position = "46.2912 -68.756 38.868";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         seqNum = "3";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(myMarker4P5) {
+         position = "65.1342 -86.895 39.3055";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         seqNum = "4";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+   };
+   new Path(myPath6) {
+      isLooping = "1";
+
+      new Marker(myMarker1P6) {
+         position = "14.8363 -84.6638 40.3944";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         seqNum = "1";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(myMarker2P6) {
+         position = "-0.35104 -75.8672 41.4024";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         seqNum = "2";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(myMarker3P6) {
+         position = "16.6525 -72.4885 40.6289";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         seqNum = "3";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(myMarker4P6) {
+         position = "-2.5037 -86.0605 38.211";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         seqNum = "4";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+   };
+   new Path(myPath7) {
+      isLooping = "1";
+
+      new Marker(myMarker1P7) {
+         position = "47.6106 -113.714 37.4004";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         seqNum = "1";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(myMarker2P7) {
+         position = "58.4912 -106.71 37.2506";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         seqNum = "2";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(myMarker3P7) {
+         position = "55.9772 -100.845 37.5541";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         seqNum = "3";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(myMarker4P7) {
+         position = "54.9181 -105.874 37.6639";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         seqNum = "4";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+   };
+   new TSStatic() {
+      position = "47.6346 -100.598 29.1436";
+      rotation = "0 0 1 222.308";
+      scale = "1 1 1";
+      shapeName = "~/data/shapes/moomoo/moomoo3.dts";
+   };
+   new TSStatic() {
+      position = "32.2491 -102.537 29.1436";
+      rotation = "-1.44355e-008 4.83743e-008 1 33.2315";
+      scale = "1 1 1";
+      shapeName = "~/data/shapes/moomoo/moomoo3.dts";
+   };
+   new StaticShape() {
+      position = "-106.761 94.0304 34.4628";
+      rotation = "0.883972 -0.455229 -0.106589 29.6713";
+      scale = "1 1 1";
+      dataBlock = "Mmwindmill";
+   };
+   new Path(MooPath1) {
+      isLooping = "1";
+
+      new Marker(MooMarker1) {
+         position = "28.3392 -103.229 28.6375";
+         rotation = "0 0 1 180";
+         scale = "1 1 1";
+         seqNum = "1";
+         type = "Normal";
+         msToNext = "5000";
+         smoothingType = "Spline";
+      };
+      new Marker(MooMarker2) {
+         position = "33.4817 -92.8942 28.6306";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         seqNum = "2";
+         type = "Normal";
+         msToNext = "5000";
+         smoothingType = "Spline";
+      };
+      new Marker(MooMarker3) {
+         position = "36.5722 -96.305 28.4306";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         seqNum = "3";
+         type = "Normal";
+         msToNext = "5000";
+         smoothingType = "Spline";
+      };
+   };
+   new Path(MooPath2) {
+      isLooping = "1";
+
+      new Marker(Moo2Marker1) {
+         position = "23.9234 -94.671 29.1632";
+         rotation = "0 0 1 60";
+         scale = "1 1 1";
+         seqNum = "1";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(Moo2Marker2) {
+         position = "16.5583 -91.3234 28.8375";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         seqNum = "2";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(Moo2Marker3) {
+         position = "18.0738 -101.637 28.6375";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         seqNum = "3";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+   };
+   new Path(MooPath3) {
+      isLooping = "1";
+
+      new Marker(Moo3Marker1) {
+         position = "43.1735 -102.652 28.8375";
+         rotation = "0 0 1 200";
+         scale = "1 1 1";
+         seqNum = "1";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(Moo3Marker2) {
+         position = "47.8808 -103.398 28.8375";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         seqNum = "2";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+      new Marker(Moo3Marker3) {
+         position = "50.6585 -97.4399 28.8375";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         seqNum = "3";
+         type = "Normal";
+         msToNext = "1000";
+         smoothingType = "Spline";
+      };
+   };
+   new TSStatic() {
+      position = "12.0618 -104.367 29.1436";
+      rotation = "0 0 1 60";
+      scale = "1 1 1";
+      shapeName = "~/data/shapes/moomoo/moomoo3.dts";
+   };
+   new TSStatic() {
+      position = "17.999 -91.6491 29.1436";
+      rotation = "0 0 1 230";
+      scale = "1 1 1";
+      shapeName = "~/data/shapes/moomoo/moomoo4.dts";
+   };
+   new StaticShape() {
+      position = "45.2591 -94.2162 29.1436";
+      rotation = "0 0 -1 40";
+      scale = "1 1 1";
+      dataBlock = "Mmmoomoo2";
+   };
+   new TSStatic() {
+      position = "55.1954 -93.966 29.1436";
+      rotation = "0 0 1 120";
+      scale = "1 1 1";
+      shapeName = "~/data/shapes/moomoo/moomoo3.dts";
+   };
+   new TSStatic() {
+      position = "37.848 -105.671 29.1436";
+      rotation = "0 0 1 240";
+      scale = "1 1 1";
+      shapeName = "~/data/shapes/moomoo/moomoo4.dts";
+   };
+   new TSStatic() {
+      position = "31.7572 -94.7078 29.221";
+      rotation = "0 0 1 180";
+      scale = "1 1 1";
+      shapeName = "~/data/shapes/moomoo/moomoo4.dts";
+   };
+};
+//--- OBJECT WRITE END ---
+
+      
+
+
+
+

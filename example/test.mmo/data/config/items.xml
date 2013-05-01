@@ -1,0 +1,15 @@
+<1>
+	<name>cash001</name>
+	<shape>Superbomb</shape>
+	<value>200</value>
+</1>
+<2>
+	<name>fare001</name>
+	<shape>MysteryBox01</shape>
+	<value>200</value>
+</2>
+<3>
+	<name>bank001</name>
+	<shape>MysteryBox02</shape>
+	<value>200</value>
+</3>

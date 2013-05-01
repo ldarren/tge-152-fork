@@ -1,0 +1,64 @@
+<1>
+	<name>cash001</name>
+	<shape>CashBox</shape>
+	<value>200</value>
+	<scale>0.1 0.1 0.1</scale>
+</1>
+<2>
+	<name>cash002</name>
+	<shape>CashBox</shape>
+	<value>150</value>
+	<scale>0.1 0.1 0.1</scale>
+</2>
+<3>
+	<name>cash003</name>
+	<shape>CashBox</shape>
+	<value>100</value>
+	<scale>0.1 0.1 0.1</scale>
+</3>
+<4>
+	<name>cash004</name>
+	<shape>CashBox</shape>
+	<value>50</value>
+	<scale>0.1 0.1 0.1</scale>
+</4>
+<5>
+	<name>fare001</name>
+	<shape>MysteryBox01</shape>
+	<value>200</value>
+</5>
+<6>
+	<name>fare002</name>
+	<shape>MysteryBox01</shape>
+	<value>150</value>
+</6>
+<7>
+	<name>fare002</name>
+	<shape>MysteryBox01</shape>
+	<value>100</value>
+</7>
+<8>
+	<name>fare002</name>
+	<shape>MysteryBox01</shape>
+	<value>50</value>
+</8>
+<9>
+	<name>bank001</name>
+	<shape>MysteryBox02</shape>
+	<value>200</value>
+</9>
+<10>
+	<name>bank001</name>
+	<shape>MysteryBox02</shape>
+	<value>150</value>
+</10>
+<11>
+	<name>bank001</name>
+	<shape>MysteryBox02</shape>
+	<value>100</value>
+</11>
+<12>
+	<name>bank001</name>
+	<shape>MysteryBox02</shape>
+	<value>50</value>
+</12>

@@ -1,0 +1,43 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiFadeinBitmapCtrl(StartupGui2) {
+   profile = "GuiInputCtrlProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "640 480";
+   minExtent = "8 8";
+   visible = "1";
+   helpTag = "0";
+   bitmap = "./faustlogic";
+   wrap = "0";
+   fadeinTime = "500";
+   waitTime   = "2000";
+   fadeoutTime = "125";
+};
+//--- OBJECT WRITE END ---
+
+function loadStartup2()
+{
+   StartupGui2.done = false;
+   Canvas.setContent( StartupGui2 );
+   schedule(100, 0, checkStartup2Done );
+}
+   
+//-------------------------------------
+function StartupGui2::click()
+{
+   StartupGui2.done = true;
+}
+
+//-------------------------------------
+function checkStartup2Done()
+{
+   if (StartupGui2.done)
+   {
+   	  echo ("*** Load Main Menu");
+      loadMainMenu();
+   }
+   else
+      schedule(100, 0, checkStartup2Done );
+}
+

@@ -1,0 +1,3 @@
+// Orc Mage Sequences
+./SP2/ChillKill_impact.dsq ck_hit
+./SP2/ChillKill_casting.dsq ck

@@ -1,0 +1,5 @@
+Hello are you ok?~Sound:NPCVoice01<AnswerStart><a:RPGDialog 1>fine...</a><BR><a:RPGDialog 2>Not too good</a><BR><a:RPGDialog 3>Continue...</a>
+But you don't sound fine to me, what is the matter?~Image:Default.jpg<AnswerStart><a:RPGDialog 1>hmm.. i may not fine after all</a>
+Tell me your problem, please~Sound:NPCVoice01<AnswerStart><a:RPGDialog 1>i hate walking around with my body naked, but i dun have any money</a>
+<<PlayerName>>, answer this question, <<Name>>'ll give you 300 golds. who is your father?<AnswerStart><a:RPGDialog 1><<Name>></a><BR><a:RPGDialog 2><<Name>></a><BR><a:RPGDialog 3><<Name>></a>
+Good boy, <<PlayerName>>! here you go~Sound:NPCVoice02<AnswerStart><a:RPGDialog 1>Fuck you! <<Name>></a>

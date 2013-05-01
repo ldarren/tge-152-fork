@@ -1,0 +1,29 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(SplashScreen) {
+   profile = "GuiDefaultProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "800 600";
+   minExtent = "8 2";
+   visible = "1";
+
+   new GuiFadeinBitmapCtrl(SplashFadeinBitmap) {
+      profile = "GuiDefaultProfile";
+      horizSizing = "width";
+      vertSizing = "height";
+      position = "0 0";
+      extent = "800 600";
+      minExtent = "8 2";
+      visible = "1";
+      bitmap = "./splash";
+      wrap = "0";
+      fadeinTime = "1000";
+      waitTime = "5000";
+      fadeoutTime = "1000";
+      done = "0";
+
+   };
+};
+//--- OBJECT WRITE END ---
+

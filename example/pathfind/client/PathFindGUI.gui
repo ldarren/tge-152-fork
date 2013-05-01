@@ -1,0 +1,46 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(PathFindGUI) {
+   canSaveDynamicFields = "0";
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   position = "0 0";
+   Extent = "640 480";
+   MinExtent = "8 2";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+   new GuiControl(PathFindHolderGUI) {
+   canSaveDynamicFields = "0";
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   position = "0 0";
+   Extent = "640 480";
+   MinExtent = "8 2";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+};
+new GuiControl(PathScreen) {
+   canSaveDynamicFields = "0";
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   position = "0 0";
+   Extent = "640 480";
+   MinExtent = "8 2";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+};
+   new GuiMouseEventCtrl(ClickMe){
+      extent = "640 480";
+      position = "0 0";
+   };
+
+
+};
+//--- OBJECT WRITE END ---
+
+//--- OBJECT WRITE BEGIN ---

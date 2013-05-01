@@ -1,0 +1,129 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(ControlPanelGui) {
+   canSaveDynamicFields = "0";
+   Profile = "GuiModelessDialogProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   position = "0 0";
+   Extent = "1024 768";
+   MinExtent = "8 2";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+
+   new GuiControl() {
+      canSaveDynamicFields = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "width";
+      VertSizing = "top";
+      position = "0 672";
+      Extent = "1024 96";
+      MinExtent = "640 96";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+
+      new GuiControl() {
+         canSaveDynamicFields = "0";
+         Profile = "ControlPanelProfile";
+         HorizSizing = "width";
+         VertSizing = "center";
+         position = "8 8";
+         Extent = "1008 80";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+
+         new GuiClockHud(DanceTimer) {
+            canSaveDynamicFields = "0";
+            Profile = "GuiDefaultProfile";
+            HorizSizing = "left";
+            VertSizing = "center";
+            position = "890 0";
+            Extent = "40 80";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            showFill = "0";
+            showFrame = "0";
+            fillColor = "0 0 0 1";
+            frameColor = "0 0 0 1";
+            textColor = "1 1 1 1";
+         };
+         new GuiTextCtrl(ScoreMeterText) {
+            canSaveDynamicFields = "0";
+            Profile = "BigNiceTextProfile";
+            HorizSizing = "right";
+            VertSizing = "center";
+            position = "80 15";
+            Extent = "138 40";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            text = "Score: 0";
+            maxLength = "128";
+         };
+      };
+      new GuiBitmapButtonCtrl(CtrlPanelStart) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "right";
+         VertSizing = "center";
+         position = "8 8";
+         Extent = "80 80";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "commandToServer(\'notifyDemo\');";
+         tooltipprofile = "GuiToolTipProfile";
+         ToolTip = "Start Game";
+         hovertime = "1000";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./animations/start";
+      };
+      new GuiBitmapButtonCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "left";
+         VertSizing = "center";
+         position = "936 8";
+         Extent = "80 80";
+         MinExtent = "80 80";
+         canSave = "1";
+         Visible = "1";
+         Command = "escapeFromGame();";
+         tooltipprofile = "GuiToolTipProfile";
+         ToolTip = "Exit Game";
+         hovertime = "1000";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./animations/exit";
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+
+function ControlPanelGui::onWake(%this) {
+	%this.gameState = LuckyStarClient.LobbyState;
+}
+
+function ControlPanelGui::changeState(%this, %state) {
+	%this.gameState = %state;
+	
+	if (%this.gameState < LuckyStarClient.DanceState) CtrlPanelStart.setActive(true);
+	else CtrlPanelStart.setActive(false);
+	
+	switch(%state)
+	{
+	case LuckyStarClient.LobbyState:
+	case LuckyStarClient.Debug01State:
+	case LuckyStarClient.Debug02State:
+	case LuckyStarClient.DanceState:
+	case LuckyStarClient.ConfigState:
+	case LuckyStarClient.RankState:
+	}
+}

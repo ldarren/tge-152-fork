@@ -1,0 +1,421 @@
+if (!isObject(CenterMediumTextProfile)) new GuiControlProfile(CenterMediumTextProfile : GuiMediumTextProfile)
+{
+   autoSizeWidth = false;
+   justify = "center";
+};
+
+if(!isObject(UnSkinnedBorderlessButtonProfile)) new GuiControlProfile(UnSkinnedBorderlessButtonProfile:GuiButtonProfile)
+{
+	fontType = "Arial Bold";
+	fontSize = "32";
+	fontColor = "255 255 255 255";
+	fontColorHL = "255 25 25 255";
+	border = 0;
+	bitmap = "";
+	hasBitmapArray = false;
+	fillColor = "255 255 255 0";
+	fillColorHL = "128 128 128 64";
+};
+
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(MapSelectorGui) {
+   canSaveDynamicFields = "0";
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   position = "0 0";
+   Extent = "1024 768";
+   MinExtent = "8 2";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+
+   new GuiWindowCtrl() {
+      canSaveDynamicFields = "0";
+      Profile = "GuiWindowProfile";
+      HorizSizing = "center";
+      VertSizing = "center";
+      position = "192 144";
+      Extent = "640 480";
+      MinExtent = "640 480";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      text = "Map Selector Window";
+      maxLength = "128";
+      resizeWidth = "0";
+      resizeHeight = "0";
+      canMove = "1";
+      canClose = "1";
+      canMinimize = "0";
+      canMaximize = "0";
+      minSize = "50 50";
+      closeCommand = "Canvas.popDialog(MapSelectorGui);";
+
+      new GuiControl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "center";
+         VertSizing = "center";
+         position = "20 178";
+         Extent = "600 240";
+         MinExtent = "600 240";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+
+         new GuiTweenBitmapCtrl(BuffMap00) {
+            canSaveDynamicFields = "0";
+            Profile = "GuiDefaultProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "-160 0";
+            Extent = "320 240";
+            MinExtent = "320 240";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            bitmap = "./windows/Map01.jpg";
+            wrap = "0";
+			speed = 0.1;
+         };
+         new GuiTweenBitmapCtrl(BuffMap01) {
+            canSaveDynamicFields = "0";
+            Profile = "GuiDefaultProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "160 0";
+            Extent = "320 240";
+            MinExtent = "320 240";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            bitmap = "./windows/Map01i.jpg";
+            wrap = "0";
+			speed = "0.04375";
+         };
+         new GuiTweenBitmapCtrl(BuffMap10) {
+            canSaveDynamicFields = "0";
+            Profile = "GuiDefaultProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "480 0";
+            Extent = "320 240";
+            MinExtent = "320 240";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            bitmap = "./windows/Map02.jpg";
+            wrap = "0";
+			speed = "0.04375";
+         };
+         new GuiTweenBitmapCtrl(BuffMap11) {
+            canSaveDynamicFields = "0";
+            Profile = "GuiDefaultProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "-160 0";
+            Extent = "320 240";
+            MinExtent = "320 240";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            bitmap = "./windows/Map02i.jpg";
+            wrap = "0";
+			speed = 0.1;
+         };
+         new GuiTweenBitmapCtrl(BuffMap20) {
+            canSaveDynamicFields = "0";
+            Profile = "GuiDefaultProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "160 0";
+            Extent = "320 240";
+            MinExtent = "320 240";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            bitmap = "./windows/Map03.jpg";
+            wrap = "0";
+			speed = "0.04375";
+         };
+         new GuiTweenBitmapCtrl(BuffMap21) {
+            canSaveDynamicFields = "0";
+            Profile = "GuiDefaultProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "480 0";
+            Extent = "320 240";
+            MinExtent = "320 240";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            bitmap = "./windows/Map03i.jpg";
+            wrap = "0";
+			speed = "0.04375";
+         };
+      };
+      new GuiButtonCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "UnSkinnedBorderlessButtonProfile";
+         HorizSizing = "right";
+         VertSizing = "center";
+         position = "20 178";
+         Extent = "60 240";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "MapSelectorGui.toLeft();";
+         hovertime = "1000";
+         text = "<<<";
+         groupNum = "-1";
+         buttonType = "PushButton";
+      };
+      new GuiButtonCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "UnSkinnedBorderlessButtonProfile";
+         HorizSizing = "left";
+         VertSizing = "center";
+         position = "560 178";
+         Extent = "60 240";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "MapSelectorGui.toRight();";
+         hovertime = "1000";
+         text = ">>>";
+         groupNum = "-1";
+         buttonType = "PushButton";
+      };
+      new GuiButtonCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiButtonProfile";
+         HorizSizing = "center";
+         VertSizing = "top";
+         position = "250 430";
+         Extent = "140 30";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "MapSelectorGui.select();";
+         hovertime = "1000";
+         text = "Select";
+         groupNum = "-1";
+         buttonType = "PushButton";
+      };
+      new GuiTextCtrl(Selector_MapName) {
+         canSaveDynamicFields = "0";
+         Profile = "CenterMediumTextProfile";
+         HorizSizing = "center";
+         VertSizing = "bottom";
+         position = "20 44";
+         Extent = "600 28";
+         MinExtent = "8 8";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         text = "Arctic Zone";
+         maxLength = "255";
+      };
+      new GuiMLTextCtrl(Selector_MapDesc) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiMLTextProfile";
+         HorizSizing = "center";
+         VertSizing = "bottom";
+         position = "20 90";
+         Extent = "600 56";
+         MinExtent = "8 8";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         lineSpacing = "2";
+         allowColorChars = "0";
+         maxChars = "-1";
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+
+function MapSelectorGui::activate(%this, %mode)
+{
+	Canvas.pushDialog(%this);
+	%this.gameMode = %mode;
+}
+
+function MapSelectorGui::onWake(%this)
+{
+	// contents
+	%this.selected = 1;
+	%this.mapCount = 3;
+	
+	%this.maps[0] = "flat";
+	%this.maps[1] = "stronghold";
+	%this.maps[2] = "cpdemo2";
+	
+	%this.titles[0] = "Green Field";
+	%this.titles[1] = "Arctic Zone";
+	%this.titles[2] = "Desert Storm";
+	
+	%this.desc[0] = "<font:Arial:14>Welcome fellow wanderer, We would like to welcome all of you to Green Field Katsugura, let's dance in this peaceful sanctuary";
+	%this.desc[1] = "<font:Arial:14>The Arctic region is one of the last and most extensive continuous wilderness areas in the world, and its significance in preserving biodiversity and genotypes is considerable. The increasing presence of humans fragments vital habitats. The Arctic is particularly susceptible to the abrasion of groundcover and to the disturbance of the rare reproduction places of the animals that are characteristic to the region.";
+	%this.desc[2] = "<font:Arial:14>Deserts are located where vegetation cover is exceedingly sparse. This corresponds to the 'hyperarid' regions of the earth, where rainfall is exceedingly rare and infrequent.";
+	
+	for (%i=0; %i<%this.mapCount; %i++)
+	{
+		for (%j=0; %j<2; %j++)
+		{
+			%this.controls[%i, %j] = ("BuffMap"@%i@%j).getID();
+			%this.controls[%i, %j].setTweenExtent(320, 240);
+		}
+	}
+
+	%this.pos[0] = -180; // left
+	%this.pos[1] = 140; // center
+	%this.pos[2] = 460; // right
+	
+	%this.acceptCmd = true;
+	%this.gameMode = -1;
+
+	%this.init();
+}
+
+function MapSelectorGui::init(%this)
+{
+	%this.acceptCmd = true;
+	%sel = %this.selected;
+	%left = %this.decrease(%this.selected, %this.mapCount-1, 0);
+	
+	for (%i=0; %i<%this.mapCount; %i++)
+	{
+		if (%i == %sel) 
+		{
+			%this.controls[%i, 0].setVisible(true);
+			%this.controls[%i, 1].setVisible(false);
+		}
+		else 
+		{
+			%this.controls[%i, 0].setVisible(false);
+			%this.controls[%i, 1].setVisible(true);
+		}
+		
+		%x = %i == %sel ? 1 : (%i == %left ? 0 : 2);
+		%this.controls[%i, 0].setPosition(%this.pos[%x], 0);
+		%this.controls[%i, 1].setPosition(%this.pos[%x], 0);
+	}
+	
+	Selector_MapName.setText(%this.titles[%sel]);
+	Selector_MapDesc.setText(%this.desc[%sel]);
+}
+
+function MapSelectorGui::toLeft(%this)
+{
+	if (!%this.acceptCmd) return;
+	%this.acceptCmd = false;
+	%this.selected = %this.increase(%this.selected, %this.mapCount-1, 0);
+	%this.update(-1);
+}
+
+function MapSelectorGui::toRight(%this)
+{
+	if (!%this.acceptCmd) return;
+	%this.acceptCmd = false;
+
+	%this.selected = %this.decrease(%this.selected, %this.mapCount-1, 0);
+	%this.update(1);
+}
+
+function MapSelectorGui::update(%this, %dir)
+{
+	%sel = %this.selected;
+	%left = %this.decrease(%this.selected, %this.mapCount-1, 0);
+	%carry = 0;
+	
+	if (%dir == 1) // to right
+		%carry = %this.decrease(%this.selected, %this.mapCount-1, 0);
+	else // to left
+		%carry = %this.increase(%this.selected, %this.mapCount-1, 0);
+	
+	for (%i=0; %i<%this.mapCount; %i++)
+	{
+		%v = 1; %h = 0;
+		if (%i == %sel) 
+		{
+			%v = 0; %h = 1;
+		}
+
+		%this.controls[%i, %h].setVisible(false);
+		%this.controls[%i, %v].setVisible(true);
+
+		if (%carry == %i)
+		{
+			if (%dir == 1) // to right
+			{
+				%this.controls[%i, %v].setTweenPosition(599, 0);
+				%this.controls[%i, %h].setPosition(%this.pos[0], 0);
+			}
+			else // to left
+			{
+				%this.controls[%i, %v].setTweenPosition(-319, 0);
+				%this.controls[%i, %h].setPosition(%this.pos[2], 0);
+			}
+			%this.controls[%i, %v].speed = 0.1;
+		}
+		else
+		{
+			%x = %this.pos[%i == %sel ? 1 : (%i == %left ? 0 : 2)];
+			%this.controls[%i, %v].setTweenPosition(%x, 0);
+			%this.controls[%i, %h].setPosition(%x, 0);
+			%this.controls[%i, %v].speed = 0.04375;
+		}
+		
+		%this.controls[%i, %v].startTween();
+	}
+	
+	Selector_MapName.setText(%this.titles[%sel]);
+	Selector_MapDesc.setText(%this.desc[%sel]);
+}
+
+// cyclic increase
+function MapSelectorGui::increase(%this, %val, %max, %min)
+{
+	%val++;
+	if (%val > %max) %val = %min;
+	return %val;
+}
+
+// cyclic decrease
+function MapSelectorGui::decrease(%this, %val, %max, %min)
+{
+	%val--;
+	if (%val < %min) %val = %max;
+	return %val;
+}
+
+function GuiTweenBitmapCtrl::onCompleted(%this)
+{
+	%x = firstWord(%this.getPosition());
+	if (%x == MapSelectorGui.pos[1])
+	{
+		MapSelectorGui.acceptCmd = true;
+	}
+	else if (%x == -319)
+	{
+		%this.setPosition(599, 0);
+		%this.setTweenPosition(460, 0);
+		%this.speed = 0.1;
+		%this.startTween();
+	}
+	else if (%x == 599)
+	{
+		%this.setPosition(-319, 0);
+		%this.setTweenPosition(-180, 0);
+		%this.speed = 0.1;
+		%this.startTween();
+	}
+}
+
+function MapSelectorGui::select(%this)
+{
+	Canvas.popDialog(%this);
+	LuckyStarClient.loadMission(%this.gameMode, %this.maps[%this.selected]);
+}

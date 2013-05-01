@@ -1,0 +1,13 @@
+/**
+	Torque source file specs.
+*/
+(
+{
+  Identifier = sourcecode.torque;
+  BasedOn = sourcecode;
+  Extensions = (cs, gui, mis);
+  MIMETypes = ("text/torquescript");
+  ComputerLanguage = torque;
+  IsTextFile = YES;
+}
+)

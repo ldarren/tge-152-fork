@@ -1,0 +1,136 @@
+First pass:  enumerate scene...
+
+Processing Node Bounds with parent ROOT
+Bounding box found
+Processing Node Sequence::green with parent ROOT
+Processing Node Sequence::yellow with parent ROOT
+Processing Node Sequence::red with parent ROOT
+Processing Node __mainTree with parent ROOT
+Found subtree starting at Node "__mainTree"
+
+Second pass:  put shape structure together...
+
+Adding detail named "detail0" of size 0 to subtree "__mainTree".
+Adding node "__mainTree" with parent "__mainTree" to subtree rooted on node "__mainTree".
+Adding node "__meshes" with parent "__mainTree" to subtree rooted on node "__mainTree".
+Adding node "trafficLight0" with parent "__meshes" to subtree rooted on node "__mainTree".
+Attaching object to node.
+Adding object named "trafficLight".
+Adding mesh of size 0 to object "trafficLight".
+Adding node "mountPoint" with parent "__meshes" to subtree rooted on node "__mainTree".
+Adding node "Root" with parent "__meshes" to subtree rooted on node "__mainTree".
+
+Third pass:  Collapsing unneeded nodes...
+
+Removing node "__mainTree"
+Removing node "__meshes"
+
+Add default object states...
+
+Adding object state to 1 detail level(s) of mesh "trafficLight".
+Adding frame.
+Object is visible.
+Object offset transform for mesh dl=0:
+    scale:            x=1.00000, y=1.00000, z=1.00000
+    stretch rotation: x=0.00000, y=0.00000, z=0.00000, w=1.00000
+    translation:      x=0.00000, y=0.00000, z=0.00000
+    actual rotation:  x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+
+Add default node states...
+
+Adding node rotation at time 0.000000 for node "trafficLight0".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0.000000 for node "trafficLight0".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+Adding node rotation at time 0.000000 for node "mountPoint".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0.000000 for node "mountPoint".
+  translation:     x=0.00000, y=-0.00238, z=0.00000
+---------------------------------
+Adding node rotation at time 0.000000 for node "Root".
+  rotation:     x=0.00000, y=0.00000, z=0.00000, w=1.00000
+---------------------------------
+Adding node translation at time 0.000000 for node "Root".
+  translation:     x=0.00000, y=0.00000, z=0.00000
+---------------------------------
+
+Adding 1 ifl materials...
+
+Adding ifl material "trafficLight.ifl".
+
+Adding 3 sequences...
+
+Adding sequence 0 named "green"
+Enabled animation:   TUAI   , Forced animation:  Duration = 0.23333, secPerFrame = 0.03333, # frames = 7
+Sequence includes 0 nodes, 0 objects, and 0 ifl materials
+  0 rotations, 0 translations, 0 scales
+
+
+Adding 3 ground transform frames at 0.116667 sec per frame intervals.
+
+Ground transform frame:
+   trans=(0.000000,0.000000,0.000000)
+   rot=(0.000000,0.000000,0.000000,1.000000)
+Ground transform frame:
+   trans=(0.000000,0.000000,0.000000)
+   rot=(0.000000,0.000000,0.000000,1.000000)
+Adding sequence 1 named "yellow"
+Enabled animation:   TUAI   , Forced animation:  Duration = 0.26667, secPerFrame = 0.03333, # frames = 8
+Sequence includes 0 nodes, 0 objects, and 1 ifl materials
+  0 rotations, 0 translations, 0 scales
+
+
+Adding 3 ground transform frames at 0.133333 sec per frame intervals.
+
+Ground transform frame:
+   trans=(0.000000,0.000000,0.000000)
+   rot=(0.000000,0.000000,0.000000,1.000000)
+Ground transform frame:
+   trans=(0.000000,0.000000,0.000000)
+   rot=(0.000000,0.000000,0.000000,1.000000)
+Adding sequence 2 named "red"
+Enabled animation:   TUAI   , Forced animation:  Duration = 0.26667, secPerFrame = 0.03333, # frames = 8
+Sequence includes 0 nodes, 0 objects, and 1 ifl materials
+  0 rotations, 0 translations, 0 scales
+
+
+Adding 3 ground transform frames at 0.133333 sec per frame intervals.
+
+Ground transform frame:
+   trans=(0.000000,0.000000,0.000000)
+   rot=(0.000000,0.000000,0.000000,1.000000)
+Ground transform frame:
+   trans=(0.000000,0.000000,0.000000)
+   rot=(0.000000,0.000000,0.000000,1.000000)
+
+Optimizing meshes...
+
+Optimizing mesh "trafficLight" detail level 0.
+26 verts before joining verts
+26 verts after joining verts
+12 faces before stripping
+Using Quick, dirty, & ugly stripping method.
+7 strips with average length 3.71 (range 3 to 4) and 0 reversals
+
+Shape Hierarchy:
+
+   Details:
+      detail0, Subtree 0, objectDetail 0, size 0
+
+   Subtrees:
+      Subtree 0
+         trafficLight0 --> Object trafficLight with following details:  0
+         mountPoint
+         Root
+
+   Sequences:
+        0: green
+        1: yellow
+        2: red
+
+   Material list:
+   material #0: "trafficLight.ifl".  Place holder for ifl.

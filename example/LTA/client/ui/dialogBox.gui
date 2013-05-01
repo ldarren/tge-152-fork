@@ -1,0 +1,77 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(DialogBoxGui) {
+   canSaveDynamicFields = "0";
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   position = "0 0";
+   Extent = "800 600";
+   MinExtent = "8 2";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+
+   new GuiBitmapCtrl(DialogBox) {
+      canSaveDynamicFields = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      position = "260 237";
+      Extent = "280 125";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      Command = "echo(\"Insert a command here\")";
+      hovertime = "1000";
+      bitmap = "./pictures/windows/MessageBox";
+      wrap = "0";
+
+      new GuiTextCtrl(DialogBoxText) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiTextProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "45 30";
+         Extent = "70 18";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         text = "Exit the game?";
+         maxLength = "1024";
+      };
+      new GuiBitmapButtonCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "LTAGuiButtonProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "137 70";
+         Extent = "62 31";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "DialogBoxOkClicked();";
+         hovertime = "1000";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./pictures/buttons/ok";
+      };
+      new GuiBitmapButtonCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "LTAGuiButtonProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "195 70";
+         Extent = "62 31";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "Canvas.popDialog(DialogBoxGui);";
+         hovertime = "1000";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./pictures/buttons/cancle";
+      };
+   };
+};
+//--- OBJECT WRITE END ---

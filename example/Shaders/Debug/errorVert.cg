@@ -1,0 +1,16 @@
+struct AppData
+{
+   float4 Position : POSITION;
+};
+
+struct VertexOutput
+{
+   float4 HPosition : POSITION;
+};
+
+VertexOutput main(AppData IN, uniform float4x4 ModelViewProj)
+{
+   VertexOutput OUT;
+   OUT.HPosition = mul(ModelViewProj, IN.Position);
+   return OUT;
+}

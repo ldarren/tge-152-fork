@@ -1,0 +1,425 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(gsBitmapButton) {
+   profile = "gsDefaultProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "1024 768";
+   minExtent = "8 8";
+   visible = "1";
+      Parent = "GUISamplerInterface";
+
+   new GuiChunkedBitmapCtrl() {
+      profile = "gsDefaultProfile";
+      horizSizing = "width";
+      vertSizing = "height";
+      position = "0 0";
+      extent = "1024 768";
+      minExtent = "8 2";
+      visible = "1";
+      bitmap = $SA::Background1;
+      useVariable = "0";
+      tile = "0";
+
+      new GuiBitmapButtonCtrl(guiSamplerLeft) {
+         profile = "gpgtButtonProfile1";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         position = "160 672";
+         extent = "96 96";
+         minExtent = "8 2";
+         visible = "1";
+         command = "Canvas.setContent(Canvas.getContent().Parent);";
+         accelerator = "escape";
+         text = "Button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "~/client/sharedAssets/button0/leftButton0";
+      };
+      new GuiControl(cont) {
+         profile = "gsDefaultProfile";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         position = "128 128";
+         extent = "768 512";
+         minExtent = "8 2";
+         visible = "1";
+
+         new GuiControl() {
+            profile = "gsDefaultProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "90 46";
+            extent = "633 250";
+            minExtent = "8 2";
+            visible = "1";
+
+            new GuiTextCtrl() {
+               profile = "GuiTextProfile";
+               horizSizing = "center";
+               vertSizing = "top";
+               position = "218 217";
+               extent = "197 18";
+               minExtent = "8 2";
+               visible = "1";
+               text = "Try these!! (select a button theme below)";
+               maxLength = "255";
+            };
+            new GuiControl() {
+               profile = "gsDefaultProfile";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "6 32";
+               extent = "121 137";
+               minExtent = "8 2";
+               visible = "1";
+
+               new GuiBitmapButtonCtrl(TestBitmapPushButton) {
+                  profile = "gsDefaultProfile";
+                  horizSizing = "relative";
+                  vertSizing = "relative";
+                  position = "20 28";
+                  extent = "80 80";
+                  minExtent = "8 2";
+                  visible = "1";
+                  accelerator = "ALT P";
+                  text = "TestBitmapPushButton";
+                  groupNum = "-1";
+                  buttonType = "PushButton";
+                  bitmap = "./howlogoSquare300";
+               };
+               new GuiTextCtrl() {
+                  profile = "GuiTextProfile";
+                  horizSizing = "center";
+                  vertSizing = "top";
+                  position = "46 114";
+                  extent = "29 18";
+                  minExtent = "8 2";
+                  visible = "1";
+                  text = "ALT P";
+                  maxLength = "255";
+               };
+               new GuiTextCtrl() {
+                  profile = "GuiTextProfile";
+                  horizSizing = "center";
+                  vertSizing = "bottom";
+                  position = "31 5";
+                  extent = "58 18";
+                  minExtent = "8 2";
+                  visible = "1";
+                  text = "Push Button";
+                  maxLength = "255";
+               };
+            };
+            new GuiControl() {
+               profile = "gsDefaultProfile";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "134 32";
+               extent = "122 137";
+               minExtent = "8 2";
+               visible = "1";
+
+               new GuiBitmapButtonCtrl(TestBitmapToggleButton) {
+                  profile = "gsDefaultProfile";
+                  horizSizing = "relative";
+                  vertSizing = "relative";
+                  position = "20 28";
+                  extent = "80 80";
+                  minExtent = "8 2";
+                  visible = "1";
+                  accelerator = "CTRL T";
+                  text = "TestBitmapToggleButton";
+                  groupNum = "-1";
+                  buttonType = "ToggleButton";
+                  bitmap = "./howlogoSquare300";
+               };
+               new GuiTextCtrl() {
+                  profile = "GuiTextProfile";
+                  horizSizing = "center";
+                  vertSizing = "top";
+                  position = "43 114";
+                  extent = "35 18";
+                  minExtent = "8 2";
+                  visible = "1";
+                  text = "CTRL T";
+                  maxLength = "255";
+               };
+               new GuiTextCtrl() {
+                  profile = "GuiTextProfile";
+                  horizSizing = "center";
+                  vertSizing = "bottom";
+                  position = "28 5";
+                  extent = "66 18";
+                  minExtent = "8 2";
+                  visible = "1";
+                  text = "Toggle Button";
+                  maxLength = "255";
+               };
+            };
+            new GuiControl() {
+               profile = "gsDefaultProfile";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "264 32";
+               extent = "351 137";
+               minExtent = "8 2";
+               visible = "1";
+
+               new GuiBitmapButtonCtrl(TestBitmapRadioButton0) {
+                  profile = "gsDefaultProfile";
+                  horizSizing = "relative";
+                  vertSizing = "relative";
+                  position = "22 28";
+                  extent = "80 80";
+                  minExtent = "8 2";
+                  visible = "1";
+                  accelerator = "1";
+                  text = "TestBitmapRadioButton0";
+                  groupNum = "2";
+                  buttonType = "RadioButton";
+                  bitmap = "./howlogoSquare300";
+               };
+               new GuiBitmapButtonCtrl(TestBitmapRadioButton1) {
+                  profile = "gsDefaultProfile";
+                  horizSizing = "relative";
+                  vertSizing = "relative";
+                  position = "135 28";
+                  extent = "80 80";
+                  minExtent = "8 2";
+                  visible = "1";
+                  accelerator = "2";
+                  text = "TestBitmapRadioButton1";
+                  groupNum = "2";
+                  buttonType = "RadioButton";
+                  bitmap = "./howlogoSquare300";
+               };
+               new GuiBitmapButtonCtrl(TestBitmapRadioButton2) {
+                  profile = "gsDefaultProfile";
+                  horizSizing = "relative";
+                  vertSizing = "relative";
+                  position = "249 28";
+                  extent = "80 80";
+                  minExtent = "8 2";
+                  visible = "1";
+                  accelerator = "3";
+                  text = "TestBitmapRadioButton2";
+                  groupNum = "2";
+                  buttonType = "RadioButton";
+                  bitmap = "./howlogoSquare300";
+               };
+               new GuiTextCtrl() {
+                  profile = "GuiTextProfile";
+                  horizSizing = "left";
+                  vertSizing = "top";
+                  position = "285 112";
+                  extent = "8 18";
+                  minExtent = "8 2";
+                  visible = "1";
+                  text = "3";
+                  maxLength = "255";
+               };
+               new GuiTextCtrl() {
+                  profile = "GuiTextProfile";
+                  horizSizing = "right";
+                  vertSizing = "top";
+                  position = "59 112";
+                  extent = "8 18";
+                  minExtent = "8 2";
+                  visible = "1";
+                  text = "1";
+                  maxLength = "255";
+               };
+               new GuiTextCtrl() {
+                  profile = "GuiTextProfile";
+                  horizSizing = "center";
+                  vertSizing = "top";
+                  position = "171 112";
+                  extent = "8 18";
+                  minExtent = "8 2";
+                  visible = "1";
+                  text = "2";
+                  maxLength = "255";
+               };
+               new GuiTextCtrl() {
+                  profile = "GuiTextProfile";
+                  horizSizing = "center";
+                  vertSizing = "bottom";
+                  position = "142 5";
+                  extent = "67 18";
+                  minExtent = "8 2";
+                  visible = "1";
+                  text = "Radio Buttons";
+                  maxLength = "255";
+               };
+            };
+         };
+         new GuiControl() {
+            profile = "gsDefaultProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "90 321";
+            extent = "121 141";
+            minExtent = "8 2";
+            visible = "1";
+
+            new GuiBitmapButtonCtrl(BitmapButtonActivator) {
+               profile = "gsDefaultProfile";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "20 30";
+               extent = "80 80";
+               minExtent = "8 2";
+               visible = "1";
+               command = "$thisControl.toggleButtonsActive();";
+               text = "BitmapButtonActivator";
+               groupNum = "-1";
+               buttonType = "ToggleButton";
+               bitmap = "./howlogoSquare300";
+            };
+            new GuiTextCtrl() {
+               profile = "GuiTextProfile";
+               horizSizing = "center";
+               vertSizing = "bottom";
+               position = "11 5";
+               extent = "99 18";
+               minExtent = "8 2";
+               visible = "1";
+               text = "(De)activate Buttons";
+               maxLength = "255";
+            };
+         };
+         new GuiControl() {
+            profile = "gsDefaultProfile";
+            horizSizing = "relative";
+            vertSizing = "relative";
+            position = "266 321";
+            extent = "457 141";
+            minExtent = "8 2";
+            visible = "1";
+
+            new GuiBitmapButtonCtrl(ChangeBitmapButtonTheme) {
+               profile = "gsDefaultProfile";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "10 30";
+               extent = "80 80";
+               minExtent = "8 2";
+               visible = "1";
+               accelerator = "F5";
+               text = "Button";
+               groupNum = "1";
+               buttonType = "RadioButton";
+               bitmap = "./gglogo";
+                  logoPath = "gpgt/GUISamples/Vol1/gs_BitmapButton/gglogo";
+                  theme = "gglogo";
+            };
+            new GuiBitmapButtonCtrl(ChangeBitmapButtonTheme) {
+               profile = "gsDefaultProfile";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "121 30";
+               extent = "80 80";
+               minExtent = "8 2";
+               visible = "1";
+               accelerator = "F6";
+               text = "Button";
+               groupNum = "1";
+               buttonType = "RadioButton";
+               bitmap = "./howlogoSquare300";
+                  logoPath = "gpgt/GUISamples/Vol1/gs_BitmapButton/howlogoSquare300";
+                  theme = "howlogoSquare300";
+            };
+            new GuiBitmapButtonCtrl(ChangeBitmapButtonTheme) {
+               profile = "gsDefaultProfile";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "235 30";
+               extent = "80 80";
+               minExtent = "8 2";
+               visible = "1";
+               accelerator = "F7";
+               text = "Button";
+               groupNum = "1";
+               buttonType = "RadioButton";
+               bitmap = "./howlogoSquare300";
+                  logoPath = "gpgt/GUISamples/Vol1/gs_BitmapButton/howlogoSquare300";
+                  theme = "howlogoSquare300";
+            };
+            new GuiBitmapButtonCtrl(ChangeBitmapButtonTheme) {
+               profile = "gsDefaultProfile";
+               horizSizing = "relative";
+               vertSizing = "relative";
+               position = "343 30";
+               extent = "80 80";
+               minExtent = "8 2";
+               visible = "1";
+               accelerator = "F8";
+               text = "Button";
+               groupNum = "1";
+               buttonType = "RadioButton";
+               bitmap = "./howlogoSquare300";
+                  logoPath = "gpgt/GUISamples/Vol1/gs_BitmapButton/sleeperslogo";
+                  theme = "howlogoSquare300";
+            };
+            new GuiTextCtrl() {
+               profile = "GuiTextProfile";
+               horizSizing = "center";
+               vertSizing = "bottom";
+               position = "179 5";
+               extent = "99 18";
+               minExtent = "8 2";
+               visible = "1";
+               text = "Select Button Theme";
+               maxLength = "255";
+            };
+            new GuiTextCtrl() {
+               profile = "GuiTextProfile";
+               horizSizing = "relative";
+               vertSizing = "top";
+               position = "42 111";
+               extent = "12 18";
+               minExtent = "8 2";
+               visible = "1";
+               text = "F5";
+               maxLength = "255";
+            };
+            new GuiTextCtrl() {
+               profile = "GuiTextProfile";
+               horizSizing = "relative";
+               vertSizing = "top";
+               position = "155 111";
+               extent = "12 18";
+               minExtent = "8 2";
+               visible = "1";
+               text = "F6";
+               maxLength = "255";
+            };
+            new GuiTextCtrl() {
+               profile = "GuiTextProfile";
+               horizSizing = "relative";
+               vertSizing = "top";
+               position = "267 111";
+               extent = "12 18";
+               minExtent = "8 2";
+               visible = "1";
+               text = "F7";
+               maxLength = "255";
+            };
+            new GuiTextCtrl() {
+               profile = "GuiTextProfile";
+               horizSizing = "relative";
+               vertSizing = "top";
+               position = "376 111";
+               extent = "12 18";
+               minExtent = "8 2";
+               visible = "1";
+               text = "F5";
+               maxLength = "255";
+            };
+         };
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+

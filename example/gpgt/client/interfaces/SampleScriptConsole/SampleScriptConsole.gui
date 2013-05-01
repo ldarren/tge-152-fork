@@ -1,0 +1,348 @@
+
+if(!isObject(ScriptInProfile)) new GuiControlProfile (ScriptInProfile : GuiMLTextEditProfile) 
+{ 
+   fontType      = ($platform $= "macos") ? "Monaco" : "Lucida Console";
+   fontSize      = ($platform $= "macos") ? 14 : 14;
+};
+
+new GuiControlProfile (ssc_BackFill)
+{
+   opaque = true;
+   fillColor = "128 200 128 128";
+   border = true;
+   borderColor = "64 64 255";
+   fontType = "Arial";
+   fontSize = 12;
+   fontColor = "0 0 0";
+   fontColorHL = "32 100 100";
+   fixedExtent = true;
+   justify = "center";
+};
+
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(SampleScriptConsole) {
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   position = "0 0";
+   Extent = "800 600";
+   MinExtent = "8 2";
+   Visible = "1";
+
+   new GuiChunkedBitmapCtrl() {
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "0 0";
+      Extent = "800 600";
+      MinExtent = "8 2";
+      Visible = "1";
+      bitmap = "~/client/sharedAssets/Background1.png";
+      useVariable = "0";
+      tile = "0";
+
+      new GuiControl() {
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "relative";
+         VertSizing = "relative";
+         position = "20 20";
+         Extent = "760 560";
+         MinExtent = "8 2";
+         Visible = "1";
+
+         new GuiFrameSetCtrl() {
+            Profile = "GuiDefaultProfile";
+            HorizSizing = "relative";
+            VertSizing = "relative";
+            position = "0 0";
+            Extent = "760 560";
+            MinExtent = "8 2";
+            Visible = "1";
+            columns = "0";
+            rows = "0 540";
+            borderWidth = "4";
+            borderColor = "149 149 149 255";
+            borderEnable = "alwaysOn";
+            borderMovable = "alwaysOn";
+            autoBalance = "0";
+            fudgeFactor = "0";
+
+            new GuiFrameSetCtrl() {
+               Profile = "GuiDefaultProfile";
+               HorizSizing = "relative";
+               VertSizing = "relative";
+               position = "0 0";
+               Extent = "760 436";
+               MinExtent = "8 2";
+               Visible = "1";
+               columns = "0 382";
+               rows = "0";
+               borderWidth = "4";
+               borderColor = "149 149 149 255";
+               borderEnable = "alwaysOn";
+               borderMovable = "alwaysOn";
+               autoBalance = "1";
+               fudgeFactor = "0";
+
+               new GuiScrollCtrl() {
+                  Profile = "GuiScrollProfile";
+                  HorizSizing = "relative";
+                  VertSizing = "relative";
+                  position = "0 0";
+                  Extent = "378 436";
+                  MinExtent = "8 2";
+                  Visible = "1";
+                  willFirstRespond = "1";
+                  hScrollBar = "alwaysOn";
+                  vScrollBar = "alwaysOn";
+                  constantThumbHeight = "0";
+                  childMargin = "0 0";
+
+                  new GuiMLTextEditCtrl(ScriptIn) {
+                     Profile = "ScriptInProfile";
+                     HorizSizing = "width";
+                     VertSizing = "height";
+                     position = "2 2";
+                     Extent = "316 436";
+                     MinExtent = "8 2";
+                     Visible = "1";
+                     lineSpacing = "2";
+                     allowColorChars = "0";
+                     maxChars = "-1";
+                  };
+               };
+               new GuiScrollCtrl() {
+                  Profile = "GuiScrollProfile";
+                  HorizSizing = "relative";
+                  VertSizing = "relative";
+                  position = "382 0";
+                  Extent = "378 436";
+                  MinExtent = "8 2";
+                  Visible = "1";
+                  willFirstRespond = "1";
+                  hScrollBar = "alwaysOn";
+                  vScrollBar = "alwaysOn";
+                  constantThumbHeight = "0";
+                  childMargin = "0 0";
+
+                  new GuiConsole(ssConsole) {
+                     Profile = "GuiConsoleProfile";
+                     HorizSizing = "right";
+                     VertSizing = "bottom";
+                     position = "2 2";
+                     Extent = "400 400";
+                     MinExtent = "8 2";
+                     Visible = "1";
+                  };
+               };
+            };
+            new GuiFrameSetCtrl() {
+               Profile = "GuiDefaultProfile";
+               HorizSizing = "relative";
+               VertSizing = "relative";
+               position = "0 540";
+               Extent = "760 120";
+               MinExtent = "8 2";
+               Visible = "1";
+               columns = "0";
+               rows = "0";
+               borderWidth = "4";
+               borderColor = "149 149 149 255";
+               borderEnable = "alwaysOn";
+               borderMovable = "alwaysOn";
+               autoBalance = "0";
+               fudgeFactor = "0";
+
+               new GuiControl() {
+                  Profile = "GuiDefaultProfile";
+                  HorizSizing = "center";
+                  VertSizing = "center";
+                  position = "0 0";
+                  Extent = "760 120";
+                  MinExtent = "8 2";
+                  Visible = "1";
+
+                  new GuiControl() {
+                     Profile = "ssc_BackFill";
+                     HorizSizing = "center";
+                     VertSizing = "center";
+                     position = "100 20";
+                     Extent = "560 80";
+                     MinExtent = "8 2";
+                     Visible = "1";
+
+                     new GuiButtonCtrl() {
+                        Profile = "GuiButtonProfile";
+                        HorizSizing = "right";
+                        VertSizing = "top";
+                        position = "491 12";
+                        Extent = "50 24";
+                        MinExtent = "8 2";
+                        Visible = "1";
+                        Command = "cls();";
+                        text = "cls()";
+                        groupNum = "-1";
+                        buttonType = "PushButton";
+                     };
+                     new GuiButtonCtrl() {
+                        Profile = "GuiButtonProfile";
+                        HorizSizing = "right";
+                        VertSizing = "top";
+                        position = "134 12";
+                        Extent = "60 24";
+                        MinExtent = "8 2";
+                        Visible = "1";
+                        Command = "ScriptIn.ExecuteCode();";
+                        text = "Execute";
+                        groupNum = "-1";
+                        buttonType = "PushButton";
+                     };
+                     new GuiButtonCtrl() {
+                        Profile = "GuiButtonProfile";
+                        HorizSizing = "right";
+                        VertSizing = "top";
+                        position = "133 42";
+                        Extent = "60 24";
+                        MinExtent = "8 2";
+                        Visible = "1";
+                        Command = "ScriptIn.ShowCode();";
+                        text = "Echo Input";
+                        groupNum = "-1";
+                        buttonType = "PushButton";
+                     };
+                     new GuiButtonCtrl() {
+                        Profile = "GuiButtonProfile";
+                        HorizSizing = "right";
+                        VertSizing = "top";
+                        position = "304 12";
+                        Extent = "60 24";
+                        MinExtent = "8 2";
+                        Visible = "1";
+                        Command = "getLoadFilename(\"*.cs\", loadSampleScript);";
+                        text = "Load";
+                        groupNum = "-1";
+                        buttonType = "PushButton";
+                     };
+                     new GuiButtonCtrl() {
+                        Profile = "GuiButtonProfile";
+                        HorizSizing = "right";
+                        VertSizing = "top";
+                        position = "373 12";
+                        Extent = "60 24";
+                        MinExtent = "8 2";
+                        Visible = "1";
+                        Command = "getSaveFilename(\"*.cs\", saveSampleScript);";
+                        text = "Save";
+                        groupNum = "-1";
+                        buttonType = "PushButton";
+                     };
+                     new GuiButtonCtrl() {
+                        Profile = "GuiButtonProfile";
+                        HorizSizing = "right";
+                        VertSizing = "top";
+                        position = "203 42";
+                        Extent = "60 24";
+                        MinExtent = "8 2";
+                        Visible = "1";
+                        Command = "scriptin.setvalue(\"\");";
+                        text = "Clear Input";
+                        groupNum = "-1";
+                        buttonType = "PushButton";
+                     };
+                     new GuiButtonCtrl() {
+                        Profile = "GuiButtonProfile";
+                        HorizSizing = "right";
+                        VertSizing = "top";
+                        position = "491 42";
+                        Extent = "50 24";
+                        MinExtent = "8 2";
+                        Visible = "1";
+                        Command = "canvas.popdialog(SampleScriptConsole);";
+                        Accelerator = "escape";
+                        text = "Close";
+                        groupNum = "-1";
+                        buttonType = "PushButton";
+                     };
+                     new GuiCheckBoxCtrl(autoclear) {
+                        Profile = "GuiCheckBoxProfile";
+                        HorizSizing = "right";
+                        VertSizing = "bottom";
+                        position = "26 6";
+                        Extent = "90 21";
+                        MinExtent = "8 2";
+                        Visible = "1";
+                        text = " auto-clear";
+                        groupNum = "-1";
+                        buttonType = "ToggleButton";
+                     };
+                     new GuiCheckBoxCtrl(autoexecute) {
+                        Profile = "GuiCheckBoxProfile";
+                        HorizSizing = "right";
+                        VertSizing = "bottom";
+                        position = "26 29";
+                        Extent = "90 21";
+                        MinExtent = "8 2";
+                        Visible = "1";
+                        text = " auto-execute";
+                        groupNum = "-1";
+                        buttonType = "ToggleButton";
+                     };
+                     new GuiCheckBoxCtrl(quieter) {
+                        Profile = "GuiCheckBoxProfile";
+                        HorizSizing = "right";
+                        VertSizing = "bottom";
+                        position = "26 52";
+                        Extent = "90 21";
+                        MinExtent = "8 2";
+                        Visible = "1";
+                        text = " quieter";
+                        groupNum = "-1";
+                        buttonType = "ToggleButton";
+                     };
+                     new GuiButtonCtrl() {
+                        Profile = "GuiButtonProfile";
+                        HorizSizing = "right";
+                        VertSizing = "top";
+                        position = "373 42";
+                        Extent = "60 24";
+                        MinExtent = "8 2";
+                        Visible = "1";
+                        Command = "loadNextSampleScript();";
+                        text = "Next >>";
+                        groupNum = "-1";
+                        buttonType = "PushButton";
+                     };
+                     new GuiButtonCtrl() {
+                        Profile = "GuiButtonProfile";
+                        HorizSizing = "right";
+                        VertSizing = "top";
+                        position = "304 42";
+                        Extent = "60 24";
+                        MinExtent = "8 2";
+                        Visible = "1";
+                        Command = "loadPrevSampleScript();";
+                        text = "<< Prev";
+                        groupNum = "-1";
+                        buttonType = "PushButton";
+                     };
+                     new GuiButtonCtrl() {
+                        Profile = "GuiButtonProfile";
+                        HorizSizing = "right";
+                        VertSizing = "top";
+                        position = "204 12";
+                        Extent = "60 24";
+                        MinExtent = "8 2";
+                        Visible = "1";
+                        Command = "ScriptIn.EvalCode();";
+                        text = "Eval";
+                        groupNum = "-1";
+                        buttonType = "PushButton";
+                     };
+                  };
+               };
+            };
+         };
+      };
+   };
+};
+//--- OBJECT WRITE END ---

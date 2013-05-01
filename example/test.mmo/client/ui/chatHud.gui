@@ -1,0 +1,142 @@
+//-----------------------------------------------------------------------------
+// Chat edit window
+//-----------------------------------------------------------------------------
+
+new GuiControl(MessageHud)
+{
+   profile = "GuiDefaultProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "640 480";
+   minExtent = "8 8";
+   visible = "0";
+   noCursor = true;
+
+   new GuiBitmapBorderCtrl(MessageHud_Frame) {
+      profile = "ChatHudBorderProfile";
+      horizSizing = "right";
+      vertSizing = "bottom";
+      position = "120 375";
+      extent = "400 40";
+      minExtent = "8 8";
+      visible = "1";
+
+      new GuiBitmapCtrl() {
+         profile = "GuiDefaultProfile";
+         horizSizing = "width";
+         vertSizing = "height";
+         position = "8 8";
+         extent = "384 24";
+         minExtent = "8 8";
+         visible = "1";
+         helpTag = "0";
+         bitmap = "./transit/hudfill";
+         wrap = "0";
+      };
+
+      new GuiTextCtrl(MessageHud_Text)
+      {
+         profile = "ChatHudTextProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "14 12";
+         extent = "10 22";
+         minExtent = "8 8";
+         visible = "1";
+      };
+
+      new GuiTextEditCtrl(MessageHud_Edit)
+      {
+         profile = "ChatHudEditProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "0 13";
+         extent = "10 22";
+         minExtent = "8 8";
+         visible = "1";
+         altCommand = "$ThisControl.eval();";
+         escapeCommand = "MessageHud_Edit.onEscape();";
+         historySize = "5";
+         maxLength = "120";
+      };
+   };
+};
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(MessageHud) {
+   canSaveDynamicFields = "0";
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "width";
+   VertSizing = "height";
+   Position = "0 0";
+   Extent = "1024 768";
+   MinExtent = "8 8";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+   useVariable = "0";
+   tile = "0";
+
+   new GuiBitmapBorderCtrl(MessageHud_Frame) {
+      canSaveDynamicFields = "0";
+      Profile = "ChatHudBorderProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      Position = "0 73";
+      Extent = "512 40";
+      MinExtent = "8 8";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+
+      new GuiBitmapCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "width";
+         VertSizing = "height";
+         Position = "8 8";
+         Extent = "500 24";
+         MinExtent = "8 8";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         bitmap = "./transit/hudfill";
+         wrap = "0";
+      };
+      new GuiTextCtrl(MessageHud_Text) {
+         canSaveDynamicFields = "0";
+         Profile = "ChatHudTextProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "14 12";
+         Extent = "46 18";
+         MinExtent = "8 8";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         text = "GLOBAL:";
+         maxLength = "1024";
+      };
+      new GuiTextEditCtrl(MessageHud_Edit) {
+         canSaveDynamicFields = "0";
+         Profile = "ChatHudEditProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "66 13";
+         Extent = "420 18";
+         MinExtent = "8 8";
+         canSave = "1";
+         Visible = "1";
+         AltCommand = "$ThisControl.eval();";
+         hovertime = "1000";
+         maxLength = "120";
+         escapeCommand = "MessageHud_Edit.onEscape();";
+         historySize = "5";
+         tabComplete = "0";
+         sinkAllKeyEvents = "0";
+         password = "0";
+         passwordMask = "*";
+      };
+   };
+};
+//--- OBJECT WRITE END ---

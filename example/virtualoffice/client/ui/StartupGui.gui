@@ -1,0 +1,49 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiFadeinBitmapCtrl(StartupGui) {
+   Profile = "GuiInputCtrlProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   position = "0 0";
+   Extent = "640 480";
+   MinExtent = "8 8";
+   Visible = "1";
+   bitmap = "./mygowars";
+   wrap = "0";
+   fadeinTime = "125";
+   waitTime = "3000";
+   fadeoutTime = "125";
+   done = "1";
+      helpTag = "0";
+};
+//--- OBJECT WRITE END ---
+
+function loadStartup()
+{
+   StartupGui.done = false;
+   Canvas.setContent( StartupGui );
+   schedule(100, 0, checkStartupDone );
+   $IntroMusicHandle = alxPlay(AudioStartup);
+}
+   
+
+//-------------------------------------
+function StartupGui::click()
+{
+   StartupGui.done = true;
+	alxStop($IntroMusicHandle);
+}
+
+
+//-------------------------------------
+function checkStartupDone()
+{
+   if (StartupGui.done)
+   {
+   	  echo ("*** Load Main Menu");
+      schedule(300, 0, loadMainMenu);
+		schedule(300, 0, 'alxStop', $IntroMusicHandle);
+   }
+   else
+      schedule(100, 0, checkStartupDone );
+}
+

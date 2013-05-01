@@ -1,0 +1,32 @@
+<just:center>
+<color:FFFFFF><spush><just:center>
+<br><br>
+<font:Comic Sans:40><color:b10028><shadowcolor:001a69><shadow:1:1>My Big Game<spop><br><br>
+<font:Palatino LinoType:36>Plaground Productions <br><br>
+
+<tab: 300, 300>
+<just:left>
+<spush><font:Arial Bold:18> Written by: Edward F. Maurina III	
+<color:b09100><shadowcolor:dddddd><shadow:1:1>Hall Of Worlds, LLC<br><br>
+<spop>
+
+<just:left>
+<spush><font:Arial Bold:18> Brought to you by: GG Press (tm)		
+<color:b09100><shadowcolor:cccccc><shadow:1:1>Garage Games<br><br>
+<spop>
+
+<br><br><font:Arial Bold:16>
+<spush>
+<lmargin%:1>I just want to thank...<br><br>
+
+<tab: 150, 300>
+
+My Wife Teresa...<br><br>
+The Staff at Garage Games, and...and...sniff...	<br><br>
+You the customer...for making this possible... :)<br><br>
+
+<br><br><br><br><br><br>
+
+<spush><just:center>(Escape for Main Menu)<spop>
+<spop>
+

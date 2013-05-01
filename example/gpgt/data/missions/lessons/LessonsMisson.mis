@@ -1,0 +1,98 @@
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+   canSaveDynamicFields = "1";
+      isLessonsMission = "1";
+
+   new ScriptObject(MissionInfo) {
+         desc2 = "concepts. ";
+         desc0 = "This is a base mission used to ";
+         desc1 = "demonstrate various lesson  ";
+         name = "3D Lessons";
+   };
+   new MissionArea(MissionArea) {
+      canSaveDynamicFields = "1";
+      Area = "-808 -824 1616 1648";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      canSaveDynamicFields = "1";
+      position = "-1040 -680 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      materialList = "~/data/GPGTBase/skies/sky_day.dml";
+      cloudHeightPer[0] = "0";
+      cloudHeightPer[1] = "0.25";
+      cloudHeightPer[2] = "0.199973";
+      cloudSpeed1 = "0.0002";
+      cloudSpeed2 = "0.0004";
+      cloudSpeed3 = "0.0006";
+      visibleDistance = "2500";
+      fogDistance = "1000";
+      fogColor = "0.82 0.828 0.844 1";
+      fogStorm1 = "1";
+      fogStorm2 = "1";
+      fogStorm3 = "1";
+      fogVolume1 = "0 0 0";
+      fogVolume2 = "0 0 0";
+      fogVolume3 = "0 0 0";
+      fogVolumeColor1 = "1 1 1 1";
+      fogVolumeColor2 = "1 0 0 1";
+      fogVolumeColor3 = "0 0 1 1";
+      windVelocity = "0.01 0.01 0";
+      windEffectPrecipitation = "1";
+      SkySolidColor = "0.547 0.641 0.789 0";
+      useSkyTextures = "1";
+      renderBottomTexture = "0";
+      noRenderBans = "0";
+         locked = "true";
+         fogVolume0 = "0 0 0";
+   };
+   new Sun() {
+      canSaveDynamicFields = "1";
+      azimuth = "60";
+      elevation = "90";
+      color = "0.87451 0.87451 0.87451 1";
+      ambient = "0.890196 0.894118 0.882353 1";
+         position = "0 0 0";
+         locked = "true";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         direction = "0.635001 0.635001 -0.439941";
+   };
+   new TerrainBlock(terrain) {
+      canSaveDynamicFields = "1";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      detailTexture = "~/data/GPGTBase/terrains/details/detail1";
+      terrainFile = "./LessonsMisson.ter";
+      squareSize = "8";
+      bumpScale = "1";
+      bumpOffset = "0.01";
+      zeroBumpScale = "8";
+      tile = "1";
+         position = "-1024 -1024 0";
+         locked = "true";
+   };
+   new SimGroup(PlayerDropPoints) {
+      canSaveDynamicFields = "1";
+
+      new SpawnSphere(CentralDropPoint) {
+         canSaveDynamicFields = "1";
+         position = "0 0 55.8";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "1";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+            homingCount = "0";
+            locked = "false";
+            lockCount = "0";
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+

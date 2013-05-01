@@ -1,0 +1,200 @@
+//-----------------------------------------------------------------------------
+// Torque Game Engine
+// Copyright (C) GarageGames.com, Inc.
+//-----------------------------------------------------------------------------
+
+#include "game/gameTSCtrl.h"
+#include "console/consoleTypes.h"
+#include "game/projectile.h"
+#include "game/gameBase.h"
+#include "game/gameConnection.h"
+#include "game/shapeBase.h"
+
+//---------------------------------------------------------------------------
+// Debug stuff:
+Point3F lineTestStart = Point3F(0, 0, 0);
+Point3F lineTestEnd =   Point3F(0, 1000, 0);
+Point3F lineTestIntersect =  Point3F(0, 0, 0);
+bool gSnapLine = false;
+
+//----------------------------------------------------------------------------
+// Class: GameTSCtrl
+//----------------------------------------------------------------------------
+IMPLEMENT_CONOBJECT(GameTSCtrl);
+
+GameTSCtrl::GameTSCtrl()
+{
+   //------------------------------------------------------------------
+   // TGE Modernization Kit: DAREN MOD
+   //------------------------------------------------------------------
+
+	pWater = 0;
+	mClipPlane[0] = 0;
+	mClipPlane[1] = 0;
+	mClipPlane[2] = 1;
+	mClipPlane[3] = 0;
+
+   //------------------------------------------------------------------
+   // TGE Modernization Kit
+   //------------------------------------------------------------------
+}
+
+
+//---------------------------------------------------------------------------
+bool GameTSCtrl::processCameraQuery(CameraQuery *camq)
+{
+   GameUpdateCameraFov();
+   
+   //------------------------------------------------------------------
+   // TGE Modernization Kit: DARREN MOD> move code to GameReflectionClipPlane()
+   //------------------------------------------------------------------
+
+   bool ok = GameProcessCameraQuery(camq);
+   // If we are reflecting, mirror the camera transform   
+	GameReflectionClipPlane(pWater, camq, mClipPlane);
+
+   return ok; //return GameProcessCameraQuery(camq);
+
+   //------------------------------------------------------------------
+   // TGE Modernization Kit
+   //------------------------------------------------------------------
+
+}
+
+//---------------------------------------------------------------------------
+void GameTSCtrl::renderWorld(const RectI &updateRect)
+{
+   //------------------------------------------------------------------
+   // TGE Modernization Kit: DARREN MOD
+   //------------------------------------------------------------------
+
+	GameStartReflectionRender(pWater, mClipPlane);
+   //------------------------------------------------------------------
+   // TGE Modernization Kit
+   //------------------------------------------------------------------
+
+   GameRenderWorld();
+   
+   //------------------------------------------------------------------
+   // TGE Modernization Kit: DARREN MOD
+   //------------------------------------------------------------------
+
+	GameEndReflectionRender(pWater);
+   //------------------------------------------------------------------
+   // TGE Modernization Kit
+   //------------------------------------------------------------------
+   
+   dglSetClipRect(updateRect);
+}
+
+//---------------------------------------------------------------------------
+void GameTSCtrl::onMouseMove(const GuiEvent &evt)
+{
+   if(gSnapLine)
+      return;
+
+   MatrixF mat;
+   Point3F vel;
+   if ( GameGetCameraTransform(&mat, &vel) )
+   {
+      Point3F pos;
+      mat.getColumn(3,&pos);
+      const Point3F screenPoint(evt.mousePoint.x, evt.mousePoint.y, -1);
+      Point3F worldPoint;
+
+      if (unproject(screenPoint, &worldPoint))
+      {
+         Point3F vec = worldPoint - pos;
+         lineTestStart = pos;
+         vec.normalizeSafe();
+         lineTestEnd = pos + vec * 1000;
+      }
+   }
+}
+
+void GameTSCtrl::onRender(Point2I offset, const RectI &updateRect)
+{
+   // check if should bother with a render
+   GameConnection * con = GameConnection::getConnectionToServer();
+   bool skipRender = !con || (con->getWhiteOut() >= 1.f) || (con->getDamageFlash() >= 1.f) || (con->getBlackOut() >= 1.f);
+
+   //------------------------------------------------------------------
+   // TGE Modernization Kit: DARREN MOD
+   //------------------------------------------------------------------
+
+   if(!skipRender)
+   {
+	  if (pWater = GameReflectionSupport())
+	  {
+		  Parent::onRender(offset, updateRect); // reflection
+		  pWater = 0;	
+	  }
+	  Parent::onRender(offset, updateRect); // non-reflection
+   }
+
+   //------------------------------------------------------------------
+   // TGE Modernization Kit
+   //------------------------------------------------------------------
+
+   dglSetViewport(updateRect);
+   CameraQuery camq = mLastCameraQuery;
+   if(GameProcessCameraQuery(&camq))
+      GameRenderFilters(camq);
+
+   // Draw controls after so they aren't affected by the filters. (If we're doing that.)
+   if(!skipRender && !mApplyFilterToChildren)
+      Parent::renderChildControls(offset, updateRect);
+}
+
+//--------------------------------------------------------------------------
+// object selection additions
+//--------------------------------------------------------------------------
+void GameTSCtrl::onMouseDown(const GuiEvent &evt)
+{   
+	MatrixF mat;   
+	Point3F vel;   
+	if ( GameGetCameraTransform(&mat, &vel) )   
+	{      
+		//get the camera position      
+		Point3F pos;      
+		mat.getColumn(3,&pos);      
+		//take our mouse coordinates and create (x,y,z) screen coordinates      
+		Point3F screenPoint(evt.mousePoint.x, evt.mousePoint.y, -1);      
+		//take our screen coordinates and get the corresponding      
+		//world coordinates (this is what unproject does for us)      
+		Point3F worldPoint;      
+		if (unproject(screenPoint, &worldPoint))      
+		{         
+			mMouse3DPos = pos;         
+			//create a vector that points from our starting point (the         
+			//camera position) and heads towards our point we have chosen         
+			//in the world         
+			mMouse3DVec = worldPoint - pos;         
+			mMouse3DVec.normalizeSafe();         
+			//call client script handler         
+			Con::executef(this, 1, "onMouseDown");      
+		}   
+	}
+}
+
+ConsoleMethod( GameTSCtrl, getMouse3DVec, const char*, 2, 2, "()")
+{   
+	char* retBuffer = Con::getReturnBuffer(256);   
+	const Point3F &vec = object->getMouse3DVec();   
+	dSprintf(retBuffer, 256, "%g %g %g", vec.x, vec.y, vec.z);   
+	return retBuffer;
+}
+
+ConsoleMethod( GameTSCtrl, getMouse3DPos, const char*, 2, 2, "()")
+{   
+	char* retBuffer = Con::getReturnBuffer(256);   
+	const Point3F &pos = object->getMouse3DPos();   
+	dSprintf(retBuffer, 256, "%g %g %g", pos.x, pos.y, pos.z);   
+	return retBuffer;
+}
+
+//--------------------------------------------------------------------------
+ConsoleFunction( snapToggle, void, 1, 1, "()" )
+{
+   gSnapLine = !gSnapLine;
+}

@@ -1,0 +1,71 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiChunkedBitmapCtrl(EndGameGui) {
+   Profile = "GuiContentProfile";
+   HorizSizing = "width";
+   VertSizing = "height";
+   position = "0 0";
+   Extent = "800 600";
+   MinExtent = "8 8";
+   Visible = "1";
+   bitmap = "./main.jpg";
+   useVariable = "0";
+   tile = "0";
+      helpTag = "0";
+
+   new GuiControl() {
+      Profile = "GuiWindowProfile";
+      HorizSizing = "center";
+      VertSizing = "center";
+      position = "172 146";
+      Extent = "455 308";
+      MinExtent = "8 8";
+      Visible = "1";
+         helpTag = "0";
+
+      new GuiTextCtrl() {
+         Profile = "GuiMediumTextProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "101 15";
+         Extent = "251 28";
+         MinExtent = "8 8";
+         Visible = "1";
+         text = "Game Over - Final Scores:";
+         maxLength = "255";
+            helpTag = "0";
+      };
+      new GuiScrollCtrl() {
+         Profile = "GuiScrollProfile";
+         HorizSizing = "width";
+         VertSizing = "height";
+         position = "5 51";
+         Extent = "444 251";
+         MinExtent = "8 8";
+         Visible = "1";
+         willFirstRespond = "1";
+         hScrollBar = "alwaysOff";
+         vScrollBar = "dynamic";
+         constantThumbHeight = "0";
+         childMargin = "0 0";
+            defaultLineHeight = "15";
+            helpTag = "0";
+
+         new GuiTextListCtrl(EndGameGuiList) {
+            Profile = "GuiTextProfile";
+            HorizSizing = "width";
+            VertSizing = "height";
+            position = "2 2";
+            Extent = "440 8";
+            MinExtent = "8 8";
+            Visible = "1";
+            enumerate = "0";
+            resizeCell = "1";
+            columns = "0 256";
+            fitParentWidth = "1";
+            clipColumnText = "0";
+               helpTag = "0";
+         };
+      };
+   };
+};
+//--- OBJECT WRITE END ---

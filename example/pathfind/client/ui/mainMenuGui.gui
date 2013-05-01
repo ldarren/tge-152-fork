@@ -1,0 +1,312 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiChunkedBitmapCtrl(MainMenuGui) {
+   Profile = "GuiContentProfile";
+   HorizSizing = "width";
+   VertSizing = "height";
+   position = "0 0";
+   Extent = "640 480";
+   MinExtent = "8 8";
+   Visible = "1";
+   bitmap = "./background";
+   useVariable = "0";
+   tile = "0";
+      helpTag = "0";
+
+   new GuiChunkedBitmapCtrl() {
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "center";
+      VertSizing = "bottom";
+      position = "42 0";
+      Extent = "555 55";
+      MinExtent = "8 2";
+      Visible = "1";
+      bitmap = "./gray_bar";
+      useVariable = "0";
+      tile = "0";
+
+      new GuiBitmapButtonCtrl() {
+         Profile = "GuiBorderButtonProfile";
+         HorizSizing = "left";
+         VertSizing = "top";
+         position = "516 5";
+         Extent = "31 43";
+         MinExtent = "8 2";
+         Visible = "1";
+         Command = "quit();";
+         tooltipprofile = "GuiToolTipProfile";
+         tooltip = "Close down the engine";
+         text = "Button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./buttons/exit";
+      };
+      new GuiBitmapButtonCtrl() {
+         Profile = "GuiBorderButtonProfile";
+         HorizSizing = "right";
+         VertSizing = "top";
+         position = "314 6";
+         Extent = "40 43";
+         MinExtent = "8 2";
+         Visible = "1";
+         Command = "gotoWebpage(\"http://www.garagegames.com/mg/forums/result.area.php?qa=10\");";
+         tooltipprofile = "GuiToolTipProfile";
+         tooltip = "Talk to fellow Torque developers on the private Torque owner\'s forum";
+         text = "Button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./buttons/forum";
+      };
+      new GuiBitmapButtonCtrl() {
+         Profile = "GuiBorderButtonProfile";
+         HorizSizing = "left";
+         VertSizing = "top";
+         position = "465 6";
+         Extent = "41 42";
+         MinExtent = "8 2";
+         Visible = "1";
+         Command = "Canvas.pushDialog(optionsDlg);";
+         tooltipprofile = "GuiToolTipProfile";
+         tooltip = "Adjust basic video, sound and other options";
+         text = "Button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./buttons/options";
+      };
+      new GuiBitmapButtonCtrl() {
+         Profile = "GuiBorderButtonProfile";
+         HorizSizing = "right";
+         VertSizing = "top";
+         position = "9 10";
+         Extent = "54 38";
+         MinExtent = "8 2";
+         Visible = "1";
+         Command = "GuiEdit();";
+         tooltipprofile = "GuiToolTipProfile";
+         tooltip = "Open the GUI Editor, which helps you create graphical user interfaces for your games";
+         text = "Button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./buttons/gui";
+      };
+      new GuiBitmapButtonCtrl() {
+         Profile = "GuiBorderButtonProfile";
+         HorizSizing = "right";
+         VertSizing = "top";
+         position = "68 3";
+         Extent = "73 45";
+         MinExtent = "8 2";
+         Visible = "1";
+         Command = "toggleEditor(1);";
+         tooltipprofile = "GuiToolTipProfile";
+         tooltip = "Open the World Editor, which provides tools for creating and editing your game worlds";
+         text = "Button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./buttons/map";
+      };
+      new GuiBitmapButtonCtrl() {
+         Profile = "GuiBorderButtonProfile";
+         HorizSizing = "right";
+         VertSizing = "top";
+         position = "226 4";
+         Extent = "32 44";
+         MinExtent = "8 2";
+         Visible = "1";
+         Command = "gotoWebpage(\"http://www.garagegames.com/index.php?sec=mg&mod=resource&page=result&qrt=News&qrf=tska&qsf=posted&qsd=desc\");";
+         tooltipprofile = "GuiToolTipProfile";
+         tooltip = "Get the latest Torque news";
+         text = "Button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./buttons/news";
+      };
+      new GuiBitmapButtonCtrl() {
+         Profile = "GuiBorderButtonProfile";
+         HorizSizing = "right";
+         VertSizing = "top";
+         position = "274 17";
+         Extent = "26 31";
+         MinExtent = "8 2";
+         Visible = "1";
+         Command = "gotoWebpage(\"http://www.garagegames.com/developer/torque/tge/\");";
+         tooltipprofile = "GuiToolTipProfile";
+         tooltip = "See the Torque Tutorials homepage and learn more about how to use the engine";
+         text = "Button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./buttons/help";
+      };
+      new GuiBitmapButtonCtrl() {
+         Profile = "GuiBorderButtonProfile";
+         HorizSizing = "right";
+         VertSizing = "top";
+         position = "359 8";
+         Extent = "35 42";
+         MinExtent = "8 2";
+         Visible = "1";
+         Command = "gotoWebpage(\"http://tdn.garagegames.com/\");";
+         tooltipprofile = "GuiToolTipProfile";
+         tooltip = "Go to the Torque Developer Network, a community-oriented site for Torque documentation";
+         text = "Button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./buttons/tdn";
+      };
+      new GuiBitmapButtonCtrl() {
+         Profile = "GuiBorderButtonProfile";
+         HorizSizing = "right";
+         VertSizing = "top";
+         position = "143 7";
+         Extent = "41 43";
+         MinExtent = "8 2";
+         Visible = "1";
+         Command = "ToggleConsole(1);";
+         tooltipprofile = "GuiToolTipProfile";
+         tooltip = "View the scripting Console, which allows you to enter TorqueScript commands on the fly";
+         text = "Button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./buttons/console";
+      };
+      new GuiBitmapButtonCtrl() {
+         Profile = "GuiBorderButtonProfile";
+         HorizSizing = "right";
+         VertSizing = "top";
+         position = "398 7";
+         Extent = "46 42";
+         MinExtent = "8 2";
+         Visible = "1";
+         Command = "MessageBoxOK(\"Tutorial\", \"Note: In order to get to the tutorial right now, you need to go to your SDK install directory, then open the example folder and double-click 'GettingStarted.pdf'.\");";
+         tooltipprofile = "GuiToolTipProfile";
+         tooltip = "Read the Basic Getting Started Tutorial and learn the first steps of using some of Torque\'s tools";
+         text = "Button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./buttons/tutorial";
+      };
+   };
+   new GuiMLTextCtrl(RSSFeedMLText) {
+      Profile = "GuiMLTextProfile";
+      HorizSizing = "width";
+      VertSizing = "top";
+      position = "4 390";
+      Extent = "326 94";
+      MinExtent = "8 2";
+      Visible = "1";
+      lineSpacing = "2";
+      allowColorChars = "0";
+      maxChars = "-1";
+   };
+};
+//--- OBJECT WRITE END ---
+
+// RSS ticker configuration:
+$RSSFeed::serverName = "feeds.feedburner.com";
+$RSSFeed::serverPort = 80;
+$RSSFeed::serverURL  = "/garagegames/rss/product/tge/oobe";
+$RSSFeed::userAgent = "Torque/1.5";
+
+function RSSFeedObject::onConnected(%this)
+{
+	echo("RSS Feed");
+	echo("   - Requesting RSS data at URL: " @ $RSSFeed::serverURL );
+
+	// Reset some useful state information.
+	$RSSFeed::lineCount = 0;
+	$RSSFeed::requestResults = "";
+	
+	// Request our RSS.
+	%this.send("GET " @ $RSSFeed::serverURL @ " HTTP/1.0\nHost: " @ $RSSFeed::serverName @ "\nUser-Agent: " @ $RSSFeed::userAgent @ "\n\r\n\r\n");
+}
+
+function RSSFeedObject::onLine(%this, %line)
+{
+	// Collate info.
+	$RSSFeed::lineCount++;
+	$RSSFeed::requestResults = $RSSFeed::requestResults @ %line;
+}
+
+function RSSFeedObject::getTagContents(%this, %string, %tag, %startChar)
+{
+ // This function occasionally makes Torque hard crash. It doesn't
+ // seem to do it anymore but be careful!
+ 
+	// Ok, get thing between <%tag> and </%tag> after char #
+	// %startChar in the passed string.
+	
+	%startTag = "<" @ %tag @ ">";
+	%endTag   = "</" @ %tag @ ">";
+	
+	%startTagOffset = strpos(%string, %startTag, %startChar);
+	
+	// Compensate for presence of start tag.
+	%startOffset = %startTagOffset + strlen(%startTag);
+	
+	// Ok, now look for end tag.
+	%endTagOffset = strpos(%string, %endTag, %startOffset - 1);
+
+ 	// If we didn't find it, bail. 
+	if(%endTagOffset < 0)
+    		return "";
+    
+ 	// Evil hack - store last found item in a global.
+	 %this.lastOffset = %endTagOffset;
+		
+	// And get & return the substring between the tags.
+	%result = getSubStr(%string, %startOffset, %endTagOffset - %startOffset);
+	
+	// Do a little mojo to deal with &quot; and some other htmlentities.
+	%result = strreplace(%result, "&quot;", "\"");
+	%result = strreplace(%result, "&amp;",  "&");
+	
+	return %result;
+}
+
+function RSSFeedObject::onDisconnect(%this)
+{
+	// Ok, we have a full buffer now, hopefully. Let's process it.
+	echo("   - Got " @ $RSSFeed::lineCount @ " lines.");
+	
+	// We want the feed title and the first three headlines + links.
+	
+	// Feed title - get the first <title> occurence in the string.
+	%title = %this.getTagContents($RSSFeed::requestResults, "title", 0);
+	%titleLink = %this.getTagContents($RSSFeed::requestResults, "link", 0);
+	
+	echo("   - Feed title: '" @ %title @ "'");
+	echo("   - Feed link:  '" @ %titleLink @ "'");
+	
+	// Ok, get the first three headlines, if any...
+	for(%i = 0; %i<3; %i++)
+	{
+	   %headline[%i]     = %this.getTagContents($RSSFeed::requestResults, "title", %this.lastOffset);
+	   %headlineLink[%i] = %this.getTagContents($RSSFeed::requestResults, "link", %this.lastOffset);
+	   
+	   // Skip the content - it's not going to do anything but confuse us.
+	   %garbage          = %this.getTagContents($RSSFeed::requestResults, "content:encoded", %this.lastOffset);
+
+    //  And debug spam...
+    echo("   - Headline      #" @ %i @ " : '" @ %headline[%i] @ "'");
+    echo("   - Headline Link #" @ %i @ " : '" @ %headlineLink[%i] @ "'");
+	}
+
+  // Generate contents for our ML control.
+  RSSFeedMLText.setText("<lmargin%:2><font:Arial Bold:20>" @ %title @ "<font:Arial:14>\n");
+  for(%i=0; %i<3; %i++)
+     RSSFeedMLText.addText("<a:" @ getSubstr(%headlineLink[%i], 7, 1000) @ ">" @ %headline[%i] @ "</a>\n", false);
+  RSSFeedMLText.addText("<just:right><a:" @ getSubstr(%titleLink, 7, 1000) @ ">" @ "[ Read more... ]" @ "</a>", true);
+	
+}
+
+function kickOffRSS()
+{
+   new TCPObject(RSSFeedObject);
+   RSSFeedObject.connect($RSSFeed::serverName @ ":" @ $RSSFeed::serverPort);
+}
+
+function MainMenuGui::onWake(%this)
+{
+   // Kick off an update on next tick.
+   if(!$pref::RSS::disableFeedCheck)
+      schedule(50, 0, kickOffRSS);
+}

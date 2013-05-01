@@ -1,0 +1,22 @@
+<just:center>
+<lmargin%:5><rmargin%:95><font:Arial:24>Welcome to Maze Runner!
+<just:left>
+<font:Arial Bold:16>About Maze Runner:<font:Arial:18>
+Maze Runner is a simple single-player game which you write as part of your journey while reading:
+
+"The Game Programmer's Guide to Torque" (GPGT)
+
+The game was designed with learning in mind.  It demonstrates the use of multiple Torque classes and features, including: ShapeBase, StaticShape, Item, Particle Effects, Atmospheric Effects, Terrain, Water (as lava), Collision Detection and Response, Triggers, Inventories, ...<br>
+Maze Runner's gameplay is quite basic.  Simply load a level and look around.  You will see teleport stations, fading bridges, Fireball blocks (blocks/ninjas/zombies/pirates), and coins.  
+<br>
+Your job is to pick up all the coins in a level without dieing.  Picking up all the coins on the current level will send you to the next level. The best way to pick up a coin may not always be obvious or safe so you will have to plan carefully. To tell how many coins you have left, simply look at the coin indicator in the upper right corner of your screen.  When the counter hits zero, the level is complete.
+<br>
+Watch out for fading blocks and bridges that may suddenly drop you into the lava pit below. 
+<br>
+Fireball blocks/ninjas/zombies/pirates will shoot fireballs in various fixed directions and there is the occasional block that shoots randomly.  So be careful and observe the blocks' behaviors.  
+<br>
+To get about you may need to use the teleporters (marked as Red, Green, and Blue).  A colored teleporter will take you to another teleporter of the same color, but beware, if there are more than two teleporters of the same color in a level, your destination will be randomly selected between them.
+<br>
+Finishing a level will earn you one additional life.  You can keep track of lives by looking at the indicator in the upper left corner of the screen.  The final indicator (not yet mentioned) is in the middle of the top of the screen and indicates your score.
+<br>
+After some time you may decide that it would be cool to make your own level(s).  If so, please read the 'Editing Maze Runner' help page.

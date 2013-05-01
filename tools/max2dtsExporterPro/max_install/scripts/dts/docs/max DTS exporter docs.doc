@@ -1,0 +1,272 @@
+{\rtf1\ansi\ansicpg1252\deff0
+{\fonttbl
+{\f0\fswiss\fcharset0\fprq2\fttruetype Arial;}
+{\f1\froman\fcharset0\fprq2\fttruetype Times New Roman;}
+{\f2\fnil\fcharset0\fprq2\fttruetype Dingbats;}
+{\f3\fmodern\fcharset0\fprq1\fttruetype Courier New;}
+{\f4\froman\fcharset0\fprq2\fttruetype Symbol;}}
+{\colortbl
+\red0\green0\blue0;
+\red255\green255\blue255;}
+{\stylesheet
+{\s1\tx1584\sbasedon57\snext33Chapter Heading;}
+{\s2\fi-424\li720Box List;}
+{\*\cs15Hyperlink;}
+{\s5\sbasedon33\snext33Address;}
+{\s6\fi-424\li720\sbasedon25Lower Case List;}
+{\s7\qc\f0\fs16\snext33z-Top of Form;}
+{\*\cs4Strong;}
+{\s9\fi-424\li720Triangle List;}
+{\s20\sb440\sa60\f0\fs34\b\sbasedon33\snext33Heading 1;}
+{\s11\sb440\sa60\f0\fs28\b\sbasedon33\snext33Heading 2;}
+{\s23\sb440\sa60\f0\fs24\b\sbasedon33\snext33Heading 3;}
+{\s13\sb440\sa60\f0\fs24\b\sbasedon33\snext33Heading 4;}
+{\s14\fi-424\li720Heart List;}
+{\s16\li1440\ri1440\sa117\sbasedon33Block Text;}
+{\s17\fi-424\li720Square List;}
+{\s8\li360\ri360\sb99\sa99\sbasedon33Blockquote;}
+{\s19\qc\sb240\sa117\f0\fs32\b\sbasedon33\snext33Contents Header;}
+{\s10\fi-424\li720\sbasedon25Upper Case List;}
+{\*\cs21\fs20\sbasedon33Footnote Text;}
+{\*\cs22Variable;}
+{\s12\fi-424\li720Bullet List;}
+{\*\cs24Comment;}
+{\s25\fi-424\li720Numbered List;}
+{\s26\fi-424\li720Diamond List;}
+{\s27\fi-424\li720Hand List;}
+{\*\cs60\fs20Reference;}
+{\*\cs28Emphasis;}
+{\*\cs29\f3Sample;}
+{\s31\qc\f0\fs16\snext33z-Bottom of Form;}
+{\s32\fi-424\li720\sbasedon25Upper Roman List;}
+{\s33\f1\fs24\lang1033Normal;}
+{\s49\fi-424\li720Implies List;}
+{\*\cs36\f3\fs20CODE;}
+{\s37\sb99\sa99\fs48\sbasedon33\snext33H1;}
+{\s38\sb99\sa99\fs36\sbasedon33\snext33H2;}
+{\s39\sb99\sa99\fs28\sbasedon33\snext33H3;}
+{\s40\sb99\sa99\fs24\sbasedon33\snext33H4;}
+{\s41\sb99\sa99\fs20\sbasedon33\snext33H5;}
+{\s18\sb99\sa99\fs16\sbasedon33\snext33H6;}
+{\s59\tx431\sbasedon23\snext33Numbered Heading 3;}
+{\s43\fi-424\li720Star List;}
+{\s44\tx1584\sbasedon57\snext33Section Heading;}
+{\*\cs45\f3\fs20Keyboard;}
+{\*\cs46FollowedHyperlink;}
+{\s47\sbasedon33\snext30Definition Term;}
+{\s48\tx0\tx958\tx1917\tx2877\tx3836\tx4794\tx5753\tx6713\tx7672\tx8631\tx9589\f3\fs20\sbasedon33Preformatted;}
+{\*\cs34Definition;}
+{\*\cs35CITE;}
+{\s57\tx431\sbasedon20\snext33Numbered Heading 1;}
+{\s61\fi-424\li720\sbasedon33\snext33Contents 1;}
+{\*\cs3\f3\fs20Typewriter;}
+{\s53\fi-424\li720\sbasedon33Lower Roman List;}
+{\*\cs54\fs20\superFootnote Reference;}
+{\*\cs55\sbasedon33Endnote Text;}
+{\*\cs56\fs20\superEndnote Reference;}
+{\*\cs51HTML Markup;}
+{\s58\tx431\sbasedon11\snext33Numbered Heading 2;}
+{\s52\fi-424\li720Dashed List;}
+{\s64\fi-424\li2880\sbasedon33\snext33Contents 4;}
+{\s42\f3\sbasedon33Plain Text;}
+{\s50\fi-424\li720Tick List;}
+{\s62\fi-424\li1440\sbasedon33\snext33Contents 2;}
+{\s63\fi-424\li2160\sbasedon33\snext33Contents 3;}
+{\s30\li360\sbasedon33\snext47Definition List;}}
+\kerning0\cf0\ftnbj\fet2\ftnstart1\ftnnar\aftnnar\ftnstart1\aftnstart1\aenddoc\revprop3{\info\uc1}\deftab720\viewkind1\paperw12240\paperh15840\margl1440\margr1440\widowctrl
+\sectd\sbknone\colsx360\pgncont\ltrsect
+\pard\plain\ltrpar\ql\sb440\sa60\s20\sl240\slmult1\itap0\tx1584{\s20\f0\fs34\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Getting Started}{\s20\f0\fs34\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\sl240\slmult1\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Introduction}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch This document assumes a basic level of familiarity with 3d Studio Max and is simply a general reference for creating and exporting shapes using the 3d Studio Max DTS exporter. It is not a quick start guide for how to use 3d Studio Max nor is it a detailed tutorial on how to build and animate shapes in 3d Studio Max for the Torque Game Engine.\line \line There are two file types that you can export: shapes (DTS) and sequences (DSQ). A DTS file contains meshes, detail levels, the bounding box, all necessary nodes for a particular shape and optionally animation data can also be included in the DTS file.\line \line DSQ files only contain animation data and require a matching DTS file that contains all of the necessary nodes for the shape. There can be multiple DSQ files for any one DTS file. Also, DSQ files can be used on multiple DTS files provided that the animation nodes in the DTS files match exactly.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\sl240\slmult1\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Whats New & Bug Fixes}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Full scripted user interface}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Export progress meter}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Html based dump file (dump.html)}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Smoothing groups are supported for skinned meshes}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Dts unmess utility is no longer needed}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch CFG file export}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s20\sl240\slmult1\itap0{\s20\f0\fs34\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Installation}{\s20\f0\fs34\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s20\sl240\slmult1\itap0{\s20\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch To install the exporter download the installer for the exporter and double click on the executable to begin the installation process.\line \line Follow the instructions on the installer screens, being careful to make sure you point the installer to the location that your version of 3d Studio Max is installed. The 3ds Max DTS exporter is supported in 3DS Max versions 6, 7, and 8.\line \line After the installer finishes exit the installer, start up your copy of 3d Studio Max and load in the exporter UI.}{\s20\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s20\sl240\slmult1\itap0{\s20\f0\fs34\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Loading the Exporter UI in Max}{\s20\f0\fs34\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb99\sa99\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch After installing the exporter you can load the exporter UI by going to the Customize menu and selecting the option "Customize User Interface".\line \line With the Customize User Interface window open click on the "Toolbars" tab and change the Category to Torque. This will show all of the tools in the "Torque" category.\line \line When the "Torque DTS Utility" appears in the tools list, click on it and drag it onto any toolbar in the UI. Once the icon is added to your toolbar click on it to open the DTS Utility.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s20\sl240\slmult1\itap0{\s20\f0\fs34\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Using the DTS Utility}{\s20\f0\fs34\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s20\sl240\slmult1\itap0{\s20\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch The utility for the exporter is relatively straight forward to use and offers a quick & easy way to help automate all of the setup in 3D Studio Max that is required for a DTS file to export properly.\line \line The exporter utility is a standard floating dialog window, with both an upper and lower tool bar and several SubRollouts that contain logical divisions of the properties and settings that are read by the exporter when exporting to the DTS format.\line \line Each of the SubRollouts in the utility can be opened and closed individually by clicking on the title of the SubRollout. This will allow you to free up space in the UI when SubRollouts are not in use.}{\s20\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb99\sa99\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Right clicking in any of the open SubRollouts will open a menu of options that will allow you to quickly open and close one or more of the available SubRollouts.\line \line Opening a SubRollout will cause the selected SubRollout to expand to fill the viewable area in the dialog. This behavior is helpful in reducing the amount of vertical scrolling required to access the properties on the various SubRollouts.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb99\sa99\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb99\sa99\s33\sl240\slmult1\itap0{\s33\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Resizing the Exporter UI}{\s33\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb99\sa99\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch The exporter UI is also user re-sizable and remembers both its size and on screen position from the last time the UI window was open.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\sl240\slmult1\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Docking Exporter UI in a Viewport}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\sl240\slmult1\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Finding Setup Errors}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb99\sa99\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch The exporter generates a log file named dump.html in the directory you export your object to. If your export fails, check the dump file first to see where it is crashing in the export process. Most of the time it is something simple, like spelling the word \uc1\u8220\'93bounds\uc1\u8221\'94 wrong.\line \line If a particular model is continually crashing on export, corrupted meshes, bad texture vertices, or double faces in the model might be the cause. Check your dump file, and if it stops on a particular mesh, do a test by deleting it in your scene, then try to export again.\line \line After a model is successfully exported, check your shape in the Torque Show Tool first before bringing them into your game. If it works in the Show Tool but not in the game, the file exported properly and the problem exists elsewhere.\line \line The requirements of a game may be different than the requirements to get a shape exported. What is required for it to work 'in the game' is not the same as what is required for a shape to export. If your game requires certain nodes be present, a certain naming convention, or certain parameters set a certain way, then get that information and set up the shape accordingly. If your shape works in the Show Tool but not in the game then it is most likely not the exporter that is at fault.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s20\sl240\slmult1\itap0{\s20\f0\fs34\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Quick Start}{\s20\f0\fs34\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\sl240\slmult1\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Units  & Grid Setup}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Simple Shape Setup }{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Adding Collision }{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s20\sl240\slmult1\itap0{\s20\f0\fs34\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Character Setup }{\s20\f0\fs34\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s20\sl240\slmult1\itap0{\s20\f0\fs34\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Export Settings }{\s20\f0\fs34\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Allows you to set several of the default settings of the exporter user interface such as the default bounds padding, the default size of nodes & markers, if created nodes and markers should be frozen after being created, if the exporter should show the .dmp file after export and if the exporter should always create a .cfg file on export.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s20\sl240\slmult1\itap0{\s20\f0\fs34\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Quick Export/Setup}{\s20\f0\fs34\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f0\fs34\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch The Quick setup tools take the current selection and performs all of the setup needed in order to export a DTS shape. This includes creating the DTS shape, parenting the selected mesh(es) to the shape branch of the DTS shape, adding a detail size of 2 to the selected mesh(es), adding detail markers and creating a bounds object using the volume of the selected object(s).\line \line Quick Export performs the same setup that quick setup does and then immediately prompts you with a save dialog box so that you can quickly export your shape and see how it looks in game\line \line Other options on the Quick Export/Setup dialog allow you to change the behavior of the quick export functions.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\sl240\slmult1\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch As Skinned Mesh}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Checking this box tells the utility to setup the DTS shape as a shape with skeletal animation. This will leave the skinned mesh at the scene root and add the root IK chain to the DTS shape branch.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\sl240\slmult1\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Use Existing Bounds}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Checking this box will tell the utility not to automatically create a bounds object and to instead use one that already exists in the scene.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\sl240\slmult1\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Center Shape at Origin}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Checking this box tells the utility to move the selected object to the center of the scene during setup.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\sl240\slmult1\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Remove Object Scale (xform)}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Checking this box tells the utility to Reset Transform remove all Rotation and Scale values from selected objects and places those transforms in an XForm modifier.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\sl240\slmult1\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Create .CFG On Quick Export}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Checking this box will cause the utility to export a .CFG file prior to exporting the DTS file. This .CFG file will be read by the exporter during export and is used to control node export and other exporter options.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\sl240\slmult1\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Use Node Preset}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Checking this box will activate the node preset list box and populate the list box with any of the default or custom node presets that you have created using the Node Manager. After selecting a preset from the list the utility will automatically add the named nodes stored in the preset to the scene. Keep in mind that in order for named nodes to export you must use a proper .CFG file, clicking the "Create .CFG On Quick Export" check box will tell the utility to create a .CFG file automatically.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s20\sl240\slmult1\itap0{\s20\f0\fs34\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Bounds Manager}{\s20\f0\fs34\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f0\fs34\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch The Bounds manager is a utility to help automate the creation of a bounds object for the DTS shape export. There can only be one bounds in the scene.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Freeze Bounds}{\s33\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Prevents the user from being able to interact with the bounds object, but leaves the bounds object visible in the scene. Useful to prevent the bounds object from being moved unintentionally, but still lets you see the bounds in the scene.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Hide Bounds}{\s33\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Hides the bounds object from display in the scene. Useful to prevent the bounds object from being moved unintentionally and also to free up visual space in the scene.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Create Bounds}{\s33\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Creates a new bounds object in the scene using the volume of the current selection. You can also optionally apply padding to each axes of the bounds (X, Y, Z) and choose the location of the bounds pivot point.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch X Padding}{\s33\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Adds padding to the bounds in the X axes of volume of the current selection}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Y Padding}{\s33\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Adds padding to the bounds in the Y axes of volume of the current selection}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Z Padding}{\s33\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Adds padding to the bounds in the Z axes of volume of the current selection. When the alignment of "Center" is chosen only half of the selected bounds padding is applied to the upper Z axes. }{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\sl240\slmult1\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Bounds Alignment}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Allows you to change where the bounds center (pivot) is located. "Bottom" places the pivot of the bounds at the bottom center of the bounds object and places the bounds at the center of the selection at 0 in the Z axes. "Center" places the pivot of the bounds at the center of the bounds object and places the bounds object at the center of the selection.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\sl240\slmult1\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Link Bounds}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Clicking the Link bounds button will open a window containing a list of all of the objects in the scene. After choosing an object from this list the bounds object will be parented to the selected object.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\sl240\slmult1\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Remove Link}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Clicking the remove link button will re-parent the bounds object to the scene root}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\sl240\slmult1\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch X Link Inheritance}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Sets the bounds object to inherit any movement from its parent object in the X axes.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Y Link Inheritance}{\s33\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Sets the bounds object to inherit any movement from its parent object in the Y axes. }{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Z Link Inheritance}{\s33\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Sets the bounds object to inherit any movement from its parent object in the Z axes. }{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s20\sl240\slmult1\itap0{\s20\f0\fs34\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Detail Manager}{\s20\f0\fs34\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f0\fs34\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch The Detail Manager exists to help automate the management of the detail markers and detail meshes needed in order for a DTS shape to export properly. }{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\sl240\slmult1\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Detail Levels & Detail Meshes}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Detail levels are read from dummy nodes in the scene that tell the exporter that a detail mesh or meshes exist that should be exported. The "-" button deletes the selected detail level. The "edit" button lets you modify the selected detail level. The "auto" button will scan the scene looking for numbered detail meshes and automatically create the corresponding detail level markers. The "+" button adds a new detail level to the scene.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch To add a new detail level marker, enter a pixel size into the spinner on the right side of the detail manager and click the save button. The detail level list box will update and your new detail level marker will be added to the scene.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Selecting a detail level from the detail level marker list box will update the detail mesh list box and cause it to show all of the detail meshes in the scene that are of the same size of the selected detail level. This is handy since it mimics what the exporter actually sees in the scene and can help you catch improper scene setup even before you attempt to export your shape. Its always a good idea to click on your detail levels and double check the detail meshes that appear for any problems before trying to export your scene.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\sl240\slmult1\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Show All Detail Meshes}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Checking this box will cause all of the mesh objects in the scene to appear in the detail mesh list box even if they do not have a detail number in their name. This will allow you to use the "Detail Utilities" to add the mesh objects in the scene into the DTS shape.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\sl240\slmult1\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Detail Utilities}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch These tools are designed to work with the detail meshes in your scene and help automate the setup needed to get your shape to export to DTS.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\sl240\slmult1\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Delete Shape}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Deletes the DTS shape nodes (Base01 > Start01) from the scene and leaves anything that was parented  to them at the scene root.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\sl240\slmult1\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Create Shape}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Creates the DTS shape nodes (Base01 > Start01) in the scene. Any detail markers that exist in the scene are automatically parented to Base01.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\sl240\slmult1\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Register Details}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Takes all of the selected detail meshes in the detail mesh list box and parents them to the node Start01. If the DTS shape does not exist it created automatically.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\sl240\slmult1\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Renumber Details}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Clicking the renumber details button opens a set of tools for the renumbering the detail meshes in your scene. Start by selecting one or more of the meshes in the detail mesh list box and then enter the detail number that you would like to assign to the selected meshes. If you leave the option "create new marker" checked if a detail marker does not exist in the scene the utility will add one for you. If the option "remove old marker" is checked the and there are any detail markers in scene for the previous detail level(s) the utility will remove them from the scene. Click the update button to apply your changes and cancel to return to the other detail utilities.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\sl240\slmult1\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Remove Detail Markers}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch This tool will remove all of the detail markers from the scene.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\sl240\slmult1\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Sort Settings}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Allows you to change the transparency sorting options for the selected detail mesh.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\sl240\slmult1\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Set Parent}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Opens a new window that contains a list of all of the objects in the scene. Choosing an object from the select list and clicking apply sets the parent object of all of the meshes selected in the detail mesh list box to the selected object.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\sl240\slmult1\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Delete Parent}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Sets the parent of the meshes selected in the Detail Mesh list box to null (scene root)}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\sl240\slmult1\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Auto Details}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch The exporter can optionally auto generate detail levels for your DTS shape using polygon reduction that is built into the exporter. In order for this to work you must add AutoDetail settings to one or more meshes in the in the detail mesh list box. You can only add AutoDetail settings to one mesh at a time.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch The buttons above the auto details list box allow you to add, edit and delete auto detail settings from the selected detail mesh. Keep in mind that a large number of auto details or reduction on high poly count meshes can slow down the DTS export due to the calculations required.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\sl240\slmult1\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Reduction}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch This setting controls the amount of polygon reduction to apply to the selected mesh. 1.0 = 0% or no poly reduction at all. 0.8 would be 20% poly reduction etc.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\sl240\slmult1\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Pixel Size}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch This number represents the on screen size in Pixels that TGE should show each detail mesh of the same size value. When the on screen pixel size is smaller than the lowest numbered detail mesh in your DTS file it will stop drawing to the screen. }{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s20\sl240\slmult1\itap0{\s20\f0\fs34\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Billboard Manager}{\s20\f0\fs34\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f0\fs34\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch The billboard manager allows you to add billboard settings to any of the detail meshes in the scene. To enable billboard support for a mesh object, select a detail mesh from the list box and click "Set as billboard" and choose the billboard type: Billboard - always face toward the camera on all axes. Billboardz - always face the camera in the Z axes only.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\sl240\slmult1\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Auto Billboards}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Auto billboard settings are stored on detail markers. To enable this feature select a detail marker from the list box and then click "Set as auto billboard". When your exported DTS file is loaded into the game engine or show tool, TGE will auto generate billboard based detail levels using the setting that you specified on your detail markers.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s20\sl240\slmult1\itap0{\s20\f0\fs34\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Node Manager}{\s20\f0\fs34\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f0\fs34\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch The node manager allows you quickly to add named nodes to your scene, create and edit node presets, and export .cfg files that are used to control node export. To add a new node to the scene enter a name into the input box check the appropriate node export settings and then click the save button. You new node will be added to the scene and the nodes list box will update to show the newly created node. You can now adjust the nodes location in the scene to work best for your DTS shape. Clicking on any node in the nodes list will allow you to edit its export settings.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\sl240\slmult1\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Node Utilities}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Node utilities are tools to help automate working with node nodes in your scene.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\sl240\slmult1\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Create .CFG}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch This tool reads the export settings stored each node in the scene as well as the .cfg settings for the current scene and exports a .cfg file to a directory of your choice.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\sl240\slmult1\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Set Always Export}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Sets the always export flag for all of the nodes selected in the nodes list.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Set Never Export}{\s33\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Sets the never export flag for all of the nodes selected in the nodes list.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Set Never Animate}{\s33\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Sets the never animate flag for all of the nodes selected in the nodes list.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\sl240\slmult1\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Remove .CFG Settings}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Removes the current .CFG settings from the scene}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\sl240\slmult1\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch .CFG Settings}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Allows you set the default .CFG files settings for the scene}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\sl240\slmult1\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Node Presets}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Node presets are way for you to quickly add sets of named nodes to your scene. This allows you to add all of the nodes needed for a shape to load properly in game to the scene at one time and then adjust their position in the scene to match your shape setup. Clicking the "-" button deletes the selected preset. Clicking the "edit" button allows you to rename or add additional nodes to the preset. Clicking the "+" button allows you to create a new preset. A preset consists of a name and a comma separated list of node names. Clicking the "Apply" button creates all of the nodes specified in the preset and adds then to the scene.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\sl240\slmult1\itap0{\s23\f0\fs34\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Sequence Manager }{\s23\f0\fs34\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s20\sl240\slmult1\itap0{\s20\f0\fs34\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Trigger Manager}{\s20\f0\fs34\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f0\fs34\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch The trigger manager allows you to add, edit and delete trigger states from the sequences sequences in your scene. To add trigger states to a sequence first select a sequence from the sequence list box. If no sequences are present use the sequence manager to add one or more.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch After selecting a sequence in the key frame spinner type the key frame number in the selected sequence that you like to add a trigger state to and then choose the appropriate trigger state from drop down list and click save. Positive trigger states (1) indicate that a trigger is active and negative trigger states (-1) indicate that a trigger is turned off. It is not always necessary to turn off triggers as they can be turned off in script. Keep in mind that key frames on trigger states should fall within the key frame range of the selected sequence.  }{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s20\sl240\slmult1\itap0{\s20\f0\fs34\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Visibility Manager}{\s20\f0\fs34\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f0\fs34\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\sl240\slmult1\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch The visibility manager allows you to set visibility animation states from the the detail meshes in your scene. When you add a visibility state to a detail mesh the exporter utility will automatically add a visibility animation track to the selected object and add the key frame and visibility state to the visibility track for the selected object. You can then play the animation in max and see the visibility animation that you created. Keep in mind that key frames on visibility states should fall within the key frame range of one or more sequences in the scene or you will not be able to see it in your exported DTS file.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s20\sl240\slmult1\itap0{\s20\f0\fs34\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Collision Manager}{\s20\f0\fs34\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch The collision manager allows you to easily manage creating and setting up collision objects in your DTS scene. On the right side of the manager is the detail mesh list box, this list box contains a list of all of the mesh objects in the scene. Selecting one or more mesh objects from the list box and clicking one of the numbered collision buttons will add a collision object to the scene as well as automatically adding a matching collision maker in the DTS shape.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch You can change the behavior of the generated collision object by choosing one of the options underneath the detail list box. There are 3 options to choose from.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Use Volume}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch This is the default setting of the of collision manager. This option will use the mesh objects selected from the detail mesh list box and create a new mesh box based on volume of the selected objects. The created collision object will be named Col-x where x is equal to the collision number of the button that was pressed }{\s33\f1\fs24\lang1033{\*\listtag0}and collision mesh is linked into the DTS shape}{\s33\f1\fs24\lang1033{\*\listtag0}. A collision marker is also created and linked into the DTS hierarchy for the selected collision object.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Use Actual Mesh}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch This option will rename the selected detail mesh to match the number of the collision button that was pressed and link the collision mesh into the DTS shape. }{\s33\f1\fs24\lang1033{\*\listtag0}A collision marker is also created and linked into the DTS hierarchy for the selected collision object.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Use Copy of Mes}{\s23\f0\fs24\b\lang1033{\*\listtag0}h}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch This option will make a copy of the selected mesh, rename it to match the number of the collision button that was pressed and link the collision mesh into the DTS shape. A collision marker is also created and linked into the DTS hierarchy for the selected collision object.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Copy Buttons}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch The copy buttons between the collision and losCollision buttons take the mesh object that exists for the adjacent collision number and copy the collision object and the same mesh shape as a losCollision mesh.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch LOS Collision}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch The losCollision buttons preform the same function as the collision buttons and work with the 3 options listed below the detail mesh list box. The major difference is that instead los collision meshes }{\s33\f1\fs24\lang1033{\*\listtag0}(los) }{\s33\f1\fs24\lang1033{\*\listtag0}are created vs collision meshes.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s20\sl240\slmult1\itap0{\s20\f0\fs34\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Material Manager}{\s20\f0\fs34\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch The material manager is designed to help automate the setup of materials and material properties that are read by the DTS exporter from your scene. The numbered material slots on the left side of the material manager represent the 24 materials found in the 3ds Max material editor. Selecting a material from the materials list will display the current material properties for the selected material on the right side of the material manager. Any changes made to the selected material are }{\s33\f1\fs24\lang1033{\*\listtag0} applied }{\s33\f1\fs24\lang1033{\*\listtag0}immediately.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Material Editor}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Selecting this option shows that materials that are currently in the material editor.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Scene Materials}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Selecting this option shows only the materials that are currently in the scene.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Show Material in Viewport}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Used to control if the selected material should be displayed in the 3ds Max Viewport.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Choose texture}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Allows you to choose a .jpg, .png, .tga or .ifl texture for your material}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch UWrap}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Turns tiling on or off in the U axis}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\itap0{\s23\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch VWrap}{\s23\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Turns tiling on or off in the }{\s33\f1\fs24\lang1033{\*\listtag0}V}{\s33\f1\fs24\lang1033{\*\listtag0} axis}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\itap0{\s23\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Two Sided}{\s23\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Tells that exporter that the material should be exported as a two sided material. As a result of this setting the exporter will add faces to mesh objects in the scene as needed. }{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Self Illuminate}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Tells that exporter that the material should be exported with self illumination this causes the material to not be affected by shadows in game. The material will always appear to be full bright.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Transparency}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Allows you to select an image to use as a transparency mask for the selected material. The transparency mask can be the same image as the base texture or a separate image as desired. The image must contain and alpha channel for transparency to work properly.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch There are 3 transparency types to choose from: Normal, Additive and Subtractive.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Reflection}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s33\itap0{\s33\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Reflection can be enabled by clicking the enable reflection check box and setting the amount of reflection desired in the spinner.}{\s33\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s20\sl240\slmult1\itap0{\s20\f0\fs34\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Advanced Information}{\s20\f0\fs34\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sb440\sa60\s23\itap0{\s23\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Working with Scenes Created for the Old Exporter}{\s23\f0\fs24\b\lang1033{\*\listtag0}\par}}

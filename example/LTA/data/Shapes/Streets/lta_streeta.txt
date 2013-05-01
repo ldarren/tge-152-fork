@@ -1,0 +1,53 @@
+C:/LTA_project/lta/example/vr10/data/Streets/lta_streeta.dif
+
+
+
+Constructor Version: 1.0.2
+
+
+
+Date: 2007/09/10 16:05:48
+
+
+Detail Level 0
+
+
+
+  Zones:         1
+
+  Points:        3129
+
+  Surfaces:      294
+
+  Null Surfaces: 0
+
+  BSP Nodes:     283
+
+
+
+  Textures From Brushes:
+
+
+
+    ROADTEX_PEDES_DIFFUSE
+
+    ROADTEX_J_DIFFUSE
+
+    ROADTEX_N_DIFFUSE
+
+    FLRFILLER3_02
+
+    CEMENT
+
+    COLORS2
+
+
+
+  Static Meshes and Textures:
+
+
+
+    -- None --
+
+
+

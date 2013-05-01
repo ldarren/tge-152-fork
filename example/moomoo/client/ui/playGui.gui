@@ -1,0 +1,157 @@
+//--- OBJECT WRITE BEGIN ---
+new GameTSCtrl(PlayGui) {
+   canSaveDynamicFields = "0";
+   Profile = "GuiContentProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   position = "0 0";
+   Extent = "1024 768";
+   MinExtent = "8 8";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+   applyFilterToChildren = "1";
+   cameraZRot = "0";
+   forceFOV = "0";
+      noCursor = "1";
+      helpTag = "0";
+
+   new GuiBitmapCtrl(InstructBmp) {
+      canSaveDynamicFields = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "0 583";
+      Extent = "1016 173";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      bitmap = "./mmguihow.png";
+      wrap = "0";
+   };
+   new GuiClockHud(CDBG) {
+      canSaveDynamicFields = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "350 6";
+      Extent = "109 51";
+      MinExtent = "8 8";
+      canSave = "1";
+      Visible = "0";
+      hovertime = "1000";
+      showFill = "1";
+      showFrame = "0";
+      fillColor = "0 0 1 0.5";
+      frameColor = "0 1 0 1";
+      textColor = "0 0 0 0";
+   };
+   new GuiClockHud(CDBGR) {
+      canSaveDynamicFields = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "350 6";
+      Extent = "109 51";
+      MinExtent = "8 8";
+      canSave = "1";
+      Visible = "0";
+      hovertime = "1000";
+      showFill = "1";
+      showFrame = "0";
+      fillColor = "1 0 0 0.5";
+      frameColor = "0 1 0 1";
+      textColor = "0 0 0 0";
+   };
+   new GuiTextCtrl(CDTime) {
+      canSaveDynamicFields = "0";
+      Profile = "GuiBigTextProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "796 665";
+      Extent = "92 40";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      text = "0-1:24";
+      maxLength = "255";
+   };
+   new GuiBitmapCtrl(Scoreboard) {
+      canSaveDynamicFields = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "center";
+      VertSizing = "center";
+      position = "372 207";
+      Extent = "279 354";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "0";
+      hovertime = "1000";
+      bitmap = "./highscore.png";
+      wrap = "0";
+
+      new GuiTextCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "relative";
+         VertSizing = "relative";
+         position = "54 72";
+         Extent = "225 267";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         maxLength = "255";
+
+         new GuiTextListCtrl(score) {
+            canSaveDynamicFields = "0";
+            Profile = "GuiDefaultProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "9 0";
+            Extent = "9 2";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            enumerate = "0";
+            resizeCell = "0";
+            columns = "0 120 200";
+            fitParentWidth = "0";
+            clipColumnText = "1";
+         };
+      };
+   };
+   new GuiMLTextCtrl(MsgBox) {
+      canSaveDynamicFields = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "51 627";
+      Extent = "667 14";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      lineSpacing = "2";
+      allowColorChars = "1";
+      maxChars = "-1";
+   };
+   new GuiBitmapCtrl(msgbmp) {
+      canSaveDynamicFields = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      position = "132 -1";
+      Extent = "537 106";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      bitmap = "./messages.png";
+      wrap = "0";
+   };
+};
+//--- OBJECT WRITE END ---

@@ -1,0 +1,1 @@
+torqueDemo_DEBUG -dedicated -game LTA -mission LTA/data/missions/one_new.mis

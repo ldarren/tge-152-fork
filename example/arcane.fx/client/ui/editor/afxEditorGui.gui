@@ -1,0 +1,753 @@
+
+//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~~//
+$PREVIEW_SIZE = "480 360";
+
+new GuiControlProfile(BackgroundProfile)
+{
+   opaque = true;
+   fillColor = "0 94 94";
+   border = true;
+   borderColor = "255 128 128";
+   fontType = "Arial";
+   fontSize = 12;
+   fontColor = "0 0 0";
+   fontColorHL = "32 100 100";
+   fixedExtent = true;
+   justify = "center";
+};
+
+new GuiControlProfile(afxMenuBarProfile)
+{
+   fontType = "Arial";
+   fontSize = 15;
+   opaque = true;
+   fillColor = ($platform $= "macos") ? "211 211 211" : "192 192 192";
+   fillColorHL = "0 0 96";
+   border = 4;
+   fontColor = "0 0 0";
+   fontColorHL = "255 255 255";
+   fontColorNA = "128 128 128";
+   fixedExtent = true;
+   justify = "center";
+   canKeyFocus = false;
+   mouseOverSelected = true;
+   bitmap = ($platform $= "macos") ? "common/ui/osxMenu" : "common/ui/torqueMenu";
+   hasBitmapArray = true;
+};
+
+new GuiControlProfile (afxEditorDefaultProfile)
+{
+   tab = false;
+   canKeyFocus = false;
+   hasBitmapArray = false;
+   mouseOverSelected = false;
+
+   // fill color
+   opaque = true;
+   fillColor = "64 64 64";
+   fillColorHL = "221 202 173";
+   fillColorNA = "221 202 173";
+
+   // border color
+   border = false;
+   borderColor   = "0 0 0"; 
+   borderColorHL = "179 134 94";
+   borderColorNA = "126 79 37";
+
+   // font
+   fontType = "Arial";
+   fontSize = 14;
+
+   fontColor = "0 0 0";
+   fontColorHL = "32 100 100";
+   fontColorNA = "0 0 0";
+   fontColorSEL= "200 200 200";
+
+   // bitmap information
+   //bitmap = "./demoWindow";
+   bitmapBase = "";
+   textOffset = "0 0";
+
+   // used by guiTextControl
+   modal = true;
+   justify = "left";
+   autoSizeWidth = false;
+   autoSizeHeight = false;
+   returnTab = false;
+   numbersOnly = false;
+   cursorColor = "0 0 0 255";
+
+   // sounds
+   soundButtonDown = "";
+   soundButtonOver = "";
+};
+
+new GuiControlProfile(afxEditorFrameSetProfile)
+{
+  opaque = true;
+  borderWidth = 16;
+  border = true;
+  fontColor = "0 0 0";
+  fontColorHL = "32 100 100";
+  fixedExtent = true;
+  justify = "center";
+  canKeyFocus = false;
+};
+
+new GuiControlProfile(afxEditorButtonProfile)
+{
+  opaque = true;
+  border = true;
+  fontColor = "0 0 0";
+  fontColorHL = "32 100 100";
+  fixedExtent = true;
+  justify = "center";
+  canKeyFocus = false;
+};
+
+//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~~//
+
+// the whole editor
+new GuiControl(afxEditorGui) 
+{
+  profile = GuiDefaultProfile;
+  position = "0 0";
+  extent = "800 600";
+  helpPage = "";
+  
+  // the menubar
+  new GuiMenuBar(afxEditorMenuBar) 
+  {
+    profile = "afxMenuBarProfile";
+    horizSizing = "width";
+    vertSizing = "bottom";
+    position = "0 0";
+    extent = "800 22";
+    minExtent = "8 8";
+    visible = "1";
+    helpTag = "0";
+  };
+  
+  // this frameset splits the main area vertically
+  new GuiFrameSetCtrl()
+  {
+    position = "0 22";
+    extent = "800 578";
+    profile = "afxEditorFrameSetProfile";
+    horizSizing = "width";
+    vertSizing = "height";
+    columns = "0";
+    rows = "0 368";
+    
+    // this frameset splits the top of main area horizontally
+    new GuiFrameSetCtrl()
+    {
+      position = "0 22";
+      extent = "800 578";
+      profile = "afxEditorFrameSetProfile";
+      horizSizing = "width";
+      vertSizing = "height";
+      columns = "0 488";
+      rows = "0";
+      
+      // the left side of top main area
+      new GuiControl() 
+      {
+        position = "0 0";
+        extent = $PREVIEW_SIZE;
+        minExtent = "64 64";
+        horizSizing = "width";
+        vertSizing = "height";
+        profile = GuiDefaultProfile;
+        
+        new GuiScrollCtrl(afxEditorScroll) 
+        {
+          profile = "GuiScrollProfile";
+          position = "0 0";
+          extent = $PREVIEW_SIZE;
+          horizSizing = "width";
+          vertSizing = "height";
+          vScrollBar = "dynamic";
+          hScrollBar = "dynamic";
+          
+          new GuiControl(afxEditorRegion)
+          {
+            profile = "GuiDefaultProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "0 0";
+            extent = $PREVIEW_SIZE;
+            
+            new GuiControl() // background
+            {
+              profile = "BackgroundProfile";
+              horizSizing = "width";
+              vertSizing = "height";
+              position = "0 0";
+              extent = $PREVIEW_SIZE;
+            };
+            new GuiControl(afxEditorContent)
+            {
+              profile = "GuiDefaultProfile";
+              horizSizing = "width";
+              vertSizing = "height";
+              position = "0 0";
+              extent = $PREVIEW_SIZE;
+            };
+          };
+        };
+      };
+      
+      // the right side of top main area
+      new GuiFrameSetCtrl()
+      {
+        position = "640 0";
+        minExtent = "128 64";
+        extent = "160 600";
+        profile = "afxEditorFrameSetProfile";
+        horizSizing = "width";
+        vertSizing = "height";
+        columns = "0";
+        rows = "0 300";
+        
+        // the tree view
+        new GuiScrollCtrl() 
+        {
+          profile = "GuiScrollProfile";
+          minExtent = "72 64";
+          position = "0 0";
+          extent = "160 300";
+          horizSizing = "width";
+          vertSizing = "height";
+          vScrollBar = "alwaysOn";
+          hScrollBar = "dynamic";
+          
+          new GuiTreeViewCtrl(afxEditorTreeView)
+          {
+            profile = "GuiTreeViewProfile";
+            position = "0 0";
+            horizSizing = "width";
+          };
+        };
+        
+        // the inspector
+        new GuiControl() 
+        { 
+          profile = "GuiInspectorBackgroundProfile";
+          horizSizing = "width";
+          vertSizing = "height";
+          position = "0 0";
+          extent = "160 300";
+          minExtent = "64 64";
+          fillColor = "128 128 128";
+          
+          new GuiButtonCtrl () {
+            profile = "GuiInspectorTypeFileNameProfile";
+            position = "6 3";
+            border = 5;
+            extent = "40 20";
+            text = "Apply";
+            command = "afxEditorInspectApply();";
+          };
+          
+          new GuiTextCtrl() {
+            profile = "GuiInspectorFieldProfile";
+            position = "52 4";
+            extent = "42 16";
+            text = "Name:";
+          };
+          
+          new GuiTextEditCtrl (afxEditorInspectName) {
+            profile = "GuiInspectorBackgroundProfile";
+            position = "97 4";
+            extent = "62 18";
+            text = "";
+            horizSizing = "width";
+            AltCommand = "afxEditorInspectApply();";
+            vertSizing = "bottom";
+            autoSizeWidth = false;
+            autoSizeHeight = true;
+            textOffset = "0 2";
+          };
+          
+          new GuiScrollCtrl() {
+            profile = "GuiScrollProfile";
+            position = "0 26";
+            extent = "160 274";
+            horizSizing = "width";
+            vertSizing = "height";
+            vScrollBar = "alwaysOn";
+            hScrollBar = "alwaysOff";
+            
+            new GuiInspector (afxEditorInspectFields) {
+              useFieldGrouping = false;
+              profile = "GuiDefaultProfile";
+              position = "0 0";
+              extent = "140 0";
+              horizSizing = "width";
+              vertSizing = "bottom";
+            };
+          };
+        };
+        
+      }; 
+    };
+
+    new GuiControl() 
+    {
+      position = "0 0";
+      extent = "800 240";
+      minExtent = "64 64";
+      horizSizing = "width";
+      vertSizing = "height";
+      profile = afxEditorDefaultProfile;
+
+      new GuiScrollCtrl() 
+      {
+        profile = "GuiScrollProfile";
+        minExtent = "800 100";
+        position = "0 0";
+        extent = "800 240";
+        horizSizing = "width";
+        vertSizing = "height";
+        vScrollBar = "alwaysOn";
+        hScrollBar = "dynamic";
+      
+        new GuiButtonCtrl () {
+          profile = "GuiInspectorTypeFileNameProfile";
+          position = "6 3";
+          border = 5;
+          extent = "40 20";
+          text = "Apply";
+          command = "afxEditorInspectApply();";
+        };
+      };
+    };
+  };
+};
+
+
+//----------------------------------------
+new GuiControl(NewAfxDialog)
+{
+   profile = "GuiDialogProfile";
+   position = "0 0";
+   extent = "640 480";
+   
+	new GuiWindowCtrl()
+   {
+      profile = "GuiWindowProfile";
+		position = "220 146";
+		extent = "200 188";
+		text = "Create new GUI";
+      canMove = "false";  
+      canClose = "false";
+      canMinimize = "false";
+      canMaximize = "false";
+      horizSizing = "center";
+      vertSizing = "center";
+      
+		new GuiTextCtrl()
+      {
+         profile = "GuiTextProfile";
+			position = "20 28";
+			text = "GUI Name:";
+		};
+		new GuiTextEditCtrl(NewAfxDialogName)
+      {
+         profile = "GuiTextEditProfile";
+			position = "20 44";
+			extent = "160 20";
+		};
+		new GuiTextCtrl()
+      {
+         profile = "GuiTextProfile";
+			position = "20 68";
+			text = "Class:";
+		};
+		new GuiControlListPopup(NewAfxDialogClass)
+      {
+         profile = "GuiControlListPopupProfile";
+			position = "20 84";
+			extent = "160 20";
+		};
+		new GuiButtonCtrl() {
+         profile = "afxEditorButtonProfile";
+			position = "56 156";
+			extent = "40 16";
+			text = "Create";
+			command = "afxEditorCreate();";
+		};
+		new GuiButtonCtrl() {
+         profile = "afxEditorButtonProfile";
+			position = "104 156";
+			extent = "40 16";
+			text = "Cancel";
+			command = "Canvas.popDialog(NewAfxDialog);";
+		};
+   };
+};
+
+
+//----------------------------------------
+function afxEditorStartCreate()
+{
+   NewAfxDialogClass.setText("GuiControl");
+   NewAfxDialogClass.sort();
+   NewAfxDialogName.setValue("NewGui");
+   Canvas.pushDialog(NewAfxDialog);
+}
+
+//----------------------------------------
+function afxEditorCreate()
+{
+   %name = NewAfxDialogName.getValue();
+   %class = NewAfxDialogClass.getText();
+   Canvas.popDialog(NewAfxDialog);
+   %obj = eval("return new " @ %class @ "(" @ %name @ ");");
+   afxEditorOpen(%obj);
+}
+
+//----------------------------------------
+function afxEditorSaveGui()
+{
+   %obj = afxEditorContent.getObject(0);
+   if(%obj == -1 || %obj.getName() $= "")
+      return;
+   %name = %obj.getName() @ ".gui";
+   if ($BlockSave!=1) {
+      getSaveFilename("*.gui", "afxEditorSaveGuiCallback", %name);
+   } else {
+      echo("To enable gui saving, make \$BlockSave=1.");
+      MessageBoxOK("Save Function Disabled","The Save GUI function has been disabled for this demo walkthrough.\n\n  If you are sure you want to make permanent GUI changes, go to the console (tilde \"~\" key) and type \"$BlockSave=0;\" first.");
+   }
+}
+
+function afxEditorSaveGuiCallback(%name)
+{
+   %obj = afxEditorContent.getObject(0);
+   
+   // make sure it is saved...
+   if(!%obj.save(%name))
+   {
+      MessageBoxOK("afxEditor Save Failure", "Failed to save '" @ %name @ "'. The file may be read-only.");
+   }
+}   
+
+//----------------------------------------
+function afxEdit(%val)
+{
+   if(%val != 0)
+      return;
+      
+   %content = Canvas.getContent();
+   
+   if(%content == afxEditorGui.getId())
+   {
+      //GlobalActionMap.bind(mouse, button1, mouselook);
+
+      %obj = afxEditorContent.getObject(0);
+      if(%obj != -1)
+      {
+         GuiGroup.add(%obj);
+         //Canvas.setContent(%obj);
+         Canvas.setContent($previousContent);
+      }
+      echo("Exporting Gui Editor Prefs");
+      export( "$Pref::afxEditor::*", "./prefs.cs", false );
+      GlobalActionMap.unbind( keyboard, "delete" );
+   }
+   else
+   {
+      $previousContent = %content;
+      exec("./prefs.cs");
+      //GlobalActionMap.unbind(mouse, button1);
+      afxEditorOpen(%content);
+   }
+}
+
+package afxEditor_BlockDialogs
+{
+
+function GuiCanvas::pushDialog()
+{
+
+}
+
+function GuiCanvas::popDialog()
+{
+
+}
+
+};
+
+//----------------------------------------
+function afxEditorOpen(%content)
+{
+   afxEditorMenuBar.clearMenus();
+   afxEditorMenuBar.addMenu("File", 0);
+   afxEditorMenuBar.addMenuItem("File", "New GUI...", 1);
+   afxEditorMenuBar.scriptCommand["File", 1] = "afxEditorStartCreate();";
+   afxEditorMenuBar.addMenuItem("File", "Save GUI...", 2);
+   afxEditorMenuBar.scriptCommand["File", 2] = "afxEditorSaveGui();";
+   afxEditorMenuBar.addMenuItem("File", "-", 0);
+   afxEditorMenuBar.addMenuItem("File", "GUI Editor Help...", 3, "F1");
+   afxEditorMenuBar.scriptCommand["File", 3] = "getHelp(\"3. Gui Editor\");";
+   afxEditorMenuBar.addMenuItem("File", "Toggle GUI Editor...", 4, "F10");
+   afxEditorMenuBar.scriptCommand["File", 4] = "afxEdit(0);";
+
+   afxEditorMenuBar.addMenu("Edit", 1);
+   afxEditorMenuBar.addMenuItem("Edit", "Cut", 3, "Ctrl X");
+   afxEditorMenuBar.scriptCommand["Edit", 3] = "afxEditor.saveSelection($GUI::clipboardFile); afxEditor.deleteSelection();";
+   afxEditorMenuBar.setMenuItemBitmap("Edit", "Cut", 3);
+   afxEditorMenuBar.addMenuItem("Edit", "Copy", 4, "Ctrl C");
+   afxEditorMenuBar.scriptCommand["Edit", 4] = "afxEditor.saveSelection($GUI::clipboardFile);";
+   afxEditorMenuBar.setMenuItemBitmap("Edit", "Copy", 4);
+   afxEditorMenuBar.addMenuItem("Edit", "Paste", 5, "Ctrl V");
+   afxEditorMenuBar.scriptCommand["Edit", 5] = "afxEditor.loadSelection($GUI::clipboardFile);";
+   afxEditorMenuBar.setMenuItemBitmap("Edit", "Paste", 5);
+   afxEditorMenuBar.addMenuItem("Edit", "-", 0);
+   afxEditorMenuBar.addMenuItem("Edit", "Select All", 6, "Ctrl A");
+   afxEditorMenuBar.scriptCommand["Edit", 6] = "afxEditor.selectAll();";
+
+   afxEditorMenuBar.addMenu("Layout", 2);
+   afxEditorMenuBar.addMenuItem("Layout", "Align Left", 1, "Ctrl L");
+   afxEditorMenuBar.scriptCommand["Layout", 1] = "afxEditor.Justify(0);";
+   afxEditorMenuBar.addMenuItem("Layout", "Align Right", 2, "Ctrl R");
+   afxEditorMenuBar.scriptCommand["Layout", 2] = "afxEditor.Justify(2);";
+   afxEditorMenuBar.addMenuItem("Layout", "Align Top", 3, "Ctrl T");
+   afxEditorMenuBar.scriptCommand["Layout", 3] = "afxEditor.Justify(3);";
+   afxEditorMenuBar.addMenuItem("Layout", "Align Bottom", 4, "Ctrl B");
+   afxEditorMenuBar.scriptCommand["Layout", 4] = "afxEditor.Justify(4);";
+   afxEditorMenuBar.addMenuItem("Layout", "-", 0);
+   afxEditorMenuBar.addMenuItem("Layout", "Center Horizontally", 5);
+   afxEditorMenuBar.scriptCommand["Layout", 5] = "afxEditor.Justify(1);";
+   afxEditorMenuBar.addMenuItem("Layout", "Space Vertically", 6);
+   afxEditorMenuBar.scriptCommand["Layout", 6] = "afxEditor.Justify(5);";
+   afxEditorMenuBar.addMenuItem("Layout", "Space Horizontally", 7);
+   afxEditorMenuBar.scriptCommand["Layout", 7] = "afxEditor.Justify(6);";
+   afxEditorMenuBar.addMenuItem("Layout", "-", 0);
+   afxEditorMenuBar.addMenuItem("Layout", "Bring to Front", 8);
+   afxEditorMenuBar.scriptCommand["Layout", 8] = "afxEditor.BringToFront();";
+   afxEditorMenuBar.addMenuItem("Layout", "Send to Back", 9);
+   afxEditorMenuBar.scriptCommand["Layout", 9] = "afxEditor.PushToBack();";
+   afxEditorMenuBar.addMenuItem("Layout", "Lock Selection", 10);
+   afxEditorMenuBar.scriptCommand["Layout",10] = "afxEditorTreeView.lockSelection(true);";
+   afxEditorMenuBar.addMenuItem("Layout", "Unlock Selection", 11);
+   afxEditorMenuBar.scriptCommand["Layout",11] = "afxEditorTreeView.lockSelection(false);";
+   afxEditorMenuBar.addMenu("Move", 3);
+   afxEditorMenuBar.addMenuItem("Move", "Nudge Left", 1, "Left");
+   afxEditorMenuBar.scriptCommand["Move", 1] = "afxEditor.moveSelection(-1,0);";
+   afxEditorMenuBar.addMenuItem("Move", "Nudge Right", 2, "Right");
+   afxEditorMenuBar.scriptCommand["Move", 2] = "afxEditor.moveSelection(1,0);";
+   afxEditorMenuBar.addMenuItem("Move", "Nudge Up", 3, "Up");
+   afxEditorMenuBar.scriptCommand["Move", 3] = "afxEditor.moveSelection(0,-1);";
+   afxEditorMenuBar.addMenuItem("Move", "Nudge Down", 4, "Down");
+   afxEditorMenuBar.scriptCommand["Move", 4] = "afxEditor.moveSelection(0,1);";
+   afxEditorMenuBar.addMenuItem("Move", "-", 0);
+   afxEditorMenuBar.addMenuItem("Move", "Big Nudge Left", 5, "Shift Left");
+   afxEditorMenuBar.scriptCommand["Move", 5] = "afxEditor.moveSelection(-10,0);";
+   afxEditorMenuBar.addMenuItem("Move", "Big Nudge Right", 6, "Shift Right");
+   afxEditorMenuBar.scriptCommand["Move", 6] = "afxEditor.moveSelection(10,0);";
+   afxEditorMenuBar.addMenuItem("Move", "Big Nudge Up", 7, "Shift Up");
+   afxEditorMenuBar.scriptCommand["Move", 7] = "afxEditor.moveSelection(0,-10);";
+   afxEditorMenuBar.addMenuItem("Move", "Big Nudge Down", 8, "Shift Down");
+   afxEditorMenuBar.scriptCommand["Move", 8] = "afxEditor.moveSelection(0,10);";
+
+
+   Canvas.setContent(afxEditorGui);
+   while((%obj = afxEditorContent.getObject(0)) != -1)
+      GuiGroup.add(%obj); // get rid of anything being edited
+
+   %i = 0;
+   afxEditorContentList.clear();
+   while((%obj = GuiGroup.getObject(%i)) != -1)
+   {
+      if(%obj.getName() !$= Canvas)
+      {
+         if(%obj.getName() $= "")
+            %name = "(unnamed) - " @ %obj;
+         else
+            %name = %obj.getName() @ " - " @ %obj;
+
+         afxEditorContentList.add(%name, %obj);
+      }
+      %i++;
+   
+      activatePackage(afxEditor_BlockDialogs);
+      afxEditorContent.add(%content);
+      deactivatePackage(afxEditor_BlockDialogs);
+      afxEditorContentList.sort();
+   }
+   
+   afxEditorClassPopup.sort();
+   afxEditorResList.clear();
+   afxEditorResList.add("640 x 480", 640);
+   afxEditorResList.add("800 x 600", 800);
+   afxEditorResList.add("1024 x 768", 1024);
+   %ext = $Pref::afxEditor::PreviewResolution;
+   if( %ext $= "" )
+   {
+   %ext = afxEditorRegion.getExtent();
+   echo("extent is " @ %ext );
+   switch(getWord(%ext, 0))
+   {
+      case 640:
+         afxEditorResList.setText("640 x 480");
+      case 800:
+         afxEditorResList.setText("800 x 600");
+      case 1024:
+         afxEditorResList.setText("1024 x 768");
+   }
+   }
+   else
+   {
+      afxEditorResList.setText( getWord(%ext,0) @ " x " @ getWord(%ext, 1) );
+   }
+   if(%content.getName() $= "")
+      %name = "(unnamed) - " @ %content;
+   else
+      %name = %content.getName() @ " - " @ %content;
+   
+   afxEditorContentList.setText(%name);
+   afxEditorClassPopup.setText("New Control");
+   afxEditor.setRoot(%content);
+   afxEditorRegion.resize(0,0,getWord(%ext,0), getWord(%ext, 1));
+   afxEditorContent.getObject(0).resize(0,0,getWord(%ext,0), getWord(%ext, 1));
+
+//   %content.resize(0,0,getWord(%ext,0), getWord(%ext, 1));
+
+   afxEditorTreeView.open(%content);
+
+}
+
+function afxEditorMenuBar::onMenuItemSelect(%this, %menuId, %menu, %itemId, %item)
+{
+   if(%this.scriptCommand[%menu, %itemId] !$= "")
+      eval(%this.scriptCommand[%menu, %itemId]);
+   else
+      error("No script command defined for menu " @ %menu  @ " item " @ %item);
+}
+
+//----------------------------------------
+function afxEditorContentList::onSelect(%this, %id)
+{
+   afxEditorOpen(%id);
+}
+
+//----------------------------------------
+function afxEditorClassPopup::onSelect(%this, %id)
+{
+   %class = %this.getText();
+   %obj = eval("return new " @ %class @ "();");
+   afxEditor.addNewCtrl(%obj);
+   afxEditorClassPopup.setText("New Control");
+}
+
+function afxEditorResList::onSelect(%this, %id)
+{
+   switch(%id)
+   {
+      case 640:
+         afxEditorRegion.resize(0,0,640,480);
+         afxEditorContent.getObject(0).resize(0,0,640,480);
+         $Pref::afxEditor::PreviewResolution = "640 480";
+      case 800:
+         afxEditorRegion.resize(0,0,800,600);
+         afxEditorContent.getObject(0).resize(0,0,800,600);
+         $Pref::afxEditor::PreviewResolution = "800 600";
+      case 1024:
+         afxEditorRegion.resize(0,0,1024,768);
+         afxEditorContent.getObject(0).resize(0,0,1024,768);
+         $Pref::afxEditor::PreviewResolution = "1024 768";
+   }
+}
+
+//----------------------------------------
+// defines the icons to be used in the tree view control
+// provide the paths to each icon minus the file extension
+// seperate them with : 
+// the order of the icons must correspond to the bit array defined
+// in the GuiTreeViewCtrl.h
+function afxEditorTreeView::onDefineIcons(%this)
+{
+   //%icons = "common/ui/shll_icon_passworded_hi:common/ui/shll_icon_passworded:common/ui/shll_icon_notqueried_hi:common/ui/shll_icon_notqueried:common/ui/shll_icon_favorite_hi:common/ui/shll_icon_default:";
+   //afxEditorTreeView.buildIconTable(%icons);
+}
+
+function afxEditorTreeView::onRightMouseDown(%this, %item, %pts, %obj)
+{
+   if(%obj)
+   {
+      afxEditor.setCurrentAddSet(%obj);
+   }
+}
+
+function afxEditorTreeView::onAddSelection(%this,%ctrl)
+{
+   afxEditor.addSelection(%ctrl);
+}
+
+function afxEditorTreeView::onRemoveSelection(%this,%ctrl)
+{
+   afxEditorTreeView.removeSelection(%ctrl);
+}
+
+function afxEditor::onClearSelected(%this)
+{ 
+   afxEditorTreeView.clearSelection();
+}
+
+function afxEditor::onAddSelected(%this,%ctrl)
+{
+   afxEditorTreeView.addSelection(%ctrl);
+}
+
+function afxEditor::onRemoveSelected(%this,%ctrl)
+{
+   afxEditorTreeView.removeSelection(%ctrl); 
+}
+
+function afxEditor::onDelete(%this)
+{
+   afxEditorTreeView.deleteSelection();
+}
+
+function afxEditorTreeView::onDeleteSelection(%this)
+{ 
+   afxEditor.clearSelection();
+}
+
+function afxEditorTreeView::onSelect(%this, %obj)
+{
+   if(isObject(%obj))
+   {
+      afxEditorInspectFields.inspect(%obj);
+      afxEditorInspectName.setValue(%obj.getName());
+      afxEditor.select(%obj);
+   }
+}
+
+//----------------------------------------
+function afxEditorInspectApply()
+{
+   afxEditorInspectFields.setName(afxEditorInspectName.getValue());
+}
+
+//----------------------------------------
+function afxEditor::onSelect(%this, %ctrl)
+{  
+   afxEditorInspectFields.inspect(%ctrl);
+   afxEditorInspectName.setValue(%ctrl.getName());
+   afxEditor.clearSelection();
+   afxEditor.select(%ctrl);
+   afxEditorTreeView.addSelection(%ctrl); 
+}
+
+//----------------------------------------
+//function afxEditorDeleteSelected( %val ) {
+//  if( %val )
+//    afxEditor.deleteSelection();
+//}      
+
+//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~//~~~~~~~~~~~~~~~~~~~~~//

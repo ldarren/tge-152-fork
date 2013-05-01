@@ -1,0 +1,37 @@
+<lmargin%:5><rmargin%:95><font:Arial Bold:20>Default Game Control Setup...<font:Arial:16>
+<tab:105,200>
+<font:Arial Bold:16>Movement Keys<font:Arial:16>
+     W	Run Forward
+     S	Run Backward
+     Q	Sidestep left
+     E	Sidestep right
+     A	Turn Left
+     D	Turn Right
+ Space	Jump
+
+<font:Arial Bold:16>Movement Keys (ALT)<font:Arial:16>
+     UP	Run Forward
+     DOWN	Run Backward
+     LEFT	Turn Left
+     RIGHT	Turn Right
+ Space	Jump
+
+<font:Arial Bold:16>AFX Special Keys<font:Arial:16>
+     PAGEUP	Previous Spell Bank
+     PAGEDN	Next Spell Bank
+     I	Interrupt Spellcasting
+     F	Cast Great Ball of Fire Spell
+     ctrl-D	Damage Player
+
+<font:Arial Bold:16>Camera Keys<font:Arial:16>
+     alt-C	Toggle Player/Free Camera
+     Z	Toggle Zoom
+     HOME	Closer 3rd Person Camera
+     END	Farther 3rd Person Camera
+
+<font:Arial Bold:16>Interface Keys<font:Arial:16>
+     ctrl-O	Open Options Popup
+     T	Next Selectron Style
+
+
+

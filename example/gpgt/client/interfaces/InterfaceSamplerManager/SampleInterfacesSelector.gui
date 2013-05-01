@@ -1,0 +1,357 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(SampleInterfacesSelector) {
+   profile = "GuiDefaultProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "800 600";
+   minExtent = "8 8";
+   visible = "1";
+   Parent = "MainMenuGui";
+
+   new GuiChunkedBitmapCtrl() {
+      profile = "GuiDefaultProfile";
+      horizSizing = "width";
+      vertSizing = "height";
+      position = "0 0";
+      extent = "800 600";
+      minExtent = "8 2";
+      visible = "1";
+      bitmap = $SA::Background1;
+      useVariable = "0";
+      tile = "0";
+
+      new GuiControl(samplerButtonContainer) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "center";
+         vertSizing = "center";
+         position = "160 120";
+         extent = "480 360";
+         minExtent = "8 2";
+         visible = "1";
+
+         new GuiBitmapButtonCtrl(interfaceChoice0) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "10 -5";
+            extent = "240 70";
+            minExtent = "8 2";
+            visible = "1";
+            command = "Canvas.setContent(gsBitmap);";
+            accelerator = "1";
+            text = "Button";
+            groupNum = "-1";
+            buttonType = "PushButton";
+            bitmap = "~/client/sharedAssets/button1/button1";
+
+            new GuiMLTextCtrl() {
+               profile = "GuiModelessMLTextProfile";
+               horizSizing = "center";
+               vertSizing = "center";
+               position = "30 27";
+               extent = "200 16";
+               minExtent = "8 2";
+               visible = "1";
+               lineSpacing = "2";
+               allowColorChars = "0";
+               maxChars = "-1";
+               text = "<just:center><color:fada00><font:Arial Bold:16>--";
+            };
+         };
+         new GuiBitmapButtonCtrl(interfaceChoice5) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "240 -5";
+            extent = "240 70";
+            minExtent = "8 2";
+            visible = "1";
+            command = "Canvas.setContent(gsChunkedBitmap);";
+            accelerator = "1";
+            text = "Button";
+            groupNum = "-1";
+            buttonType = "PushButton";
+            bitmap = "~/client/sharedAssets/button1/button1";
+
+            new GuiMLTextCtrl() {
+               profile = "GuiModelessMLTextProfile";
+               horizSizing = "center";
+               vertSizing = "center";
+               position = "30 27";
+               extent = "200 16";
+               minExtent = "8 2";
+               visible = "1";
+               lineSpacing = "2";
+               allowColorChars = "0";
+               maxChars = "-1";
+               text = "<just:center><color:fada00><font:Arial Bold:16>--";
+            };
+         };
+         new GuiBitmapButtonCtrl(interfaceChoice1) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "10 70";
+            extent = "240 70";
+            minExtent = "8 2";
+            visible = "1";
+            command = "Canvas.setContent(gsBitmapBorder);";
+            accelerator = "1";
+            text = "Button";
+            groupNum = "-1";
+            buttonType = "PushButton";
+            bitmap = "~/client/sharedAssets/button1/button1";
+
+            new GuiMLTextCtrl() {
+               profile = "GuiModelessMLTextProfile";
+               horizSizing = "center";
+               vertSizing = "center";
+               position = "30 27";
+               extent = "200 16";
+               minExtent = "8 2";
+               visible = "1";
+               lineSpacing = "2";
+               allowColorChars = "0";
+               maxChars = "-1";
+               text = "<just:center><color:fada00><font:Arial Bold:16>--";
+            };
+         };
+         new GuiBitmapButtonCtrl(interfaceChoice6) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "240 70";
+            extent = "240 70";
+            minExtent = "8 2";
+            visible = "1";
+            command = "Canvas.setContent(gsCursor);";
+            accelerator = "1";
+            text = "Button";
+            groupNum = "-1";
+            buttonType = "PushButton";
+            bitmap = "~/client/sharedAssets/button1/button1";
+
+            new GuiMLTextCtrl() {
+               profile = "GuiModelessMLTextProfile";
+               horizSizing = "center";
+               vertSizing = "center";
+               position = "30 27";
+               extent = "200 16";
+               minExtent = "8 2";
+               visible = "1";
+               lineSpacing = "2";
+               allowColorChars = "0";
+               maxChars = "-1";
+               text = "<just:center><color:fada00><font:Arial Bold:16>--";
+            };
+         };
+         new GuiBitmapButtonCtrl(interfaceChoice3) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "10 220";
+            extent = "240 70";
+            minExtent = "8 2";
+            visible = "1";
+            command = "Canvas.setContent(gsButton);";
+            accelerator = "1";
+            text = "Button";
+            groupNum = "-1";
+            buttonType = "PushButton";
+            bitmap = "~/client/sharedAssets/button1/button1";
+
+            new GuiMLTextCtrl() {
+               profile = "GuiModelessMLTextProfile";
+               horizSizing = "center";
+               vertSizing = "center";
+               position = "30 27";
+               extent = "200 16";
+               minExtent = "8 2";
+               visible = "1";
+               lineSpacing = "2";
+               allowColorChars = "0";
+               maxChars = "-1";
+               text = "<just:center><color:fada00><font:Arial Bold:16>--";
+            };
+         };
+         new GuiBitmapButtonCtrl(interfaceChoice8) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "240 220";
+            extent = "240 70";
+            minExtent = "8 2";
+            visible = "1";
+            command = "Canvas.setContent(gsFilter);";
+            accelerator = "1";
+            text = "Button";
+            groupNum = "-1";
+            buttonType = "PushButton";
+            bitmap = "~/client/sharedAssets/button1/button1";
+
+            new GuiMLTextCtrl() {
+               profile = "GuiModelessMLTextProfile";
+               horizSizing = "center";
+               vertSizing = "center";
+               position = "30 27";
+               extent = "200 16";
+               minExtent = "8 2";
+               visible = "1";
+               lineSpacing = "2";
+               allowColorChars = "0";
+               maxChars = "-1";
+               text = "<just:center><color:fada00><font:Arial Bold:16>--";
+            };
+         };
+         new GuiBitmapButtonCtrl(interfaceChoice2) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "10 145";
+            extent = "240 70";
+            minExtent = "8 2";
+            visible = "1";
+            command = "Canvas.setContent(gsBitmapButton);";
+            accelerator = "1";
+            text = "Button";
+            groupNum = "-1";
+            buttonType = "PushButton";
+            bitmap = "~/client/sharedAssets/button1/button1";
+
+            new GuiMLTextCtrl() {
+               profile = "GuiModelessMLTextProfile";
+               horizSizing = "center";
+               vertSizing = "center";
+               position = "30 27";
+               extent = "200 16";
+               minExtent = "8 2";
+               visible = "1";
+               lineSpacing = "2";
+               allowColorChars = "0";
+               maxChars = "-1";
+               text = "<just:center><color:fada00><font:Arial Bold:16>--";
+            };
+         };
+         new GuiBitmapButtonCtrl(interfaceChoice7) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "240 145";
+            extent = "240 70";
+            minExtent = "8 2";
+            visible = "1";
+            command = "Canvas.setContent(gsFadeInBitmap);";
+            accelerator = "1";
+            text = "Button";
+            groupNum = "-1";
+            buttonType = "PushButton";
+            bitmap = "~/client/sharedAssets/button1/button1";
+
+            new GuiMLTextCtrl() {
+               profile = "GuiModelessMLTextProfile";
+               horizSizing = "center";
+               vertSizing = "center";
+               position = "30 27";
+               extent = "200 16";
+               minExtent = "8 2";
+               visible = "1";
+               lineSpacing = "2";
+               allowColorChars = "0";
+               maxChars = "-1";
+               text = "<just:center><color:fada00><font:Arial Bold:16>--";
+            };
+         };
+         new GuiBitmapButtonCtrl(interfaceChoice4) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "10 295";
+            extent = "240 70";
+            minExtent = "8 2";
+            visible = "1";
+            command = "Canvas.setContent(gsCheckBox);";
+            accelerator = "1";
+            text = "Button";
+            groupNum = "-1";
+            buttonType = "PushButton";
+            bitmap = "~/client/sharedAssets/button1/button1";
+
+            new GuiMLTextCtrl() {
+               profile = "GuiModelessMLTextProfile";
+               horizSizing = "center";
+               vertSizing = "center";
+               position = "30 27";
+               extent = "200 16";
+               minExtent = "8 2";
+               visible = "1";
+               lineSpacing = "2";
+               allowColorChars = "0";
+               maxChars = "-1";
+               text = "<just:center><color:fada00><font:Arial Bold:16>--";
+            };
+         };
+         new GuiBitmapButtonCtrl(interfaceChoice9) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "240 295";
+            extent = "240 70";
+            minExtent = "8 2";
+            visible = "1";
+            command = "Canvas.setContent(gsFrameSet);";
+            accelerator = "1";
+            text = "Button";
+            groupNum = "-1";
+            buttonType = "PushButton";
+            bitmap = "~/client/sharedAssets/button1/button1";
+
+            new GuiMLTextCtrl() {
+               profile = "GuiModelessMLTextProfile";
+               horizSizing = "center";
+               vertSizing = "center";
+               position = "30 27";
+               extent = "200 16";
+               minExtent = "8 2";
+               visible = "1";
+               lineSpacing = "2";
+               allowColorChars = "0";
+               maxChars = "-1";
+               text = "<just:center><color:fada00><font:Arial Bold:16>--";
+            };
+         };
+      };
+      new GuiBitmapButtonCtrl(InterfacesLeft) {
+         profile = "gpgtButtonProfile1";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         position = "125 525";
+         extent = "75 75";
+         minExtent = "8 2";
+         visible = "1";
+         command = "SampleInterfacesSelector.flipPage(0 , true);";
+         accelerator = "escape";
+         text = "Button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "~/client/sharedAssets/button0/leftButton0";
+      };
+      new GuiBitmapButtonCtrl(InterfacesRight) {
+         profile = "gpgtButtonProfile1";
+         horizSizing = "relative";
+         vertSizing = "relative";
+         position = "575 525";
+         extent = "75 75";
+         minExtent = "8 2";
+         visible = "1";
+         command = "SampleInterfacesSelector.flipPage(1 , true);";
+         accelerator = "space";
+         text = "Button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "~/client/sharedAssets/button0/rightButton0";
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+

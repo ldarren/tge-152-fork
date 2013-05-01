@@ -1,0 +1,74 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiFadeinBitmapCtrl(mmSplashScreen) {
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   position = "0 0";
+   Extent = "1024 768";
+   MinExtent = "8 2";
+   Visible = "1";
+   bitmap = "./mmbg2.jpg";
+   wrap = "0";
+   fadeinTime = "0";
+   waitTime = "1";
+   fadeoutTime = "0";
+   done = "1";
+};
+//--- OBJECT WRITE END ---
+
+function loadSplashScreen()
+{
+   mmSplashScreen.done = false;
+   Canvas.setContent( mmSplashScreen );
+   schedule(100, 0, checkSplashDone );
+   //alxPlay(AudioStartup);
+}
+   
+
+//-------------------------------------
+function mmSplashScreen::click()
+{
+   mmSplashScreen.done = true;
+}
+
+
+//-------------------------------------
+function checkSplashDone()
+{
+   if (mmSplashScreen.done)
+   {
+   	echo ("*** Load Main Menu");
+      //loadMainMenu();
+		loadMyMission();
+   }
+   else
+      schedule(100, 0, checkSplashDone );
+}
+
+//--- OBJECT WRITE BEGIN ---
+new GuiFadeinBitmapCtrl(mmSplashScreenLoad) {
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   position = "0 0";
+   Extent = "1024 768";
+   MinExtent = "8 2";
+   Visible = "1";
+   bitmap = "./mmbg2.jpg";
+   wrap = "0";
+   fadeinTime = "1000";
+   waitTime = "2000";
+   fadeoutTime = "1000";
+   done = "0";
+   noCursor = true;
+};
+//--- OBJECT WRITE END ---
+function loadSplashLoadScreen()
+{
+   mmSplashScreenLoad.done = false;
+   Canvas.setContent( mmSplashScreenLoad );
+   //schedule(100, 0, checkSplashLoadDone );
+   //alxPlay(AudioStartup);	
+}
+
+

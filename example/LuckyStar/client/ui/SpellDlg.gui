@@ -1,0 +1,785 @@
+if(!isObject(DanceTextEditProfile)) new GuiControlProfile (DanceTextEditProfile : GuiTextEditProfile)
+{
+   opaque = true;
+   fillColor = "196 196 196 64";
+   fillColorHL = "128 128 128";
+   border = 0;
+   borderThickness = 0;
+   borderColor = "32 32 32 255";
+   fontType = "Comic Sans MS";
+   fontSize = "32";
+   fontColor = "0 0 255 255";
+   fontColorHL = "255 255 255";
+   fontColorNA = "128 128 128";
+   cursorColor = "0 0 0 0";
+   textOffset = "0 2";
+   autoSizeWidth = false;
+   autoSizeHeight = true;
+   justify = "center";
+   tab = false;
+   canKeyFocus = true;
+};
+
+if(!isObject(DanceWordProgressProfile)) new GuiControlProfile (DanceWordProgressProfile : GuiProgressProfile)
+{
+   border = 0;
+   borderThickness = 0;
+   borderColor = "32 32 32 255";
+};
+
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(SpellDlg) {
+   canSaveDynamicFields = "0";
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   position = "0 0";
+   Extent = "1024 768";
+   MinExtent = "8 2";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+
+   new GuiControl(GameInputPanel) {
+      canSaveDynamicFields = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "center";
+      VertSizing = "bottom";
+      position = "92 90";
+      Extent = "840 140";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+
+      new GuiAniBitmapCtrl(Word_Char1) {
+         canSaveDynamicFields = "0";
+         Profile = "DefaultNoBorderProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "0 0";
+         Extent = "80 80";
+         MinExtent = "80 80";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         wrap = "0";
+         rowDiv = "4";
+         colDiv = "1";
+         frameNum = "4";
+         period = "30";
+         loop = "0";
+      };
+      new GuiAniBitmapCtrl(Word_Char2) {
+         canSaveDynamicFields = "0";
+         Profile = "DefaultNoBorderProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "40 0";
+         Extent = "80 80";
+         MinExtent = "80 80";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         wrap = "0";
+         rowDiv = "4";
+         colDiv = "1";
+         frameNum = "4";
+         period = "30";
+         loop = "0";
+      };
+      new GuiAniBitmapCtrl(Word_Char3) {
+         canSaveDynamicFields = "0";
+         Profile = "DefaultNoBorderProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "80 0";
+         Extent = "80 80";
+         MinExtent = "80 80";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         wrap = "0";
+         rowDiv = "4";
+         colDiv = "1";
+         frameNum = "4";
+         period = "30";
+         loop = "0";
+      };
+      new GuiAniBitmapCtrl(Word_Char4) {
+         canSaveDynamicFields = "0";
+         Profile = "DefaultNoBorderProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "120 0";
+         Extent = "80 80";
+         MinExtent = "80 80";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         wrap = "0";
+         rowDiv = "4";
+         colDiv = "1";
+         frameNum = "4";
+         period = "30";
+         loop = "0";
+      };
+      new GuiAniBitmapCtrl(Word_Char5) {
+         canSaveDynamicFields = "0";
+         Profile = "DefaultNoBorderProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "160 0";
+         Extent = "80 80";
+         MinExtent = "80 80";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         wrap = "0";
+         rowDiv = "4";
+         colDiv = "1";
+         frameNum = "4";
+         period = "30";
+         loop = "0";
+      };
+      new GuiAniBitmapCtrl(Word_Char6) {
+         canSaveDynamicFields = "0";
+         Profile = "DefaultNoBorderProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "200 0";
+         Extent = "80 80";
+         MinExtent = "80 80";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         wrap = "0";
+         rowDiv = "4";
+         colDiv = "1";
+         frameNum = "4";
+         period = "30";
+         loop = "0";
+      };
+      new GuiAniBitmapCtrl(Word_Char7) {
+         canSaveDynamicFields = "0";
+         Profile = "DefaultNoBorderProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "240 0";
+         Extent = "80 80";
+         MinExtent = "80 80";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         wrap = "0";
+         rowDiv = "4";
+         colDiv = "1";
+         frameNum = "4";
+         period = "30";
+         loop = "0";
+      };
+      new GuiAniBitmapCtrl(Word_Char8) {
+         canSaveDynamicFields = "0";
+         Profile = "DefaultNoBorderProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "280 0";
+         Extent = "80 80";
+         MinExtent = "80 80";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         wrap = "0";
+         rowDiv = "4";
+         colDiv = "1";
+         frameNum = "4";
+         period = "30";
+         loop = "0";
+      };
+      new GuiAniBitmapCtrl(Word_Char9) {
+         canSaveDynamicFields = "0";
+         Profile = "DefaultNoBorderProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "320 0";
+         Extent = "80 80";
+         MinExtent = "80 80";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         wrap = "0";
+         rowDiv = "4";
+         colDiv = "1";
+         frameNum = "4";
+         period = "30";
+         loop = "0";
+      };
+      new GuiAniBitmapCtrl(Word_Char10) {
+         canSaveDynamicFields = "0";
+         Profile = "DefaultNoBorderProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "360 0";
+         Extent = "80 80";
+         MinExtent = "80 80";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         wrap = "0";
+         rowDiv = "4";
+         colDiv = "1";
+         frameNum = "4";
+         period = "30";
+         loop = "0";
+      };
+      new GuiAniBitmapCtrl(Word_Char11) {
+         canSaveDynamicFields = "0";
+         Profile = "DefaultNoBorderProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "400 0";
+         Extent = "80 80";
+         MinExtent = "80 80";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         wrap = "0";
+         rowDiv = "4";
+         colDiv = "1";
+         frameNum = "4";
+         period = "30";
+         loop = "0";
+      };
+      new GuiAniBitmapCtrl(Word_Char12) {
+         canSaveDynamicFields = "0";
+         Profile = "DefaultNoBorderProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "440 0";
+         Extent = "80 80";
+         MinExtent = "80 80";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         wrap = "0";
+         rowDiv = "4";
+         colDiv = "1";
+         frameNum = "4";
+         period = "30";
+         loop = "0";
+      };
+      new GuiAniBitmapCtrl(Word_Char13) {
+         canSaveDynamicFields = "0";
+         Profile = "DefaultNoBorderProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "480 0";
+         Extent = "80 80";
+         MinExtent = "80 80";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         wrap = "0";
+         rowDiv = "4";
+         colDiv = "1";
+         frameNum = "4";
+         period = "30";
+         loop = "0";
+      };
+      new GuiAniBitmapCtrl(Word_Char14) {
+         canSaveDynamicFields = "0";
+         Profile = "DefaultNoBorderProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "520 0";
+         Extent = "80 80";
+         MinExtent = "80 80";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         wrap = "0";
+         rowDiv = "4";
+         colDiv = "1";
+         frameNum = "4";
+         period = "30";
+         loop = "0";
+      };
+      new GuiAniBitmapCtrl(Word_Char15) {
+         canSaveDynamicFields = "0";
+         Profile = "DefaultNoBorderProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "560 0";
+         Extent = "80 80";
+         MinExtent = "80 80";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         wrap = "0";
+         rowDiv = "4";
+         colDiv = "1";
+         frameNum = "4";
+         period = "30";
+         loop = "0";
+      };
+      new GuiAniBitmapCtrl(Word_Char16) {
+         canSaveDynamicFields = "0";
+         Profile = "DefaultNoBorderProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "600 0";
+         Extent = "80 80";
+         MinExtent = "80 80";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         wrap = "0";
+         rowDiv = "4";
+         colDiv = "1";
+         frameNum = "4";
+         period = "30";
+         loop = "0";
+      };
+      new GuiAniBitmapCtrl(Word_Char17) {
+         canSaveDynamicFields = "0";
+         Profile = "DefaultNoBorderProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "640 0";
+         Extent = "80 80";
+         MinExtent = "80 80";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         wrap = "0";
+         rowDiv = "4";
+         colDiv = "1";
+         frameNum = "4";
+         period = "30";
+         loop = "0";
+      };
+      new GuiAniBitmapCtrl(Word_Char18) {
+         canSaveDynamicFields = "0";
+         Profile = "DefaultNoBorderProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "680 0";
+         Extent = "80 80";
+         MinExtent = "80 80";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         wrap = "0";
+         rowDiv = "4";
+         colDiv = "1";
+         frameNum = "4";
+         period = "30";
+         loop = "0";
+      };
+      new GuiAniBitmapCtrl(Word_Char19) {
+         canSaveDynamicFields = "0";
+         Profile = "DefaultNoBorderProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "720 0";
+         Extent = "80 80";
+         MinExtent = "80 80";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         wrap = "0";
+         rowDiv = "4";
+         colDiv = "1";
+         frameNum = "4";
+         period = "30";
+         loop = "0";
+      };
+      new GuiAniBitmapCtrl(Word_Char20) {
+         canSaveDynamicFields = "0";
+         Profile = "DefaultNoBorderProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "760 0";
+         Extent = "80 80";
+         MinExtent = "80 80";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         wrap = "0";
+         rowDiv = "4";
+         colDiv = "1";
+         frameNum = "4";
+         period = "30";
+         loop = "0";
+      };
+      new GuiTextEditCtrl(SpellingInputCtrl) {
+         canSaveDynamicFields = "0";
+         Profile = "DanceTextEditProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "200 102";
+         Extent = "400 35";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Variable = "DanceWordVariable";
+         Command = "GameInputPanel.onValidKeyDown();";
+         hovertime = "1000";
+         maxLength = "20";
+         historySize = "0";
+         tabComplete = "0";
+         sinkAllKeyEvents = "0";
+         password = "0";
+         passwordMask = "*";
+      };
+      new GuiProgressCtrl(DanceWordProgress) {
+         canSaveDynamicFields = "0";
+         Profile = "DanceWordProgressProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "0 82";
+         Extent = "840 20";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         maxLength = "64";
+		 startColor = "0 255 0 100";
+		 endColor = "255 0 0 255";
+
+         new GuiTextCtrl(DanceWordProgressText) {
+            canSaveDynamicFields = "0";
+            Profile = "GuiProgressTextProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "0 0";
+            Extent = "840 18";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            maxLength = "256";
+         };
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+
+// merge these to LuckyStarClient?
+$TempState = 0; // 0: not ready, 1: ready, 2: quiz, 3: resolution
+$TempWordTimer = 0;
+
+function GameInputPanel::onWake(%this)
+{
+	for (%i = 1; %i <= 20; %i++)
+	{
+		%ctrl = ("Word_Char"@%i);
+		%ctrl.setBitmap("");
+		%ctrl.isClearing = false;
+	}
+
+	$DanceWordVariable = "";
+	$TempState = 0;
+	%this.quizWord = "";
+	%this.quizWordCount = 0;
+	%this.quizWordStart = 0;
+	%this.quizWordEnd = 0;
+	%this.ansWordCount = 0;
+	%this.ansWord = $DanceWordVariable;
+	%this.audioProfile = AudioDance01;
+	
+	SpellingInputCtrl.setVisible(true);
+	DanceWordProgress.setVisible(true);
+	SpellingInputCtrl.setText(%this.ansWord);
+	SpellingInputCtrl.setFirstResponder();
+	DanceWordProgressText.setText("Loading...");
+	DanceWordProgress.setValue(0);
+}
+
+function GameInputPanel::onSleep(%this)
+{
+	%this.stop();
+}
+
+function GameInputPanel::onValidKeyDown(%this)
+{
+	if ($TempState == 0 || $TempState == 3) 
+	{
+		alxPlay(AudioTypeInvalid);
+		return;
+	}
+	%lwrCurrWord = strlwr($DanceWordVariable);
+	if ($TempState == 1)
+	{
+		if (%lwrCurrWord $= "start")
+		{
+			DanceWordProgressText.setText("Please wait, loading setting...");
+			%this.schedule(300, start);
+		}
+		return;
+	}
+	if (%this.quizWord $= "") return; // no word to guess
+	
+	%wordCount = strlen($DanceWordVariable);
+	if (%this.ansWordCount < %wordCount) // adding a char
+	{
+		%ctrl = ("Word_Char"@(%wordCount+%this.quizWordStart-1));
+		%newChar = getSubStr(%lwrCurrWord, %wordCount-1, 1);
+		%rightChar = getSubStr(%this.quizWord, %wordCount-1, 1);
+		if (%newChar $= %rightChar)
+		{
+			if (!%ctrl.resetBitmap($mod::name@"/client/ui/animations/ya_"@%rightChar))
+			{// resetBitmap Failed, reset textfield
+				SpellingInputCtrl.setText(%this.ansWord);
+				%wordCount -= 1;
+			}
+		}
+		else
+		{
+			alxPlay(AudioTypeWrong);
+			if (!%ctrl.resetBitmap($mod::name@"/client/ui/animations/no_"@%rightChar))
+			{
+				SpellingInputCtrl.setText(%this.ansWord);
+				%wordCount -= 1;
+			}
+		}
+		%ctrl.isClearing = false;
+	}
+	else // removing a char
+	{
+		SpellingInputCtrl.setText(%this.ansWord);
+		%wordCount += 1;
+	}
+	
+	%this.ansWordCount = %wordCount;
+	%this.ansWord = $DanceWordVariable; // possible get update again at the middle of this function
+	
+	if (%this.ansWordCount == %this.quizWordCount)
+	{
+		$TempState = 3;
+		if (%this.quizWord $= %lwrCurrWord)
+		{
+			%this.eraseQuizWord(); // remove old text, so that can print "wonderful" to it :)
+			%this.schedule(1000, rightAnswer, getEventTimeLeft($TempWordTimer));
+			cancel($TempWordTimer);
+		}
+		else
+			%this.wrongAnswer();
+	}
+}
+
+// callback function from engine
+function GuiAniBitmapCtrl::onStop(%this)
+{
+	if (%this.isClearing) %this.setBitmap("");
+}
+
+// game server is ready to rock, once obtain ready signal from player
+function GameInputPanel::ready(%this, %wordProfile, %audioProfile)
+{
+	%this.audioProfile = %audioProfile;
+	DanceWordTextList.load(%wordProfile);
+	DanceWordProgressText.setText("Type \"START\" to start");
+	DanceWordProgress.setValue(0);
+	$TempState = 1;
+}
+
+// game server is ready to rock, once obtain ready signal from player
+function GameInputPanel::start(%this)
+{
+	%this.ansWordCount = 0;
+	%this.ansWord = "";
+	$TempState = 2;
+	SpellingInputCtrl.setText(%this.ansWord);
+	commandToServer('startDance');
+	LuckyStarClient.showSelectron();
+	LuckyStarClient.changeSong(%this.audioProfile);
+	$TempWordTimer = %this.schedule(500, nextQuiz, 0); // skip erasing, print text directly
+}
+
+function GameInputPanel::stop(%this)
+{
+	$TempState = 0;
+	/*if(isEventPending($TempWordTimer))*/ cancel($TempWordTimer);
+	%this.eraseQuizWord();
+	%this.ansWord = "";
+	%this.quizWord = "";
+}
+
+function GameInputPanel::nextQuiz(%this, %count)
+{
+	if ($TempState < 2) return;
+	$TempState = 2; // quiz state
+	if (%count > 1)
+	{
+		DanceWordProgress.setTargetVal(1, 8000); // 8 sec delay
+		$TempWordTimer = %this.schedule(8000, nextQuiz, %count--);
+		return;
+	}
+	if (%count == 1)
+	{
+		if (DanceWordProgress.isVisible()) // quick hack to differentiate congrats word and quiz
+		{
+			DanceWordProgress.setValue(1);
+			
+			if (%this.quizWordCount != %this.ansWordCount) // quick hack, since in onValidKeyDown(), uses quizWordCount == ansWordCount
+			{
+				%wordCount = 0;
+				%lwrAnsWord = strlwr(%this.ansWord);
+				for (%i = 0; %i < %this.ansWordCount; %i++)
+				{
+					if (getSubStr(%lwrAnsWord, %i, 1) $= getSubStr(%this.quizWord, %i, 1)) 
+						%wordCount++;
+				}
+				DanceWordTextList.updateRow(-1);
+				LuckyStarClient.changeSelectron(0);
+				commandToServer('wrongAnswer', %wordCount);
+			}
+		}
+
+		%this.eraseQuizWord(); // remove old text
+		$TempWordTimer = %this.schedule(1000, nextQuiz, %count--);
+		
+		return;
+	}
+	%this.displayQuizWord(DanceWordTextList.getQuizWord(), 0);
+	$TempWordTimer = %this.schedule(500, nextQuiz, 2); // take note, always +1 count for text erasing, 8 secs (1 counts)
+}
+
+// %word: display word, %type> 0: quiz word, 1: congrats word, 2: final result
+function GameInputPanel::displayQuizWord(%this, %word, %type)
+{
+	if (%type == 0)
+	{
+		// reset quiz and answer fields, get ready for next quiz
+		%this.ansWordCount = 0;
+		%this.ansWord = "";
+		SpellingInputCtrl.setText(%this.ansWord);
+		DanceWordProgressText.setText("The faster you type the words, the higher your score will be.");
+		DanceWordProgress.setValue(0);
+		SpellingInputCtrl.setVisible(true);
+		DanceWordProgress.setVisible(true);
+	
+		SpellingInputCtrl.setFirstResponder();
+	}
+	
+	%this.quizWord = %word;
+	%this.quizWordCount = strlen(%this.quizWord);
+	%this.quizWordStart = mFloor((22 - %this.quizWordCount) / 2); // 22 bcos Word_Char is 1 based
+	%this.quizWordEnd = %this.quizWordStart + %this.quizWordCount;
+
+	%j = 0;
+	for (%i = %this.quizWordStart; %i < %this.quizWordEnd; %i++)
+	{
+		%ctrl = ("Word_Char"@%i);
+		%char = getSubStr(%this.quizWord, %j, 1);
+		switch(%type)
+		{
+		case 0:
+			%ctrl.resetBitmap($mod::name@"/client/ui/animations/in_"@%char);
+		case 1:
+			%ctrl.resetBitmap($mod::name@"/client/ui/animations/rin_"@%char);
+		case 2:
+			%ctrl.resetBitmap($mod::name@"/client/ui/animations/rin_"@%char);
+		}
+		%ctrl.isClearing = false;
+		%j++;
+	}
+}
+
+// %type> 0: quiz word, 1: congrats word, 2: final result
+function GameInputPanel::eraseQuizWord(%this, %type)
+{
+	SpellingInputCtrl.setVisible(false);
+	DanceWordProgress.setVisible(false);
+
+	if (%this.quizWord $= "") return;
+
+	%j = 0;
+	for (%i = %this.quizWordStart; %i < %this.quizWordEnd; %i++)
+	{
+		%ctrl = ("Word_Char"@%i);
+		%rightChar = getSubStr(%this.quizWord, %j, 1);
+		if (%type == 0)
+		{
+			%newChar = getSubStr(%this.ansWord, %j, 1);
+			if (%rightChar $= %newChar)
+			{
+				%ctrl.resetBitmap($mod::name@"/client/ui/animations/out_"@%rightChar);
+			}
+			else
+			{
+				%ctrl.resetBitmap($mod::name@"/client/ui/animations/die_"@%rightChar);
+			}
+		}
+		else if (%type == 1)
+		{
+			%ctrl.play(-1);
+		}
+		else
+		{
+			%ctrl.resetBitmap($mod::name@"/client/ui/animations/rout_"@%rightChar);
+		}
+		%ctrl.isClearing = true;
+		%j++;
+	}
+
+	%this.quizWord = "";
+	%this.quizWordCount = 0;
+	
+	if (%type == 1) $TempWordTimer = %this.schedule(500, nextQuiz, 0); // only
+}
+
+function GameInputPanel::rightAnswer(%this, %timerCount)
+{
+	if ($TempState < 2) return;
+	if (%timerCount > 6000)
+	{
+		alxPlay(AudioResultWonderful);
+		%this.displayQuizWord("Wonderful", 1);
+		commandToServer('rightAnswer', %this.quizWordCount, 4);
+	}
+	else if (%timerCount > 5000)
+	{
+		alxPlay(AudioResultExcellent);
+		%this.displayQuizWord("Excellent", 1);
+		commandToServer('rightAnswer', %this.quizWordCount, 3);
+	}
+	else if (%timerCount > 4000)
+	{
+		alxPlay(AudioResultVeryGood);
+		%this.displayQuizWord("Very Good", 1);
+		commandToServer('rightAnswer', %this.quizWordCount, 2);
+	}
+	else
+	{
+		alxPlay(AudioResultGood);
+		%this.displayQuizWord("Good", 1);
+		commandToServer('rightAnswer', %this.quizWordCount, 1);
+	}
+	DanceWordTextList.updateRow(1); // -1: wrong, 1: right
+	LuckyStarClient.changeSelectron(1);
+	%this.ansWordCount = %this.quizWordCount;
+	%this.ansWord = %this.quizWord;
+	//$TempWordTimer = %this.schedule(1000, nextQuiz, 1); // directly erase then print
+	%this.schedule(1000, eraseQuizWord, 1);
+}
+
+
+function GameInputPanel::wrongAnswer(%this)
+{
+	cancel($TempWordTimer);
+	if ($TempState < 2) return; // not resolution phase
+	$TempWordTimer = %this.schedule(1000, nextQuiz, 1); // directly erase then print
+
+	%wordCount = 0;
+	%lwrAnsWord = strlwr(%this.ansWord);
+	for (%i = 0; %i < %this.quizWordCount; %i++)
+	{
+		if (getSubStr(%lwrAnsWord, %i, 1) $= getSubStr(%this.quizWord, %i, 1)) 
+			%wordCount++;
+	}
+	DanceWordTextList.updateRow(-1); // -1: wrong, 1: right
+	LuckyStarClient.changeSelectron(0);
+	commandToServer('wrongAnswer', %wordCount);
+}

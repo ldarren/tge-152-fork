@@ -1,0 +1,17 @@
+<lmargin%:5><rmargin%:95><font:Arial Bold:20>Default Game Control Setup...<font:Arial:18>
+<tab:180>
+<font:Arial Bold:18>Movement<font:Arial:18>
+W	Forward
+S	Backward
+A	Step left
+D	Step right
+Space	Jump
+
+<font:Arial Bold:18>View Control<font:Arial:18>
+E	Zoom
+R	Set zoom FOV
+TAB	First/Third person camera
+Alt-C	Toggle between camera/player
+
+<font:Arial Bold:18>Misc Functions<font:Arial:18>
+Ctrl-O	Open in-game options dialog

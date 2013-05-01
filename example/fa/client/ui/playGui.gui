@@ -1,0 +1,147 @@
+
+
+//--- OBJECT WRITE BEGIN ---
+new GameTSCtrl(PlayGui) {
+   canSaveDynamicFields = "1";
+   Profile = "GuiContentProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   position = "0 0";
+   Extent = "1024 768";
+   MinExtent = "8 8";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+   applyFilterToChildren = "1";
+   cameraZRot = "0";
+   forceFOV = "0";
+      noCursor = "1";
+      helpTag = "0";
+
+   new GuiBitmapCtrl(CenterPrintDlg) {
+      canSaveDynamicFields = "0";
+      Profile = "CenterPrintProfile";
+      HorizSizing = "center";
+      VertSizing = "center";
+      position = "237 374";
+      Extent = "550 20";
+      MinExtent = "8 8";
+      canSave = "1";
+      Visible = "0";
+      hovertime = "1000";
+      bitmap = "./transit/hudfill";
+      wrap = "0";
+
+      new GuiMLTextCtrl(CenterPrintText) {
+         canSaveDynamicFields = "0";
+         Profile = "CenterPrintTextProfile";
+         HorizSizing = "center";
+         VertSizing = "center";
+         position = "0 0";
+         Extent = "546 12";
+         MinExtent = "8 8";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         lineSpacing = "2";
+         allowColorChars = "0";
+         maxChars = "-1";
+      };
+   };
+   new GuiBitmapCtrl(BottomPrintDlg) {
+      canSaveDynamicFields = "0";
+      Profile = "CenterPrintProfile";
+      HorizSizing = "center";
+      VertSizing = "top";
+      position = "237 663";
+      Extent = "550 20";
+      MinExtent = "8 8";
+      canSave = "1";
+      Visible = "0";
+      hovertime = "1000";
+      bitmap = "./transit/hudfill";
+      wrap = "0";
+
+      new GuiMLTextCtrl(BottomPrintText) {
+         canSaveDynamicFields = "0";
+         Profile = "CenterPrintTextProfile";
+         HorizSizing = "center";
+         VertSizing = "center";
+         position = "0 0";
+         Extent = "546 12";
+         MinExtent = "8 8";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         lineSpacing = "2";
+         allowColorChars = "0";
+         maxChars = "-1";
+      };
+   };
+   new GuiBitmapCtrl(LagIcon) {
+      canSaveDynamicFields = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      position = "572 3";
+      Extent = "32 32";
+      MinExtent = "8 8";
+      canSave = "1";
+      Visible = "0";
+      hovertime = "1000";
+      bitmap = "./play/lagIcon";
+      wrap = "0";
+   };
+   new GuiShapeNameHud() {
+      canSaveDynamicFields = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "width";
+      VertSizing = "height";
+      position = "0 0";
+      Extent = "1037 773";
+      MinExtent = "8 8";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      fillColor = "0 0 0 0.25";
+      frameColor = "0 1 0 1";
+      textColor = "0 1 0 1";
+      showFill = "0";
+      showFrame = "0";
+      verticalOffset = "0.2";
+      distanceFade = "0.1";
+   };
+   new GuiCrossHairHud() {
+      canSaveDynamicFields = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "center";
+      VertSizing = "center";
+      position = "496 368";
+      Extent = "32 32";
+      MinExtent = "8 8";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      bitmap = "./play/crossHair";
+      wrap = "0";
+      damageFillColor = "0 1 0 1";
+      damageFrameColor = "1 0.6 0 1";
+      damageRect = "50 4";
+      damageOffset = "0 10";
+   };
+   new GuiTextCtrl(score) {
+      canSaveDynamicFields = "0";
+      Profile = "GuiBigTextProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      position = "815 13";
+      Extent = "118 40";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      text = "Score: 0";
+      maxLength = "1024";
+   };
+};
+//--- OBJECT WRITE END ---

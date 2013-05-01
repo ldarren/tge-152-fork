@@ -1,0 +1,126 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiChunkedBitmapCtrl(MainMenuGui) {
+   canSaveDynamicFields = "0";
+   Profile = "GuiContentProfile";
+   HorizSizing = "width";
+   VertSizing = "height";
+   position = "0 0";
+   Extent = "1024 768";
+   MinExtent = "8 8";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+   bitmap = "./mainmenu/background";
+   useVariable = "0";
+   tile = "0";
+
+   new GuiBitmapButtonCtrl(hostGameBtn) {
+      canSaveDynamicFields = "1";
+      Profile = "GuiButtonProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "72 336";
+      Extent = "224 64";
+      MinExtent = "140 30";
+      canSave = "1";
+      Visible = "1";
+      Command = "callFirstMission();";
+      hovertime = "1000";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      bitmap = "./mainmenu/hostgame";
+   };
+   new GuiBitmapButtonCtrl(joinGameBtn) {
+      canSaveDynamicFields = "0";
+      Profile = "GuiButtonProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "72 404";
+      Extent = "224 64";
+      MinExtent = "140 30";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      bitmap = "./mainmenu/joingame";
+   };
+   new GuiBitmapButtonCtrl(playerSetupBtn) {
+      canSaveDynamicFields = "0";
+      Profile = "GuiButtonProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "72 474";
+      Extent = "224 64";
+      MinExtent = "140 30";
+      canSave = "1";
+      Visible = "1";
+      Command = "Canvas.pushDialog(PlayerSetupDlg);";
+      hovertime = "1000";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      bitmap = "./mainmenu/playersetup";
+   };
+   new GuiBitmapButtonCtrl(optionsBtn) {
+      canSaveDynamicFields = "0";
+      Profile = "GuiButtonProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "72 544";
+      Extent = "224 64";
+      MinExtent = "140 30";
+      canSave = "1";
+      Visible = "1";
+      Command = "Canvas.pushDialog(optionsDlg);";
+      hovertime = "1000";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      bitmap = "./mainmenu/gameoptions";
+   };
+   new GuiBitmapButtonCtrl(quitBtn) {
+      canSaveDynamicFields = "0";
+      Profile = "GuiButtonProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "72 616";
+      Extent = "224 64";
+      MinExtent = "140 30";
+      canSave = "1";
+      Visible = "1";
+      Command = "quit();";
+      hovertime = "1000";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      bitmap = "./mainmenu/quit";
+   };
+   new GuiBitmapCtrl() {
+      canSaveDynamicFields = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "320 184";
+      Extent = "648 529";
+      MinExtent = "161 133";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      bitmap = "./mainmenu/orc";
+      wrap = "0";
+   };
+   new GuiBitmapCtrl() {
+      canSaveDynamicFields = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "relative";
+      VertSizing = "relative";
+      position = "80 56";
+      Extent = "856 72";
+      MinExtent = "215 17";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      bitmap = "./mainmenu/rwfatitle";
+      wrap = "0";
+   };
+};
+//--- OBJECT WRITE END ---
+

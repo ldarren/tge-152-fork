@@ -1,0 +1,338 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(NetworkGui) {
+   canSaveDynamicFields = "0";
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   position = "0 0";
+   Extent = "1024 768";
+   MinExtent = "8 2";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+
+   new GuiWindowCtrl() {
+      canSaveDynamicFields = "0";
+      Profile = "GuiWindowProfile";
+      HorizSizing = "center";
+      VertSizing = "center";
+      position = "192 144";
+      Extent = "640 480";
+      MinExtent = "640 480";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      text = "Network Game";
+      maxLength = "128";
+      resizeWidth = "0";
+      resizeHeight = "0";
+      canMove = "1";
+      canClose = "1";
+      canMinimize = "0";
+      canMaximize = "0";
+      minSize = "50 50";
+      closeCommand = "Canvas.popDialog(NetworkGui);";
+
+      new GuiScrollCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiScrollProfile";
+         HorizSizing = "width";
+         VertSizing = "top";
+         position = "21 75";
+         Extent = "600 345";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         willFirstRespond = "1";
+         hScrollBar = "dynamic";
+         vScrollBar = "dynamic";
+         constantThumbHeight = "0";
+         childMargin = "0 0";
+
+         new GuiTextListCtrl(NetworkGameList) {
+            canSaveDynamicFields = "0";
+            Profile = "GuiTextListProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "2 2";
+            Extent = "596 20";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            enumerate = "0";
+            resizeCell = "1";
+            columns = "0 150 200 250 350";
+            fitParentWidth = "1";
+            clipColumnText = "0";
+            HeaderBGColor = "191 191 191 255";
+            HeaderFontColor = "255 255 255 255";
+         };
+      };
+      new GuiTextCtrl(NetworkServerCount) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiTextProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "20 36";
+         Extent = "138 18";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         text = "Existing Network Games (0):";
+         maxLength = "128";
+      };
+      new GuiButtonCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiButtonProfile";
+         HorizSizing = "right";
+         VertSizing = "top";
+         position = "20 434";
+         Extent = "140 30";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "NetworkGui.query();";
+         hovertime = "1000";
+         text = "Search";
+         groupNum = "-1";
+         buttonType = "PushButton";
+      };
+      new GuiButtonCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiButtonProfile";
+         HorizSizing = "right";
+         VertSizing = "top";
+         position = "164 434";
+         Extent = "140 30";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "NetworkGui.refresh();";
+         hovertime = "1000";
+         text = "Refresh";
+         groupNum = "-1";
+         buttonType = "PushButton";
+      };
+      new GuiButtonCtrl(NetworkJoinBtn) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiButtonProfile";
+         HorizSizing = "left";
+         VertSizing = "top";
+         position = "480 434";
+         Extent = "140 30";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "NetworkGui.join();";
+         hovertime = "1000";
+         text = "Join Selected Game";
+         groupNum = "-1";
+         buttonType = "PushButton";
+      };
+      new GuiButtonCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiButtonProfile";
+         HorizSizing = "left";
+         VertSizing = "top";
+         position = "481 35";
+         Extent = "140 30";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "MapSelectorGui.activate(3);";
+         hovertime = "1000";
+         text = "Create a new game";
+         groupNum = "-1";
+         buttonType = "PushButton";
+      };
+      new GuiControl(NetworkQueryStatus) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiWindowProfile";
+         HorizSizing = "center";
+         VertSizing = "center";
+         position = "165 215";
+         Extent = "310 50";
+         MinExtent = "8 8";
+         canSave = "1";
+         Visible = "0";
+         hovertime = "1000";
+
+         new GuiButtonCtrl() {
+            canSaveDynamicFields = "0";
+            Profile = "GuiButtonProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "9 15";
+            Extent = "64 20";
+            MinExtent = "8 8";
+            canSave = "1";
+            Visible = "1";
+            Command = "NetworkGui.cancel();";
+            hovertime = "1000";
+            text = "Cancel";
+            groupNum = "-1";
+            buttonType = "PushButton";
+         };
+         new GuiProgressCtrl(NetworkQueryStatusBar) {
+            canSaveDynamicFields = "0";
+            Profile = "GuiProgressProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "84 15";
+            Extent = "207 20";
+            MinExtent = "8 8";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            maxLength = "1024";
+            startColor = "0 0 0 0";
+            endColor = "0 0 0 0";
+         };
+         new GuiTextCtrl(NetworkQueryStatusText) {
+            canSaveDynamicFields = "0";
+            Profile = "GuiProgressTextProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            position = "85 14";
+            Extent = "205 20";
+            MinExtent = "8 8";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            maxLength = "255";
+         };
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+
+function NetworkGui::activate(%this)
+{
+	if (!%this.isAwake()) Canvas.pushDialog(%this);
+}
+
+function NetworkGui::onWake()
+{
+	NetworkGameList.addHeader("Server Name" TAB "Ping" TAB "Players" TAB "Game Type" TAB "Level Name");
+	NetworkGameList.resize(2, 2, 596, 20);
+	
+	NetworkJoinBtn.setActive(NetworkGameList.rowCount() > 0);
+}
+
+//----------------------------------------
+// Game information used to query the master server
+// Server side setting:
+//   $Server::GameType = "LuckyStar";
+//   $Server::MissionType = "Competition";
+function NetworkGui::query(%this)
+{
+   queryLANServers(
+      $Pref::Server::Port,      // lanPort for local queries
+      0,          // Query flags
+      "Any",       // was $Client::GameTypeQuery, TODO: read from pulldown menu?
+      "Any",    // was $Client::MissionTypeQuery, TODO: read from pulldown menu?
+      0,          // minPlayers
+      100,        // maxPlayers
+      0,          // maxBots
+      2,          // regionMask
+      0,          // maxPing
+      100,        // minCPU
+      0           // filterFlags
+      );
+}
+
+//----------------------------------------
+function NetworkGui::cancel(%this)
+{
+   cancelServerQuery();
+   NetworkQueryStatus.setVisible(false);
+}
+
+
+//----------------------------------------
+function NetworkGui::join(%this)
+{
+   cancelServerQuery();
+   %index = NetworkGameList.getSelectedId();
+
+   if (setServerInfo(%index)) {
+	error("mode: "@%this.gameMode SPC $ServerInfo::Address);
+      LuckyStarClient.loadMission(2, $ServerInfo::Address);
+   }
+}
+
+//----------------------------------------
+function NetworkGui::refresh(%this)
+{
+   cancelServerQuery();
+   %index = NetworkGameList.getSelectedId();
+
+   if (setServerInfo(%index)) {
+      querySingleServer( $ServerInfo::Address, 0 );
+   }
+}
+
+//----------------------------------------
+function NetworkGui::exit(%this)
+{
+   cancelServerQuery();
+   Canvas.setContent(MainMenuGui);
+}
+
+//----------------------------------------
+//"Server Name" TAB "Ping" TAB "Players" TAB "Game Type" TAB "Level Name"
+function NetworkGui::update(%this)
+{
+   // Copy the servers into the server list.
+   NetworkQueryStatus.setVisible(false);
+   NetworkGameList.clear();
+   %sc = getServerCount();
+   NetworkServerCount.text = "Existing Network Games ("@%sc@"):";
+   for (%i = 0; %i < %sc; %i++) {
+      setServerInfo(%i);
+      NetworkGameList.addRow(%i,
+         $ServerInfo::Name TAB
+         $ServerInfo::Ping TAB
+         $ServerInfo::PlayerCount @ "/" @ $ServerInfo::MaxPlayers TAB
+         $ServerInfo::MissionType TAB
+		 $ServerInfo::MissionName);  // ServerInfo index stored also
+   }
+   NetworkGameList.sort(0);
+   NetworkGameList.setSelectedRow(0);
+   NetworkGameList.scrollVisible(0);
+
+   NetworkJoinBtn.setActive(NetworkGameList.rowCount() > 0);
+} 
+
+//----------------------------------------
+function onServerQueryStatus(%status, %msg, %value)
+{
+	echo("ServerQuery: " SPC %status SPC %msg SPC %value);
+   // Update query status
+   // States: start, update, ping, query, done
+   // value = % (0-1) done for ping and query states
+   if (!NetworkQueryStatus.isVisible())
+      NetworkQueryStatus.setVisible(true);
+
+   switch$ (%status) {
+      case "start":
+         NetworkJoinBtn.setActive(false);
+         NetworkQueryStatusText.setText(%msg);
+         NetworkQueryStatusBar.setValue(0);
+
+      case "ping":
+         NetworkQueryStatusText.setText("Ping Servers");
+         NetworkQueryStatusBar.setValue(%value);
+
+      case "query":
+         NetworkQueryStatusText.setText("Query Servers");
+         NetworkQueryStatusBar.setValue(%value);
+
+      case "done":
+         NetworkQueryStatus.setVisible(false);
+         NetworkGui.update();
+   }
+}

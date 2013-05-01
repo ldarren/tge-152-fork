@@ -1,0 +1,8 @@
+<spush><just:center><font:Arial Bold:18><color:FFFF00>
+Storm Clouds<spop>
+<just:left><font:Arial:16><br><lmargin%:5>
+Simple demonstration of stormClouds feature.<br><br>
+<color:FF2222>
+
+Clouds fade in (100%) and out (0%) on key press.
+

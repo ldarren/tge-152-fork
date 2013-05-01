@@ -1,0 +1,15 @@
+new SimSet(guiClipboard) {
+
+   new GuiRadioCtrl() {
+      Profile = "GuiRadioProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      position = "0 40";
+      Extent = "140 30";
+      MinExtent = "8 2";
+      Visible = "1";
+      text = "Button";
+      groupNum = "1";
+      buttonType = "RadioButton";
+   };
+};

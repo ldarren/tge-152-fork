@@ -1,0 +1,6 @@
+blockD 0 0 90
+spawnBlock 0 0 102
+coinBlock 0 12 94
+teleportBlockRed 8 -8 94
+teleportBlockRed -8 -8 106
+coinBlock -8 -8 102

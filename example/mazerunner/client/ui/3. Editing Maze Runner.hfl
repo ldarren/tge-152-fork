@@ -1,0 +1,63 @@
+<lmargin%:5><rmargin%:95><font:Arial Bold:20>Editing Maze Runner<font:Arial:18>
+
+Open the editor from the main menu by clicking the 'Edit' button, then edit with these keys:
+<tab:180>
+<font:Arial Bold:18>Camera Movement<font:Arial:18>
+W	Forward
+S	Backward
+A	Left
+D	Right
+
+<font:Arial Bold:18>Block De/Selection<font:Arial:18>
+left mouse click	de/select block
+
+<font:Arial Bold:18>Block Movement<font:Arial:18>
+numpad4	Left
+numpad6	Right
+numpad8	Forward
+numpad2	Backward
+numpad +	Up
+numpad -	Down
+
+<font:Arial Bold:18>Block Editting<font:Arial:18>
+numpade enter	Duplicate selected block
+numpade	delete	Delete selected block
+numpad0	Cycle to next block in category
+shift numpad0	Cycle to previous block in category
+numpad7	Cycle to next block category
+shift numpad7	Cycle to previous block category
+space	Shoot fireball for selected fireball block
+
+<font:Arial Bold:18>Saving and Loading Levels<font:Arial:18>
+ctrl s	Start Save Dialog
+ctrl l	Start Load Dialog
+
+When you start the save and load dialogs, you will see a common tree viewer.  To save and load files, navigate to: mazerunner --> data --> missions --> LevelMaps.txt
+
+In this directory you will find files with the name LevelMap0.txt, LevelMap1.txt, etc.  Simply save your level as the next numeric level (i.e. not in an already present level). 
+
+Now, to play test your level exit the editor and click on 'Play'.  This will take you to level0.txt.  When this is loaded, open the console by hitting the tilde key (~) and then type: 
+
+BuildLevel(#);
+
+In this case, # is the number you used for your level.  Play it for a while and if you're not happy, go back and edit the level some more by loading it from the editor with CTRL-L, ...
+
+
+<font:Arial Bold:18>Block Categories <font:Arial:18>
+There are several categories of block:
+
+<lmargin%:2><font:Arial Bold:18><bitmap:mazerunner/client/ui/helpimages/base>  Base Blocks   <just:left><font:Arial:18> The base block comes in a 1x1, 3x3, 5x5, and 7x7 square configuration as well as in 3/5/7 vertical and horizontal configurations.  These blocks are permanent and do not fade.
+<br>
+<lmargin%:2><font:Arial Bold:18><bitmap:mazerunner/client/ui/helpimages/fading>  Fade Blocks   <just:left><font:Arial:18> The fade block (designated by a number between 1 and 10) will fade in and out every ten seconds.  The '1' block will fade out 1 second after the start of a cycle and return in nine seconds.  The '2' block fades in 2 seconds, and returns in eight, etc.  (Note: The actual period is eleven seconds, but you'll see how this works after you try a few).
+<br>
+<lmargin%:2><font:Arial Bold:18><bitmap:mazerunner/client/ui/helpimages/red_tele>  Teleport Blocks   <just:left><font:Arial:18> These blocks come in three varieties, red, green, and blue.  You must have at least two of a color if you choose to use it.  Multiple blocks of the same color result in random teleporting to stations of that color.
+<br>
+<lmargin%:2><font:Arial Bold:18><bitmap:mazerunner/client/ui/helpimages/fire_random>  FireBall Blocks   <just:left><font:Arial:18> The fireball block will fire in one of eight horizontal directions, down, or randomly.  When placed, the block will shoot once.  To make it shoot again, you can select it and hit the space bar.  The random block is red in the editor, but looks normal in game.
+<br>
+<lmargin%:2><font:Arial Bold:18><bitmap:mazerunner/client/ui/helpimages/coinblcks>  Coin Blocks   <just:left><font:Arial:18> The editor will place one coin for every coin block you place.
+<br>
+<br>
+<lmargin%:2><font:Arial Bold:18><bitmap:mazerunner/client/ui/helpimages/random_spawner>  Spawn Blocks   <just:left><font:Arial:18> There can be one or more spawn points in the game.  The player will randomly spawn to a spawn point at the start of the game and spawn back to that same point upon death.
+<br>
+<font:Arial Bold:18>Minimum Level Requirements <font:Arial:18>
+Keep in mind, while you are building your levels you must have at least one spawn point, one coin, and a place for the player to land after spawning.  After that, the level is completely up to you.

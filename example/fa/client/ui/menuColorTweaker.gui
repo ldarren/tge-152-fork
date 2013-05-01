@@ -1,0 +1,395 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(MenuColorTweakerDlg) {
+   canSaveDynamicFields = "0";
+   Profile = "GuiModelessDialogProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   Position = "0 0";
+   Extent = "800 600";
+   MinExtent = "8 8";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+
+   new GuiWindowCtrl(MenuColorTweakerWindow) {
+      canSaveDynamicFields = "0";
+      Profile = "GuiWindowProfile";
+      HorizSizing = "center";
+      VertSizing = "center";
+      Position = "443 149";
+      Extent = "281 300";
+      MinExtent = "8 8";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      text = "Debug Color Tweaker";
+      maxLength = "255";
+      resizeWidth = "0";
+      resizeHeight = "0";
+      canMove = "1";
+      canClose = "1";
+      canMinimize = "0";
+      canMaximize = "0";
+      minSize = "170 150";
+      closeCommand = "Canvas.popDialog(MenuColorTweakerDlg);";
+
+      new GuiSliderCtrl(colorTweakR) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiSliderProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "28 26";
+         Extent = "240 22";
+         MinExtent = "8 8";
+         canSave = "1";
+         Visible = "1";
+         Variable = "value";
+         AltCommand = "MenuColorTweakerDlg::changeColorComponent();";
+         hovertime = "1000";
+         range = "0 255";
+         ticks = "8";
+         value = "36.587";
+      };
+      new GuiTextCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiTextProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "11 24";
+         Extent = "10 18";
+         MinExtent = "8 8";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         text = "R:";
+         maxLength = "255";
+      };
+      new GuiSliderCtrl(colorTweakG) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiSliderProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "28 46";
+         Extent = "240 22";
+         MinExtent = "8 8";
+         canSave = "1";
+         Visible = "1";
+         Variable = "value";
+         AltCommand = "MenuColorTweakerDlg::changeColorComponent();";
+         hovertime = "1000";
+         range = "0 255";
+         ticks = "8";
+         value = "36.587";
+      };
+      new GuiTextCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiTextProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "11 44";
+         Extent = "11 18";
+         MinExtent = "8 8";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         text = "G:";
+         maxLength = "255";
+      };
+      new GuiSliderCtrl(colorTweakB) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiSliderProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "28 66";
+         Extent = "240 22";
+         MinExtent = "8 8";
+         canSave = "1";
+         Visible = "1";
+         Variable = "value";
+         AltCommand = "MenuColorTweakerDlg::changeColorComponent();";
+         hovertime = "1000";
+         range = "0 255";
+         ticks = "8";
+         value = "36.587";
+      };
+      new GuiTextCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiTextProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "11 64";
+         Extent = "10 18";
+         MinExtent = "8 8";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         text = "B:";
+         maxLength = "255";
+      };
+      new GuiSliderCtrl(colorTweakA) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiSliderProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "28 86";
+         Extent = "240 22";
+         MinExtent = "8 8";
+         canSave = "1";
+         Visible = "1";
+         Variable = "value";
+         AltCommand = "MenuColorTweakerDlg::changeColorComponent();";
+         hovertime = "1000";
+         range = "0 255";
+         ticks = "8";
+         value = "36.587";
+      };
+      new GuiTextCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiTextProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "11 84";
+         Extent = "11 18";
+         MinExtent = "8 8";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         text = "A:";
+         maxLength = "255";
+      };
+      new GuiPopUpMenuCtrl(ColorTweakerProfileSelectDDL) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiPopUpMenuProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "11 112";
+         Extent = "257 18";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "MenuColorTweakerDlg::changeProfile();";
+         hovertime = "1000";
+         text = "Please select profile...";
+         maxLength = "255";
+         maxPopupHeight = "200";
+      };
+      new GuiPopUpMenuCtrl(ColorTweakerTypeSelectDDL) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiPopUpMenuProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "11 132";
+         Extent = "257 18";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "MenuColorTweakerDlg::changeType();";
+         hovertime = "1000";
+         text = "fillColor";
+         maxLength = "255";
+         maxPopupHeight = "200";
+      };
+      new GuiTextEditCtrl(ColorTweakerOutput) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiTextEditProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "11 272";
+         Extent = "257 18";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         maxLength = "1024";
+         historySize = "0";
+         password = "0";
+         tabComplete = "0";
+         sinkAllKeyEvents = "0";
+         password = "0";
+         passwordMask = "*";
+      };
+      new GuiTextCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiTextProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "13 254";
+         Extent = "78 18";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         text = "Property / Color:";
+         maxLength = "1024";
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+
+function MenuColorTweakerDlg::changeColorComponent()
+{
+   %roundedR = mFloor(colorTweakR.value +0.5);
+   %roundedG = mFloor(colorTweakG.value +0.5);
+   %roundedB = mFloor(colorTweakB.value +0.5);
+   %roundedA = mFloor(colorTweakA.value +0.5);
+   //error("MenuColorTweakerDlg::changeColorComponent: " @ %roundedR SPC %roundedG SPC %roundedB SPC %roundedA);
+   %profile = ColorTweakerProfileSelectDDL.getTextById(ColorTweakerProfileSelectDDL.getSelected());
+   %type = ColorTweakerTypeSelectDDL.getTextById(ColorTweakerTypeSelectDDL.getSelected());
+   //error("profile/type: " @ %profile @ " / " @ %type);
+   %combined = %profile @ "." @ %type;
+   //error("%profile: " @ %profile);
+   //error("%profile.fillColor before: " @ %profile.fillColor);
+   %newColor = %roundedR SPC %roundedG SPC %roundedB SPC %roundedA;
+   
+   switch$ (%type)
+   {
+      case "fillColor":   
+         %profile.fillColor = %newColor;
+      case "fillColorHL":   
+         %profile.fillColorHL = %newColor;
+      case "fillColorNA":   
+         %profile.fillColorNA = %newColor;
+      case "borderColor":   
+         %profile.borderColor = %newColor;
+      case "borderColorHL":   
+         %profile.borderColorHL = %newColor;
+      case "borderColorNA":   
+         %profile.borderColorNA = %newColor;
+      case "fontColor":   
+         %profile.fontColor = %newColor;
+      case "fontColorHL":   
+         %profile.fontColorHL = %newColor;
+      case "fontColorNA":   
+         %profile.fontColorNA = %newColor;
+      case "fontColorSEL":   
+         %profile.fontColorSEL = %newColor;
+      case "fontColorLink":   
+         %profile.fontColorLink = %newColor;
+      case "fontColorLinkHL":   
+         %profile.fontColorLinkHL = %newColor;
+   }   
+   // update the text edit control
+   ColorTweakerOutput.setText(%combined @ " = \"" @ %newColor @ "\";");
+   //%combined = %roundedR SPC %roundedG SPC %roundedB SPC %roundedA;
+   //error("%profile.fillColor after : " @ %profile.fillColor);
+}
+
+function MenuColorTweakerDlg::setSlider(%color)
+{
+   //error("MenuColorTweakerDlg::setSlider...");
+   colorTweakR.setValue(getWord(%color, 0));
+   colorTweakG.setValue(getWord(%color, 1));
+   colorTweakB.setValue(getWord(%color, 2));
+   colorTweakA.setValue(getWord(%color, 3));
+}
+
+function MenuColorTweakerDlg::changeProfile()
+{
+   //error("MenuColorTweakerDlg::changeProfile: " @ ColorTweakerProfileSelectDDL.getTextById(ColorTweakerProfileSelectDDL.getSelected()) );
+   
+   %profile = ColorTweakerProfileSelectDDL.getTextById(ColorTweakerProfileSelectDDL.getSelected());
+   %type = ColorTweakerTypeSelectDDL.getTextById(ColorTweakerTypeSelectDDL.getSelected());
+   //error("profile/type: " @ %profile @ " / " @ %type);
+   //%combined = %profile @ "." @ %type;
+   //MenuColorTweakerDlg::setSlider(%combined);
+   switch$ (%type)
+   {
+      case "fillColor":   
+         MenuColorTweakerDlg::setSlider(%profile.fillColor);
+      case "fillColorHL":   
+         MenuColorTweakerDlg::setSlider(%profile.fillColorHL);
+      case "fillColorNA":   
+         MenuColorTweakerDlg::setSlider(%profile.fillColorNA);
+      case "borderColor":   
+         MenuColorTweakerDlg::setSlider(%profile.borderColor);
+      case "borderColorHL":   
+         MenuColorTweakerDlg::setSlider(%profile.borderColorHL);
+      case "borderColorNA":   
+         MenuColorTweakerDlg::setSlider(%profile.borderColorNA);
+      case "fontColor":   
+         MenuColorTweakerDlg::setSlider(%profile.fontColor);
+      case "fontColorHL":   
+         MenuColorTweakerDlg::setSlider(%profile.fontColorHL);
+      case "fontColorNA":   
+         MenuColorTweakerDlg::setSlider(%profile.fontColorNA);
+      case "fontColorSEL":   
+         MenuColorTweakerDlg::setSlider(%profile.fontColorSEL);
+      case "fontColorLink":   
+         MenuColorTweakerDlg::setSlider(%profile.fontColorLink);
+      case "fontColorLinkHL":   
+         MenuColorTweakerDlg::setSlider(%profile.fontColorLinkHL);
+   }
+   
+}
+
+function MenuColorTweakerDlg::changeType()
+{
+   error("MenuColorTweakerDlg::changeType: " @ ColorTweakerTypeSelectDDL.getTextById(ColorTweakerTypeSelectDDL.getSelected()) );
+   
+   %profile = ColorTweakerProfileSelectDDL.getTextById(ColorTweakerProfileSelectDDL.getSelected());
+   %type = ColorTweakerTypeSelectDDL.getTextById(ColorTweakerTypeSelectDDL.getSelected());
+   //MenuColorTweakerDlg::setSlider(%profile.fillColor);
+   switch$ (%type)
+   {
+      case "fillColor":   
+         MenuColorTweakerDlg::setSlider(%profile.fillColor);
+      case "fillColorHL":   
+         MenuColorTweakerDlg::setSlider(%profile.fillColorHL);
+      case "fillColorNA":   
+         MenuColorTweakerDlg::setSlider(%profile.fillColorNA);
+      case "borderColor":   
+         MenuColorTweakerDlg::setSlider(%profile.borderColor);
+      case "borderColorHL":   
+         MenuColorTweakerDlg::setSlider(%profile.borderColorHL);
+      case "borderColorNA":   
+         MenuColorTweakerDlg::setSlider(%profile.borderColorNA);
+      case "fontColor":   
+         MenuColorTweakerDlg::setSlider(%profile.fontColor);
+      case "fontColorHL":   
+         MenuColorTweakerDlg::setSlider(%profile.fontColorHL);
+      case "fontColorNA":   
+         MenuColorTweakerDlg::setSlider(%profile.fontColorNA);
+      case "fontColorSEL":   
+         MenuColorTweakerDlg::setSlider(%profile.fontColorSEL);
+      case "fontColorLink":   
+         MenuColorTweakerDlg::setSlider(%profile.fontColorLink);
+      case "fontColorLinkHL":   
+         MenuColorTweakerDlg::setSlider(%profile.fontColorLinkHL);
+   }
+   //MenuColorTweakerDlg::changeProfile();
+}
+
+function MenuColorTweakerDlg::onWake(%this)
+{
+   //error("MenuColorTweakerDlg::onWake...");   
+   //MenuColorTweakerDlg::setSlider("0 0 0 0"); // default to all left
+   %id = 0;
+   ColorTweakerProfileSelectDDL.clear();
+   ColorTweakerProfileSelectDDL.add("Please select profile...", %id++);
+	ColorTweakerProfileSelectDDL.add("GuiPopUpMenuProfile", %id++);
+	ColorTweakerProfileSelectDDL.add("GuiSliderProfile", %id++);
+	ColorTweakerProfileSelectDDL.add("GuiScrollProfile", %id++);
+	ColorTweakerProfileSelectDDL.add("GuiTextProfile", %id++);
+	ColorTweakerProfileSelectDDL.add("GuiTextListProfile", %id++);
+	ColorTweakerProfileSelectDDL.add("GuiCheckBoxProfile", %id++);
+	ColorTweakerProfileSelectDDL.add("GuiButtonProfile", %id++);
+	ColorTweakerProfileSelectDDL.add("GuiWindowProfile", %id++);
+	ColorTweakerProfileSelectDDL.setSelected(1);
+	
+	%id = 0;
+	ColorTweakerTypeSelectDDL.clear();
+	ColorTweakerTypeSelectDDL.add("Please select property...", %id++);
+	ColorTweakerTypeSelectDDL.add("fillColor", %id++);
+	ColorTweakerTypeSelectDDL.add("fillColorHL", %id++);
+	ColorTweakerTypeSelectDDL.add("fillColorNA", %id++);
+	ColorTweakerTypeSelectDDL.add("borderColor", %id++);
+	ColorTweakerTypeSelectDDL.add("borderColorHL", %id++);
+	ColorTweakerTypeSelectDDL.add("borderColorNA", %id++);
+	ColorTweakerTypeSelectDDL.add("fontColor", %id++);
+	ColorTweakerTypeSelectDDL.add("fontColorHL", %id++);
+	ColorTweakerTypeSelectDDL.add("fontColorNA", %id++);
+	ColorTweakerTypeSelectDDL.add("fontColorSEL", %id++);
+	ColorTweakerTypeSelectDDL.add("fontColorLink", %id++);
+	ColorTweakerTypeSelectDDL.add("fontColorLinkHL", %id++);
+	ColorTweakerTypeSelectDDL.setSelected(1);
+}

@@ -1,0 +1,268 @@
+//--- OBJECT WRITE BEGIN ---
+new GameTSCtrl(PlayGui) {
+   Profile = "GuiContentProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   position = "0 0";
+   Extent = "800 600";
+   MinExtent = "8 8";
+   Visible = "1";
+   applyFilterToChildren = "1";
+   cameraZRot = "0";
+   forceFOV = "0";
+      taskMgr = "2282";
+      helpTag = "0";
+      mymusic = "-2147483637";
+      noCursor = "1";
+
+   new GuiControl(CoinCounter) {
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "left";
+      VertSizing = "bottom";
+      position = "540 10";
+      Extent = "126 55";
+      MinExtent = "8 2";
+      Visible = "1";
+         digitBitmap4 = "mazerunner/client/ui/PlayGUIs/yellowDigits/comic4";
+         digitBitmap1 = "mazerunner/client/ui/PlayGUIs/yellowDigits/comic1";
+         digitPath = "./yellowDigits/comic";
+         digitBitmap8 = "mazerunner/client/ui/PlayGUIs/yellowDigits/comic8";
+         currentCount = "2";
+         digitBitmap5 = "mazerunner/client/ui/PlayGUIs/yellowDigits/comic5";
+         digitTileName = "cDigit";
+         digitBitmap2 = "mazerunner/client/ui/PlayGUIs/yellowDigits/comic2";
+         digitBitmap9 = "mazerunner/client/ui/PlayGUIs/yellowDigits/comic9";
+         numDigits = "4";
+         digitBitmap6 = "mazerunner/client/ui/PlayGUIs/yellowDigits/comic6";
+         digitBitmap3 = "mazerunner/client/ui/PlayGUIs/yellowDigits/comic3";
+         digitBitmap0 = "mazerunner/client/ui/PlayGUIs/yellowDigits/comic0";
+         digitBitmap7 = "mazerunner/client/ui/PlayGUIs/yellowDigits/comic7";
+
+      new GuiBitmapCtrl(cDigit0) {
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "80 5";
+         Extent = "40 40";
+         MinExtent = "8 2";
+         Visible = "1";
+         bitmap = "./yellowDigits/comic2";
+         wrap = "0";
+      };
+      new GuiBitmapCtrl(cDigit1) {
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "55 5";
+         Extent = "40 40";
+         MinExtent = "8 2";
+         Visible = "1";
+         bitmap = "./yellowDigits/comic0";
+         wrap = "0";
+      };
+      new GuiBitmapCtrl(cDigit2) {
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "30 5";
+         Extent = "40 40";
+         MinExtent = "8 2";
+         Visible = "1";
+         bitmap = "./yellowDigits/comic0";
+         wrap = "0";
+      };
+      new GuiBitmapCtrl(cDigit3) {
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "5 5";
+         Extent = "40 40";
+         MinExtent = "8 2";
+         Visible = "1";
+         bitmap = "./yellowDigits/comic0";
+         wrap = "0";
+      };
+   };
+   new GuiControl(scorecounter) {
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "center";
+      VertSizing = "bottom";
+      position = "320 10";
+      Extent = "160 55";
+      MinExtent = "8 2";
+      Visible = "1";
+         digitBitmap4 = "mazerunner/client/ui/PlayGUIs/yellowDigits/comic4";
+         digitBitmap1 = "mazerunner/client/ui/PlayGUIs/yellowDigits/comic1";
+         digitPath = "./yellowDigits/comic";
+         digitBitmap8 = "mazerunner/client/ui/PlayGUIs/yellowDigits/comic8";
+         currentCount = "0";
+         digitBitmap5 = "mazerunner/client/ui/PlayGUIs/yellowDigits/comic5";
+         digitTileName = "sDigit";
+         digitBitmap2 = "mazerunner/client/ui/PlayGUIs/yellowDigits/comic2";
+         digitBitmap9 = "mazerunner/client/ui/PlayGUIs/yellowDigits/comic9";
+         numDigits = "5";
+         digitBitmap6 = "mazerunner/client/ui/PlayGUIs/yellowDigits/comic6";
+         digitBitmap3 = "mazerunner/client/ui/PlayGUIs/yellowDigits/comic3";
+         digitBitmap0 = "mazerunner/client/ui/PlayGUIs/yellowDigits/comic0";
+         digitBitmap7 = "mazerunner/client/ui/PlayGUIs/yellowDigits/comic7";
+
+      new GuiBitmapCtrl(sDigit0) {
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "105 5";
+         Extent = "40 40";
+         MinExtent = "8 2";
+         Visible = "1";
+         bitmap = "./yellowDigits/comic0";
+         wrap = "0";
+      };
+      new GuiBitmapCtrl(sDigit1) {
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "80 5";
+         Extent = "40 40";
+         MinExtent = "8 2";
+         Visible = "1";
+         bitmap = "./yellowDigits/comic0";
+         wrap = "0";
+      };
+      new GuiBitmapCtrl(sDigit2) {
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "55 5";
+         Extent = "40 40";
+         MinExtent = "8 2";
+         Visible = "1";
+         bitmap = "./yellowDigits/comic0";
+         wrap = "0";
+      };
+      new GuiBitmapCtrl(sDigit3) {
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "30 5";
+         Extent = "40 40";
+         MinExtent = "8 2";
+         Visible = "1";
+         bitmap = "./yellowDigits/comic0";
+         wrap = "0";
+      };
+      new GuiBitmapCtrl(sDigit4) {
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "5 5";
+         Extent = "40 40";
+         MinExtent = "8 2";
+         Visible = "1";
+         bitmap = "./yellowDigits/comic0";
+         wrap = "0";
+      };
+   };
+   new GuiControl(LivesCounter) {
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      position = "10 10";
+      Extent = "78 52";
+      MinExtent = "8 2";
+      Visible = "1";
+         digitBitmap4 = "mazerunner/client/ui/PlayGUIs/yellowDigits/comic4";
+         digitBitmap1 = "mazerunner/client/ui/PlayGUIs/yellowDigits/comic1";
+         digitPath = "./yellowDigits/comic";
+         digitBitmap8 = "mazerunner/client/ui/PlayGUIs/yellowDigits/comic8";
+         currentCount = "3";
+         digitBitmap5 = "mazerunner/client/ui/PlayGUIs/yellowDigits/comic5";
+         digitTileName = "lDigit";
+         digitBitmap2 = "mazerunner/client/ui/PlayGUIs/yellowDigits/comic2";
+         digitBitmap9 = "mazerunner/client/ui/PlayGUIs/yellowDigits/comic9";
+         numDigits = "2";
+         digitBitmap6 = "mazerunner/client/ui/PlayGUIs/yellowDigits/comic6";
+         digitBitmap3 = "mazerunner/client/ui/PlayGUIs/yellowDigits/comic3";
+         digitBitmap0 = "mazerunner/client/ui/PlayGUIs/yellowDigits/comic0";
+         digitBitmap7 = "mazerunner/client/ui/PlayGUIs/yellowDigits/comic7";
+
+      new GuiBitmapCtrl(lDigit0) {
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "34 5";
+         Extent = "40 40";
+         MinExtent = "8 2";
+         Visible = "1";
+         bitmap = "./yellowDigits/comic3";
+         wrap = "0";
+      };
+      new GuiBitmapCtrl(lDigit1) {
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "4 5";
+         Extent = "40 40";
+         MinExtent = "8 2";
+         Visible = "1";
+         bitmap = "./yellowDigits/comic0";
+         wrap = "0";
+      };
+   };
+   new GuiBitmapCtrl() {
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      position = "80 30";
+      Extent = "30 30";
+      MinExtent = "8 2";
+      Visible = "1";
+      bitmap = "./xicon";
+      wrap = "0";
+   };
+   new GuiBitmapCtrl() {
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "left";
+      VertSizing = "bottom";
+      position = "655 30";
+      Extent = "30 30";
+      MinExtent = "8 2";
+      Visible = "1";
+      bitmap = "./xicon";
+      wrap = "0";
+   };
+   new GuiBitmapCtrl() {
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "left";
+      VertSizing = "bottom";
+      position = "695 30";
+      Extent = "50 50";
+      MinExtent = "8 2";
+      Visible = "1";
+      bitmap = "./coinsicon";
+      wrap = "0";
+   };
+   new GuiBitmapCtrl() {
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      position = "115 25";
+      Extent = "60 60";
+      MinExtent = "8 2";
+      Visible = "1";
+      bitmap = "./livesicon";
+      wrap = "0";
+   };
+   new GuiBitmapCtrl(editReticle) {
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "center";
+      VertSizing = "center";
+      position = "368 268";
+      Extent = "64 64";
+      MinExtent = "8 2";
+      Visible = "0";
+      bitmap = "./HOWCrossHair.png";
+      wrap = "0";
+   };
+};
+//--- OBJECT WRITE END ---
+

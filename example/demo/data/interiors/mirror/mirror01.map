@@ -1,0 +1,22 @@
+{
+"classname" "worldspawn"
+"min_pixels" "250"
+"geometry_scale" "32.0"
+"light_geometry_scale" "32.0"
+"ambient_color" "0 0 0"
+"emergency_ambient_color" "0 0 0"
+"mapversion" "220"
+"wad" "\wads\tork_textures.wad;\wads\tork_null.wad;\wads\evil.wad;\wads\tork_test.wad;\wads\arena1.wad;\wads\digital_eel.wad;\wads\texture_forest.wad"
+{
+( 208 64 104 ) ( 218 64 104 ) ( 218 0 104 ) ASHWOOD [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1 
+( 208 0 0 ) ( 218 0 0 ) ( 218 64 0 ) ASHWOOD [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1 
+( 208 64 104 ) ( 208 0 104 ) ( 208 0 0 ) ASHWOOD [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1 
+( 218 64 0 ) ( 218 0 0 ) ( 218 0 104 ) ASHWOOD [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1 
+( 218 64 104 ) ( 208 64 104 ) ( 208 64 0 ) ASHWOOD [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1 
+( 218 0 0 ) ( 208 0 0 ) ( 208 0 104 ) ASHWOOD [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1 
+}
+}
+{
+"classname" "MirrorSurface"
+"origin" "208 32 56"
+}

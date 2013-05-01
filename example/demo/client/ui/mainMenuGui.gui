@@ -1,0 +1,33 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiChunkedBitmapCtrl(MainMenuGui) {
+   Profile = "GuiContentProfile";
+   HorizSizing = "width";
+   VertSizing = "height";
+   Position = "0 0";
+   Extent = "800 600";
+   MinExtent = "8 8";
+   Visible = "1";
+   bitmap = "./background.jpg";
+   useVariable = "0";
+   tile = "0";
+      helpTag = "0";
+
+   new GuiTreeViewCtrl(thetree) {
+      Profile = "GuiTreeViewProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      Position = "0 0";
+      Extent = "8 2";
+      MinExtent = "8 2";
+      Visible = "1";
+      tabSize = "16";
+      textOffset = "2";
+      fullRowSelect = "0";
+      itemHeight = "21";
+      destroyTreeOnSleep = "1";
+      MouseDragging = "1";
+      MultipleSelections = "1";
+   };
+};
+//--- OBJECT WRITE END ---
+

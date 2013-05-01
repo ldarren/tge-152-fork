@@ -1,0 +1,241 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiControl(CustomColorPickerDlg) {
+   canSaveDynamicFields = "0";
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   position = "0 0";
+   Extent = "1024 768";
+   MinExtent = "8 2";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+
+   new GuiWindowCtrl(CustomPickerDlg) {
+      canSaveDynamicFields = "0";
+      Profile = "GuiWindowProfile";
+      HorizSizing = "center";
+      VertSizing = "center";
+      position = "260 194";
+      Extent = "505 380";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      text = "Pick Color";
+      maxLength = "255";
+      resizeWidth = "0";
+      resizeHeight = "0";
+      canMove = "1";
+      canClose = "1";
+      canMinimize = "0";
+      canMaximize = "0";
+      minSize = "50 50";
+      closeCommand = "CustomColorPickerDlg.endColorDropper();Canvas.popDialog(CustomColorPickerDlg);";
+
+      new GuiColorPickerCtrl(CustomColorBlendSelect) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "width";
+         VertSizing = "height";
+         position = "10 35";
+         Extent = "431 290";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "$ThisControl.updateNewColor();";
+         hovertime = "1000";
+         BaseColor = "1 0.501961 0 1";
+         PickColor = "1 0.854902 0 1";
+         SelectorGap = "1";
+         DisplayMode = "BlendColor";
+         ActionOnMove = "1";
+      };
+      new GuiButtonCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiButtonProfile";
+         HorizSizing = "center";
+         VertSizing = "top";
+         position = "306 337";
+         Extent = "90 30";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "CustomColorPickerDlg.DoColorPickerCallback();";
+         hovertime = "1000";
+         text = "Ok";
+         groupNum = "-1";
+         buttonType = "PushButton";
+      };
+      new GuiButtonCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiButtonProfile";
+         HorizSizing = "center";
+         VertSizing = "top";
+         position = "404 337";
+         Extent = "90 30";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "Canvas.popDialog(CustomColorPickerDlg);";
+         hovertime = "1000";
+         text = "Cancel";
+         groupNum = "-1";
+         buttonType = "PushButton";
+      };
+      new GuiTextCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiTextProfile";
+         HorizSizing = "center";
+         VertSizing = "top";
+         position = "10 325";
+         Extent = "64 18";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         text = "Current Color";
+         maxLength = "255";
+      };
+      new GuiColorPickerCtrl(CustomCurrColor) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "center";
+         VertSizing = "top";
+         position = "10 342";
+         Extent = "140 25";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+		 Command = "CustomColorPickerDlg.resetPickerBaseColor();";
+         hovertime = "1000";
+         BaseColor = "1 0.89 0.686 1";
+         PickColor = "0 0 0 1";
+         SelectorGap = "1";
+         DisplayMode = "Pallet";
+         ActionOnMove = "0";
+      };
+      new GuiTextCtrl() {
+         canSaveDynamicFields = "0";
+         Profile = "GuiTextProfile";
+         HorizSizing = "center";
+         VertSizing = "top";
+         position = "159 325";
+         Extent = "51 18";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         text = "New Color";
+         maxLength = "255";
+      };
+      new GuiColorPickerCtrl(CustomNewColor) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "center";
+         VertSizing = "top";
+         position = "159 342";
+         Extent = "140 25";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         BaseColor = "1 0.854902 0 1";
+         PickColor = "0 0 0 1";
+         SelectorGap = "1";
+         DisplayMode = "Pallet";
+         ActionOnMove = "0";
+      };
+      new GuiColorPickerCtrl(CustomColorRangeSelect) {
+         canSaveDynamicFields = "0";
+         Profile = "GuiDefaultProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         position = "444 35";
+         Extent = "50 290";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         Command = "CustomColorPickerDlg.updatePickerBaseColor();";
+         hovertime = "1000";
+         BaseColor = "1 0 1 1";
+         PickColor = "0 0 0 1";
+         SelectorGap = "1";
+         DisplayMode = "VertColor";
+         ActionOnMove = "0";
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+
+$CustomColorPickerCallback = ""; // Control that we need to update
+$CustomColorCallbackType   = 1;  // ColorI
+
+// This function pushes the color picker dialog and returns to a callback the selected value
+function CustomColorPickerDlg::GetColorI( %this, %currentColor, %callback )
+{
+   $CustomColorPickerCallback = %callback;
+   $CustomColorCallbackType = 1; // ColorI
+   
+   CustomColorBlendSelect.BaseColor = %currentColor;
+   CustomCurrColor.BaseColor = %currentColor;
+   CustomNewColor.BaseColor = CustomColorBlendSelect.getValue();
+
+   Canvas.pushDialog(CustomColorPickerDlg);
+}
+
+function CustomColorPickerDlg::GetColorF( %this, %currentColor, %callback )
+{
+   $CustomColorPickerCallback = %callback;
+   $CustomColorCallbackType = 2; // ColorF
+
+   CustomColorBlendSelect.BaseColor = %currentColor;
+   CustomCurrColor.BaseColor = %currentColor;
+   CustomNewColor.BaseColor = CustomColorBlendSelect.getValue();
+
+   Canvas.pushDialog(CustomColorPickerDlg);
+}
+
+function CustomColorPickerDlg::DoColorPickerCallback(%this)
+{
+  eval( $CustomColorPickerCallback @ "(\"" @ %this.constructNewColor(CustomColorBlendSelect.getValue(), $CustomColorCallbackType) @"\");" );
+
+  Canvas.popDialog(CustomColorPickerDlg);
+}   
+
+function CustomColorBlendSelect::updateNewColor(%this)
+{
+	CustomNewColor.BaseColor = %this.getValue();
+}
+
+// This function constructs a new color, and updates the text displays accordingly
+function CustomColorPickerDlg::constructNewColor(%this, %pickColor, %colorType )
+{
+   %red = getWord(%pickColor, 0);
+   %green = getWord(%pickColor, 1);
+   %blue = getWord(%pickColor, 2);
+   %alpha = 1;
+   
+   if ( %colorType == 1 ) // ColorI
+      return mCeil( %red * 255 ) SPC mCeil( %green * 255 ) SPC mCeil( %blue * 255 ) SPC mCeil( %alpha * 255 );
+   else // ColorF
+      return %red SPC %green SPC %blue SPC %alpha;
+}
+
+// This function updates the base color on the blend control
+function CustomColorPickerDlg::updatePickerBaseColor(%this)
+{
+   %pickColor = CustomColorRangeSelect.getValue();
+   %red = getWord(%pickColor, 0);
+   %green = getWord(%pickColor, 1);
+   %blue = getWord(%pickColor, 2);
+
+   CustomColorBlendSelect.baseColor = %red SPC %green SPC %blue SPC "1.0";
+   CustomColorBlendSelect.updateColor();
+}
+
+function CustomColorPickerDlg::resetPickerBaseColor(%this)
+{
+   CustomColorBlendSelect.baseColor = CustomCurrColor.getValue();
+   CustomColorBlendSelect.updateColor();
+}

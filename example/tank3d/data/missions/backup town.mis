@@ -1,0 +1,1095 @@
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+
+   new Precipitation(Leaves) {
+      position = "-24.2051 -18.8528 12";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      nameTag = "Leaves";
+      dataBlock = "Leaves";
+      minSpeed = "0.01";
+      maxSpeed = "0.1";
+      minMass = "1";
+      maxMass = "2";
+      maxTurbulence = "100";
+      turbulenceSpeed = "0.001";
+      rotateWithCamVel = "0";
+      useTurbulence = "1";
+      numDrops = "100";
+      boxWidth = "200";
+      boxHeight = "100";
+      doCollision = "1";
+   };
+   new SimGroup(Trees) {
+
+      new StaticShape() {
+         position = "147.883 325.182 1.41069";
+         rotation = "-0.0495615 0.108538 0.992856 191.669";
+         scale = "1.3 1.3 1.3";
+         dataBlock = "Tree02";
+      };
+      new StaticShape() {
+         position = "128.857 -87.776 6.20225";
+         rotation = "-0.00959222 0.0998288 0.994958 169.078";
+         scale = "1.5 1.5 1.5";
+         dataBlock = "Tree02";
+      };
+      new StaticShape() {
+         position = "122.434 -92.7234 6.87409";
+         rotation = "-0.00645941 0.0722853 0.997363 153.54";
+         scale = "0.7 0.7 0.7";
+         dataBlock = "Tree02";
+      };
+      new StaticShape() {
+         position = "-46.1551 -180.092 3.54538";
+         rotation = "0 0 -1 46.4095";
+         scale = "2 2 2";
+         dataBlock = "Tree02";
+      };
+      new StaticShape() {
+         position = "-46.3697 -196.857 5.47314";
+         rotation = "-0.0496429 0.115799 -0.992031 46.7424";
+         scale = "2 2 2";
+         dataBlock = "Tree02";
+      };
+      new StaticShape() {
+         position = "-58.4756 -186.524 5.11176";
+         rotation = "0.0349412 -0.0545136 -0.997901 65.4264";
+         scale = "1.5 1.5 1.5";
+         dataBlock = "Tree02";
+      };
+      new StaticShape() {
+         position = "-158.973 -105.255 -1.24635";
+         rotation = "0 0 -1 46.4095";
+         scale = "2 2 2";
+         dataBlock = "Tree02";
+      };
+      new StaticShape() {
+         position = "-171.194 -102.464 3.46442";
+         rotation = "0.0493485 -0.228621 -0.972264 66.1605";
+         scale = "1.2 1.2 1.2";
+         dataBlock = "Tree02";
+      };
+      new StaticShape() {
+         position = "-200.909 -32.1123 -0.820938";
+         rotation = "0 0 1 146.677";
+         scale = "1 1 1";
+         dataBlock = "Tree01";
+      };
+      new StaticShape() {
+         position = "198.864 74.7349 0.926438";
+         rotation = "0 0 1 85.9437";
+         scale = "2 2 2";
+         dataBlock = "Tree02";
+      };
+      new StaticShape() {
+         position = "203.761 82.3046 0.598674";
+         rotation = "-0.0086358 0.0898752 0.995916 169.068";
+         scale = "1.5 1.5 1.5";
+         dataBlock = "Tree02";
+      };
+      new StaticShape() {
+         position = "179.425 252.607 0.202092";
+         rotation = "-0.0447809 0.0848125 0.99539 124.55";
+         scale = "1 1 1";
+         dataBlock = "Tree02";
+      };
+      new StaticShape() {
+         position = "189.269 251.326 2.56042";
+         rotation = "-0.0926171 0.216042 -0.971981 47.6004";
+         scale = "2 2 2";
+         dataBlock = "Tree02";
+      };
+      new StaticShape() {
+         position = "-11.3394 313.918 -1.15422";
+         rotation = "0.133207 0.142988 0.980719 87.0571";
+         scale = "2 2 2";
+         dataBlock = "Tree02";
+      };
+      new StaticShape() {
+         position = "-21.3615 313.711 -1.20381";
+         rotation = "0.0982887 0.491255 -0.865453 28.4527";
+         scale = "1 1 1";
+         dataBlock = "Tree02";
+      };
+      new StaticShape() {
+         position = "-151.662 199.478 -0.451501";
+         rotation = "0 0 1 10.3134";
+         scale = "1 1 1";
+         dataBlock = "Fern01";
+      };
+      new StaticShape() {
+         position = "-159.372 193.057 -0.403501";
+         rotation = "0 0 1 38.3881";
+         scale = "2 2 2";
+         dataBlock = "Fern01";
+      };
+      new StaticShape() {
+         position = "-156.464 203.551 -0.241829";
+         rotation = "-0.0184729 0.0349869 0.999217 124.369";
+         scale = "2 2 2";
+         dataBlock = "Tree02";
+      };
+      new StaticShape() {
+         position = "135.982 326.002 2.69056";
+         rotation = "0.0274222 0.0992679 0.994683 167.258";
+         scale = "1.5 1.5 1.5";
+         dataBlock = "Tree02";
+      };
+      new StaticShape() {
+         position = "46.5179 -179.983 -0.225096";
+         rotation = "-0.0890073 0.138864 -0.986303 66.0371";
+         scale = "1.5 1.5 1.5";
+         dataBlock = "Tree02";
+      };
+      new StaticShape() {
+         position = "63.1985 -175.89 7.87446";
+         rotation = "0.0493485 -0.228621 -0.972264 66.1605";
+         scale = "1.2 1.2 1.2";
+         dataBlock = "Tree02";
+      };
+      new StaticShape() {
+         position = "51.4931 -173.55 2.54145";
+         rotation = "0 0 -1 46.4095";
+         scale = "2 2 2";
+         dataBlock = "Tree02";
+      };
+      new StaticShape() {
+         position = "89.717 29.461 0.091956";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "Tianglampu";
+      };
+      new StaticShape() {
+         position = "200.229 312.19 31.0909";
+         rotation = "0 0 1 85.9437";
+         scale = "2 2 2";
+         dataBlock = "Tree02";
+      };
+      new StaticShape() {
+         position = "187.771 321.924 25.3217";
+         rotation = "-0.211958 0.0727851 0.974565 75.419";
+         scale = "0.6 0.6 0.6";
+         dataBlock = "Tree02";
+      };
+      new StaticShape() {
+         position = "-63.497 367.071 23.5668";
+         rotation = "0.0139493 -0.0646439 0.997811 108.485";
+         scale = "1 1 1";
+         dataBlock = "Tree02";
+      };
+      new StaticShape() {
+         position = "197.37 324.713 30.9029";
+         rotation = "0.0890623 0.134466 0.986908 67.7331";
+         scale = "1.5 1.5 1.5";
+         dataBlock = "Tree02";
+      };
+      new StaticShape() {
+         position = "-168.341 -155.756 39.5198";
+         rotation = "0 0 1 85.9437";
+         scale = "2 2 2";
+         dataBlock = "Tree02";
+      };
+      new StaticShape() {
+         position = "-190.035 -156.261 46.0493";
+         rotation = "0.123538 0.157187 0.979812 51.9025";
+         scale = "1.2 1.2 1.2";
+         dataBlock = "Tree02";
+      };
+      new StaticShape() {
+         position = "-150.315 -162.249 43.6942";
+         rotation = "0.126043 0.0541431 0.990546 107.647";
+         scale = "1 1 1";
+         dataBlock = "Tree02";
+      };
+      new StaticShape() {
+         position = "-290.02 8.96485 61.3583";
+         rotation = "-0.0646442 -0.0976 0.993124 67.4007";
+         scale = "1.5 1.5 1.5";
+         dataBlock = "Tree02";
+      };
+      new StaticShape() {
+         position = "159.638 -146.107 47.9581";
+         rotation = "0.0386886 -0.049091 0.998045 166.008";
+         scale = "0.5 0.5 0.5";
+         dataBlock = "Tree02";
+      };
+      new StaticShape() {
+         position = "161.592 -140.619 47.656";
+         rotation = "0.059934 0.0316451 0.997701 124.441";
+         scale = "1 1 1";
+         dataBlock = "Tree02";
+      };
+      new StaticShape() {
+         position = "246.78 49.9632 40.3674";
+         rotation = "0.0443711 -0.057302 0.99737 147.29";
+         scale = "0.7 0.7 0.7";
+         dataBlock = "Tree02";
+      };
+      new StaticShape() {
+         position = "250.497 40.8572 36.9368";
+         rotation = "-0.0185571 0.0331304 0.999279 115.715";
+         scale = "1.5 1.5 1.5";
+         dataBlock = "Tree02";
+      };
+      new StaticShape() {
+         position = "162.873 -8.21792 5.2678";
+         rotation = "0 0 1 124.332";
+         scale = "1 1 1";
+         dataBlock = "Tree02";
+      };
+      new StaticShape() {
+         position = "165.893 -17.8905 9.45994";
+         rotation = "0.00999983 0.0023498 0.999947 153.554";
+         scale = "0.7 0.7 0.7";
+         dataBlock = "Tree02";
+      };
+      new StaticShape() {
+         position = "172.06 -10.7115 7.95809";
+         rotation = "0 0 1 169.023";
+         scale = "1.5 1.5 1.5";
+         dataBlock = "Tree02";
+      };
+      new StaticShape() {
+         position = "-199.735 101.148 7.0671";
+         rotation = "0 0 1 85.9437";
+         scale = "2 2 2";
+         dataBlock = "Tree02";
+      };
+      new StaticShape() {
+         position = "-209.398 95.339 5.56308";
+         rotation = "-0.182226 -0.132414 0.9743 69.0448";
+         scale = "1.2 1.2 1.2";
+         dataBlock = "Tree02";
+      };
+      new StaticShape() {
+         position = "-193.851 107.073 6.67912";
+         rotation = "0.148348 0.0329127 0.988387 108.239";
+         scale = "1 1 1";
+         dataBlock = "Tree02";
+      };
+      new StaticShape() {
+         position = "-201.528 110.081 7.81008";
+         rotation = "0.0890623 0.134466 0.986908 67.7331";
+         scale = "1.5 1.5 1.5";
+         dataBlock = "Tree02";
+      };
+      new StaticShape() {
+         position = "23.4909 393.026 29.4142";
+         rotation = "-0.0708525 0.015822 -0.997361 52.3161";
+         scale = "1.5 1.5 1.5";
+         dataBlock = "Tree02";
+      };
+      new StaticShape() {
+         position = "69.8461 386.598 26.9381";
+         rotation = "-0.0402404 -0.056119 -0.997613 19.1928";
+         scale = "1 1 1";
+         dataBlock = "Tree02";
+      };
+      new StaticShape() {
+         position = "37.5207 391.478 33.4727";
+         rotation = "0.200597 -0.0130322 -0.979587 48.4036";
+         scale = "1.2 1.2 1.2";
+         dataBlock = "Tree02";
+      };
+   };
+   new TerrainBlock(Terrain) {
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      terrainFile = "./backup town.ter";
+      squareSize = "8";
+      bumpScale = "1";
+      bumpOffset = "0.01";
+      zeroBumpScale = "8";
+      tile = "1";
+         position = "-1024 -1024 0";
+         locked = "true";
+   };
+   new ScriptObject(MissionInfo) {
+         desc0 = "Crush Your Opposition!";
+         name = "Tank Attack 3D";
+   };
+   new MissionArea(MissionArea) {
+      Area = "-288 -232 560 608";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "848 648 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      materialList = "~/data/skies/sky.dml";
+      cloudHeightPer[0] = "0";
+      cloudHeightPer[1] = "0.25";
+      cloudHeightPer[2] = "0.199973";
+      cloudSpeed1 = "0.0001";
+      cloudSpeed2 = "0.0002";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      fogDistance = "400";
+      fogColor = "0.968628 0.960784 0.623529 1";
+      fogStorm1 = "0";
+      fogStorm2 = "0";
+      fogStorm3 = "0";
+      fogVolume1 = "200 50 50";
+      fogVolume2 = "0 0 0";
+      fogVolume3 = "0 0 0";
+      fogVolumeColor1 = "128 128 128 -2.22768e+038";
+      fogVolumeColor2 = "128 128 128 0";
+      fogVolumeColor3 = "0 0 1 1";
+      windVelocity = "0.05 0.01 0";
+      windEffectPrecipitation = "0";
+      SkySolidColor = "0.717647 0.717647 0.717647 0";
+      useSkyTextures = "1";
+      renderBottomTexture = "0";
+      noRenderBans = "0";
+         locked = "true";
+   };
+   new Sun() {
+      azimuth = "0";
+      elevation = "35";
+      color = "0.988235 0.988235 0.988235 1";
+      ambient = "0.996078 0.996078 0.996078 1";
+         direction = "0.57735 0.57735 -0.57735";
+         scale = "1 1 1";
+         position = "0 0 0";
+         locked = "true";
+         rotation = "1 0 0 0";
+   };
+   new SimGroup(PlayerDropPoints) {
+
+      new SpawnSphere() {
+         position = "46.5347 -52.5341 1.68907";
+         rotation = "0 0 -1 16.6154";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "100";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+            lockCount = "0";
+            locked = "False";
+            homingCount = "0";
+      };
+   };
+   new SimGroup(particles) {
+   };
+   new SimGroup(buildings) {
+
+      new StaticShape() {
+         position = "-211.179 46.5212 0.650427";
+         rotation = "0 0 -1 79.6408";
+         scale = "1 1 1";
+         dataBlock = "Cautionlight";
+      };
+      new StaticShape() {
+         position = "-210.91 41.5302 0.450427";
+         rotation = "0 0 -1 103.705";
+         scale = "1 1 1";
+         dataBlock = "Cautionlight";
+      };
+      new TSStatic() {
+         position = "-225.661 44.3716 -0.34073";
+         rotation = "0 0 -1 89.564";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/Building/tunnel.dts";
+      };
+      new TSStatic() {
+         position = "195.221 44.9444 0.134294";
+         rotation = "0 0 1 89.3814";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/Building/tunnel.dts";
+      };
+      new TSStatic() {
+         position = "-115.322 33.941 0.0691196";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/decor/lightcone.dts";
+      };
+      new TSStatic() {
+         position = "-12.8451 53.5583 0.0691211";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/decor/lightcone.dts";
+      };
+      new StaticShape() {
+         position = "-222.278 -7.46357 -0.0111699";
+         rotation = "0 0 1 36.6693";
+         scale = "1 1 1";
+         dataBlock = "Build02";
+      };
+      new TSStatic() {
+         position = "89.7017 34.3134 0.269121";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         shapeName = "~/data/shapes/decor/lightcone.dts";
+      };
+      new StaticShape() {
+         position = "176.678 45.7391 0.278488";
+         rotation = "0 0 -1 79.6408";
+         scale = "1 1 1";
+         dataBlock = "Cautionlight";
+      };
+      new StaticShape() {
+         position = "-12.5554 58.2979 -0.087409";
+         rotation = "0 0 1 182.201";
+         scale = "1 1 1";
+         dataBlock = "Tianglampu";
+      };
+      new StaticShape() {
+         position = "-115.485 29.158 -0.0874033";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "Tianglampu";
+      };
+      new StaticShape() {
+         position = "-208.277 -23.2284 -0.320192";
+         rotation = "0 0 1 27.502";
+         scale = "1 1 1";
+         dataBlock = "Build01";
+      };
+      new StaticShape() {
+         position = "-196.909 -24.8778 -0.92173";
+         rotation = "0 0 1 24.0641";
+         scale = "1 1 1";
+         dataBlock = "Tree01";
+      };
+      new StaticShape() {
+         position = "253.26 129.443 38.7209";
+         rotation = "0 0 -1 110.008";
+         scale = "2 2 2";
+         dataBlock = "Adbanner";
+      };
+      new StaticShape() {
+         position = "-61.9396 -240.72 37.7214";
+         rotation = "0.423088 -0.364365 0.829599 27.7456";
+         scale = "2 2 2";
+         dataBlock = "Tangki";
+      };
+      new StaticShape() {
+         position = "176.947 40.7481 0.0784881";
+         rotation = "0 0 -1 103.705";
+         scale = "1 1 1";
+         dataBlock = "Cautionlight";
+      };
+   };
+   new SimGroup(Foliage) {
+
+      new fxFoliageReplicator(flower) {
+         position = "10.647 181.686 7.8531";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         UseDebugInfo = "0";
+         DebugBoxHeight = "1";
+         HideFoliage = "0";
+         ShowPlacementArea = "0";
+         PlacementAreaHeight = "25";
+         PlacementColour = "0.4 0 0.8 1";
+         Seed = "1376312589";
+         FoliageFile = "~/data/environment/flower01.png";
+         FoliageCount = "50";
+         FoliageRetries = "100";
+         InnerRadiusX = "0";
+         InnerRadiusY = "0";
+         OuterRadiusX = "160";
+         OuterRadiusY = "128";
+         MinWidth = "4";
+         MaxWidth = "8";
+         MinHeight = "4";
+         MaxHeight = "8";
+         FixAspectRatio = "1";
+         FixSizeToMax = "0";
+         OffsetZ = "0";
+         RandomFlip = "1";
+         UseCulling = "1";
+         CullResolution = "8";
+         ViewDistance = "50";
+         ViewClosest = "1";
+         FadeInRegion = "10";
+         FadeOutRegion = "1";
+         AlphaCutoff = "0.2";
+         GroundAlpha = "1";
+         SwayOn = "1";
+         SwaySync = "0";
+         SwayMagSide = "0.1";
+         SwayMagFront = "0.2";
+         MinSwayTime = "3";
+         MaxSwayTime = "10";
+         LightOn = "0";
+         LightSync = "0";
+         MinLuminance = "0.7";
+         MaxLuminance = "1";
+         LightTime = "5";
+         AllowOnTerrain = "1";
+         AllowOnInteriors = "1";
+         AllowOnStatics = "1";
+         AllowOnWater = "0";
+         AllowWaterSurface = "0";
+         AllowedTerrainSlope = "90";
+      };
+      new fxFoliageReplicator(grass) {
+         position = "36.548 191.546 6.4531";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         UseDebugInfo = "0";
+         DebugBoxHeight = "1";
+         HideFoliage = "0";
+         ShowPlacementArea = "0";
+         PlacementAreaHeight = "25";
+         PlacementColour = "0.4 0 0.8 1";
+         Seed = "1376312589";
+         FoliageFile = "~/data/environment/grass01.png";
+         FoliageCount = "5000";
+         FoliageRetries = "100";
+         InnerRadiusX = "0";
+         InnerRadiusY = "0";
+         OuterRadiusX = "160";
+         OuterRadiusY = "128";
+         MinWidth = "2";
+         MaxWidth = "3";
+         MinHeight = "2";
+         MaxHeight = "3";
+         FixAspectRatio = "1";
+         FixSizeToMax = "0";
+         OffsetZ = "0";
+         RandomFlip = "1";
+         UseCulling = "1";
+         CullResolution = "8";
+         ViewDistance = "70";
+         ViewClosest = "1";
+         FadeInRegion = "10";
+         FadeOutRegion = "1";
+         AlphaCutoff = "0.2";
+         GroundAlpha = "1";
+         SwayOn = "1";
+         SwaySync = "0";
+         SwayMagSide = "0.3";
+         SwayMagFront = "0.5";
+         MinSwayTime = "3";
+         MaxSwayTime = "10";
+         LightOn = "0";
+         LightSync = "0";
+         MinLuminance = "0.7";
+         MaxLuminance = "1";
+         LightTime = "5";
+         AllowOnTerrain = "1";
+         AllowOnInteriors = "1";
+         AllowOnStatics = "0";
+         AllowOnWater = "0";
+         AllowWaterSurface = "0";
+         AllowedTerrainSlope = "90";
+      };
+      new fxFoliageReplicator(flower) {
+         position = "-41.6271 -62.7868 11.4844";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         UseDebugInfo = "0";
+         DebugBoxHeight = "1";
+         HideFoliage = "0";
+         ShowPlacementArea = "0";
+         PlacementAreaHeight = "25";
+         PlacementColour = "0.4 0 0.8 1";
+         Seed = "1376312589";
+         FoliageFile = "~/data/environment/flower01.png";
+         FoliageCount = "50";
+         FoliageRetries = "100";
+         InnerRadiusX = "0";
+         InnerRadiusY = "0";
+         OuterRadiusX = "160";
+         OuterRadiusY = "90";
+         MinWidth = "4";
+         MaxWidth = "8";
+         MinHeight = "4";
+         MaxHeight = "8";
+         FixAspectRatio = "1";
+         FixSizeToMax = "0";
+         OffsetZ = "0";
+         RandomFlip = "1";
+         UseCulling = "1";
+         CullResolution = "8";
+         ViewDistance = "50";
+         ViewClosest = "1";
+         FadeInRegion = "10";
+         FadeOutRegion = "1";
+         AlphaCutoff = "0.2";
+         GroundAlpha = "1";
+         SwayOn = "1";
+         SwaySync = "0";
+         SwayMagSide = "0.1";
+         SwayMagFront = "0.2";
+         MinSwayTime = "3";
+         MaxSwayTime = "10";
+         LightOn = "0";
+         LightSync = "0";
+         MinLuminance = "0.7";
+         MaxLuminance = "1";
+         LightTime = "5";
+         AllowOnTerrain = "1";
+         AllowOnInteriors = "1";
+         AllowOnStatics = "1";
+         AllowOnWater = "0";
+         AllowWaterSurface = "0";
+         AllowedTerrainSlope = "90";
+      };
+      new fxFoliageReplicator(grass) {
+         position = "-32.926 -67.9268 10.0844";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         UseDebugInfo = "0";
+         DebugBoxHeight = "1";
+         HideFoliage = "0";
+         ShowPlacementArea = "0";
+         PlacementAreaHeight = "25";
+         PlacementColour = "0.4 0 0.8 1";
+         Seed = "1376312589";
+         FoliageFile = "~/data/environment/grass01.png";
+         FoliageCount = "5000";
+         FoliageRetries = "100";
+         InnerRadiusX = "0";
+         InnerRadiusY = "0";
+         OuterRadiusX = "160";
+         OuterRadiusY = "90";
+         MinWidth = "2";
+         MaxWidth = "3";
+         MinHeight = "2";
+         MaxHeight = "3";
+         FixAspectRatio = "1";
+         FixSizeToMax = "0";
+         OffsetZ = "0";
+         RandomFlip = "1";
+         UseCulling = "1";
+         CullResolution = "8";
+         ViewDistance = "70";
+         ViewClosest = "1";
+         FadeInRegion = "10";
+         FadeOutRegion = "1";
+         AlphaCutoff = "0.2";
+         GroundAlpha = "1";
+         SwayOn = "1";
+         SwaySync = "0";
+         SwayMagSide = "0.3";
+         SwayMagFront = "0.5";
+         MinSwayTime = "3";
+         MaxSwayTime = "10";
+         LightOn = "0";
+         LightSync = "0";
+         MinLuminance = "0.7";
+         MaxLuminance = "1";
+         LightTime = "5";
+         AllowOnTerrain = "1";
+         AllowOnInteriors = "1";
+         AllowOnStatics = "0";
+         AllowOnWater = "0";
+         AllowWaterSurface = "0";
+         AllowedTerrainSlope = "90";
+      };
+      new fxFoliageReplicator(pakupakis) {
+         position = "-57.9991 -54.4008 3.63127";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         UseDebugInfo = "0";
+         DebugBoxHeight = "1";
+         HideFoliage = "0";
+         ShowPlacementArea = "0";
+         PlacementAreaHeight = "25";
+         PlacementColour = "0.4 0 0.8 1";
+         Seed = "1376312589";
+         FoliageFile = "~/data/environment/pakupakis01.png";
+         FoliageCount = "30";
+         FoliageRetries = "100";
+         InnerRadiusX = "0";
+         InnerRadiusY = "0";
+         OuterRadiusX = "160";
+         OuterRadiusY = "90";
+         MinWidth = "1";
+         MaxWidth = "6";
+         MinHeight = "1";
+         MaxHeight = "6";
+         FixAspectRatio = "1";
+         FixSizeToMax = "0";
+         OffsetZ = "0";
+         RandomFlip = "1";
+         UseCulling = "1";
+         CullResolution = "64";
+         ViewDistance = "50";
+         ViewClosest = "1";
+         FadeInRegion = "10";
+         FadeOutRegion = "1";
+         AlphaCutoff = "0.2";
+         GroundAlpha = "1";
+         SwayOn = "1";
+         SwaySync = "0";
+         SwayMagSide = "0.1";
+         SwayMagFront = "0.2";
+         MinSwayTime = "3";
+         MaxSwayTime = "10";
+         LightOn = "0";
+         LightSync = "0";
+         MinLuminance = "0.7";
+         MaxLuminance = "1";
+         LightTime = "5";
+         AllowOnTerrain = "1";
+         AllowOnInteriors = "1";
+         AllowOnStatics = "1";
+         AllowOnWater = "0";
+         AllowWaterSurface = "0";
+         AllowedTerrainSlope = "90";
+      };
+      new fxFoliageReplicator(pakupakis) {
+         position = "18.075 192.272 4.61384e-007";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         UseDebugInfo = "0";
+         DebugBoxHeight = "1";
+         HideFoliage = "0";
+         ShowPlacementArea = "0";
+         PlacementAreaHeight = "25";
+         PlacementColour = "0.4 0 0.8 1";
+         Seed = "1376312589";
+         FoliageFile = "~/data/environment/pakupakis01.png";
+         FoliageCount = "30";
+         FoliageRetries = "100";
+         InnerRadiusX = "0";
+         InnerRadiusY = "0";
+         OuterRadiusX = "160";
+         OuterRadiusY = "128";
+         MinWidth = "1";
+         MaxWidth = "6";
+         MinHeight = "1";
+         MaxHeight = "6";
+         FixAspectRatio = "1";
+         FixSizeToMax = "0";
+         OffsetZ = "0";
+         RandomFlip = "1";
+         UseCulling = "1";
+         CullResolution = "64";
+         ViewDistance = "50";
+         ViewClosest = "1";
+         FadeInRegion = "10";
+         FadeOutRegion = "1";
+         AlphaCutoff = "0.2";
+         GroundAlpha = "1";
+         SwayOn = "1";
+         SwaySync = "0";
+         SwayMagSide = "0.1";
+         SwayMagFront = "0.2";
+         MinSwayTime = "3";
+         MaxSwayTime = "10";
+         LightOn = "0";
+         LightSync = "0";
+         MinLuminance = "0.7";
+         MaxLuminance = "1";
+         LightTime = "5";
+         AllowOnTerrain = "1";
+         AllowOnInteriors = "1";
+         AllowOnStatics = "1";
+         AllowOnWater = "0";
+         AllowWaterSurface = "0";
+         AllowedTerrainSlope = "90";
+      };
+   };
+   new SimGroup(SpawnPoint1) {
+
+      new SpawnSphere() {
+         position = "-31.1325 153.92 2.8695";
+         rotation = "0 0 1 152.225";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "100";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+   };
+   new SimGroup(SpawnPoint2) {
+
+      new SpawnSphere() {
+         position = "-54.5849 254.524 1.6746";
+         rotation = "0 0 1 153.37";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "100";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+   };
+   new SimGroup(SpawnPoint3) {
+
+      new SpawnSphere() {
+         position = "-177.962 91.9254 2.6";
+         rotation = "0 0 1 108.289";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "100";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+   };
+   new SimGroup(SpawnPoint4) {
+
+      new SpawnSphere() {
+         position = "0.911449 -76.5182 2.2";
+         rotation = "0 0 -1 12.2145";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "100";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+   };
+   new SimGroup(SpawnPoint5) {
+
+      new SpawnSphere() {
+         position = "-44.3522 -136.842 2.4";
+         rotation = "0 0 1 18.9077";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "100";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+   };
+   new SimGroup(SpawnPoint6) {
+
+      new SpawnSphere() {
+         position = "-170.663 -34.344 1.2";
+         rotation = "0 0 1 46.4095";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "100";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+   };
+   new SimGroup(SpawnPoint7) {
+
+      new SpawnSphere() {
+         position = "-52.5927 -10.616 2";
+         rotation = "0 0 1 10.3138";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "100";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+   };
+   new SimGroup(SpawnPoint8) {
+
+      new SpawnSphere() {
+         position = "151.938 184.366 1.4";
+         rotation = "0 0 1 226.891";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "100";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+   };
+   new SimGroup(SpawnPoint9) {
+
+      new SpawnSphere() {
+         position = "57.8199 2.40449 1.8";
+         rotation = "0 0 -1 36.2789";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "100";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+   };
+   new SimGroup(SpawnPoint10) {
+
+      new SpawnSphere() {
+         position = "-83.4812 84.0947 1.6";
+         rotation = "0 0 1 108.289";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "100";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+   };
+   new SimGroup(SpawnPoint11) {
+
+      new SpawnSphere() {
+         position = "98.6664 260.016 1.6";
+         rotation = "0 0 1 193.66";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "100";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+   };
+   new SimGroup(SpawnPoint12) {
+
+      new SpawnSphere() {
+         position = "142.244 12.3168 1.6";
+         rotation = "0 0 -1 92.4287";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "100";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+   };
+   new SimGroup(SpawnPoint13) {
+
+      new SpawnSphere() {
+         position = "89.3326 97.312 2.2";
+         rotation = "0 0 1 211.994";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "100";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+   };
+   new SimGroup(SpawnPoint14) {
+
+      new SpawnSphere() {
+         position = "-124.999 160.33 2.6";
+         rotation = "0 0 1 130.634";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "100";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+   };
+   new SimGroup(SpawnPoint15) {
+
+      new SpawnSphere() {
+         position = "55.7028 188.998 1.4";
+         rotation = "0 0 1 189.649";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "100";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+   };
+   new SimGroup(SpawnPoint16) {
+
+      new SpawnSphere() {
+         position = "11.2269 89.8142 2";
+         rotation = "0 0 1 142.667";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "100";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+   };
+   new SimGroup(SpawnPoint17) {
+
+      new SpawnSphere() {
+         position = "-140.825 22.1566 1.6";
+         rotation = "0 0 1 82.5059";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "100";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+   };
+   new SimGroup(SpawnPoint18) {
+
+      new SpawnSphere() {
+         position = "-102.552 -94.2912 2.2";
+         rotation = "0 0 1 36.096";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "100";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+   };
+   new SimGroup(SpawnPoint19) {
+
+      new SpawnSphere() {
+         position = "33.3029 -132.442 1.8";
+         rotation = "0 0 -1 27.6849";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "100";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+   };
+   new SimGroup(SpawnPoint20) {
+
+      new SpawnSphere() {
+         position = "98.9241 -61.0717 1.6";
+         rotation = "0 0 -1 33.4142";
+         scale = "1 1 1";
+         dataBlock = "SpawnSphereMarker";
+         radius = "100";
+         sphereWeight = "100";
+         indoorWeight = "100";
+         outdoorWeight = "100";
+      };
+   };
+   new TSStatic() {
+      position = "5.1429 58.1694 0.161096";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      shapeName = "~/data/shapes/Building/traficcone.dts";
+   };
+   new TSStatic() {
+      position = "-7.76926 58.0793 -0.150976";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      shapeName = "~/data/shapes/Building/jalan8tv.dts";
+   };
+   new TSStatic() {
+      position = "-0.195167 58.5066 -0.324654";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      shapeName = "~/data/shapes/Building/nowarsign.dts";
+   };
+   new TSStatic() {
+      position = "13.3989 58.3065 -0.430119";
+      rotation = "0 0 1 0.569237";
+      scale = "1 1 1";
+      shapeName = "~/data/shapes/Building/protonsaga.dts";
+   };
+   new TSStatic() {
+      position = "-43.1446 5.2633 -0.114592";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      shapeName = "~/data/shapes/Building/EasterMan.dts";
+   };
+   new TSStatic() {
+      position = "116.8 -200.175 36.4745";
+      rotation = "-0.0122049 0.110608 -0.993789 31.717";
+      scale = "8 8 8";
+      shapeName = "~/data/shapes/Building/JapanGate.dts";
+   };
+   new TSStatic() {
+      position = "-55.1687 27.2877 0.0390799";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      shapeName = "~/data/shapes/Building/Barrier.dts";
+   };
+};
+//--- OBJECT WRITE END ---
